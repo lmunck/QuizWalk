@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Qualk – Final results</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6F4A}a:hover{color:#14502F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F6F1; font-family: Inter, system-ui, sans-serif; color: #16211B; display: flex; flex-direction: column; overflow: hidden">
+  <div style="padding: 52px 16px 0; display: flex; align-items: center; gap: 8px">
+    <a href="Finish.dc.html" aria-label="Back" style="width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16211B" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+    </a>
+    <span style="font-size: 17px; font-weight: 600">Final results</span>
+  </div>
+  <div style="padding: 8px 24px 0; display: flex; flex-direction: column; gap: 18px; flex-grow: 1">
+    <div style="background: {{accent}}; color: #FFFFFF; border-radius: 22px; padding: 20px; display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px">qualk</span>
+        <span style="font-size: 12px; opacity: 0.85">Sat · Copenhagen</span>
+      </div>
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; line-height: 1.1">Fjord Kids won Harbour history</span>
+      <span style="font-size: 14px; opacity: 0.9">96 pts · 7 of 8 right · 3.4 km in 47 min</span>
+      <svg width="310" height="40" viewBox="0 0 310 40" aria-hidden="true"><path d="M4 30 L40 22 L70 26 L110 10 L150 14 L190 6 L230 20 L270 16 L306 28" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round"></path><circle cx="4" cy="30" r="4" fill="#FFFFFF"></circle><circle cx="306" cy="28" r="4" fill="#FFFFFF"></circle></svg>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #C9D2C4; border-radius: 16px; padding: 4px 16px; display: flex; flex-direction: column">
+      <sc-for list="{{rows}}" as="r" hint-placeholder-count="4">
+        <div style="{{r.rowStyle}}">
+          <span style="width: 22px; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #4A5A50">{{r.rank}}</span>
+          <span style="flex-grow: 1; font-size: 15px; font-weight: 600">{{r.name}}</span>
+          <span style="font-size: 13px; color: #4A5A50">{{r.detail}}</span>
+          <span style="width: 40px; text-align: right; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700">{{r.score}}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  <div style="padding: 16px 24px 36px; display: flex; flex-direction: column; gap: 10px">
+    <button style="height: 56px; border-radius: 28px; border: 0; background: #16211B; font-family: Inter, sans-serif; font-size: 17px; font-weight: 600; color: #FFFFFF">Share result card</button>
+    <a href="Home.dc.html" style="height: 48px; border-radius: 24px; border: 1px solid #16211B; color: #16211B; text-decoration: none; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px">Make your own quiz walk</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6F4A","options":["#1F6F4A","#1D4ED8","#B4471B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#1F6F4A';
+    const data = [
+      ['Fjord Kids', '47 min', 96, true],
+      ['Harbour Hawks', '52 min', 88, false],
+      ['Munck Jr.', '61 min', 71, false],
+      ['Late Starters', '5/8 stops', 38, false]
+    ];
+    const rows = data.map((d, i) => ({
+      rank: i + 1,
+      name: d[0] + (d[3] ? ' (you)' : ''),
+      detail: d[1],
+      score: d[2],
+      rowStyle: 'display: flex; align-items: center; gap: 12px; min-height: 56px; ' + (i < 3 ? 'border-bottom: 1px solid #EEF1EB; ' : '') + (d[3] ? 'background: #E2F0E7; margin: 0 -16px; padding: 0 16px;' : '')
+    }));
+    return { accent, rows };
+  }
+}
+</script>
+</body>
+</html>

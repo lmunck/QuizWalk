@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Qualk – Live monitor</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6F4A}a:hover{color:#14502F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; background: #E4EAE0; font-family: Inter, system-ui, sans-serif; color: #16211B; overflow: hidden">
+  <svg width="390" height="360" viewBox="0 0 390 360" role="img" aria-label="Map with four teams spread along the route" style="position: absolute; left: 0; top: 0">
+    <rect width="390" height="360" fill="#E4EAE0"></rect>
+    <path d="M0 270 C80 245 120 295 200 280 S330 245 390 262 L390 360 L0 360 Z" fill="#BCD5E4"></path>
+    <path d="M220 70 C290 50 350 100 340 150 C330 190 260 200 230 165 C200 130 180 90 220 70 Z" fill="#CBE0C0"></path>
+    <g stroke="#FFFFFF" stroke-width="8" fill="none"><path d="M0 130 L390 115"></path><path d="M0 210 L390 222"></path><path d="M90 0 L115 270"></path><path d="M200 0 L190 270"></path></g>
+    <path d="M108 245 L104 190 L96 128 L148 122 L200 118 L235 170 L300 195 L330 235 L250 255 L190 262 Z" fill="none" stroke="#1F6F4A" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"></path>
+    <g font-family="Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+      <circle cx="210" cy="132" r="13" fill="#1D4ED8" stroke="#FFFFFF" stroke-width="2"></circle><text x="210" y="136" fill="#FFFFFF">FK</text>
+      <circle cx="300" cy="195" r="13" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"></circle><text x="300" y="199" fill="#FFFFFF">HH</text>
+      <circle cx="140" cy="122" r="13" fill="#B4471B" stroke="#FFFFFF" stroke-width="2"></circle><text x="140" y="126" fill="#FFFFFF">MJ</text>
+      <circle cx="104" cy="175" r="13" fill="#16211B" stroke="#FFFFFF" stroke-width="2"></circle><text x="104" y="179" fill="#FFFFFF">LS</text>
+    </g>
+  </svg>
+  <div style="position: absolute; left: 16px; right: 16px; top: 52px; display: flex; justify-content: space-between; align-items: center">
+    <div style="display: flex; gap: 8px; align-items: center">
+    <a href="Home.dc.html" aria-label="Back to my walks" style="width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16211B" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+    <span style="height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px">
+      <span style="width: 8px; height: 8px; border-radius: 4px; background: #C2410C"></span>Live · 4 teams
+    </span>
+    </div>
+    <span style="height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; font-size: 14px; display: flex; align-items: center">Ends 17:00</span>
+  </div>
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 520px; background: #FFFFFF; border-radius: 24px 24px 0 0; padding: 12px 20px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+    <div style="width: 40px; height: 5px; border-radius: 3px; background: #C9D2C4; align-self: center"></div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">Leaderboard</span>
+      <span style="font-size: 13px; color: #4A5A50">Updated 12 s ago</span>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <sc-for list="{{teams}}" as="t" hint-placeholder-count="4">
+        <a href="TeamDetail.dc.html" style="color: #16211B; text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 64px; border-bottom: 1px solid #E3E8DF">
+          <span style="width: 20px; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #4A5A50">{{t.rank}}</span>
+          <span style="{{t.dot}}">{{t.initials}}</span>
+          <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between">
+              <span style="font-size: 15px; font-weight: 600">{{t.name}}</span>
+              <span style="font-size: 13px; color: #4A5A50">{{t.stops}}/8 stops</span>
+            </div>
+            <div style="height: 6px; border-radius: 3px; background: #E3E8DF; overflow: hidden">
+              <div style="{{t.bar}}"></div>
+            </div>
+          </div>
+          <span style="width: 44px; text-align: right; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700">{{t.score}}</span>
+        </a>
+      </sc-for>
+    </div>
+    <div style="flex-grow: 1"></div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+      <button style="height: 52px; border-radius: 26px; border: 1px solid #16211B; background: transparent; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; color: #16211B">Message all</button>
+      <a href="Results.dc.html" style="height: 52px; border-radius: 26px; background: {{accent}}; color: #FFFFFF; text-decoration: none; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">End walk &amp; score</a>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6F4A","options":["#1F6F4A","#1D4ED8","#B4471B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#1F6F4A';
+    const raw = [
+      { name: 'Fjord Kids', initials: 'FK', color: '#1D4ED8', stops: 5, score: 62 },
+      { name: 'Harbour Hawks', initials: 'HH', color: '#7C3AED', stops: 6, score: 58 },
+      { name: 'Munck Jr.', initials: 'MJ', color: '#B4471B', stops: 3, score: 41 },
+      { name: 'Late Starters', initials: 'LS', color: '#16211B', stops: 1, score: 10 }
+    ];
+    const teams = raw.map((t, i) => ({
+      ...t,
+      rank: i + 1,
+      dot: 'width: 36px; height: 36px; border-radius: 18px; background: ' + t.color + '; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0',
+      bar: 'height: 6px; border-radius: 3px; background: ' + accent + '; width: ' + Math.round(t.stops / 8 * 100) + '%'
+    }));
+    return { accent, teams };
+  }
+}
+</script>
+</body>
+</html>
