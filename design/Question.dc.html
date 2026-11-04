@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Qualk – Checkpoint question</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6F4A}a:hover{color:#14502F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F6F1; font-family: Inter, system-ui, sans-serif; color: #16211B; display: flex; flex-direction: column; overflow: hidden">
+  <div style="padding: 56px 24px 0; display: flex; justify-content: space-between; align-items: center">
+    <span style="height: 32px; padding: 0 12px; border-radius: 16px; background: {{accent}}; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center">Stop 4 · Nyhavn</span>
+    <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700">0:{{seconds}}</span>
+  </div>
+  <div style="padding: 20px 24px 0; display: flex; flex-direction: column; gap: 20px; flex-grow: 1">
+    <div style="width: 100%; height: 96px; border-radius: 20px; background: #DCE5DE; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4A5A50">[Optional photo of the spot]</div>
+    <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.2; letter-spacing: -0.4px">The Nyhavn canal was dug in the 1670s mainly to…</h1>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{answers}}" as="a" hint-placeholder-count="4">
+        <button onClick="{{a.pick}}" style="{{a.style}}">
+          <span style="width: 28px; height: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #C9D2C4; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #16211B; flex-shrink: 0">{{a.key}}</span>
+          <span style="flex-grow: 1; text-align: left">{{a.text}}</span>
+          <span style="font-size: 13px; font-weight: 600">{{a.mark}}</span>
+        </button>
+      </sc-for>
+    </div>
+    <sc-if value="{{answered}}" hint-placeholder-val="{{ false }}">
+      <div style="background: #FFFFFF; border: 1px solid #C9D2C4; border-radius: 14px; padding: 14px 16px; font-size: 14px; line-height: 1.45; color: #2E3B33">{{feedback}}</div>
+    </sc-if>
+  </div>
+  <div style="padding: 12px 24px 28px">
+    <a href="Walk.dc.html" style="height: 56px; border-radius: 28px; background: #16211B; color: #FFFFFF; text-decoration: none; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 17px">Next stop →</a>
+    <a href="Finish.dc.html" style="display: block; text-align: center; padding-top: 12px; font-size: 13px; color: #4A5A50">Prototype: skip to the finish</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6F4A","options":["#1F6F4A","#1D4ED8","#B4471B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { picked: null }; }
+  renderVals() {
+    const accent = this.props.accent ?? '#1F6F4A';
+    const correct = 'A';
+    const picked = this.state.picked;
+    const opts = [
+      { key: 'A', text: 'Bring ships into the city centre' },
+      { key: 'B', text: 'Drain the surrounding marshland' },
+      { key: 'C', text: 'Defend the city against Sweden' },
+      { key: 'D', text: 'Supply water to a royal brewery' }
+    ];
+    const base = 'min-height: 56px; width: 100%; border-radius: 16px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; font-family: Inter, sans-serif; font-size: 16px; color: #16211B; cursor: pointer; box-sizing: border-box; ';
+    const answers = opts.map((o) => {
+      let style = base + 'background: #FFFFFF; border: 1px solid #C9D2C4;';
+      let mark = '';
+      if (picked) {
+        if (o.key === correct) { style = base + 'background: #E2F0E7; border: 2px solid ' + accent + ';'; mark = 'Correct'; }
+        else if (o.key === picked) { style = base + 'background: #FBF1EB; border: 2px solid #B4471B;'; mark = 'Your pick'; }
+      }
+      return { ...o, style, mark, pick: () => { if (!this.state.picked) this.setState({ picked: o.key }); } };
+    });
+    const right = picked === correct;
+    return {
+      accent,
+      seconds: picked ? '14' : '20',
+      answers,
+      answered: !!picked,
+      feedback: right
+        ? '+10 points, +4 speed bonus. Nyhavn was dug 1670–73 to let ships sail right up to Kongens Nytorv.'
+        : 'Not quite. Nyhavn was dug 1670–73 to let ships sail right up to Kongens Nytorv.'
+    };
+  }
+}
+</script>
+</body>
+</html>

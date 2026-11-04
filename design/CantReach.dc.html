@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Qualk – Can't reach this stop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6F4A}a:hover{color:#14502F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; background: #7E8A82; font-family: Inter, system-ui, sans-serif; color: #16211B; overflow: hidden">
+  <svg width="390" height="844" viewBox="0 0 390 844" aria-hidden="true" style="position: absolute; left: 0; top: 0; opacity: 0.35">
+    <rect width="390" height="844" fill="#E4EAE0"></rect>
+    <path d="M0 640 C90 600 160 680 240 650 S350 610 390 630 L390 844 L0 844 Z" fill="#BCD5E4"></path>
+    <g stroke="#FFFFFF" stroke-width="14" fill="none"><path d="M0 420 L390 400"></path><path d="M150 0 L170 640"></path><path d="M0 230 L390 250"></path></g>
+    <circle cx="232" cy="244" r="18" fill="{{accent}}"></circle>
+    <circle cx="200" cy="330" r="10" fill="#1D4ED8"></circle>
+  </svg>
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; background: #FFFFFF; border-radius: 24px 24px 0 0; padding: 12px 20px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+    <div style="width: 40px; height: 5px; border-radius: 3px; background: #C9D2C4; align-self: center"></div>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700">Can't reach stop 4?</span>
+      <span style="font-size: 14px; color: #4A5A50">You're about 90 m away. Pick what fits.</span>
+    </div>
+    <a href="Question.dc.html" style="min-height: 76px; box-sizing: border-box; padding: 12px 16px; border-radius: 16px; border: 2px solid {{accent}}; background: #E2F0E7; color: #16211B; text-decoration: none; display: flex; align-items: center; gap: 14px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="2" aria-hidden="true" style="flex-shrink: 0"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><path d="M9 9.5l2 2 4-4"></path></svg>
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">I'm here – GPS is wrong</span>
+        <span style="font-size: 13px; color: #4A5A50">Opens the question. Allowed within 150 m, no speed bonus.</span>
+      </span>
+    </a>
+    <a href="Walk.dc.html" style="min-height: 76px; box-sizing: border-box; padding: 12px 16px; border-radius: 16px; border: 1px solid #C9D2C4; background: #FFFFFF; color: #16211B; text-decoration: none; display: flex; align-items: center; gap: 14px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16211B" stroke-width="2" aria-hidden="true" style="flex-shrink: 0"><path d="M5 5l9 7-9 7z"></path><path d="M18 5v14"></path></svg>
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">Skip this stop</span>
+        <span style="font-size: 13px; color: #4A5A50">0 points, go straight on to stop 5.</span>
+      </span>
+    </a>
+    <a href="Walk.dc.html" style="min-height: 76px; box-sizing: border-box; padding: 12px 16px; border-radius: 16px; border: 1px solid #C9D2C4; background: #FFFFFF; color: #16211B; text-decoration: none; display: flex; align-items: center; gap: 14px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#93391A" stroke-width="2" aria-hidden="true" style="flex-shrink: 0"><path d="M12 3l9 16H3z"></path><path d="M12 10v4M12 17h.01"></path></svg>
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">The way is blocked</span>
+        <span style="font-size: 13px; color: #4A5A50">Tells Anders, who can move or skip it for everyone.</span>
+      </span>
+    </a>
+    <a href="Walk.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; color: #16211B; text-decoration: none">Keep walking</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6F4A","options":["#1F6F4A","#1D4ED8","#B4471B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#1F6F4A' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Qualk – Edit stop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6F4A}a:hover{color:#14502F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F6F1; font-family: Inter, system-ui, sans-serif; color: #16211B; display: flex; flex-direction: column; overflow: hidden">
+  <div style="padding: 52px 16px 8px; display: flex; align-items: center; justify-content: space-between">
+    <a href="Route.dc.html" style="height: 44px; padding: 0 8px; display: flex; align-items: center; font-size: 16px; color: #16211B; text-decoration: none">Cancel</a>
+    <span style="font-size: 17px; font-weight: 600">Stop 7</span>
+    <a href="Route.dc.html" style="height: 44px; padding: 0 8px; display: flex; align-items: center; font-size: 16px; font-weight: 600; color: {{accent}}; text-decoration: none">Save</a>
+  </div>
+  <div style="padding: 4px 20px 0; display: flex; flex-direction: column; gap: 16px; flex-grow: 1">
+    <div style="position: relative; height: 150px; border-radius: 18px; overflow: hidden">
+      <svg width="350" height="150" viewBox="0 0 350 150" role="img" aria-label="Pin moved from the water to the shore path, with a 40 metre unlock radius" style="display: block">
+        <rect width="350" height="150" fill="#E4EAE0"></rect>
+        <path d="M200 0 C190 50 230 90 210 150 L350 150 L350 0 Z" fill="#BCD5E4"></path>
+        <path d="M60 0 L190 150" stroke="#FFFFFF" stroke-width="10"></path>
+        <path d="M0 70 L200 60" stroke="#FFFFFF" stroke-width="6"></path>
+        <circle cx="236" cy="78" r="9" fill="none" stroke="#93391A" stroke-width="2" stroke-dasharray="3 3"></circle>
+        <path d="M228 78 L200 76" stroke="#93391A" stroke-width="2" stroke-dasharray="3 3"></path>
+        <circle cx="190" cy="76" r="{{radiusPx}}" fill="{{accent}}" fill-opacity="0.14" stroke="{{accent}}" stroke-dasharray="4 5"></circle>
+        <circle cx="190" cy="76" r="14" fill="{{accent}}"></circle>
+        <text x="190" y="81" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle">7</text>
+      </svg>
+      <span style="position: absolute; left: 10px; bottom: 10px; height: 28px; padding: 0 10px; border-radius: 14px; background: #FFFFFF; font-size: 12px; font-weight: 600; display: flex; align-items: center">Snapped to shore path ✓</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="q" style="font-size: 13px; font-weight: 600; color: #4A5A50">Question</label>
+      <textarea id="q" style="height: 64px; box-sizing: border-box; padding: 12px; border-radius: 12px; border: 1px solid #C9D2C4; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #16211B; resize: none">The Little Mermaid statue was unveiled in which year?</textarea>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 13px; font-weight: 600; color: #4A5A50">Answers · tap to mark correct</span>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{answers}}" as="a" hint-placeholder-count="4">
+          <button onClick="{{a.pick}}" style="{{a.style}}">{{a.text}}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 13px; font-weight: 600; color: #4A5A50">Unlock radius</span>
+      <div role="radiogroup" aria-label="Unlock radius" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{radii}}" as="r" hint-placeholder-count="3">
+          <button onClick="{{r.pick}}" style="{{r.style}}">{{r.label}}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="hint" style="font-size: 13px; font-weight: 600; color: #4A5A50">Hint shown on arrival (optional)</label>
+      <input id="hint" value="Look for the bronze figure on the rock" style="height: 48px; box-sizing: border-box; padding: 0 12px; border-radius: 12px; border: 1px solid #C9D2C4; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 15px; color: #16211B">
+    </div>
+  </div>
+  <div style="padding: 12px 20px 36px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+    <button style="height: 52px; border-radius: 26px; border: 1px solid #C9D2C4; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; color: #93391A">Delete stop</button>
+    <button style="height: 52px; border-radius: 26px; border: 1px solid #16211B; background: transparent; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; color: #16211B">New question</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6F4A","options":["#1F6F4A","#1D4ED8","#B4471B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { correct: 0, radius: 40 }; }
+  renderVals() {
+    const accent = this.props.accent ?? '#1F6F4A';
+    const base = 'min-height: 48px; border-radius: 12px; font-family: Inter, sans-serif; font-size: 16px; cursor: pointer; box-sizing: border-box; ';
+    const answers = ['1913', '1889', '1937', '1951'].map((t, i) => ({
+      text: (i === this.state.correct ? '✓ ' : '') + t,
+      style: base + (i === this.state.correct
+        ? 'background: #E2F0E7; border: 2px solid ' + accent + '; color: #16211B; font-weight: 600;'
+        : 'background: #FFFFFF; border: 1px solid #C9D2C4; color: #16211B;'),
+      pick: () => this.setState({ correct: i })
+    }));
+    const radii = [25, 40, 60].map((m) => ({
+      label: m + ' m',
+      style: base + (m === this.state.radius
+        ? 'background: #16211B; border: 0; color: #FFFFFF; font-weight: 600;'
+        : 'background: #FFFFFF; border: 1px solid #C9D2C4; color: #16211B;'),
+      pick: () => this.setState({ radius: m })
+    }));
+    return { accent, answers, radii, radiusPx: Math.round(this.state.radius * 0.9) };
+  }
+}
+</script>
+</body>
+</html>
