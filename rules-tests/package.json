@@ -1,0 +1,22 @@
+{
+  "name": "@qualk/rules-tests",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Firestore security rules tests. Run from the repo root with `npm run test:rules`, which starts the emulator.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test:emulator": "vitest run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@firebase/rules-unit-testing": "^5.0.2",
+    "@types/node": "^22.20.5",
+    "eslint": "^10.14.0",
+    "firebase": "^12.19.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}

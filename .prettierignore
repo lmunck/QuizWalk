@@ -1,0 +1,7 @@
+design/
+docs/
+package-lock.json
+functions/lib/
+app/.expo/
+app/ios/
+app/android/

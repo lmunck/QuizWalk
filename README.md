@@ -6,3 +6,14 @@ Turn any walk into a quiz. Creators generate or write a walk of location-based q
 - Design reference: [`design/`](design/README.md)
 
 Stack: Expo (React Native + TypeScript) for iOS and Android · Firebase (Firestore, Auth, Cloud Functions, Hosting) · OpenRouteService · OpenStreetMap + Wikipedia.
+
+## Development
+
+Node 22 and npm workspaces (`app`, `functions`, `shared`, `rules-tests`).
+
+```bash
+npm install
+npm run typecheck && npm run lint && npm test
+```
+
+Setup status and remaining M0 steps: [`docs/m0-setup.md`](docs/m0-setup.md).
