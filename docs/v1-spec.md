@@ -417,7 +417,7 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [x] **M0** Create an Expo account and give the project access (account `lmunck`, personal; access token saved)
 - [x] **M0** App Store Connect: confirm the old `com.lmunck.Qualk` record exists; create an API key for EAS Submit
 - [ ] **M0** Google Play Console: account ($25) + app `com.lmunck.qualk` (personal account created; blocked on Android device verification, so the 12-tester / 14-day closed test applies before release)
-- [ ] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` added in Firebase Hosting; `www` pending confirmation)
+- [x] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` and `www` connected to Firebase Hosting)
 - [ ] **M1** Google Maps Android API key (same Google Cloud project)
 - [ ] **M4** OpenRouteService API key and OpenRouter API key → stored as Firebase secrets (never pasted into chat or the repo)
 - [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect
