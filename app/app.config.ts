@@ -46,5 +46,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   experiments: {
     typedRoutes: true,
   },
-  // extra.eas.projectId is added after `eas init` (docs/m0-setup.md).
+  extra: {
+    eas: {
+      projectId: 'b4e33e0a-212e-4313-8c1b-90eff42dd744',
+    },
+  },
 });

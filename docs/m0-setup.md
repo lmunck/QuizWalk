@@ -34,11 +34,12 @@ The rules tests need Java 21 or newer for the Firestore emulator.
 
 These need your accounts. Each one will be walked through step by step.
 
-1. **Link the Expo project.** In `app/`, run `npx eas-cli@latest init`. It creates the `@lmunck/qualk` project and prints a project ID. The ID goes into `app/app.config.ts` as `extra.eas.projectId` (it is not secret).
-2. **Register your iPhone** for internal builds: `npx eas-cli@latest device:create`.
-3. **First development builds:** `npx eas-cli@latest build --profile development --platform ios` (and `--platform android` once there is an Android device). EAS creates the signing credentials.
-4. **Android link fingerprints:** after the first Android build, the upload key's SHA-256 goes into `hosting/.well-known/assetlinks.json`. The Play App Signing key's SHA-256 is added once the Play app exists. Until then, Android join links open the web fallback page.
-5. **Deploy hosting and rules** from your Mac: `npx firebase-tools login`, then `npx firebase-tools deploy --only hosting,firestore`.
+Done: the Expo project is linked. `npx eas-cli@latest init` created `@lmunck/qualk`, and its project ID is in `app/app.config.ts` as `extra.eas.projectId` (it is not secret).
+
+1. **Register your iPhone** for internal builds: `npx eas-cli@latest device:create`.
+2. **First development builds:** `npx eas-cli@latest build --profile development --platform ios` (and `--platform android` once there is an Android device). EAS creates the signing credentials.
+3. **Android link fingerprints:** after the first Android build, the upload key's SHA-256 goes into `hosting/.well-known/assetlinks.json`. The Play App Signing key's SHA-256 is added once the Play app exists. Until then, Android join links open the web fallback page.
+4. **Deploy hosting and rules** from your Mac: `npx firebase-tools login`, then `npx firebase-tools deploy --only hosting,firestore`.
 
 ## Not in M0
 
