@@ -1,0 +1,30 @@
+{
+  "name": "qualk",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "app",
+    "functions",
+    "shared",
+    "rules-tests"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-qualk \"npm run test:emulator -w rules-tests\"",
+    "validate:hosting": "node scripts/validate-well-known.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.35.0",
+    "prettier": "^3.9.10"
+  },
+  "overrides": {
+    "react": "19.3.0"
+  }
+}

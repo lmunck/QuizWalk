@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3JMZLMZVTS.com.lmunck.Qualk"],
+        "components": [{ "/": "/play*", "comment": "Join links: /play?code=XXXXX" }]
+      }
+    ]
+  }
+}

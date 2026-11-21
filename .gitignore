@@ -1,0 +1,23 @@
+node_modules/
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+functions/lib/
+
+# Secrets never belong in the repo
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.jks
+*.keystore
+*.mobileprovision
+service-account*.json
+dist-app/

@@ -1,0 +1,8 @@
+design/
+docs/
+package-lock.json
+functions/lib/
+app/.expo/
+app/ios/
+app/android/
+app/expo-env.d.ts

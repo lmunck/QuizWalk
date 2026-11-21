@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Join a QuizWalk</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>QuizWalk</h1>
+      <p id="intro">You have been invited to a quiz walk.</p>
+      <p class="code" id="code" hidden></p>
+      <p class="muted" id="how">
+        Open the QuizWalk app and enter this code to join. The app is coming soon to the App Store
+        and Google Play.
+      </p>
+    </main>
+    <script>
+      // Same alphabet as shared/src/joinCode.ts. Only a valid code is shown.
+      var params = new URLSearchParams(location.search);
+      var code = (params.get('code') || '').replace(/\s+/g, '').toUpperCase();
+      if (/^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{5}$/.test(code)) {
+        var el = document.getElementById('code');
+        el.textContent = code;
+        el.hidden = false;
+      } else {
+        document.getElementById('intro').textContent = 'This link has no valid join code.';
+      }
+    </script>
+  </body>
+</html>
