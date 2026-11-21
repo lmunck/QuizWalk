@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lmunck.qualk",
+      "sha256_cert_fingerprints": [
+        "03:26:18:46:32:F7:0C:69:7B:F1:F2:8C:47:9A:65:9E:69:04:D7:86:39:37:BC:ED:BE:41:8C:7A:88:09:9A:06"
+      ]
+    }
+  }
+]
