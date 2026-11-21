@@ -36,10 +36,25 @@ These need your accounts. Each one will be walked through step by step.
 
 Done: the Expo project is linked. `npx eas-cli@latest init` created `@lmunck/qualk`, and its project ID is in `app/app.config.ts` as `extra.eas.projectId` (it is not secret).
 
+Done: the Android side. The first development build (2026-11-21) created the cloud keystore, installed on the test phone, and loaded a bundle from the dev server. Its upload-key SHA-256 is in `hosting/.well-known/assetlinks.json`, and hosting plus the Firestore rules are deployed — `qualk.dk` and `www.qualk.dk` both serve from Firebase with valid certificates.
+
 1. **Register your iPhone** for internal builds: `npx eas-cli@latest device:create`.
-2. **First development builds:** `npx eas-cli@latest build --profile development --platform ios` (and `--platform android` once there is an Android device). EAS creates the signing credentials.
-3. **Android link fingerprints:** after the first Android build, the upload key's SHA-256 goes into `hosting/.well-known/assetlinks.json`. The Play App Signing key's SHA-256 is added once the Play app exists. Until then, Android join links open the web fallback page.
-4. **Deploy hosting and rules** from your Mac: `npx firebase-tools login`, then `npx firebase-tools deploy --only hosting,firestore`.
+2. **First iOS development build:** `npx eas-cli@latest build --profile development --platform ios`. EAS creates the signing credentials.
+3. **Play App Signing fingerprint:** once the Play app exists, its SHA-256 joins the upload key's in `hosting/.well-known/assetlinks.json`. Until then only directly installed builds verify App Links; Play-installed ones fall back to the web page.
+
+A note for step 3: `keytool -printcert -jarfile` cannot read an EAS APK, because EAS signs with APK signature scheme v2/v3 only and there is no `META-INF` v1 signature. Take the fingerprint from the Play Console (App signing) or from `npx eas-cli@latest credentials`.
+
+### Repeating the builds
+
+```bash
+npx eas-cli@latest build --profile development --platform android
+```
+
+```bash
+npm start -w @qualk/app
+```
+
+The phone needs to be on the same network as the Mac, or on the same tailnet with `REACT_NATIVE_PACKAGER_HOSTNAME` set to the Mac's Tailscale address.
 
 ## Not in M0
 

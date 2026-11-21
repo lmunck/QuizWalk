@@ -416,8 +416,8 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [x] **M0** Create a Firebase project in `europe-west1`, upgrade to Blaze, set a $10 budget alert (project ID `qualk-a173e`; Firestore, Auth with Anonymous/Google/Apple and Hosting enabled)
 - [x] **M0** Create an Expo account and give the project access (account `lmunck`, personal; access token saved)
 - [x] **M0** App Store Connect: confirm the old `com.lmunck.Qualk` record exists; create an API key for EAS Submit
-- [ ] **M0** Google Play Console: account ($25) + app `com.lmunck.qualk` (personal account created; blocked on Android device verification, so the 12-tester / 14-day closed test applies before release)
-- [x] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` and `www` connected to Firebase Hosting)
+- [ ] **M0** Google Play Console: account ($25) + app `com.lmunck.qualk` (personal account created; a test Android device is now available for the verification step that was blocking it. The 12-tester / 14-day closed test applies before release)
+- [x] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` and `www.qualk.dk` both serve from Firebase Hosting with valid certificates, verified 2026-11-21)
 - [ ] **M1** Google Maps Android API key (same Google Cloud project)
 - [ ] **M4** OpenRouteService API key and OpenRouter API key → stored as Firebase secrets (never pasted into chat or the repo)
 - [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect
