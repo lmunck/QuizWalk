@@ -4,6 +4,7 @@ Turn any walk into a quiz. Creators generate or write a walk of location-based q
 
 - Spec: [`docs/v1-spec.md`](docs/v1-spec.md)
 - Design reference: [`design/`](design/README.md)
+- M1 architecture: [`docs/m1-design.md`](docs/m1-design.md)
 
 Stack: Expo (React Native + TypeScript) for iOS and Android · Firebase (Firestore, Auth, Cloud Functions, Hosting) · OpenRouteService · OpenStreetMap + Wikipedia.
 
