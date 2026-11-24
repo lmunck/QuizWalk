@@ -83,5 +83,5 @@ Every iOS build syncs the bundle ID's capabilities from the app config, and toda
 
 ## Not in M0
 
-- React Native Firebase is added in M1. It needs the Firebase iOS and Android app registrations (`GoogleService-Info.plist`, `google-services.json`), which are a manual step to be added to §18.
+- React Native Firebase is added in M1. It needs the Firebase iOS and Android app registrations (`GoogleService-Info.plist`, `google-services.json`), now tracked in §18 along with the SHA-1, App Check and Maps-key steps. The M1 architecture is in [`m1-design.md`](m1-design.md).
 - The privacy page (`/privacy`) is M5.

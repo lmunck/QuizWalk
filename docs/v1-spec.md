@@ -276,7 +276,7 @@ Model IDs are configuration, not code. If fewer than N good places are found, th
 
 ## 10. Maps
 
-- `react-native-maps`. iOS: Apple Maps (no key). Android: Google Maps SDK (free for mobile; key restricted to the app's package and signing certificate).
+- `react-native-maps` (not `expo-maps`, whose Apple Maps markers cannot be dragged — see `docs/m1-design.md` §2). iOS: Apple Maps (no key). Android: Google Maps SDK (free for mobile; key restricted to the app's package and signing certificate).
 - Draggable markers in C4/C5; dropping a pin triggers snapping on save.
 - Route drawn as a polyline from ORS.
 - Attribution "© OpenStreetMap contributors · openrouteservice" shown in C4 and in Settings.
@@ -418,7 +418,11 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [x] **M0** App Store Connect: confirm the old `com.lmunck.Qualk` record exists; create an API key for EAS Submit
 - [ ] **M0** Google Play Console: account ($25) + app `com.lmunck.qualk` (personal account created; a test Android device is now available for the verification step that was blocking it. The 12-tester / 14-day closed test applies before release)
 - [x] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` and `www.qualk.dk` both serve from Firebase Hosting with valid certificates, verified 2026-11-21)
-- [ ] **M1** Google Maps Android API key (same Google Cloud project)
+- [ ] **M1** Register the iOS and Android apps in the Firebase console and download `GoogleService-Info.plist` + `google-services.json` (needed by React Native Firebase; committed to the repo, they hold no secrets)
+- [ ] **M1** Add the Android signing SHA-1 fingerprints to the Firebase Android app (dev/upload key from `npx eas-cli@latest credentials`, and the Play app-signing key once it exists) — Google sign-in on Android fails without them
+- [ ] **M1** Google Maps Android API key (same Google Cloud project), restricted to `com.lmunck.qualk` + the signing SHA-1
+- [ ] **M1** App Check: enable App Attest (iOS) and Play Integrity (Android), and register debug tokens for the dev builds and the emulator
+- [ ] **M2** Push credentials: an FCM V1 service-account key uploaded to Expo for Android; EAS generates the APNs key for iOS
 - [ ] **M4** OpenRouteService API key and OpenRouter API key → stored as Firebase secrets (never pasted into chat or the repo)
 - [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect
 
