@@ -16,17 +16,22 @@ export interface TimestampLike {
 }
 
 export type WalkStatus = 'draft' | 'ready' | 'open' | 'ended';
+/** How long a walk stays open, chosen on Open walk: 12 hours or 7 days. */
+export type WalkOpenFor = 'day' | 'week';
 export type Difficulty = 'kids' | 'mixed' | 'expert';
 export type WalkShape = 'loop' | 'oneway';
 export type PlayMode = 'solo' | 'team';
 export type StopWarning = 'onWater' | 'offPath' | 'unverified';
 export type AnswerKind = 'answered' | 'imHere' | 'skipped';
 
-/** users/{uid} */
+/** users/{uid}. A participant's doc holds only `playing`; creators add the rest on sign-in. */
 export interface UserDoc {
-  displayName: string;
-  createdAt: TimestampLike;
+  /** The creator's name as players see it ("Waiting for Anders"). Asked for at first sign-in. */
+  displayName?: string;
+  createdAt?: TimestampLike;
   pushToken?: string;
+  /** Walks joined on this phone, for Home's Playing section. Not a history. */
+  playing?: string[];
 }
 
 /** joinCodes/{code} */
@@ -47,8 +52,9 @@ export interface WalkDoc {
   ownerUid: string;
   ownerName: string;
   title: string;
-  topic: string;
-  difficulty: Difficulty;
+  /** Generated walks only. */
+  topic?: string;
+  difficulty?: Difficulty;
   status: WalkStatus;
   joinCode?: string;
   modes: { solo: boolean; team: boolean };
@@ -59,8 +65,15 @@ export interface WalkDoc {
   shape: WalkShape;
   route: WalkRoute | null;
   stopCount: number;
+  /**
+   * Start → stop 1 → … → last stop, in metres: the routed distance when `route` exists,
+   * otherwise straight lines (`walkDistanceM`). Kept on the walk so P1 can show it before joining.
+   */
+  distanceM: number;
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
+  /** Set together with `openedAt`. Missing means `day`. */
+  openFor?: WalkOpenFor;
   openedAt?: TimestampLike;
   endedAt?: TimestampLike;
 }
@@ -88,9 +101,14 @@ export interface TeamDoc {
   name: string;
   mode: PlayMode;
   players: number;
+  /** Index into the team colours, picked at join as the least used so far. Never changes. */
+  colorIndex: number;
   pushToken?: string;
   joinedAt: TimestampLike;
+  /** Set once by the app on Start walk. */
   startedAt?: TimestampLike;
+  /** Set by the app on Leave walk after starting; cleared if the team resumes. */
+  leftAt?: TimestampLike;
   finishedAt?: TimestampLike;
   lastSeenAt: TimestampLike;
   /** Written by the app. */

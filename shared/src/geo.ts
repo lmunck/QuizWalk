@@ -25,6 +25,29 @@ export function bearingDeg(a: LatLng, b: LatLng): number {
   return (toDeg(Math.atan2(y, x)) + 360) % 360;
 }
 
+/**
+ * Straight-line length of a walk in metres: start → stop 1 → … → last stop.
+ * The way back to the start is not counted; the game ends at the last stop.
+ */
+export function walkDistanceM(start: LatLng, stopsInOrder: LatLng[]): number {
+  let total = 0;
+  let from = start;
+  for (const stop of stopsInOrder) {
+    total += distanceM(from, stop);
+    from = stop;
+  }
+  return total;
+}
+
+/** P1 says "Ends 2.1 km from the start" when the last stop is further away than this. */
+export const ENDS_AWAY_MIN_M = 300;
+
+/** Distance from the last stop back to the start, or 0 for a walk with no stops. */
+export function endsAwayM(start: LatLng, stopsInOrder: LatLng[]): number {
+  const last = stopsInOrder[stopsInOrder.length - 1];
+  return last ? distanceM(last, start) : 0;
+}
+
 /** §9 Uploads: distance walked ignores poor fixes and jitter. */
 export const DISTANCE_MAX_ACCURACY_M = 30;
 export const DISTANCE_MIN_SEGMENT_M = 5;

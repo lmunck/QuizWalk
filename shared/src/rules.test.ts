@@ -4,8 +4,11 @@ import {
   canUseImHere,
   compareTeams,
   effectiveRadiusM,
+  estimateWalkMinutes,
   scoreAnswer,
   speedBonus,
+  walkEndsAtMs,
+  walkTimeMs,
 } from './rules';
 
 describe('effectiveRadiusM', () => {
@@ -41,9 +44,15 @@ describe('canUnlock', () => {
 });
 
 describe('canUseImHere', () => {
-  it('is allowed up to 150 m', () => {
-    expect(canUseImHere(150)).toBe(true);
-    expect(canUseImHere(151)).toBe(false);
+  it('is allowed up to 150 m with a perfect fix', () => {
+    expect(canUseImHere(150, 0)).toBe(true);
+    expect(canUseImHere(151, 0)).toBe(false);
+  });
+
+  it('gives poor GPS the benefit of the doubt', () => {
+    expect(canUseImHere(300, 150)).toBe(true);
+    expect(canUseImHere(301, 150)).toBe(false);
+    expect(canUseImHere(151, -20)).toBe(false);
   });
 });
 
@@ -86,17 +95,52 @@ describe('compareTeams', () => {
   it('orders by score, then correct count', () => {
     expect(
       rank([
-        { score: 50, correctCount: 4, finishedAtMs: 1 },
-        { score: 60, correctCount: 5, finishedAtMs: 2 },
-        { score: 50, correctCount: 5, finishedAtMs: 3 },
+        { score: 50, correctCount: 4, walkTimeMs: 1 },
+        { score: 60, correctCount: 5, walkTimeMs: 2 },
+        { score: 50, correctCount: 5, walkTimeMs: 3 },
       ]),
     ).toEqual([60005, 50005, 50004]);
   });
 
-  it('then by finish time, with unfinished teams last', () => {
-    const early = { score: 40, correctCount: 4, finishedAtMs: 100 };
-    const late = { score: 40, correctCount: 4, finishedAtMs: 200 };
+  it('then by walk time, with unfinished teams last', () => {
+    const quick = { score: 40, correctCount: 4, walkTimeMs: 100 };
+    const slow = { score: 40, correctCount: 4, walkTimeMs: 200 };
     const unfinished = { score: 40, correctCount: 4 };
-    expect([unfinished, late, early].sort(compareTeams)).toEqual([early, late, unfinished]);
+    expect([unfinished, slow, quick].sort(compareTeams)).toEqual([quick, slow, unfinished]);
+  });
+
+  it('does not penalise a late start', () => {
+    const startedLate = { score: 40, correctCount: 4, walkTimeMs: walkTimeMs(5_000, 5_100) };
+    const startedEarly = { score: 40, correctCount: 4, walkTimeMs: walkTimeMs(0, 200) };
+    expect([startedEarly, startedLate].sort(compareTeams)).toEqual([startedLate, startedEarly]);
+  });
+});
+
+describe('walkTimeMs', () => {
+  it('is undefined until the team has started and finished', () => {
+    expect(walkTimeMs(undefined, 10)).toBeUndefined();
+    expect(walkTimeMs(10, undefined)).toBeUndefined();
+    expect(walkTimeMs(10, 70)).toBe(60);
+    expect(walkTimeMs(70, 10)).toBe(0);
+  });
+});
+
+describe('estimateWalkMinutes', () => {
+  it('is the route at 4.5 km/h plus 2 minutes per stop', () => {
+    expect(estimateWalkMinutes(3000, 8)).toBe(56);
+    expect(estimateWalkMinutes(0, 0)).toBe(0);
+  });
+});
+
+describe('walkEndsAtMs', () => {
+  const HOUR = 60 * 60 * 1000;
+
+  it('ends 12 hours after opening by default', () => {
+    expect(walkEndsAtMs(1_000)).toBe(1_000 + 12 * HOUR);
+    expect(walkEndsAtMs(1_000, 'day')).toBe(1_000 + 12 * HOUR);
+  });
+
+  it('ends 7 days after opening for a week-long walk', () => {
+    expect(walkEndsAtMs(1_000, 'week')).toBe(1_000 + 7 * 24 * HOUR);
   });
 });
