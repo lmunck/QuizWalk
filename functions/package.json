@@ -11,7 +11,8 @@
     "build": "node build.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "test:emulator": "QUALK_EMULATOR_TESTS=1 vitest run"
   },
   "dependencies": {
     "firebase-admin": "^14.5.0",
