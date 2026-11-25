@@ -60,8 +60,12 @@ export function recomputeTeamTotals(answers: SubmittedAnswer[], stops: ScoredSto
   const inPlay = new Map(stops.filter((s) => !s.skippedForAll).map((s) => [s.id, s]));
   const totals: TeamTotals = { score: 0, correctCount: 0, stopsDone: 0, perStop: {} };
   let latestMs: number | undefined;
+  let latestAnyMs: number | undefined;
 
   for (const answer of answers) {
+    if (latestAnyMs === undefined || answer.answeredAtClientMs > latestAnyMs) {
+      latestAnyMs = answer.answeredAtClientMs;
+    }
     const stop = inPlay.get(answer.stopId);
     if (!stop) {
       totals.perStop[answer.stopId] = { points: 0, correct: false };
@@ -83,6 +87,8 @@ export function recomputeTeamTotals(answers: SubmittedAnswer[], stops: ScoredSto
   }
 
   if (inPlay.size > 0 && totals.stopsDone === inPlay.size) totals.finishedAtMs = latestMs;
+  // Every stop it reached was removed for everyone: the team still finished, at its last answer.
+  if (inPlay.size === 0 && answers.length > 0) totals.finishedAtMs = latestAnyMs;
   return totals;
 }
 

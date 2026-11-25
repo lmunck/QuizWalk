@@ -167,3 +167,28 @@ describe('everyoneFinished', () => {
     expect(everyoneFinished([])).toBe(false);
   });
 });
+
+describe('recomputeTeamTotals when every stop is removed', () => {
+  it('still finishes a team that answered, at its last answer', () => {
+    const t = recomputeTeamTotals(
+      [
+        {
+          stopId: 'a',
+          kind: 'answered',
+          choiceIndex: 0,
+          openedAtClientMs: 1_000,
+          answeredAtClientMs: 5_000,
+          elapsedMs: 4_000,
+        },
+      ],
+      [{ id: 'a', correctIndex: 0, skippedForAll: true }],
+    );
+    expect(t).toMatchObject({ score: 0, stopsDone: 0, finishedAtMs: 5_000 });
+  });
+
+  it('does not finish a team that never answered', () => {
+    expect(
+      recomputeTeamTotals([], [{ id: 'a', correctIndex: 0, skippedForAll: true }]).finishedAtMs,
+    ).toBeUndefined();
+  });
+});

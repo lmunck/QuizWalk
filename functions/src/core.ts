@@ -68,6 +68,12 @@ async function readStops(walkRef: DocumentReference): Promise<StopRow[]> {
     .sort((a, b) => a.order - b.order);
 }
 
+/** The owner's current name, so a name set or changed after creating the walk reaches players. */
+async function ownerNameFor(db: Firestore, uid: string, fallback: string): Promise<string> {
+  const name = (await db.doc(`users/${uid}`).get()).data()?.displayName;
+  return typeof name === 'string' && name.trim().length > 0 ? name.trim() : fallback;
+}
+
 /** Checks a walk with the same rules the phone uses, and returns its stop count and distance. */
 async function validated(walkRef: DocumentReference, walk: FirebaseFirestore.DocumentData) {
   const stops = await readStops(walkRef);
@@ -100,9 +106,10 @@ export async function publishWalk(
   random: (n: number) => number = randomInt,
 ): Promise<{ joinCode: string }> {
   const { ref, walk } = await ownedWalk(db, uid, walkId);
+  const ownerName = await ownerNameFor(db, uid, walk.ownerName ?? '');
   if (walk.status === 'ready' && walk.joinCode) {
     const totals = await validated(ref, walk);
-    await ref.update({ ...totals, updatedAt: FieldValue.serverTimestamp() });
+    await ref.update({ ...totals, ownerName, updatedAt: FieldValue.serverTimestamp() });
     return { joinCode: walk.joinCode };
   }
   if (walk.status !== 'draft') {
@@ -122,6 +129,7 @@ export async function publishWalk(
       tx.create(codeRef, { walkId, createdAt: FieldValue.serverTimestamp() });
       tx.update(ref, {
         ...totals,
+        ownerName,
         status: 'ready',
         joinCode: code,
         updatedAt: FieldValue.serverTimestamp(),
@@ -154,6 +162,7 @@ export async function openWalk(
   const openedAt = Timestamp.now();
   await ref.update({
     ...totals,
+    ownerName: await ownerNameFor(db, uid, walk.ownerName ?? ''),
     status: 'open',
     openFor,
     openedAt,

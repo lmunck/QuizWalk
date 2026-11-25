@@ -106,6 +106,8 @@ describe('dates', () => {
     expect(openUntilLabel(opened, 'week')).toBe('Open until Sun 29 Nov');
     expect(openUntilLabel(opened, 'day')).toBe('Ends by 22:00');
     expect(openUntilLabel(opened)).toBe('Ends by 22:00');
+    const evening = new Date(2026, 10, 22, 21, 30).getTime();
+    expect(openUntilLabel(evening, 'day')).toBe('Ends by 09:30 tomorrow');
   });
 });
 

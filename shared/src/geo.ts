@@ -66,3 +66,32 @@ export function shouldUploadPosition(msSinceLastUpload: number, movedM: number):
     msSinceLastUpload >= POSITION_UPLOAD_MIN_INTERVAL_MS && movedM >= POSITION_UPLOAD_MIN_MOVE_M
   );
 }
+
+/**
+ * Where a new stop goes (spec §3 G2): into the leg it lengthens least, or after the last stop.
+ * Returns the 0-based position for the new stop among the existing ones.
+ */
+export function bestInsertIndex(start: LatLng, stopsInOrder: LatLng[], point: LatLng): number {
+  if (stopsInOrder.length === 0) return 0;
+  let best = stopsInOrder.length;
+  const last = stopsInOrder[stopsInOrder.length - 1] as LatLng;
+  let bestCost = distanceM(last, point);
+  let from = start;
+  stopsInOrder.forEach((to, i) => {
+    const cost = distanceM(from, point) + distanceM(point, to) - distanceM(from, to);
+    if (cost < bestCost) {
+      bestCost = cost;
+      best = i;
+    }
+    from = to;
+  });
+  return best;
+}
+
+/** "between 5 and 6", "before stop 1", "after stop 4" for an insert position (1-based words). */
+export function insertPositionLabel(index: number, count: number): string {
+  if (count === 0) return 'as stop 1';
+  if (index === 0) return 'before stop 1';
+  if (index >= count) return `after stop ${count}`;
+  return `between ${index} and ${index + 1}`;
+}

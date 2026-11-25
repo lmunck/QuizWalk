@@ -16,6 +16,7 @@ import { Txt } from '@/components/Txt';
 import { Row, RowGroup, SectionLabel } from '@/components/ui';
 import { leaveWalk } from '@/data/teams';
 import type { Walk } from '@/data/walks';
+import { useOffline } from '@/lib/network';
 import { colors, spacing } from '@/theme/tokens';
 
 import { useStandings } from './standings';
@@ -37,9 +38,8 @@ export function WalkMenu({
 }) {
   const insets = useSafeAreaInsets();
   const { uid } = useAuth();
-  const { standings, fromCache } = useStandings(visible ? walk.id : undefined, {
-    startedOnly: true,
-  });
+  const { standings } = useStandings(visible ? walk.id : undefined, { startedOnly: true });
+  const offline = useOffline();
   const [confirmLeave, setConfirmLeave] = useState(false);
   const [rules, setRules] = useState(false);
 
@@ -67,7 +67,7 @@ export function WalkMenu({
         <ScrollView contentContainerStyle={styles.content}>
           <View style={styles.block}>
             <SectionLabel>Standings so far</SectionLabel>
-            {fromCache ? (
+            {offline ? (
               <Txt variant="caption" color={colors.muted}>
                 Offline: standings update when you are back online.
               </Txt>

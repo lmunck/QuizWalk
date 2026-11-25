@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
+  bestInsertIndex,
+  insertPositionLabel,
   bearingDeg,
   countsTowardsDistance,
   distanceM,
@@ -66,5 +68,36 @@ describe('walkDistanceM and endsAwayM', () => {
   it('measures how far the last stop is from the start', () => {
     expect(endsAwayM(start, [a, b])).toBeCloseTo(distanceM(b, start), 6);
     expect(endsAwayM(start, [])).toBe(0);
+  });
+});
+
+describe('bestInsertIndex', () => {
+  const start = { latitude: 55.68, longitude: 12.59 };
+  const a = { latitude: 55.681, longitude: 12.59 };
+  const b = { latitude: 55.683, longitude: 12.59 };
+
+  it('goes first into an empty walk', () => {
+    expect(bestInsertIndex(start, [], a)).toBe(0);
+  });
+
+  it('goes into the leg it lengthens least', () => {
+    const between = { latitude: 55.682, longitude: 12.5901 };
+    expect(bestInsertIndex(start, [a, b], between)).toBe(1);
+    const nearStart = { latitude: 55.6805, longitude: 12.5901 };
+    expect(bestInsertIndex(start, [a, b], nearStart)).toBe(0);
+  });
+
+  it('goes last when it extends the walk', () => {
+    const beyond = { latitude: 55.685, longitude: 12.59 };
+    expect(bestInsertIndex(start, [a, b], beyond)).toBe(2);
+  });
+});
+
+describe('insertPositionLabel', () => {
+  it('says where a stop went', () => {
+    expect(insertPositionLabel(0, 0)).toBe('as stop 1');
+    expect(insertPositionLabel(0, 3)).toBe('before stop 1');
+    expect(insertPositionLabel(2, 3)).toBe('between 2 and 3');
+    expect(insertPositionLabel(3, 3)).toBe('after stop 3');
   });
 });

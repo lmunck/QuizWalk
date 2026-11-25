@@ -33,6 +33,8 @@ interface ScreenProps {
   scroll?: boolean;
   contentStyle?: StyleProp<ViewStyle>;
   background?: string;
+  /** Presented as a modal sheet (join, sign-in): the keyboard offset accounts for the sheet. */
+  modal?: boolean;
 }
 
 export function Screen({
@@ -46,6 +48,7 @@ export function Screen({
   scroll = true,
   contentStyle,
   background = colors.background,
+  modal,
 }: ScreenProps) {
   const insets = useSafeAreaInsets();
   const goBack = onBack ?? (() => (router.canGoBack() ? router.back() : router.replace('/')));
@@ -66,6 +69,8 @@ export function Screen({
     <KeyboardAvoidingView
       style={[styles.root, { backgroundColor: background }]}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      // An iOS page sheet starts below the status bar, which the keyboard maths does not know.
+      keyboardVerticalOffset={modal && Platform.OS === 'ios' ? insets.top + 10 : 0}
     >
       <View style={{ paddingTop: insets.top }}>
         {hasHeader ? (

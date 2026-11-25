@@ -10,22 +10,20 @@ import {
 import { connectAuthEmulator, getAuth } from '@react-native-firebase/auth';
 import { connectFirestoreEmulator, getFirestore } from '@react-native-firebase/firestore';
 import { connectFunctionsEmulator, getFunctions } from '@react-native-firebase/functions';
-import Constants from 'expo-constants';
-import { Platform } from 'react-native';
 
 import { usingEmulators } from '@/lib/env';
 
 export { usingEmulators };
 
 /**
- * The emulators run on the Mac that serves the JS bundle, so a simulator or a phone on the
- * same network reaches them at the dev server's address.
+ * Where the local emulators are. 127.0.0.1 by default: the iOS simulator shares the Mac's
+ * network, and the Android emulator reaches it after `adb reverse tcp:9099 tcp:9099` (and 8080,
+ * 5001). React Native Firebase only sends auth tokens to callables on a loopback host over HTTP,
+ * so a physical phone can read and write Firestore through EXPO_PUBLIC_EMULATOR_HOST=<Mac's IP>
+ * but cannot call functions; test those on a simulator, or against the real project.
  */
 function emulatorHost(): string {
-  const hostUri = Constants.expoConfig?.hostUri ?? Constants.expoGoConfig?.debuggerHost;
-  const host = hostUri?.split(':')[0];
-  if (host && host.length > 0) return host;
-  return Platform.OS === 'android' ? '10.0.2.2' : '127.0.0.1';
+  return process.env.EXPO_PUBLIC_EMULATOR_HOST || '127.0.0.1';
 }
 
 export const auth = getAuth();

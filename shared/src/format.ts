@@ -107,12 +107,16 @@ export function formatTimeOfDay(ms: number): string {
   return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
 }
 
-/** "Open until Sun 29 Nov" for a week-long walk, "Ends by 21:30" for a day walk. */
+const sameDay = (a: number, b: number) => new Date(a).toDateString() === new Date(b).toDateString();
+
+/**
+ * "Open until Sun 29 Nov" for a week-long walk; "Ends by 21:30" for a day walk, or "Ends by
+ * 09:30 tomorrow" when the 12 hours run past midnight.
+ */
 export function openUntilLabel(openedAtMs: number, openFor: WalkOpenFor = 'day'): string {
   const ends = walkEndsAtMs(openedAtMs, openFor);
-  return openFor === 'week'
-    ? `Open until ${formatDayDate(ends)}`
-    : `Ends by ${formatTimeOfDay(ends)}`;
+  if (openFor === 'week') return `Open until ${formatDayDate(ends)}`;
+  return `Ends by ${formatTimeOfDay(ends)}${sameDay(openedAtMs, ends) ? '' : ' tomorrow'}`;
 }
 
 /** "just now", "6 min ago", "2 h ago". */

@@ -10,18 +10,20 @@ import { ActivityIndicator, Share, StyleSheet, View } from 'react-native';
 import { useAuth } from '@/auth/AuthProvider';
 import { Button } from '@/components/Button';
 import { Leaderboard } from '@/components/Leaderboard';
+import { Podium } from '@/components/Podium';
 import { Screen } from '@/components/Screen';
 import { Txt } from '@/components/Txt';
-import { Banner, Card, EmptyState, SectionLabel } from '@/components/ui';
-import { useWalk } from '@/data/walks';
+import { Banner, EmptyState, SectionLabel } from '@/components/ui';
+import { useStops, useWalk } from '@/data/walks';
 import { useStandings } from '@/features/standings';
 import { rejectedAnswers } from '@/lib/storage';
-import { colors, fonts, spacing } from '@/theme/tokens';
+import { colors, spacing } from '@/theme/tokens';
 
 export default function FinalResults() {
   const { walkId } = useLocalSearchParams<{ walkId: string }>();
   const { uid } = useAuth();
   const walk = useWalk(walkId);
+  const inPlay = useStops(walkId).data.filter((s) => !s.skippedForAll).length;
   const { standings, loading } = useStandings(walkId, { startedOnly: true });
   const [rejected, setRejected] = useState(0);
 
@@ -105,64 +107,14 @@ export default function FinalResults() {
             No team started this walk.
           </Txt>
         ) : (
-          <Leaderboard rows={standings} myId={uid} stopCount={w.stopCount} />
+          <Leaderboard rows={standings} myId={uid} stopCount={inPlay} ended={ended} />
         )}
       </View>
     </Screen>
   );
 }
 
-function Podium({
-  rows,
-}: {
-  rows: { id: string; name: string; rank: number; tied: boolean; score: number }[];
-}) {
-  const order = [rows[1], rows[0], rows[2]];
-  const heights = [96, 128, 76];
-  return (
-    <View
-      style={styles.podium}
-      accessibilityElementsHidden
-      importantForAccessibility="no-hide-descendants"
-    >
-      {order.map((r, i) =>
-        r ? (
-          <View key={r.id} style={styles.podiumCol}>
-            <Txt variant="calloutStrong" numberOfLines={2} center>
-              {r.name}
-            </Txt>
-            <Card dark={i === 1} style={[styles.podiumBlock, { height: heights[i] }]}>
-              <Txt style={styles.podiumRank} color={i === 1 ? colors.white : colors.ink}>
-                {r.tied ? `${r.rank}=` : r.rank}
-              </Txt>
-              <Txt variant="caption" color={i === 1 ? colors.onInkMuted : colors.secondary}>
-                {r.score} pts
-              </Txt>
-            </Card>
-          </View>
-        ) : (
-          <View key={i} style={styles.podiumCol} />
-        ),
-      )}
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
   hero: { gap: spacing.sm, paddingVertical: spacing.md, alignItems: 'center' },
   block: { gap: spacing.sm },
-  podium: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    gap: spacing.sm,
-    marginVertical: spacing.sm,
-  },
-  podiumCol: { flex: 1, gap: spacing.xs, alignItems: 'stretch' },
-  podiumBlock: {
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingTop: spacing.md - 4,
-    gap: 2,
-  },
-  podiumRank: { fontFamily: fonts.heading, fontSize: 28 },
 });

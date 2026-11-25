@@ -53,7 +53,9 @@ export default function Home() {
   }, [mine.data]);
 
   const newWalk = () =>
-    router.push(isCreator ? '/create' : { pathname: '/sign-in', params: { next: 'create' } });
+    router.push(
+      isCreator && displayName ? '/create' : { pathname: '/sign-in', params: { next: 'create' } },
+    );
   const loading = !welcomeChecked || playingWalks.loading || (isCreator && mine.loading);
   const nothing = playingWalks.data.length === 0 && mine.data.length === 0;
 

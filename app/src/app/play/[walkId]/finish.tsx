@@ -25,6 +25,7 @@ import { Banner, Card, SectionLabel } from '@/components/ui';
 import { useAnswers, useTeam } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
 import { useStandings } from '@/features/standings';
+import { useOffline } from '@/lib/network';
 import { colors, fonts, spacing } from '@/theme/tokens';
 
 export default function Finish() {
@@ -34,7 +35,8 @@ export default function Finish() {
   const team = useTeam(walkId, uid);
   const stops = useStops(walkId);
   const answers = useAnswers(walkId, uid);
-  const { standings, fromCache } = useStandings(walkId, { startedOnly: true });
+  const { standings } = useStandings(walkId, { startedOnly: true });
+  const offline = useOffline();
 
   const progress = useMemo(
     () =>
@@ -119,7 +121,7 @@ export default function Finish() {
               : `${mine.tied ? 'Joint ' : ''}${ordinal(mine.rank)} of ${standings.length} so far. Final results appear when ${w.ownerName || 'the creator'} ends the walk${w.openedAt ? ` (${openUntilLabel(w.openedAt.toMillis(), w.openFor).toLowerCase()})` : ''}.`}
           </Txt>
         ) : null}
-        {fromCache ? (
+        {offline ? (
           <Txt variant="caption" color={colors.muted}>
             Offline: the leaderboard updates when you are back online.
           </Txt>

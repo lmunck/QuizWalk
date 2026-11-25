@@ -31,12 +31,15 @@ export function Leaderboard({
   stopCount,
   onPress,
   compact,
+  ended,
 }: {
   rows: LeaderRow[];
   myId?: string;
   stopCount: number;
   onPress?: (id: string) => void;
   compact?: boolean;
+  /** The walk has ended: unfinished teams read "Didn't finish", not "Walking". */
+  ended?: boolean;
 }) {
   return (
     <View style={styles.list} accessibilityRole="list">
@@ -46,9 +49,11 @@ export function Leaderboard({
           ? `${r.correctCount}/${stopCount} right${r.walkTimeMs !== undefined ? ` · ${formatWalkTime(r.walkTimeMs)}` : ''}`
           : r.left
             ? `Left after ${plural(r.stopsDone, 'stop')}`
-            : r.walking
-              ? `Walking · ${r.stopsDone}/${stopCount} stops`
-              : 'Not started';
+            : ended
+              ? `Didn't finish · ${r.stopsDone}/${stopCount} stops`
+              : r.walking
+                ? `Walking · ${r.stopsDone}/${stopCount} stops`
+                : 'Not started';
         const content = (
           <View
             style={[

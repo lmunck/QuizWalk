@@ -201,7 +201,7 @@ export default function Lobby() {
               last
             />
           </RowGroup>
-          {stops.fromCache === false && stops.data.length > 0 ? (
+          {stops.data.length > 0 ? (
             <Txt variant="caption" color={colors.muted} center>
               All {stops.data.length} questions are on your phone, so the walk works offline.
             </Txt>

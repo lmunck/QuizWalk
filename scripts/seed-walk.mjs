@@ -7,6 +7,8 @@
  *   node scripts/seed-walk.mjs --at 55.6761,12.5683 --stops 6 --status open
  *   node scripts/seed-walk.mjs --code K72QX --status ended   # change an existing walk
  *   node scripts/seed-walk.mjs --points "55.68,12.59;55.681,12.592"   # exact stop positions
+ *   node scripts/seed-walk.mjs --code K72QX --team "Harbour Hawks" --answered 2 --blocked
+ *        # a pretend team on an existing walk: started, 2 stops answered, way to the next blocked
  *
  * Options: --at lat,lng (start)  --stops N (2-12)  --spacing metres (default 180)
  *          --status draft|ready|open|ended  --open-for day|week  --owner uid  --title "…"
@@ -30,6 +32,9 @@ const { values: args } = parseArgs({
     owner: { type: 'string', default: 'seed-owner' },
     title: { type: 'string', default: 'Harbour history (seeded)' },
     code: { type: 'string' },
+    team: { type: 'string' },
+    answered: { type: 'string', default: '1' },
+    blocked: { type: 'boolean', default: false },
     project: { type: 'string' },
   },
 });
@@ -131,12 +136,82 @@ async function setStatus(walkRef, walk, status) {
   return { ...walk, ...update };
 }
 
+/** A pretend team that started 10 minutes ago, for testing the creator's monitor alone. */
+async function addTeam(walkRef, name, answered, blocked) {
+  const stops = (await walkRef.collection('stops').orderBy('order').get()).docs;
+  const teams = await walkRef.collection('teams').get();
+  const uid = `seed-team-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+  const teamRef = walkRef.collection('teams').doc(uid);
+  const start = Date.now() - 10 * 60_000;
+  await teamRef.set({
+    name,
+    mode: 'team',
+    players: 3,
+    colorIndex: teams.size % 8,
+    joinedAt: Timestamp.fromMillis(start - 60_000),
+    startedAt: Timestamp.fromMillis(start),
+    lastSeenAt: Timestamp.now(),
+    distanceWalkedM: 180 * answered,
+    score: 0,
+    correctCount: 0,
+    stopsDone: 0,
+  });
+  for (let i = 0; i < Math.min(answered, stops.length); i++) {
+    const s = stops[i].data();
+    const at = start + (i + 1) * 4 * 60_000;
+    // Alternate right and wrong answers so the leaderboard has something to rank.
+    const choiceIndex = i % 2 === 0 ? s.correctIndex : (s.correctIndex + 1) % s.options.length;
+    await teamRef
+      .collection('answers')
+      .doc(stops[i].id)
+      .set({
+        kind: 'answered',
+        choiceIndex,
+        openedAtClient: Timestamp.fromMillis(at - 7_000),
+        answeredAtClient: Timestamp.fromMillis(at),
+        elapsedMs: 7_000,
+      });
+  }
+  const next = stops[Math.min(answered, stops.length - 1)];
+  const loc = next.data().location;
+  await walkRef
+    .collection('positions')
+    .doc(uid)
+    .set({
+      location: new GeoPoint(loc.latitude - 0.0008, loc.longitude + 0.0004),
+      accuracyM: 8,
+      at: Timestamp.now(),
+    });
+  if (blocked && answered < stops.length) {
+    await walkRef.collection('alerts').add({
+      teamUid: uid,
+      stopId: next.id,
+      kind: 'blocked',
+      createdAt: Timestamp.now(),
+      resolved: false,
+    });
+    await teamRef.collection('answers').doc(next.id).set({
+      kind: 'skipped',
+      openedAtClient: Timestamp.now(),
+      answeredAtClient: Timestamp.now(),
+      elapsedMs: 0,
+    });
+  }
+  console.log(
+    `Added team ${name} (${uid}) with ${answered} answers${blocked ? ' and a blocked way' : ''}`,
+  );
+}
+
 async function main() {
   if (args.code) {
     const jc = await db.doc(`joinCodes/${args.code.toUpperCase()}`).get();
     if (!jc.exists) throw new Error(`No walk with code ${args.code}`);
     const ref = db.doc(`walks/${jc.data().walkId}`);
     const walk = (await ref.get()).data();
+    if (args.team) {
+      await addTeam(ref, args.team, Number(args.answered), args.blocked);
+      return;
+    }
     if (args.status) {
       await setStatus(ref, walk, args.status);
       console.log(`Walk ${ref.id} (${args.code}) is now ${args.status}`);

@@ -27,7 +27,7 @@ import { colors, radius, spacing } from '@/theme/tokens';
 
 export default function SignIn() {
   const { next } = useLocalSearchParams<{ next?: string }>();
-  const { isCreator, displayName, userLoaded } = useAuth();
+  const { uid, isCreator, displayName, userLoaded } = useAuth();
   const [step, setStep] = useState<'choose' | 'name'>('choose');
   const [busy, setBusy] = useState<'apple' | 'google' | 'test' | 'name'>();
   const [error, setError] = useState<string>();
@@ -75,15 +75,19 @@ export default function SignIn() {
     }
   };
 
+  // A creator who signed in before but never saved a name is asked for it, and only for it.
+  const nameUid = signedUid ?? (isCreator ? uid : undefined);
+  const askName = step === 'name' || (isCreator && userLoaded && !displayName);
+
   const saveName = async () => {
-    if (!signedUid) return;
+    if (!nameUid) return;
     if (name.trim().length === 0) {
       setError('Add the name players will see.');
       return;
     }
     setBusy('name');
     try {
-      await setDisplayName(signedUid, name);
+      await setDisplayName(nameUid, name);
       done();
     } catch (err) {
       setError(errorMessage(err, 'Could not save your name. Try again.'));
@@ -92,9 +96,10 @@ export default function SignIn() {
     }
   };
 
-  if (step === 'name') {
+  if (askName) {
     return (
       <Screen
+        modal
         back="close"
         largeTitle="What should players call you?"
         footer={
@@ -129,7 +134,7 @@ export default function SignIn() {
   }
 
   return (
-    <Screen back="close" largeTitle="Sign in to create walks">
+    <Screen modal back="close" largeTitle="Sign in to create walks">
       <Txt variant="body" color={colors.secondary}>
         Your walks are kept with your account so you can edit them, open them and see the results.
         Players never need an account.

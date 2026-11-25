@@ -54,12 +54,18 @@ const WALK = 'w1';
 const STOP = 's1';
 
 /** A creator signed in with Google. */
+// The test contexts hand back the compat Firestore, which the modular functions accept.
+const asModular = (db: unknown) => db as Firestore;
 const creator = (uid: string): Firestore =>
-  env.authenticatedContext(uid, { firebase: { sign_in_provider: 'google.com' } }).firestore();
+  asModular(
+    env.authenticatedContext(uid, { firebase: { sign_in_provider: 'google.com' } }).firestore(),
+  );
 /** An anonymous participant. */
 const anon = (uid: string): Firestore =>
-  env.authenticatedContext(uid, { firebase: { sign_in_provider: 'anonymous' } }).firestore();
-const signedOut = (): Firestore => env.unauthenticatedContext().firestore();
+  asModular(
+    env.authenticatedContext(uid, { firebase: { sign_in_provider: 'anonymous' } }).firestore(),
+  );
+const signedOut = (): Firestore => asModular(env.unauthenticatedContext().firestore());
 
 function walkData(overrides: DocumentData = {}): DocumentData {
   return {
@@ -480,7 +486,8 @@ describe('answers: create once by the started team while open, client fields onl
       await setDoc(doc(ctx.firestore(), `walks/${WALK}/stops/s2`), stopData({ order: 1 }));
       await setDoc(doc(ctx.firestore(), `walks/${WALK}/stops/s3`), stopData({ order: 2 }));
     });
-    const { choiceIndex: _unused, ...skipped } = answerData({ kind: 'skipped' });
+    const skipped = answerData({ kind: 'skipped' });
+    delete skipped.choiceIndex;
     await assertSucceeds(setDoc(answerRef(anon(PLAYER), 's2'), skipped));
     await assertSucceeds(setDoc(answerRef(anon(PLAYER), 's3'), answerData({ kind: 'imHere' })));
   });

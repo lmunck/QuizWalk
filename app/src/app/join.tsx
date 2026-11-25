@@ -83,7 +83,7 @@ export default function Join() {
           : undefined;
 
   return (
-    <Screen back="close" largeTitle="Join a walk">
+    <Screen modal back="close" largeTitle="Join a walk">
       <Txt variant="body" color={colors.secondary}>
         Type the 5-letter code from your invite. Scanned a QR code? Then you are already in.
       </Txt>

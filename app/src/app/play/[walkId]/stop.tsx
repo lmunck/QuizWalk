@@ -12,14 +12,13 @@ import {
   walkProgress,
 } from '@qualk/shared';
 import { useKeepAwake } from 'expo-keep-awake';
-import { useNetworkState } from 'expo-network';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAuth } from '@/auth/AuthProvider';
-import { Button } from '@/components/Button';
+import { Button, IconButton } from '@/components/Button';
 import { CantReach } from '@/features/CantReach';
 import { ProgressSegments } from '@/components/game';
 import { Icon } from '@/components/Icon';
@@ -36,6 +35,7 @@ import { simulatePosition, useLocationAccess } from '@/location/position';
 import { useWalkTracking } from '@/location/tracking';
 import { devTools } from '@/lib/env';
 import { buzzArrived } from '@/lib/feedback';
+import { useOffline } from '@/lib/network';
 import { questionOpenedAt } from '@/lib/storage';
 import { colors, fonts, radius, spacing } from '@/theme/tokens';
 
@@ -45,13 +45,14 @@ export default function WalkToStop() {
   const { uid } = useAuth();
   const insets = useSafeAreaInsets();
   const toast = useToast();
-  const network = useNetworkState();
+  const offline = useOffline();
   const walk = useWalk(walkId);
   const team = useTeam(walkId, uid);
   const stops = useStops(walkId);
   const answers = useAnswers(walkId, uid);
   const [access] = useLocationAccess();
   const [menu, setMenu] = useState(false);
+  const [cardH, setCardH] = useState(280);
   const [cantReach, setCantReach] = useState(false);
   const mapRef = useRef<QMapRef>(null);
 
@@ -154,7 +155,6 @@ export default function WalkToStop() {
   if (!me.startedAt) return <Redirect href={`/play/${walkId}/lobby`} />;
   if (progress.finished || !stop) return <Redirect href={`/play/${walkId}/finish`} />;
 
-  const offline = network.isInternetReachable === false || network.isConnected === false;
   const unsent = answers.pendingWrites ?? 0;
   const distance = arrival.distanceM;
   const arrowUsable = heading.reliable && heading.arrowDeg !== undefined;
@@ -177,23 +177,34 @@ export default function WalkToStop() {
       </QMap>
 
       <View style={[styles.top, { top: insets.top + spacing.sm }]}>
-        <Pressable
-          onPress={() => setMenu(true)}
-          accessibilityRole="button"
-          accessibilityLabel={`${w.title}. Stop ${stopNumber} of ${progress.stops.length}, ${progress.localScore} points. Open the walk menu.`}
-          style={({ pressed }) => [styles.headerCard, pressed && { backgroundColor: colors.tint }]}
-        >
-          <View style={styles.headerRow}>
-            <Txt variant="calloutStrong" numberOfLines={1} style={styles.flex}>
-              {w.title}
-            </Txt>
-            <Txt variant="callout" color={colors.secondary}>
-              Stop {stopNumber} of {progress.stops.length} · {progress.localScore} pts
-            </Txt>
-            <Icon name="more" size={20} color={colors.secondary} />
-          </View>
-          <ProgressSegments marks={progress.marks} />
-        </Pressable>
+        <View style={styles.headerRowOuter}>
+          <IconButton
+            icon="back"
+            label="Home. The walk waits for you."
+            tone="surface"
+            onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))}
+          />
+          <Pressable
+            onPress={() => setMenu(true)}
+            accessibilityRole="button"
+            accessibilityLabel={`${w.title}. Stop ${stopNumber} of ${progress.stops.length}, ${progress.localScore} points. Open the walk menu.`}
+            style={({ pressed }) => [
+              styles.headerCard,
+              pressed && { backgroundColor: colors.tint },
+            ]}
+          >
+            <View style={styles.headerRow}>
+              <Txt variant="calloutStrong" numberOfLines={1} style={styles.flex}>
+                {w.title}
+              </Txt>
+              <Txt variant="callout" color={colors.secondary}>
+                Stop {stopNumber} of {progress.stops.length} · {progress.localScore} pts
+              </Txt>
+              <Icon name="more" size={20} color={colors.secondary} />
+            </View>
+            <ProgressSegments marks={progress.marks} />
+          </Pressable>
+        </View>
         {offline ? (
           <Banner
             kind="dark"
@@ -219,7 +230,18 @@ export default function WalkToStop() {
         <LocationNotice access={access} />
       </View>
 
-      <View style={[styles.card, { bottom: Math.max(insets.bottom, spacing.md) + spacing.sm }]}>
+      <View
+        style={[
+          styles.recenter,
+          { bottom: Math.max(insets.bottom, spacing.md) + spacing.sm + cardH + spacing.sm },
+        ]}
+      >
+        <IconButton icon="crosshair" label="Show the stop and me" tone="surface" onPress={fit} />
+      </View>
+      <View
+        style={[styles.card, { bottom: Math.max(insets.bottom, spacing.md) + spacing.sm }]}
+        onLayout={(e) => setCardH(e.nativeEvent.layout.height)}
+      >
         <View style={styles.cardRow}>
           <View
             style={styles.arrowWell}
@@ -305,7 +327,10 @@ const styles = StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   flex: { flex: 1 },
   top: { position: 'absolute', left: spacing.md, right: spacing.md, gap: spacing.sm },
+  headerRowOuter: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  recenter: { position: 'absolute', right: spacing.md },
   headerCard: {
+    flex: 1,
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
     paddingHorizontal: spacing.md,
