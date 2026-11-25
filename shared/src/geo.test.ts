@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { bearingDeg, countsTowardsDistance, distanceM, shouldUploadPosition } from './geo';
+import {
+  bearingDeg,
+  countsTowardsDistance,
+  distanceM,
+  endsAwayM,
+  shouldUploadPosition,
+  walkDistanceM,
+} from './geo';
 
 const o = { latitude: 55, longitude: 12 };
 
@@ -43,5 +50,21 @@ describe('distance walked and uploads', () => {
     expect(shouldUploadPosition(30_000, 20)).toBe(true);
     expect(shouldUploadPosition(29_999, 50)).toBe(false);
     expect(shouldUploadPosition(60_000, 19)).toBe(false);
+  });
+});
+
+describe('walkDistanceM and endsAwayM', () => {
+  const start = { latitude: 55.68, longitude: 12.59 };
+  const a = { latitude: 55.681, longitude: 12.59 };
+  const b = { latitude: 55.682, longitude: 12.59 };
+
+  it('sums start to each stop in order, without the way back', () => {
+    expect(walkDistanceM(start, [a, b])).toBeCloseTo(distanceM(start, a) + distanceM(a, b), 6);
+    expect(walkDistanceM(start, [])).toBe(0);
+  });
+
+  it('measures how far the last stop is from the start', () => {
+    expect(endsAwayM(start, [a, b])).toBeCloseTo(distanceM(b, start), 6);
+    expect(endsAwayM(start, [])).toBe(0);
   });
 });
