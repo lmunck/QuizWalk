@@ -141,7 +141,9 @@ cd app && npx eas-cli@latest build --profile preview --platform all
 ```
 
 Each takes 30–45 minutes the first time. Every native module the plan needs is already in, so
-later changes are JavaScript only.
+later changes are JavaScript only: the development build keeps working with the dev server,
+and testers' `preview` builds are made again to pick up a new version (over-the-air updates
+are not set up).
 
 **Installing the Android preview build** (first Android phone):
 
