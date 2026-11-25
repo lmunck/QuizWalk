@@ -41,11 +41,14 @@ export function useWalkTracking(opts: {
       const now = Date.now();
       if (lastCounted) {
         const seg = distanceM(lastCounted, fix);
-        if (countsTowardsDistance(seg, fix.accuracyM)) {
+        const seconds = (fix.atMs - lastCounted.atMs) / 1000;
+        if (countsTowardsDistance(seg, fix.accuracyM, seconds)) {
           walked += seg;
-          lastCounted = fix;
           dirty = true;
         }
+        // A jump is not walked, but the walk continues from wherever a good fix now puts the
+        // phone. Short or imprecise steps keep the old anchor until they add up.
+        if (seg >= 5 && fix.accuracyM <= 30) lastCounted = fix;
       } else if (fix.accuracyM <= 30) {
         lastCounted = fix;
       }

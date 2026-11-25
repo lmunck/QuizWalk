@@ -24,6 +24,7 @@ import { Txt } from '@/components/Txt';
 import { Banner, Field, Segmented } from '@/components/ui';
 import { deleteStop, updateStop, useStops, useWalk, type Stop } from '@/data/walks';
 import { MovePin } from '@/features/MovePin';
+import { useOffline } from '@/lib/network';
 import { colors, minTouchTarget, radius, spacing, type as typeScale } from '@/theme/tokens';
 
 interface Draft {
@@ -86,6 +87,7 @@ function Editor({
   const walk = useWalk(walkId).data;
   const [draft, setDraft] = useState<Draft>(() => fromStop(stop));
   const [movingPin, setMovingPin] = useState(false);
+  const offline = useOffline();
   const [confirm, setConfirm] = useState<'discard' | 'delete'>();
   const number = stops.findIndex((s) => s.id === stop.id) + 1;
   const original = fromStop(stop);
@@ -138,6 +140,13 @@ function Editor({
       }
       footer={<Button label="Save stop" large onPress={save} />}
     >
+      {offline ? (
+        <Banner
+          kind="warning"
+          icon="offline"
+          text="You're offline. Saved changes are sent when you're back online."
+        />
+      ) : null}
       <Pressable
         onPress={() => setMovingPin(true)}
         accessibilityRole="button"

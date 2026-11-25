@@ -262,14 +262,18 @@ async function main() {
   const batch = db.batch();
   points.forEach((p, i) => {
     const q = QUESTIONS[i % QUESTIONS.length];
+    // Shuffle the answers so the right one is not always A.
+    const order = q[1].map((_, k) => k).sort(() => Math.random() - 0.5);
+    const options = order.map((k) => q[1][k]);
+    const correctIndex = order.indexOf(q[2]);
     batch.set(walkRef.collection('stops').doc(), {
       order: i,
       location: new GeoPoint(p[0], p[1]),
       placeName: `Stop ${i + 1}`,
       radiusM: 40,
       question: q[0],
-      options: q[1],
-      correctIndex: q[2],
+      options,
+      correctIndex,
       explanation: q[3],
       ...(i === 0 ? { hint: 'Look for the big anchor by the water.' } : {}),
       origin: 'manual',

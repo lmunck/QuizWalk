@@ -115,7 +115,11 @@ export default function Lobby() {
             <Txt variant="callout" color={colors.secondary}>
               {[
                 w.startLabel || 'Start pin',
-                toStart !== undefined ? `${formatDistance(toStart)} away` : null,
+                toStart === undefined
+                  ? null
+                  : toStart < 30
+                    ? "You're at the start"
+                    : `${formatDistance(toStart)} away`,
               ]
                 .filter(Boolean)
                 .join(' · ')}

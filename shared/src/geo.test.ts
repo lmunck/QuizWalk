@@ -101,3 +101,11 @@ describe('insertPositionLabel', () => {
     expect(insertPositionLabel(3, 3)).toBe('after stop 3');
   });
 });
+
+describe('countsTowardsDistance with time', () => {
+  it('ignores GPS jumps faster than anyone walks', () => {
+    expect(countsTowardsDistance(30, 8, 20)).toBe(true);
+    expect(countsTowardsDistance(150, 5, 2)).toBe(false);
+    expect(countsTowardsDistance(150, 5)).toBe(true);
+  });
+});

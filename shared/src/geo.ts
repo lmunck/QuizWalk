@@ -52,9 +52,23 @@ export function endsAwayM(start: LatLng, stopsInOrder: LatLng[]): number {
 export const DISTANCE_MAX_ACCURACY_M = 30;
 export const DISTANCE_MIN_SEGMENT_M = 5;
 
-/** Whether a segment between two fixes counts towards `distanceWalkedM`. */
-export function countsTowardsDistance(segmentM: number, accuracyM: number): boolean {
-  return accuracyM <= DISTANCE_MAX_ACCURACY_M && segmentM >= DISTANCE_MIN_SEGMENT_M;
+/** Faster than this between two fixes is a GPS jump, not walking (7 m/s ≈ 25 km/h). */
+export const DISTANCE_MAX_SPEED_M_PER_S = 7;
+
+/**
+ * Whether a segment between two fixes counts towards `distanceWalkedM`. With the seconds
+ * between the fixes, a segment covered faster than anyone walks is ignored as a GPS jump.
+ */
+export function countsTowardsDistance(
+  segmentM: number,
+  accuracyM: number,
+  seconds?: number,
+): boolean {
+  if (accuracyM > DISTANCE_MAX_ACCURACY_M || segmentM < DISTANCE_MIN_SEGMENT_M) return false;
+  if (seconds !== undefined && segmentM / Math.max(seconds, 1) > DISTANCE_MAX_SPEED_M_PER_S) {
+    return false;
+  }
+  return true;
 }
 
 /** §9 Uploads: `positions/{uid}` is written at most every 30 s and only after moving ≥ 20 m. */

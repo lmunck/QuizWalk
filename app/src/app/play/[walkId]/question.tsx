@@ -119,7 +119,14 @@ export default function Question() {
 
   const header = (
     <View style={[styles.header, { paddingTop: insets.top + spacing.sm }]}>
-      <Pill label={`Stop ${number} of ${total} · ${stop.placeName || 'Stop'}`} tone="accent" />
+      <Pill
+        label={
+          stop.placeName && stop.placeName !== `Stop ${number}`
+            ? `Stop ${number} of ${total} · ${stop.placeName}`
+            : `Stop ${number} of ${total}`
+        }
+        tone="accent"
+      />
     </View>
   );
 

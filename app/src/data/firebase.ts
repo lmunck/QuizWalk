@@ -36,13 +36,15 @@ if (usingEmulators) {
   connectFirestoreEmulator(db, host, 8080);
   connectFunctionsEmulator(functions, host, 5001);
 } else {
-  // Debug builds use a debug token registered in the Firebase console (spec §18); release
-  // builds use App Attest and Play Integrity.
+  // Dev builds use a debug token registered in the Firebase console (spec §18); store builds
+  // use App Attest and Play Integrity. Test builds handed to testers before the Play Console
+  // app exists set EXPO_PUBLIC_APP_CHECK_PROVIDER=debug (see docs/user-testing.md).
   const debugToken = process.env.EXPO_PUBLIC_APP_CHECK_DEBUG_TOKEN || undefined;
+  const useDebug = __DEV__ || process.env.EXPO_PUBLIC_APP_CHECK_PROVIDER === 'debug';
   const provider = new ReactNativeFirebaseAppCheckProvider();
   provider.configure({
-    android: { provider: __DEV__ ? 'debug' : 'playIntegrity', debugToken },
-    apple: { provider: __DEV__ ? 'debug' : 'appAttestWithDeviceCheckFallback', debugToken },
+    android: { provider: useDebug ? 'debug' : 'playIntegrity', debugToken },
+    apple: { provider: useDebug ? 'debug' : 'appAttestWithDeviceCheckFallback', debugToken },
   });
   try {
     initializeAppCheck(getApp(), { provider, isTokenAutoRefreshEnabled: true });

@@ -216,7 +216,7 @@ function PlayingCard({ walk, uid }: { walk: Walk; uid: string }) {
         {walk.status === 'ended' ? (
           <Pill label="Results" tone="success" icon="trophy" />
         ) : live ? (
-          <Pill label="Walking" tone="live" />
+          <Pill label="Walking" tone="accent" />
         ) : null}
       </View>
       <Txt variant="callout" color={live ? colors.onInkMuted : colors.secondary}>
@@ -379,7 +379,10 @@ function CreatorLine({ walk }: { walk: Walk }) {
   const teams = useTeams(needsTeams ? walk.id : undefined).data;
   let line: string;
   if (walk.status === 'draft') {
-    line = `${plural(walk.stopCount, 'stop')} · ${formatDistance(walk.distanceM)}`;
+    line =
+      walk.stopCount === 0
+        ? 'No stops yet'
+        : `${plural(walk.stopCount, 'stop')} · ${formatDistance(walk.distanceM)}`;
   } else if (walk.status === 'ready') {
     line = `Code ${walk.joinCode ?? '…'} · ${plural(teams.length, 'team')} joined`;
   } else {
@@ -390,9 +393,13 @@ function CreatorLine({ walk }: { walk: Walk }) {
       })),
     );
     const winner = ranked[0];
-    line = winner
-      ? `${plural(teams.length, 'team')} · won by ${winner.tied ? `${winner.name} and others` : winner.name}`
-      : 'No teams played';
+    line = !winner
+      ? 'No teams played'
+      : winner.score === 0
+        ? `${plural(teams.length, 'team')} · no points scored`
+        : winner.tied
+          ? `${plural(teams.length, 'team')} · shared first place`
+          : `${plural(teams.length, 'team')} · won by ${winner.name}`;
   }
   return (
     <Txt variant="caption" color={colors.secondary} numberOfLines={1}>

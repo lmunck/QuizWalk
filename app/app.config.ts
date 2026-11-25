@@ -110,6 +110,10 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ['react-native-maps', androidMapsKey ? { androidGoogleMapsApiKey: androidMapsKey } : {}],
     'expo-sharing',
     'expo-font',
+    [
+      'expo-splash-screen',
+      { image: './assets/splash-icon.png', imageWidth: 168, backgroundColor: '#F4F6F1' },
+    ],
   ],
   // Typed routes are off: CI typechecks without a dev server to generate the route types.
   experiments: {

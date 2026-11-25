@@ -2,7 +2,9 @@ import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold } from '@expo-goog
 import { SpaceGrotesk_500Medium, SpaceGrotesk_700Bold } from '@expo-google-fonts/space-grotesk';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
+import { useEffect } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -11,6 +13,9 @@ import { AuthProvider, useAuth } from '@/auth/AuthProvider';
 import { EmptyState } from '@/components/ui';
 import { ToastProvider } from '@/components/Toast';
 import { colors } from '@/theme/tokens';
+
+// The splash stays up until fonts and the anonymous sign-in are ready (Gate hides it).
+void SplashScreen.preventAutoHideAsync().catch(() => undefined);
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
@@ -39,6 +44,10 @@ export default function RootLayout() {
  */
 function Gate() {
   const { uid, loading, error } = useAuth();
+  const ready = (!loading && !!uid) || !!error;
+  useEffect(() => {
+    if (ready) void SplashScreen.hideAsync().catch(() => undefined);
+  }, [ready]);
   if (error && !uid) {
     return (
       <View style={styles.center}>

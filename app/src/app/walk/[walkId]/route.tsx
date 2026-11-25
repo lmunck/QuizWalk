@@ -57,6 +57,7 @@ import {
   type Stop,
 } from '@/data/walks';
 import { PlaceSearch } from '@/features/PlaceSearch';
+import { useOffline } from '@/lib/network';
 import { currentPlace, labelFor } from '@/location/places';
 import { colors, fonts, radius, spacing } from '@/theme/tokens';
 
@@ -74,6 +75,7 @@ export default function RouteBuilder() {
   const [blocked, setBlocked] = useState<{ message: string; stopId?: string }[]>();
   const [publishing, setPublishing] = useState(false);
   const [title, setTitle] = useState<string>();
+  const offline = useOffline();
 
   const problems = useMemo(
     () => (walk.data ? walkProblems(walk.data, stops.data) : { blocking: [], warnings: [] }),
@@ -284,6 +286,13 @@ export default function RouteBuilder() {
         }
       >
         <ScrollView contentContainerStyle={styles.list}>
+          {offline ? (
+            <Banner
+              kind="warning"
+              icon="offline"
+              text="You're offline. Edits are kept on this phone and sent when you're back online. Publishing needs a connection."
+            />
+          ) : null}
           {list.length === 0 ? (
             <Banner
               kind="info"

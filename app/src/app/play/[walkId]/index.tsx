@@ -177,10 +177,14 @@ export default function JoinWalk() {
           <Fact icon="pin" text={`Ends ${formatDistance(summary.endsAway)} from the start`} />
         ) : null}
         {w.whenText ? <Fact icon="users" text={`When: ${w.whenText}`} /> : null}
-        {w.status === 'open' && w.openFor === 'week' && w.openedAt ? (
+        {w.status === 'open' && w.openedAt ? (
           <Fact
-            icon="clock"
-            text={`${openUntilLabel(w.openedAt.toMillis(), 'week')}. Walk it when it suits you.`}
+            icon="play"
+            text={
+              w.openFor === 'week'
+                ? `Open now. ${openUntilLabel(w.openedAt.toMillis(), 'week')}. Walk it when it suits you.`
+                : `Open now · ${openUntilLabel(w.openedAt.toMillis(), 'day').toLowerCase()}`
+            }
           />
         ) : null}
         <Fact icon="pin" text={`Starts at ${w.startLabel || 'the start pin'}`} />
@@ -263,7 +267,7 @@ function seededRandom(seed: number): () => number {
   };
 }
 
-function Fact({ icon, text }: { icon: 'flag' | 'clock' | 'pin' | 'users'; text: string }) {
+function Fact({ icon, text }: { icon: 'flag' | 'clock' | 'pin' | 'users' | 'play'; text: string }) {
   if (!text) return null;
   return (
     <View style={styles.fact}>
