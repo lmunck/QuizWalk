@@ -100,9 +100,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/auth',
     '@react-native-firebase/app-check',
     // RNFirebase v27 is SPM-only, which needs dynamic frameworks. `static` breaks pod install.
+    // Firebase Auth 25 for Android ships Kotlin 2.4 metadata, which React Native's default
+    // Kotlin 2.2 cannot read; 2.4.0 is also RNFirebase's own default. Expo picks the KSP version.
     [
       'expo-build-properties',
-      { ios: { useFrameworks: 'dynamic' }, android: { minSdkVersion: 24 } },
+      {
+        ios: { useFrameworks: 'dynamic' },
+        android: { minSdkVersion: 24, kotlinVersion: '2.4.0' },
+      },
     ],
     'expo-router',
     [
