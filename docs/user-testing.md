@@ -68,7 +68,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | Android `preview` built on 2026-11-26 ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/ac5f83b8-d91f-483a-9426-8bc49cc103a8)), after moving Android to Kotlin 2.4.0 for Firebase Auth 25. iPhone: needs you once (below), then builds. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | Android `preview` built on 2026-11-26 ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/ac5f83b8-d91f-483a-9426-8bc49cc103a8)), after moving Android to Kotlin 2.4.0 for Firebase Auth 25. iPhone `preview` built the same day ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/586e20d8-6e53-4f5d-8a65-76c047d3b6c6)) after your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
@@ -176,7 +176,8 @@ Answer **Yes** to logging in to your Apple account, then type your Apple ID, pas
 two-factor code. EAS turns on the two capabilities for `com.lmunck.Qualk` and makes a new profile;
 answer **Yes** if it asks to replace the old one. If it offers to set up push notifications,
 **Yes** lets the test try push as well. Later builds, including the `development` one, work
-without you.
+without you. (Done on 2026-11-26: both capabilities on, profile regenerated, push key
+assigned.)
 
 Each takes 30–45 minutes the first time. Every native module the plan needs is already in, so
 later changes are JavaScript only: the development build keeps working with the dev server,
