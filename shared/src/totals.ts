@@ -124,6 +124,17 @@ export function rankTeams<T extends NamedTeam>(teams: T[]): RankedTeam<T>[] {
   return ranked;
 }
 
+/**
+ * The teams on a share card: the top `max` of a ranked list. When `teamId` is further down, it
+ * takes the last place in the list, so a team's own card always shows the team.
+ */
+export function cardRows<T extends { id: string }>(ranked: T[], max: number, teamId?: string): T[] {
+  const top = ranked.slice(0, Math.max(0, max));
+  if (teamId === undefined || max < 1 || top.some((t) => t.id === teamId)) return top;
+  const mine = ranked.find((t) => t.id === teamId);
+  return mine ? [...ranked.slice(0, max - 1), mine] : top;
+}
+
 /** A team is still walking if it has started and has neither finished nor left. */
 export function isWalking(t: {
   startedAt?: unknown;

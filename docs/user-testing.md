@@ -216,13 +216,13 @@ Hand over a code, say nothing else, and watch. Note every hesitation.
 5. At one stop, open **Can't reach it** and try **I'm here** or **Skip**.
 6. Put one phone in airplane mode for a stop, answer, switch back. Does the score catch up?
 7. Force-quit the app mid-walk, reopen, continue from Home.
-8. Finish, look at the standings, wait for the final results.
+8. Finish, look at the standings, wait for the final results, and share the result card.
 
 **Creator:**
 
 1. Create a walk by hand with 3–5 stops: long-press the map, search a place, or Add stop here.
 2. Write questions; try Preview; publish; share the invite.
-3. Open the walk (Today), watch the monitor, end the walk, read the results.
+3. Open the walk (Today), watch the monitor, end the walk, read the results and share them.
 
 **Write down:** stops that unlocked early, late or never (and the GPS accuracy the walk screen
 showed), anything that read wrongly, battery use over the walk, and anything the tester asked
@@ -238,6 +238,7 @@ about.
 | Routes are straight lines between pins, "as the crow flies" | Walking routes need the OpenRouteService key | M4 |
 | No AI-generated walks | M4 | M4 |
 | Push notifications are written but untested | Needs the push credentials (spec §18, M2) and a real phone | M2 |
-| Result share is text, not an image card | Image cards are M2 | M2 |
+| Builds from 26 Nov share results as text | The image share cards (results, standings so far, invite picture) came after those builds, and there are no over-the-air updates | Next build |
+| On Android, *Share invite* sends the message and link without the picture; the picture is *Share as a picture* on the Share screen | Android's share sheet takes text or a file, not both. iOS sends all three together | — |
 | No account deletion or privacy page | M5 | M5 |
 | Reorder stops with Move up / Move down only (no drag handle yet) | Kept simple and accessible for the first test | Later |

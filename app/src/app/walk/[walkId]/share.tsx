@@ -1,6 +1,7 @@
 /**
  * C6 Share: join code, QR, link, Play as, players per team, an optional "When" line, the live
- * list of joined teams, Share invite, and Open walk behind a confirm (spec §3 C6).
+ * list of joined teams, Share invite (message, link and a picture of the code), and Open walk
+ * behind a confirm (spec §3 C6).
  */
 import { plural } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
@@ -15,7 +16,7 @@ import { Txt } from '@/components/Txt';
 import { Field, Row, RowGroup, SectionLabel, Segmented, Stepper } from '@/components/ui';
 import { useTeams } from '@/data/teams';
 import { updateWalk, useWalk, type Walk } from '@/data/walks';
-import { CodeCard, shareInvite } from '@/features/Invite';
+import { CodeCard, useInvite } from '@/features/Invite';
 import { OpenWalkDialog } from '@/features/OpenWalkDialog';
 import { colors, radius, spacing } from '@/theme/tokens';
 
@@ -26,6 +27,7 @@ export default function ShareWalk() {
   const { uid } = useAuth();
   const walk = useWalk(walkId);
   const teams = useTeams(walkId);
+  const invite = useInvite(walk.data);
   const [opening, setOpening] = useState(false);
 
   if (walk.loading) {
@@ -50,7 +52,14 @@ export default function ShareWalk() {
       onBack={() => router.replace('/')}
       footer={
         <>
-          <Button label="Share invite" icon="share" large onPress={() => void shareInvite(w)} />
+          {invite.card}
+          <Button
+            label="Share invite"
+            icon="share"
+            large
+            loading={invite.busy === 'invite'}
+            onPress={() => void invite.invite()}
+          />
           <Button label="Open walk…" kind="secondary" large onPress={() => setOpening(true)} />
         </>
       }
@@ -58,6 +67,12 @@ export default function ShareWalk() {
       <CodeCard walk={w} />
 
       <RowGroup>
+        <Row
+          icon="share"
+          label="Share as a picture"
+          detail="Title, code and QR, to post or print"
+          onPress={() => void invite.image()}
+        />
         <Row
           icon="edit"
           label="Edit route and questions"

@@ -1,23 +1,32 @@
 /**
  * C9 Results: podium and stats. Tapping a team opens C8. Reuse walk duplicates it as a new
- * draft; Share results shares the standings (spec §3 C9).
+ * draft; Share results shares an image card of the standings (spec §3 C9).
  */
-import { plural } from '@qualk/shared';
+import {
+  cardRows,
+  formatDayDate,
+  leadersHeadline,
+  moreTeamsLabel,
+  plural,
+  resultsLabel,
+} from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { ActivityIndicator, Share, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { useAuth } from '@/auth/AuthProvider';
 import { Button } from '@/components/Button';
 import { Leaderboard } from '@/components/Leaderboard';
 import { Podium } from '@/components/Podium';
 import { Screen } from '@/components/Screen';
+import { OffscreenCard, ResultCard } from '@/components/ShareCard';
 import { useToast } from '@/components/Toast';
 import { Txt } from '@/components/Txt';
 import { Card, SectionLabel } from '@/components/ui';
 import { duplicateWalk } from '@/data/callables';
 import { errorMessage } from '@/data/errors';
 import { useStops, useWalk } from '@/data/walks';
+import { useShareCard } from '@/features/shareCard';
 import { useStandings } from '@/features/standings';
 import { colors, fonts, spacing } from '@/theme/tokens';
 
@@ -29,6 +38,7 @@ export default function Results() {
   const inPlay = useStops(walkId).data.filter((s) => !s.skippedForAll).length;
   const { standings, loading } = useStandings(walkId, { startedOnly: true });
   const [copying, setCopying] = useState(false);
+  const card = useShareCard('Share results');
 
   if (walk.loading || loading) {
     return (
@@ -58,14 +68,9 @@ export default function Results() {
     }
   };
 
-  const share = () => {
-    const lines = standings
-      .slice(0, 8)
-      .map(
-        (s) => `${s.tied ? `${s.rank}=` : `${s.rank}.`} ${s.name} – ${plural(s.score, 'point')}`,
-      );
-    void Share.share({ message: `QuizWalk “${w.title}”: final results\n\n${lines.join('\n')}` });
-  };
+  const final = w.status === 'ended';
+  const rows = cardRows(standings, 5);
+  const day = (w.endedAt ?? w.openedAt)?.toMillis();
 
   return (
     <Screen
@@ -73,6 +78,19 @@ export default function Results() {
       onBack={() => router.replace('/')}
       footer={
         <View style={styles.footer}>
+          <OffscreenCard shotRef={card.shotRef}>
+            <ResultCard
+              kicker={`${resultsLabel(final)} · ${w.title}`}
+              headline={leadersHeadline(
+                standings.filter((s) => s.rank === 1).map((s) => s.name),
+                final,
+              )}
+              subline={`${plural(standings.length, 'team')} · ${plural(inPlay, 'stop')}`}
+              rows={rows}
+              more={moreTeamsLabel(standings.length, rows.length)}
+              note={day !== undefined ? formatDayDate(day) : undefined}
+            />
+          </OffscreenCard>
           <Button
             label="Reuse walk"
             icon="copy"
@@ -85,7 +103,8 @@ export default function Results() {
             label="Share results"
             icon="share"
             style={styles.flex}
-            onPress={share}
+            loading={card.sharing}
+            onPress={() => void card.share()}
             disabled={standings.length === 0}
           />
         </View>

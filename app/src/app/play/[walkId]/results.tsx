@@ -1,20 +1,32 @@
 /**
  * P6 Final results: the final leaderboard with shared ranks, a headline that fits the result,
- * and a note if answers were still unsent when the walk ended (spec §3 P6, §4).
+ * a result card to share as an image, and a note if answers were still unsent when the walk
+ * ended (spec §3 P6, §4).
  */
-import { formatDistance, plural, resultHeadline } from '@qualk/shared';
+import {
+  cardRows,
+  cardStats,
+  formatDayDate,
+  formatDistance,
+  moreTeamsLabel,
+  plural,
+  resultHeadline,
+  resultsLabel,
+} from '@qualk/shared';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Share, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { useAuth } from '@/auth/AuthProvider';
 import { Button } from '@/components/Button';
 import { Leaderboard } from '@/components/Leaderboard';
 import { Podium } from '@/components/Podium';
 import { Screen } from '@/components/Screen';
+import { OffscreenCard, ResultCard } from '@/components/ShareCard';
 import { Txt } from '@/components/Txt';
 import { Banner, EmptyState, SectionLabel } from '@/components/ui';
 import { useStops, useWalk } from '@/data/walks';
+import { useShareCard } from '@/features/shareCard';
 import { useStandings } from '@/features/standings';
 import { rejectedAnswers } from '@/lib/storage';
 import { colors, spacing } from '@/theme/tokens';
@@ -26,6 +38,7 @@ export default function FinalResults() {
   const inPlay = useStops(walkId).data.filter((s) => !s.skippedForAll).length;
   const { standings, loading } = useStandings(walkId, { startedOnly: true });
   const [rejected, setRejected] = useState(0);
+  const card = useShareCard('Share result');
 
   useEffect(() => {
     void rejectedAnswers(walkId).then((r) => setRejected(r.length));
@@ -52,16 +65,8 @@ export default function FinalResults() {
     ? resultHeadline(mine.name, mine.rank, mine.tied, standings.length)
     : `${w.title}: final results`;
 
-  const share = () => {
-    const lines = standings
-      .slice(0, 5)
-      .map(
-        (s) => `${s.tied ? `${s.rank}=` : `${s.rank}.`} ${s.name} – ${plural(s.score, 'point')}`,
-      );
-    void Share.share({
-      message: `${headline} on the QuizWalk “${w.title}”!\n\n${lines.join('\n')}`,
-    });
-  };
+  const rows = cardRows(standings, 4, mine?.id);
+  const day = (w.endedAt ?? w.openedAt)?.toMillis();
 
   return (
     <Screen
@@ -69,7 +74,28 @@ export default function FinalResults() {
       footer={
         <>
           {mine && ended ? (
-            <Button label="Share result" icon="share" kind="secondary" large onPress={share} />
+            <>
+              <OffscreenCard shotRef={card.shotRef}>
+                <ResultCard
+                  kicker={`${resultsLabel(true)} · ${w.title}`}
+                  headline={headline}
+                  stats={cardStats({ ...mine, stopCount: inPlay })}
+                  rows={rows}
+                  highlightId={mine.id}
+                  gapBeforeLast={rows.at(-1) !== standings[rows.length - 1]}
+                  more={moreTeamsLabel(standings.length, rows.length)}
+                  note={day !== undefined ? formatDayDate(day) : undefined}
+                />
+              </OffscreenCard>
+              <Button
+                label="Share result"
+                icon="share"
+                kind="secondary"
+                large
+                loading={card.sharing}
+                onPress={() => void card.share()}
+              />
+            </>
           ) : null}
           <Button label="Done" kind="dark" large onPress={() => router.replace('/')} />
         </>

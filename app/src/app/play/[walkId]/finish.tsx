@@ -1,16 +1,21 @@
 /**
  * P5 Finish: score, right answers, time, distance, "Review our answers". In a week-long walk it
- * also shows the standings so far, so a team that finishes on Tuesday is not left waiting until
- * Sunday (spec §3 P5).
+ * also shows the standings so far and a card to share them, so a team that finishes on Tuesday
+ * is not left waiting until Sunday (spec §3 P5).
  */
 import {
+  cardRows,
+  cardStats,
+  formatDayDate,
   formatDistance,
   formatWalkTime,
+  moreTeamsLabel,
   openUntilLabel,
   ordinal,
+  soFarHeadline,
+  standingsSoFarText,
   walkEndsAtMs,
   walkProgress,
-  formatDayDate,
 } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useMemo } from 'react';
@@ -20,10 +25,12 @@ import { useAuth } from '@/auth/AuthProvider';
 import { Button } from '@/components/Button';
 import { Leaderboard } from '@/components/Leaderboard';
 import { Screen } from '@/components/Screen';
+import { OffscreenCard, ResultCard } from '@/components/ShareCard';
 import { Txt } from '@/components/Txt';
 import { Banner, Card, SectionLabel } from '@/components/ui';
 import { useAnswers, useTeam } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
+import { useShareCard } from '@/features/shareCard';
 import { useStandings } from '@/features/standings';
 import { useOffline } from '@/lib/network';
 import { colors, fonts, spacing } from '@/theme/tokens';
@@ -37,6 +44,7 @@ export default function Finish() {
   const answers = useAnswers(walkId, uid);
   const { standings } = useStandings(walkId, { startedOnly: true });
   const offline = useOffline();
+  const card = useShareCard('Share standings');
 
   const progress = useMemo(
     () =>
@@ -70,12 +78,35 @@ export default function Finish() {
   const endsOn = w.openedAt
     ? formatDayDate(walkEndsAtMs(w.openedAt.toMillis(), w.openFor))
     : undefined;
+  // The card is only offered in a week-long walk, where the final results are days away.
+  const shareable = week && mine !== undefined;
+  const rows = cardRows(standings, 4, me.id);
 
   return (
     <Screen
       back={false}
       footer={
         <>
+          {shareable ? (
+            <OffscreenCard shotRef={card.shotRef}>
+              <ResultCard
+                kicker={`${me.name} · ${w.title}`}
+                headline={soFarHeadline(mine.rank, mine.tied, standings.length)}
+                stats={cardStats({
+                  score,
+                  correctCount: correct,
+                  stopCount: progress.stops.length,
+                  walkTimeMs: time,
+                  distanceWalkedM: me.distanceWalkedM,
+                })}
+                rows={rows}
+                highlightId={me.id}
+                gapBeforeLast={rows.at(-1) !== standings[rows.length - 1]}
+                more={moreTeamsLabel(standings.length, rows.length)}
+                note={endsOn ? `Final results ${endsOn}` : undefined}
+              />
+            </OffscreenCard>
+          ) : null}
           <Button
             label="Review our answers"
             kind="secondary"
@@ -117,7 +148,7 @@ export default function Finish() {
         {mine ? (
           <Txt variant="callout" color={colors.secondary}>
             {week
-              ? `${ordinal(mine.rank)} of ${standings.length} teams so far. Final results on ${endsOn ?? 'the last day'}.`
+              ? standingsSoFarText(mine.rank, mine.tied, standings.length, endsOn)
               : `${mine.tied ? 'Joint ' : ''}${ordinal(mine.rank)} of ${standings.length} so far. Final results appear when ${w.ownerName || 'the creator'} ends the walk${w.openedAt ? ` (${openUntilLabel(w.openedAt.toMillis(), w.openFor).toLowerCase()})` : ''}.`}
           </Txt>
         ) : null}
@@ -127,6 +158,15 @@ export default function Finish() {
           </Txt>
         ) : null}
         <Leaderboard rows={standings} myId={me.id} stopCount={progress.stops.length} />
+        {shareable ? (
+          <Button
+            label="Share standings"
+            icon="share"
+            kind="secondary"
+            loading={card.sharing}
+            onPress={() => void card.share()}
+          />
+        ) : null}
       </View>
     </Screen>
   );

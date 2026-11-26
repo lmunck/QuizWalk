@@ -38,7 +38,7 @@ import { Banner, Pill, SectionLabel } from '@/components/ui';
 import { errorMessage } from '@/data/errors';
 import { resolveAlert, useAlerts, usePositions } from '@/data/teams';
 import { endWalk, skipStopForEveryone, useStops, useWalk } from '@/data/walks';
-import { shareInvite } from '@/features/Invite';
+import { useInvite } from '@/features/Invite';
 import { useStandings } from '@/features/standings';
 import { colors, radius, spacing } from '@/theme/tokens';
 
@@ -75,6 +75,7 @@ export default function Monitor() {
   const positions = usePositions(walkId, isOwner);
   const alerts = useAlerts(walkId, isOwner);
   const { standings, all } = useStandings(walkId);
+  const invite = useInvite(walk.data);
   const mapRef = useRef<QMapRef>(null);
   const [ending, setEnding] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -147,6 +148,7 @@ export default function Monitor() {
 
   return (
     <View style={styles.root}>
+      {invite.card}
       <QMap
         ref={mapRef}
         style={StyleSheet.absoluteFill}
@@ -186,7 +188,7 @@ export default function Monitor() {
       <View style={[styles.topBar, { top: insets.top + spacing.sm }]}>
         <IconButton icon="back" label="Home" tone="surface" onPress={() => router.replace('/')} />
         <Pressable
-          onPress={() => void shareInvite(w)}
+          onPress={() => void invite.invite()}
           accessibilityRole="button"
           accessibilityLabel={`Invite more teams. Code ${w.joinCode?.split('').join(' ')}`}
           style={({ pressed }) => [styles.invite, pressed && { backgroundColor: colors.tint }]}

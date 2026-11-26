@@ -92,6 +92,89 @@ export function resultHeadline(name: string, rank: number, tied: boolean, teams:
   return `${name} came ${tied ? 'joint ' : ''}${ordinal(rank)} of ${teams}`;
 }
 
+/** A place in a sentence: "2nd", or "joint 2nd" when it is shared. */
+export function placeWords(rank: number, tied: boolean): string {
+  return tied ? `joint ${ordinal(rank)}` : ordinal(rank);
+}
+
+const capitalise = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/**
+ * The headline on a team's card before the final results, in a week-long walk (spec §3 P5):
+ * "In the lead so far", "Sharing the lead so far", "3rd of 5 so far", "Joint 2nd of 5 so far".
+ */
+export function soFarHeadline(rank: number, tied: boolean, teams: number): string {
+  if (rank === 1) return tied ? 'Sharing the lead so far' : 'In the lead so far';
+  return `${capitalise(placeWords(rank, tied))} of ${teams} so far`;
+}
+
+/**
+ * P5's line under "Standings so far" in a week-long walk: "2nd of 5 teams so far. Final
+ * results on Sun 29 Nov." `finalOn` is the day the walk ends by itself.
+ */
+export function standingsSoFarText(
+  rank: number,
+  tied: boolean,
+  teams: number,
+  finalOn?: string,
+): string {
+  const place = capitalise(placeWords(rank, tied));
+  return `${place} of ${plural(teams, 'team')} so far. Final results on ${finalOn ?? 'the last day'}.`;
+}
+
+/**
+ * The headline on the creator's results card (C9): who won, or who shares first place.
+ * `leaders` are the names ranked 1st, in ranking order. Before the walk ends the same facts
+ * read as a lead: "Fjord Kids in the lead", "Fjord Kids and Harbour Hawks share the lead".
+ */
+export function leadersHeadline(leaders: string[], final: boolean): string {
+  const [first, second] = leaders;
+  if (first === undefined) return 'No team started this walk';
+  if (leaders.length === 1) return final ? `${first} won` : `${first} in the lead`;
+  const who = leaders.length === 2 ? `${first} and ${second}` : `${leaders.length} teams`;
+  return final ? `${who} shared first place` : `${who} share the lead`;
+}
+
+/** The label above a results card's headline: "Final results" or "Standings so far". */
+export function resultsLabel(final: boolean): string {
+  return final ? 'Final results' : 'Standings so far';
+}
+
+/** The line under a results card's list when not every team fits: "+ 3 more teams". */
+export function moreTeamsLabel(total: number, shown: number): string | undefined {
+  const more = total - shown;
+  return more > 0 ? `+ ${plural(more, 'more team')}` : undefined;
+}
+
+/**
+ * The three tiles on a team's card: points, right answers, and the walk time once the team
+ * has finished (the distance walked until then).
+ */
+export function cardStats(t: {
+  score: number;
+  correctCount: number;
+  stopCount: number;
+  walkTimeMs?: number;
+  distanceWalkedM?: number;
+}): { value: string; label: string }[] {
+  return [
+    { value: String(t.score), label: t.score === 1 ? 'point' : 'points' },
+    { value: `${t.correctCount}/${t.stopCount}`, label: 'right' },
+    t.walkTimeMs !== undefined
+      ? { value: formatWalkTime(t.walkTimeMs), label: 'time' }
+      : { value: formatDistance(t.distanceWalkedM ?? 0), label: 'walked' },
+  ];
+}
+
+/** The invite card's instruction, with the "When" line from C6 when there is one. */
+export function inviteLines(whenText?: string): { when?: string; how: string } {
+  const when = whenText?.trim();
+  return {
+    when: when ? `When: ${when}` : undefined,
+    how: "Scan with your phone's camera, or type the code in the QuizWalk app.",
+  };
+}
+
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 

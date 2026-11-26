@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  cardStats,
   compassPoint,
   formatAgo,
   formatClock,
@@ -7,11 +8,18 @@ import {
   formatDistance,
   formatMinutes,
   formatWalkTime,
+  inviteLines,
+  leadersHeadline,
+  moreTeamsLabel,
   openUntilLabel,
   ordinal,
+  placeWords,
   plural,
   rankLabel,
   resultHeadline,
+  resultsLabel,
+  soFarHeadline,
+  standingsSoFarText,
 } from './format';
 
 describe('formatDistance', () => {
@@ -92,6 +100,81 @@ describe('ranks', () => {
     expect(resultHeadline('Fjord Kids', 1, true, 4)).toBe('Fjord Kids shared first place');
     expect(resultHeadline('Fjord Kids', 3, false, 4)).toBe('Fjord Kids came 3rd of 4');
     expect(resultHeadline('Fjord Kids', 2, true, 5)).toBe('Fjord Kids came joint 2nd of 5');
+  });
+
+  it('writes a place in a sentence', () => {
+    expect(placeWords(3, false)).toBe('3rd');
+    expect(placeWords(2, true)).toBe('joint 2nd');
+  });
+});
+
+describe('share cards', () => {
+  it('heads a card before the final results', () => {
+    expect(soFarHeadline(1, false, 5)).toBe('In the lead so far');
+    expect(soFarHeadline(1, true, 5)).toBe('Sharing the lead so far');
+    expect(soFarHeadline(3, false, 5)).toBe('3rd of 5 so far');
+    expect(soFarHeadline(2, true, 5)).toBe('Joint 2nd of 5 so far');
+  });
+
+  it('says where a finished team stands in a week-long walk', () => {
+    expect(standingsSoFarText(2, false, 5, 'Sun 29 Nov')).toBe(
+      '2nd of 5 teams so far. Final results on Sun 29 Nov.',
+    );
+    expect(standingsSoFarText(2, true, 5, 'Sun 29 Nov')).toBe(
+      'Joint 2nd of 5 teams so far. Final results on Sun 29 Nov.',
+    );
+    expect(standingsSoFarText(1, false, 1)).toBe(
+      '1st of 1 team so far. Final results on the last day.',
+    );
+  });
+
+  it('names the winners on the creator card', () => {
+    expect(leadersHeadline(['Fjord Kids'], true)).toBe('Fjord Kids won');
+    expect(leadersHeadline(['Fjord Kids', 'Harbour Hawks'], true)).toBe(
+      'Fjord Kids and Harbour Hawks shared first place',
+    );
+    expect(leadersHeadline(['A', 'B', 'C'], true)).toBe('3 teams shared first place');
+    expect(leadersHeadline([], true)).toBe('No team started this walk');
+  });
+
+  it('reads as a lead before the walk ends', () => {
+    expect(leadersHeadline(['Fjord Kids'], false)).toBe('Fjord Kids in the lead');
+    expect(leadersHeadline(['Fjord Kids', 'Harbour Hawks'], false)).toBe(
+      'Fjord Kids and Harbour Hawks share the lead',
+    );
+    expect(leadersHeadline(['A', 'B', 'C'], false)).toBe('3 teams share the lead');
+  });
+
+  it('labels the card and counts the teams left out', () => {
+    expect(resultsLabel(true)).toBe('Final results');
+    expect(resultsLabel(false)).toBe('Standings so far');
+    expect(moreTeamsLabel(8, 5)).toBe('+ 3 more teams');
+    expect(moreTeamsLabel(6, 5)).toBe('+ 1 more team');
+    expect(moreTeamsLabel(5, 5)).toBeUndefined();
+  });
+
+  it('fills the tiles on a team card', () => {
+    expect(
+      cardStats({ score: 96, correctCount: 7, stopCount: 8, walkTimeMs: 47 * 60_000 }),
+    ).toEqual([
+      { value: '96', label: 'points' },
+      { value: '7/8', label: 'right' },
+      { value: '47 min', label: 'time' },
+    ]);
+    expect(cardStats({ score: 1, correctCount: 0, stopCount: 5, distanceWalkedM: 3_400 })).toEqual([
+      { value: '1', label: 'point' },
+      { value: '0/5', label: 'right' },
+      { value: '3.4 km', label: 'walked' },
+    ]);
+  });
+
+  it('writes the invite card lines', () => {
+    expect(inviteLines('  Sat 14:00, meet at the anchor ').when).toBe(
+      'When: Sat 14:00, meet at the anchor',
+    );
+    expect(inviteLines('   ').when).toBeUndefined();
+    expect(inviteLines().when).toBeUndefined();
+    expect(inviteLines().how).toContain('QuizWalk app');
   });
 });
 
