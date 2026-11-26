@@ -59,6 +59,21 @@ The app switches from the emulators to the real project as soon as both Firebase
 are in `app/` (see `app/app.config.ts`). The steps, in order. **I** marks steps I can run for you
 from here once you say yes; **You** marks steps that need your consoles.
 
+**Status on 2026-11-26**
+
+| Step | Status |
+|---|---|
+| A. Register the apps | Done. Both config files are committed. |
+| B. Android SHA-1 | Waiting for you |
+| C. Maps key for Android | Waiting for you |
+| D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
+| E. App Check | Decided: enforcement off for the test period, deployed |
+| F. Builds | `preview` for Android and iPhone started on EAS. The `development` builds from M0 predate Firebase and need building again |
+
+Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
+settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
+rules refusing an anonymous walk, and the functions answering with App Check off.
+
 ### A. Register the apps in Firebase — I (or you)
 
 ```bash
@@ -68,6 +83,12 @@ sh scripts/firebase-apps.sh
 This registers `com.lmunck.Qualk` (iOS) and `com.lmunck.qualk` (Android) in `qualk-a173e` and
 writes `app/GoogleService-Info.plist` and `app/google-services.json`. They hold no secrets and are
 committed.
+
+If Firebase answers "Requested entity already exists" for the iPhone app, an app with that bundle
+ID was removed from the project less than 30 days ago and still holds the ID. Restore it under
+**Project settings → Your apps → Removed apps**, or with the Firebase Management API's
+`iosApps.undelete`; then run the script again. (That happened on 2026-11-26: the removed
+"QuizWalkiOS" app was restored and renamed "QuizWalk iOS".)
 
 ### B. Android signing fingerprint for Google sign-in — You
 
@@ -110,7 +131,9 @@ npx firebase deploy --only firestore:rules,firestore:indexes,functions --project
 
 The first functions deploy enables a few Google Cloud APIs (Cloud Functions, Cloud Build,
 Artifact Registry, Eventarc, Cloud Run, Cloud Scheduler) and takes 5–10 minutes. On the Blaze
-plan this stays inside the free quotas at test volumes.
+plan this stays inside the free quotas at test volumes. On a project's first deploy the four
+Firestore-triggered functions can fail with "Permission denied while using the Eventarc Service
+Agent"; Google's permissions take a few minutes to spread, and deploying again fixes it.
 
 ### E. App Check for the test period — You decide
 
@@ -118,8 +141,8 @@ The functions enforce App Check (spec §8), which needs App Attest on iPhone and
 on Android. Play Integrity needs the app in the Play Console, which is still an open task
 (spec §18). Two ways through the test period:
 
-- **Recommended for the first tests:** set `ENFORCE_APP_CHECK=false` in `functions/.env`
-  and deploy (step D). Test builds use the App Check debug provider, so nothing breaks, and
+- **Chosen on 2026-11-26 for the first tests:** `ENFORCE_APP_CHECK=false` in `functions/.env`,
+  deployed (step D). Test builds use the App Check debug provider, so nothing breaks, and
   enforcement goes back on once Play Integrity exists. Firestore itself is not App Check
   enforced until M5 in any case.
 - **Keep enforcement on:** in the Firebase console → **App Check** → each app → **Manage debug

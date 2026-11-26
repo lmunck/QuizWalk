@@ -81,13 +81,15 @@ These follow the spec; where they go beyond it, the reason is given.
 
 ## What you need to decide
 
-1. **Go-ahead for the cloud steps I can run from here** (`user-testing.md` part 2): register
-   the two Firebase apps, deploy the rules, indexes and functions, and start the EAS builds.
-   They create resources in your Firebase project and use EAS build minutes, so I have not
-   run them without asking.
-2. **App Check during the first tests:** enforcement off until Play Integrity exists
-   (recommended), or debug tokens registered in the console.
+1. ~~Go-ahead for the cloud steps~~ Done on 2026-11-26 after your go-ahead: both apps
+   registered (the removed iOS app restored), rules, indexes and all nine functions deployed,
+   `preview` builds started on EAS. Status table in `user-testing.md` part 2.
+2. ~~App Check during the first tests~~ Decided: enforcement off until Play Integrity exists.
 3. **Your console steps:** the Android SHA-1 (expo.dev → Credentials) and the Google Maps key.
+
+Two fixes came out of switching to the real project: Google sign-in on iPhone now gets the
+web client ID explicitly (Firebase's iOS config file does not carry it), and real builds keep
+Expo's local-networking exemption so a development build can reach the Mac.
 
 ## What comes next
 

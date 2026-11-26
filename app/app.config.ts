@@ -66,8 +66,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     googleServicesFile: useEmulators ? DEMO_IOS : REAL_IOS,
     config: { usesNonExemptEncryption: false },
     infoPlist: {
-      // The emulators run over plain HTTP on the Mac; only dev builds talk to them.
-      NSAppTransportSecurity: useEmulators ? { NSAllowsArbitraryLoads: true } : undefined,
+      // The emulators run over plain HTTP on the Mac; only dev builds talk to them. Otherwise
+      // keep Expo's template value: local networking is how a dev build reaches Metro.
+      NSAppTransportSecurity: useEmulators
+        ? { NSAllowsArbitraryLoads: true }
+        : { NSAllowsArbitraryLoads: false, NSAllowsLocalNetworking: true },
     },
   },
   android: {
