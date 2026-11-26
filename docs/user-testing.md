@@ -68,7 +68,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | Android `preview` built on 2026-11-26 ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/ac5f83b8-d91f-483a-9426-8bc49cc103a8)), after moving Android to Kotlin 2.4.0 for Firebase Auth 25. iPhone `preview` built the same day ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/586e20d8-6e53-4f5d-8a65-76c047d3b6c6)) after your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | Current `preview` builds, with the share cards (commit `e96705c`): [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/c2b2e76e-d8c6-410f-bb54-35644c0488a5) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/622c962b-b8db-4f0b-a37d-03f47e77ec39). Android needed Kotlin 2.4.0 for Firebase Auth 25; the iPhone needed your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
