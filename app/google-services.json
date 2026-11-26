@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "367806254489",
+    "project_id": "qualk-a173e",
+    "storage_bucket": "qualk-a173e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367806254489:android:4baefc39160e1f92f19708",
+        "android_client_info": {
+          "package_name": "com.lmunck.qualk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367806254489-kg9m5ngcsk0joij9deblg1rjpjc02kgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZs72so8jlmUwHtwQFrByvy5SwSiASDWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367806254489-kg9m5ngcsk0joij9deblg1rjpjc02kgl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "367806254489-29dmj1ojmdk36nagfqb9297n19l60o76.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lmunck.Qualk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

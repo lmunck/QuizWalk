@@ -25,6 +25,7 @@ import { doc, getDoc } from '@react-native-firebase/firestore';
 
 import { auth, db, usingEmulators } from '@/data/firebase';
 import { readUserDoc } from '@/data/users';
+import { googleWebClientId } from '@/lib/env';
 
 export class SignInRefused extends Error {}
 export class SignInCancelled extends Error {}
@@ -38,7 +39,7 @@ export interface SignInResult {
 let googleConfigured = false;
 function configureGoogle() {
   if (googleConfigured) return;
-  GoogleOneTapSignIn.configure({ webClientId: 'autoDetect' });
+  GoogleOneTapSignIn.configure({ webClientId: googleWebClientId });
   googleConfigured = true;
 }
 

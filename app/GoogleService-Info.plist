@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>367806254489-29dmj1ojmdk36nagfqb9297n19l60o76.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.367806254489-29dmj1ojmdk36nagfqb9297n19l60o76</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUlv5qUeM71jFeOFEAQq9hPJfnmAdwpyg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>367806254489</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lmunck.Qualk</string>
+	<key>PROJECT_ID</key>
+	<string>qualk-a173e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>qualk-a173e.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:367806254489:ios:8ec7d243796fe8eff19708</string>
+</dict>
+</plist>

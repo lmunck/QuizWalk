@@ -5,7 +5,11 @@ import { Platform } from 'react-native';
 const extra = (Constants.expoConfig?.extra ?? {}) as {
   useEmulators?: boolean;
   androidMapsConfigured?: boolean;
+  googleWebClientId?: string;
 };
+
+/** The project's web OAuth client for Google sign-in (app.config.ts). */
+export const googleWebClientId = extra.googleWebClientId ?? 'autoDetect';
 
 /** True when the build carries the emulator-only Firebase config (app.config.ts). */
 export const usingEmulators = extra.useEmulators === true;

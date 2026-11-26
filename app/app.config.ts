@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import type { ConfigContext, ExpoConfig } from 'expo/config';
@@ -21,6 +21,19 @@ const DEMO_ANDROID = './firebase/emulator/google-services.json';
 const hasRealConfig =
   existsSync(join(__dirname, REAL_IOS)) && existsSync(join(__dirname, REAL_ANDROID));
 const useEmulators = process.env.QUALK_EMULATORS === '1' || !hasRealConfig;
+
+/**
+ * Google sign-in asks for the project's web OAuth client (its tokens are what Firebase Auth
+ * accepts). Android finds it in google-services.json by itself, but Firebase's iOS plist does
+ * not carry it, so it is read here and handed to the app through `extra`.
+ */
+function googleWebClientId(): string | undefined {
+  if (useEmulators) return undefined;
+  const json = JSON.parse(readFileSync(join(__dirname, REAL_ANDROID), 'utf8')) as {
+    client?: { oauth_client?: { client_id: string; client_type: number }[] }[];
+  };
+  return json.client?.[0]?.oauth_client?.find((c) => c.client_type === 3)?.client_id;
+}
 
 /**
  * Google Maps on Android needs a key (spec §18). Without one the map is replaced by a
@@ -125,5 +138,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     },
     useEmulators,
     androidMapsConfigured: androidMapsKey !== '',
+    googleWebClientId: googleWebClientId(),
   },
 });
