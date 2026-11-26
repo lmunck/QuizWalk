@@ -8,3 +8,5 @@ app/android/
 app/expo-env.d.ts
 app/ios
 app/android
+# Downloaded from Firebase by scripts/firebase-apps.sh; kept byte-for-byte as served.
+app/google-services.json
