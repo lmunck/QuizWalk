@@ -68,7 +68,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | Android `preview` started on EAS. iPhone: needs you once (below), then builds. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | Android `preview` built on 2026-11-26 ([build page](https://expo.dev/accounts/lmunck/projects/qualk/builds/ac5f83b8-d91f-483a-9426-8bc49cc103a8)), after moving Android to Kotlin 2.4.0 for Firebase Auth 25. iPhone: needs you once (below), then builds. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
