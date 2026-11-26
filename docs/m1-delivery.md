@@ -83,7 +83,8 @@ These follow the spec; where they go beyond it, the reason is given.
 
 1. ~~Go-ahead for the cloud steps~~ Done on 2026-11-26 after your go-ahead: both apps
    registered (the removed iOS app restored), rules, indexes and all nine functions deployed,
-   `preview` builds started on EAS. Status table in `user-testing.md` part 2.
+   the Android `preview` build started on EAS. The iPhone build needs your Apple login once.
+   Status table in `user-testing.md` part 2.
 2. ~~App Check during the first tests~~ Decided: enforcement off until Play Integrity exists.
 3. **Your console steps:** the Android SHA-1 (expo.dev → Credentials) and the Google Maps key.
 

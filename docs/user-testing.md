@@ -68,7 +68,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | `preview` for Android and iPhone started on EAS. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | Android `preview` started on EAS. iPhone: needs you once (below), then builds. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
@@ -162,6 +162,21 @@ Two kinds of build:
 ```bash
 cd app && npx eas-cli@latest build --profile preview --platform all
 ```
+
+**The first iPhone build after M0 needs you at the keyboard.** The ad hoc provisioning profile
+from M0 was made before the app used Sign in with Apple and push notifications, so a
+non-interactive build fails with "Provisioning profile … doesn't include the Sign In with Apple
+capability". Run the build yourself, in a terminal, once:
+
+```bash
+cd app && npx eas-cli@latest build --profile preview --platform ios
+```
+
+Answer **Yes** to logging in to your Apple account, then type your Apple ID, password and the
+two-factor code. EAS turns on the two capabilities for `com.lmunck.Qualk` and makes a new profile;
+answer **Yes** if it asks to replace the old one. If it offers to set up push notifications,
+**Yes** lets the test try push as well. Later builds, including the `development` one, work
+without you.
 
 Each takes 30–45 minutes the first time. Every native module the plan needs is already in, so
 later changes are JavaScript only: the development build keeps working with the dev server,
