@@ -10,3 +10,5 @@ app/ios
 app/android
 # Downloaded from Firebase by scripts/firebase-apps.sh; kept byte-for-byte as served.
 app/google-services.json
+# Claude Code sessions keep their worktrees here; git ignores them, Prettier must too.
+.claude/
