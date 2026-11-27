@@ -8,15 +8,20 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
+Updated 2026-11-25 (evening), after the M1 build. Delivery notes: [`m1-delivery.md`](m1-delivery.md);
+how to test: [`user-testing.md`](user-testing.md).
+
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
-| `shared/`: unlock, scoring, team totals, ranking, walk lifetime, distance, time estimate, join codes | Written, 47 unit tests |
-| Security rules | Deny-all. The real rules are specified (spec §7), not written |
-| Cloud Functions | Empty skeleton |
-| App | One placeholder screen and the design tokens |
-| Mockups in `design/` | Not redrawn since the reviews. Spec §3 and §14 are the source for every screen |
-| Google Play Console account and app | Still open (spec §18). Blocks Play Integrity and the closed test, not development |
+| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion: 89 unit tests |
+| Security rules | Spec §7 in full, 38 allow/deny tests against the emulator, in CI |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator, in CI. **Not deployed yet** |
+| App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6) plus C7 live monitor and C8 team detail from M2. Verified end to end on the iOS simulator against the emulators |
+| Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash |
+| Firebase app registrations, Maps key, App Check, EAS builds with the real config | Not done: account steps, listed in `user-testing.md` part 2 |
+| Pocket-mode spike (A7) | Not done: needs a real phone and a walk |
+| Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
 

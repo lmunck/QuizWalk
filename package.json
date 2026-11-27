@@ -18,7 +18,8 @@
     "test:rules": "firebase emulators:exec --only firestore --project demo-qualk \"npm run test:emulator -w rules-tests\"",
     "validate:hosting": "node scripts/validate-well-known.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test:functions": "firebase emulators:exec --only firestore --project demo-qualk \"npm run test:emulator -w functions\""
   },
   "devDependencies": {
     "firebase-tools": "^15.35.0",

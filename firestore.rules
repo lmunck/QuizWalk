@@ -1,11 +1,265 @@
 rules_version = '2';
 
-// M0: everything is locked. Cloud Functions use the Admin SDK and bypass these rules.
-// The per-collection rules from docs/v1-spec.md §7 arrive in M1, each with tests in rules-tests/.
+// Security rules from docs/v1-spec.md §7. Every bullet there has an allow and a deny test in
+// rules-tests/firestore.test.ts. Cloud Functions use the Admin SDK and bypass these rules, which
+// is how function-only fields (scores, join codes, status changes other than open → ended) are
+// written.
+//
+// A walk's id is unguessable and only handed out through its join code, so holding the id is
+// what makes someone a guest of that walk.
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if false;
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // A creator has signed in with Apple or Google. Participants stay anonymous.
+    function isCreator() {
+      return signedIn() && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function walkAt(walkId) {
+      return get(/databases/$(database)/documents/walks/$(walkId)).data;
+    }
+
+    function isWalkOwner(walkId) {
+      return signedIn() && walkAt(walkId).ownerUid == request.auth.uid;
+    }
+
+    function walkStatusIs(walkId, statuses) {
+      return walkAt(walkId).status in statuses;
+    }
+
+    function changed() {
+      return request.resource.data.diff(resource.data).affectedKeys();
+    }
+
+    function isLatLng(v) {
+      return v is latlng;
+    }
+
+    // ---------------------------------------------------------------- users
+
+    match /users/{uid} {
+      allow read, delete: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['displayName', 'createdAt', 'pushToken', 'playing'])
+        && (!('playing' in request.resource.data) || request.resource.data.playing is list)
+        && (!('displayName' in request.resource.data)
+            || (request.resource.data.displayName is string
+                && request.resource.data.displayName.size() <= 40));
+    }
+
+    // ---------------------------------------------------------------- join codes
+
+    match /joinCodes/{code} {
+      allow get: if signedIn();
+      allow list, write: if false;
+    }
+
+    // ---------------------------------------------------------------- generation jobs
+
+    match /generationJobs/{jobId} {
+      allow get: if signedIn() && resource.data.ownerUid == request.auth.uid;
+      allow list, write: if false;
+    }
+
+    // ---------------------------------------------------------------- walks
+
+    // Fields the owner edits while a walk is a draft or ready. Status, join code and the
+    // open/end times are set by functions (and by the owner's one end write).
+    function walkEditableKeys() {
+      return ['title', 'ownerName', 'topic', 'difficulty', 'modes', 'maxPlayers', 'whenText',
+              'start', 'startLabel', 'shape', 'route', 'stopCount', 'distanceM', 'updatedAt'];
+    }
+
+    function validWalkFields(d) {
+      return d.title is string && d.title.size() > 0 && d.title.size() <= 80
+        && d.ownerName is string && d.ownerName.size() <= 40
+        && d.modes is map && d.modes.solo is bool && d.modes.team is bool
+        && d.maxPlayers is int && d.maxPlayers >= 1 && d.maxPlayers <= 20
+        && isLatLng(d.start)
+        && d.shape in ['loop', 'oneway']
+        && d.stopCount is int && d.stopCount >= 0 && d.stopCount <= 12
+        && d.distanceM is number && d.distanceM >= 0
+        && (!('whenText' in d) || (d.whenText is string && d.whenText.size() <= 60));
+    }
+
+    match /walks/{walkId} {
+      allow get: if signedIn()
+        && (resource.data.ownerUid == request.auth.uid || resource.data.status != 'draft');
+      allow list: if signedIn() && resource.data.ownerUid == request.auth.uid;
+
+      allow create: if isCreator()
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.status == 'draft'
+        && request.resource.data.keys().hasOnly(walkEditableKeys().concat(['ownerUid', 'status', 'createdAt']))
+        && validWalkFields(request.resource.data);
+
+      // Edits while draft/ready. Publishing and opening go through callables (spec §8).
+      allow update: if signedIn()
+        && resource.data.ownerUid == request.auth.uid
+        && resource.data.status in ['draft', 'ready']
+        && changed().hasOnly(walkEditableKeys())
+        && validWalkFields(request.resource.data);
+
+      // The owner's one status write: open → ended, at the server's time.
+      allow update: if signedIn()
+        && resource.data.ownerUid == request.auth.uid
+        && resource.data.status == 'open'
+        && request.resource.data.status == 'ended'
+        && request.resource.data.endedAt == request.time
+        && changed().hasOnly(['status', 'endedAt', 'updatedAt']);
+
+      // Anything published is deleted by the deleteWalk callable.
+      allow delete: if signedIn()
+        && resource.data.ownerUid == request.auth.uid
+        && resource.data.status == 'draft';
+
+      // -------------------------------------------------------------- stops
+
+      function validStop(d) {
+        return d.keys().hasOnly(['order', 'location', 'placeName', 'radiusM', 'question', 'options',
+                                 'correctIndex', 'explanation', 'hint', 'source', 'origin',
+                                 'warnings', 'skippedForAll'])
+          && d.order is int && d.order >= 0
+          && isLatLng(d.location)
+          && d.placeName is string && d.placeName.size() <= 80
+          && d.radiusM in [25, 40, 60]
+          && d.question is string && d.question.size() <= 300
+          && d.options is list && d.options.size() <= 4
+          && d.correctIndex is int
+          && d.explanation is string && d.explanation.size() <= 600
+          && d.origin in ['ai', 'manual']
+          && d.warnings is list
+          && d.skippedForAll is bool;
+      }
+
+      match /stops/{stopId} {
+        allow read: if signedIn()
+          && (isWalkOwner(walkId) || !walkStatusIs(walkId, ['draft']));
+
+        allow create: if isWalkOwner(walkId)
+          && walkStatusIs(walkId, ['draft', 'ready'])
+          && validStop(request.resource.data)
+          && request.resource.data.skippedForAll == false;
+
+        allow update: if isWalkOwner(walkId)
+          && walkStatusIs(walkId, ['draft', 'ready'])
+          && validStop(request.resource.data);
+
+        // Skip for everyone (M2): the only change to a stop while the walk is open.
+        allow update: if isWalkOwner(walkId)
+          && walkStatusIs(walkId, ['open'])
+          && changed().hasOnly(['skippedForAll'])
+          && request.resource.data.skippedForAll == true;
+
+        allow delete: if isWalkOwner(walkId)
+          && walkStatusIs(walkId, ['draft', 'ready']);
+      }
+
+      // -------------------------------------------------------------- teams
+
+      match /teams/{uid} {
+        function isTeam() {
+          return signedIn() && request.auth.uid == uid;
+        }
+
+        function validTeamName(d) {
+          return d.name is string && d.name.size() > 0 && d.name.size() <= 30
+            && d.players is int && d.players >= 1 && d.players <= 20;
+        }
+
+        // The leaderboard. A team doc holds no location.
+        allow read: if signedIn();
+
+        allow create: if isTeam()
+          && walkStatusIs(walkId, ['ready', 'open'])
+          && request.resource.data.keys().hasOnly(['name', 'mode', 'players', 'colorIndex', 'pushToken',
+                                                   'joinedAt', 'lastSeenAt', 'distanceWalkedM',
+                                                   'score', 'correctCount', 'stopsDone'])
+          && request.resource.data.mode in ['solo', 'team']
+          && walkAt(walkId).modes[request.resource.data.mode] == true
+          && validTeamName(request.resource.data)
+          && request.resource.data.colorIndex is int
+          && request.resource.data.colorIndex >= 0 && request.resource.data.colorIndex <= 7
+          && request.resource.data.score == 0
+          && request.resource.data.correctCount == 0
+          && request.resource.data.stopsDone == 0
+          && request.resource.data.distanceWalkedM == 0;
+
+        allow update: if isTeam()
+          && walkStatusIs(walkId, ['ready', 'open'])
+          && changed().hasOnly(['name', 'players', 'pushToken', 'startedAt', 'leftAt',
+                                'lastSeenAt', 'distanceWalkedM'])
+          && validTeamName(request.resource.data)
+          // startedAt is set once, only while the walk is open, and never changed.
+          && (!('startedAt' in changed())
+              || (!('startedAt' in resource.data)
+                  && walkStatusIs(walkId, ['open'])
+                  && request.resource.data.startedAt is timestamp))
+          && (!('distanceWalkedM' in changed())
+              || (request.resource.data.distanceWalkedM is number
+                  && request.resource.data.distanceWalkedM >= 0));
+
+        // Leaving the lobby before Start walk removes the team.
+        allow delete: if isTeam() && !('startedAt' in resource.data);
+
+        // ------------------------------------------------------------ answers
+
+        match /answers/{stopId} {
+          allow read: if isTeam() || isWalkOwner(walkId);
+
+          // Create once (the doc id is the stop id, so a second write is an update and is
+          // denied), only while the walk is open and the team has started, for a stop that
+          // exists, with client fields only. Points are written by onAnswerCreated.
+          allow create: if isTeam()
+            && walkStatusIs(walkId, ['open'])
+            && ('startedAt' in get(/databases/$(database)/documents/walks/$(walkId)/teams/$(uid)).data)
+            && exists(/databases/$(database)/documents/walks/$(walkId)/stops/$(stopId))
+            && request.resource.data.keys().hasOnly(['kind', 'choiceIndex', 'openedAtClient',
+                                                     'answeredAtClient', 'elapsedMs'])
+            && request.resource.data.kind in ['answered', 'imHere', 'skipped']
+            && (request.resource.data.kind == 'skipped'
+                || (request.resource.data.choiceIndex is int
+                    && request.resource.data.choiceIndex >= 0
+                    && request.resource.data.choiceIndex <= 3))
+            && request.resource.data.openedAtClient is timestamp
+            && request.resource.data.answeredAtClient is timestamp
+            && request.resource.data.elapsedMs is number;
+
+          allow update, delete: if false;
+        }
+      }
+
+      // -------------------------------------------------------------- positions
+
+      match /positions/{uid} {
+        allow read: if signedIn() && (request.auth.uid == uid || isWalkOwner(walkId));
+        allow create, update: if signedIn() && request.auth.uid == uid
+          && walkStatusIs(walkId, ['open'])
+          && exists(/databases/$(database)/documents/walks/$(walkId)/teams/$(uid))
+          && request.resource.data.keys().hasOnly(['location', 'accuracyM', 'at'])
+          && isLatLng(request.resource.data.location)
+          && request.resource.data.accuracyM is number;
+        allow delete: if false;
+      }
+
+      // -------------------------------------------------------------- alerts
+
+      match /alerts/{alertId} {
+        allow read: if isWalkOwner(walkId);
+        allow create: if signedIn()
+          && request.resource.data.teamUid == request.auth.uid
+          && exists(/databases/$(database)/documents/walks/$(walkId)/teams/$(request.auth.uid))
+          && request.resource.data.keys().hasOnly(['teamUid', 'stopId', 'kind', 'createdAt', 'resolved'])
+          && request.resource.data.kind == 'blocked'
+          && request.resource.data.stopId is string
+          && request.resource.data.resolved == false;
+        allow update: if isWalkOwner(walkId) && changed().hasOnly(['resolved']);
+        allow delete: if false;
+      }
     }
   }
 }

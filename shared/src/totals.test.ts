@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  cardRows,
   everyoneFinished,
   rankTeams,
   recomputeTeamTotals,
@@ -165,5 +166,54 @@ describe('everyoneFinished', () => {
   it('is false before anyone has started', () => {
     expect(everyoneFinished([{}, {}])).toBe(false);
     expect(everyoneFinished([])).toBe(false);
+  });
+});
+
+describe('recomputeTeamTotals when every stop is removed', () => {
+  it('still finishes a team that answered, at its last answer', () => {
+    const t = recomputeTeamTotals(
+      [
+        {
+          stopId: 'a',
+          kind: 'answered',
+          choiceIndex: 0,
+          openedAtClientMs: 1_000,
+          answeredAtClientMs: 5_000,
+          elapsedMs: 4_000,
+        },
+      ],
+      [{ id: 'a', correctIndex: 0, skippedForAll: true }],
+    );
+    expect(t).toMatchObject({ score: 0, stopsDone: 0, finishedAtMs: 5_000 });
+  });
+
+  it('does not finish a team that never answered', () => {
+    expect(
+      recomputeTeamTotals([], [{ id: 'a', correctIndex: 0, skippedForAll: true }]).finishedAtMs,
+    ).toBeUndefined();
+  });
+});
+
+describe('cardRows', () => {
+  const ranked = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map((id) => ({ id }));
+  const ids = (rows: { id: string }[]) => rows.map((r) => r.id).join('');
+
+  it('takes the top teams', () => {
+    expect(ids(cardRows(ranked, 5))).toBe('abcde');
+    expect(ids(cardRows(ranked.slice(0, 3), 5))).toBe('abc');
+  });
+
+  it('keeps a team that is in the top as it is', () => {
+    expect(ids(cardRows(ranked, 5, 'c'))).toBe('abcde');
+  });
+
+  it('puts a team further down in the last place', () => {
+    expect(ids(cardRows(ranked, 5, 'g'))).toBe('abcdg');
+    expect(ids(cardRows(ranked, 1, 'g'))).toBe('g');
+  });
+
+  it('ignores a team that is not in the list', () => {
+    expect(ids(cardRows(ranked, 3, 'x'))).toBe('abc');
+    expect(ids(cardRows(ranked, 0, 'g'))).toBe('');
   });
 });

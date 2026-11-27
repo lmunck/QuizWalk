@@ -6,6 +6,8 @@ Turn any walk into a quiz. Creators generate or write a walk of location-based q
 - Design reference: [`design/`](design/README.md)
 - M1 architecture: [`docs/m1-design.md`](docs/m1-design.md)
 - Implementation plan: [`docs/implementation-plan.md`](docs/implementation-plan.md)
+- M1 delivery notes: [`docs/m1-delivery.md`](docs/m1-delivery.md)
+- How to test, locally and on phones: [`docs/user-testing.md`](docs/user-testing.md)
 
 Stack: Expo (React Native + TypeScript) for iOS and Android · Firebase (Firestore, Auth, Cloud Functions, Hosting) · OpenRouteService · OpenStreetMap + Wikipedia.
 
@@ -17,5 +19,12 @@ Node 22 and npm workspaces (`app`, `functions`, `shared`, `rules-tests`).
 npm install
 npm run typecheck && npm run lint && npm test
 ```
+
+```bash
+npm run test:rules && npm run test:functions
+```
+
+The last two start the Firestore emulator (Java 21+). Running the app locally against the
+emulators: [`docs/user-testing.md`](docs/user-testing.md) part 1.
 
 Setup status and remaining M0 steps: [`docs/m0-setup.md`](docs/m0-setup.md).

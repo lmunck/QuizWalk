@@ -478,8 +478,8 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [x] **M0** App Store Connect: confirm the old `com.lmunck.Qualk` record exists; create an API key for EAS Submit
 - [ ] **M0** Google Play Console: account ($25) + app `com.lmunck.qualk` (personal account created; a test Android device is now available for the verification step that was blocking it. The 12-tester / 14-day closed test applies before release)
 - [x] **M0** DNS change at simply.com for qualk.dk (`qualk.dk` and `www.qualk.dk` both serve from Firebase Hosting with valid certificates, verified 2026-11-21)
-- [ ] **M1** Register the iOS and Android apps in the Firebase console and download `GoogleService-Info.plist` + `google-services.json` (needed by React Native Firebase; committed to the repo, they hold no secrets)
-- [ ] **M1** Add the Android signing SHA-1 fingerprints to the Firebase Android app (dev/upload key from `npx eas-cli@latest credentials`, and the Play app-signing key once it exists) — Google sign-in on Android fails without them
+- [x] **M1** Register the iOS and Android apps in the Firebase console and download `GoogleService-Info.plist` + `google-services.json` (needed by React Native Firebase; committed to the repo, they hold no secrets)
+- [ ] **M1** Add the Android signing SHA-1 fingerprints to the Firebase Android app (dev/upload key from `npx eas-cli@latest credentials`, and the Play app-signing key once it exists) — Google sign-in on Android fails without them (EAS key added 2026-11-27; the Play app-signing key still to come)
 - [ ] **M1** Google Maps Android API key (same Google Cloud project), restricted to `com.lmunck.qualk` + the signing SHA-1
 - [ ] **M1** App Check: enable App Attest (iOS) and Play Integrity (Android), and register debug tokens for the dev builds and the emulator
 - [ ] **M2** Google Play: start the closed test (12 testers for 14 days is required before a personal account can release; the clock only runs once testers have opted in)

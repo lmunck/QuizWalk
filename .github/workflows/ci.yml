@@ -33,7 +33,7 @@ jobs:
         run: npm run build -w functions
 
   rules:
-    name: Firestore rules tests
+    name: Firestore rules and function tests (emulator)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -47,6 +47,8 @@ jobs:
           java-version: '21'
       - run: npm ci
       - run: npm run test:rules
+      - name: Function logic against the Firestore emulator
+        run: npm run test:functions
 
   app-bundle:
     name: App bundles (iOS + Android)

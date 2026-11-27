@@ -60,8 +60,12 @@ export function recomputeTeamTotals(answers: SubmittedAnswer[], stops: ScoredSto
   const inPlay = new Map(stops.filter((s) => !s.skippedForAll).map((s) => [s.id, s]));
   const totals: TeamTotals = { score: 0, correctCount: 0, stopsDone: 0, perStop: {} };
   let latestMs: number | undefined;
+  let latestAnyMs: number | undefined;
 
   for (const answer of answers) {
+    if (latestAnyMs === undefined || answer.answeredAtClientMs > latestAnyMs) {
+      latestAnyMs = answer.answeredAtClientMs;
+    }
     const stop = inPlay.get(answer.stopId);
     if (!stop) {
       totals.perStop[answer.stopId] = { points: 0, correct: false };
@@ -83,6 +87,8 @@ export function recomputeTeamTotals(answers: SubmittedAnswer[], stops: ScoredSto
   }
 
   if (inPlay.size > 0 && totals.stopsDone === inPlay.size) totals.finishedAtMs = latestMs;
+  // Every stop it reached was removed for everyone: the team still finished, at its last answer.
+  if (inPlay.size === 0 && answers.length > 0) totals.finishedAtMs = latestAnyMs;
   return totals;
 }
 
@@ -116,6 +122,17 @@ export function rankTeams<T extends NamedTeam>(teams: T[]): RankedTeam<T>[] {
     }
   });
   return ranked;
+}
+
+/**
+ * The teams on a share card: the top `max` of a ranked list. When `teamId` is further down, it
+ * takes the last place in the list, so a team's own card always shows the team.
+ */
+export function cardRows<T extends { id: string }>(ranked: T[], max: number, teamId?: string): T[] {
+  const top = ranked.slice(0, Math.max(0, max));
+  if (teamId === undefined || max < 1 || top.some((t) => t.id === teamId)) return top;
+  const mine = ranked.find((t) => t.id === teamId);
+  return mine ? [...ranked.slice(0, max - 1), mine] : top;
 }
 
 /** A team is still walking if it has started and has neither finished nor left. */

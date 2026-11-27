@@ -52,9 +52,23 @@ export function endsAwayM(start: LatLng, stopsInOrder: LatLng[]): number {
 export const DISTANCE_MAX_ACCURACY_M = 30;
 export const DISTANCE_MIN_SEGMENT_M = 5;
 
-/** Whether a segment between two fixes counts towards `distanceWalkedM`. */
-export function countsTowardsDistance(segmentM: number, accuracyM: number): boolean {
-  return accuracyM <= DISTANCE_MAX_ACCURACY_M && segmentM >= DISTANCE_MIN_SEGMENT_M;
+/** Faster than this between two fixes is a GPS jump, not walking (7 m/s ≈ 25 km/h). */
+export const DISTANCE_MAX_SPEED_M_PER_S = 7;
+
+/**
+ * Whether a segment between two fixes counts towards `distanceWalkedM`. With the seconds
+ * between the fixes, a segment covered faster than anyone walks is ignored as a GPS jump.
+ */
+export function countsTowardsDistance(
+  segmentM: number,
+  accuracyM: number,
+  seconds?: number,
+): boolean {
+  if (accuracyM > DISTANCE_MAX_ACCURACY_M || segmentM < DISTANCE_MIN_SEGMENT_M) return false;
+  if (seconds !== undefined && segmentM / Math.max(seconds, 1) > DISTANCE_MAX_SPEED_M_PER_S) {
+    return false;
+  }
+  return true;
 }
 
 /** §9 Uploads: `positions/{uid}` is written at most every 30 s and only after moving ≥ 20 m. */
@@ -65,4 +79,33 @@ export function shouldUploadPosition(msSinceLastUpload: number, movedM: number):
   return (
     msSinceLastUpload >= POSITION_UPLOAD_MIN_INTERVAL_MS && movedM >= POSITION_UPLOAD_MIN_MOVE_M
   );
+}
+
+/**
+ * Where a new stop goes (spec §3 G2): into the leg it lengthens least, or after the last stop.
+ * Returns the 0-based position for the new stop among the existing ones.
+ */
+export function bestInsertIndex(start: LatLng, stopsInOrder: LatLng[], point: LatLng): number {
+  if (stopsInOrder.length === 0) return 0;
+  let best = stopsInOrder.length;
+  const last = stopsInOrder[stopsInOrder.length - 1] as LatLng;
+  let bestCost = distanceM(last, point);
+  let from = start;
+  stopsInOrder.forEach((to, i) => {
+    const cost = distanceM(from, point) + distanceM(point, to) - distanceM(from, to);
+    if (cost < bestCost) {
+      bestCost = cost;
+      best = i;
+    }
+    from = to;
+  });
+  return best;
+}
+
+/** "between 5 and 6", "before stop 1", "after stop 4" for an insert position (1-based words). */
+export function insertPositionLabel(index: number, count: number): string {
+  if (count === 0) return 'as stop 1';
+  if (index === 0) return 'before stop 1';
+  if (index >= count) return `after stop ${count}`;
+  return `between ${index} and ${index + 1}`;
 }
