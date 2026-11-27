@@ -1,0 +1,1250 @@
+{
+  "category": "science",
+  "subcategory": "technology",
+  "questions": [
+    {
+      "id": "science.technology.kids.01",
+      "difficulty": "kids",
+      "question": "What do you move with your hand to control the pointer on a computer screen?",
+      "correct": "A mouse",
+      "wrong": ["A printer", "A speaker", "A microphone"],
+      "explanation": "A mouse senses how it moves on the desk. The pointer on the screen moves in the same way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.02",
+      "difficulty": "kids",
+      "question": "Which part of a computer do you use to type letters and numbers?",
+      "correct": "The keyboard",
+      "wrong": ["The monitor", "The speaker", "The scanner"],
+      "explanation": "A keyboard has a key for each letter and number. Many people type with all ten fingers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.03",
+      "difficulty": "kids",
+      "question": "What is the screen of a desktop computer usually called?",
+      "correct": "Monitor",
+      "wrong": ["Mouse", "Cable", "Keyboard"],
+      "explanation": "A monitor shows pictures and text from the computer. It is made of millions of tiny dots.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.04",
+      "difficulty": "kids",
+      "question": "What do we call a message that you send from one computer to another over the internet?",
+      "correct": "An email",
+      "wrong": ["A parcel", "A postcard", "A newspaper"],
+      "explanation": "Email is short for electronic mail. An email can reach someone on the other side of the world in a few seconds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.05",
+      "difficulty": "kids",
+      "question": "What does the first \"W\" in \"www\" stand for?",
+      "correct": "World",
+      "wrong": ["Wide", "Web", "Window"],
+      "explanation": "\"www\" means World Wide Web. It is the system of web pages that you open with a browser.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.06",
+      "difficulty": "kids",
+      "question": "What do we call a small program that you install on a phone?",
+      "correct": "An app",
+      "wrong": ["A sticker", "A battery", "A charger"],
+      "explanation": "\"App\" is short for application. Games, maps and messaging tools are all apps.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.07",
+      "difficulty": "kids",
+      "question": "What do we call a person who writes instructions for computers?",
+      "correct": "A programmer",
+      "wrong": ["A plumber", "A baker", "A pilot"],
+      "explanation": "Programmers write code in special languages. The computer follows the code step by step.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.08",
+      "difficulty": "kids",
+      "question": "What do you use to look for pages on the internet by typing a few words?",
+      "correct": "A search engine",
+      "wrong": ["A power cable", "A memory card", "A printer"],
+      "explanation": "A search engine looks through billions of web pages and shows you the ones that fit your words.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.09",
+      "difficulty": "kids",
+      "question": "What do we call a robot that is built to look like a person?",
+      "correct": "A humanoid",
+      "wrong": ["A drone", "A rover", "A hovercraft"],
+      "explanation": "Humanoid robots often have a head, two arms and two legs. They can be built to walk and wave.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.10",
+      "difficulty": "kids",
+      "question": "What does Wi-Fi let your phone do?",
+      "correct": "Connect to the internet without a cable",
+      "wrong": [
+        "Make your battery last longer",
+        "Take better photos",
+        "Charge itself from the air"
+      ],
+      "explanation": "Wi-Fi sends data through the air as radio waves. A router at home or school sends and receives them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.11",
+      "difficulty": "kids",
+      "question": "Which device at home sends the internet to your phone and laptop?",
+      "correct": "A router",
+      "wrong": ["A toaster", "A loudspeaker", "A scanner"],
+      "explanation": "A router shares one internet connection with many devices. Some use cables and some use Wi-Fi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.12",
+      "difficulty": "kids",
+      "question": "What is a pixel?",
+      "correct": "A tiny dot on a screen",
+      "wrong": ["A kind of computer cable", "A key on the keyboard", "A type of battery"],
+      "explanation": "A screen is made of many pixels, each with its own colour. Together they make pictures and words.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.13",
+      "difficulty": "kids",
+      "question": "In computer programs, what is a \"bug\"?",
+      "correct": "A mistake in the code",
+      "wrong": ["A tiny insect", "A type of cable", "A game character"],
+      "explanation": "Bugs make programs do the wrong thing. Finding and fixing them is called debugging.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.14",
+      "difficulty": "kids",
+      "question": "Which computer is made to be carried and has a screen that folds down?",
+      "correct": "A laptop",
+      "wrong": ["A mainframe", "A printer", "A scanner"],
+      "explanation": "A laptop has the screen, keyboard and battery in one case. You can use it on your lap or on a table.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.15",
+      "difficulty": "kids",
+      "question": "Computers store everything with only two digits. Which two?",
+      "correct": "0 and 1",
+      "wrong": ["1 and 2", "0 and 9", "5 and 6"],
+      "explanation": "This is called binary. Each 0 or 1 is one bit, and many bits together make letters, pictures and sounds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.16",
+      "difficulty": "kids",
+      "question": "What do the letters \"AI\" stand for?",
+      "correct": "Artificial intelligence",
+      "wrong": ["Automatic internet", "Advanced input", "Active image"],
+      "explanation": "Artificial intelligence means computers doing things that normally need human thinking, such as understanding speech.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.17",
+      "difficulty": "kids",
+      "question": "What does a 3D printer make?",
+      "correct": "Real objects",
+      "wrong": ["Paper photos", "Sound recordings", "Video games"],
+      "explanation": "Many 3D printers melt plastic and build a shape layer by layer. People print toys, tools and spare parts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.18",
+      "difficulty": "kids",
+      "question": "Which toy company made the Mindstorms kits for building robots that you can program?",
+      "correct": "LEGO",
+      "wrong": ["Playmobil", "Hasbro", "Mattel"],
+      "explanation": "LEGO is from Billund in Denmark. In Mindstorms, children built a robot from bricks and programmed it on a computer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.19",
+      "difficulty": "kids",
+      "question": "What does it mean to \"download\" a file?",
+      "correct": "To copy it from the internet",
+      "wrong": ["To delete it from your device", "To print it on paper", "To send it to a friend"],
+      "explanation": "When you download a song or a game, a copy is saved on your phone or computer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.20",
+      "difficulty": "kids",
+      "question": "What does it mean when your computer is \"online\"?",
+      "correct": "It is connected to the internet",
+      "wrong": ["It is switched off", "It is very old", "It has no screen"],
+      "explanation": "Online means you can reach websites, send messages and play games with people far away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.21",
+      "difficulty": "kids",
+      "question": "What do we call the small pictures of faces and objects that you add to text messages?",
+      "correct": "Emojis",
+      "wrong": ["Pixels", "Passwords", "Folders"],
+      "explanation": "The word \"emoji\" comes from Japanese. It means \"picture character\".",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.22",
+      "difficulty": "kids",
+      "question": "What does a microphone pick up?",
+      "correct": "Sound",
+      "wrong": ["Light", "Heat", "Smells"],
+      "explanation": "A microphone turns sound into an electric signal. Phones, laptops and headsets all have one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.23",
+      "difficulty": "kids",
+      "question": "What is the name of the stick you move with your hand to steer in many computer games?",
+      "correct": "A joystick",
+      "wrong": ["A drumstick", "A chopstick", "A lipstick"],
+      "explanation": "A joystick can tilt in any direction. Pilots and gamers use it to steer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.24",
+      "difficulty": "kids",
+      "question": "Why should you keep your password secret?",
+      "correct": "So that nobody else can use your account",
+      "wrong": [
+        "So that your computer runs faster",
+        "So that your battery lasts longer",
+        "So that you never forget it"
+      ],
+      "explanation": "A strong password has many different letters, numbers and symbols. Do not use the same one everywhere.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.25",
+      "difficulty": "kids",
+      "question": "What is Bluetooth often used for?",
+      "correct": "To connect wireless headphones",
+      "wrong": [
+        "To keep food fresh in a fridge",
+        "To cool down a computer",
+        "To clean a phone screen"
+      ],
+      "explanation": "Bluetooth sends data through the air over short distances, such as across a room.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.26",
+      "difficulty": "kids",
+      "question": "What do you do when you press \"Save\" on a computer?",
+      "correct": "Keep your work so you can open it later",
+      "wrong": ["Close all the programs", "Send a message", "Make the screen brighter"],
+      "explanation": "If you forget to save and the power goes out, your work can be lost.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.27",
+      "difficulty": "kids",
+      "question": "Which part of a computer is often called its brain?",
+      "correct": "The processor",
+      "wrong": ["The screen", "The speaker", "The mouse"],
+      "explanation": "The processor, or CPU, follows the instructions in programs. A fast one can do billions of steps every second.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.28",
+      "difficulty": "kids",
+      "question": "Which British scientist invented the World Wide Web?",
+      "correct": "Tim Berners-Lee",
+      "wrong": ["Isaac Newton", "Thomas Edison", "Albert Einstein"],
+      "explanation": "He invented the web in 1989 while working in Switzerland. His idea was to share information between computers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.29",
+      "difficulty": "kids",
+      "question": "What does pressing the Ctrl key and the C key together usually do?",
+      "correct": "It copies what you have chosen",
+      "wrong": ["It closes the program", "It prints the page", "It deletes the text"],
+      "explanation": "Ctrl and V then pastes the copy somewhere else. These shortcuts save a lot of time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.30",
+      "difficulty": "kids",
+      "question": "What does a webcam do?",
+      "correct": "It films video for video calls",
+      "wrong": ["It plays music", "It prints photos", "It charges a phone"],
+      "explanation": "A webcam is a small camera on or near your screen. It lets friends and family see you in a video call.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.31",
+      "difficulty": "kids",
+      "question": "Which long key on a keyboard makes a gap between words?",
+      "correct": "The space bar",
+      "wrong": ["The Enter key", "The Tab key", "The Escape key"],
+      "explanation": "The space bar is the longest key on most keyboards. It is made to be hit easily with a thumb.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.32",
+      "difficulty": "kids",
+      "question": "Which is the best description of a robot?",
+      "correct": "A machine you can program",
+      "wrong": ["A very strong magnet", "A kind of battery", "A glass screen"],
+      "explanation": "Robots can have sensors to see or feel. Some work in factories and some clean floors or explore.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.33",
+      "difficulty": "kids",
+      "question": "What do you use to look at web pages on a computer?",
+      "correct": "A web browser",
+      "wrong": ["A hard disk", "A scanner", "A USB stick"],
+      "explanation": "A browser opens web pages for you. You type an address or a search into it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.34",
+      "difficulty": "kids",
+      "question": "What is a PIN?",
+      "correct": "A short secret number code",
+      "wrong": ["A kind of pixel", "A small plug", "A type of printer"],
+      "explanation": "PIN is short for personal identification number. A bank card PIN usually has four numbers, and you should not tell anyone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.35",
+      "difficulty": "kids",
+      "question": "What is the internet?",
+      "correct": "A worldwide network of computers",
+      "wrong": [
+        "A big computer in one building",
+        "A kind of television channel",
+        "A type of phone battery"
+      ],
+      "explanation": "The internet joins many networks all over the world. Websites, email and video calls all travel over it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.36",
+      "difficulty": "kids",
+      "question": "What do people use a USB stick for?",
+      "correct": "To carry files between computers",
+      "wrong": ["To play music loudly", "To clean a keyboard", "To charge a robot"],
+      "explanation": "A USB stick is small and can hold thousands of photos. You plug it into the USB port.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.37",
+      "difficulty": "kids",
+      "question": "What does a printer do?",
+      "correct": "It puts words and pictures on paper",
+      "wrong": ["It plays music", "It makes video calls", "It sends emails"],
+      "explanation": "Many printers spray tiny drops of ink onto the paper. Others use a fine powder called toner.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.38",
+      "difficulty": "kids",
+      "question": "What do shop scanners read to find out the price of a product?",
+      "correct": "The barcode",
+      "wrong": ["The colour", "The size", "The smell"],
+      "explanation": "A barcode is a pattern of black and white stripes. Many scanners read it with a red light.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.39",
+      "difficulty": "kids",
+      "question": "What can a robot lawn mower do?",
+      "correct": "Cut the grass by itself",
+      "wrong": ["Water the flowers", "Paint the fence", "Pick the apples"],
+      "explanation": "It drives around the garden alone and goes back to its charger when the battery is low.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.kids.40",
+      "difficulty": "kids",
+      "question": "What do we call a flat computer with a touchscreen that is bigger than a phone?",
+      "correct": "A tablet",
+      "wrong": ["A tower", "A router", "A joystick"],
+      "explanation": "Most tablets have no keyboard. You tap and swipe on the screen with your fingers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.01",
+      "difficulty": "mixed",
+      "question": "How many bits are there in one byte?",
+      "correct": "8",
+      "wrong": ["4", "10", "16"],
+      "explanation": "A byte is a group of eight bits. One byte can hold a single letter, such as \"A\".",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which computer, built by IBM, beat the chess champion Garry Kasparov in a match in 1997?",
+      "correct": "Deep Blue",
+      "wrong": ["Watson", "Colossus", "Big Green"],
+      "explanation": "Deep Blue could look at about 200 million chess positions every second. It was a landmark for artificial intelligence.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.03",
+      "difficulty": "mixed",
+      "question": "What does the Turing test try to find out?",
+      "correct": "If a machine can pass for a human",
+      "wrong": [
+        "How fast a computer can work",
+        "If a file has a computer virus",
+        "How many bits a file holds"
+      ],
+      "explanation": "Alan Turing suggested it in 1950. If a person cannot tell whether they are talking to a machine, the machine passes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.04",
+      "difficulty": "mixed",
+      "question": "Tim Berners-Lee invented the web while working at which European research centre?",
+      "correct": "CERN",
+      "wrong": ["ESA", "NASA", "Siemens"],
+      "explanation": "CERN is near Geneva in Switzerland. Scientists there needed an easy way to share papers between computers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.05",
+      "difficulty": "mixed",
+      "question": "What do the letters in \"USB\" stand for?",
+      "correct": "Universal Serial Bus",
+      "wrong": ["United System Box", "Ultra Speed Broadcast", "Universal Storage Block"],
+      "explanation": "USB was made in the 1990s so that one type of plug could connect many kinds of devices.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.06",
+      "difficulty": "mixed",
+      "question": "What does \"HTML\" stand for?",
+      "correct": "HyperText Markup Language",
+      "wrong": [
+        "High Tech Machine Language",
+        "Home Tool Making Language",
+        "Hyper Transfer Mail Link"
+      ],
+      "explanation": "HTML is the code that tells a browser the structure of a web page: headings, paragraphs, links and pictures.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.07",
+      "difficulty": "mixed",
+      "question": "In a web address that starts with \"https\", what does the \"s\" stand for?",
+      "correct": "Secure",
+      "wrong": ["Speed", "Server", "Simple"],
+      "explanation": "HTTPS encrypts the data between you and the website. That makes it hard for others to read it on the way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.08",
+      "difficulty": "mixed",
+      "question": "Nokia, the company famous for its mobile phones, was founded in which country?",
+      "correct": "Finland",
+      "wrong": ["Sweden", "Norway", "Denmark"],
+      "explanation": "Nokia began as a paper mill in 1865 and is named after a town in Finland. Its phones were very popular in the 1990s and early 2000s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.09",
+      "difficulty": "mixed",
+      "question": "What is a CAPTCHA test on a website made to tell apart?",
+      "correct": "Humans and computer programs",
+      "wrong": ["Children and adults", "Old and new computers", "Fast and slow connections"],
+      "explanation": "Reading twisted letters or picking pictures is easy for people but was hard for programs that try to fill in forms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which language is mainly used to set the colours, fonts and layout of web pages?",
+      "correct": "CSS",
+      "wrong": ["SQL", "C", "Bash"],
+      "explanation": "CSS stands for Cascading Style Sheets. HTML gives a page its content, and CSS makes it look good.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which part of a computer is its short-term working memory?",
+      "correct": "RAM",
+      "wrong": ["The hard disk", "The power supply", "The mouse"],
+      "explanation": "RAM holds the programs and files you are using right now. It is emptied when the computer is switched off.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.12",
+      "difficulty": "mixed",
+      "question": "What does the SIM card in a mobile phone do?",
+      "correct": "It identifies your phone subscription",
+      "wrong": ["It takes the photos", "It stores the battery power", "It makes the screen bright"],
+      "explanation": "SIM stands for Subscriber Identity Module. You can move it to another phone to keep your number.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.13",
+      "difficulty": "mixed",
+      "question": "In which decade was the first text message (SMS) sent?",
+      "correct": "The 1990s",
+      "wrong": ["The 1970s", "The 1980s", "The 2000s"],
+      "explanation": "It was sent in December 1992 and said \"Merry Christmas\". It was sent to a phone, from a computer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which early computer network, started in the USA in 1969, grew into the internet?",
+      "correct": "ARPANET",
+      "wrong": ["COMNET", "WEBNET", "CERNNET"],
+      "explanation": "ARPANET first linked four computers at universities and research centres. Later networks joined it, and together they became the internet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.15",
+      "difficulty": "mixed",
+      "question": "What do the letters \"CPU\" stand for?",
+      "correct": "Central Processing Unit",
+      "wrong": ["Computer Power Unit", "Central Program Utility", "Core Printing Unit"],
+      "explanation": "The CPU is the part that runs the instructions. Phones also have a CPU, but a very small one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.16",
+      "difficulty": "mixed",
+      "question": "What do the letters \"IP\" stand for in \"IP address\"?",
+      "correct": "Internet Protocol",
+      "wrong": ["Internal Page", "Instant Picture", "Input Port"],
+      "explanation": "An IP address is like a postal address for a device. It lets data find its way across the internet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.17",
+      "difficulty": "mixed",
+      "question": "Which programming language is named after a British comedy group?",
+      "correct": "Python",
+      "wrong": ["Ruby", "Swift", "Pascal"],
+      "explanation": "Its creator was a fan of Monty Python. The name has nothing to do with the snake, even if the logo has one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.18",
+      "difficulty": "mixed",
+      "question": "What does \"open source\" mean for a piece of software?",
+      "correct": "Anyone can read and change its code",
+      "wrong": ["It is free for one day", "It only works online", "It cannot have bugs"],
+      "explanation": "Open-source programs, such as Linux, are built by people who share and improve the code together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.19",
+      "difficulty": "mixed",
+      "question": "What does a firewall do?",
+      "correct": "It blocks unwanted network traffic",
+      "wrong": ["It cools down the processor", "It makes files smaller", "It speeds up the screen"],
+      "explanation": "A firewall checks the data going in and out and stops what is not allowed, like a guard at a gate.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which Finnish student started writing the Linux system in 1991?",
+      "correct": "Linus Torvalds",
+      "wrong": ["Tim Berners-Lee", "Alan Turing", "Dennis Ritchie"],
+      "explanation": "He first shared it as a hobby project. Linux went on to run many servers, phones and supercomputers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.21",
+      "difficulty": "mixed",
+      "question": "What was Colossus, built in Britain during the Second World War, used for?",
+      "correct": "Breaking enemy secret codes",
+      "wrong": ["Predicting the weather", "Guiding ships at sea", "Printing newspapers"],
+      "explanation": "Colossus was one of the first electronic computers. It helped read German messages and was kept secret for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.22",
+      "difficulty": "mixed",
+      "question": "What does the word \"bit\" come from?",
+      "correct": "Binary digit",
+      "wrong": ["Basic input", "Big item", "Byte index"],
+      "explanation": "A bit is a single 0 or 1. The word was made popular by the scientist Claude Shannon.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.23",
+      "difficulty": "mixed",
+      "question": "What is \"phishing\"?",
+      "correct": "Tricking people with fake messages",
+      "wrong": ["Fixing broken computers", "Looking for lost files", "Making a website faster"],
+      "explanation": "A phishing message may look like it comes from your bank. Never type passwords after clicking a link you don't trust.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.24",
+      "difficulty": "mixed",
+      "question": "What is encryption used for?",
+      "correct": "Scrambling data so others can't read it",
+      "wrong": ["Making a file smaller", "Making a screen brighter", "Finding lost files"],
+      "explanation": "Messages and online shopping use encryption. Without the secret key, the data looks like nonsense.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which kind of computer drive has no moving parts inside?",
+      "correct": "A solid-state drive (SSD)",
+      "wrong": ["A hard disk drive", "A DVD drive", "A tape drive"],
+      "explanation": "An SSD stores data in chips. It is quiet and fast, while a hard disk has spinning plates.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.26",
+      "difficulty": "mixed",
+      "question": "A phone finds its position with GPS by using signals from what?",
+      "correct": "Satellites",
+      "wrong": ["Underground cables", "Street lights", "Weather balloons"],
+      "explanation": "GPS satellites circle the Earth and send out the time. The phone uses the signals to work out where it is.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.27",
+      "difficulty": "mixed",
+      "question": "What is a \"cookie\" on a website?",
+      "correct": "A small file saved by your browser",
+      "wrong": [
+        "A game inside the browser",
+        "A type of virus scanner",
+        "A picture on the home page"
+      ],
+      "explanation": "Cookies can remember what is in your basket or which language you chose.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.28",
+      "difficulty": "mixed",
+      "question": "What is a \"cell\" in a spreadsheet?",
+      "correct": "The box where a row and a column meet",
+      "wrong": ["A kind of battery", "A whole sheet", "A formula that adds up"],
+      "explanation": "Each cell has a name, such as B3, made from its column letter and row number.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.29",
+      "difficulty": "mixed",
+      "question": "In programming, what is a \"loop\"?",
+      "correct": "Code that repeats steps",
+      "wrong": ["A mistake in the code", "A kind of cable", "A way to save a file"],
+      "explanation": "With a loop, you don't have to write the same line a thousand times. You tell the computer to repeat it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.30",
+      "difficulty": "mixed",
+      "question": "What does \"streaming\" a film mean?",
+      "correct": "Watching it as it arrives online",
+      "wrong": ["Downloading it to a DVD", "Printing it on paper", "Making a copy of it"],
+      "explanation": "You don't need to wait for the whole file before it starts. Music, games and live TV can be streamed too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.31",
+      "difficulty": "mixed",
+      "question": "What do the letters \"QR\" in \"QR code\" stand for?",
+      "correct": "Quick Response",
+      "wrong": ["Quality Record", "Quiet Room", "Quantum Reading"],
+      "explanation": "A QR code is a square pattern that a phone camera reads very quickly. It can open a web page.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.32",
+      "difficulty": "mixed",
+      "question": "The word \"robot\" comes from a Czech word meaning what?",
+      "correct": "Forced work",
+      "wrong": ["Iron man", "Clever machine", "Metal bird"],
+      "explanation": "Writer Karel Čapek used it in a play in 1920. The Czech word \"robota\" means hard, forced work.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.33",
+      "difficulty": "mixed",
+      "question": "What is \"machine learning\"?",
+      "correct": "Computers learning from data",
+      "wrong": ["A school for robots", "A way of building faster chips", "A kind of video game"],
+      "explanation": "Instead of being told every rule, the program learns from many examples, such as photos of cats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.34",
+      "difficulty": "mixed",
+      "question": "Why does a phone touchscreen react to your finger but not to a wooden pencil?",
+      "correct": "Your finger conducts electricity",
+      "wrong": ["Your finger is warmer", "Your finger is heavier", "Your finger reflects light"],
+      "explanation": "Most screens notice the change in an electric field when a finger touches them. Special gloves have threads that conduct.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.35",
+      "difficulty": "mixed",
+      "question": "Which of these is an operating system for computers?",
+      "correct": "Linux",
+      "wrong": ["Excel", "Zoom", "Spotify"],
+      "explanation": "An operating system runs the computer and lets other programs work. Windows, macOS and Linux are well known.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.36",
+      "difficulty": "mixed",
+      "question": "Bjarne Stroustrup, who created the programming language C++, comes from which country?",
+      "correct": "Denmark",
+      "wrong": ["Norway", "Sweden", "Finland"],
+      "explanation": "He was born in Aarhus. He began work on C++ in 1979 at Bell Labs in the USA.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.37",
+      "difficulty": "mixed",
+      "question": "Artificial neural networks are loosely inspired by which part of the body?",
+      "correct": "The brain",
+      "wrong": ["The heart", "The lungs", "The stomach"],
+      "explanation": "They have many simple units joined in layers, like nerve cells. They are used to recognise speech and pictures.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which sensor in a phone notices when you turn it sideways?",
+      "correct": "An accelerometer",
+      "wrong": ["A barometer", "A thermometer", "A hygrometer"],
+      "explanation": "The accelerometer feels movement and tilt. That is how the screen knows to rotate.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.39",
+      "difficulty": "mixed",
+      "question": "What is a hashtag (#) used for in messages and posts?",
+      "correct": "To mark a topic so people can find it",
+      "wrong": ["To make the text louder", "To send money", "To delete a message"],
+      "explanation": "Clicking a hashtag shows other posts that use the same one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.mixed.40",
+      "difficulty": "mixed",
+      "question": "What does \"multitasking\" mean for a computer?",
+      "correct": "Running several programs at once",
+      "wrong": ["Having several screens", "Printing many pages", "Using several passwords"],
+      "explanation": "A processor can switch between tasks so fast that they seem to run at the same time. Chips with several cores really do run them together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.01",
+      "difficulty": "expert",
+      "question": "In 1969, the first message sent over ARPANET was cut short when the system crashed. Which two letters arrived?",
+      "correct": "LO",
+      "wrong": ["HI", "OK", "AB"],
+      "explanation": "The team meant to type \"LOGIN\". The system crashed after \"LO\", and they typed the rest later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.02",
+      "difficulty": "expert",
+      "question": "Which computer pioneer wrote one of the first compilers in the early 1950s?",
+      "correct": "Grace Hopper",
+      "wrong": ["Ada Lovelace", "Margaret Hamilton", "Katherine Johnson"],
+      "explanation": "Her A-0 system appeared in 1952. Her later language FLOW-MATIC was a model for COBOL.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.03",
+      "difficulty": "expert",
+      "question": "Moore's law says that the number of what on a chip roughly doubles every two years?",
+      "correct": "Transistors",
+      "wrong": ["Screens", "Batteries", "Fans"],
+      "explanation": "Gordon Moore first wrote about the trend in 1965. For decades it helped computers become much faster and smaller.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.04",
+      "difficulty": "expert",
+      "question": "In a von Neumann computer, where are programs and data stored?",
+      "correct": "In the same memory",
+      "wrong": ["In two separate memories", "On punched paper tape", "Only inside the processor"],
+      "explanation": "This stored-program idea is used in most computers. It means a computer can load a new program as easily as new data.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.05",
+      "difficulty": "expert",
+      "question": "ENIAC, an early electronic computer of the 1940s, used thousands of which part to do its calculations?",
+      "correct": "Vacuum tubes",
+      "wrong": ["Transistors", "Silicon chips", "Magnetic discs"],
+      "explanation": "Vacuum tubes were glass tubes that acted as switches. ENIAC filled a large room and used a lot of power.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.06",
+      "difficulty": "expert",
+      "question": "The transistor was invented in 1947 at which laboratory?",
+      "correct": "Bell Labs",
+      "wrong": ["CERN", "Siemens Labs", "Xerox PARC"],
+      "explanation": "The transistor replaced the vacuum tube. It was smaller, cooler and used much less power.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.07",
+      "difficulty": "expert",
+      "question": "Which programming language did Dennis Ritchie develop in the early 1970s?",
+      "correct": "C",
+      "wrong": ["Pascal", "Fortran", "Lisp"],
+      "explanation": "C was used to write the Unix system. Many later languages, such as C++ and Java, borrow its style.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.08",
+      "difficulty": "expert",
+      "question": "The programming language COBOL was made mainly for which kind of work?",
+      "correct": "Business and banking",
+      "wrong": ["Computer games", "Space flight", "Music"],
+      "explanation": "COBOL is short for Common Business-Oriented Language. It was designed in 1959 to read almost like English.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.09",
+      "difficulty": "expert",
+      "question": "What does DNS do on the internet?",
+      "correct": "Turns website names into numbers",
+      "wrong": ["Makes files smaller", "Blocks viruses", "Sends emails faster"],
+      "explanation": "It works like a phone book. You type a name, and DNS finds the number that computers use.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.10",
+      "difficulty": "expert",
+      "question": "What does the code \"ASCII\" give to each letter, digit and symbol?",
+      "correct": "A number",
+      "wrong": ["A colour", "A sound", "A picture"],
+      "explanation": "For example, the capital letter \"A\" has the number 65. Unicode later grew to cover letters from all languages.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.11",
+      "difficulty": "expert",
+      "question": "How many different values can eight bits hold?",
+      "correct": "256",
+      "wrong": ["64", "100", "512"],
+      "explanation": "Each bit has two choices, and 2 multiplied by itself eight times is 256. That is why colour values often go from 0 to 255.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.12",
+      "difficulty": "expert",
+      "question": "How many different symbols does the hexadecimal number system use?",
+      "correct": "16",
+      "wrong": ["8", "10", "12"],
+      "explanation": "Hex uses the digits 0 to 9 and the letters A to F. Programmers like it because it is a short way to write binary.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.13",
+      "difficulty": "expert",
+      "question": "In 1936, Alan Turing described an imaginary machine. What was it used to study?",
+      "correct": "What can and cannot be computed",
+      "wrong": [
+        "How to travel in time",
+        "How to build faster engines",
+        "How to predict the weather"
+      ],
+      "explanation": "The idea showed what any computer could do in theory. It became one of the foundations of computer science.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.14",
+      "difficulty": "expert",
+      "question": "RFID tags, such as those in some travel cards, are read using what?",
+      "correct": "Radio waves",
+      "wrong": ["Sound waves", "Lasers", "Infrared light"],
+      "explanation": "The reader sends a radio signal. The tag uses its energy to send back a short code.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.15",
+      "difficulty": "expert",
+      "question": "In a network, what does a \"ping\" measure?",
+      "correct": "The round-trip time of a signal",
+      "wrong": [
+        "How much data a file holds",
+        "How hot a processor is",
+        "How many users are online"
+      ],
+      "explanation": "A low ping means a fast response. It matters a lot in online games and video calls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.16",
+      "difficulty": "expert",
+      "question": "A GPS receiver needs signals from at least how many satellites to find its position and the time?",
+      "correct": "Four",
+      "wrong": ["Two", "Three", "Six"],
+      "explanation": "With a perfect clock, three would be enough. The fourth lets the receiver correct its own, less exact clock.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.17",
+      "difficulty": "expert",
+      "question": "Which engineer chose the \"@\" sign for email addresses in 1971?",
+      "correct": "Ray Tomlinson",
+      "wrong": ["Vint Cerf", "Alan Kay", "Steve Wozniak"],
+      "explanation": "He used \"@\" to separate the user's name from the computer's name. He also sent one of the first networked emails.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.18",
+      "difficulty": "expert",
+      "question": "Which pair of rules, designed by Vint Cerf and Bob Kahn in the 1970s, is the basis of the internet?",
+      "correct": "TCP/IP",
+      "wrong": ["HTML/CSS", "USB/HDMI", "SMS/MMS"],
+      "explanation": "TCP/IP breaks data into small packets and sends them across the network. They are put back together at the end.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.19",
+      "difficulty": "expert",
+      "question": "Konrad Zuse built the Z3, one of the first working programmable computers, in 1941. Which country was he from?",
+      "correct": "Germany",
+      "wrong": ["The USA", "Britain", "The Soviet Union"],
+      "explanation": "He built his first computer, the Z1, in his parents' flat in Berlin. The Z3 was destroyed in a bombing raid in 1943.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.20",
+      "difficulty": "expert",
+      "question": "The term \"artificial intelligence\" was coined for a 1956 summer workshop. At which college was it held?",
+      "correct": "Dartmouth",
+      "wrong": ["Oxford", "Stanford", "MIT"],
+      "explanation": "John McCarthy chose the term. The group hoped to make machines that could use language and learn, but it took much longer than they expected.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.21",
+      "difficulty": "expert",
+      "question": "Many self-driving cars use LiDAR to see their surroundings. What does LiDAR use?",
+      "correct": "Pulses of laser light",
+      "wrong": ["Sound echoes", "Magnets", "Heat cameras"],
+      "explanation": "It measures how long the light takes to bounce back. From this a computer builds a 3D map of the road.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.22",
+      "difficulty": "expert",
+      "question": "In Isaac Asimov's stories, what does the First Law of Robotics say a robot may not do?",
+      "correct": "Harm a human",
+      "wrong": ["Tell a lie", "Work at night", "Leave a room"],
+      "explanation": "Asimov invented his Three Laws in the 1940s. His stories are about how the rules can go wrong.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.23",
+      "difficulty": "expert",
+      "question": "The Y2K problem came from computers that stored the year with only how many digits?",
+      "correct": "Two",
+      "wrong": ["One", "Three", "Six"],
+      "explanation": "A year stored as \"99\" could turn into \"00\" in the year 2000. Computers could then think it was 1900.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.24",
+      "difficulty": "expert",
+      "question": "What does a compiler do?",
+      "correct": "Turns code into machine instructions",
+      "wrong": [
+        "Runs code one line at a time",
+        "Finds and fixes bugs in code",
+        "Makes files smaller to save space"
+      ],
+      "explanation": "People write code in a language like C. The compiler turns it into machine code for the chip.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.25",
+      "difficulty": "expert",
+      "question": "In the phone standard GSM, launched in Europe in the early 1990s, what does the \"M\" stand for?",
+      "correct": "Mobile",
+      "wrong": ["Message", "Modern", "Machine"],
+      "explanation": "GSM stands for Global System for Mobile communications. It made it possible to use one phone in many countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.26",
+      "difficulty": "expert",
+      "question": "A CD stores music as tiny pits that are read by what?",
+      "correct": "A laser",
+      "wrong": ["A magnet", "A needle", "A camera"],
+      "explanation": "The laser shines on the spinning disc. The pits and flat parts reflect the light differently.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.27",
+      "difficulty": "expert",
+      "question": "QR codes were invented in the 1990s to keep track of what?",
+      "correct": "Car parts",
+      "wrong": ["Library books", "Bank notes", "Airline bags"],
+      "explanation": "A Japanese company made them for car factories. A QR code holds much more data than an ordinary barcode.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.28",
+      "difficulty": "expert",
+      "question": "In 1947, engineers found a real insect causing a fault in the Harvard Mark II computer. What was it?",
+      "correct": "A moth",
+      "wrong": ["A beetle", "A fly", "A wasp"],
+      "explanation": "It was stuck in a relay, and the team taped it into the log book as a joke. Engineers had called faults \"bugs\" long before that.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.29",
+      "difficulty": "expert",
+      "question": "In digital logic, when does an AND gate give an output of 1?",
+      "correct": "When both inputs are 1",
+      "wrong": ["When either input is 1", "When both inputs are 0", "When the inputs differ"],
+      "explanation": "AND, OR and NOT gates are the building blocks of chips. A processor is made from huge numbers of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.30",
+      "difficulty": "expert",
+      "question": "How many bits are there in an IPv4 address?",
+      "correct": "32",
+      "wrong": ["16", "64", "128"],
+      "explanation": "32 bits allow about 4 billion addresses. IPv6 uses 128 bits because we ran short.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.31",
+      "difficulty": "expert",
+      "question": "What does a servo motor in a robot arm do well?",
+      "correct": "Turns to a precise angle",
+      "wrong": ["Makes electricity", "Cools the robot", "Stores the robot's memory"],
+      "explanation": "A servo has a small controller that checks its position. That is how a robot arm can reach exact points.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.32",
+      "difficulty": "expert",
+      "question": "What is a computer \"worm\"?",
+      "correct": "A program that copies itself on networks",
+      "wrong": [
+        "A scratch on a hard disk",
+        "A cable that links two computers",
+        "A very slow network connection"
+      ],
+      "explanation": "Unlike many viruses, a worm does not need a host file. It copies itself from computer to computer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.33",
+      "difficulty": "expert",
+      "question": "The first prototype of the computer mouse in the 1960s had a case made of what?",
+      "correct": "Wood",
+      "wrong": ["Steel", "Glass", "Rubber"],
+      "explanation": "Douglas Engelbart's team carved a wooden shell for it. It had two wheels, not a ball.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.34",
+      "difficulty": "expert",
+      "question": "The small, cheap Raspberry Pi computer for learning to code comes from which country?",
+      "correct": "The United Kingdom",
+      "wrong": ["Japan", "Canada", "Germany"],
+      "explanation": "It was created by a charity in Cambridge, England. The first model came out in 2012.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.35",
+      "difficulty": "expert",
+      "question": "What does \"NFC\", used for tapping a phone to pay, stand for?",
+      "correct": "Near Field Communication",
+      "wrong": ["Nano File Cable", "New Fast Channel", "Network Frame Code"],
+      "explanation": "NFC only works over a few centimetres. The short range helps to keep payments safe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.36",
+      "difficulty": "expert",
+      "question": "The first web page, made at CERN, was about what?",
+      "correct": "How to use the web",
+      "wrong": ["Particle physics results", "The history of CERN", "Swiss mountain weather"],
+      "explanation": "It was on the first website, info.cern.ch. It explained what the World Wide Web was and how to set up a web server.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.37",
+      "difficulty": "expert",
+      "question": "In which year did CERN make the web's technology free for everyone to use?",
+      "correct": "1993",
+      "wrong": ["1979", "1985", "2001"],
+      "explanation": "The decision let anyone build web software without paying. This helped the web to grow fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.38",
+      "difficulty": "expert",
+      "question": "A qubit is the basic unit of information in which kind of computer?",
+      "correct": "A quantum computer",
+      "wrong": ["An analogue computer", "A mechanical computer", "A pocket calculator"],
+      "explanation": "A qubit can be in a mix of 0 and 1 at the same time. Quantum computers could solve certain problems much faster.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.39",
+      "difficulty": "expert",
+      "question": "What does a hash function do?",
+      "correct": "Turns data into a short fingerprint",
+      "wrong": ["Makes data twice as large", "Deletes old files", "Finds the shortest route"],
+      "explanation": "Even a tiny change to the data gives a completely different hash. Sites use hashes to protect stored passwords.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.technology.expert.40",
+      "difficulty": "expert",
+      "question": "Which early web browser from 1993 helped to make web pages with pictures popular?",
+      "correct": "Mosaic",
+      "wrong": ["Opera", "Safari", "Chrome"],
+      "explanation": "Mosaic could show pictures and text on the same page. Many later browsers grew from its ideas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

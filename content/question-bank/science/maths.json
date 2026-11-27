@@ -1,0 +1,1206 @@
+{
+  "category": "science",
+  "subcategory": "maths",
+  "questions": [
+    {
+      "id": "science.maths.kids.01",
+      "difficulty": "kids",
+      "question": "How many sides does a hexagon have?",
+      "correct": "6",
+      "wrong": ["5", "7", "8"],
+      "explanation": "Hexa comes from the Greek word for six. Bees build their honeycomb cells in this shape.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.02",
+      "difficulty": "kids",
+      "question": "What is 7 × 8?",
+      "correct": "56",
+      "wrong": ["48", "54", "63"],
+      "explanation": "A memory trick: the numbers 5, 6, 7, 8 give you 56 = 7 × 8.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.03",
+      "difficulty": "kids",
+      "question": "What is half of 50?",
+      "correct": "25",
+      "wrong": ["20", "30", "15"],
+      "explanation": "Half of 100 is 50, so half of 50 is 25. That is also a quarter of 100.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.04",
+      "difficulty": "kids",
+      "question": "How many degrees is a right angle?",
+      "correct": "90",
+      "wrong": ["45", "100", "180"],
+      "explanation": "The corner of a book is a right angle. A square has four of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.05",
+      "difficulty": "kids",
+      "question": "What shape has three straight sides?",
+      "correct": "Triangle",
+      "wrong": ["Rectangle", "Oval", "Pentagon"],
+      "explanation": "Tri means three. A triangle also has three corners.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.06",
+      "difficulty": "kids",
+      "question": "What number comes next: 2, 4, 6, 8, ...?",
+      "correct": "10",
+      "wrong": ["9", "11", "12"],
+      "explanation": "These are even numbers. They go up by 2 each time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.07",
+      "difficulty": "kids",
+      "question": "How many minutes are in one hour?",
+      "correct": "60",
+      "wrong": ["30", "100", "90"],
+      "explanation": "Half an hour is 30 minutes, and a quarter of an hour is 15 minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.08",
+      "difficulty": "kids",
+      "question": "How many centimetres are in one metre?",
+      "correct": "100",
+      "wrong": ["10", "50", "1,000"],
+      "explanation": "Centi means one hundredth. A centimetre is one hundredth of a metre.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.09",
+      "difficulty": "kids",
+      "question": "What do we call the answer to an addition?",
+      "correct": "The sum",
+      "wrong": ["The product", "The difference", "The factor"],
+      "explanation": "Adding 3 and 4 gives the sum 7. The answer to a multiplication is called the product.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.10",
+      "difficulty": "kids",
+      "question": "How many sides does an octagon have?",
+      "correct": "8",
+      "wrong": ["6", "10", "12"],
+      "explanation": "Octo means eight, like the eight arms of an octopus. Stop signs in many countries are octagons.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.11",
+      "difficulty": "kids",
+      "question": "What is 100 divided by 5?",
+      "correct": "20",
+      "wrong": ["25", "15", "50"],
+      "explanation": "Five groups of 20 make 100. A trick: double 100 to get 200, then divide by 10.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.12",
+      "difficulty": "kids",
+      "question": "How many things are in a dozen?",
+      "correct": "12",
+      "wrong": ["10", "20", "24"],
+      "explanation": "Eggs are often sold by the dozen. Half a dozen is 6.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.13",
+      "difficulty": "kids",
+      "question": "What is 48 + 27?",
+      "correct": "75",
+      "wrong": ["65", "73", "85"],
+      "explanation": "A trick: 48 + 2 = 50, and 27 − 2 = 25. So 48 + 27 is the same as 50 + 25 = 75.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.14",
+      "difficulty": "kids",
+      "question": "Which shape has no corners and no straight sides?",
+      "correct": "Circle",
+      "wrong": ["Square", "Triangle", "Hexagon"],
+      "explanation": "Every point on the edge of a circle is the same distance from the middle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.15",
+      "difficulty": "kids",
+      "question": "What is 9 × 9?",
+      "correct": "81",
+      "wrong": ["72", "90", "99"],
+      "explanation": "Try this trick: in the 9 times table up to 9 × 10, the digits of each answer add up to 9 (18, 27, 36 ...).",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.16",
+      "difficulty": "kids",
+      "question": "How many grams are in one kilogram?",
+      "correct": "1,000",
+      "wrong": ["100", "500", "10,000"],
+      "explanation": "Kilo means one thousand. A kilometre is 1,000 metres, too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.17",
+      "difficulty": "kids",
+      "question": "What number comes next: 1, 2, 4, 8, 16, ...?",
+      "correct": "32",
+      "wrong": ["24", "30", "20"],
+      "explanation": "Each number is double the one before it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.18",
+      "difficulty": "kids",
+      "question": "Which of these numbers is a prime number?",
+      "correct": "7",
+      "wrong": ["9", "15", "21"],
+      "explanation": "A prime number can only be divided by 1 and by itself. 9 is 3 × 3, so it is not prime.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.19",
+      "difficulty": "kids",
+      "question": "What is 1,000 × 1,000?",
+      "correct": "One million",
+      "wrong": ["One hundred thousand", "Ten thousand", "Two thousand"],
+      "explanation": "A million has six zeros: 1,000,000.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.20",
+      "difficulty": "kids",
+      "question": "How many sides does a pentagon have?",
+      "correct": "5",
+      "wrong": ["4", "6", "10"],
+      "explanation": "Penta comes from the Greek word for five. A famous building in the USA is called the Pentagon because it has five sides.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.21",
+      "difficulty": "kids",
+      "question": "What is 3 × 3 × 3?",
+      "correct": "27",
+      "wrong": ["9", "18", "30"],
+      "explanation": "Multiplying three 3s together is called three cubed, written 3³.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.22",
+      "difficulty": "kids",
+      "question": "What is double 35?",
+      "correct": "70",
+      "wrong": ["65", "75", "60"],
+      "explanation": "Double 30 is 60 and double 5 is 10. Put them together to get 70.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.23",
+      "difficulty": "kids",
+      "question": "Which unit would you use to measure the length of a long walk?",
+      "correct": "Kilometres",
+      "wrong": ["Grams", "Litres", "Seconds"],
+      "explanation": "Most adults walk one kilometre in about 10 to 15 minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.24",
+      "difficulty": "kids",
+      "question": "What do you get when you multiply any number by zero?",
+      "correct": "0",
+      "wrong": ["1", "10", "The same number"],
+      "explanation": "Zero groups of anything is nothing, so the answer is always 0.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.25",
+      "difficulty": "kids",
+      "question": "What is the distance all the way around a circle called?",
+      "correct": "Circumference",
+      "wrong": ["Diameter", "Radius", "Angle"],
+      "explanation": "The diameter goes straight across through the middle. The radius is half of the diameter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.26",
+      "difficulty": "kids",
+      "question": "How many degrees are in one full turn, a whole circle?",
+      "correct": "360",
+      "wrong": ["180", "90", "100"],
+      "explanation": "Four right angles of 90 degrees make one full turn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.27",
+      "difficulty": "kids",
+      "question": "What number comes next: 3, 6, 9, 12, ...?",
+      "correct": "15",
+      "wrong": ["14", "16", "18"],
+      "explanation": "This is the 3 times table. Each number is 3 more than the one before.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.28",
+      "difficulty": "kids",
+      "question": "What is 0.5 written as a fraction?",
+      "correct": "1/2",
+      "wrong": ["1/5", "1/4", "2/5"],
+      "explanation": "0.5 means five tenths, which is the same as one half.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.29",
+      "difficulty": "kids",
+      "question": "What do we call two lines that always stay the same distance apart?",
+      "correct": "Parallel lines",
+      "wrong": ["Crossing lines", "Curved lines", "Zigzag lines"],
+      "explanation": "Railway tracks are parallel. They never meet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.30",
+      "difficulty": "kids",
+      "question": "How many edges does a cube have?",
+      "correct": "12",
+      "wrong": ["6", "8", "10"],
+      "explanation": "The edges are the lines where two faces meet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.31",
+      "difficulty": "kids",
+      "question": "On a normal dice, the numbers on opposite faces add up to what?",
+      "correct": "7",
+      "wrong": ["6", "8", "12"],
+      "explanation": "On a normal dice, 1 is opposite 6, 2 is opposite 5 and 3 is opposite 4.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.32",
+      "difficulty": "kids",
+      "question": "How many days are in a leap year?",
+      "correct": "366",
+      "wrong": ["360", "365", "367"],
+      "explanation": "Earth takes a little more than 365 days to go round the Sun. The extra day is 29 February.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.33",
+      "difficulty": "kids",
+      "question": "Which shape has four equal sides and four right angles?",
+      "correct": "Square",
+      "wrong": ["Triangle", "Circle", "Kite"],
+      "explanation": "A normal rectangle also has four right angles, but its long and short sides are different.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.34",
+      "difficulty": "kids",
+      "question": "What is 6 × 4?",
+      "correct": "24",
+      "wrong": ["20", "28", "30"],
+      "explanation": "You can swap the order: 4 × 6 is also 24.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.35",
+      "difficulty": "kids",
+      "question": "Which of these numbers is odd?",
+      "correct": "35",
+      "wrong": ["12", "18", "30"],
+      "explanation": "Odd numbers end in 1, 3, 5, 7 or 9. They cannot be shared into two equal whole groups.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.36",
+      "difficulty": "kids",
+      "question": "Which 3D shape is shaped like a ball?",
+      "correct": "Sphere",
+      "wrong": ["Cube", "Cone", "Cylinder"],
+      "explanation": "Oranges and footballs are spheres. Every point on a sphere is the same distance from the centre.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.37",
+      "difficulty": "kids",
+      "question": "In the fraction 3/4, what is the number 3 called?",
+      "correct": "The numerator",
+      "wrong": ["The denominator", "The divider", "The decimal"],
+      "explanation": "The numerator says how many parts you have. The denominator, 4, says how many equal parts the whole is cut into.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.38",
+      "difficulty": "kids",
+      "question": "Which 3D shape is a tin of beans?",
+      "correct": "Cylinder",
+      "wrong": ["Cone", "Cube", "Pyramid"],
+      "explanation": "A cylinder has two flat circles at the ends and a curved side.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.39",
+      "difficulty": "kids",
+      "question": "What is 11 × 11?",
+      "correct": "121",
+      "wrong": ["101", "111", "132"],
+      "explanation": "Fun fact: 121 reads the same forwards and backwards.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.kids.40",
+      "difficulty": "kids",
+      "question": "Which tool do you use to measure angles?",
+      "correct": "Protractor",
+      "wrong": ["Ruler", "Calculator", "Scales"],
+      "explanation": "Most protractors are shaped like a half circle and show degrees from 0 to 180.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.01",
+      "difficulty": "mixed",
+      "question": "Pi is about 3.14. It is the ratio of a circle's circumference to its what?",
+      "correct": "Diameter",
+      "wrong": ["Radius", "Area", "Height"],
+      "explanation": "Divide the distance around any circle by the distance across it and you always get pi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.02",
+      "difficulty": "mixed",
+      "question": "In any flat triangle, the three angles add up to how many degrees?",
+      "correct": "180",
+      "wrong": ["90", "270", "360"],
+      "explanation": "Cut off the three corners and put them side by side. They make a straight line.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which is the only even prime number?",
+      "correct": "2",
+      "wrong": ["1", "4", "6"],
+      "explanation": "Every other even number can be divided by 2, so it has more than two factors.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which ancient Greek is famous for a theorem about right-angled triangles?",
+      "correct": "Pythagoras",
+      "wrong": ["Aristotle", "Socrates", "Herodotus"],
+      "explanation": "The rule says the squares of the two short sides add up to the square of the long side.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.05",
+      "difficulty": "mixed",
+      "question": "What is the longest side of a right-angled triangle called?",
+      "correct": "Hypotenuse",
+      "wrong": ["Base", "Diameter", "Tangent"],
+      "explanation": "It is always the side opposite the right angle. The word comes from Greek for 'stretching under'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.06",
+      "difficulty": "mixed",
+      "question": "What is the mean (average) of 5, 8, 12 and 19?",
+      "correct": "11",
+      "wrong": ["10", "12", "14"],
+      "explanation": "Add them up to get 44, then divide by 4 to get 11.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.07",
+      "difficulty": "mixed",
+      "question": "What is 15% of 200?",
+      "correct": "30",
+      "wrong": ["15", "20", "45"],
+      "explanation": "10% of 200 is 20 and 5% is 10, so 15% is 30.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.08",
+      "difficulty": "mixed",
+      "question": "What is the square root of 900?",
+      "correct": "30",
+      "wrong": ["15", "90", "300"],
+      "explanation": "30 × 30 = 900. A square root is the number that gives your number when multiplied by itself.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.09",
+      "difficulty": "mixed",
+      "question": "What number comes next: 1, 1, 2, 3, 5, 8, ...?",
+      "correct": "13",
+      "wrong": ["11", "12", "16"],
+      "explanation": "Each number is the sum of the two before it: 5 + 8 = 13. The pattern shows up in sunflower seeds and pine cones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.10",
+      "difficulty": "mixed",
+      "question": "What is a shape with ten straight sides called?",
+      "correct": "Decagon",
+      "wrong": ["Octagon", "Nonagon", "Dodecagon"],
+      "explanation": "Deca means ten, as in decade, ten years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.11",
+      "difficulty": "mixed",
+      "question": "Where were our everyday digits 0 to 9 first developed?",
+      "correct": "India",
+      "wrong": ["Italy", "Greece", "Egypt"],
+      "explanation": "Arab scholars carried them to Europe, so they are often called Hindu-Arabic numerals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.12",
+      "difficulty": "mixed",
+      "question": "What is 25 × 12?",
+      "correct": "300",
+      "wrong": ["250", "275", "350"],
+      "explanation": "25 × 4 is 100. 12 is three fours, so 3 × 100 = 300.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.13",
+      "difficulty": "mixed",
+      "question": "A room is 8 metres long and 5 metres wide. What is its floor area?",
+      "correct": "40 square metres",
+      "wrong": ["13 square metres", "26 square metres", "45 square metres"],
+      "explanation": "Area is length times width. The distance around the edge, 26 metres, is called the perimeter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.14",
+      "difficulty": "mixed",
+      "question": "What do we call a triangle with three equal sides?",
+      "correct": "Equilateral",
+      "wrong": ["Scalene", "Obtuse", "Right-angled"],
+      "explanation": "Its three angles are equal too, 60 degrees each.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.15",
+      "difficulty": "mixed",
+      "question": "What is 3/4 written as a percentage?",
+      "correct": "75%",
+      "wrong": ["34%", "60%", "80%"],
+      "explanation": "A quarter is 25%, so three quarters is 75%.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.16",
+      "difficulty": "mixed",
+      "question": "What is two-thirds of 90?",
+      "correct": "60",
+      "wrong": ["30", "45", "70"],
+      "explanation": "A third of 90 is 30, so two thirds is 60.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.17",
+      "difficulty": "mixed",
+      "question": "What is the median of these numbers: 3, 5, 9, 10, 20?",
+      "correct": "9",
+      "wrong": ["5", "10", "20"],
+      "explanation": "The median is the middle number when they are in order. The mean, 9.4, is a different number.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.18",
+      "difficulty": "mixed",
+      "question": "What is the most common value in a list of numbers called?",
+      "correct": "The mode",
+      "wrong": ["The mean", "The median", "The range"],
+      "explanation": "In the list 2, 3, 3, 5, 7 the mode is 3, because it appears most often. A list can have more than one mode.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which number is written MCM in Roman numerals?",
+      "correct": "1,900",
+      "wrong": ["1,100", "1,400", "2,100"],
+      "explanation": "M is 1,000 and CM means 900, which is 1,000 minus 100.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.20",
+      "difficulty": "mixed",
+      "question": "A shop has 3 dozen eggs and sells 15. How many eggs are left?",
+      "correct": "21",
+      "wrong": ["18", "25", "33"],
+      "explanation": "3 dozen is 36, and 36 minus 15 is 21.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.21",
+      "difficulty": "mixed",
+      "question": "What angle do the hands of a clock make at 4 o'clock?",
+      "correct": "120 degrees",
+      "wrong": ["60 degrees", "90 degrees", "150 degrees"],
+      "explanation": "A clock face is 360 degrees with 12 hours, so each hour is 30 degrees. 4 × 30 = 120.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.22",
+      "difficulty": "mixed",
+      "question": "How many seconds are in one hour?",
+      "correct": "3,600",
+      "wrong": ["360", "3,000", "6,000"],
+      "explanation": "There are 60 minutes with 60 seconds each: 60 × 60 = 3,600.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which of these numbers is the biggest?",
+      "correct": "0.6",
+      "wrong": ["0.45", "0.5", "0.059"],
+      "explanation": "Compare the first digit after the point: 6 tenths beats 5 tenths or 4 tenths, however many digits follow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.24",
+      "difficulty": "mixed",
+      "question": "A jacket costs 800 kroner. The sale takes 25% off. What is the new price?",
+      "correct": "600 kroner",
+      "wrong": ["200 kroner", "650 kroner", "775 kroner"],
+      "explanation": "25% is a quarter. A quarter of 800 is 200, so you pay 800 minus 200.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.25",
+      "difficulty": "mixed",
+      "question": "What is a 3D shape with four faces, all of them triangles, called?",
+      "correct": "Tetrahedron",
+      "wrong": ["Cube", "Cone", "Octahedron"],
+      "explanation": "Tetra means four. A pyramid with a triangle as its base is a tetrahedron.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.26",
+      "difficulty": "mixed",
+      "question": "A googol is a 1 followed by how many zeros?",
+      "correct": "100",
+      "wrong": ["10", "1,000", "1,000,000"],
+      "explanation": "The name was made up by the young nephew of an American mathematician. The company name Google is a play on this word.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which number puzzle uses a 9 × 9 grid filled with the digits 1 to 9?",
+      "correct": "Sudoku",
+      "wrong": ["Crossword", "Jigsaw", "Mahjong"],
+      "explanation": "Each row, column and 3 × 3 box must hold every digit once. The name is Japanese.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.28",
+      "difficulty": "mixed",
+      "question": "Put 1 to 9 in a 3 × 3 square so every row, column and diagonal has the same total. What is the total?",
+      "correct": "15",
+      "wrong": ["12", "18", "21"],
+      "explanation": "All nine numbers add up to 45. Three equal rows share 45, so each row makes 15.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.29",
+      "difficulty": "mixed",
+      "question": "Five friends meet and each shakes hands once with every other friend. How many handshakes are there?",
+      "correct": "10",
+      "wrong": ["5", "15", "20"],
+      "explanation": "Each of the 5 people shakes 4 hands, but every shake is counted twice: 5 × 4 ÷ 2 = 10.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.30",
+      "difficulty": "mixed",
+      "question": "What is 2 + 3 × 4?",
+      "correct": "14",
+      "wrong": ["9", "20", "24"],
+      "explanation": "Multiply before you add: 3 × 4 = 12, then 12 + 2 = 14. The answer 20 comes from going left to right.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.31",
+      "difficulty": "mixed",
+      "question": "What is 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10?",
+      "correct": "55",
+      "wrong": ["45", "50", "60"],
+      "explanation": "Pair 1 with 10, 2 with 9, and so on. That gives five pairs that each make 11, and 5 × 11 = 55.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.32",
+      "difficulty": "mixed",
+      "question": "What does 'per cent' mean in plain words?",
+      "correct": "Out of every hundred",
+      "wrong": ["Out of every ten", "Out of every thousand", "Out of every two"],
+      "explanation": "Cent comes from the Latin word for hundred. A century is a hundred years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.33",
+      "difficulty": "mixed",
+      "question": "A triangle has a base of 14 cm and a height of 5 cm. What is its area?",
+      "correct": "35 square cm",
+      "wrong": ["70 square cm", "19 square cm", "45 square cm"],
+      "explanation": "The area of a triangle is half the base times the height. 14 × 5 = 70, and half of that is 35.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.34",
+      "difficulty": "mixed",
+      "question": "About how many kilometres are in one mile?",
+      "correct": "1.6",
+      "wrong": ["0.6", "2.5", "3.2"],
+      "explanation": "A 10 km run is just over 6 miles. The word mile comes from the Roman 'thousand paces'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.35",
+      "difficulty": "mixed",
+      "question": "A car drives 45 km in 30 minutes at a steady speed. How far does it go in one hour?",
+      "correct": "90 km",
+      "wrong": ["45 km", "75 km", "135 km"],
+      "explanation": "30 minutes is half an hour, so double the distance: 45 + 45 = 90.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.36",
+      "difficulty": "mixed",
+      "question": "Three pencils cost 12 kroner. How much do seven pencils cost?",
+      "correct": "28 kroner",
+      "wrong": ["21 kroner", "24 kroner", "36 kroner"],
+      "explanation": "One pencil costs 4 kroner, so seven cost 7 × 4 = 28 kroner.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.37",
+      "difficulty": "mixed",
+      "question": "A field has only chickens and cows: 10 animals with 28 legs in all. How many are cows?",
+      "correct": "4",
+      "wrong": ["2", "3", "6"],
+      "explanation": "If all 10 were chickens there would be 20 legs. Each cow adds 2 more legs, so 8 extra legs means 4 cows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.38",
+      "difficulty": "mixed",
+      "question": "How many times does the digit 9 appear when you write all the numbers from 1 to 100?",
+      "correct": "20",
+      "wrong": ["10", "11", "19"],
+      "explanation": "9 is in the units place 10 times (9, 19, ... 99) and in the tens place 10 times (90 to 99).",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.39",
+      "difficulty": "mixed",
+      "question": "What number comes next: 2, 6, 12, 20, 30, ...?",
+      "correct": "42",
+      "wrong": ["36", "40", "48"],
+      "explanation": "The gaps grow by 2 each time: 4, 6, 8, 10 and then 12. So 30 + 12 = 42.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.mixed.40",
+      "difficulty": "mixed",
+      "question": "Which ancient people's way of counting in 60s gave us 60 minutes in an hour?",
+      "correct": "The Babylonians",
+      "wrong": ["The Romans", "The Vikings", "The Aztecs"],
+      "explanation": "They lived in what is now Iraq. Their system also links to the 360 degrees in a circle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.01",
+      "difficulty": "expert",
+      "question": "What is the name of Eratosthenes' method of finding prime numbers by crossing out multiples?",
+      "correct": "The sieve",
+      "wrong": ["The ladder", "The wheel", "The tree"],
+      "explanation": "List the numbers from 2 up, then cross out every multiple of 2, then of 3, then of 5 and so on. The numbers that are left are the primes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.02",
+      "difficulty": "expert",
+      "question": "In the 1990s, which British mathematician finally proved Fermat's Last Theorem?",
+      "correct": "Andrew Wiles",
+      "wrong": ["Alan Turing", "John Nash", "Bertrand Russell"],
+      "explanation": "Fermat wrote in the 1600s that he had a proof but never showed it. It took over 350 years to find one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.03",
+      "difficulty": "expert",
+      "question": "Which Swiss mathematician solved the Königsberg bridges puzzle in 1736?",
+      "correct": "Leonhard Euler",
+      "wrong": ["Daniel Bernoulli", "Carl Gauss", "Blaise Pascal"],
+      "explanation": "He showed that no walk could cross each of the seven bridges exactly once. This was the start of graph theory, the maths of networks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.04",
+      "difficulty": "expert",
+      "question": "In maths, what is 5! (5 factorial)?",
+      "correct": "120",
+      "wrong": ["24", "60", "25"],
+      "explanation": "5! means 5 × 4 × 3 × 2 × 1. Factorials grow fast: 10! is already more than 3.6 million.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.05",
+      "difficulty": "expert",
+      "question": "How many sides does a Möbius strip, a twisted loop of paper, have?",
+      "correct": "One",
+      "wrong": ["Two", "Three", "None"],
+      "explanation": "If you draw a line along it, you come back to your start without lifting the pen. It also has just one edge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.06",
+      "difficulty": "expert",
+      "question": "Which of these numbers is closest to Euler's number e?",
+      "correct": "2.72",
+      "wrong": ["1.62", "3.14", "6.28"],
+      "explanation": "It appears in growth and in compound interest. Like pi, its decimals never end or repeat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.07",
+      "difficulty": "expert",
+      "question": "A square has sides of 1 metre. About how long is its diagonal?",
+      "correct": "1.4 m",
+      "wrong": ["1.0 m", "1.7 m", "2.0 m"],
+      "explanation": "By Pythagoras' theorem the diagonal is the square root of 2, about 1.41 metres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.08",
+      "difficulty": "expert",
+      "question": "What is the smallest group in which it is more likely than not that two people share a birthday?",
+      "correct": "23",
+      "wrong": ["40", "100", "183"],
+      "explanation": "It feels too small, but each person can match with all the others, so there are many pairs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.09",
+      "difficulty": "expert",
+      "question": "What do the angles inside a pentagon add up to?",
+      "correct": "540 degrees",
+      "wrong": ["360 degrees", "450 degrees", "720 degrees"],
+      "explanation": "Split a pentagon into three triangles from one corner: 3 × 180 = 540.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.10",
+      "difficulty": "expert",
+      "question": "Which ancient civilisation used a number system based on 20, with dots, bars and a shell for zero?",
+      "correct": "The Maya",
+      "wrong": ["The Romans", "The Egyptians", "The Greeks"],
+      "explanation": "A dot was 1 and a bar was 5. Their calendar maths was very exact.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.11",
+      "difficulty": "expert",
+      "question": "Who wrote down the first clear rules for calculating with zero, in India in the 600s?",
+      "correct": "Brahmagupta",
+      "wrong": ["Euclid", "Fibonacci", "Archimedes"],
+      "explanation": "He explained how to add, subtract and multiply with zero, and also with negative numbers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.12",
+      "difficulty": "expert",
+      "question": "The word 'algebra' comes from a book written in which city in the 800s?",
+      "correct": "Baghdad",
+      "wrong": ["Cairo", "Athens", "Rome"],
+      "explanation": "Its author, al-Khwarizmi, also gave us the word 'algorithm' through his name.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.13",
+      "difficulty": "expert",
+      "question": "Which mathematician is often called the 'Prince of Mathematicians'?",
+      "correct": "Carl Friedrich Gauss",
+      "wrong": ["Leonhard Euler", "Isaac Newton", "Pierre de Fermat"],
+      "explanation": "As a schoolboy he is said to have added 1 to 100 in seconds by pairing up the numbers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.14",
+      "difficulty": "expert",
+      "question": "In Pascal's triangle, which row comes after the row 1, 3, 3, 1?",
+      "correct": "1, 4, 6, 4, 1",
+      "wrong": ["1, 4, 4, 4, 1", "1, 3, 6, 3, 1", "1, 4, 5, 4, 1"],
+      "explanation": "Each number is the sum of the two above it: 1 + 3 = 4, 3 + 3 = 6 and 3 + 1 = 4. The edges are always 1.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.15",
+      "difficulty": "expert",
+      "question": "A number like 6 or 28 equals the sum of the smaller numbers that divide it (6 = 1 + 2 + 3). What is it called?",
+      "correct": "A perfect number",
+      "wrong": ["A prime number", "A square number", "An odd number"],
+      "explanation": "28 = 1 + 2 + 4 + 7 + 14. The next perfect number is 496.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.16",
+      "difficulty": "expert",
+      "question": "What do we call numbers like pi that cannot be written as a fraction of two whole numbers?",
+      "correct": "Irrational numbers",
+      "wrong": ["Rational numbers", "Imaginary numbers", "Negative numbers"],
+      "explanation": "Their decimals never end and never repeat. The square root of 2 is another example.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.17",
+      "difficulty": "expert",
+      "question": "In maths, the imaginary number i is defined as the square root of which number?",
+      "correct": "Minus one",
+      "wrong": ["One", "Zero", "Two"],
+      "explanation": "No ordinary number multiplied by itself gives a negative, so mathematicians made up i. Engineers use it a lot.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.18",
+      "difficulty": "expert",
+      "question": "Which ancient Greek wrote 'Elements', a geometry textbook used for over 2,000 years?",
+      "correct": "Euclid",
+      "wrong": ["Archimedes", "Ptolemy", "Thales"],
+      "explanation": "He lived around 300 BC. Elements builds geometry step by step from a few simple starting rules.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.19",
+      "difficulty": "expert",
+      "question": "The fraction 22/7 is a famous close estimate of which number?",
+      "correct": "Pi",
+      "wrong": ["Euler's number", "The square root of 2", "The golden ratio"],
+      "explanation": "22 ÷ 7 is 3.1428..., while pi is 3.14159... Archimedes showed that pi is a little less than 22/7.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.20",
+      "difficulty": "expert",
+      "question": "Two dice are rolled. What is the chance that the total is 7?",
+      "correct": "1 in 6",
+      "wrong": ["1 in 12", "1 in 36", "1 in 7"],
+      "explanation": "6 of the 36 possible pairs add up to 7, so it is the most common total.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.21",
+      "difficulty": "expert",
+      "question": "Euler's identity says that e to the power of (i × pi), plus 1, equals what?",
+      "correct": "0",
+      "wrong": ["1", "Pi", "2"],
+      "explanation": "It links five of the most important numbers: e, i, pi, 1 and 0. Many mathematicians find it beautiful.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.22",
+      "difficulty": "expert",
+      "question": "The x-y grid used for graphs is called Cartesian, after which French thinker?",
+      "correct": "René Descartes",
+      "wrong": ["Blaise Pascal", "Pierre de Fermat", "Pierre-Simon Laplace"],
+      "explanation": "A famous story says he got the idea from watching a fly on the ceiling.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.23",
+      "difficulty": "expert",
+      "question": "Which German thinker developed calculus around the same time as Isaac Newton?",
+      "correct": "Gottfried Leibniz",
+      "wrong": ["Carl Gauss", "Johannes Kepler", "Immanuel Kant"],
+      "explanation": "They worked separately in the late 1600s. We still use Leibniz's long S sign for integrals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.24",
+      "difficulty": "expert",
+      "question": "Which Italian's 1202 book 'Liber Abaci' helped bring the digits 0 to 9 to Europe?",
+      "correct": "Leonardo Fibonacci",
+      "wrong": ["Galileo Galilei", "Gerolamo Cardano", "Luca Pacioli"],
+      "explanation": "He learned the digits as a boy in North Africa, where his father worked. The number pattern named after him is in the book too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.25",
+      "difficulty": "expert",
+      "question": "What is 2 to the power of 10, that is, ten 2s multiplied together?",
+      "correct": "1,024",
+      "wrong": ["1,000", "512", "2,048"],
+      "explanation": "Start at 1 and double ten times: 2, 4, 8, 16 ... 512, 1,024. Computer memory sizes are often based on this number.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.26",
+      "difficulty": "expert",
+      "question": "How many squares of any size can you find in a 3 × 3 grid of small squares?",
+      "correct": "14",
+      "wrong": ["9", "12", "16"],
+      "explanation": "There are 9 small squares, 4 medium ones (2 × 2) and 1 big one: 9 + 4 + 1 = 14.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.27",
+      "difficulty": "expert",
+      "question": "A diagonal joins two corners that are not next to each other. How many diagonals does a hexagon have?",
+      "correct": "9",
+      "wrong": ["6", "8", "12"],
+      "explanation": "Each corner has 3 diagonals. 6 × 3 = 18, but each diagonal is counted twice, so there are 9.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.28",
+      "difficulty": "expert",
+      "question": "Which of these numbers can be divided exactly by 9?",
+      "correct": "3,654",
+      "wrong": ["3,652", "3,657", "3,659"],
+      "explanation": "A number divides by 9 when its digits add up to a multiple of 9. Here 3 + 6 + 5 + 4 = 18.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.29",
+      "difficulty": "expert",
+      "question": "The famous woman mathematician Hypatia taught in which ancient city?",
+      "correct": "Alexandria",
+      "wrong": ["Athens", "Rome", "Babylon"],
+      "explanation": "She lived around AD 400 and taught maths, astronomy and philosophy. Her city had a famous library.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.30",
+      "difficulty": "expert",
+      "question": "A right-angled triangle has two short sides of 5 and 12. How long is the longest side?",
+      "correct": "13",
+      "wrong": ["7", "15", "17"],
+      "explanation": "5² + 12² = 25 + 144 = 169, which is 13². The 3-4-5 triangle is another whole-number example.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.31",
+      "difficulty": "expert",
+      "question": "The Abel Prize, a top prize in maths, is named after a mathematician from which country?",
+      "correct": "Norway",
+      "wrong": ["Denmark", "Sweden", "Finland"],
+      "explanation": "Niels Henrik Abel lived in the early 1800s and died young, at only 26.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.32",
+      "difficulty": "expert",
+      "question": "The Danish thinker Piet Hein invented the Soma cube and wrote short, witty poems called what?",
+      "correct": "Grooks",
+      "wrong": ["Haikus", "Limericks", "Sagas"],
+      "explanation": "Grooks, called 'gruk' in Danish, are short rhymes with a twist. He also designed the superellipse shape of Sergels torg in Stockholm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.33",
+      "difficulty": "expert",
+      "question": "Platonic solids, like the cube, have identical regular faces, with the same number meeting at each corner. How many are there?",
+      "correct": "Five",
+      "wrong": ["Four", "Six", "Eight"],
+      "explanation": "They are the tetrahedron, cube, octahedron, dodecahedron and icosahedron. The ancient Greeks already knew them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.34",
+      "difficulty": "expert",
+      "question": "Which Scottish mathematician invented logarithms in the early 1600s?",
+      "correct": "John Napier",
+      "wrong": ["James Watt", "Lord Kelvin", "Adam Smith"],
+      "explanation": "Logarithms turned hard multiplication into addition. Sailors and astronomers used them for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.35",
+      "difficulty": "expert",
+      "question": "Four friends walk in a line. In how many different orders can they line up?",
+      "correct": "24",
+      "wrong": ["8", "12", "16"],
+      "explanation": "There are 4 choices for first place, 3 for second, 2 for third and 1 for last: 4 × 3 × 2 × 1 = 24.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.36",
+      "difficulty": "expert",
+      "question": "Prime pairs that differ by 2, like 11 and 13, are called what?",
+      "correct": "Twin primes",
+      "wrong": ["Mirror primes", "Square primes", "Double primes"],
+      "explanation": "Other twin pairs are 17 and 19, and 29 and 31.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.37",
+      "difficulty": "expert",
+      "question": "In 1914, which self-taught Indian mathematician came to Cambridge to work with G. H. Hardy?",
+      "correct": "Srinivasa Ramanujan",
+      "wrong": ["Aryabhata", "Brahmagupta", "Bhaskara"],
+      "explanation": "He had written to Hardy in 1913 with pages of results. The number 1729 is famous because of a story about the two of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.38",
+      "difficulty": "expert",
+      "question": "Which Welsh mathematician introduced the equals sign in 1557?",
+      "correct": "Robert Recorde",
+      "wrong": ["William Jones", "Isaac Newton", "Robert Boyle"],
+      "explanation": "He said no two things can be more equal than two parallel lines of the same length.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.39",
+      "difficulty": "expert",
+      "question": "The number 91 looks prime but is not. Which two primes multiply to make it?",
+      "correct": "7 and 13",
+      "wrong": ["3 and 31", "5 and 19", "7 and 11"],
+      "explanation": "To test for primes, try dividing by small primes. 91 divides by 7 exactly: 7 × 13 = 91.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.maths.expert.40",
+      "difficulty": "expert",
+      "question": "In maths, what does the Greek capital letter sigma (Σ) tell you to do?",
+      "correct": "Add numbers together",
+      "wrong": ["Multiply numbers together", "Find a square root", "Find an average"],
+      "explanation": "Sigma means sum. The capital letter pi (Π) is used in the same way for multiplying.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

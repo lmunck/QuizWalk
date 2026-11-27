@@ -1,0 +1,1250 @@
+{
+  "category": "science",
+  "subcategory": "physics",
+  "questions": [
+    {
+      "id": "science.physics.kids.01",
+      "difficulty": "kids",
+      "question": "What force pulls things down towards the ground?",
+      "correct": "Gravity",
+      "wrong": ["Magnetism", "Friction", "Wind"],
+      "explanation": "Gravity pulls everything towards the centre of the Earth. It is why a dropped ball falls and why we stay on the ground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.02",
+      "difficulty": "kids",
+      "question": "What force slows down a box as it slides across the floor?",
+      "correct": "Friction",
+      "wrong": ["Gravity", "Light", "Magnetism"],
+      "explanation": "Friction happens when two surfaces rub together. It is also why your hands feel warm when you rub them fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.03",
+      "difficulty": "kids",
+      "question": "Which of these metals does a magnet pick up?",
+      "correct": "Iron",
+      "wrong": ["Gold", "Aluminium", "Copper"],
+      "explanation": "Iron and steel are magnetic. Gold, aluminium and copper are not, which is why a magnet can sort steel cans from aluminium ones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.04",
+      "difficulty": "kids",
+      "question": "A straw in a glass of water looks bent. What is this bending of light called?",
+      "correct": "Refraction",
+      "wrong": ["Reflection", "Friction", "Erosion"],
+      "explanation": "Light changes speed and direction when it goes from water into air. This makes things look bent or in the wrong place.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.05",
+      "difficulty": "kids",
+      "question": "What flows through a wire to make a lamp light up?",
+      "correct": "Electricity",
+      "wrong": ["Gravity", "Sound", "Friction"],
+      "explanation": "A battery pushes electricity round a wire. When it flows through the bulb, the bulb lights up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.06",
+      "difficulty": "kids",
+      "question": "What do we call the sound that bounces back from a far wall or cliff?",
+      "correct": "An echo",
+      "wrong": ["A shadow", "A rainbow", "A spark"],
+      "explanation": "Sound waves bounce off hard surfaces. Because the sound has to travel there and back, you hear the echo a little later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.07",
+      "difficulty": "kids",
+      "question": "A shadow is made when an object blocks what?",
+      "correct": "Light",
+      "wrong": ["Sound", "Gravity", "Air"],
+      "explanation": "Light moves in straight lines. When something stops the light, the dark shape behind it is the shadow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.08",
+      "difficulty": "kids",
+      "question": "Which unit do scientists use to measure mass?",
+      "correct": "Kilogram",
+      "wrong": ["Litre", "Metre", "Second"],
+      "explanation": "A kilogram is 1,000 grams. Metres measure length, litres measure volume and seconds measure time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.09",
+      "difficulty": "kids",
+      "question": "A see-saw is a simple machine. What kind is it?",
+      "correct": "A lever",
+      "wrong": ["A pulley", "A screw", "A wedge"],
+      "explanation": "A lever turns around a fixed point called the pivot. On a see-saw, the pivot is in the middle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.10",
+      "difficulty": "kids",
+      "question": "Which simple machine helps to raise a flag up a flagpole?",
+      "correct": "A pulley",
+      "wrong": ["A wedge", "A screw", "A spring"],
+      "explanation": "A pulley is a wheel with a rope over it. Pulling down on one side lifts the other side up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.11",
+      "difficulty": "kids",
+      "question": "What is the word for the energy that moving things have?",
+      "correct": "Kinetic energy",
+      "wrong": ["Chemical energy", "Nuclear energy", "Elastic energy"],
+      "explanation": "A rolling ball or a running child has kinetic energy. The faster something moves, the more kinetic energy it has.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.12",
+      "difficulty": "kids",
+      "question": "What happens if you push the north poles of two magnets together?",
+      "correct": "They push each other away",
+      "wrong": ["They stick together", "They melt", "They get heavier"],
+      "explanation": "Two poles that are the same push each other away. A north pole and a south pole pull each other together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.13",
+      "difficulty": "kids",
+      "question": "Which force slows down a falling parachute?",
+      "correct": "Air resistance",
+      "wrong": ["Gravity", "Magnetism", "Electricity"],
+      "explanation": "The big canopy catches the air and pushes against it. This makes the parachutist fall slowly and land softly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.14",
+      "difficulty": "kids",
+      "question": "A glass prism can split white light into what?",
+      "correct": "Many colours",
+      "wrong": ["A shadow", "An echo", "Only heat"],
+      "explanation": "White light is a mix of all the colours. A prism bends each colour a little differently, so they spread out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.15",
+      "difficulty": "kids",
+      "question": "What must an object do to make a sound?",
+      "correct": "Vibrate",
+      "wrong": ["Freeze", "Melt", "Glow"],
+      "explanation": "Sound starts with something shaking very fast back and forth. A guitar string and a drum skin both vibrate when played.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.16",
+      "difficulty": "kids",
+      "question": "Where would you hear no sound, because there is no air to carry it?",
+      "correct": "In outer space",
+      "wrong": ["On a mountain top", "In a forest", "In a tunnel"],
+      "explanation": "Sound needs something to travel through, like air or water. Outer space is almost empty, so sound cannot travel there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.17",
+      "difficulty": "kids",
+      "question": "Copper wire lets electricity flow easily. What do we call such a material?",
+      "correct": "A conductor",
+      "wrong": ["An insulator", "A reflector", "An absorber"],
+      "explanation": "Metals are good conductors. Plastic and rubber are insulators, so they cover wires and keep us safe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.18",
+      "difficulty": "kids",
+      "question": "What makes a balloon stick to a wall after you rub it on your jumper?",
+      "correct": "Static electricity",
+      "wrong": ["Gravity", "Sound", "Glue"],
+      "explanation": "Rubbing moves tiny charges from one thing to another. The charged balloon is then pulled towards the wall.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.19",
+      "difficulty": "kids",
+      "question": "Solar panels turn what into electricity?",
+      "correct": "Sunlight",
+      "wrong": ["Wind", "Water", "Sound"],
+      "explanation": "Solar panels use light from the Sun. They work best on clear days but also give some power on cloudy days.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.20",
+      "difficulty": "kids",
+      "question": "Which scientist is famous for a story about an apple and gravity?",
+      "correct": "Isaac Newton",
+      "wrong": ["Charles Darwin", "Thomas Edison", "Louis Pasteur"],
+      "explanation": "The story says Newton saw an apple fall and wondered why. He later described how gravity works for apples and for planets.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.21",
+      "difficulty": "kids",
+      "question": "Which famous scientist with wild white hair developed the theory of relativity?",
+      "correct": "Albert Einstein",
+      "wrong": ["Charles Darwin", "Marie Curie", "Alexander Fleming"],
+      "explanation": "Einstein showed that space and time are linked. He was born in Germany and later lived in Switzerland and the USA.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.22",
+      "difficulty": "kids",
+      "question": "What do we call the upward push of water that helps a boat float?",
+      "correct": "Buoyancy",
+      "wrong": ["Friction", "Magnetism", "Gravity"],
+      "explanation": "Water pushes up on anything put into it. A boat floats when this push is as big as the boat's weight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.23",
+      "difficulty": "kids",
+      "question": "What does a compass needle point towards?",
+      "correct": "North",
+      "wrong": ["The Sun", "The nearest hill", "The sea"],
+      "explanation": "The needle is a small magnet. It lines up with the Earth's magnetic field, so it shows the way north.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.24",
+      "difficulty": "kids",
+      "question": "What does a magnifying glass do?",
+      "correct": "Makes things look bigger",
+      "wrong": ["Makes things look smaller", "Makes things invisible", "Makes things louder"],
+      "explanation": "A magnifying glass is a curved lens. It bends light so that small things look larger.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.25",
+      "difficulty": "kids",
+      "question": "Which unit tells us how fast a car is going?",
+      "correct": "Kilometres per hour",
+      "wrong": ["Kilograms", "Litres", "Degrees"],
+      "explanation": "Speed is how far you go in a certain time. In most of Europe, road signs show speed limits in kilometres per hour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.26",
+      "difficulty": "kids",
+      "question": "Which spoon gets hot fastest in a bowl of hot soup?",
+      "correct": "A metal spoon",
+      "wrong": ["A wooden spoon", "A plastic spoon", "A rubber spoon"],
+      "explanation": "Metal carries heat very well, so the handle warms up quickly. Wood and plastic carry heat badly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.27",
+      "difficulty": "kids",
+      "question": "What do we call the path that electricity follows from a battery through a bulb and back?",
+      "correct": "A circuit",
+      "wrong": ["A bridge", "A tunnel", "A river"],
+      "explanation": "Electricity only flows when the path is a complete loop. If there is a gap, the bulb goes out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.28",
+      "difficulty": "kids",
+      "question": "How does your weight on the Moon compare with your weight on Earth?",
+      "correct": "About one sixth",
+      "wrong": ["About double", "The same", "Zero"],
+      "explanation": "The Moon is much smaller and lighter than the Earth, so its gravity is weaker. You would weigh much less there and could jump higher.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.29",
+      "difficulty": "kids",
+      "question": "Why does a woolly jumper keep you warm?",
+      "correct": "It traps warm air near your body",
+      "wrong": [
+        "It makes heat all by itself",
+        "It rubs your skin to make heat",
+        "It is very heavy"
+      ],
+      "explanation": "Wool holds lots of tiny pockets of air. Air carries heat badly, so your body heat stays in.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.30",
+      "difficulty": "kids",
+      "question": "Which of these makes its own light?",
+      "correct": "The Sun",
+      "wrong": ["The Moon", "A mirror", "A white wall"],
+      "explanation": "The Sun is a star that shines by itself. The Moon only looks bright because it reflects light from the Sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.31",
+      "difficulty": "kids",
+      "question": "Which simple machine is a playground slide an example of?",
+      "correct": "A ramp",
+      "wrong": ["A pulley", "A lever", "A wheel"],
+      "explanation": "A ramp, or inclined plane, lets things move up or down a slope. It is easier to go up a ramp than to lift straight up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.32",
+      "difficulty": "kids",
+      "question": "What is the curved piece of glass in a camera or telescope called?",
+      "correct": "A lens",
+      "wrong": ["A fuse", "A magnet", "A battery"],
+      "explanation": "A lens bends light to make a clear picture. Your eye has a lens inside it too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.33",
+      "difficulty": "kids",
+      "question": "On a sunny day, which colour of T-shirt gets hottest?",
+      "correct": "Black",
+      "wrong": ["White", "Light yellow", "Pale blue"],
+      "explanation": "Dark colours take in more of the Sun's light and turn it into heat. Light colours bounce more of it away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.34",
+      "difficulty": "kids",
+      "question": "What do we call the stored energy of a ball held high up?",
+      "correct": "Potential energy",
+      "wrong": ["Sound energy", "Light energy", "Wind energy"],
+      "explanation": "A ball held up has energy stored because of its height. When you let go, this turns into movement energy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.35",
+      "difficulty": "kids",
+      "question": "Which scientist is said to have dropped balls from the Leaning Tower of Pisa?",
+      "correct": "Galileo Galilei",
+      "wrong": ["Isaac Newton", "Albert Einstein", "Marie Curie"],
+      "explanation": "In the story, Galileo showed that heavy and light balls fall at almost the same speed. He lived in Italy about 400 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.36",
+      "difficulty": "kids",
+      "question": "What do we call how high or low a sound is?",
+      "correct": "Pitch",
+      "wrong": ["Volume", "Speed", "Echo"],
+      "explanation": "A tiny whistle makes a high pitch, and a big drum makes a low pitch. Volume is how loud a sound is.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.37",
+      "difficulty": "kids",
+      "question": "Where is a bar magnet's pull the strongest?",
+      "correct": "At its two ends",
+      "wrong": ["In the middle", "Everywhere the same", "Nowhere"],
+      "explanation": "The ends of a magnet are called poles. Dip a bar magnet in paperclips and most stick to the ends.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.38",
+      "difficulty": "kids",
+      "question": "What do we call the rod that a wheel turns around?",
+      "correct": "An axle",
+      "wrong": ["A spoke", "A tyre", "A brake"],
+      "explanation": "An axle holds a wheel and lets it turn smoothly. Carts, cars and bicycles all use axles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.39",
+      "difficulty": "kids",
+      "question": "What are the two kinds of electric charge called?",
+      "correct": "Positive and negative",
+      "wrong": ["North and south", "Hot and cold", "Up and down"],
+      "explanation": "Opposite charges pull together and the same charges push apart. Electrons carry negative charge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.kids.40",
+      "difficulty": "kids",
+      "question": "What is the thin wire that glows inside an old-style light bulb called?",
+      "correct": "A filament",
+      "wrong": ["A fuse", "A magnet", "A switch"],
+      "explanation": "Electricity heats the thin filament until it glows white. Modern LED bulbs make light in a different way and use less energy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.01",
+      "difficulty": "mixed",
+      "question": "About how fast does sound travel through air?",
+      "correct": "About 340 metres per second",
+      "wrong": [
+        "About 34 metres per second",
+        "About 3,400 metres per second",
+        "About 34,000 metres per second"
+      ],
+      "explanation": "That is about 1,200 km per hour. It is why you hear a far-away firework bang a few seconds after you see the flash.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.02",
+      "difficulty": "mixed",
+      "question": "About how fast does light travel in empty space?",
+      "correct": "About 300,000 km per second",
+      "wrong": [
+        "About 3,000 km per second",
+        "About 30,000 km per second",
+        "About 3 million km per second"
+      ],
+      "explanation": "Light could go round the Earth about seven and a half times in one second. Nothing is known to travel faster.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.03",
+      "difficulty": "mixed",
+      "question": "In science, force is measured in which unit?",
+      "correct": "Newton",
+      "wrong": ["Joule", "Watt", "Pascal"],
+      "explanation": "One newton is about the force of gravity on a small apple. The unit is named after Isaac Newton.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.04",
+      "difficulty": "mixed",
+      "question": "In science, energy is measured in which SI unit?",
+      "correct": "Joule",
+      "wrong": ["Newton", "Ampere", "Kelvin"],
+      "explanation": "Lifting a small apple one metre takes about one joule of energy. The unit honours the English physicist James Joule.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.05",
+      "difficulty": "mixed",
+      "question": "The power of a light bulb is measured in which unit?",
+      "correct": "Watt",
+      "wrong": ["Volt", "Hertz", "Ohm"],
+      "explanation": "A 60-watt old-style bulb uses 60 joules of energy every second. The unit is named after the Scottish engineer James Watt.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.06",
+      "difficulty": "mixed",
+      "question": "Which unit is used for frequency, such as how often a sound wave vibrates each second?",
+      "correct": "Hertz",
+      "wrong": ["Decibel", "Newton", "Ampere"],
+      "explanation": "One hertz is one vibration per second. Humans hear sounds from roughly 20 to 20,000 hertz.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.07",
+      "difficulty": "mixed",
+      "question": "You lean forward when a bus brakes suddenly. Which idea explains this?",
+      "correct": "Inertia",
+      "wrong": ["Buoyancy", "Refraction", "Resonance"],
+      "explanation": "Things keep moving as they are until a force changes that. Your body wants to keep going forward while the bus slows down.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.08",
+      "difficulty": "mixed",
+      "question": "A rocket goes up by pushing hot gas down. Which idea explains this?",
+      "correct": "Equal and opposite reaction forces",
+      "wrong": [
+        "Heavier things fall faster",
+        "Light moves in straight lines",
+        "Hot air always rises"
+      ],
+      "explanation": "When the rocket pushes gas down, the gas pushes the rocket up. This works even in empty space, where there is no air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.09",
+      "difficulty": "mixed",
+      "question": "On the Moon, an astronaut dropped a hammer and a feather together. What happened?",
+      "correct": "They landed at the same time",
+      "wrong": ["The feather landed first", "They both floated away", "The hammer landed first"],
+      "explanation": "The Moon has no air to slow the feather down. In a vacuum, all objects fall at the same rate.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which ancient Greek is said to have shouted \"Eureka!\" in his bath?",
+      "correct": "Archimedes",
+      "wrong": ["Aristotle", "Pythagoras", "Plato"],
+      "explanation": "In the story, he saw the water rise as he got in. He realised he could measure the volume of the king's gold crown this way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which Danish scientist found in 1820 that a wire carrying electricity moves a compass needle?",
+      "correct": "Hans Christian Ørsted",
+      "wrong": ["Niels Bohr", "Tycho Brahe", "Ole Rømer"],
+      "explanation": "Ørsted showed that electricity and magnetism are linked. This led to electric motors and generators.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which colour of visible light has the longest wavelength?",
+      "correct": "Red",
+      "wrong": ["Violet", "Green", "Blue"],
+      "explanation": "Red light has the longest waves we can see, and violet has the shortest. Beyond red lies infrared, which we feel as heat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which three colours of light does a TV or phone screen mix to make its pictures?",
+      "correct": "Red, green and blue",
+      "wrong": ["Red, yellow and blue", "Cyan, magenta and yellow", "Black, white and grey"],
+      "explanation": "Tiny dots of red, green and blue light mix in your eye. When all three shine fully together, you see white.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.14",
+      "difficulty": "mixed",
+      "question": "What do we call the area around a magnet where its force can be felt?",
+      "correct": "Its magnetic field",
+      "wrong": ["Its gravity zone", "Its charge", "Its shadow"],
+      "explanation": "Iron filings sprinkled near a magnet line up along the field. The Earth also has a magnetic field.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.15",
+      "difficulty": "mixed",
+      "question": "How does heat from the Sun reach the Earth through empty space?",
+      "correct": "By radiation",
+      "wrong": ["By conduction", "By convection", "By evaporation"],
+      "explanation": "Radiation travels as waves and needs no material to carry it. That is why we feel the Sun's warmth across space.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.16",
+      "difficulty": "mixed",
+      "question": "When pasta boils in a pan, which kind of heat transfer moves warm water upwards?",
+      "correct": "Convection",
+      "wrong": ["Conduction", "Radiation", "Reflection"],
+      "explanation": "Warm water is less dense than cold water, so it rises. Cooler water sinks to take its place and a circle of flow forms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.17",
+      "difficulty": "mixed",
+      "question": "Why do wide snowshoes stop you sinking into deep snow?",
+      "correct": "They spread your weight out",
+      "wrong": ["They make you lighter", "They melt the snow", "They grip the snow better"],
+      "explanation": "The same weight spread over a larger area means less pressure on the snow. That is why you sink less.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.18",
+      "difficulty": "mixed",
+      "question": "A knife blade and an axe head are examples of which simple machine?",
+      "correct": "A wedge",
+      "wrong": ["A lever", "A pulley", "A wheel and axle"],
+      "explanation": "A wedge turns a forward push into a force that pushes things apart. A thin edge puts the force on a tiny area, so it cuts easily.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.19",
+      "difficulty": "mixed",
+      "question": "A small gear drives a large gear. How does the large gear turn?",
+      "correct": "More slowly",
+      "wrong": ["Faster", "At the same speed", "It does not turn"],
+      "explanation": "A big gear has more teeth, so it turns fewer times. In return it can turn with more force.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.20",
+      "difficulty": "mixed",
+      "question": "Through which of these does sound travel fastest?",
+      "correct": "Steel",
+      "wrong": ["Water", "Air", "Foam"],
+      "explanation": "Sound usually moves faster through solids than liquids, and faster through liquids than gases. In steel it is about 15 times faster than in air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.21",
+      "difficulty": "mixed",
+      "question": "Ships use sonar to find the seabed or fish. What does sonar send out?",
+      "correct": "Sound waves",
+      "wrong": ["Radio waves", "Light beams", "Magnets"],
+      "explanation": "Sonar sends a sound pulse and times how long the echo takes to return. This tells the ship how far away something is.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.22",
+      "difficulty": "mixed",
+      "question": "What do we call the change in pitch of a siren as an ambulance drives past you?",
+      "correct": "The Doppler effect",
+      "wrong": ["An echo", "Refraction", "Resonance"],
+      "explanation": "The sound waves bunch up as the ambulance comes towards you and spread out as it leaves. So the pitch drops as it passes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.23",
+      "difficulty": "mixed",
+      "question": "Three bulbs are wired in a series circuit. The filament in one breaks. What happens to the other two?",
+      "correct": "They go out too",
+      "wrong": ["They get brighter", "They stay lit", "They start to flash"],
+      "explanation": "A series circuit has only one path for the electricity, so one break stops the flow everywhere. In a parallel circuit, the others would stay lit.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.24",
+      "difficulty": "mixed",
+      "question": "What does the law of conservation of energy say?",
+      "correct": "Energy is never created or destroyed",
+      "wrong": [
+        "Energy always runs out",
+        "Heat is made from nothing",
+        "Energy only exists as light"
+      ],
+      "explanation": "Energy only changes form, for example from movement to heat. A rolling ball stops because its movement energy becomes heat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.25",
+      "difficulty": "mixed",
+      "question": "Why do steel bridges and some railway tracks have small gaps in them?",
+      "correct": "To give the steel room to expand",
+      "wrong": ["To let rainwater drain away", "To make them lighter", "To make them quieter"],
+      "explanation": "On hot days steel gets slightly longer. Without the gaps, the metal could bend out of shape.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.26",
+      "difficulty": "mixed",
+      "question": "Einstein's equation E = mc² links energy with what?",
+      "correct": "Mass",
+      "wrong": ["Volume", "Colour", "Sound"],
+      "explanation": "It says that a small amount of mass is worth a huge amount of energy. This is the idea behind nuclear power.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which kind of invisible light do most TV remote controls use?",
+      "correct": "Infrared",
+      "wrong": ["Ultraviolet", "X-rays", "Gamma rays"],
+      "explanation": "The remote flashes pulses of infrared light at the TV. A phone camera can often show the flashes even though our eyes cannot.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.28",
+      "difficulty": "mixed",
+      "question": "Which invisible light from the Sun can give you sunburn?",
+      "correct": "Ultraviolet",
+      "wrong": ["Infrared", "Radio waves", "Gamma rays"],
+      "explanation": "Ultraviolet light has more energy than visible light and can damage skin. Sunscreen and clothes block much of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.29",
+      "difficulty": "mixed",
+      "question": "The flow of electricity in a wire is measured in which unit?",
+      "correct": "Ampere",
+      "wrong": ["Hertz", "Newton", "Kelvin"],
+      "explanation": "The ampere, or amp, tells how much electric charge flows past each second. It is named after the French scientist André-Marie Ampère.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.30",
+      "difficulty": "mixed",
+      "question": "What does a fuse do if too much electricity flows through it?",
+      "correct": "It melts and breaks the circuit",
+      "wrong": [
+        "It glows brightly",
+        "It stores the extra electricity",
+        "It makes the current stronger"
+      ],
+      "explanation": "A thin wire inside the fuse heats up and melts, stopping the current. This protects a device from overheating and fire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.31",
+      "difficulty": "mixed",
+      "question": "Why does a metal handle feel colder than a wooden one at the same temperature?",
+      "correct": "Metal draws heat from your hand faster",
+      "wrong": [
+        "Metal is always a bit colder",
+        "Wood makes a little heat itself",
+        "Metal is heavier than wood"
+      ],
+      "explanation": "Both are at room temperature. Metal conducts heat much better, so it pulls warmth from your skin quickly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.32",
+      "difficulty": "mixed",
+      "question": "A periscope lets you see over a wall. What does it use inside?",
+      "correct": "Mirrors",
+      "wrong": ["Magnets", "Springs", "Microphones"],
+      "explanation": "Two mirrors bounce the light down a tube, one at the top and one at the bottom. Submarines have long used periscopes to see above the water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.33",
+      "difficulty": "mixed",
+      "question": "What happens to a guitar note if you press the string so the vibrating part is shorter?",
+      "correct": "The note gets higher",
+      "wrong": ["The note gets lower", "The note gets quieter", "The note stops"],
+      "explanation": "Shorter strings vibrate faster, and faster vibrations make a higher pitch. That is how guitar players play different notes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.34",
+      "difficulty": "mixed",
+      "question": "What do we call it when a sound matches an object's natural vibration and makes it shake strongly?",
+      "correct": "Resonance",
+      "wrong": ["Refraction", "Reflection", "Inertia"],
+      "explanation": "A very loud singer can break a thin glass with a note that matches its own vibration. Marching soldiers were told to break step on bridges for this reason.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.35",
+      "difficulty": "mixed",
+      "question": "Why do fast trains and racing cars have smooth, rounded shapes?",
+      "correct": "To reduce air resistance",
+      "wrong": ["To add friction", "To increase their weight", "To make them lighter"],
+      "explanation": "A smooth shape lets air flow past easily. Less air resistance means less fuel or electricity is needed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.36",
+      "difficulty": "mixed",
+      "question": "Garage jacks and digger arms use liquid pushed under pressure. What is this system called?",
+      "correct": "Hydraulics",
+      "wrong": ["Aerodynamics", "Optics", "Acoustics"],
+      "explanation": "A liquid can hardly be squeezed, so a small push on a small piston gives a big push on a big piston. This lifts heavy loads.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.37",
+      "difficulty": "mixed",
+      "question": "Why does a heavy steel ship float?",
+      "correct": "Its hollow shape holds a lot of air",
+      "wrong": [
+        "Steel is lighter than sea water",
+        "Its engines keep pushing it up",
+        "The hull is magnetic"
+      ],
+      "explanation": "With the air inside, the whole ship weighs less than the same volume of water, so it floats. If it fills with water, it sinks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which temperature scale starts at absolute zero, the lowest possible temperature?",
+      "correct": "Kelvin",
+      "wrong": ["Celsius", "Fahrenheit", "Beaufort"],
+      "explanation": "Zero kelvin is the point where particles have almost no motion left. One kelvin step is the same size as one degree Celsius.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.39",
+      "difficulty": "mixed",
+      "question": "A bicycle dynamo lights a lamp as the wheel spins. What energy change is this?",
+      "correct": "Movement into electricity",
+      "wrong": ["Heat into light", "Light into movement", "Sound into heat"],
+      "explanation": "A magnet spins inside a coil of wire and pushes electricity through it. That is why the lamp is dim when you ride very slowly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.mixed.40",
+      "difficulty": "mixed",
+      "question": "What happens to water pressure as you dive deeper?",
+      "correct": "It gets higher",
+      "wrong": ["It gets lower", "It stays the same", "It disappears"],
+      "explanation": "The deeper you go, the more water is above you pressing down. Submarines need strong hulls for this reason.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.01",
+      "difficulty": "expert",
+      "question": "What is absolute zero, the lowest possible temperature, in degrees Celsius?",
+      "correct": "About −273 °C",
+      "wrong": ["About −100 °C", "About −373 °C", "About −459 °C"],
+      "explanation": "The exact value is −273.15 °C, which is 0 kelvin. Nothing can be cooled below it, though laboratories have come very close.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.02",
+      "difficulty": "expert",
+      "question": "Which Danish physicist won the 1922 Nobel Prize for his work on the structure of atoms?",
+      "correct": "Niels Bohr",
+      "wrong": ["Hans Christian Ørsted", "Ole Rømer", "Tycho Brahe"],
+      "explanation": "Bohr suggested that electrons orbit the nucleus in fixed energy levels. His institute in Copenhagen became a world centre for atomic physics.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.03",
+      "difficulty": "expert",
+      "question": "Who showed in 1676, by watching the moons of Jupiter, that light takes time to travel?",
+      "correct": "Ole Rømer",
+      "wrong": ["Tycho Brahe", "Galileo Galilei", "Johannes Kepler"],
+      "explanation": "The Danish astronomer saw that eclipses of Jupiter's moon Io came later when Jupiter was further from Earth, because the light had further to go.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.04",
+      "difficulty": "expert",
+      "question": "Who discovered electromagnetic induction in 1831?",
+      "correct": "Michael Faraday",
+      "wrong": ["James Clerk Maxwell", "Alessandro Volta", "Heinrich Hertz"],
+      "explanation": "Faraday found that moving a magnet near a wire makes electricity flow. This is how power-station generators work.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.05",
+      "difficulty": "expert",
+      "question": "Which Scottish physicist worked out in the 1860s that light is an electromagnetic wave?",
+      "correct": "James Clerk Maxwell",
+      "wrong": ["Michael Faraday", "Heinrich Hertz", "Alessandro Volta"],
+      "explanation": "His equations joined electricity, magnetism and light in one theory. They also predicted radio waves, which Heinrich Hertz made in the late 1880s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.06",
+      "difficulty": "expert",
+      "question": "Who discovered X-rays in 1895?",
+      "correct": "Wilhelm Röntgen",
+      "wrong": ["Marie Curie", "Henri Becquerel", "J. J. Thomson"],
+      "explanation": "Röntgen saw a screen glow near a covered tube and found that the new rays passed through flesh but not bone. He won the first Nobel Prize in Physics.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.07",
+      "difficulty": "expert",
+      "question": "What does the time of one swing of a pendulum mainly depend on?",
+      "correct": "The length of the string",
+      "wrong": ["The weight of the bob", "The size of the swing", "The colour of the bob"],
+      "explanation": "A longer pendulum swings more slowly. Galileo is said to have noticed that the size of the swing hardly matters while watching a lamp in Pisa Cathedral.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.08",
+      "difficulty": "expert",
+      "question": "Why does a skydiver stop speeding up and fall at a steady speed?",
+      "correct": "Air resistance equals her weight",
+      "wrong": ["Gravity gets weaker", "The air gets thinner", "The parachute makes her lighter"],
+      "explanation": "As she speeds up, air pushes back harder. When the two forces are equal, she stops accelerating. This is terminal velocity.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.09",
+      "difficulty": "expert",
+      "question": "A car doubles its speed. How many times more kinetic energy does it have?",
+      "correct": "Four times",
+      "wrong": ["Twice", "Three times", "Eight times"],
+      "explanation": "Kinetic energy depends on speed squared. This is why braking distances grow so quickly at higher speeds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.10",
+      "difficulty": "expert",
+      "question": "What makes the rainbow colours on a soap bubble?",
+      "correct": "Light waves interfering in the thin skin",
+      "wrong": ["Coloured dye in the soap", "The Sun burning the bubble", "Heat in the air"],
+      "explanation": "Light bounces off the front and back of the thin film and the two waves combine. Different thicknesses give different colours.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.11",
+      "difficulty": "expert",
+      "question": "Which British physicist discovered the electron in 1897?",
+      "correct": "J. J. Thomson",
+      "wrong": ["Ernest Rutherford", "James Chadwick", "Niels Bohr"],
+      "explanation": "Thomson showed that cathode rays are tiny particles much lighter than atoms. They were later named electrons.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.12",
+      "difficulty": "expert",
+      "question": "For which work did Einstein win the 1921 Nobel Prize in Physics?",
+      "correct": "The photoelectric effect",
+      "wrong": ["General relativity", "The equation E = mc²", "Black holes"],
+      "explanation": "Einstein explained how light knocks electrons out of metal by treating light as packets of energy. This helped start quantum physics.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.13",
+      "difficulty": "expert",
+      "question": "Which German physicist is famous for the uncertainty principle?",
+      "correct": "Werner Heisenberg",
+      "wrong": ["Erwin Schrödinger", "Max Planck", "Wolfgang Pauli"],
+      "explanation": "The principle says you cannot know both the exact position and the exact momentum of a tiny particle at the same time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.14",
+      "difficulty": "expert",
+      "question": "In 1919, observers at a solar eclipse supported general relativity by measuring what?",
+      "correct": "The bending of starlight near the Sun",
+      "wrong": [
+        "The heat of the Sun's corona",
+        "The speed of the Moon",
+        "The brightness of the Moon"
+      ],
+      "explanation": "Stars near the Sun appeared slightly out of place, as Einstein had predicted. The news made him world famous.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.15",
+      "difficulty": "expert",
+      "question": "A spinning football curves in flight. What is this effect called?",
+      "correct": "The Magnus effect",
+      "wrong": ["The Doppler effect", "The Venturi effect", "The Curie effect"],
+      "explanation": "Spin drags the air round the ball unevenly, so the air pushes harder on one side and the ball swerves. It is named after the German scientist Heinrich Magnus.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.16",
+      "difficulty": "expert",
+      "question": "Which law says that force equals mass times acceleration?",
+      "correct": "Newton's second law",
+      "wrong": ["Newton's first law", "Newton's third law", "Ohm's law"],
+      "explanation": "A heavier object needs a bigger force to speed up by the same amount. This is why a loaded lorry is slow to start.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.17",
+      "difficulty": "expert",
+      "question": "A spring stretches twice as far when the pulling force is doubled. Whose law is this?",
+      "correct": "Robert Hooke's",
+      "wrong": ["Robert Boyle's", "Georg Ohm's", "Isaac Newton's"],
+      "explanation": "Hooke's law works as long as the spring is not stretched too far. Spring balances use it to measure weight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.18",
+      "difficulty": "expert",
+      "question": "Ohm's law links voltage, the flow of electricity and what?",
+      "correct": "Resistance",
+      "wrong": ["Frequency", "Mass", "Pressure"],
+      "explanation": "Voltage equals current times resistance. A higher resistance lets less current flow for the same voltage.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.19",
+      "difficulty": "expert",
+      "question": "What name is given to a metal shell that shields what is inside from electric fields?",
+      "correct": "A Faraday cage",
+      "wrong": ["A Newton box", "An Ohm shield", "A Kelvin screen"],
+      "explanation": "Charges spread over the outside of the metal and cancel the field inside. A car's metal body works a bit like this.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.20",
+      "difficulty": "expert",
+      "question": "What is it called when a heavy nucleus splits and gives out energy?",
+      "correct": "Nuclear fission",
+      "wrong": ["Nuclear fusion", "Ionisation", "Evaporation"],
+      "explanation": "Fission is used in nuclear power stations. Fusion, when light nuclei join, is how the Sun makes its energy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.21",
+      "difficulty": "expert",
+      "question": "What effect keeps light inside an optical fibre as it travels along the glass thread?",
+      "correct": "Total internal reflection",
+      "wrong": ["The Doppler effect", "Resonance", "Static discharge"],
+      "explanation": "When light hits the edge of the glass at a shallow angle, all of it bounces back inside. Fibres carry internet signals this way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.22",
+      "difficulty": "expert",
+      "question": "Water warms up slowly compared with most materials. What property explains this?",
+      "correct": "High specific heat capacity",
+      "wrong": ["High surface tension", "Very low density", "Very high viscosity"],
+      "explanation": "It takes a lot of heat to raise water's temperature by one degree. This is why the sea stays cool in spring while land warms fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.23",
+      "difficulty": "expert",
+      "question": "You push a box with 10 newtons over 3 metres. How much work do you do?",
+      "correct": "30 joules",
+      "wrong": ["13 joules", "0.3 joules", "300 joules"],
+      "explanation": "Work equals force times distance. One joule is the work of a one-newton force moving something one metre.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.24",
+      "difficulty": "expert",
+      "question": "A dropped stone near the Earth's surface speeds up each second by about what?",
+      "correct": "About 10 metres per second",
+      "wrong": [
+        "About 1 metre per second",
+        "About 100 metres per second",
+        "About 300 metres per second"
+      ],
+      "explanation": "Without air resistance, every falling object gains about 9.8 metres per second each second. This is called g.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.25",
+      "difficulty": "expert",
+      "question": "Which of these electromagnetic waves has the shortest wavelength?",
+      "correct": "Gamma rays",
+      "wrong": ["X-rays", "Ultraviolet", "Visible light"],
+      "explanation": "Gamma rays have the shortest waves and the most energy. Radio waves have the longest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.26",
+      "difficulty": "expert",
+      "question": "How far behind a flat mirror does your image appear to be?",
+      "correct": "As far as you are in front of it",
+      "wrong": ["Half as far", "Twice as far", "On the surface of the mirror"],
+      "explanation": "Mirror images seem to sit behind the glass at the same distance. This is why a mirror in a small room makes it look bigger.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.27",
+      "difficulty": "expert",
+      "question": "If you double the distance between two masses, gravity between them becomes how much?",
+      "correct": "A quarter as strong",
+      "wrong": ["Half as strong", "Twice as strong", "Unchanged"],
+      "explanation": "Gravity follows an inverse-square law. Three times the distance makes it one ninth as strong.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.28",
+      "difficulty": "expert",
+      "question": "Which Italian invented the first electric battery around 1800?",
+      "correct": "Alessandro Volta",
+      "wrong": ["Luigi Galvani", "Guglielmo Marconi", "Galileo Galilei"],
+      "explanation": "Volta stacked discs of zinc and copper with cloth soaked in salt water between them. The volt, the unit of voltage, is named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.29",
+      "difficulty": "expert",
+      "question": "What happens to a magnet if it is heated strongly enough?",
+      "correct": "It loses its magnetism",
+      "wrong": ["It becomes stronger", "Its poles swap places", "Nothing changes"],
+      "explanation": "Above a temperature called the Curie point, heat knocks its tiny atomic magnets out of line, so they no longer add up. For iron this is about 770 °C.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.30",
+      "difficulty": "expert",
+      "question": "In a vacuum flask, the empty space between the walls mainly stops what?",
+      "correct": "Heat moving by conduction and convection",
+      "wrong": [
+        "Heat moving by radiation",
+        "The smell of the drink escaping",
+        "Gravity pulling on the drink"
+      ],
+      "explanation": "Heat cannot cross empty space in these two ways. A shiny coating on the walls cuts down the radiation that is left.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.31",
+      "difficulty": "expert",
+      "question": "Which inventor is the SI unit of magnetic flux density named after?",
+      "correct": "Nikola Tesla",
+      "wrong": ["Thomas Edison", "Michael Faraday", "Alessandro Volta"],
+      "explanation": "The tesla measures how strong a magnetic field is. Nikola Tesla is also known for his work on alternating-current (AC) motors.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.32",
+      "difficulty": "expert",
+      "question": "What is a particle of light called?",
+      "correct": "A photon",
+      "wrong": ["A phonon", "A proton", "A neutron"],
+      "explanation": "Light travels as tiny packets of energy called photons. A phonon, by comparison, is a packet of vibration in a solid.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.33",
+      "difficulty": "expert",
+      "question": "Which physicist worked out that atoms have a tiny, dense nucleus after his team fired particles at gold foil?",
+      "correct": "Ernest Rutherford",
+      "wrong": ["J. J. Thomson", "Niels Bohr", "John Dalton"],
+      "explanation": "Most particles passed straight through, but a few bounced back. This showed the atom is mostly empty space.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.34",
+      "difficulty": "expert",
+      "question": "What is the name for waves spreading out as they pass through a narrow gap or round an edge?",
+      "correct": "Diffraction",
+      "wrong": ["Reflection", "Absorption", "Refraction"],
+      "explanation": "Diffraction is why you can hear someone talking round a corner. Longer waves spread out more than short ones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.35",
+      "difficulty": "expert",
+      "question": "When white light passes through a glass prism, which colour bends the most?",
+      "correct": "Violet",
+      "wrong": ["Red", "Green", "Yellow"],
+      "explanation": "Glass slows short waves more than long waves, so violet is bent the most. Red is bent the least.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.36",
+      "difficulty": "expert",
+      "question": "What do we call a material that carries electricity with no resistance when very cold?",
+      "correct": "A superconductor",
+      "wrong": ["A semiconductor", "An insulator", "A magnet"],
+      "explanation": "A current in a superconducting loop can keep flowing with no power supply. Superconductors make the strong magnets in many hospital scanners.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.37",
+      "difficulty": "expert",
+      "question": "A transformer works only with which kind of electricity?",
+      "correct": "Alternating (AC) electricity",
+      "wrong": ["Direct (DC) electricity", "Static electricity", "Solar current"],
+      "explanation": "A changing current makes a changing magnetic field, which pushes current in a second coil. Transformers change voltage this way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.38",
+      "difficulty": "expert",
+      "question": "A ball is thrown sideways at the same moment a second ball is dropped from the same height. Ignoring air, which lands first?",
+      "correct": "They land at the same time",
+      "wrong": ["The dropped ball", "The thrown ball", "The heavier ball"],
+      "explanation": "Sideways motion does not change how fast gravity pulls down. Both balls fall the same distance in the same time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.39",
+      "difficulty": "expert",
+      "question": "Whose double-slit experiment in the early 1800s showed that light behaves like a wave?",
+      "correct": "Thomas Young",
+      "wrong": ["Isaac Newton", "Albert Einstein", "Galileo Galilei"],
+      "explanation": "Light from two narrow slits made a pattern of light and dark stripes. Waves that add up and cancel each other out explain this pattern.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.physics.expert.40",
+      "difficulty": "expert",
+      "question": "A spinning skater pulls her arms in and spins faster. Which principle is this?",
+      "correct": "Conservation of angular momentum",
+      "wrong": ["Conservation of charge", "Archimedes' principle", "Total internal reflection"],
+      "explanation": "Pulling her arms in brings her mass closer to the centre, so she must turn faster to keep the same angular momentum.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}
