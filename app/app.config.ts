@@ -53,6 +53,13 @@ const EXTRA_PROGUARD_RULES = [
   '-keep class * extends androidx.work.InputMerger { <init>(); }',
 ].join('\n');
 
+/**
+ * Android draws a notification's small icon from its alpha channel only, so the full-colour app
+ * icon would show as a white blob in the status bar. Used for pushes, the arrival buzz and
+ * pocket mode's "Guiding you to stop 4" (design/icon/notification.svg).
+ */
+const NOTIFICATION_ICON = './assets/notification-icon.png';
+
 const LOCATION_WHEN_IN_USE =
   'QuizWalk uses your location during a walk to unlock each question when you reach its stop. ' +
   'Nothing is shared before you tap Start walk.';
@@ -130,18 +137,21 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       'expo-location',
       {
         locationWhenInUsePermission: LOCATION_WHEN_IN_USE,
-        // Pocket mode (M3) keeps a session that started in the foreground running. Always is
-        // never requested (spec §9), but iOS requires the string to exist.
+        // Pocket mode (M3, src/location/pocket.ts) keeps updates that started on screen running
+        // in the background: iOS's `location` background mode, Android's foreground service.
+        // Both work on "When In Use". Always is never requested (spec §9), but iOS requires the
+        // string to exist.
         locationAlwaysAndWhenInUsePermission: LOCATION_WHEN_IN_USE,
         locationAlwaysPermission: false,
         motionUsagePermission: false,
         isIosBackgroundLocationEnabled: true,
         isAndroidForegroundServiceEnabled: true,
         isAndroidBackgroundLocationEnabled: false,
+        androidForegroundServiceIcon: NOTIFICATION_ICON,
       },
     ],
     'expo-task-manager',
-    ['expo-notifications', { color: '#1F6F4A' }],
+    ['expo-notifications', { color: '#1F6F4A', icon: NOTIFICATION_ICON }],
     'expo-apple-authentication',
     'react-native-nitro-google-signin',
     ['react-native-maps', androidMapsKey ? { androidGoogleMapsApiKey: androidMapsKey } : {}],

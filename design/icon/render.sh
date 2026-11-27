@@ -9,3 +9,4 @@ rsvg-convert -w 1024 -h 1024 android-background.svg -o $A/android-icon-backgroun
 rsvg-convert -w 1024 -h 1024 android-monochrome.svg -o $A/android-icon-monochrome.png
 rsvg-convert -w 1024 -h 1024 splash.svg -o $A/splash-icon.png
 rsvg-convert -w 48 -h 48 icon.svg -o $A/favicon.png
+rsvg-convert -w 96 -h 96 notification.svg -o $A/notification-icon.png

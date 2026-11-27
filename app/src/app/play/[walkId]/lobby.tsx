@@ -5,7 +5,7 @@
  */
 import { distanceM, formatDistance, openUntilLabel, plural } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -21,8 +21,9 @@ import { Txt } from '@/components/Txt';
 import { Banner, Card, Field, Row, RowGroup, SectionLabel, Stepper } from '@/components/ui';
 import { leaveWalk, startWalk, updateTeam, useTeam, useTeams } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
+import { pocketModeAvailable } from '@/location/pocket';
 import { usePosition, useLocationAccess } from '@/location/position';
-import { pushPermission, requestPushToken } from '@/lib/push';
+import { pushPermission, pushTokenIfAllowed, requestPushToken } from '@/lib/push';
 import { playerHref } from '@/lib/routes';
 import { colors, radius, spacing } from '@/theme/tokens';
 
@@ -42,9 +43,31 @@ export default function Lobby() {
   const [leaving, setLeaving] = useState(false);
   const [askPush, setAskPush] = useState<'notify' | 'start'>();
   const [notifyOn, setNotifyOn] = useState(false);
+  const [permission, setPermission] = useState<'granted' | 'denied' | 'undetermined'>();
 
   const w = walk.data;
   const me = team.data;
+
+  // Notifications allowed before (an earlier walk, or Settings): this team gets the token too,
+  // without asking again, so "Walk is open" and "Final results" reach it.
+  const hasTeam = !!me;
+  const savedToken = me?.pushToken;
+  useEffect(() => {
+    if (!hasTeam || !uid) return;
+    let cancelled = false;
+    void pushPermission().then(async (p) => {
+      if (cancelled) return;
+      setPermission(p);
+      if (p !== 'granted') return;
+      setNotifyOn(true);
+      const token = await pushTokenIfAllowed();
+      if (!cancelled && token && token !== savedToken)
+        updateTeam(walkId, uid, { pushToken: token });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [hasTeam, uid, walkId, savedToken]);
   const others = useMemo(
     () => teams.data.filter((t) => t.id !== uid && !t.leftAt),
     [teams.data, uid],
@@ -80,11 +103,14 @@ export default function Lobby() {
 
   const turnOnPush = async (then?: () => void) => {
     const res = await requestPushToken();
+    setPermission(res.status === 'denied' ? 'denied' : 'granted');
     if (res.token && uid) {
       updateTeam(w.id, uid, { pushToken: res.token });
       setNotifyOn(true);
     } else if (res.status === 'unavailable') {
       toast("Notifications aren't available on this phone yet.");
+    } else if (res.status === 'denied' && askPush === 'notify') {
+      toast('Notifications are off for QuizWalk. You can turn them on in Settings.');
     }
     setAskPush(undefined);
     then?.();
@@ -157,10 +183,7 @@ export default function Lobby() {
               n="2"
               text={`The question opens when you are within ${smallestRadius} m of the stop.`}
             />
-            <Rule
-              n="3"
-              text="Answer fast for up to 5 bonus points. Keep QuizWalk open on the walk."
-            />
+            <Rule n="3" text={`Answer fast for up to 5 bonus points.${ruleThreeEnd(permission)}`} />
             <View style={styles.safety}>
               <Icon name="warning" size={18} color={colors.warningText} />
               <Txt variant="callout" color={colors.warningText} style={styles.flex}>
@@ -260,12 +283,16 @@ export default function Lobby() {
         title={
           askPush === 'notify'
             ? 'Get a notification when it opens?'
-            : 'Hear when the results are in?'
+            : pocketModeAvailable
+              ? 'Buzz you at each stop?'
+              : 'Hear when the results are in?'
         }
         text={
           askPush === 'notify'
             ? `We'll send one notification when ${owner} opens the walk, and one when the results are in.`
-            : `The final results appear when ${owner} ends the walk. A notification tells you, even if QuizWalk is closed.`
+            : pocketModeAvailable
+              ? `Then your phone can stay in your pocket on the way. You'll also hear when the results are in.`
+              : `The final results appear when ${owner} ends the walk. A notification tells you, even if QuizWalk is closed.`
         }
         onDismiss={() => {
           setAskPush(undefined);
@@ -289,6 +316,18 @@ export default function Lobby() {
       />
     </View>
   );
+}
+
+/**
+ * The rules card's last line. It promises a buzz only where pocket mode can deliver one: in a
+ * build with pocket mode and with notifications allowed (spec §3 P3).
+ */
+function ruleThreeEnd(permission: 'granted' | 'denied' | 'undetermined' | undefined): string {
+  if (pocketModeAvailable && permission === 'granted') {
+    return ' Your phone buzzes at each stop, so it can stay in your pocket.';
+  }
+  if (pocketModeAvailable && permission !== 'denied') return '';
+  return ' Keep QuizWalk open on the walk.';
 }
 
 function Rule({ n, text }: { n: string; text: string }) {

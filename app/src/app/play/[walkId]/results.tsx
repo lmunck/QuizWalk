@@ -29,6 +29,7 @@ import { useStops, useWalk } from '@/data/walks';
 import { useShareCard } from '@/features/shareCard';
 import { useStandings } from '@/features/standings';
 import { rejectedAnswers } from '@/lib/storage';
+import { stopPocketMode } from '@/location/pocket';
 import { colors, spacing } from '@/theme/tokens';
 
 export default function FinalResults() {
@@ -43,6 +44,8 @@ export default function FinalResults() {
   useEffect(() => {
     void rejectedAnswers(walkId).then((r) => setRejected(r.length));
   }, [walkId]);
+  // The walk has ended: tracking stops (spec §9).
+  useEffect(() => void stopPocketMode(), []);
 
   if (walk.loading || loading) {
     return (
