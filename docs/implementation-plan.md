@@ -8,19 +8,21 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-25 (evening), after the M1 build. Delivery notes: [`m1-delivery.md`](m1-delivery.md);
-how to test: [`user-testing.md`](user-testing.md).
+Updated 2026-11-25 (evening), after the M1 build, and 2026-11-27 for the M4 backend. Delivery notes:
+[`m1-delivery.md`](m1-delivery.md), [`m4-backend-delivery.md`](m4-backend-delivery.md); how to test:
+[`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
-| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion: 89 unit tests |
-| Security rules | Spec §7 in full, 38 allow/deny tests against the emulator, in CI |
-| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator, in CI. **Not deployed yet** |
+| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion; from M4 the categories, route geometry and phone-side Refresh helpers, bank rules and the callable contracts: 151 unit tests |
+| Security rules | Spec §7 in full, including the M4 collections: 50 allow/deny tests against the emulator, in CI. Deployed |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`, and from M4 `routeForView`, `reroute`, `generateWalk`, `swapQuestion`, `topUpQuestions`, `onQuestionReported`, `onStopWritten`: 42 unit tests on recorded service answers and 42 tests against the emulator, in CI. All deployed to `qualk-a173e` on 2026-11-27 |
 | App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6) plus C7 live monitor and C8 team detail from M2. Verified end to end on the iOS simulator against the emulators |
 | Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash |
 | Firebase app registrations, Maps key, App Check, EAS builds with the real config | Not done: account steps, listed in `user-testing.md` part 2 |
 | Pocket-mode spike (A7) | Not done: needs a real phone and a walk |
+| M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). The M4 screens (C2 map, C3, *Swap*, *Suggest a question*, *Report question*) are next |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -155,7 +157,7 @@ Scope depends on the A7 spike.
 
 | # | Work |
 |---|---|
-| 1 | **You:** ORS and OpenRouter keys as Firebase secrets |
+| 1 | **You:** ORS and Gemini keys as Firebase secrets (`ORS_API_KEY`, `GEMINI_API_KEY`; Gemini instead of OpenRouter, decided 2026-11-27). Done 2026-11-27 |
 | 2 | Routing module and `reroute`: snapping, real polyline and distance, "off path" / "on water" warnings in C4 |
 | 3 | `routeForView` and C2's map screen: *Refresh*, the stop-spacing check on the phone and on the server, zoom and turn buttons, the default number of questions |
 | 4 | Question bank: categories in `shared/`, the script that fills the bank with its fact-check pass, `topUpQuestions`. Replace `topic` with `categories` in the shared types and `duplicateWalk` |
@@ -164,7 +166,7 @@ Scope depends on the A7 spike.
 | 7 | *Report question* on P4, `onQuestionReported`, bank counts in `onAnswerCreated`, rules for the new collections and their tests |
 | 8 | *New route*, *Play it myself*, rate limiting |
 
-Design: [`m4-generation-design.md`](m4-generation-design.md).
+Design: [`m4-generation-design.md`](m4-generation-design.md). The server side of rows 2 and 4–7 was built on 2026-11-27 and is deployed: [`m4-backend-delivery.md`](m4-backend-delivery.md). The contracts the screens are built against are in the design doc's §11.
 
 **Check:** generate walks in a city centre, a suburb, a village and a forest, at several zoom
 levels and directions, and walk one. Before the bank goes live, read a sample from every

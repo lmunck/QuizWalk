@@ -46,6 +46,7 @@ import {
   placeQuestionsFor,
   toProposal,
   usedByCreator,
+  type Avoid,
   type BankQuestion,
 } from './bank/store';
 import { requestTopUp } from './bank/topup';
@@ -54,6 +55,7 @@ import { QualkError } from './errors';
 import { writeNewPlaces, placeStates } from './places/local';
 import { nameStops, streetNameAt, type NamedStop } from './places/naming';
 import { surroundings, type OsmFeature, type OsmSurroundings } from './places/overpass';
+import { surroundingsFromWikipedia } from './places/wiki';
 import type { Services } from './services';
 
 /** New places written per walk, so C3 stays a short wait. */
@@ -161,6 +163,7 @@ export async function pickTrivia(
   difficulty: Difficulty,
   count: number,
   exclude: Set<string>,
+  avoid: Avoid = [],
 ): Promise<TriviaPick> {
   if (count <= 0) return { picked: [], low: [] };
   const plan = planTriviaPools(categories, difficulty, count, svc.rng);
@@ -174,7 +177,7 @@ export async function pickTrivia(
   const seen = new Set<string>();
   const take = async (pool: PoolRef, n: number) => {
     seen.add(poolKey(pool));
-    const res = await pickFromPool(svc.db, pool, n, exclude, svc.rng);
+    const res = await pickFromPool(svc.db, pool, n, exclude, svc.rng, avoid);
     res.picked.forEach((q) => exclude.add(q.id));
     picked.push(...res.picked);
     if (res.unusedSeen - res.picked.length < TOP_UP_BELOW_UNUSED) low.push(pool);
@@ -286,11 +289,18 @@ export async function generateWalk(
     const planned = spaceStops(points, n);
     const start = points[0] as LatLng;
     let env: OsmSurroundings = { features: [], streets: [] };
+    const around = [start, ...planned.map((s) => s.location)];
     try {
-      env = await surroundings(svc.overpass, [start, ...planned.map((s) => s.location)]);
+      env = await surroundings(svc.overpass, around);
     } catch (err) {
-      // Stops keep their place on the route and go unnamed; Local falls back to trivia.
+      // Wikipedia's GeoSearch still names stops after documented places and finds Local
+      // ones; without either, stops keep their place on the route and go unnamed.
       logger.warn('Overpass failed', { walkId, err: String(err) });
+      try {
+        env = await surroundingsFromWikipedia(svc.wiki, around);
+      } catch (err2) {
+        logger.warn('Wikipedia GeoSearch failed', { walkId, err: String(err2) });
+      }
     }
     const named = nameStops(points, planned, env.features, env.streets);
     const startLabel = startLabelFor(start, named, env, walk.startLabel ?? '');
@@ -351,7 +361,14 @@ export async function generateWalk(
     for (const q of kept) if (q.bankQuestionId) exclude.add(q.bankQuestionId);
     const keptQueue = [...kept];
     const needFresh = Math.max(0, triviaSlots.length - keptQueue.length) + queued.length;
-    const trivia = await pickTrivia(svc, categories, difficulty, needFresh, exclude);
+    // Never two questions about the same thing in one walk.
+    const avoid: Avoid = [
+      ...kept.map((q) => ({ question: q.question, correct: q.options[q.correctIndex] ?? '' })),
+      ...questions.flatMap((q) =>
+        q ? [{ question: q.question, correct: q.options[q.correctIndex] ?? '' }] : [],
+      ),
+    ];
+    const trivia = await pickTrivia(svc, categories, difficulty, needFresh, exclude, avoid);
     const freshQueue = trivia.picked.map((q) => fromProposal(toProposal(q, svc.rng)));
     for (const i of triviaSlots) questions[i] = keptQueue.shift() ?? freshQueue.shift();
 

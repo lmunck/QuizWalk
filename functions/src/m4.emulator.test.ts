@@ -79,7 +79,8 @@ async function seedBank(pools: PoolRef[], perPool: number) {
       triviaDoc(
         pool,
         {
-          question: `${poolKey(pool)} question ${i}?`,
+          // Words unique to each question, so none counts as the same as another.
+          question: `Zq${i}${poolKey(pool).replace(/\./g, '')} Yr${i}${pool.subcategory}?`,
           correct: `${poolKey(pool)} right ${i}`,
           wrong: [`w${i}a`, `w${i}b`, `w${i}c`],
           explanation: 'Because.',
@@ -330,11 +331,27 @@ describe('generateWalk', () => {
     expect((await bankDoc(trivia.id)).stats.used).toBe(0);
   });
 
-  it('still makes the walk when Overpass is down, with unnamed stops', async () => {
+  it('names stops and finds Local places from Wikipedia when Overpass is down', async () => {
+    await seedBank(mixedPools(), 2);
+    const walk = await makeWalk({ categories: ['local'] });
+    const down = { query: async () => Promise.reject(new Error('502')) };
+    const res = await generateWalk(services({ overpass: down }), OWNER, {
+      walkId: walk.id,
+      questionCount: 8,
+    });
+    const stops = await stopsOf(walk.id);
+    expect(stops.map((s) => s.placeName)).toContain('Amaliehaven');
+    expect(stops.filter((s) => s.placeName).length).toBeGreaterThanOrEqual(5);
+    expect(res.localCount).toBeGreaterThanOrEqual(1);
+    expect(stops.every((s) => s.question)).toBe(true);
+  });
+
+  it('still makes the walk when Overpass and Wikipedia are both down, with unnamed stops', async () => {
     await seedBank(pools('space'), 2);
     const walk = await makeWalk({ categories: ['space'] });
     const down = { query: async () => Promise.reject(new Error('502')) };
-    const res = await generateWalk(services({ overpass: down }), OWNER, {
+    const wikiDown = { ...recordedWiki(), nearby: async () => Promise.reject(new Error('503')) };
+    const res = await generateWalk(services({ overpass: down, wiki: wikiDown }), OWNER, {
       walkId: walk.id,
       questionCount: 4,
     });

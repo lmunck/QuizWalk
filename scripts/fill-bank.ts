@@ -178,6 +178,7 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error(String(err instanceof Error ? err.message : err));
-  process.exit(1);
+  // exitCode rather than exit(), so the message reaches a pipe before the process ends.
+  console.error(err instanceof Error ? (err.stack ?? err.message) : String(err));
+  process.exitCode = 1;
 });

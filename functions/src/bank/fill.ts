@@ -55,6 +55,22 @@ export interface FillReport {
   short: string[];
 }
 
+/** Counts every pool, trying a failed count again (Firestore can drop a stream mid-run). */
+async function countAll(db: Firestore, pools: PoolRef[]): Promise<number[]> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      const out: number[] = [];
+      for (let i = 0; i < pools.length; i += 20) {
+        out.push(...(await Promise.all(pools.slice(i, i + 20).map((p) => countActive(db, p)))));
+      }
+      return out;
+    } catch (err) {
+      if (attempt >= 3) throw err;
+      await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+    }
+  }
+}
+
 /** First guess at a batch's cost, until a real one is measured. */
 const FIRST_ESTIMATE_USD = 0.04;
 /** A pool whose batches keep adding almost nothing is left alone for the rest of the run. */
@@ -86,7 +102,7 @@ export async function fillBank(
 
   const maxRounds = Math.ceil(opts.target / 10) + 2;
   for (let round = 1; round <= maxRounds && !stoppedByCap; round++) {
-    const counts = await Promise.all(opts.pools.map((p) => countActive(db, p)));
+    const counts = await countAll(db, opts.pools);
     const todo = opts.pools.filter(
       (p, i) =>
         (counts[i] as number) < opts.target && (poorBatches.get(poolKey(p)) ?? 0) < EXHAUSTED_AFTER,
@@ -159,7 +175,7 @@ export async function fillBank(
     await Promise.all(Array.from({ length: Math.max(1, opts.concurrency) }, worker));
   }
 
-  const finalCounts = await Promise.all(opts.pools.map((p) => countActive(db, p)));
+  const finalCounts = await countAll(db, opts.pools);
   report.short = opts.pools.filter((_, i) => (finalCounts[i] as number) < opts.target).map(poolKey);
   report.spentUsd = spent;
   report.stoppedByCap = stoppedByCap;

@@ -200,6 +200,13 @@ export function writtenQuestionProblem(q: WrittenQuestion): string | undefined {
     return 'all/none of the above';
   }
   if ((q.explanation?.trim().length ?? 0) > EXPLANATION_MAX_CHARS) return 'explanation too long';
+  if (/&(#\d+|[a-z]+);/i.test([question, correct, ...wrong, q.explanation ?? ''].join(' '))) {
+    return 'html entity';
+  }
+  const answer = norm(correct).replace(/^(the|a|an) /, '');
+  if (answer.length >= 4 && ` ${norm(question)} `.includes(` ${answer} `)) {
+    return 'answer in question';
+  }
   return undefined;
 }
 
@@ -241,6 +248,30 @@ export function repeatsExisting(
     const union = new Set([...words, ...other]).size;
     return union > 0 && shared / union >= 0.5;
   });
+}
+
+/** The answer without case, accents, punctuation or a leading article. */
+const answerKey = (s: string) => norm(s).replace(/^(the|a|an) /, '');
+
+/**
+ * Whether two questions are about the same thing, so one walk never gets both: the same
+ * answer ("Penicillin" and "Penicillin mould" count as the same), or mostly the same words.
+ */
+export function similarQuestions(
+  a: Pick<WrittenQuestion, 'question' | 'correct'>,
+  b: Pick<WrittenQuestion, 'question' | 'correct'>,
+): boolean {
+  const x = answerKey(a.correct);
+  const y = answerKey(b.correct);
+  if (x === y) return true;
+  const within = (long: string, short: string) =>
+    short.length >= 4 && ` ${long} `.includes(` ${short} `);
+  if (within(x, y) || within(y, x)) return true;
+  const wa = wordSet(a.question);
+  const wb = wordSet(b.question);
+  const shared = [...wa].filter((w) => wb.has(w)).length;
+  const union = new Set([...wa, ...wb]).size;
+  return union > 0 && shared / union >= 0.6;
 }
 
 // ------------------------------------------------------------------ picking

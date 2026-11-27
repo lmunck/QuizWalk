@@ -1,6 +1,6 @@
 # QuizWalk (Qualk) — v1 specification
 
-Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17) · generation design 2026-11-27 (§1, §3, §4, §6–§8, §14–§17, §19; the how and why are in [`m4-generation-design.md`](m4-generation-design.md))
+Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17) · generation design 2026-11-27 (§1, §3, §4, §6–§8, §14–§17, §19; the how and why are in [`m4-generation-design.md`](m4-generation-design.md)) · M4 backend 2026-11-27: Gemini instead of OpenRouter, and what building it settled (§1, §5–§8, §15, §18, §19; [`m4-backend-delivery.md`](m4-backend-delivery.md))
 Build order: [`implementation-plan.md`](implementation-plan.md) · Design reference: [`/design`](../design/README.md), with screen IDs C1–C9, P1–P6 and G1–G6. The mockups were not redrawn after the UX review; where a mockup and §3 disagree, §3 wins.
 
 The aim of v1 is a small, robust app that does one loop well:
@@ -23,8 +23,8 @@ Anything outside that loop goes in [§16 Not in v1](#16-not-in-v1). A new idea e
 | Name | The store name stays flexible ("QuizWalk" preferred, "Qualk" fallback). Code and IDs use `qualk`. |
 | Language | English only. |
 | Maps | `react-native-maps`: Apple Maps on iOS, Google Maps on Android. Draggable pins in the editor. |
-| Routing | OpenRouteService (OSM-based, `foot-walking`), called only from Cloud Functions, behind one swappable module. A generated route fits the creator's map view (§3 C2, §8). |
-| Content | A shared **question bank** by category: written by an LLM via OpenRouter, fact-checked by a second model, filled ahead of time and topped up in the background. *Local* questions are written from Wikipedia/Wikidata about places on the route (found with OpenStreetMap Overpass) and kept per place. Walks are made from the bank, so generating one rarely spends tokens (§8). |
+| Routing | OpenRouteService (OSM-based, `foot-walking`, at `api.heigit.org/openrouteservice` since the old address closed on 2026-11-24), called only from Cloud Functions, behind one swappable module. A generated route fits the creator's map view (§3 C2, §8). |
+| Content | A shared **question bank** by category: written by Google's Gemini API (one Google AI Studio key in the same Google Cloud project), fact-checked by a second, stronger Gemini model, filled ahead of time and topped up in the background. *Local* questions are written from Wikipedia/Wikidata about places on the route (found with OpenStreetMap Overpass) and kept per place. Walks are made from the bank, so generating one rarely spends tokens (§8). |
 | Locations | Firestore `GeoPoint`. No geohash: we never query by proximity. Distances are computed on the phone. |
 | Cheating | Accepted risk. The full quiz, including correct answers, is downloaded to the phone for offline play. No money is involved. Points are still calculated server-side. |
 | Push | `expo-notifications` + Expo Push Service. |
@@ -136,7 +136,7 @@ Invalid or expired code · walk already ended (read-only results) · location pe
    ├─ Callable functions ───────────────────────────────────► Cloud Functions ─┬─► OpenStreetMap Overpass
    │                                                                        ├─► Wikipedia / Wikidata
    │                                                                        ├─► OpenRouteService
-   │                                                                        ├─► OpenRouter (LLM)
+   │                                                                        ├─► Gemini API (LLM)
    │                                                                        └─► Expo Push Service
    └─ expo-location + task manager (foreground + background tracking)
 
@@ -175,7 +175,7 @@ walks/{walkId}
   status: 'draft'|'ready'|'open'|'ended'
   joinCode?, modes: { solo: bool, team: bool }, maxPlayers, whenText?
   start: GeoPoint, startLabel, shape: 'loop'|'oneway'
-  route: { polyline, distanceM, durationS } | null
+  route: { polyline, distanceM, durationS, key? } | null   // key: routeKey of the pins it was made for
   distanceM                              // §4 Distance; on the walk so P1 can show it before joining
   openFor?: 'day'|'week'                 // set with openedAt; ends openedAt + 12 h or + 7 days
   stopCount, createdAt, updatedAt, openedAt?, endedAt?
@@ -200,6 +200,7 @@ walks/{walkId}/teams/{uid}/answers/{stopId}   // doc id = stop id → max one an
   kind: 'answered'|'imHere'|'skipped', choiceIndex?
   openedAtClient, answeredAtClient, elapsedMs
   points?, correct?                       // written by functions only
+  bankCounted?                            // functions: counted towards the bank question's stats
 
 walks/{walkId}/positions/{uid}           // one doc per team, overwritten, not a history
   location: GeoPoint, accuracyM, at
@@ -207,26 +208,33 @@ walks/{walkId}/positions/{uid}           // one doc per team, overwritten, not a
 walks/{walkId}/alerts/{alertId}
   teamUid, stopId, kind: 'blocked', createdAt, resolved
 
-generationJobs/{jobId}
+generationJobs/{jobId}                   // jobId = walkId
   ownerUid, walkId, status: 'running'|'done'|'failed'
-  step: 0..3, stepDetail[], latestQuestion?, error?
+  steps: ('naming'|'picking'|'writing')[], step: 0..3, stepDetail[], error?
+  latestQuestion?                        // never written: C3 shows no question text
+  createdAt, updatedAt
 
 questionBank/{questionId}              // functions only
   kind: 'trivia'|'place'
   category, subcategory, difficulty: 'kids'|'mixed'|'expert'
   placeKey?                              // 'wikidata:Q12345', place questions only
   question, correct, wrong: string[3], explanation, source?: { title, url }
-  status: 'active'|'flagged'|'blocked'
-  stats: { used, answered, correct, reports, replaced }
-  model, createdAt, rand                 // rand: random picks with a range query
+  status: 'active'|'flagged'|'blocked'  // flagged: hidden until reviewed
+  stats: { used, answered, correct, replaced, reports, reasons: { wrong, offensive, confusing } }
+  model, checkModel, createdAt, rand     // rand: random picks with a range query
+  reviewedAt?                            // set by the review script when a question is kept
 
 places/{placeKey}                        // functions only; recorded even when no good question came out
-  name, location: GeoPoint, generatedAt, questionCount
+  name, location: GeoPoint, generatedAt, questionCount, source?
 
-questionReports/{reportId}               // id built from the question and the uid: one report per person
+questionReports/{reportId}               // 'bank_{questionId}_{uid}' or 'stop_{walkId}_{stopId}_{uid}'
   uid, reason: 'wrong'|'offensive'|'confusing', createdAt
-  questionId?                            // a bank question
-  walkId?, stopId?                       // a question the creator wrote
+  walkId, stopId                         // where it was reported
+  questionId?                            // set when the stop's question came from the bank
+
+bankTopUps/{poolKey}                     // functions only: one top-up per pool at a time
+bankMeta/{spend|topUps}                  // functions only: LLM spend by source, today's top-up count
+rateLimits/{uid}                         // functions only: recent calls per rate-limited callable
 ```
 
 Positions live in their own collection so other teams can read the leaderboard without seeing where anyone is.
@@ -260,9 +268,9 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 - `answers/{stopId}`: **create once** by the team uid, only while the walk is `open` and the team has started; `stopId` must exist; client fields only; no update or delete. Read by the team and the owner.
 - `positions/{uid}`: write by that uid while the walk is `open`; read by that uid and the walk owner.
 - `alerts`: create by a team of that walk with `teamUid == auth.uid`; read/update by the owner.
-- `generationJobs`: read by owner, write by functions only.
-- `questionBank`, `places`: no client access. Functions pick the questions and copy them into stops.
-- `questionReports`: **create** by a signed-in user with `uid == auth.uid`, under the id built from the question (or walk and stop) and the uid, so each person reports a question once. No client read, update or delete.
+- `generationJobs`: read by owner (a job that doesn't exist yet can be read, so C3 can wait for it), list by owner, write by functions only.
+- `questionBank`, `places`: no client access. Functions pick the questions and copy them into stops. The functions' own `bankTopUps`, `bankMeta` and `rateLimits` have no client access either.
+- `questionReports`: **create** by a team of the walk with `uid == auth.uid` and `createdAt` the server time, under the id built from the question (or walk and stop) and the uid, so each person reports a question once. A bank question can only be reported as it is on that stop (`questionId` equals the stop's `bankQuestionId`). No client read, update or delete.
 
 **App Check** is enforced on callables from the first one written, and on Firestore itself before release (M5), which is what stops a script from guessing join codes.
 
@@ -274,8 +282,8 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 |---|---|---|
 | `routeForView` | callable | C2's *Refresh*: four points → a walking loop fitted to the view, with stop positions and the spacing check (below). Writes nothing. About 30 per creator per hour. |
 | `generateWalk` | callable | C2's *Next*: names the stops, picks questions, writes *Local* questions for new places, titles and writes the walk (below). Rate-limited (e.g. 20/creator/day). |
-| `swapQuestion` | callable | C5's *Swap* and G2's *Suggest a question*: another question for one stop. |
-| `reroute` | callable | After edits: snap pins to walkable paths, compute route + distance, return warnings. |
+| `swapQuestion` | callable | C5's *Swap* and G2's *Suggest a question*: another question for one stop, as a proposal to accept or discard. About 120 per creator per hour. |
+| `reroute` | callable | After edits: route the pins along walkable paths, write route + distance and the *Off path* / *on water* warnings. Pins are not moved. About 60 per creator per hour. |
 | `publishWalk` | callable | Validate (≥1 stop; every stop has a question, 2–4 non-empty answers and a correct one), recompute `stopCount` and `distanceM`, allocate join code, `draft → ready`. |
 | `openWalk` | callable | Validate again (a `ready` walk can still be edited), set `openFor`, `openedAt`, `ready → open`. |
 | `deleteWalk` | callable | Delete a walk that is not `open`, with its stops, teams, answers, positions, alerts and join code. |
@@ -286,11 +294,12 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 | `onWalkStatusChanged` | Firestore trigger | `open` → push "Walk is open" to joined teams. `ended` (by the creator or by `hourly`) → push "Final results". Nothing is frozen or copied: ranks are derived (§4). |
 | `onAlertCreated` | Firestore trigger | Push to creator: "Fjord Kids: way to stop 4 is blocked". |
 | `onQuestionReported` | Firestore trigger | Update the reported question's counts and status (below). |
-| `topUpQuestions` | background | Add 20–25 questions to one bank pool (below). At most one per pool at a time. |
+| `onStopWritten` | Firestore trigger | A creator swapping a bank question in counts as `used`; swapping it out, editing it (the app drops `bankQuestionId`) or deleting its stop counts as `replaced`. Writes by functions don't count. |
+| `topUpQuestions` | background | Add 20–25 questions to one bank pool (below). At most one per pool at a time, a 6-hour cooldown per pool, and at most 20 a day. |
 | `hourly` | scheduled | Auto-end walks past their end time (`openedAt` + 12 h or + 7 days, by `openFor`). Hourly, not daily: a daily job would leave a "12-hour" walk open for up to 36. |
 | `daily` | scheduled | Delete participant data (teams, answers, positions, alerts) and the join code 30 days after `endedAt`. |
 
-API keys (OpenRouter, ORS) live in **Secret Manager** via Functions secrets, never in the app or repo. Callables require **App Check** (App Attest / Play Integrity).
+API keys live in **Secret Manager** via Functions secrets (`GEMINI_API_KEY`, `ORS_API_KEY`), never in the app or repo. The fill script reads the same Gemini key with the Firebase CLI. Callables require **App Check** (App Attest / Play Integrity).
 
 ### Generated walks
 
@@ -308,7 +317,7 @@ A second Refresh on the same view moves the three far points a little to give a 
 **Next (`generateWalk`).**
 
 1. One Overpass query along the route. Each stop moves to a named feature within about 50 m of the path where there is one (a fountain, church, statue or playground). Otherwise it takes its street name.
-2. Trivia questions come from the bank. A *Local* stop (and, under Auto, any stop next to a documented place) uses the stored questions of its nearest Wikidata place. A place's questions are written on its first walk: about 5, only from its Wikipedia extract (English, falling back to the local language), then fact-checked.
+2. Trivia questions come from the bank. A *Local* stop (and, under Auto, any stop next to a documented place) uses the stored questions of its nearest Wikidata place. A place's questions are written on its first walk: about 5, only from its Wikipedia extract (English, falling back to the local language), then fact-checked. Auto uses *Local* at up to half the stops, so the walk still mixes categories; *Local* with other categories gets its share of the stops; *Local* alone gets every stop that has a place, and trivia from Auto's categories elsewhere. At most 4 new places are written per walk, so C3 stays a short wait. *Local* questions carry the `unverified` warning, so C4 asks the creator to check them.
 3. The title is "{Category} walk from {start}", or "Quiz walk from {start}" for Auto or several categories. The creator can change it in C4.
 
 **Question bank.**
@@ -320,11 +329,11 @@ A second Refresh on the same view moves the three far points a little to give a 
 
 **Reports and blocking.** Google Play's policy on AI-generated content requires in-app reporting. Apple's guideline 1.2 covers questions that creators write themselves.
 
-- One *offensive* report hides a question until it has been reviewed. A few *wrong answer* reports, or an unusual share of correct answers, flags it. A creator replacing or deleting a bank question counts against it.
+- One *offensive* report hides a question until it has been reviewed. A few *wrong answer* reports (3), 5 *confusing* ones, or an unusual share of correct answers (under 10% once 10 teams have answered) flags it. A creator replacing, editing or deleting a bank question counts against it, and flags it once that has happened in at least 5 walks and half the walks it was in. A flagged question is not picked until it is reviewed (`scripts/review-bank.ts`).
 - A blocked question is never picked again, and the top-up refills its pool. In v1, review is a script or the Firestore console.
 - Stops copy the question text and keep the `bankQuestionId`, so a block never changes a walk in progress. The counts are totals with no personal data, so they are kept when answers are deleted.
 
-Model IDs are configuration, not code.
+Model IDs are configuration, not code: `GEMINI_WRITER_MODEL` (a fast model writes) and `GEMINI_CHECKER_MODEL` (a different, stronger one checks) in `functions/.env`, read by the functions and the fill script. From 2026-11-27: `gemini-3.8-flash` writes and `gemini-4-argon` checks.
 
 ---
 
@@ -461,8 +470,9 @@ Accessibility in v1: Dynamic Type / font scaling, screen-reader labels on all co
 | Item | Expected |
 |---|---|
 | Firestore, Functions, Hosting | Within free quotas |
-| LLM (OpenRouter) | Filling the question bank once (roughly a million output tokens for ~8,600 questions; check current model prices before running it), then top-ups and *Local* questions for new places → < $5/month |
+| LLM (Gemini API) | Filling the question bank once: about $6 for ~7,800 questions on 2026-11-27 prices (`m4-backend-delivery.md` has the actual spend), capped at $10 by the fill script. Then top-ups (at most 20 a day) and *Local* questions for new places → < $5/month. Gemini 4 prices double on 2026-12-01 and 3.8 Flash's on 2027-01-01 |
 | OpenRouteService | Free plan (2,000 routes/day). A Refresh is 1–2 routes, limited to about 30 per creator per hour |
+| Overpass, Wikipedia, Wikidata | Free public services. One Overpass query per generated walk |
 | Maps (Apple, Google mobile SDK) | Free |
 | Expo EAS | Free tier (limited monthly builds); paid plan optional |
 | Apple Developer / Google Play | $99/year (existing) / $25 once |
@@ -532,7 +542,7 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [ ] **M1** App Check: enable App Attest (iOS) and Play Integrity (Android), and register debug tokens for the dev builds and the emulator
 - [ ] **M2** Google Play: start the closed test (12 testers for 14 days is required before a personal account can release; the clock only runs once testers have opted in)
 - [ ] **M2** Push credentials: an FCM V1 service-account key uploaded to Expo for Android; EAS generates the APNs key for iOS
-- [ ] **M4** OpenRouteService API key and OpenRouter API key → stored as Firebase secrets (never pasted into chat or the repo)
+- [x] **M4** OpenRouteService API key and Gemini API key (Google AI Studio, same Google Cloud project; decided 2026-11-27 instead of OpenRouter) → stored as the Firebase secrets `ORS_API_KEY` and `GEMINI_API_KEY` (done 2026-11-27)
 - [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect
 
 ---
@@ -541,8 +551,9 @@ These need your accounts or consoles. Each will be walked through step by step w
 
 | Risk | Mitigation |
 |---|---|
+| Public Overpass servers are busy: `overpass-api.de` answered 502 at capacity several times on 2026-11-27 and says it is meant for human-operated tools | One query per generated walk, with a second server and a retry. If both fail the walk is still made, with unnamed stops and trivia instead of *Local*. A paid or self-hosted Overpass if usage grows |
 | Thin OSM/Wikipedia coverage outside cities | Only affects *Local* questions: stops come from the route, and Auto uses trivia where there is no documented place |
-| ORS free plan: commercial use not explicitly stated; possible endpoint changes | Routing behind one module; revisit before any commercial launch (self-host or paid alternative) |
+| ORS free plan: commercial use not explicitly stated; possible endpoint changes (the address moved to `api.heigit.org` on 2026-11-24) | Routing behind one module; revisit before any commercial launch (self-host or paid alternative) |
 | App review friction for background location | Clear permission copy, "When In Use" only, review notes |
 | **Pocket mode may need "Always" location.** `expo-location`'s docs say so; the spec assumes otherwise | Spike in M1·A on both phones; fallbacks listed in §9, the first being iOS's own location-triggered notifications. Nothing before M3 depends on the answer |
 | An answer given offline is lost if the walk ends before it syncs | Accepted (§4). The creator sees how many teams are still walking before ending; the player is told on P6 |

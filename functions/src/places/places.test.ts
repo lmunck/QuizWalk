@@ -13,7 +13,14 @@ import {
   waterQuery,
   type OverpassElement,
 } from './overpass';
-import { chooseArticle, placeTexts, trimArticle, wikiClient } from './wiki';
+import {
+  chooseArticle,
+  placeNameFromTitle,
+  placeTexts,
+  surroundingsFromWikipedia,
+  trimArticle,
+  wikiClient,
+} from './wiki';
 
 const naming = fixture<{ elements: OverpassElement[] }>('overpass-naming').elements;
 const water = fixture<{ elements: OverpassElement[] }>('overpass-water').elements;
@@ -82,6 +89,31 @@ describe('Overpass', () => {
   });
 });
 
+describe('Overpass when busy', () => {
+  it('waits and tries again when a server is at capacity', async () => {
+    let n = 0;
+    const client = overpassClient(['https://busy.example/api'], async () => {
+      n++;
+      return n < 3
+        ? new Response('at capacity', { status: 502 })
+        : new Response(JSON.stringify({ elements: water }), { status: 200 });
+    });
+    expect(await client.query('[out:json];')).toHaveLength(water.length);
+    expect(n).toBe(3);
+  }, 20_000);
+
+  it('gives up at the deadline, so a walk never waits long for names', async () => {
+    const client = overpassClient(
+      ['https://a.example/api', 'https://b.example/api'],
+      async () => new Response('at capacity', { status: 502 }),
+      300,
+    );
+    const t0 = Date.now();
+    await expect(client.query('[out:json];')).rejects.toThrow('overpass');
+    expect(Date.now() - t0).toBeLessThan(3000);
+  });
+});
+
 describe('naming stops', () => {
   const env = parseSurroundings(naming);
   const planned = spaceStops(route, 8);
@@ -132,6 +164,51 @@ describe('naming stops', () => {
 });
 
 describe('Wikipedia', () => {
+  it('turns GeoSearch articles into named, documented places, leaving out offices', async () => {
+    const env = await surroundingsFromWikipedia(recordedWiki(), [
+      { latitude: 55.67985, longitude: 12.5906 },
+    ]);
+    expect(env.streets).toEqual([]);
+    expect(env.features.every((f) => f.wikidata && f.notable && f.score > 0)).toBe(true);
+    expect(env.features.some((f) => /Shipowners/.test(f.name))).toBe(false);
+    expect(placeNameFromTitle('Memorial Anchor, Copenhagen')).toBe('Memorial Anchor');
+    expect(placeNameFromTitle('Nyhavn 17 (building)')).toBe('Nyhavn 17');
+    expect(placeNameFromTitle('Kongens Nytorv')).toBe('Kongens Nytorv');
+  });
+
+  it('asks GeoSearch for articles around a point', async () => {
+    const calls: { url: string; init?: RequestInit }[] = [];
+    const wiki = wikiClient(
+      fakeFetch(
+        [
+          {
+            match: () => true,
+            body: {
+              query: {
+                pages: [
+                  {
+                    pageid: 1,
+                    title: 'A',
+                    coordinates: [{ lat: 1, lon: 2 }],
+                    pageprops: { wikibase_item: 'Q9' },
+                  },
+                  { pageid: 2, title: 'No coords' },
+                ],
+              },
+            },
+          },
+        ],
+        calls,
+      ),
+    );
+    expect(await wiki.nearby({ latitude: 55.1, longitude: 12.2 }, 120)).toEqual([
+      { pageid: 1, title: 'A', location: { latitude: 1, longitude: 2 }, wikidata: 'Q9' },
+    ]);
+    expect(calls[0]!.url).toContain(
+      'generator=geosearch&ggscoord=55.100000%7C12.200000&ggsradius=120',
+    );
+  });
+
   it('prefers English, then the OSM tag, then a nearby language', () => {
     expect(chooseArticle({ en: 'Nyhavn', da: 'Nyhavn' })).toEqual({ lang: 'en', title: 'Nyhavn' });
     expect(chooseArticle({ da: 'Kvæsthusbroen' }, 'da:Kvæsthusbroen')).toEqual({

@@ -60,11 +60,30 @@ export interface OverpassElement {
   tags?: Record<string, string>;
 }
 
-export function overpassClient(urls: string[], fetchImpl?: Fetch): Overpass {
+/** The longest a walk waits for Overpass before it carries on without names. */
+export const OVERPASS_DEADLINE_MS = 25_000;
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * Tries the servers in turn until one answers or the deadline passes. A busy server answers
+ * 429 or 502 at once ("at capacity"), so those are retried after a short wait; a server that
+ * doesn't answer is given up on for this query.
+ */
+export function overpassClient(
+  urls: string[],
+  fetchImpl?: Fetch,
+  deadlineMs = OVERPASS_DEADLINE_MS,
+): Overpass {
   return {
     async query(ql: string) {
+      const until = Date.now() + deadlineMs;
+      const dead = new Set<string>();
       let last: unknown;
-      for (const url of urls) {
+      for (let attempt = 0; Date.now() < until; attempt++) {
+        const live = urls.filter((u) => !dead.has(u));
+        const url = live[attempt % Math.max(1, live.length)];
+        if (!url) break;
         try {
           const res = await requestJson<{ elements?: OverpassElement[] }>(
             url,
@@ -77,14 +96,23 @@ export function overpassClient(urls: string[], fetchImpl?: Fetch): Overpass {
               },
               body: new URLSearchParams({ data: ql }).toString(),
             },
-            { service: 'overpass', timeoutMs: 30_000, retries: 1, fetch: fetchImpl },
+            {
+              service: 'overpass',
+              timeoutMs: Math.max(1000, Math.min(15_000, until - Date.now())),
+              fetch: fetchImpl,
+            },
           );
           return res.elements ?? [];
         } catch (err) {
           last = err;
+          const busy = err instanceof ServiceError && err.status !== undefined && err.transient;
+          if (!busy) dead.add(url);
+          else await sleep(Math.min(4000, 1000 * 2 ** Math.min(attempt, 2)));
         }
       }
-      throw last instanceof ServiceError ? last : new ServiceError('overpass', String(last));
+      throw last instanceof ServiceError
+        ? last
+        : new ServiceError('overpass', String(last ?? 'no answer'));
     },
   };
 }

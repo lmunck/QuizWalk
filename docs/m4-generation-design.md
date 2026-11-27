@@ -1,8 +1,8 @@
 # M4 design: generated routes and the question bank
 
-Status: **Agreed** · 2026-11-27 · folded into [`v1-spec.md`](v1-spec.md) the same day
+Status: **Agreed** · 2026-11-27 · folded into [`v1-spec.md`](v1-spec.md) the same day · backend built the same night: §11 has the contracts the app builds against, §12 the decisions made while building, and [`m4-backend-delivery.md`](m4-backend-delivery.md) what was delivered
 
-This document covers how *Generate for me* makes a walk. The route comes from what the creator sees on the map, and the questions come from a shared bank, so generating a walk rarely spends tokens. It replaces the generation pipeline in spec §8 and changes C2, C3, C4, C5 and P4 (spec §3). The *what* is now in the spec, and this document keeps the *how* and the reasons. Where they disagree, the spec wins and this document should be fixed. §9 lists what changed in the spec, and §10 records the decisions.
+This document covers how *Generate for me* makes a walk. The language model is Google's Gemini API, with one Google AI Studio key in the project (decided 2026-11-27, instead of OpenRouter). The route comes from what the creator sees on the map, and the questions come from a shared bank, so generating a walk rarely spends tokens. It replaces the generation pipeline in spec §8 and changes C2, C3, C4, C5 and P4 (spec §3). The *what* is now in the spec, and this document keeps the *how* and the reasons. Where they disagree, the spec wins and this document should be fixed. §9 lists what changed in the spec, and §10 records the decisions.
 
 ## 1. The idea
 
@@ -94,7 +94,7 @@ At the spec's expected ~50 walks a month, writing every walk's questions fresh w
 ### Filling it
 
 - **A script fills it ahead of time** (in `scripts/`) for every category, subcategory and difficulty, in English only (spec §1). For example, 12 categories × 6 subcategories × 3 difficulties × 40 questions is about 8,600 questions. That is roughly a million output tokens plus the fact-check pass, paid once. Check current model prices before running it.
-- **A second model fact-checks every question**, as the spec already plans. A question that fails is dropped, not rewritten, because the bank only needs enough questions that pass. The `unverified` warning in C4 then only applies to place questions, so it becomes rare.
+- **A second model fact-checks every question**, as the spec already plans. A fast model writes (`GEMINI_WRITER_MODEL`, `gemini-3.8-flash`) and a different, stronger one checks (`GEMINI_CHECKER_MODEL`, `gemini-4-argon`), both set in `functions/.env`. A question that fails is dropped, not rewritten, because the bank only needs enough questions that pass. The `unverified` warning in C4 then only applies to place questions, so it becomes rare.
 - **Each LLM call writes 20–25 questions.** Longer lists drift and repeat themselves.
 - **It is topped up in the background.** When a creator has fewer than about twice a walk's worth of unused questions left for one subcategory and difficulty, a background function adds 20–25 more. Each pool gets at most one top-up at a time. The prompt includes the pool's existing correct answers, so the new questions don't repeat them.
 - **Only questions that stay true.** The prompt rules out "current" facts, such as who holds an office or a record. Each question stores which model wrote it and when, so an old batch can be re-checked or retired.
@@ -200,3 +200,60 @@ Agreed on 2026-11-27, following the recommendations:
 6. **The default number of questions follows the length**: about one per 350 m, within 4–12, until the creator changes it.
 7. **A generated walk's title** is "{Category} walk from {start}", or "Quiz walk from {start}" for Auto or several categories. It can be changed in C4.
 8. **The category list** starts as the one in §4.
+
+## 11. Contracts for the app
+
+The app's M4 screens are built against these. The types are in `shared/`: callables in `callables.ts`, the phone-side route helpers in `route.ts`, categories in `categories.ts`, and the bank and report types in `bank.ts`. Every callable needs a signed-in creator (Apple or Google) and App Check, and its errors are `HttpsError`s whose `details` is a `CallableErrorDetails` (`reason`, `retryAfterS`, `minLengthM`, `distanceM`, `problems`). The `message` can always be shown as it is.
+
+### C2: the map screen
+
+- **The four points.** `viewScreenPoints(frame)` takes the map view's size and its covered edges (the sheet, the header and the safe areas) and returns the screen points of the shrunk diamond (`start`, `left`, `top`, `right`) and the usable area's four `corners`. Each one goes through `coordinateForPoint`. The Start pin is drawn at `start`.
+- **Before Refresh.** Each time the map stops moving, `refreshCheck(view, questionCount)` says whether Refresh is enabled. When it isn't, its `message` ("Zoom out, or choose fewer questions") goes under the button. The stepper's default is `defaultQuestionCount(straightLineLoopM(view))`, until the creator changes it, within 4–12 (`QUESTION_COUNT_MIN`, `QUESTION_COUNT_MAX`).
+- **Refresh** calls `routeForView({ view, corners, questionCount, variant })`. `variant` is 0 for the first Refresh on a view and goes up by 1 on each Refresh while the view and the count stay the same; it goes back to 0 when either changes. The response has `route` (`polyline`, `distanceM`, `durationS`), `start` (the Start pin moved onto a path), the `stops` (`location`, `alongM`; the last is back at the start) and `fitsView`. Draw `decodePolyline(route.polyline)` and the stops, and the summary line `walkSummaryLine(questionCount, route.distanceM)`.
+- **Refresh errors.** `tooShort` keeps the previous route on screen with the message ("Couldn't fit 8 stops here. Zoom out a little."). `unroutable`, `tooBig` and `unavailable` say what to do. `rateLimited` comes after about 30 Refreshes in an hour, with `retryAfterS`.
+- **Next** creates the draft, or updates it for *New route*, with `route` from the last Refresh, `start` from its response, `categories` (empty for Auto), `difficulty`, `shape: 'loop'` and a placeholder title (the rules need one; generateWalk replaces it on a new walk). Then it subscribes to `generationJobs/{walkId}` and calls `generateWalk({ walkId, questionCount })` with the count the route was made for.
+
+### C3: generating
+
+- `generationJobs/{walkId}` (`GenerationJobDoc`): `status` (`running`, `done`, `failed`), `steps` (`naming`, `picking`, and `writing` only when a *Local* place is new), `step` (1-based, the step running now; equal to `steps.length` when done), `stepDetail` (one line per finished step) and `error`. The labels are `GENERATION_STEP_LABELS`. No question text is written, so *Play it myself* has no spoilers.
+- The job can be read before it exists, so C3 subscribes first. The call returns `{ jobId, title, stopCount, localCount }` once the walk is written; if the app leaves C3, the work carries on and the job records the outcome. A job still `running` more than `GENERATION_STALE_MS` (6 minutes) after `updatedAt` has failed.
+- *Try again* calls `generateWalk` again. Home finds walks being generated with `generationJobs` where `ownerUid == uid` and `status == 'running'`.
+- `noQuestions` means the bank has nothing for the choice yet; C3 offers *Add stops manually*.
+
+### C4, C5 and G2
+
+- **Reroute** after a save that adds, moves, removes or reorders stops: `reroute({ walkId })`. It writes `route` (with `key`), `distanceM` and each stop's `offPath` and `onWater` warnings, and returns them (`RerouteResponse`). Pins are not moved. While `route.key` equals `routeKey(start, stops)`, the walk's distance is the routed one; after an edit it is straight lines ("as the crow flies") until reroute runs.
+- **Swap** (C5): `swapQuestion({ walkId, stopId, exclude })` returns a `proposal` (`ProposedQuestion`) or `null`, and writes nothing. To accept, the app writes `question`, `options`, `correctIndex`, `explanation`, `source`, `bankQuestionId`, `origin` and the proposal's `warnings` onto the stop. `exclude` holds the ids already offered in this sheet. A *Local* stop gets another question about its place while there are any.
+- **Editing a bank question.** When the creator changes the text or answers of a stop that has a `bankQuestionId`, the app deletes `bankQuestionId` in the same write: the question is no longer the bank's, and the change counts against it (§6).
+- **Suggest a question** (G2): `swapQuestion({ walkId, location, exclude })` for a stop not saved yet. Next to a documented place it returns a *Local* question, with the place's name in `placeName` for the stop's name.
+- **New route** (C4): back to C2 on the walk's area, then *Next* as above on the same walk. Trivia and the creator's own questions are kept in order; *Local* ones are picked again.
+
+### P4: Report question
+
+- The app creates `questionReports/{questionReportId(target, uid)}` with `{ uid, reason, createdAt: serverTimestamp(), walkId, stopId }`, plus `questionId` when the stop has a `bankQuestionId`. The choices are `REPORT_REASON_LABELS` and the confirmation is `REPORT_THANKS`.
+- The rules allow one report per person and question. A second attempt is refused with `permission-denied`, which the app treats as already reported and thanks the player all the same.
+
+### Limits
+
+`RATE_LIMITS` in `callables.ts`: 30 Refreshes an hour, 20 generated walks a day, 120 swaps an hour and 60 reroutes an hour, per creator.
+
+## 12. Decisions made while building
+
+Made on 2026-11-27 while the user was away, each with its reason. The spec has the outcomes.
+
+1. **Gemini, not OpenRouter** (the user's decision). `gemini-3.8-flash` writes, at thinking level *low*: Google's strongest stable Flash model. `gemini-4-argon` checks, at *low*: a stable Gemini 4 model described as efficient frontier reasoning, priced like Gemini 4 Carbon but spending fewer tokens. Measured: about $0.015 for a batch of 25 written and checked. The ids are in `functions/.env` and the prices, including the announced changes, in `functions/src/llm/pricing.ts`.
+2. **OpenRouteService moved** to `api.heigit.org/openrouteservice` on 2026-11-24; the old address answers 410. Same key and header.
+3. **Reroute doesn't move pins.** The creator put them there, and the spec says nothing changes silently. A pin is *Off path* when the nearest walkable path is further than its radius less 10 m, because a team on that path might not unlock it; *on water* when an Overpass `is_in` query finds it inside water. Open sea outside the coastline isn't a polygon in OpenStreetMap, so a pin far out at sea is only *Off path*.
+4. **Overpass is asked about each stop, not the whole route**, so a 40 km walk costs one bounded query like a short one. A stop moves to a landmark within 50 m of the path and 80 m along it, sits on the path next to it, and stays 120 m from the next stop (two 60 m unlock circles). Shops, offices, hotels and commercial galleries don't name stops.
+5. **Local questions.** Auto uses them at up to half the stops; *Local* with other categories gets its share; *Local* alone every stop with a place. At most 4 new places are written per walk, and a place needs at least 800 characters of Wikipedia text. Each place question has its own difficulty (about 2 kids, 2 mixed, 1 expert), and picks prefer the walk's. They carry `unverified`, so the creator checks them in C4.
+6. **The job id is the walk id**, so C3 and Home can find a walk's job without being told, and the rules let a job be read before it exists. generateWalk does the work inside the callable, which keeps running if the app leaves; its timeout is 5 minutes.
+7. **Picking** leaves out every bank question in the creator's walks (read from their stops), reads a window of up to 60 questions from a random point in each pool, falls back to other pools of the same categories and then Auto's, and shuffles the answers.
+8. **Top-ups** start when a pick sees fewer than 24 unused questions in a pool (twice a 12-question walk). A `bankTopUps/{poolKey}` document is the lock, with a 6-hour cooldown per pool and at most 20 top-ups a day, so a bug can't run up a bill.
+9. **Flagged questions are hidden** until reviewed, not only listed: a question that is probably wrong shouldn't reach the next walk while it waits. `scripts/review-bank.ts` keeps or blocks them.
+10. **Only a team of the walk can report**, and a bank question only as it is on that stop. One *offensive* report hides a question, so without these checks anyone could hide any question with a new anonymous account.
+11. **Creator replacements are counted from the Firestore trigger's auth context**: writes by functions (generateWalk, deleteWalk) use their service account and don't count. Editing a bank question counts too, because the app drops its `bankQuestionId`.
+12. **Limits the spec didn't set:** 120 swaps and 60 reroutes per creator per hour.
+13. **The walk's distance is routed only while the route matches the pins** (`route.key`), so publishWalk never shows a route that the stops have moved away from.
+14. **Subcategories that don't suit a difficulty have no pool**: music theory, classic films and poetry for Kids, children's TV for Expert. Auto leaves Words & language out for Kids. 194 pools in all.
+15. **The fill is breadth first**, every pool getting a batch before any gets a second, so a run stopped by the cap leaves no category empty. Ids are a hash of the pool and the question text, so a repeated batch can't make duplicates. All spend is in `bankMeta/spend` by source (`fill`, `topUp`, `place`); the $10 cap counts the fill's own spend across runs.
+

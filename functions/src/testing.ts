@@ -5,9 +5,11 @@
  */
 import { readFileSync } from 'node:fs';
 
+import { distanceM } from '@qualk/shared';
+
 import type { Fetch } from './net';
 import type { Overpass, OverpassElement } from './places/overpass';
-import type { Wiki } from './places/wiki';
+import type { Wiki, WikiNearby } from './places/wiki';
 
 export function fixture<T = unknown>(name: string): T {
   return JSON.parse(readFileSync(new URL(`./fixtures/${name}.json`, import.meta.url), 'utf8')) as T;
@@ -51,9 +53,19 @@ export function recordedWiki(): Wiki & { extracts: string[] } {
   }>('wikidata-sitelinks');
   const pages =
     fixture<Record<string, { query: { pages: { extract?: string }[] } }>>('wikipedia-extracts');
+  const geo = fixture<Record<string, WikiNearby[]>>('wikipedia-geosearch');
+  const geoAt = Object.keys(geo).map((k) => {
+    const [latitude, longitude] = k.split(',').map(Number) as [number, number];
+    return { key: k, p: { latitude, longitude } };
+  });
   const extracts: string[] = [];
   return {
     extracts,
+    async nearby(p) {
+      // The recorded answer for the nearest recorded point, if it is within 50 m.
+      const near = geoAt.map((g) => ({ ...g, d: distanceM(g.p, p) })).sort((a, b) => a.d - b.d)[0];
+      return near && near.d < 50 ? (geo[near.key] ?? []) : [];
+    },
     async sitelinks(ids) {
       const out: Record<string, Record<string, string>> = {};
       for (const id of ids) {

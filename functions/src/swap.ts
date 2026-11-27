@@ -29,6 +29,7 @@ import {
   placeQuestionsFor,
   toProposal,
   usedByCreator,
+  type Avoid,
   type BankQuestion,
 } from './bank/store';
 import { ownedWalk } from './core';
@@ -37,6 +38,7 @@ import { pickTrivia, requestTopUps } from './generate';
 import { writeNewPlaces } from './places/local';
 import { PLACE_MAX_DISTANCE_M } from './places/naming';
 import { surroundings, type OsmFeature } from './places/overpass';
+import { surroundingsFromWikipedia } from './places/wiki';
 import type { Services } from './services';
 
 function isLatLng(v: unknown): v is LatLng {
@@ -64,7 +66,9 @@ export function parseSwap(data: unknown) {
 /** The nearest documented place to a point, from one small Overpass query. */
 async function placeNear(svc: Services, p: LatLng): Promise<OsmFeature | undefined> {
   try {
-    const env = await surroundings(svc.overpass, [p]);
+    const env = await surroundings(svc.overpass, [p]).catch(() =>
+      surroundingsFromWikipedia(svc.wiki, [p]),
+    );
     return env.features
       .filter((f) => f.wikidata && f.notable)
       .map((f) => ({ f, d: distanceM(f.location, p) }))
@@ -112,6 +116,13 @@ export async function swapQuestion(
     if (typeof id === 'string') exclude.add(id);
   }
   const stop = req.stopId ? stopsSnap.docs.find((d) => d.id === req.stopId) : undefined;
+  // The other stops' questions, so the proposal isn't about the same thing as one of them.
+  const avoid: Avoid = stopsSnap.docs
+    .filter((d) => d.id !== req.stopId && typeof d.get('question') === 'string')
+    .map((d) => ({
+      question: d.get('question') as string,
+      correct: ((d.get('options') as string[] | undefined) ?? [])[d.get('correctIndex') ?? 0] ?? '',
+    }));
   if (req.stopId && !stop) throw new QualkError('not-found', 'This stop no longer exists.');
 
   const currentId = stop?.get('bankQuestionId') as string | undefined;
@@ -152,7 +163,7 @@ export async function swapQuestion(
     for (const s of subs) pools.push({ category: cat, subcategory: s.id, difficulty });
   }
   for (const pool of pools.slice(0, 3)) {
-    const res = await pickFromPool(db, pool, 1, exclude, svc.rng);
+    const res = await pickFromPool(db, pool, 1, exclude, svc.rng, avoid);
     const q = res.picked[0];
     if (q) {
       if (res.unusedSeen - 1 < TOP_UP_BELOW_UNUSED) await requestTopUps(svc, [pool]);
@@ -160,7 +171,7 @@ export async function swapQuestion(
     }
   }
   const categories: CategoryId[] = normaliseCategories(walk.categories);
-  const trivia = await pickTrivia(svc, categories, difficulty, 1, exclude);
+  const trivia = await pickTrivia(svc, categories, difficulty, 1, exclude, avoid);
   await requestTopUps(svc, trivia.low);
   const q = trivia.picked[0];
   return { proposal: q ? toProposal(q, svc.rng) : null };

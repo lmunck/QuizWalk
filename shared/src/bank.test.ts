@@ -7,6 +7,7 @@ import {
   repeatsExisting,
   seededRng,
   shuffleAnswers,
+  similarQuestions,
   statusAfter,
   writtenQuestionProblem,
   type BankStats,
@@ -169,6 +170,8 @@ describe('writtenQuestionProblem', () => {
     [{ wrong: ['Venus', 'All of the above', 'Mercury'] }, 'all/none of the above'],
     [{ correct: '' }, 'bad correct answer'],
     [{ explanation: 'x'.repeat(301) }, 'explanation too long'],
+    [{ wrong: ['Venus', 'Saut&eacute;', 'Mercury'] }, 'html entity'],
+    [{ question: 'Which planet is named Mars after the god of war?' }, 'answer in question'],
   ])('refuses %o', (change, problem) => {
     expect(writtenQuestionProblem({ ...good, ...change })).toBe(problem);
   });
@@ -189,6 +192,43 @@ describe('writtenQuestionProblem', () => {
     ).toBe(false);
     expect(
       repeatsExisting({ question: 'Which planet is called the Red Planet?', correct: 'Venus' }, []),
+    ).toBe(false);
+  });
+});
+
+describe('similarQuestions', () => {
+  const q = (question: string, correct: string) => ({ question, correct });
+
+  it('matches the same answer, an answer inside another, or mostly the same words', () => {
+    expect(
+      similarQuestions(
+        q('Who found penicillin?', 'Alexander Fleming'),
+        q('Which Scot discovered a mould?', 'Alexander Fleming'),
+      ),
+    ).toBe(true);
+    expect(
+      similarQuestions(
+        q('What did Fleming find?', 'Penicillin'),
+        q('What grew in his dish?', 'Penicillin mould'),
+      ),
+    ).toBe(true);
+    expect(
+      similarQuestions(
+        q('What helps sailors find north?', 'Compass'),
+        q('Which old Chinese tool points north?', 'The magnetic compass'),
+      ),
+    ).toBe(true);
+    expect(
+      similarQuestions(
+        q('Which planet is the Red Planet?', 'Mars'),
+        q('Which planet has rings?', 'Saturn'),
+      ),
+    ).toBe(false);
+    expect(
+      similarQuestions(
+        q('Which sea is saltiest?', 'Dead Sea'),
+        q('Which sea is between Europe and Africa?', 'Mediterranean'),
+      ),
     ).toBe(false);
   });
 });

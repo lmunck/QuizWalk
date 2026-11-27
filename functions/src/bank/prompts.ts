@@ -23,7 +23,8 @@ Rules for every question:
 - English, with British spelling.
 - One answer is clearly correct. The three wrong answers are plausible, of the same kind and similar length as the correct one, and clearly wrong to someone who knows.
 - Only facts that stay true. Never ask about current office holders, current records, "the latest", "the most recent", rankings, prices, populations or anything else that changes over time.
-- No trick questions, no "Which of these is NOT", no "all of the above" or "none of the above", no answers hidden in the question.
+- No trick questions, no "Which of these is NOT", no "all of the above" or "none of the above", and never the answer, or a word of it, in the question.
+- Plain text only: no HTML or markup.
 - Nothing offensive, frightening, sexual, political or about violence in detail. Suitable for a family.
 - The question is at most 150 characters and ends with a question mark. Each answer is at most 40 characters.
 - The explanation is one or two short sentences that teach the fact behind the answer.
@@ -65,9 +66,13 @@ export function triviaPrompt(pool: PoolRef, count: number, existingAnswers: stri
     existingAnswers.length > 0
       ? `\n\nThese answers are already used by other questions in this pool. Don't write questions whose correct answer is one of them:\n${existingAnswers.map((a) => `- ${a}`).join('\n')}`
       : '';
+  const family =
+    pool.difficulty === 'expert'
+      ? ''
+      : '\n\nNo questions about alcohol, drugs or smoking, and none about films, TV series or books made for adults only.';
   return `Write ${count} questions in the category "${cat.label}", about ${sub?.topic ?? pool.subcategory}.
 
-The players are ${AUDIENCE[pool.difficulty]}.
+The players are ${AUDIENCE[pool.difficulty]}.${family}
 
 Spread the questions over different parts of the topic, people, places and periods.${avoid}`;
 }

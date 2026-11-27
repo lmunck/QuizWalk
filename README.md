@@ -8,9 +8,12 @@ Turn any walk into a quiz. Creators generate a walk from the map, or build one b
 - M4 generation design: [`docs/m4-generation-design.md`](docs/m4-generation-design.md)
 - Implementation plan: [`docs/implementation-plan.md`](docs/implementation-plan.md)
 - M1 delivery notes: [`docs/m1-delivery.md`](docs/m1-delivery.md)
+- M4 backend delivery notes: [`docs/m4-backend-delivery.md`](docs/m4-backend-delivery.md)
 - How to test, locally and on phones: [`docs/user-testing.md`](docs/user-testing.md)
 
-Stack: Expo (React Native + TypeScript) for iOS and Android · Firebase (Firestore, Auth, Cloud Functions, Hosting) · OpenRouteService · OpenStreetMap + Wikipedia.
+Stack: Expo (React Native + TypeScript) for iOS and Android · Firebase (Firestore, Auth, Cloud Functions, Hosting) · OpenRouteService · OpenStreetMap + Wikipedia · Gemini API.
+
+The question bank is filled and reviewed with `npx tsx scripts/fill-bank.ts` and `npx tsx scripts/review-bank.ts` (see their headers).
 
 ## Development
 

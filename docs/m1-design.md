@@ -154,7 +154,7 @@ It is written in step C with its tests.
 Nothing runs when a walk ends in M1: ranks are derived on each phone with `rankTeams`, and rules
 stop new answers, so there is nothing to freeze. `onWalkStatusChanged` arrives in M2 for the push.
 
-`duplicateWalk`, `deleteWalk`, `deleteAccount`, `reroute`, `generateWalk`, `suggestQuestion` and
+`duplicateWalk`, `deleteWalk`, `deleteAccount`, `reroute`, `generateWalk`, `swapQuestion` (once `suggestQuestion`) and
 the retention job are later milestones. **App Check** (App Attest / Play Integrity) is required
 on callables per §8; it is wired in M1 because retrofitting it means re-testing every call site.
 Play Integrity needs the app to exist in the Play Console (§18, still open), so until then the

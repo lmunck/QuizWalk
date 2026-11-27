@@ -9,6 +9,7 @@ import {
   EMPTY_STATS,
   poolKey,
   shuffleAnswers,
+  similarQuestions,
   type BankQuestionDoc,
   type Difficulty,
   type PoolRef,
@@ -157,9 +158,13 @@ export interface PoolPick {
   unusedSeen: number;
 }
 
+/** The walk's questions so far, so a pick never repeats one of their facts. */
+export type Avoid = Pick<WrittenQuestion, 'question' | 'correct'>[];
+
 /**
  * Random picks from a pool: start at a random `rand`, read on and wrap round, leave out the
- * excluded ids (the creator's earlier questions and the walk's own), and take `n` at random.
+ * excluded ids (the creator's earlier questions and the walk's own), and take `n` at random,
+ * skipping any about the same thing as a question in `avoid` (which the picks are added to).
  */
 export async function pickFromPool(
   db: Firestore,
@@ -167,6 +172,7 @@ export async function pickFromPool(
   n: number,
   exclude: Set<string>,
   rng: Rng,
+  avoid: Avoid = [],
 ): Promise<PoolPick> {
   const r = rng();
   const active = poolQuery(db, pool).where('status', '==', 'active').orderBy('rand');
@@ -186,7 +192,10 @@ export async function pickFromPool(
   const pool2 = [...unused];
   while (picked.length < n && pool2.length > 0) {
     const i = Math.floor(rng() * pool2.length);
-    picked.push(pool2.splice(i, 1)[0] as BankQuestion);
+    const q = pool2.splice(i, 1)[0] as BankQuestion;
+    if (avoid.some((a) => similarQuestions(a, q))) continue;
+    picked.push(q);
+    avoid.push(q);
   }
   return { picked, unusedSeen: unused.length };
 }
