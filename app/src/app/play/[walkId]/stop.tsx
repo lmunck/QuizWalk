@@ -1,20 +1,23 @@
 /**
  * P3 Walk to stop. Distance, a compass arrow (or a text bearing when the compass is unreliable)
  * and the map. The current stop is derived from the team's answers, so a restart loses
- * nothing. Until pocket mode ships (M3) the screen stays awake and says "Keep QuizWalk open"
- * (spec §3 P3, §9).
+ * nothing. In pocket mode (M3) the phone buzzes at the stop and *Directions* can hand over to
+ * the maps app. When pocket mode cannot buzz (no notifications, or switched off in
+ * `location/tuning.ts`) the screen stays awake and says "Keep QuizWalk open" instead, so it
+ * never promises a buzz it cannot deliver (spec §3 P3, §9).
  */
 import {
   compassPoint,
+  directionsUrl,
   formatDistance,
   formatMinutes,
   walkingMinutes,
   walkProgress,
 } from '@qualk/shared';
 import { useKeepAwake } from 'expo-keep-awake';
-import { Redirect, router, useLocalSearchParams } from 'expo-router';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
+import { Redirect, router, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ActivityIndicator, Linking, Platform, Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAuth } from '@/auth/AuthProvider';
@@ -31,6 +34,7 @@ import { WalkMenu } from '@/features/WalkMenu';
 import { useAnswers, useTeam } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
 import { useArrival, useHeading } from '@/location/arrival';
+import { setWalkScreenFocused, usePocketMode } from '@/location/pocket';
 import { simulatePosition, useLocationAccess } from '@/location/position';
 import { useWalkTracking } from '@/location/tracking';
 import { devTools } from '@/lib/env';
@@ -39,8 +43,13 @@ import { useOffline } from '@/lib/network';
 import { questionOpenedAt } from '@/lib/storage';
 import { colors, fonts, radius, spacing } from '@/theme/tokens';
 
-export default function WalkToStop() {
+/** Keeps the screen on while it is rendered (screen-on play, without pocket mode). */
+function KeepAwake() {
   useKeepAwake();
+  return null;
+}
+
+export default function WalkToStop() {
   const { walkId } = useLocalSearchParams<{ walkId: string }>();
   const { uid } = useAuth();
   const insets = useSafeAreaInsets();
@@ -73,6 +82,28 @@ export default function WalkToStop() {
 
   const walking = !!w && w.status === 'open' && !!me?.startedAt && !me.leftAt && !progress.finished;
   useWalkTracking({ walkId, uid, active: walking, startDistanceM: me?.distanceWalkedM ?? 0 });
+
+  const loaded = !walk.loading && !team.loading && !stops.loading && !answers.loading;
+  const pocket = usePocketMode(
+    w && stop
+      ? {
+          walkId,
+          walkTitle: w.title,
+          stopId: stop.id,
+          stopNumber,
+          placeName: stop.placeName || undefined,
+          location: stop.location,
+          radiusM: stop.radiusM,
+        }
+      : undefined,
+    loaded ? walking : undefined,
+  );
+  useFocusEffect(
+    useCallback(() => {
+      setWalkScreenFocused(true);
+      return () => setWalkScreenFocused(false);
+    }, []),
+  );
 
   const openQuestion = (stopId: string, imHere = false) =>
     router.push({
@@ -159,8 +190,14 @@ export default function WalkToStop() {
   const distance = arrival.distanceM;
   const arrowUsable = heading.reliable && heading.arrowDeg !== undefined;
 
+  const directions = () =>
+    void Linking.openURL(
+      directionsUrl(Platform.OS === 'ios' ? 'apple' : 'google', stop.location),
+    ).catch(() => toast("Couldn't open the maps app."));
+
   return (
     <View style={styles.root}>
+      {pocket.on ? null : <KeepAwake />}
       <QMap
         ref={mapRef}
         style={StyleSheet.absoluteFill}
@@ -270,8 +307,9 @@ export default function WalkToStop() {
           </View>
         </View>
         <Txt variant="callout" color={colors.onInkMuted}>
-          The question opens within {stop.radiusM} m. Keep QuizWalk open – the screen stays on while
-          you walk.
+          {pocket.on
+            ? `The question opens within ${stop.radiusM} m. Your phone buzzes at the stop, so it can stay in your pocket.`
+            : `The question opens within ${stop.radiusM} m. Keep QuizWalk open – the screen stays on while you walk.`}
         </Txt>
         {arrival.unlocked || clockStarted ? (
           <Button
@@ -289,15 +327,24 @@ export default function WalkToStop() {
             style={styles.flex}
             onPress={() => setCantReach(true)}
           />
-          {devTools && !arrival.unlocked ? (
+          {pocket.on ? (
             <Button
-              label="Simulate arrive"
-              kind="onDark"
+              label="Directions"
+              kind="onDarkOutline"
+              icon="navigate"
               style={styles.flex}
-              onPress={() => simulatePosition(stop.location)}
+              onPress={directions}
+              hint={`Opens stop ${stopNumber} in ${Platform.OS === 'ios' ? 'Apple Maps' : 'Google Maps'}. Your phone still buzzes when you get there.`}
             />
           ) : null}
         </View>
+        {devTools && !arrival.unlocked ? (
+          <Button
+            label="Simulate arrive"
+            kind="onDark"
+            onPress={() => simulatePosition(stop.location)}
+          />
+        ) : null}
       </View>
 
       <WalkMenu

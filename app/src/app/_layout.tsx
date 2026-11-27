@@ -1,3 +1,6 @@
+// Background tasks are defined before anything else runs (src/tasks.ts).
+import '@/tasks';
+
 import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold } from '@expo-google-fonts/inter';
 import { SpaceGrotesk_500Medium, SpaceGrotesk_700Bold } from '@expo-google-fonts/space-grotesk';
 import { useFonts } from 'expo-font';
@@ -12,12 +15,15 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AuthProvider, useAuth } from '@/auth/AuthProvider';
 import { EmptyState } from '@/components/ui';
 import { ToastProvider } from '@/components/Toast';
+import { useNotificationRouting } from '@/lib/push';
+import { releaseStalePocketMode } from '@/location/pocket';
 import { colors } from '@/theme/tokens';
 
 // The splash stays up until fonts and the anonymous sign-in are ready (Gate hides it).
 void SplashScreen.preventAutoHideAsync().catch(() => undefined);
 
 export default function RootLayout() {
+  useEffect(() => releaseStalePocketMode(), []);
   const [fontsLoaded, fontError] = useFonts({
     SpaceGrotesk_500Medium,
     SpaceGrotesk_700Bold,
@@ -48,6 +54,7 @@ function Gate() {
   useEffect(() => {
     if (ready) void SplashScreen.hideAsync().catch(() => undefined);
   }, [ready]);
+  useNotificationRouting(!loading && !!uid);
   if (error && !uid) {
     return (
       <View style={styles.center}>

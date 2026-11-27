@@ -109,8 +109,19 @@ export async function pushBlockedAlert(
 }
 
 /**
- * After a team's totals change: in a day walk, tell the creator once when nobody is still
- * walking; in a week-long walk, tell them about each team that finishes.
+ * A team that leaves can be the last one still walking, so leaving runs the same check as an
+ * answer (spec §4: a team that left no longer counts as "still walking").
+ */
+export function teamJustLeft(
+  before: FirebaseFirestore.DocumentData | undefined,
+  after: FirebaseFirestore.DocumentData | undefined,
+): boolean {
+  return before?.leftAt == null && after?.leftAt != null && after?.startedAt != null;
+}
+
+/**
+ * After a team's totals change, or a team leaves: in a day walk, tell the creator once when
+ * nobody is still walking; in a week-long walk, tell them about each team that finishes.
  */
 export async function pushFinishNews(
   db: Firestore,

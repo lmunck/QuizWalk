@@ -111,10 +111,12 @@ export default function Question() {
     void (scored.correct ? tapRight() : tapWrong());
   };
 
+  // Back to the walk screen: popped to when it is underneath, put in place otherwise (a
+  // question opened from the arrival notification while Home was showing). The walk screen
+  // must be mounted, because it points pocket mode at the next stop.
   const next = () => {
     if (isLast) router.replace(`/play/${walkId}/finish`);
-    else if (router.canGoBack()) router.back();
-    else router.replace(`/play/${walkId}/stop`);
+    else router.dismissTo({ pathname: '/play/[walkId]/stop', params: { walkId } });
   };
 
   const header = (
