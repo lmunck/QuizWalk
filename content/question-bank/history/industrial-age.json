@@ -1,0 +1,1218 @@
+{
+  "category": "history",
+  "subcategory": "industrial-age",
+  "questions": [
+    {
+      "id": "history.industrial-age.kids.01",
+      "difficulty": "kids",
+      "question": "Who made the first successful telephone call, in 1876?",
+      "correct": "Alexander Graham Bell",
+      "wrong": ["Thomas Edison", "Guglielmo Marconi", "Samuel Morse"],
+      "explanation": "Bell's helper, Thomas Watson, heard the words through the wire from another room. Bell worked as a teacher of deaf people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.02",
+      "difficulty": "kids",
+      "question": "Which two brothers made the first flight in a powered aeroplane, in 1903?",
+      "correct": "The Wright brothers",
+      "wrong": ["The Montgolfier brothers", "The Lumière brothers", "The Grimm brothers"],
+      "explanation": "The first flight lasted only 12 seconds and went about 37 metres. The brothers made and sold bicycles before they built planes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.03",
+      "difficulty": "kids",
+      "question": "What was the name of the Stephensons' famous steam train from 1829?",
+      "correct": "Rocket",
+      "wrong": ["Comet", "Arrow", "Lightning"],
+      "explanation": "Rocket won a contest called the Rainhill Trials in 1829. Soon after, it pulled trains on the Liverpool and Manchester Railway.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.04",
+      "difficulty": "kids",
+      "question": "Which old bicycle had one huge front wheel and one tiny back wheel?",
+      "correct": "The penny-farthing",
+      "wrong": ["The tandem", "The unicycle", "The tricycle"],
+      "explanation": "It was named after two British coins, one big and one small. Riders sat very high up, so falls hurt.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.05",
+      "difficulty": "kids",
+      "question": "The Spinning Jenny, invented in the 1760s, was a machine for making what?",
+      "correct": "Thread",
+      "wrong": ["Paper", "Nails", "Bricks"],
+      "explanation": "Before the Jenny, a spinner made one thread at a time. With it, one worker could spin many threads at the same time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.06",
+      "difficulty": "kids",
+      "question": "The mills of Lancashire in England were famous for making cloth from what?",
+      "correct": "Cotton",
+      "wrong": ["Wool", "Silk", "Leather"],
+      "explanation": "Raw cotton came by ship from places such as India and the USA. Lancashire's mills turned it into cloth to sell all over the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.07",
+      "difficulty": "kids",
+      "question": "Which inventor made the phonograph, a machine that could play back recorded sound?",
+      "correct": "Thomas Edison",
+      "wrong": ["Alexander Graham Bell", "Guglielmo Marconi", "Henry Ford"],
+      "explanation": "Edison showed the phonograph in 1877. Sound was pressed into tinfoil on a turning cylinder, and a needle played it back.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.08",
+      "difficulty": "kids",
+      "question": "Which man made cars cheap by using a moving assembly line?",
+      "correct": "Henry Ford",
+      "wrong": ["Thomas Edison", "Alexander Graham Bell", "Isambard Brunel"],
+      "explanation": "At Ford's factory the cars moved past the workers. The time to build a Model T fell from over 12 hours to about 90 minutes, so it cost much less.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.09",
+      "difficulty": "kids",
+      "question": "What was the machine called that sent Morse code along wires in the 1800s?",
+      "correct": "The telegraph",
+      "wrong": ["The telephone", "The typewriter", "The television"],
+      "explanation": "Morse code turns letters into short and long signals. Telegraph wires let news cross countries in minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.10",
+      "difficulty": "kids",
+      "question": "Which man-made waterways carried heavy goods like coal and bricks before railways?",
+      "correct": "Canals",
+      "wrong": ["Tunnels", "Pipelines", "Runways"],
+      "explanation": "Barges could carry far more than a horse and cart on a rough road. Britain dug thousands of kilometres of canals in the 1700s and 1800s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.11",
+      "difficulty": "kids",
+      "question": "In which country did the Industrial Revolution begin?",
+      "correct": "Britain",
+      "wrong": ["France", "Germany", "Italy"],
+      "explanation": "Britain had plenty of coal and iron, and rivers and ports for moving goods. Its first big factories opened in the 1700s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.12",
+      "difficulty": "kids",
+      "question": "Louis Braille, who was blind, invented a way of reading with what?",
+      "correct": "Raised dots",
+      "wrong": ["Sound waves", "Bright colours", "Smells"],
+      "explanation": "Braille was only 15 years old when he made his dot system in 1824. Blind people read it by touching the dots with their fingers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.13",
+      "difficulty": "kids",
+      "question": "How many wheels did Karl Benz's first car have?",
+      "correct": "Three",
+      "wrong": ["Two", "Four", "Six"],
+      "explanation": "Benz's car from 1885–86 had a small petrol engine at the back. It is often called the first practical car.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.14",
+      "difficulty": "kids",
+      "question": "A huge hall built in London's Hyde Park in 1851 was made mostly of iron and what?",
+      "correct": "Glass",
+      "wrong": ["Wood", "Brick", "Stone"],
+      "explanation": "So much glass was used that people called it the Crystal Palace. Its parts were made in factories and bolted together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.15",
+      "difficulty": "kids",
+      "question": "What was the world's first sticky postage stamp called?",
+      "correct": "The Penny Black",
+      "wrong": ["The Shilling Green", "The Crown Yellow", "The Farthing Red"],
+      "explanation": "It came out in Britain in 1840 and showed Queen Victoria's head. Before stamps, the person getting the letter often paid.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.16",
+      "difficulty": "kids",
+      "question": "In the 1800s, ships began to cross the sea without needing the wind. What powered them?",
+      "correct": "Steam engines",
+      "wrong": ["Wind turbines", "Petrol engines", "Batteries"],
+      "explanation": "The steam engine burned coal to boil water. The steam pushed pistons that turned paddle wheels or a propeller.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.17",
+      "difficulty": "kids",
+      "question": "The Montgolfier brothers of France became famous for building which flying machine?",
+      "correct": "The hot-air balloon",
+      "wrong": ["The aeroplane", "The helicopter", "The glider"],
+      "explanation": "In 1783 their balloon carried the first people into the sky. It was made of paper and cloth and filled with hot air from a fire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.18",
+      "difficulty": "kids",
+      "question": "In 1783 the Montgolfier brothers sent a sheep, a duck and a what up in a balloon?",
+      "correct": "Cockerel",
+      "wrong": ["Pig", "Dog", "Cat"],
+      "explanation": "The animals were sent up first to check that the air up high was safe. They landed safely after about eight minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.19",
+      "difficulty": "kids",
+      "question": "Early mills used a big wheel turned by flowing what?",
+      "correct": "Water",
+      "wrong": ["Sand", "Oil", "Smoke"],
+      "explanation": "A river turned the water wheel, and gears carried the power to the machines inside the mill. This is why many mills stood beside rivers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.20",
+      "difficulty": "kids",
+      "question": "What did steam locomotives burn to make steam?",
+      "correct": "Coal",
+      "wrong": ["Sand", "Salt", "Glass"],
+      "explanation": "Coal burned in the firebox and heated water in the boiler. Many engines pulled a wagon of coal behind them, called a tender.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.21",
+      "difficulty": "kids",
+      "question": "Which two French brothers showed some of the first films to paying audiences in 1895?",
+      "correct": "The Lumière brothers",
+      "wrong": ["The Wright brothers", "The Montgolfier brothers", "The Grimm brothers"],
+      "explanation": "Their early films were short and silent. One showed workers leaving a factory, and another a train arriving at a station.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.22",
+      "difficulty": "kids",
+      "question": "Before electric light, many city streets were lit by lamps that burned what?",
+      "correct": "Gas",
+      "wrong": ["Batteries", "Wind", "Sunshine"],
+      "explanation": "Gas lamps were lit each evening by a lamplighter with a long pole. London got its first gas street lights in the early 1800s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.23",
+      "difficulty": "kids",
+      "question": "Which city opened the world's first underground railway, in 1863?",
+      "correct": "London",
+      "wrong": ["Paris", "Berlin", "New York"],
+      "explanation": "The first trains were pulled by steam engines, so the tunnels were full of smoke. Electric trains came later and made it much cleaner.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.24",
+      "difficulty": "kids",
+      "question": "Benjamin Franklin invented a metal rod to protect buildings from what?",
+      "correct": "Lightning",
+      "wrong": ["Floods", "Earthquakes", "Strong winds"],
+      "explanation": "The rod sends the electricity from a lightning strike safely into the ground. Franklin made it in the 1750s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.25",
+      "difficulty": "kids",
+      "question": "On a steam train, what was the job of the fireman?",
+      "correct": "To shovel coal into the fire",
+      "wrong": ["To drive the train", "To sell the tickets", "To wave the green flag"],
+      "explanation": "Burning coal made the steam that moved the train. On a long trip a fireman could shovel several tonnes of coal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.26",
+      "difficulty": "kids",
+      "question": "Why did 1800s factories have very tall chimneys?",
+      "correct": "To carry smoke up and away",
+      "wrong": ["To store the coal", "To hold up the roof", "To ring the work bell"],
+      "explanation": "The tall chimney also pulled air through the fire, so it burned better. Even so, factory smoke made many towns dirty and grey.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.27",
+      "difficulty": "kids",
+      "question": "Inside an old electric light bulb, a thin thread glows when electricity passes through it. What is it called?",
+      "correct": "The filament",
+      "wrong": ["The fuse", "The socket", "The switch"],
+      "explanation": "The filament gets so hot that it shines. Inventors tried thousands of materials before they found ones that lasted a long time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.28",
+      "difficulty": "kids",
+      "question": "Miners once took canaries underground to warn them about what?",
+      "correct": "Poisonous gas",
+      "wrong": ["Falling stones", "Thieves", "Strong winds"],
+      "explanation": "Canaries are small and feel bad air quickly. If the bird became sick, the miners knew they had to leave fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.29",
+      "difficulty": "kids",
+      "question": "Early steamships had big wheels at their sides that pushed them along. What were they called?",
+      "correct": "Paddle wheels",
+      "wrong": ["Water mills", "Spinning wheels", "Cog wheels"],
+      "explanation": "The paddles dipped into the water and turned like a mill wheel. Later ships used a propeller under the back of the ship instead.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.30",
+      "difficulty": "kids",
+      "question": "What does a lock on a canal do for boats?",
+      "correct": "It lifts or lowers them",
+      "wrong": ["It speeds them up", "It turns them around", "It cleans them"],
+      "explanation": "Canals cannot go straight up a hill, so locks work like water steps. Boats go into a chamber, and water is let in or out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.31",
+      "difficulty": "kids",
+      "question": "The wings of the first aeroplanes were a wooden frame covered with what?",
+      "correct": "Cloth",
+      "wrong": ["Steel", "Glass", "Plastic"],
+      "explanation": "Wood and cloth were light and cheap, and easy to mend. A heavier plane could not have got off the ground with the early engines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.32",
+      "difficulty": "kids",
+      "question": "Which animals pulled coal carts through the low tunnels of many mines?",
+      "correct": "Ponies",
+      "wrong": ["Camels", "Llamas", "Elephants"],
+      "explanation": "Ponies were small enough to fit in low tunnels and strong enough to pull heavy loads. Some lived underground for most of the year.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.33",
+      "difficulty": "kids",
+      "question": "Which vehicles ran on rails along city streets, first pulled by horses and later powered by electricity?",
+      "correct": "Trams",
+      "wrong": ["Taxis", "Rickshaws", "Ferries"],
+      "explanation": "Trams carried many people at a low price. In many cities they let workers live further from the factories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.34",
+      "difficulty": "kids",
+      "question": "Which machine with keys printed letters on paper, instead of writing by hand?",
+      "correct": "The typewriter",
+      "wrong": ["The gramophone", "The sewing machine", "The telephone"],
+      "explanation": "Typewriters spread into offices from the 1880s. Letters could then be written neatly and much faster than by hand.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.35",
+      "difficulty": "kids",
+      "question": "Which machine played music from flat discs, using a needle and a big horn?",
+      "correct": "The gramophone",
+      "wrong": ["The telegraph", "The camera", "The typewriter"],
+      "explanation": "Gramophones first appeared in the late 1880s. Flat discs were easier to copy than cylinders, so the same music could be sold to many people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.36",
+      "difficulty": "kids",
+      "question": "Why did people have to sit very still for the earliest photographs?",
+      "correct": "The camera needed a long time to work",
+      "wrong": [
+        "The cameras made loud noises",
+        "It was against the law to smile",
+        "The pictures were painted by hand"
+      ],
+      "explanation": "Early photographs could take many seconds, or even minutes. If you moved, your face came out blurry.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.37",
+      "difficulty": "kids",
+      "question": "As factories grew, many people left the countryside and moved to where?",
+      "correct": "Towns and cities",
+      "wrong": ["Mountains", "Islands", "Deserts"],
+      "explanation": "Factories needed lots of workers, and towns grew very fast. Many families lived in small, crowded houses close to the factory.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.38",
+      "difficulty": "kids",
+      "question": "A loom is a machine used to make what?",
+      "correct": "Cloth",
+      "wrong": ["Bread", "Paper", "Glass"],
+      "explanation": "A loom weaves threads that cross over and under each other. In the 1800s, factory looms were powered by water or steam.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.39",
+      "difficulty": "kids",
+      "question": "What name do we give to the time when machines and factories changed how people worked, in the 1700s and 1800s?",
+      "correct": "The Industrial Revolution",
+      "wrong": ["The Renaissance", "The Stone Age", "The Ice Age"],
+      "explanation": "Before this time most people worked on farms or at home. Then machines made goods faster, and many people started working in factories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.kids.40",
+      "difficulty": "kids",
+      "question": "James Watt wanted to show how strong his engines were. He compared them to which animal?",
+      "correct": "The horse",
+      "wrong": ["The ox", "The elephant", "The donkey"],
+      "explanation": "Watt worked out how much work a strong horse could do in a minute. This is how the unit called horsepower began.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which inventor sent radio signals across the Atlantic Ocean in 1901?",
+      "correct": "Guglielmo Marconi",
+      "wrong": ["Samuel Morse", "Thomas Edison", "Alexander Graham Bell"],
+      "explanation": "The signal went from Cornwall in England to Newfoundland, now part of Canada. It was just the Morse letter S, three short dots.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which French pilot was the first to fly an aeroplane across the English Channel, in 1909?",
+      "correct": "Louis Blériot",
+      "wrong": ["Henri Farman", "Orville Wright", "Alberto Santos-Dumont"],
+      "explanation": "He flew from near Calais to Dover in about 36 minutes. The flight won him a prize of £1,000 from a London newspaper.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.03",
+      "difficulty": "mixed",
+      "question": "In 1919, Alcock and Brown made the first non-stop flight across which ocean?",
+      "correct": "The Atlantic",
+      "wrong": ["The Pacific", "The Indian Ocean", "The Arctic Ocean"],
+      "explanation": "They flew from Newfoundland to Ireland in about 16 hours, in a bomber that had been changed for the flight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which woman took the first long car journey, in 1888, to show that her husband's car worked?",
+      "correct": "Bertha Benz",
+      "wrong": ["Marie Curie", "Florence Nightingale", "Queen Victoria"],
+      "explanation": "Bertha drove about 100 kilometres without telling her husband Karl. On the way she bought fuel at a chemist's shop.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.05",
+      "difficulty": "mixed",
+      "question": "Nikola Tesla is best known for his work on which kind of electricity?",
+      "correct": "AC (alternating) electricity",
+      "wrong": ["DC (one-way) electricity", "Static electricity", "Solar power"],
+      "explanation": "With transformers, AC can be sent far along wires at high voltage with little loss. It is the kind most homes get from the wall.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.06",
+      "difficulty": "mixed",
+      "question": "Which English scientist found in 1831 how to make electricity with magnets and moving wire?",
+      "correct": "Michael Faraday",
+      "wrong": ["Isaac Newton", "Charles Darwin", "Robert Hooke"],
+      "explanation": "This is called electromagnetic induction, and it is how electric generators work. Faraday's discovery lit up the modern world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.07",
+      "difficulty": "mixed",
+      "question": "In 1800 Alessandro Volta made the first device that gave a steady flow of electricity. What was it?",
+      "correct": "The electric battery",
+      "wrong": ["The light bulb", "The dynamo", "The telegraph"],
+      "explanation": "Volta stacked discs of zinc and copper with wet cloth between them. The unit volt is named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.08",
+      "difficulty": "mixed",
+      "question": "In 1820 the Danish scientist H. C. Ørsted found that electricity flowing in a wire makes what move?",
+      "correct": "A compass needle",
+      "wrong": ["A water pump", "A clock hand", "A bell"],
+      "explanation": "This showed that electricity and magnetism are linked. The finding led to electric motors and generators.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which Swedish chemist invented dynamite in 1867?",
+      "correct": "Alfred Nobel",
+      "wrong": ["Anders Celsius", "Carl Linnaeus", "Jöns Berzelius"],
+      "explanation": "Dynamite was safer than the liquid nitroglycerine it was made from, and was used for mines, canals and tunnels. Nobel left money for the Nobel Prizes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.10",
+      "difficulty": "mixed",
+      "question": "Why did Britain's railways begin to use one standard time in the 1840s?",
+      "correct": "So that timetables worked in every town",
+      "wrong": [
+        "To save coal on the trains",
+        "To make the trains go faster",
+        "To please the queen"
+      ],
+      "explanation": "Before this, each town set its clocks by the sun, so noon came at slightly different times. Trains needed the same time everywhere.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which railway, begun in 1891, links Moscow with Vladivostok on the Pacific coast?",
+      "correct": "The Trans-Siberian Railway",
+      "wrong": ["The Orient Express", "The Canadian Pacific", "The Cape to Cairo Railway"],
+      "explanation": "It is more than 9,000 kilometres long. The route through Russian land alone was finished in 1916.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which Frenchman announced the first practical photography process in 1839?",
+      "correct": "Louis Daguerre",
+      "wrong": ["Louis Pasteur", "Gustave Eiffel", "Louis Braille"],
+      "explanation": "His pictures were made on silver-coated metal plates and were called daguerreotypes. Each plate gave one single picture.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.13",
+      "difficulty": "mixed",
+      "question": "In which country was the telephone inventor Alexander Graham Bell born?",
+      "correct": "Scotland",
+      "wrong": ["England", "Canada", "The USA"],
+      "explanation": "Bell was born in Edinburgh in 1847. He moved to Canada and then to the USA, where he made his telephone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.14",
+      "difficulty": "mixed",
+      "question": "In the late 1880s the Scottish vet John Dunlop made an air-filled tyre for his son's what?",
+      "correct": "Tricycle",
+      "wrong": ["Sledge", "Wheelbarrow", "Roller skates"],
+      "explanation": "The air cushion gave a much smoother ride on rough roads. Soon bicycles and then cars used air-filled tyres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.15",
+      "difficulty": "mixed",
+      "question": "In the early 1800s, English workers called Luddites broke what in protest?",
+      "correct": "Machines in the mills",
+      "wrong": ["Ships in the harbours", "Bridges over rivers", "Church bells"],
+      "explanation": "They feared the new machines would take their jobs. The word 'Luddite' is also used for a person who dislikes new technology.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.16",
+      "difficulty": "mixed",
+      "question": "The fast sailing ship Cutty Sark was built in 1869 mainly to carry which cargo from China?",
+      "correct": "Tea",
+      "wrong": ["Coal", "Wool", "Rice"],
+      "explanation": "Clippers raced to bring the first tea of the year to London. Steamships and the Suez Canal soon ended the tea races.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.17",
+      "difficulty": "mixed",
+      "question": "In the 1850s Elisha Otis made a safety brake that stops what from falling if the rope breaks?",
+      "correct": "A lift",
+      "wrong": ["A train", "A bridge", "A ship's anchor"],
+      "explanation": "At a fair in New York in 1854, Otis stood on a raised lift while its rope was cut, and it did not fall. Safe lifts made tall buildings practical.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.18",
+      "difficulty": "mixed",
+      "question": "Which gas filled Count Zeppelin's airships to make them float?",
+      "correct": "Hydrogen",
+      "wrong": ["Oxygen", "Carbon dioxide", "Nitrogen"],
+      "explanation": "Hydrogen is the lightest gas there is, but it burns very easily. Later airships used the safer gas helium when they could.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which English city was nicknamed 'Cottonopolis' because of its huge cotton mills?",
+      "correct": "Manchester",
+      "wrong": ["Liverpool", "Leeds", "Birmingham"],
+      "explanation": "Raw cotton arrived at Liverpool and went by canal and rail to Manchester. The city's mills made cloth for the whole world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which German region, with coal mines and steelworks, became one of Europe's biggest industrial areas in the 1800s?",
+      "correct": "The Ruhr",
+      "wrong": ["Bavaria", "The Black Forest", "Schleswig-Holstein"],
+      "explanation": "The Ruhr had plenty of coal, and it lay beside the River Rhine. Cities such as Essen and Duisburg grew there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.21",
+      "difficulty": "mixed",
+      "question": "Jethro Tull's seed drill of about 1701 helped farmers plant seeds in what way?",
+      "correct": "In neat rows",
+      "wrong": ["Scattered by hand", "In small clay pots", "Inside heated sheds"],
+      "explanation": "Seeds fell into the soil at an even depth. Farmers could then hoe between the rows to keep weeds down.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.22",
+      "difficulty": "mixed",
+      "question": "Prince Albert, husband of Queen Victoria, helped to organise which big event in London in 1851?",
+      "correct": "The Great Exhibition",
+      "wrong": ["The Festival of Britain", "The Golden Jubilee", "The first Olympic Games"],
+      "explanation": "More than six million visits were made to see machines, tools and wonders from around the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which country became famous for making safety matches, from about the 1850s?",
+      "correct": "Sweden",
+      "wrong": ["Portugal", "Greece", "Ireland"],
+      "explanation": "A safety match lights only when struck on the special strip on its box. The Swedish town of Jönköping became a centre of the match industry.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.24",
+      "difficulty": "mixed",
+      "question": "Karl Drais's 1817 'running machine', moved by pushing with the feet, was an early what?",
+      "correct": "Bicycle",
+      "wrong": ["Motorbike", "Wheelchair", "Pram"],
+      "explanation": "It had two wheels and a steering handle but no pedals. The rider sat and pushed along the ground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.25",
+      "difficulty": "mixed",
+      "question": "In the early days of the telephone, calls were connected by a person using what?",
+      "correct": "A switchboard",
+      "wrong": ["A typewriter", "A telescope", "A cash register"],
+      "explanation": "The operator plugged cables into sockets to link callers. Automatic exchanges came later and took over this job.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.26",
+      "difficulty": "mixed",
+      "question": "Gustave Eiffel designed the iron frame inside which famous statue, finished in 1886?",
+      "correct": "The Statue of Liberty",
+      "wrong": ["The Little Mermaid", "Michelangelo's David", "The Thinker"],
+      "explanation": "The statue was made in France and shipped to New York in pieces. Eiffel's iron frame was built to hold up its thin copper skin.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.27",
+      "difficulty": "mixed",
+      "question": "In 1839 Charles Goodyear found that heating rubber with sulphur made it what?",
+      "correct": "Stronger and less sticky",
+      "wrong": ["See-through like glass", "Liquid at room temperature", "Able to glow in the dark"],
+      "explanation": "Before this, rubber went soft and sticky in heat and hard in cold. Goodyear's way made it useful for tyres and boots.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.28",
+      "difficulty": "mixed",
+      "question": "Bakelite, made by Leo Baekeland in 1907, was the first fully man-made kind of what?",
+      "correct": "Plastic",
+      "wrong": ["Metal", "Fabric", "Fuel"],
+      "explanation": "Bakelite does not melt when heated and does not carry electricity. It was used for telephones, radios and plugs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.29",
+      "difficulty": "mixed",
+      "question": "Many workers who built the Panama Canal fell ill with diseases spread by what?",
+      "correct": "Mosquitoes",
+      "wrong": ["Monkeys", "Snakes", "Birds"],
+      "explanation": "Yellow fever and malaria killed many in the early years. When doctors cleared the mosquitoes, building could go on.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.30",
+      "difficulty": "mixed",
+      "question": "What did George Eastman's 1888 Kodak camera use to make photography easy for everyone?",
+      "correct": "Roll film",
+      "wrong": ["Glass plates", "Metal sheets", "Wax tablets"],
+      "explanation": "Earlier cameras used heavy glass plates. A Kodak came loaded with film for 100 pictures, and you sent the whole camera back to be developed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.31",
+      "difficulty": "mixed",
+      "question": "The QWERTY keyboard layout, first used on typewriters, is named after what?",
+      "correct": "The first six letters in the top row",
+      "wrong": ["Its inventor's initials", "The sound of the keys", "A famous typing school"],
+      "explanation": "Its layout was used on typewriters of the 1870s. It stayed in use on computer keyboards long after typewriters went away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.32",
+      "difficulty": "mixed",
+      "question": "In the 1860s Joseph Bazalgette built a huge system of what under London?",
+      "correct": "Sewers",
+      "wrong": ["Canals", "Telegraph lines", "Gas pipes"],
+      "explanation": "Dirty water had made the River Thames smell terrible and spread illness. His sewers made the city much healthier.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.33",
+      "difficulty": "mixed",
+      "question": "In the 1800s, workers who dug canals and railway cuttings by hand were called what?",
+      "correct": "Navvies",
+      "wrong": ["Miners", "Chimney sweeps", "Porters"],
+      "explanation": "The word comes from 'navigators', the name for the canal diggers. Navvies used picks, spades and wheelbarrows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.34",
+      "difficulty": "mixed",
+      "question": "In which Dutch city did the Philips company begin in 1891, making light bulbs?",
+      "correct": "Eindhoven",
+      "wrong": ["Rotterdam", "Amsterdam", "Utrecht"],
+      "explanation": "Gerard Philips and his father Frederik started the firm. Philips later made radios, televisions and many other goods.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.35",
+      "difficulty": "mixed",
+      "question": "In 1856 the young chemist William Perkin made a famous man-made dye by accident. What colour was it?",
+      "correct": "Mauve",
+      "wrong": ["Red", "Blue", "Green"],
+      "explanation": "Perkin was 18 and was trying to make quinine, a medicine for malaria. His purple dye became very fashionable in Britain and France.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.36",
+      "difficulty": "mixed",
+      "question": "John Harrison's clocks of the 1700s helped sailors to find what at sea?",
+      "correct": "Their longitude",
+      "wrong": ["The depth of the water", "The wind speed", "The nearest storm"],
+      "explanation": "His marine clocks kept good time even on a rolling ship. Comparing the clock with local time from the sun showed how far east or west the ship was.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.37",
+      "difficulty": "mixed",
+      "question": "Josiah Wedgwood built a large English factory to mass-produce what?",
+      "correct": "Pottery",
+      "wrong": ["Glass", "Clocks", "Furniture"],
+      "explanation": "Wedgwood's pottery was sold across Europe. He also organised his workers carefully, which was new at the time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.38",
+      "difficulty": "mixed",
+      "question": "The raincoat called a 'mac' is named after the Scottish chemist who made waterproof cloth in the 1820s. Who was he?",
+      "correct": "Charles Macintosh",
+      "wrong": ["John McAdam", "Kirkpatrick Macmillan", "Alexander Fleming"],
+      "explanation": "He stuck two layers of cloth together with rubber, which kept water out. Coats made this way became known as mackintoshes, or macs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.39",
+      "difficulty": "mixed",
+      "question": "Most electric trams of the 1890s got their power from what?",
+      "correct": "An overhead wire",
+      "wrong": ["A petrol tank", "A giant battery under the seats", "Solar panels"],
+      "explanation": "A pole on the roof touched the wire above the street. The current went through the tram's motors and back through the rails.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.mixed.40",
+      "difficulty": "mixed",
+      "question": "In 1869, what was used in a ceremony to finish America's first coast-to-coast railway?",
+      "correct": "A golden spike",
+      "wrong": ["A silver rail", "A copper bell", "A steel flag"],
+      "explanation": "The last spike was tapped in at Promontory in Utah, where two railways met. The journey across the country then took days instead of months.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.01",
+      "difficulty": "expert",
+      "question": "Which Devon ironmonger built the first practical steam engine, in 1712, to pump water from mines?",
+      "correct": "Thomas Newcomen",
+      "wrong": ["James Watt", "Richard Trevithick", "Matthew Boulton"],
+      "explanation": "Newcomen's engine was slow and burned a lot of coal, but it worked. Watt later made it much more efficient.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.02",
+      "difficulty": "expert",
+      "question": "Whose water-powered cotton mill at Cromford, opened in 1771, is often called the first modern factory?",
+      "correct": "Richard Arkwright",
+      "wrong": ["James Hargreaves", "Samuel Crompton", "Edmund Cartwright"],
+      "explanation": "Arkwright's mill ran day and night, with workers on shifts. It became the model for later factories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.03",
+      "difficulty": "expert",
+      "question": "John Kay's flying shuttle of 1733 made which job much faster?",
+      "correct": "Weaving",
+      "wrong": ["Spinning", "Dyeing", "Sewing"],
+      "explanation": "Weavers could then use thread faster than spinners could make it. That gap led to new spinning machines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.04",
+      "difficulty": "expert",
+      "question": "Why was Samuel Crompton's spinning machine of 1779 called the 'mule'?",
+      "correct": "It mixed ideas from two earlier machines",
+      "wrong": [
+        "It was pulled by a mule",
+        "It was slow and stubborn",
+        "It was first built in a stable"
+      ],
+      "explanation": "A mule is a cross between a horse and a donkey. Crompton's machine crossed the Jenny with the water frame.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.05",
+      "difficulty": "expert",
+      "question": "Which English clergyman designed the first power loom, in 1785?",
+      "correct": "Edmund Cartwright",
+      "wrong": ["John Kay", "James Hargreaves", "Richard Arkwright"],
+      "explanation": "Power looms ran on water or steam rather than muscle. During the 1800s, weaving by hand slowly gave way to weaving in factories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.06",
+      "difficulty": "expert",
+      "question": "Joseph-Marie Jacquard's loom of 1804 used punched cards to control what?",
+      "correct": "The patterns woven in cloth",
+      "wrong": ["The speed of the water wheel", "The colours of the dye", "The size of the loom"],
+      "explanation": "Each hole in a card told the loom which threads to lift. Later inventors used punched cards for their own machines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.07",
+      "difficulty": "expert",
+      "question": "Which Cornish engineer ran the first steam locomotive on rails, in 1804?",
+      "correct": "Richard Trevithick",
+      "wrong": ["George Stephenson", "Isambard Brunel", "Thomas Newcomen"],
+      "explanation": "His engine pulled iron and men along a Welsh tramway. It was too heavy for the cast-iron rails, which cracked.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.08",
+      "difficulty": "expert",
+      "question": "The first public railway to run steam locomotives opened in 1825 between Stockton and which other town?",
+      "correct": "Darlington",
+      "wrong": ["Durham", "Sunderland", "Carlisle"],
+      "explanation": "George Stephenson was the line's engineer, and its first engine was called Locomotion. The railway mainly carried coal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.09",
+      "difficulty": "expert",
+      "question": "Which engineer built the Menai Suspension Bridge in Wales, opened in 1826?",
+      "correct": "Thomas Telford",
+      "wrong": ["Isambard Brunel", "George Stephenson", "John McAdam"],
+      "explanation": "Its main span was the longest of any suspension bridge of its day. It joined the island of Anglesey to the mainland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.10",
+      "difficulty": "expert",
+      "question": "Abraham Darby's 1709 breakthrough in making iron was using which fuel?",
+      "correct": "Coke",
+      "wrong": ["Charcoal", "Peat", "Oil"],
+      "explanation": "Coke is made by baking coal. It was cheaper than charcoal, which came from wood, and Britain ran short of wood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.11",
+      "difficulty": "expert",
+      "question": "Henry Bessemer's process of the 1850s made large amounts of which material cheaply?",
+      "correct": "Steel",
+      "wrong": ["Glass", "Cement", "Rubber"],
+      "explanation": "Air blown through melted iron burned off impurities. Steel was stronger than iron, so it was used for rails, ships and bridges.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.12",
+      "difficulty": "expert",
+      "question": "Humphry Davy's lamp of 1815 had a metal gauze around the flame. What was it meant to stop?",
+      "correct": "Setting off explosive gas in mines",
+      "wrong": ["The flame giving off smoke", "Rain putting it out", "Thieves stealing it"],
+      "explanation": "The gauze took heat away from the flame, so it could not light the gas outside the lamp. George Stephenson made a similar lamp in the same year.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.13",
+      "difficulty": "expert",
+      "question": "Which Frenchman led the building of the Suez Canal, opened in 1869?",
+      "correct": "Ferdinand de Lesseps",
+      "wrong": ["Gustave Eiffel", "Louis Pasteur", "Louis Blériot"],
+      "explanation": "The canal let ships go from Europe to Asia without sailing round Africa. De Lesseps later tried to build a canal in Panama.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.14",
+      "difficulty": "expert",
+      "question": "Which giant iron steamship laid the first lasting telegraph cable across the Atlantic, in 1866?",
+      "correct": "The Great Eastern",
+      "wrong": ["The Great Britain", "The Great Western", "The Cutty Sark"],
+      "explanation": "The ship was so big that she could carry the whole cable. News then crossed the ocean in minutes, not days.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.15",
+      "difficulty": "expert",
+      "question": "Brunel's SS Great Britain, built in 1843, was a large ship with an iron hull and what kind of drive?",
+      "correct": "A screw propeller",
+      "wrong": ["Paddle wheels", "Sails only", "Electric motors"],
+      "explanation": "In 1845 she became the first large iron ship with a propeller to cross the Atlantic.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.16",
+      "difficulty": "expert",
+      "question": "In a diesel engine, what makes the fuel catch fire?",
+      "correct": "Hot, squeezed air",
+      "wrong": ["A spark plug", "A small flame", "A flint striker"],
+      "explanation": "Rudolf Diesel patented the idea in the 1890s. Diesel engines use less fuel than petrol engines for the same power.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.17",
+      "difficulty": "expert",
+      "question": "Nikolaus Otto's famous engine of 1876 worked in a cycle of how many strokes?",
+      "correct": "Four",
+      "wrong": ["Two", "Six", "Eight"],
+      "explanation": "The strokes are often remembered as suck, squeeze, bang and blow. Otto's engine ran on gas, but most petrol car engines use the same cycle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.18",
+      "difficulty": "expert",
+      "question": "Which Frenchman built a steam-powered road vehicle in 1769, often called the first self-propelled car?",
+      "correct": "Nicolas-Joseph Cugnot",
+      "wrong": ["Karl Benz", "Étienne Lenoir", "Louis Renault"],
+      "explanation": "It was made to pull cannons for the army. It was very heavy and moved at about walking pace.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.19",
+      "difficulty": "expert",
+      "question": "Which German pioneer made more than 2,000 glider flights in the 1890s, inspiring the Wright brothers?",
+      "correct": "Otto Lilienthal",
+      "wrong": ["Count Zeppelin", "Karl Benz", "Rudolf Diesel"],
+      "explanation": "He studied the wings of birds and tested his gliders by jumping from a hill. Photos of his flights made people believe flying was possible.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.20",
+      "difficulty": "expert",
+      "question": "Which Danish inventor made a short powered flight on the island of Lindholm in 1906?",
+      "correct": "Jacob Ellehammer",
+      "wrong": ["Valdemar Poulsen", "Niels Bohr", "H. C. Ørsted"],
+      "explanation": "Ellehammer's aircraft was tied to a pole, so it flew in circles. He also built a motorbike and a helicopter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.21",
+      "difficulty": "expert",
+      "question": "The Danish engineer Valdemar Poulsen's 'telegraphone' of 1898 recorded sound on what?",
+      "correct": "Steel wire",
+      "wrong": ["Wax cylinders", "Paper tape", "Glass plates"],
+      "explanation": "The wire was magnetised in patterns that matched the sound. The idea was used again in later tape recorders.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.22",
+      "difficulty": "expert",
+      "question": "Denmark's first railway, opened in 1847, ran from Copenhagen to which town?",
+      "correct": "Roskilde",
+      "wrong": ["Odense", "Aarhus", "Helsingør"],
+      "explanation": "The line, about 30 kilometres long, was the start of the Danish rail network.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.23",
+      "difficulty": "expert",
+      "question": "In 1912 the Danish ship Selandia became the first large ocean-going ship with what kind of engine?",
+      "correct": "Diesel",
+      "wrong": ["Steam", "Petrol", "Electric"],
+      "explanation": "Selandia was built in Copenhagen. Diesel engines were smaller and cleaner than steam engines and did not need stokers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.24",
+      "difficulty": "expert",
+      "question": "William Fox Talbot's photography process of the 1840s let people make many prints from one what?",
+      "correct": "Negative",
+      "wrong": ["Metal plate", "Wax mould", "Mirror"],
+      "explanation": "Talbot's picture was a paper negative. Making prints from negatives stayed the basis of photography for about 150 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.25",
+      "difficulty": "expert",
+      "question": "Which inventor made the gramophone, which played flat discs instead of cylinders?",
+      "correct": "Emile Berliner",
+      "wrong": ["Thomas Edison", "Alexander Graham Bell", "Guglielmo Marconi"],
+      "explanation": "Berliner's flat discs could be copied again and again. This made record companies possible.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.26",
+      "difficulty": "expert",
+      "question": "In 1872 Japan opened its first railway, between Tokyo and which port city?",
+      "correct": "Yokohama",
+      "wrong": ["Osaka", "Nagoya", "Kobe"],
+      "explanation": "Britain helped build the line, and the first trains came from Britain. It was a sign of Japan's rapid change in these years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.27",
+      "difficulty": "expert",
+      "question": "Which city opened the first electric underground railway on mainland Europe, in 1896?",
+      "correct": "Budapest",
+      "wrong": ["Paris", "Berlin", "Vienna"],
+      "explanation": "It was opened for Hungary's thousand-year celebrations. Its small trains ran in a shallow tunnel just below one of the city's grand avenues.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.28",
+      "difficulty": "expert",
+      "question": "The road surface called 'macadam' was made from layers of crushed what?",
+      "correct": "Stone",
+      "wrong": ["Glass", "Brick", "Iron"],
+      "explanation": "John McAdam found that tight layers of small stones made hard, dry roads. Later, tar was added to make tarmac.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.29",
+      "difficulty": "expert",
+      "question": "Which feature helped Stephenson's Rocket of 1829 make steam quickly?",
+      "correct": "Many tubes in its boiler",
+      "wrong": ["Two separate boilers", "Extra-large wheels", "Oil instead of coal"],
+      "explanation": "The tubes carried hot gases from the fire through the water, giving a big area to heat it. Most later steam locomotives used the same kind of boiler.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.30",
+      "difficulty": "expert",
+      "question": "Before inventing the telegraph code, Samuel Morse worked as what?",
+      "correct": "A painter",
+      "wrong": ["A sailor", "A doctor", "A watchmaker"],
+      "explanation": "Morse was a well-known portrait painter. He began to think about the telegraph after a long trip home by sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.31",
+      "difficulty": "expert",
+      "question": "How did the Wright brothers' 1903 aeroplane tilt to one side to turn?",
+      "correct": "By twisting its wings",
+      "wrong": ["By folding its wings", "By tilting its engine", "By flapping its wings"],
+      "explanation": "This was called wing-warping. Wires bent the wing tips up or down, so the plane could tilt into a turn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.32",
+      "difficulty": "expert",
+      "question": "Which German scientist first made and detected radio waves, in the 1880s?",
+      "correct": "Heinrich Hertz",
+      "wrong": ["Guglielmo Marconi", "Wilhelm Röntgen", "Max Planck"],
+      "explanation": "Hertz proved the waves were real but saw no use for them; others later used them for radio. The unit hertz is named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.33",
+      "difficulty": "expert",
+      "question": "In 1850 Paul Julius Reuter bridged a gap in a telegraph line between Aachen and Brussels using what?",
+      "correct": "Carrier pigeons",
+      "wrong": ["Horse riders", "Steam trains", "Balloons"],
+      "explanation": "The birds flew faster than a train could carry the news. Reuter later began one of the world's first news agencies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.34",
+      "difficulty": "expert",
+      "question": "Which Birmingham manufacturer was James Watt's business partner?",
+      "correct": "Matthew Boulton",
+      "wrong": ["Josiah Wedgwood", "Richard Arkwright", "Thomas Newcomen"],
+      "explanation": "Boulton paid for the building of Watt's engines and sold them. Their firm made steam engines for mills and mines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.35",
+      "difficulty": "expert",
+      "question": "Robert Owen ran a model cotton-mill village in Scotland. What was it called?",
+      "correct": "New Lanark",
+      "wrong": ["Saltaire", "Bournville", "Port Sunlight"],
+      "explanation": "Owen gave workers' children schooling and kept working hours shorter. New Lanark was named a World Heritage Site in 2001.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.36",
+      "difficulty": "expert",
+      "question": "In 1900 Count Zeppelin's first airship flew over which lake?",
+      "correct": "Lake Constance",
+      "wrong": ["Lake Geneva", "Lake Como", "Lake Garda"],
+      "explanation": "The airship was built on the water, in a floating shed. Its first flight lasted about 18 minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.37",
+      "difficulty": "expert",
+      "question": "The Crystal Palace was designed by Joseph Paxton, who worked as what?",
+      "correct": "A gardener",
+      "wrong": ["A ship-builder", "A clockmaker", "A bridge engineer"],
+      "explanation": "He was head gardener at a great house and had built big greenhouses. The Crystal Palace was like a giant greenhouse.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.38",
+      "difficulty": "expert",
+      "question": "The Pontcysyllte Aqueduct in Wales, finished in 1805, carries what high above a valley?",
+      "correct": "A canal",
+      "wrong": ["A railway", "A road", "A pipeline"],
+      "explanation": "Telford and William Jessop built it. The canal runs in an iron trough on stone pillars, more than 30 metres above the River Dee.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.39",
+      "difficulty": "expert",
+      "question": "The Gotthard rail tunnel, opened in 1882, cuts through the Alps in which country?",
+      "correct": "Switzerland",
+      "wrong": ["Austria", "France", "Italy"],
+      "explanation": "It was about 15 kilometres long, the longest in the world at the time. It sped up trips between northern and southern Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.industrial-age.expert.40",
+      "difficulty": "expert",
+      "question": "In 1866 the German engineer Werner von Siemens improved the machine that turns movement into electricity. What is it called?",
+      "correct": "The dynamo",
+      "wrong": ["The electric motor", "The transformer", "The induction coil"],
+      "explanation": "A dynamo spins coils of wire near magnets. Siemens used electromagnets fed by the machine's own current, which made strong electricity cheap.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

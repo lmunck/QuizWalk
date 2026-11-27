@@ -1,0 +1,1206 @@
+{
+  "category": "history",
+  "subcategory": "ancient-world",
+  "questions": [
+    {
+      "id": "history.ancient-world.kids.01",
+      "difficulty": "kids",
+      "question": "Which ancient people built the pyramids at Giza?",
+      "correct": "The Egyptians",
+      "wrong": ["The Romans", "The Vikings", "The Greeks"],
+      "explanation": "The Giza pyramids were tombs for pharaohs. They were built about 4,500 years ago from huge blocks of stone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.02",
+      "difficulty": "kids",
+      "question": "What was the title of an ancient Egyptian king?",
+      "correct": "Pharaoh",
+      "wrong": ["Emperor", "Sultan", "Tsar"],
+      "explanation": "Pharaoh first meant 'great house', the king's palace. Later it became the name for the king himself.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.03",
+      "difficulty": "kids",
+      "question": "Where in Greece were the ancient Olympic Games held?",
+      "correct": "Olympia",
+      "wrong": ["Athens", "Sparta", "Corinth"],
+      "explanation": "The ancient Games took place every four years at Olympia. The modern Olympic Games began in Athens in 1896.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.04",
+      "difficulty": "kids",
+      "question": "Which reed plant did ancient Egyptians use to make sheets to write on?",
+      "correct": "Papyrus",
+      "wrong": ["Bamboo", "Cotton", "Seaweed"],
+      "explanation": "Papyrus grew along the Nile. Strips of it were pressed together and dried. The English word 'paper' comes from it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.05",
+      "difficulty": "kids",
+      "question": "Which ancient people built the Colosseum in their capital city?",
+      "correct": "The Romans",
+      "wrong": ["The Greeks", "The Egyptians", "The Persians"],
+      "explanation": "The Colosseum in Rome opened in AD 80. Crowds went there to watch fights and shows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.06",
+      "difficulty": "kids",
+      "question": "Why was the Great Wall of China built?",
+      "correct": "To defend against invaders",
+      "wrong": ["To stop floods", "To store grain", "To mark a trade road"],
+      "explanation": "Rulers of China joined older walls together over many centuries. The wall had towers where guards could watch for enemies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.07",
+      "difficulty": "kids",
+      "question": "Which animal did ancient Egyptians value for keeping mice away from their grain?",
+      "correct": "Cats",
+      "wrong": ["Camels", "Hippos", "Ostriches"],
+      "explanation": "Egyptians loved cats so much that they made statues of them. Some cats were even made into mummies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.08",
+      "difficulty": "kids",
+      "question": "What are bodies called that ancient Egyptians dried and wrapped in cloth?",
+      "correct": "Mummies",
+      "wrong": ["Statues", "Skeletons", "Scrolls"],
+      "explanation": "Egyptians believed people needed their body in the next life. So they took great care to preserve it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.09",
+      "difficulty": "kids",
+      "question": "Which Greek city is famous for the first democracy?",
+      "correct": "Athens",
+      "wrong": ["Sparta", "Corinth", "Olympia"],
+      "explanation": "In Athens, citizens voted on laws themselves. Not everyone could vote: women, slaves and foreigners were left out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.10",
+      "difficulty": "kids",
+      "question": "Which animals did the general Hannibal take across the Alps to attack Rome?",
+      "correct": "Elephants",
+      "wrong": ["Camels", "Giraffes", "Bears"],
+      "explanation": "Hannibal came from Carthage in North Africa. He crossed the snowy Alps in about 218 BC with an army and elephants.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.11",
+      "difficulty": "kids",
+      "question": "What number does the Roman numeral X stand for?",
+      "correct": "10",
+      "wrong": ["5", "50", "100"],
+      "explanation": "Romans used letters for numbers: I is 1, V is 5, X is 10, L is 50 and C is 100. We still see them on some clocks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.12",
+      "difficulty": "kids",
+      "question": "Which famous queen ruled Egypt about 2,000 years ago and met Julius Caesar?",
+      "correct": "Cleopatra",
+      "wrong": ["Boudicca", "Nefertiti", "Queen Victoria"],
+      "explanation": "Cleopatra spoke many languages. She was the last queen of ancient Egypt before it became part of the Roman Empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.13",
+      "difficulty": "kids",
+      "question": "What is the name of the thousands of life-size soldier statues buried with China's first emperor?",
+      "correct": "The Terracotta Army",
+      "wrong": ["The Jade Guard", "The Silk Army", "The Bronze Legion"],
+      "explanation": "Farmers found the statues in 1974. Each soldier has a different face. Terracotta is a kind of baked clay.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.14",
+      "difficulty": "kids",
+      "question": "What was the Parthenon in Athens?",
+      "correct": "A temple",
+      "wrong": ["A harbour", "A castle", "A library"],
+      "explanation": "The Parthenon was built on a hill called the Acropolis about 2,500 years ago. It was a temple for the goddess Athena.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.15",
+      "difficulty": "kids",
+      "question": "What did the Romans build to carry water into their cities?",
+      "correct": "Aqueducts",
+      "wrong": ["Lighthouses", "Windmills", "Chimneys"],
+      "explanation": "Roman aqueducts let water flow slowly downhill, often over tall stone arches. Some of them are still standing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.16",
+      "difficulty": "kids",
+      "question": "What was the picture writing of ancient Egypt called?",
+      "correct": "Hieroglyphs",
+      "wrong": ["Runes", "Cuneiform", "Braille"],
+      "explanation": "Hieroglyphs used little pictures of birds, eyes, snakes and more. Few people could read them, and scribes learned for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.17",
+      "difficulty": "kids",
+      "question": "Chichen Itza has a famous stepped pyramid. Which ancient people built it?",
+      "correct": "The Maya",
+      "wrong": ["The Romans", "The Celts", "The Persians"],
+      "explanation": "The Maya lived in Mexico and Central America. They built cities, studied the stars and had their own writing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.18",
+      "difficulty": "kids",
+      "question": "Which young king of Macedonia built a huge empire and is called 'the Great'?",
+      "correct": "Alexander",
+      "wrong": ["Leonidas", "Julius Caesar", "Hannibal"],
+      "explanation": "Alexander became king at 20. In about 13 years he led his army from Greece all the way to India.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.19",
+      "difficulty": "kids",
+      "question": "Which Roman leader was killed by a group of senators in 44 BC?",
+      "correct": "Julius Caesar",
+      "wrong": ["Augustus", "Nero", "Hadrian"],
+      "explanation": "Some senators feared Caesar was getting too much power. His death led to more years of civil war in Rome.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.20",
+      "difficulty": "kids",
+      "question": "What did Romans do at the public baths?",
+      "correct": "Wash and meet friends",
+      "wrong": ["Grow vegetables", "Train for war", "Store grain"],
+      "explanation": "Roman baths had hot and cold pools. They were also places to talk, play games and do business.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.21",
+      "difficulty": "kids",
+      "question": "The Great Sphinx of Giza has the body of which animal?",
+      "correct": "A lion",
+      "wrong": ["A bull", "A horse", "A crocodile"],
+      "explanation": "The Sphinx was carved from the rock beside the pyramids. It has a lion's body and the head of a human.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.22",
+      "difficulty": "kids",
+      "question": "Bronze is made by mixing copper with which other metal?",
+      "correct": "Tin",
+      "wrong": ["Gold", "Iron", "Lead"],
+      "explanation": "Bronze is harder than copper, so it made better tools and weapons. It gave its name to the Bronze Age.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.23",
+      "difficulty": "kids",
+      "question": "The Asterix comics are about a village of which ancient people fighting the Romans?",
+      "correct": "The Gauls",
+      "wrong": ["The Greeks", "The Egyptians", "The Carthaginians"],
+      "explanation": "The Gauls were Celtic people who lived in what is now France. The real Julius Caesar conquered Gaul.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.24",
+      "difficulty": "kids",
+      "question": "What was the main language of the ancient Romans?",
+      "correct": "Latin",
+      "wrong": ["Greek", "Arabic", "Hebrew"],
+      "explanation": "Italian, French, Spanish and Portuguese all grew out of Latin. Many English words come from it too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.25",
+      "difficulty": "kids",
+      "question": "Which ancient Greek city was famous for its tough soldiers?",
+      "correct": "Sparta",
+      "wrong": ["Athens", "Corinth", "Delphi"],
+      "explanation": "Spartan boys started training for war when they were about seven years old. In English, 'spartan' means plain and without comforts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.26",
+      "difficulty": "kids",
+      "question": "Which Greek inventor is said to have shouted 'Eureka!' in his bath?",
+      "correct": "Archimedes",
+      "wrong": ["Aristotle", "Homer", "Socrates"],
+      "explanation": "The story says he saw that his body pushed out water as he sat in the bath. This gave him a way to measure the size of objects.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.27",
+      "difficulty": "kids",
+      "question": "Which creature's cocoons did people in ancient China use to make fine, shiny cloth?",
+      "correct": "The silkworm",
+      "wrong": ["The ladybird", "The bee", "The ant"],
+      "explanation": "The cloth is silk. China kept the secret of making it for centuries and sold silk along the Silk Road.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.28",
+      "difficulty": "kids",
+      "question": "Mesopotamia lay between the Tigris and which other river?",
+      "correct": "The Euphrates",
+      "wrong": ["The Nile", "The Indus", "The Jordan"],
+      "explanation": "Mesopotamia means 'the land between the rivers'. Some of the first cities in the world grew there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.29",
+      "difficulty": "kids",
+      "question": "Which hard building material did the Romans make from lime, volcanic ash and stones?",
+      "correct": "Concrete",
+      "wrong": ["Plastic", "Glass", "Steel"],
+      "explanation": "Roman concrete helped them build huge domes and arches. The dome of the Pantheon in Rome is almost 2,000 years old.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.30",
+      "difficulty": "kids",
+      "question": "Which young pharaoh's tomb, full of gold and treasure, was found in 1922?",
+      "correct": "Tutankhamun",
+      "wrong": ["Ramses", "Khufu", "Akhenaten"],
+      "explanation": "Tutankhamun became king as a child and died young. His tomb was found almost untouched, with his famous gold mask inside.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.31",
+      "difficulty": "kids",
+      "question": "What was the long robe wrapped around the body that Roman men wore?",
+      "correct": "The toga",
+      "wrong": ["The kilt", "The kimono", "The sari"],
+      "explanation": "Only Roman citizens could wear a toga. Most togas were plain white, and important officials wore one with a purple edge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.32",
+      "difficulty": "kids",
+      "question": "Paper was first made in which ancient country about 2,000 years ago?",
+      "correct": "China",
+      "wrong": ["Greece", "Rome", "Persia"],
+      "explanation": "Early Chinese paper was made from rags and bark. The skill spread west slowly along the Silk Road.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.33",
+      "difficulty": "kids",
+      "question": "Which Roman town was buried by ash when Mount Vesuvius erupted?",
+      "correct": "Pompeii",
+      "wrong": ["Athens", "Carthage", "Sparta"],
+      "explanation": "The ash kept the town almost as it was in AD 79. We can see houses, shops and even paintings on the walls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.34",
+      "difficulty": "kids",
+      "question": "What did people in ancient Mesopotamia press signs into when they wrote?",
+      "correct": "Wet clay",
+      "wrong": ["Cloth", "Leaves", "Bark"],
+      "explanation": "Their writing was made with a pointed reed pressed into soft clay. It is called cuneiform, meaning wedge-shaped.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.35",
+      "difficulty": "kids",
+      "question": "What did winners of the ancient Olympic Games get as a prize?",
+      "correct": "A crown of olive leaves",
+      "wrong": ["A gold medal", "A silver cup", "A sword"],
+      "explanation": "Winners also became famous heroes in their home cities. Olive trees were special to the Greeks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.36",
+      "difficulty": "kids",
+      "question": "Which British queen led a revolt against the Romans in about AD 60?",
+      "correct": "Boudicca",
+      "wrong": ["Cleopatra", "Elizabeth", "Victoria"],
+      "explanation": "Boudicca was queen of the Iceni tribe in eastern Britain. Her army burned three Roman towns, among them early London.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.37",
+      "difficulty": "kids",
+      "question": "The Library of Alexandria in Egypt was famous for holding thousands of what?",
+      "correct": "Scrolls",
+      "wrong": ["Paintings", "Coins", "Ship models"],
+      "explanation": "Books were rolls of papyrus. Scholars from many lands came to read and copy them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.38",
+      "difficulty": "kids",
+      "question": "Which ancient tool used a shadow to tell the time?",
+      "correct": "The sundial",
+      "wrong": ["The hourglass", "The pendulum clock", "The alarm clock"],
+      "explanation": "A shadow moved across marks as the Sun crossed the sky. A sundial does not work at night or on a cloudy day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.39",
+      "difficulty": "kids",
+      "question": "The Nile flooded every year. Why was this good for Egyptian farmers?",
+      "correct": "It left rich mud on the land",
+      "wrong": ["It cooled the desert air", "It kept enemies away", "It brought salt to the soil"],
+      "explanation": "The mud made the soil very fertile. The Egyptians called their farmland 'the black land' and the desert 'the red land'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.kids.40",
+      "difficulty": "kids",
+      "question": "Confucius was a wise teacher from which ancient land?",
+      "correct": "China",
+      "wrong": ["Japan", "India", "Greece"],
+      "explanation": "Confucius lived about 2,500 years ago. His ideas about respect and good behaviour spread across East Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which woman ruled Egypt as pharaoh about 3,500 years ago and was shown wearing a false beard?",
+      "correct": "Hatshepsut",
+      "wrong": ["Cleopatra", "Nefertiti", "Boudicca"],
+      "explanation": "Hatshepsut ruled for about 20 years. Pharaohs were shown with a beard, so she had herself shown with one too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.02",
+      "difficulty": "mixed",
+      "question": "What did the Rosetta Stone help scholars to read?",
+      "correct": "Egyptian hieroglyphs",
+      "wrong": ["Maya writing", "Viking runes", "Chinese characters"],
+      "explanation": "It has the same text in three scripts, including Greek. In 1822 Jean-François Champollion used it to understand hieroglyphs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.03",
+      "difficulty": "mixed",
+      "question": "Cuneiform writing was first used by which ancient people?",
+      "correct": "The Sumerians",
+      "wrong": ["The Egyptians", "The Greeks", "The Maya"],
+      "explanation": "The Sumerians lived in southern Mesopotamia more than 5,000 years ago. They first wrote to keep records of trade and grain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which king of Babylon is famous for a list of laws carved on a stone pillar, about 1750 BC?",
+      "correct": "Hammurabi",
+      "wrong": ["Nebuchadnezzar", "Cyrus", "Ramses"],
+      "explanation": "The laws on it cover trade, family life and crime. Punishments often depended on a person's rank in society.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.05",
+      "difficulty": "mixed",
+      "question": "Which river did Julius Caesar cross in 49 BC, starting a civil war in Rome?",
+      "correct": "The Rubicon",
+      "wrong": ["The Tiber", "The Rhine", "The Danube"],
+      "explanation": "Crossing it with an army broke Roman law. The phrase 'crossing the Rubicon' means making a choice you cannot take back.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.06",
+      "difficulty": "mixed",
+      "question": "Who became the first Roman emperor, in 27 BC?",
+      "correct": "Augustus",
+      "wrong": ["Julius Caesar", "Nero", "Constantine"],
+      "explanation": "Augustus was Julius Caesar's great-nephew and adopted son. The month of August is named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.07",
+      "difficulty": "mixed",
+      "question": "In 490 BC the Greeks beat which empire at the Battle of Marathon?",
+      "correct": "The Persian Empire",
+      "wrong": ["The Roman Empire", "The Egyptian Empire", "The Carthaginian Empire"],
+      "explanation": "The marathon race is named after this battle. A legend says a runner took the news to Athens.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.08",
+      "difficulty": "mixed",
+      "question": "Which Spartan king led the small Greek force at Thermopylae in 480 BC?",
+      "correct": "Leonidas",
+      "wrong": ["Pericles", "Alexander", "Themistocles"],
+      "explanation": "Leonidas and his men held a narrow mountain pass against the huge Persian army for days.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.09",
+      "difficulty": "mixed",
+      "question": "How often were the ancient Olympic Games held?",
+      "correct": "Every four years",
+      "wrong": ["Every year", "Every two years", "Every ten years"],
+      "explanation": "A truce let athletes and visitors travel safely to Olympia, even when Greek cities were at war.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which Roman emperor gave his name to a wall across northern Britain?",
+      "correct": "Hadrian",
+      "wrong": ["Nero", "Trajan", "Claudius"],
+      "explanation": "Work on the wall began in about AD 122. It marked the edge of the Roman Empire and was guarded by soldiers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which year is usually given for the end of the Western Roman Empire?",
+      "correct": "AD 476",
+      "wrong": ["AD 1066", "AD 1453", "AD 800"],
+      "explanation": "In 476 the last Western emperor, a boy named Romulus Augustulus, was removed from power. The Eastern Empire lasted for about 1,000 years more.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which Roman emperor made the old Greek town of Byzantium his new capital in AD 330?",
+      "correct": "Constantine",
+      "wrong": ["Nero", "Augustus", "Hadrian"],
+      "explanation": "He renamed it Constantinople, 'the city of Constantine'. Much later, the city became known as Istanbul.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.13",
+      "difficulty": "mixed",
+      "question": "In the Punic Wars, Rome fought which rival city in North Africa?",
+      "correct": "Carthage",
+      "wrong": ["Alexandria", "Memphis", "Thebes"],
+      "explanation": "Carthage was a rich trading city founded by Phoenicians. After the third war, in 146 BC, Rome destroyed it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.14",
+      "difficulty": "mixed",
+      "question": "For which pharaoh was the Great Pyramid of Giza built?",
+      "correct": "Khufu",
+      "wrong": ["Ramses II", "Tutankhamun", "Akhenaten"],
+      "explanation": "It was built about 2560 BC and was the tallest building in the world for more than 3,800 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which Greek thinker taught the young Alexander the Great?",
+      "correct": "Aristotle",
+      "wrong": ["Socrates", "Plato", "Pythagoras"],
+      "explanation": "Aristotle wrote about science, politics and poetry. He was himself a student of Plato.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which ancient Greek doctor is called the 'father of medicine'?",
+      "correct": "Hippocrates",
+      "wrong": ["Galen", "Archimedes", "Euclid"],
+      "explanation": "Hippocrates taught that illness has natural causes. A famous promise made by doctors, the Hippocratic oath, is named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.17",
+      "difficulty": "mixed",
+      "question": "Which Greek writer is called the 'father of history'?",
+      "correct": "Herodotus",
+      "wrong": ["Homer", "Plato", "Sophocles"],
+      "explanation": "Herodotus travelled widely and wrote about the Persian Wars. He asked people questions to find out what really happened.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.18",
+      "difficulty": "mixed",
+      "question": "What was the Roman system of heating floors and walls with hot air called?",
+      "correct": "Hypocaust",
+      "wrong": ["Aqueduct", "Atrium", "Forum"],
+      "explanation": "A fire sent hot air under raised floors and through the walls. Rich homes and baths in Roman Britain had it too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which ancient Chinese thinker is traditionally said to have written The Art of War?",
+      "correct": "Sun Tzu",
+      "wrong": ["Confucius", "Laozi", "Mencius"],
+      "explanation": "The book is about planning, strategy and knowing your enemy. Generals have studied it for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.20",
+      "difficulty": "mixed",
+      "question": "Harappa and Mohenjo-daro were cities of an ancient civilisation named after which river?",
+      "correct": "The Indus",
+      "wrong": ["The Ganges", "The Nile", "The Tigris"],
+      "explanation": "Mohenjo-daro stood beside the Indus. These cities had straight streets, brick houses and drains, and traded as far as Mesopotamia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.21",
+      "difficulty": "mixed",
+      "question": "Who founded the Persian Empire around 550 BC?",
+      "correct": "Cyrus",
+      "wrong": ["Darius", "Xerxes", "Alexander"],
+      "explanation": "Cyrus the Great's empire stretched from the Aegean Sea to Central Asia. He is remembered for treating the peoples he ruled with respect.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which ancient civilisation on the island of Crete built the palace of Knossos?",
+      "correct": "The Minoans",
+      "wrong": ["The Mycenaeans", "The Spartans", "The Phoenicians"],
+      "explanation": "The Minoans were at their height about 3,500 to 4,000 years ago. They were great sailors and traders, and their palaces had paintings of dolphins.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.23",
+      "difficulty": "mixed",
+      "question": "What were the learned priests and teachers of the ancient Celts called?",
+      "correct": "Druids",
+      "wrong": ["Augurs", "Magi", "Scribes"],
+      "explanation": "Druids learned long poems by heart rather than writing them. We know about them mostly from Greek and Roman writers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which food plant was the main crop of the ancient Maya?",
+      "correct": "Maize",
+      "wrong": ["Rice", "Wheat", "Potatoes"],
+      "explanation": "The Maya ate maize in many ways, such as tamales and porridge. They also grew cacao and made a chocolate drink from its beans.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.25",
+      "difficulty": "mixed",
+      "question": "What number does the Roman numeral D stand for?",
+      "correct": "500",
+      "wrong": ["50", "100", "1,000"],
+      "explanation": "Romans wrote 1,000 as M. They had no sign for zero, which made sums with Roman numerals hard.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.26",
+      "difficulty": "mixed",
+      "question": "Which organ did Egyptian embalmers leave in the body, believing it held thought and feeling?",
+      "correct": "The heart",
+      "wrong": ["The brain", "The liver", "The stomach"],
+      "explanation": "The brain was thrown away. The liver, lungs, stomach and intestines were dried and kept in special jars.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.27",
+      "difficulty": "mixed",
+      "question": "The Pharos, one of the Seven Wonders, was a lighthouse in which city?",
+      "correct": "Alexandria",
+      "wrong": ["Athens", "Carthage", "Rome"],
+      "explanation": "The Pharos was built on an island by Alexandria's harbour. It stood for more than 1,500 years until earthquakes brought it down.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.28",
+      "difficulty": "mixed",
+      "question": "In the Roman Republic, what were the two top leaders, elected each year, called?",
+      "correct": "Consuls",
+      "wrong": ["Emperors", "Archons", "Satraps"],
+      "explanation": "Two consuls shared power, so that no single man would rule alone. Under the emperors there were still consuls, but they had little real power.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.29",
+      "difficulty": "mixed",
+      "question": "Which gladiator led a big slave revolt against Rome in 73 BC?",
+      "correct": "Spartacus",
+      "wrong": ["Brutus", "Hannibal", "Vercingetorix"],
+      "explanation": "Spartacus gathered tens of thousands of followers. The Romans needed several armies to defeat them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which Roman emperor ruled during the Great Fire of Rome in AD 64?",
+      "correct": "Nero",
+      "wrong": ["Augustus", "Trajan", "Hadrian"],
+      "explanation": "A famous story says he played music while Rome burned. Most historians doubt it, and he may not even have been in the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.31",
+      "difficulty": "mixed",
+      "question": "Doric, Ionic and Corinthian are styles of what in ancient Greek buildings?",
+      "correct": "Columns",
+      "wrong": ["Roofs", "Windows", "Floors"],
+      "explanation": "You can tell them apart by the top of the column. Doric is plain, Ionic has scrolls and Corinthian has carved leaves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.32",
+      "difficulty": "mixed",
+      "question": "Roman chariot races were held at which huge track in Rome?",
+      "correct": "The Circus Maximus",
+      "wrong": ["The Colosseum", "The Pantheon", "The Forum"],
+      "explanation": "The track could hold many thousands of spectators. Teams were known by their colours.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.33",
+      "difficulty": "mixed",
+      "question": "What was the Colossus of Rhodes, one of the Seven Wonders?",
+      "correct": "A giant bronze statue",
+      "wrong": ["A huge temple", "A tall tower", "A walled garden"],
+      "explanation": "It stood near the harbour of the Greek island of Rhodes. An earthquake knocked it down less than 60 years after it was finished.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.34",
+      "difficulty": "mixed",
+      "question": "What were the huge stepped temple towers of ancient Mesopotamia called?",
+      "correct": "Ziggurats",
+      "wrong": ["Pagodas", "Minarets", "Obelisks"],
+      "explanation": "A ziggurat was built of mud bricks in several layers. A shrine stood at the top.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.35",
+      "difficulty": "mixed",
+      "question": "What was the agora in an ancient Greek city?",
+      "correct": "A market and meeting place",
+      "wrong": ["A theatre for plays", "A harbour for ships", "A school for boys"],
+      "explanation": "People bought food there and talked about politics. The Agora of Athens lay below the Acropolis.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.36",
+      "difficulty": "mixed",
+      "question": "Which ancient seafaring people from the Lebanon coast were famous for purple dye?",
+      "correct": "The Phoenicians",
+      "wrong": ["The Hittites", "The Sumerians", "The Etruscans"],
+      "explanation": "The dye came from sea snails and was so costly that purple became the colour of kings and emperors.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.37",
+      "difficulty": "mixed",
+      "question": "Which two Greek city-states fought the long Peloponnesian War?",
+      "correct": "Athens and Sparta",
+      "wrong": ["Corinth and Thebes", "Sparta and Troy", "Athens and Rhodes"],
+      "explanation": "The war lasted about 27 years, from 431 BC. Sparta won, but all of Greece grew weaker.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.38",
+      "difficulty": "mixed",
+      "question": "On how many hills is the city of Rome said to be built?",
+      "correct": "Seven",
+      "wrong": ["Three", "Five", "Ten"],
+      "explanation": "Rome grew from small villages on hills beside the River Tiber. The Palatine and the Capitoline are two of the seven.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.39",
+      "difficulty": "mixed",
+      "question": "What did the Romans call Britain?",
+      "correct": "Britannia",
+      "wrong": ["Caledonia", "Hibernia", "Gallia"],
+      "explanation": "Britannia was a Roman province for almost 400 years. Caledonia was their name for the land in the far north.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.mixed.40",
+      "difficulty": "mixed",
+      "question": "What was London called when it was a Roman town?",
+      "correct": "Londinium",
+      "wrong": ["Eboracum", "Lutetia", "Colonia"],
+      "explanation": "Londinium was founded in about AD 47, soon after the Romans arrived. It grew beside the River Thames, where they built a bridge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.01",
+      "difficulty": "expert",
+      "question": "Which Greek scholar in Alexandria measured the size of the Earth around 240 BC?",
+      "correct": "Eratosthenes",
+      "wrong": ["Euclid", "Hipparchus", "Pythagoras"],
+      "explanation": "He compared the Sun's shadow in two Egyptian cities. His answer was close to the real size.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.02",
+      "difficulty": "expert",
+      "question": "Which Indian emperor of the 200s BC turned to peace after a bloody war and spread Buddhism?",
+      "correct": "Ashoka",
+      "wrong": ["Akbar", "Shah Jahan", "Harsha"],
+      "explanation": "Ashoka had his laws carved on pillars and rocks across his empire. The lion top of one of his pillars became India's national emblem.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.03",
+      "difficulty": "expert",
+      "question": "In which battle in 216 BC did Hannibal beat a much larger Roman army?",
+      "correct": "Cannae",
+      "wrong": ["Zama", "Actium", "Marathon"],
+      "explanation": "Hannibal surrounded the Romans from both sides. For centuries, generals have studied the battle as a model of tactics.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.04",
+      "difficulty": "expert",
+      "question": "Which Roman general beat Hannibal at the Battle of Zama in 202 BC?",
+      "correct": "Scipio Africanus",
+      "wrong": ["Pompey", "Sulla", "Crassus"],
+      "explanation": "Scipio took the war to Carthage's homeland in North Africa. The title 'Africanus' was given to him after his victory.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.05",
+      "difficulty": "expert",
+      "question": "At the Battle of Actium in 31 BC, Octavian defeated which pair?",
+      "correct": "Antony and Cleopatra",
+      "wrong": ["Pompey and Crassus", "Brutus and Cassius", "Caesar and Pompey"],
+      "explanation": "After the sea battle, Antony and Cleopatra fled to Egypt. Octavian soon took Egypt and became Augustus.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.06",
+      "difficulty": "expert",
+      "question": "Which Persian king invaded Greece in 480 BC after building a bridge of boats across the Hellespont?",
+      "correct": "Xerxes",
+      "wrong": ["Darius", "Cyrus", "Cambyses"],
+      "explanation": "The Hellespont, also called the Dardanelles, is a narrow strait in Turkey. Xerxes's huge army crossed from Asia into Europe on the bridge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.07",
+      "difficulty": "expert",
+      "question": "Which Athenian's plan led to the Greek sea victory over the Persians at Salamis in 480 BC?",
+      "correct": "Themistocles",
+      "wrong": ["Pericles", "Miltiades", "Solon"],
+      "explanation": "He tempted the Persian ships into a narrow channel, where their larger numbers were of little help.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.08",
+      "difficulty": "expert",
+      "question": "Cleopatra belonged to which Greek-speaking royal family of Egypt?",
+      "correct": "The Ptolemies",
+      "wrong": ["The Seleucids", "The Antigonids", "The Achaemenids"],
+      "explanation": "The family began with Ptolemy, one of Alexander the Great's generals. Cleopatra is said to have been the first of them to learn Egyptian.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.09",
+      "difficulty": "expert",
+      "question": "Which seafaring people spread the alphabet that the Greeks later adapted?",
+      "correct": "The Phoenicians",
+      "wrong": ["The Hittites", "The Minoans", "The Babylonians"],
+      "explanation": "Their alphabet had only letters for consonants. The Greeks added letters for vowels, and our alphabet grew from theirs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.10",
+      "difficulty": "expert",
+      "question": "Linear B tablets, found at Knossos and Pylos, were shown to record an early form of which language?",
+      "correct": "Greek",
+      "wrong": ["Latin", "Egyptian", "Phoenician"],
+      "explanation": "Michael Ventris worked this out in 1952. The tablets are mostly lists of goods, not stories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.11",
+      "difficulty": "expert",
+      "question": "Which ancient African kingdom south of Egypt once ruled Egypt and built its own pyramids?",
+      "correct": "Kush",
+      "wrong": ["Aksum", "Carthage", "Ghana"],
+      "explanation": "Kush was in what is now Sudan. Its kings ruled Egypt as pharaohs for nearly 100 years, from around 750 BC.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.12",
+      "difficulty": "expert",
+      "question": "Which Roman emperor split rule between four co-rulers around AD 293?",
+      "correct": "Diocletian",
+      "wrong": ["Constantine", "Trajan", "Nero"],
+      "explanation": "The empire was hard to rule and defend from one place. The system was called the tetrarchy, meaning 'rule of four'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.13",
+      "difficulty": "expert",
+      "question": "Under which emperor did the Roman Empire reach its largest size, in AD 117?",
+      "correct": "Trajan",
+      "wrong": ["Augustus", "Hadrian", "Constantine"],
+      "explanation": "Trajan conquered Dacia and parts of the Middle East. His successor Hadrian gave up some of the new land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.14",
+      "difficulty": "expert",
+      "question": "Which pharaoh tried to make Egyptians worship only the sun disc Aten?",
+      "correct": "Akhenaten",
+      "wrong": ["Ramses II", "Khufu", "Seti"],
+      "explanation": "Akhenaten built a new capital, Amarna. After he died, the old ways returned, and his city was left empty.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.15",
+      "difficulty": "expert",
+      "question": "Ramses II fought the Hittites at which battle, around 1274 BC?",
+      "correct": "Kadesh",
+      "wrong": ["Megiddo", "Thermopylae", "Salamis"],
+      "explanation": "Both sides said they had won. Later they made one of the oldest peace treaties we know of.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.16",
+      "difficulty": "expert",
+      "question": "Which Roman writer described the AD 79 eruption of Vesuvius in letters?",
+      "correct": "Pliny the Younger",
+      "wrong": ["Seneca", "Livy", "Virgil"],
+      "explanation": "He watched from across the bay, aged 17. His uncle, Pliny the Elder, died while trying to rescue people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.17",
+      "difficulty": "expert",
+      "question": "What is the round opening at the top of the Pantheon's dome in Rome called?",
+      "correct": "The oculus",
+      "wrong": ["The atrium", "The portico", "The apse"],
+      "explanation": "Oculus means 'eye'. Rain falls through it, and the floor has holes to let the water drain away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.18",
+      "difficulty": "expert",
+      "question": "What was the short stabbing sword of a Roman legionary called?",
+      "correct": "The gladius",
+      "wrong": ["The pilum", "The scutum", "The falx"],
+      "explanation": "The gladius was good for close fighting in tight ranks. The pilum was a throwing spear, and the scutum was the big shield.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.19",
+      "difficulty": "expert",
+      "question": "Which Gaulish chief surrendered to Julius Caesar after the siege of Alesia in 52 BC?",
+      "correct": "Vercingetorix",
+      "wrong": ["Brennus", "Arminius", "Boudicca"],
+      "explanation": "He had united many Gaulish tribes against Rome. After the defeat, Gaul became a Roman land for hundreds of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.20",
+      "difficulty": "expert",
+      "question": "In AD 9, which Germanic leader destroyed three Roman legions in the Teutoburg Forest?",
+      "correct": "Arminius",
+      "wrong": ["Vercingetorix", "Attila", "Alaric"],
+      "explanation": "The defeat shocked Rome. Afterwards the Rhine stayed the empire's border for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.21",
+      "difficulty": "expert",
+      "question": "Which Gothic king and his army sacked Rome in AD 410?",
+      "correct": "Alaric",
+      "wrong": ["Attila", "Odoacer", "Theodoric"],
+      "explanation": "It was the first time in about 800 years that an enemy had taken the city of Rome.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.22",
+      "difficulty": "expert",
+      "question": "Which ancient empire built the Royal Road, with relay riders, from Sardis to Susa?",
+      "correct": "The Persian Empire",
+      "wrong": ["The Roman Empire", "The Egyptian Empire", "The Hittite Empire"],
+      "explanation": "Fresh riders and horses waited at stations along the road, so messages travelled far faster than people on foot.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.23",
+      "difficulty": "expert",
+      "question": "The Behistun Inscription helped scholars to read which kind of writing?",
+      "correct": "Cuneiform",
+      "wrong": ["Egyptian hieroglyphs", "Maya glyphs", "Etruscan letters"],
+      "explanation": "Darius I had the same text carved in three languages on a cliff in Persia. Henry Rawlinson copied it in the 1830s and 1840s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.24",
+      "difficulty": "expert",
+      "question": "Which king of Babylon rebuilt the city and its famous Ishtar Gate?",
+      "correct": "Nebuchadnezzar II",
+      "wrong": ["Hammurabi", "Sargon", "Darius"],
+      "explanation": "His Babylon was one of the biggest cities in the world. The gate was covered with blue glazed bricks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.25",
+      "difficulty": "expert",
+      "question": "King Ashurbanipal of Assyria is famous for collecting what in his capital, Nineveh?",
+      "correct": "A library of clay tablets",
+      "wrong": ["A fleet of large warships", "A hoard of gold coins", "A set of golden statues"],
+      "explanation": "Thousands of his tablets survived, because fire only baked the clay harder. They hold poems, letters and science.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.26",
+      "difficulty": "expert",
+      "question": "Who founded the Maurya Empire in India around 321 BC?",
+      "correct": "Chandragupta",
+      "wrong": ["Ashoka", "Akbar", "Harsha"],
+      "explanation": "Chandragupta's empire covered most of northern India. His grandson Ashoka later ruled it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.27",
+      "difficulty": "expert",
+      "question": "Which Chinese dynasty opened the Silk Road trade routes to the West?",
+      "correct": "The Han dynasty",
+      "wrong": ["The Ming dynasty", "The Qing dynasty", "The Shang dynasty"],
+      "explanation": "The Han emperor Wu sent the envoy Zhang Qian to Central Asia. The trip led to trade with Persia and beyond.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.28",
+      "difficulty": "expert",
+      "question": "Which natural substance did Egyptians use to dry out bodies when making mummies?",
+      "correct": "Natron",
+      "wrong": ["Chalk", "Charcoal", "Limestone dust"],
+      "explanation": "Natron is a salt that came from dry lake beds. It took about 40 days to dry a body before it was wrapped.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.29",
+      "difficulty": "expert",
+      "question": "Which Athenian leader's reforms in 508 BC are said to have started democracy there?",
+      "correct": "Cleisthenes",
+      "wrong": ["Pericles", "Solon", "Draco"],
+      "explanation": "Cleisthenes divided the citizens into new groups and set up a council. He is often called the father of Athenian democracy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.30",
+      "difficulty": "expert",
+      "question": "In ancient Sparta, who were the helots?",
+      "correct": "Enslaved farm workers",
+      "wrong": ["Elite soldiers", "Elected judges", "Foreign traders"],
+      "explanation": "Helots grew the food so that Spartan men could spend their lives training for war. They outnumbered the Spartans.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.31",
+      "difficulty": "expert",
+      "question": "Which city led the Delian League, formed in 478 BC after the Persian Wars?",
+      "correct": "Athens",
+      "wrong": ["Sparta", "Thebes", "Corinth"],
+      "explanation": "Members paid money or ships to protect against Persia. Athens later used the league's money to build the Parthenon.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.32",
+      "difficulty": "expert",
+      "question": "What was the name of Alexander the Great's famous horse?",
+      "correct": "Bucephalus",
+      "wrong": ["Incitatus", "Marengo", "Pegasus"],
+      "explanation": "Alexander tamed Bucephalus as a boy, when no one else could ride him. He later named a city after the horse.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.33",
+      "difficulty": "expert",
+      "question": "In which city did Alexander the Great die in 323 BC?",
+      "correct": "Babylon",
+      "wrong": ["Athens", "Alexandria", "Pella"],
+      "explanation": "He was only 32. His generals split his empire between them, and wars over it lasted for decades.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.34",
+      "difficulty": "expert",
+      "question": "Alexander the Great beat which Persian king at the Battle of Gaugamela in 331 BC?",
+      "correct": "Darius III",
+      "wrong": ["Xerxes I", "Cyrus II", "Cambyses II"],
+      "explanation": "Darius fled, and was later killed by his own men. Alexander then took Babylon and the Persian capitals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.35",
+      "difficulty": "expert",
+      "question": "Which Roman historian wrote 'Germania', describing the tribes beyond the Rhine?",
+      "correct": "Tacitus",
+      "wrong": ["Livy", "Suetonius", "Sallust"],
+      "explanation": "Tacitus wrote it in about AD 98, probably using reports from traders and soldiers. It is a main source on early Germanic peoples.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.36",
+      "difficulty": "expert",
+      "question": "What were the Twelve Tables of about 450 BC?",
+      "correct": "Rome's first written laws",
+      "wrong": ["A calendar of festivals", "A list of the kings", "A set of road maps"],
+      "explanation": "They were carved on bronze or wood and put up in the Forum. Roman children learned them by heart.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.37",
+      "difficulty": "expert",
+      "question": "Which Roman senator ended speeches by urging that Carthage must be destroyed?",
+      "correct": "Cato the Elder",
+      "wrong": ["Cicero", "Brutus", "Sulla"],
+      "explanation": "Carthage was destroyed in 146 BC, three years after Cato died.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.38",
+      "difficulty": "expert",
+      "question": "Which people, led by Brennus, took Rome in about 390 BC?",
+      "correct": "The Gauls",
+      "wrong": ["The Etruscans", "The Samnites", "The Carthaginians"],
+      "explanation": "The Romans said that geese on the Capitoline Hill raised the alarm. Rome built strong walls afterwards.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.39",
+      "difficulty": "expert",
+      "question": "The great Maya city of Tikal lies in the jungle of which country?",
+      "correct": "Guatemala",
+      "wrong": ["Peru", "Honduras", "Cuba"],
+      "explanation": "Tikal had tall stepped pyramids, and many thousands of people lived there. It was at its peak about 1,300 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.ancient-world.expert.40",
+      "difficulty": "expert",
+      "question": "Which ancient city in Mexico, with the Pyramid of the Sun, was already in ruins when the Aztecs found it?",
+      "correct": "Teotihuacan",
+      "wrong": ["Tenochtitlan", "Chichen Itza", "Tikal"],
+      "explanation": "The name comes from the Aztecs and is often translated as 'place where the gods were born'. We do not know what its builders called it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}
