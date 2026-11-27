@@ -3,7 +3,7 @@
  * confirms carry a choice (Open walk: Today / This week), which the system alert cannot.
  */
 import type { ReactNode } from 'react';
-import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { KeyboardAvoidingView, Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { colors, radius, spacing } from '@/theme/tokens';
@@ -43,7 +43,10 @@ export function Dialog({
       onRequestClose={onDismiss}
       statusBarTranslucent
     >
-      <View style={styles.root}>
+      {/* A modal is its own window, so the screen's keyboard handling does not reach it. A
+          dialog with a field (Your name, Team name) would sit behind the keyboard. Android's
+          modal window is edge to edge, so the system does not resize it either. */}
+      <KeyboardAvoidingView style={styles.root} behavior="padding">
         <Pressable
           style={StyleSheet.absoluteFill}
           onPress={onDismiss}
@@ -79,7 +82,7 @@ export function Dialog({
             ))}
           </View>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }
