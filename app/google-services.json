@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "367806254489-757m3n6h1e7glnupcrmm7tp9pko6grb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lmunck.qualk",
+            "certificate_hash": "03223f9de79128c76696a6bc4211b0f851c30143"
+          }
+        },
+        {
           "client_id": "367806254489-kg9m5ngcsk0joij9deblg1rjpjc02kgl.apps.googleusercontent.com",
           "client_type": 3
         }

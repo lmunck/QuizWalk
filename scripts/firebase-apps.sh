@@ -36,6 +36,15 @@ if [ -n "$SHA1" ]; then
   npx firebase apps:android:sha:create "$ANDROID_ID" "$SHA1" --project "$PROJECT" || true
 fi
 
-npx firebase apps:sdkconfig IOS "$IOS_ID" --project "$PROJECT" -o app/GoogleService-Info.plist
-npx firebase apps:sdkconfig ANDROID "$ANDROID_ID" --project "$PROJECT" -o app/google-services.json
+# The CLI refuses to overwrite a file, so each config is downloaded beside it and moved in. A
+# failed download leaves the committed file as it was.
+fetch_config() {
+  # $1 = IOS | ANDROID, $2 = app id, $3 = target file
+  tmp="$(dirname "$3")/.download-$(basename "$3")"
+  rm -f "$tmp"
+  npx firebase apps:sdkconfig "$1" "$2" --project "$PROJECT" -o "$tmp"
+  mv "$tmp" "$3"
+}
+fetch_config IOS "$IOS_ID" app/GoogleService-Info.plist
+fetch_config ANDROID "$ANDROID_ID" app/google-services.json
 echo "iOS app $IOS_ID and Android app $ANDROID_ID: config files written to app/."

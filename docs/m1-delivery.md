@@ -87,7 +87,7 @@ These follow the spec; where they go beyond it, the reason is given.
    set up the Apple push key).
    Status table in `user-testing.md` part 2.
 2. ~~App Check during the first tests~~ Decided: enforcement off until Play Integrity exists.
-3. **Your console steps:** the Android SHA-1 (expo.dev → Credentials) and the Google Maps key.
+3. **Your console steps:** ~~the Android SHA-1~~ (added on 2026-11-27) and the Google Maps key.
 
 Two fixes came out of switching to the real project: Google sign-in on iPhone now gets the
 web client ID explicitly (Firebase's iOS config file does not carry it), and real builds keep

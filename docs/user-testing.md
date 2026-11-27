@@ -64,7 +64,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | Step | Status |
 |---|---|
 | A. Register the apps | Done. Both config files are committed. |
-| B. Android SHA-1 | Waiting for you |
+| B. Android SHA-1 | Done on 2026-11-27: the EAS keystore's SHA-1 is on the Firebase Android app, which created the Android sign-in client; both config files refreshed. No new build needed for Google sign-in |
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
