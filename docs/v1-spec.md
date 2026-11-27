@@ -1,6 +1,6 @@
 # QuizWalk (Qualk) — v1 specification
 
-Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17)
+Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17) · generation design 2026-11-27 (§1, §3, §4, §6–§8, §14–§17, §19; the how and why are in [`m4-generation-design.md`](m4-generation-design.md))
 Build order: [`implementation-plan.md`](implementation-plan.md) · Design reference: [`/design`](../design/README.md), with screen IDs C1–C9, P1–P6 and G1–G6. The mockups were not redrawn after the UX review; where a mockup and §3 disagree, §3 wins.
 
 The aim of v1 is a small, robust app that does one loop well:
@@ -23,8 +23,8 @@ Anything outside that loop goes in [§16 Not in v1](#16-not-in-v1). A new idea e
 | Name | The store name stays flexible ("QuizWalk" preferred, "Qualk" fallback). Code and IDs use `qualk`. |
 | Language | English only. |
 | Maps | `react-native-maps`: Apple Maps on iOS, Google Maps on Android. Draggable pins in the editor. |
-| Routing | OpenRouteService (OSM-based, `foot-walking`), called only from Cloud Functions, behind one swappable module. |
-| Content | OpenStreetMap (Overpass) + Wikipedia/Wikidata → LLM via OpenRouter writes questions → second LLM pass fact-checks. |
+| Routing | OpenRouteService (OSM-based, `foot-walking`), called only from Cloud Functions, behind one swappable module. A generated route fits the creator's map view (§3 C2, §8). |
+| Content | A shared **question bank** by category: written by an LLM via OpenRouter, fact-checked by a second model, filled ahead of time and topped up in the background. *Local* questions are written from Wikipedia/Wikidata about places on the route (found with OpenStreetMap Overpass) and kept per place. Walks are made from the bank, so generating one rarely spends tokens (§8). |
 | Locations | Firestore `GeoPoint`. No geohash: we never query by proximity. Distances are computed on the phone. |
 | Cheating | Accepted risk. The full quiz, including correct answers, is downloaded to the phone for offline play. No money is involved. Points are still calculated server-side. |
 | Push | `expo-notifications` + Expo Push Service. |
@@ -52,10 +52,10 @@ Legend: **Keep** = as designed · **Change** = kept with listed changes · **Mer
 | ID | Screen | v1 | Notes |
 |---|---|---|---|
 | C1 | Home – my walks | Change | Sections: **Playing** (walks joined on this phone, always first) / Live / Ready / Drafts / Finished. Tapping a card goes where the walk is: Playing → the player's current screen, Live → C7, Ready → C6, Draft → C4, Finished → C9. Ready cards show the join code and how many teams have joined. Live and Playing cards of a week-long walk show "Open until Sun 29 Nov". Each of the creator's cards has a ⋯ menu: *Duplicate*, *Delete* (confirm; not offered while open). "Join with code" opens the join sheet (P0). Avatar opens Settings (S1). For someone who has not signed in, Home shows Playing plus the two actions *Join with code* and *New quiz walk*. |
-| C2 | Create quiz | Change | Starts with a choice of two equal options, **Generate for me** and **Build it myself** (the mockup's small "write questions yourself" link undersells the manual path; until M4 only the manual path exists and the choice is hidden). *Build it myself* asks only for a title, then goes to C4 with an empty route and a **Start** pin at the creator's location. The Start pin is where teams meet; it is dragged like any other pin. *Generate* asks for topic (optional, with example chips), questions (stepper, 4–12, default 8), walk length (stepper, 1–6 km, default 3), difficulty (Kids/Mixed/Expert), start (my location or a picked point), shape **Loop** or **One-way** (one-way ends wherever the last stop falls; no end-point picker). A live line sums it up: "8 stops · ~3 km · about 55 min" (§4 time estimate). |
-| C3 | Generating | Change | Driven live by a `generationJobs` document. Four steps as designed. Can be left: generation continues and the draft shows "Generating…" on Home. Adds a failure / "only found N places" state with *Continue with N stops* or *Add stops manually*. Done state: *Review route & questions* (primary) and ***Play it myself — no spoilers***, which publishes, opens and joins in one step without showing the questions (for a creator who wants to play their own generated walk; offered only when nothing blocks publishing). |
-| C4 | Route builder | Change | Reorder stops (drag in list), drag pins, add stop (G2), delete. The sheet has three heights (peek / half / full) so a 12-stop list can be reordered. **Tap a row = edit (C5); drag its handle = reorder.** Tapping a pin selects its row, and the reverse. The title is edited in the sheet header. Rows mark *blocking problems* (no question, fewer than 2 answers, no correct answer) in the error style and *warnings* ("Pin is on water", "Off path", "Check this answer" for `unverified`) in a quieter style. *Publish & share* is always tappable and lists what blocks it. "New route" (= regenerate) appears only on generated walks and confirms, naming what is lost. **Preview** steps through the questions as players will see them, with no location and nothing saved. Rerouting happens on save, not on every drag. |
-| C5 | Edit stop | Change | Scrolls. Place name, question, 2–4 answers, explanation (optional; shown after answering), hint (optional; shown on arrival, before the question), radius 25/40/**60** m (**default 40**) with a one-line helper ("Bigger is easier to trigger in tight streets"). **Answers are rows**: a text field with a "correct" radio, plus add/remove. This replaces the mockup's tap-to-mark grid, which leaves no way to edit the text and is too narrow for real answers. **Pin:** tapping the mini map opens a full-screen *Move pin* where the map moves under a fixed crosshair, with *Use my location*. "New question" (AI) shows its suggestion to accept or discard and never overwrites silently. Cancel with unsaved changes asks first. *Delete stop* sits at the bottom of the scroll and confirms. **No photo.** |
+| C2 | Create quiz | Change | Starts with a choice of two equal options, **Generate for me** and **Build it myself** (the mockup's small "write questions yourself" link undersells the manual path; until M4 only the manual path exists and the choice is hidden). *Build it myself* asks only for a title, then goes to C4 with an empty route and a **Start** pin at the creator's location. The Start pin is where teams meet; it is dragged like any other pin. *Generate for me* is a **map screen**. Zooming sets the walk's size and rotating the map sets its direction: the route goes up the screen from a **Start** pin fixed at the bottom centre, and the map moves under the pin. The screen opens on the creator's location, and panning picks another start. There is **no distance limit**. Tilt is off. Zoom and turn buttons, and a compass button back to north-up, sit beside the map (§14). The sheet holds the quiz: **Auto** or one or more categories (§8; *Local* is one of them), difficulty (Kids/Mixed/Expert), and questions (stepper, 4–12). The number of questions follows the view's length by default, about one per 350 m, until the creator changes it. **Refresh** makes a walking loop with its stops that fits the visible map. Nothing is drawn before the first Refresh, and moving the map changes nothing until the next one. A second Refresh on the same view gives a different route. When the loop would be shorter than 150 m per question, Refresh is disabled with "Zoom out, or choose fewer questions". After a Refresh, a line sums the walk up: "8 stops · 3 km · about 55 min" (§4 time estimate). **Next** creates the draft and goes to C3. Generated walks are loops, with no shape choice and no free-text topic. |
+| C3 | Generating | Change | Driven live by a `generationJobs` document. A short wait (a few seconds, longer only when a *Local* stop's place is new) with the steps *Naming stops*, *Picking questions* and, when needed, *Writing local questions*. Can be left: generation continues and the draft shows "Generating…" on Home. Adds a failure state with *Try again* or *Add stops manually*. There is no "only found N places" state, because stops come from the route, not from places. Done state: *Review route & questions* (primary) and ***Play it myself — no spoilers***, which publishes, opens and joins in one step without showing the questions (for a creator who wants to play their own generated walk; offered only when nothing blocks publishing). |
+| C4 | Route builder | Change | Reorder stops (drag in list), drag pins, add stop (G2), delete. The sheet has three heights (peek / half / full) so a 12-stop list can be reordered. **Tap a row = edit (C5); drag its handle = reorder.** Tapping a pin selects its row, and the reverse. The title is edited in the sheet header. Rows mark *blocking problems* (no question, fewer than 2 answers, no correct answer) in the error style and *warnings* ("Pin is on water", "Off path", "Check this answer" for `unverified`) in a quieter style. *Publish & share* is always tappable and lists what blocks it. "New route" appears only on generated walks. It confirms, naming what is lost (the stop positions and any *Local* questions), then opens C2's map screen on the walk's area. Trivia questions are kept in their order. **Preview** steps through the questions as players will see them, with no location and nothing saved. Rerouting happens on save, not on every drag. |
+| C5 | Edit stop | Change | Scrolls. Place name, question, 2–4 answers, explanation (optional; shown after answering), hint (optional; shown on arrival, before the question), radius 25/40/**60** m (**default 40**) with a one-line helper ("Bigger is easier to trigger in tight streets"). **Answers are rows**: a text field with a "correct" radio, plus add/remove. This replaces the mockup's tap-to-mark grid, which leaves no way to edit the text and is too narrow for real answers. **Pin:** tapping the mini map opens a full-screen *Move pin* where the map moves under a fixed crosshair, with *Use my location*. **Swap** offers another question from the bank (§8), or another question about the place for a *Local* stop, to accept or discard. It never overwrites silently. Cancel with unsaved changes asks first. *Delete stop* sits at the bottom of the scroll and confirms. **No photo.** |
 | C6 | Share | Change | Join code, QR, link `https://qualk.dk/play?code=K72QX`. The code is shown as `K72QX`, without the mockup's separator dot. Settings: *Play as* (Solo / Team / both), *Players per team* (max, info only), and an optional free-text "When" line (e.g. "Sat 14:00") shown to players only. **No open/close schedule.** The mockup's *Order* and *Score* rows are removed: both are fixed, so they are not settings. A live list shows the teams that have joined. Primary action: **Share invite** (system share sheet with a ready-made message). **Open walk** is a separate button with a confirm, because opening cannot be undone and creators publish days ahead. The confirm asks how long the walk stays open: **Today** ("Everyone walks at the same time. Ends by itself after 12 hours.", the default) or **This week** ("Teams walk when it suits them. Ends by itself on Sun 29 Nov.", 7 days). The choice cannot be changed once the walk is open; the creator can still end it early. *Open walk* checks the walk again (it may have been edited since publishing) and lists what blocks it, as Publish does. Once open, C6 is replaced by C7. Until C7 ships (M2), the open state of C6 lists the teams with their scores and has an *End walk* button with the same confirm. |
 | C7 | Live monitor | Change | Map with each team's *last known* position + leaderboard, in a sheet with the same three heights as C4. Teams not heard from for 2 minutes are dimmed and labelled "seen 6 min ago". An *Invite* pill shows the join code for late-comers. **"Message all" cut.** Adds an alerts strip for "Way blocked" reports with *Skip stop for everyone*. *End walk* is a secondary button, not the accent one, and its confirm says how many teams are still walking. When every team that started has finished or left, a banner offers *End walk & show results* (not in a week-long walk, where more teams may still join). In a week-long walk the header shows "Open until Sun 29 Nov", and teams that have not walked today are listed under the leaderboard without a map pin instead of as stale pins. |
 | C8 | Team detail | Change | Read-only: stats + per-stop results. **Both buttons cut**: skipping is done for everyone from C7; messaging is cut. |
@@ -70,7 +70,7 @@ Legend: **Keep** = as designed · **Change** = kept with listed changes · **Mer
 | P1 | Join | Change | In-app (no browser/App Clip footer). Walk summary with the time estimate and, when the last stop is more than 300 m from the start, "Ends 2.1 km from the start" (worked out from the pins, so it is right for hand-built walks too). A week-long walk that is open also shows "Open until Sun 29 Nov. Walk it when it suits you." **Solo / Team** choice (only if the creator allows both; replaces G3). Team name, prefilled with a suggested name (solo: "Your name"); a name another team already has is flagged before joining. Players on this phone. Location explainer + permission request; the button reads *Allow location & join* only while permission is still needed, otherwise *Join*. **Notification permission is not asked here** (§11). |
 | P2 | Lobby | Change | If the walk isn't open yet: "Waiting for {creator} to open the walk" with a *Notify me when it opens* row (replaces G4's countdown). When open: "Start walk" (a week-long walk adds "Open until Sun 29 Nov"; a team that joins it gets no waiting state and can start at once or come back later from Home). Shows head-to-start distance and other joined teams; team name and players can still be edited. Rule text uses the stop's real radius, not a hard-coded "25 m", and gains one safety line: "Watch the traffic, not the phone. The quiz waits for you." Nothing is uploaded about the player's position until *Start walk*. |
 | P3 | Walk to stop | Change | Distance + direction arrow + map. The arrow follows the compass; when the compass is unreliable it is replaced by a text bearing ("north-east"). The header card opens a **walk menu**: live standings, answers so far, the rules, *Leave walk* (confirm: "You keep your 42 points. You can come back with the same code."). Leaving stops tracking at once (§4). The Weak GPS banner carries an *I'm at the stop* action when G6 allows it. Reacts live to a stop being removed ("Anders removed stop 4. On to stop 5.") and to the walk ending (→ P6). Progress segments carry a ✓ / ✕ mark, not only a colour. Pocket mode: buzz + notification on arrival. **Until pocket mode ships (M3) the screen is kept awake and the copy says "Keep Qualk open"**; it must not promise a pocket buzz it cannot deliver. *Directions* opens the stop in Apple / Google Maps (M3, since it backgrounds the app). "Simulate arrive" exists only in dev builds. |
-| P4 | Question | Change | Two steps. **Arrived:** "Stop 4 · Nyhavn", the hint if set, and a *Show question* button. The 20 s bonus clock starts on that tap, not on arrival, so a team can gather round the phone first. **Question:** the clock is drawn as a draining bonus (+5 → +0) and at zero reads "No bonus. Take your time."; it never times out. The clock cannot be restarted: backing out, or killing and reopening the app, returns to the same question with the clock where it would have been. One tap answers. Feedback shows right/wrong with icon and text, points, explanation and source. **No photo.** |
+| P4 | Question | Change | Two steps. **Arrived:** "Stop 4 · Nyhavn", the hint if set, and a *Show question* button. The 20 s bonus clock starts on that tap, not on arrival, so a team can gather round the phone first. **Question:** the clock is drawn as a draining bonus (+5 → +0) and at zero reads "No bonus. Take your time."; it never times out. The clock cannot be restarted: backing out, or killing and reopening the app, returns to the same question with the clock where it would have been. One tap answers. Feedback shows right/wrong with icon and text, points, explanation and source. Under it, a small ***Report question*** link asks for a reason (wrong answer, offensive, confusing) and confirms with "Thanks. We'll check it." Each person can report a question once (§8). **No photo.** |
 | P5 | Finish | Keep | Score, correct, time, distance. "Review our answers". Stays reachable from Home (Playing) until the final results arrive. In a week-long walk it also shows **Standings so far** ("2nd of 5 teams so far. Final results on Sun 29 Nov.") and the share card, so a team that finishes on Tuesday is not left waiting until Sunday. |
 | P6 | Final results | Change | In-app final leaderboard (arrives via push when the walk ends, by the creator or by itself) + *Share result card* (image). The card's headline fits the result ("Fjord Kids came 3rd of 4", or "joint 2nd"), not only a win. If answers were still unsent when the walk ended, P6 says so (§4). |
 
@@ -79,7 +79,7 @@ Legend: **Keep** = as designed · **Change** = kept with listed changes · **Mer
 | ID | v1 | Notes |
 |---|---|---|
 | G1 Welcome & sign-in | Change | See §2. First run shows two equal choices, *Join a walk* and *Create a walk*; the Apple / Google buttons appear only after *Create a walk*. The mockup's line "Friends join from a link – no app needed" is wrong for v1 and becomes "Friends join with a code – no account needed". |
-| G2 Add stop | Change | Long-press map, search a place, or ***Add stop here*** (my location, for building a walk while walking it). Then *Suggest a question* (from M4) or *Write my own*. The new stop goes into the nearest leg and the sheet says where ("between 5 and 6"). Place search uses the platform's own geocoder via `expo-location` (no extra API). |
+| G2 Add stop | Change | Long-press map, search a place, or ***Add stop here*** (my location, for building a walk while walking it). Then *Suggest a question* (from M4: a question from the bank, or a *Local* one when the stop is next to a documented place) or *Write my own*. The new stop goes into the nearest leg and the sheet says where ("between 5 and 6"). Place search uses the platform's own geocoder via `expo-location` (no extra API). |
 | G3 Solo or team | Merge into P1 | "Join a team on another phone" **cut**. |
 | G4 Arrived early | Replace | Becomes the P2 waiting state; no countdown or scheduling. |
 | G5 Weak GPS & offline | Keep | See §9. |
@@ -124,7 +124,7 @@ Invalid or expired code · walk already ended (read-only results) · location pe
 - **Walk time** = the team's last answer minus its *Start walk* tap, both from the same phone's clock. `finishedAt` is that last answer's time, not the moment it synced.
 - **Ranking:** score ↓, then correct count ↓, then walk time ↑ (unfinished teams rank after finished teams with the same score). Teams equal on all three share a place ("2="). Ranks are not stored: once a walk has ended no score can change, and every phone ranks the same teams with the same shared code. Walk time, not time of day, because teams start when they arrive and a late start must not cost a place.
 - **Time estimate** shown to creators and players ("about 55 min"): the walk's distance at 4.5 km/h plus 2 minutes per stop.
-- **Distance** of a walk is Start → stop 1 → … → last stop. The way back to the start is not counted, because the game ends at the last stop. It is the routed distance once a route exists (M4) and straight lines between pins until then, labelled "as the crow flies" for the creator.
+- **Distance** of a walk is Start → stop 1 → … → last stop. The way back to the start is not counted, because the game ends at the last stop. It is the routed distance once a route exists (M4) and straight lines between pins until then, labelled "as the crow flies" for the creator. A generated walk's last stop is back at the start (§8), so its distance is the whole loop.
 
 ---
 
@@ -170,7 +170,8 @@ joinCodes/{code}                         // 5 chars, alphabet without 0/O/1/I/L
   walkId, createdAt                      // deleted with the walk, or 30 days after it ended
 
 walks/{walkId}
-  ownerUid, ownerName, title, topic?, difficulty?
+  ownerUid, ownerName, title, difficulty?
+  categories?: string[]                  // generated walks: the chosen categories; missing or empty = Auto
   status: 'draft'|'ready'|'open'|'ended'
   joinCode?, modes: { solo: bool, team: bool }, maxPlayers, whenText?
   start: GeoPoint, startLabel, shape: 'loop'|'oneway'
@@ -183,6 +184,7 @@ walks/{walkId}/stops/{stopId}
   order, location: GeoPoint, placeName, radiusM
   question, options: string[2..4], correctIndex, explanation, hint?
   source?: { title, url }, origin: 'ai'|'manual'
+  bankQuestionId?                        // the question came from the bank (§8); its text is still copied here
   warnings: string[]                     // 'onWater', 'offPath', 'unverified'
   skippedForAll: bool
 
@@ -207,7 +209,24 @@ walks/{walkId}/alerts/{alertId}
 
 generationJobs/{jobId}
   ownerUid, walkId, status: 'running'|'done'|'failed'
-  step: 0..4, stepDetail[], latestQuestion?, error?
+  step: 0..3, stepDetail[], latestQuestion?, error?
+
+questionBank/{questionId}              // functions only
+  kind: 'trivia'|'place'
+  category, subcategory, difficulty: 'kids'|'mixed'|'expert'
+  placeKey?                              // 'wikidata:Q12345', place questions only
+  question, correct, wrong: string[3], explanation, source?: { title, url }
+  status: 'active'|'flagged'|'blocked'
+  stats: { used, answered, correct, reports, replaced }
+  model, createdAt, rand                 // rand: random picks with a range query
+
+places/{placeKey}                        // functions only; recorded even when no good question came out
+  name, location: GeoPoint, generatedAt, questionCount
+
+questionReports/{reportId}               // id built from the question and the uid: one report per person
+  uid, reason: 'wrong'|'offensive'|'confusing', createdAt
+  questionId?                            // a bank question
+  walkId?, stopId?                       // a question the creator wrote
 ```
 
 Positions live in their own collection so other teams can read the leaderboard without seeing where anyone is.
@@ -242,6 +261,8 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 - `positions/{uid}`: write by that uid while the walk is `open`; read by that uid and the walk owner.
 - `alerts`: create by a team of that walk with `teamUid == auth.uid`; read/update by the owner.
 - `generationJobs`: read by owner, write by functions only.
+- `questionBank`, `places`: no client access. Functions pick the questions and copy them into stops.
+- `questionReports`: **create** by a signed-in user with `uid == auth.uid`, under the id built from the question (or walk and stop) and the uid, so each person reports a question once. No client read, update or delete.
 
 **App Check** is enforced on callables from the first one written, and on Firestore itself before release (M5), which is what stops a script from guessing join codes.
 
@@ -251,35 +272,59 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 
 | Function | Type | Purpose |
 |---|---|---|
-| `generateWalk` | callable | Full AI pipeline (below). Rate-limited (e.g. 20/creator/day). |
-| `suggestQuestion` | callable | Steps 3–4 for one place (G2, C5 "New question"). |
+| `routeForView` | callable | C2's *Refresh*: four points → a walking loop fitted to the view, with stop positions and the spacing check (below). Writes nothing. About 30 per creator per hour. |
+| `generateWalk` | callable | C2's *Next*: names the stops, picks questions, writes *Local* questions for new places, titles and writes the walk (below). Rate-limited (e.g. 20/creator/day). |
+| `swapQuestion` | callable | C5's *Swap* and G2's *Suggest a question*: another question for one stop. |
 | `reroute` | callable | After edits: snap pins to walkable paths, compute route + distance, return warnings. |
 | `publishWalk` | callable | Validate (≥1 stop; every stop has a question, 2–4 non-empty answers and a correct one), recompute `stopCount` and `distanceM`, allocate join code, `draft → ready`. |
 | `openWalk` | callable | Validate again (a `ready` walk can still be edited), set `openFor`, `openedAt`, `ready → open`. |
 | `deleteWalk` | callable | Delete a walk that is not `open`, with its stops, teams, answers, positions, alerts and join code. |
 | `duplicateWalk` | callable | "Reuse walk" → new draft. |
 | `deleteAccount` | callable | Delete the user's walks (recursively), their participant data, and the Auth user. |
-| `onAnswerCreated` | Firestore trigger | Score the answer, update team totals, set `finishedAt` (from the last answer's client time, §4). When no team is still walking (every team that started has finished or left), push "Everyone has finished" to the creator. In a week-long walk, push "Fjord Kids finished: 96 points" for each team instead. |
+| `onAnswerCreated` | Firestore trigger | Score the answer, update team totals, add to the bank question's `answered`/`correct` counts when the stop has a `bankQuestionId`, set `finishedAt` (from the last answer's client time, §4). When no team is still walking (every team that started has finished or left), push "Everyone has finished" to the creator. In a week-long walk, push "Fjord Kids finished: 96 points" for each team instead. |
 | `onStopUpdated` | Firestore trigger | `skippedForAll` → recalculate all team scores. |
 | `onWalkStatusChanged` | Firestore trigger | `open` → push "Walk is open" to joined teams. `ended` (by the creator or by `hourly`) → push "Final results". Nothing is frozen or copied: ranks are derived (§4). |
 | `onAlertCreated` | Firestore trigger | Push to creator: "Fjord Kids: way to stop 4 is blocked". |
+| `onQuestionReported` | Firestore trigger | Update the reported question's counts and status (below). |
+| `topUpQuestions` | background | Add 20–25 questions to one bank pool (below). At most one per pool at a time. |
 | `hourly` | scheduled | Auto-end walks past their end time (`openedAt` + 12 h or + 7 days, by `openFor`). Hourly, not daily: a daily job would leave a "12-hour" walk open for up to 36. |
 | `daily` | scheduled | Delete participant data (teams, answers, positions, alerts) and the join code 30 days after `endedAt`. |
 
 API keys (OpenRouter, ORS) live in **Secret Manager** via Functions secrets, never in the app or repo. Callables require **App Check** (App Attest / Play Integrity).
 
-### Generation pipeline (C3 steps)
+### Generated walks
 
-1. **Finding places.** Overpass query around the start (radius ≈ 0.4 × walk length, max 3 km) for features with a Wikipedia/Wikidata link (historic, tourism, artwork, memorial, notable buildings). Fetch Wikipedia extracts: English, falling back to the local language.
-2. **Building a walkable route.**
-   - The LLM shortlists ~1.5× N places that fit the topic and difficulty and are spread out.
-   - Order them: angle around the centroid for a loop, nearest-neighbour for one-way.
-   - Snap each to a walkable path (ORS snap) and call ORS `foot-walking` directions.
-   - If distance is outside ±30 % of the target, drop or add places and retry (max 3 tries).
-3. **Writing questions.** One LLM call returns structured JSON per stop: question, 4 options, correct index, explanation, optional hint, source. Instruction: use **only** the supplied extract.
-4. **Fact-checking.** A second LLM call (different model) checks each question against its source text. Failures are regenerated once; if they still fail, the stop is kept with an `unverified` warning shown in C4.
+How and why: [`m4-generation-design.md`](m4-generation-design.md).
 
-Model IDs are configuration, not code. If fewer than N good places are found, the job finishes with what it has and C3 shows the "only found N places" state.
+**Refresh (`routeForView`).** No tokens are spent.
+
+1. The phone takes the usable map area (the screen minus the sheet, the header and the safe areas) and shrinks it by 15–20%. The midpoints of its edges are the four points: the start at the bottom, one at each side and one at the top.
+2. ORS `foot-walking` routes the loop start → side → top → other side → start. A point too far from any path is moved towards the start and tried again. If the route leaves the view, the shape is shrunk and routed once more.
+3. N stops are spaced evenly along the route, at length × *i* / N, so the last stop is back at the start.
+4. The route is refused if it is shorter than N × 150 m, so that unlock circles don't overlap. The phone checks the straight-line estimate first and disables Refresh. If the real route is too short, the previous route stays and C2 says "Couldn't fit 8 stops here. Zoom out a little."
+
+A second Refresh on the same view moves the three far points a little to give a different route.
+
+**Next (`generateWalk`).**
+
+1. One Overpass query along the route. Each stop moves to a named feature within about 50 m of the path where there is one (a fountain, church, statue or playground). Otherwise it takes its street name.
+2. Trivia questions come from the bank. A *Local* stop (and, under Auto, any stop next to a documented place) uses the stored questions of its nearest Wikidata place. A place's questions are written on its first walk: about 5, only from its Wikipedia extract (English, falling back to the local language), then fact-checked.
+3. The title is "{Category} walk from {start}", or "Quiz walk from {start}" for Auto or several categories. The creator can change it in C4.
+
+**Question bank.**
+
+- The categories, and subcategories that creators never see, are typed code in `shared/`. The first list is: History, Geography, Science, Nature & animals, Space, Sport, Music, Film & TV, Food & drink, Art & books, Words & language, Local. Auto mixes categories that suit the difficulty.
+- A script fills the bank ahead of time for every category, subcategory and difficulty, 20–25 questions per LLM call. `topUpQuestions` adds more in the background when a creator has fewer than about twice a walk's worth of unused questions left in a pool. The prompt includes the pool's existing correct answers, so new questions don't repeat them.
+- A second model fact-checks every question, and a failure is dropped, not rewritten. Only facts that stay true are allowed (no "current" office holders or records). Each question records its model and date.
+- Picking leaves out questions the creator has used before, picks at random within the pool, spreads a walk over subcategories, and shuffles the correct and wrong answers.
+
+**Reports and blocking.** Google Play's policy on AI-generated content requires in-app reporting. Apple's guideline 1.2 covers questions that creators write themselves.
+
+- One *offensive* report hides a question until it has been reviewed. A few *wrong answer* reports, or an unusual share of correct answers, flags it. A creator replacing or deleting a bank question counts against it.
+- A blocked question is never picked again, and the top-up refills its pool. In v1, review is a script or the Firestore console.
+- Stops copy the question text and keep the `bankQuestionId`, so a block never changes a walk in progress. The counts are totals with no personal data, so they are kept when answers are deleted.
+
+Model IDs are configuration, not code.
 
 ---
 
@@ -373,7 +418,7 @@ On nulkommafire.com, the "Qualk" line of the shared privacy page links to `qualk
 | Push token | Notifications | Nobody (system) | With the team/user record |
 
 - Location is only collected **during an active walk**.
-- Participant locations never leave Firebase. ORS only receives stop coordinates; the LLM only receives topic and place information.
+- Participant locations never leave Firebase. ORS only receives the route's points and stop coordinates; the LLM only receives categories and place information.
 - **In-app deletion:** creators: S1 "Delete account and all data". Participants: "Delete my data" in S1 (removes their teams/answers/positions).
 - No ads, no analytics SDKs, no tracking. This is declared accordingly in Apple privacy labels and the Play Data safety form.
 - Not aimed at children as account holders. Children play as part of a team on an adult's phone. The app is not submitted to Apple's Kids category.
@@ -407,7 +452,7 @@ Changes from the mockups, and why:
 - **Destructive actions** (End walk, Delete, Skip, New route) are never the accent-coloured button and always confirm.
 - **Haptics:** a buzz on arrival, and distinct taps for right and wrong.
 
-Accessibility in v1: Dynamic Type / font scaling, screen-reader labels on all controls, right/wrong feedback shown with text and icon (not only colour). Nothing depends on a drag or a long-press alone: stops can be reordered with *Move up* / *Move down* actions, added with *Add stop here* or search, and placed with the crosshair. Light mode only (§16).
+Accessibility in v1: Dynamic Type / font scaling, screen-reader labels on all controls, right/wrong feedback shown with text and icon (not only colour). Nothing depends on a drag or a long-press alone: stops can be reordered with *Move up* / *Move down* actions, added with *Add stop here* or search, and placed with the crosshair. The view that sets a generated route (C2) can be set with buttons as well as pinch and twist. Light mode only (§16).
 
 ---
 
@@ -416,8 +461,8 @@ Accessibility in v1: Dynamic Type / font scaling, screen-reader labels on all co
 | Item | Expected |
 |---|---|
 | Firestore, Functions, Hosting | Within free quotas |
-| LLM (OpenRouter) | A few cents per generated walk → < $5/month |
-| OpenRouteService | Free plan (2,000 routes/day) |
+| LLM (OpenRouter) | Filling the question bank once (roughly a million output tokens for ~8,600 questions; check current model prices before running it), then top-ups and *Local* questions for new places → < $5/month |
+| OpenRouteService | Free plan (2,000 routes/day). A Refresh is 1–2 routes, limited to about 30 per creator per hour |
 | Maps (Apple, Google mobile SDK) | Free |
 | Expo EAS | Free tier (limited monthly builds); paid plan optional |
 | Apple Developer / Google Play | $99/year (existing) / $25 once |
@@ -447,6 +492,9 @@ Set a Google Cloud budget alert at **$10/month**.
 - Dark mode
 - Anti-cheat beyond server-side scoring
 - Analytics
+- Free-text quiz topics (categories only)
+- One-way generated walks (hand-built walks can still end anywhere)
+- An admin screen for reported questions (a script or the Firestore console)
 
 ---
 
@@ -462,7 +510,7 @@ Each step ends with a build you can install and test on your phone. The work ins
 | M1·C | **Make a walk** | Welcome, sign in, build a walk by hand, preview, publish, share, open (today or this week), end, results. The two-phone test in `m1-design.md` §12 passes. |
 | M2 | **Creator live tools** | Live monitor, team detail, push notifications, way-blocked alerts, skip for everyone, share cards, reuse, duplicate and delete. The Play closed test starts here, because its 14 days run on the calendar. |
 | M3 | **Out in the real world** | Pocket mode as far as the spike allows, battery tuning, *Directions*, week-long walks field-tested over several days. |
-| M4 | **AI generation** | Real walking routes (ORS), generation pipeline, C3, suggest/new question, regenerate route, failure states, *Play it myself*. |
+| M4 | **AI generation** | Real walking routes (ORS), C2's map screen and *Refresh*, the question bank and the script that fills it, generation and C3, *Swap* and *Suggest a question*, *Report question* and blocking, *New route*, failure states, *Play it myself*. |
 | M5 | **Release** | Privacy page, account and data deletion, retention job, App Check on Firestore, store listings and privacy labels, TestFlight + Play testing, then release. |
 
 AI comes after the core game on purpose: the game must work without it. The data model includes AI fields from day one, so it is not bolted on. Playing comes before making within M1, because location unlock is the riskiest part of the experience and should meet a real street as early as possible.
@@ -493,11 +541,12 @@ These need your accounts or consoles. Each will be walked through step by step w
 
 | Risk | Mitigation |
 |---|---|
-| Thin OSM/Wikipedia coverage outside cities | "Only found N places" state; manual stops are always possible |
+| Thin OSM/Wikipedia coverage outside cities | Only affects *Local* questions: stops come from the route, and Auto uses trivia where there is no documented place |
 | ORS free plan: commercial use not explicitly stated; possible endpoint changes | Routing behind one module; revisit before any commercial launch (self-host or paid alternative) |
 | App review friction for background location | Clear permission copy, "When In Use" only, review notes |
 | **Pocket mode may need "Always" location.** `expo-location`'s docs say so; the spec assumes otherwise | Spike in M1·A on both phones; fallbacks listed in §9, the first being iOS's own location-triggered notifications. Nothing before M3 depends on the answer |
 | An answer given offline is lost if the walk ends before it syncs | Accepted (§4). The creator sees how many teams are still walking before ending; the player is told on P6 |
-| English questions from Danish sources | Fact-check pass; creator reviews in C4 before publishing |
+| English questions from Danish sources | Only *Local* questions. Fact-check pass; creator reviews in C4 before publishing |
+| A wrong or offensive AI-written question reaches players | Fact-checked before it enters the bank; *Report question* on P4; automatic hiding and flagging; a blocked question is never picked again |
 | GPS in dense streets | Default radius 40 m, automatic widening, "I'm here" fallback |
 | **Self-paced walks (decided 2026-11-25).** A 12-hour lifetime made "here is a walk, do it any time this week" impossible, which may be the most common way a walk gets shared in a family or a class | *Open walk* asks **Today** (12 h, default) or **This week** (7 days). Stored as `openFor`. Finished teams see standings so far; final ranks freeze when the walk ends (§3 C6, P5; §4). No custom end date and no extending in v1 |

@@ -157,13 +157,18 @@ Scope depends on the A7 spike.
 |---|---|
 | 1 | **You:** ORS and OpenRouter keys as Firebase secrets |
 | 2 | Routing module and `reroute`: snapping, real polyline and distance, "off path" / "on water" warnings in C4 |
-| 3 | Generation pipeline in four testable stages, each runnable alone from a script against recorded inputs, then `generateWalk` and `generationJobs` |
-| 4 | C2's *Generate for me* path and C3, including leaving and returning, and the "only found N places" state |
-| 5 | `suggestQuestion` in G2 and C5's *New question* as accept/discard |
-| 6 | *New route*, *Play it myself*, rate limiting |
+| 3 | `routeForView` and C2's map screen: *Refresh*, the stop-spacing check on the phone and on the server, zoom and turn buttons, the default number of questions |
+| 4 | Question bank: categories in `shared/`, the script that fills the bank with its fact-check pass, `topUpQuestions`. Replace `topic` with `categories` in the shared types and `duplicateWalk` |
+| 5 | `generateWalk` (naming stops, picking questions, *Local* questions, the title) with `generationJobs` and C3, including leaving and returning |
+| 6 | `swapQuestion`: C5's *Swap* and G2's *Suggest a question* as accept/discard |
+| 7 | *Report question* on P4, `onQuestionReported`, bank counts in `onAnswerCreated`, rules for the new collections and their tests |
+| 8 | *New route*, *Play it myself*, rate limiting |
 
-**Check:** generate walks in three different places (a city centre, a suburb, a village) and
-walk one. Read every question against its source before trusting the fact-check pass.
+Design: [`m4-generation-design.md`](m4-generation-design.md).
+
+**Check:** generate walks in a city centre, a suburb, a village and a forest, at several zoom
+levels and directions, and walk one. Before the bank goes live, read a sample from every
+category. Read every *Local* question against its source before trusting the fact-check pass.
 
 ---
 
