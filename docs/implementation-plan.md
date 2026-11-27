@@ -8,19 +8,21 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-25 (evening), after the M1 build. Delivery notes: [`m1-delivery.md`](m1-delivery.md);
-how to test: [`user-testing.md`](user-testing.md).
+Updated 2026-11-27, after the M2 wrap-up and M3. Delivery notes: [`m1-delivery.md`](m1-delivery.md),
+[`m2-m3-delivery.md`](m2-m3-delivery.md); how to test: [`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
-| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion: 89 unit tests |
+| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion, pocket-mode accuracy steps, *Directions* links: 109 unit tests |
 | Security rules | Spec §7 in full, 38 allow/deny tests against the emulator, in CI |
-| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator, in CI. **Not deployed yet** |
-| App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6) plus C7 live monitor and C8 team detail from M2. Verified end to end on the iOS simulator against the emulators |
-| Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash |
-| Firebase app registrations, Maps key, App Check, EAS builds with the real config | Not done: account steps, listed in `user-testing.md` part 2 |
-| Pocket-mode spike (A7) | Not done: needs a real phone and a walk |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator and 2 unit tests, in CI. Deployed to `qualk-a173e` on 2026-11-26, except `onTeamUpdated` (M2 wrap-up, waiting for a deploy: `m2-m3-delivery.md`) |
+| App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6), all of M2 (C7, C8, share cards, duplicate and delete, push tokens and notification taps) and M3's pocket mode and *Directions*. Verified end to end on the iOS simulator against the emulators, including a simulated walk with the app in the background |
+| Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash; an Android notification icon from M3. `preview` builds with pocket mode started 2026-11-27 (links in `m2-m3-delivery.md`) |
+| Firebase app registrations, Maps key, App Check, EAS builds with the real config | Done on 2026-11-26, except the Google Maps key for Android (yours, `user-testing.md` part 2) |
+| Pocket mode (A7, M3·1–3) | Built on "When In Use" for both platforms, one switch per platform for the alternative (`app/src/location/tuning.ts`). Settled from expo-location 58's code and the iOS simulator; the walk with a phone in a pocket is yours |
+| Battery (M3·4) | Knobs in place with defaults from spec §9; measuring on phones is yours |
+| M2 account steps | FCM V1 key for Android pushes, the Play closed test, the three-phone check: yours, in `m2-m3-delivery.md` |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -188,7 +190,7 @@ category. Read every *Local* question against its source before trusting the fac
 
 | Point | Settled in | Effect if it goes the wrong way |
 |---|---|---|
-| Pocket mode on When-In-Use permission | M1·A (A7) | M3 shrinks or changes shape (spec §9 fallbacks) |
+| Pocket mode on When-In-Use permission | Simulator 2026-11-27; real phones in field test 3 | Flip `POCKET_ENGINE` per platform, then the spec §9 fallbacks |
 | Google sign-in library under SDK 58 | M1·A (A5) | One more build cycle |
 | Unlock radius and widening on real streets | Field test 1 | Constants in `shared/rules.ts` and the default radius change |
 | Play Console account | Your task, M0 | Android stays on debug App Check tokens and cannot start the closed test |
