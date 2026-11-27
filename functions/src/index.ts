@@ -20,7 +20,7 @@ import {
   recomputeAllTeams,
   recomputeTeam,
 } from './core';
-import { pushBlockedAlert, pushFinishNews, pushStatusChange } from './push';
+import { pushBlockedAlert, pushFinishNews, pushStatusChange, teamJustLeft } from './push';
 
 // Firestore lives in europe-west1 and functions run next to it (docs/v1-spec.md §1).
 setGlobalOptions({ region: 'europe-west1', maxInstances: 10 });
@@ -95,6 +95,18 @@ export const onAnswerCreated = onDocumentCreated(
     await pushFinishNews(db(), walkId, teamUid, wasFinished);
   },
 );
+
+/**
+ * A team leaving mid-walk may leave nobody walking: "Everyone has finished" then goes to the
+ * creator, as it does after the last answer. Teams write often (distance walked), so
+ * everything but a fresh `leftAt` returns at once.
+ */
+export const onTeamUpdated = onDocumentUpdated('walks/{walkId}/teams/{teamUid}', async (event) => {
+  const before = event.data?.before.data();
+  const after = event.data?.after.data();
+  if (!teamJustLeft(before, after)) return;
+  await pushFinishNews(db(), event.params.walkId, event.params.teamUid, before?.finishedAt != null);
+});
 
 /** Skip for everyone: points on the stop are voided and every team is recalculated. */
 export const onStopUpdated = onDocumentUpdated('walks/{walkId}/stops/{stopId}', async (event) => {
