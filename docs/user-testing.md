@@ -68,7 +68,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | Current `preview` builds, with the share cards (commit `e96705c`): [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/c2b2e76e-d8c6-410f-bb54-35644c0488a5) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/622c962b-b8db-4f0b-a37d-03f47e77ec39). Android needed Kotlin 2.4.0 for Firebase Auth 25; the iPhone needed your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | Current `preview` builds, both with the share cards: [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/882f7185-a4cf-4d74-aa69-b55f54b50fd3) (2026-11-27, with the fix for the launch crash below) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/622c962b-b8db-4f0b-a37d-03f47e77ec39) (commit `e96705c`). The Android build from 26 Nov closed at launch: AGP 9's R8 removed the constructor of WorkManager's database, which Room creates by reflection; the keep rules are in `app/app.config.ts`. Android needed Kotlin 2.4.0 for Firebase Auth 25; the iPhone needed your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,

@@ -41,6 +41,18 @@ function googleWebClientId(): string | undefined {
  */
 const androidMapsKey = process.env.GOOGLE_MAPS_ANDROID_API_KEY ?? '';
 
+/**
+ * Release builds run R8 (Expo's template turns it on). react-native-maps brings in WorkManager
+ * 2.9 with Room 2.5, and Room creates WorkManager's generated database class by reflection. The
+ * stricter R8 in AGP 9 removed that class's no-argument constructor, so the Android preview
+ * build crashed at launch ("Failed to create an instance of …WorkDatabase", 2026-11-27).
+ * WorkManager creates its input mergers by class name in the same way.
+ */
+const EXTRA_PROGUARD_RULES = [
+  '-keep class * extends androidx.room.RoomDatabase { <init>(); }',
+  '-keep class * extends androidx.work.InputMerger { <init>(); }',
+].join('\n');
+
 const LOCATION_WHEN_IN_USE =
   'QuizWalk uses your location during a walk to unlock each question when you reach its stop. ' +
   'Nothing is shared before you tap Start walk.';
@@ -106,7 +118,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       'expo-build-properties',
       {
         ios: { useFrameworks: 'dynamic' },
-        android: { minSdkVersion: 24, kotlinVersion: '2.4.0' },
+        android: {
+          minSdkVersion: 24,
+          kotlinVersion: '2.4.0',
+          extraProguardRules: EXTRA_PROGUARD_RULES,
+        },
       },
     ],
     'expo-router',
