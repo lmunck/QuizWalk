@@ -8,6 +8,7 @@ import {
   distanceM,
   isOffPath,
   routeKey,
+  walkDistanceM,
   type LatLng,
   type RerouteResponse,
   type RerouteStop,
@@ -120,24 +121,21 @@ export async function reroute(
     return { stopId: s.id, offsetM, warnings: [...kept, ...flagged] };
   });
 
-  // A route that skips a stop doesn't match the pins, so the walk's distance stays straight.
+  // A route that skips a stop doesn't match the pins, so the walk's distance stays straight
+  // (spec §4 Distance), as the app and publishWalk would work it out.
+  const pins = stops.map((s) => s.location);
+  const walkDistance =
+    unroutable.size === 0 ? routed.distanceM : Math.round(walkDistanceM(start, pins));
   const route = {
     polyline: routed.polyline,
     distanceM: routed.distanceM,
     durationS: routed.durationS,
-    ...(unroutable.size === 0
-      ? {
-          key: routeKey(
-            start,
-            stops.map((s) => s.location),
-          ),
-        }
-      : {}),
+    ...(unroutable.size === 0 ? { key: routeKey(start, pins) } : {}),
   };
   const batch = db.batch();
   batch.update(ref, {
     route,
-    distanceM: routed.distanceM,
+    distanceM: walkDistance,
     updatedAt: FieldValue.serverTimestamp(),
   });
   stops.forEach((s, i) => {
@@ -145,5 +143,5 @@ export async function reroute(
     if (warnings.join() !== s.warnings.join()) batch.update(s.ref, { warnings });
   });
   await batch.commit();
-  return { route, distanceM: routed.distanceM, stops: result };
+  return { route, distanceM: walkDistance, stops: result };
 }

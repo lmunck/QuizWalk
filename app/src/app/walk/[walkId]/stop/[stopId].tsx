@@ -215,7 +215,13 @@ function Editor({
       onBack={close}
       title={isNew ? `New stop ${number}` : `Stop ${number}`}
       headerRight={
-        <Pressable onPress={save} accessibilityRole="button" style={styles.saveTop} hitSlop={6}>
+        <Pressable
+          onPress={save}
+          accessibilityRole="button"
+          accessibilityLabel="Save stop"
+          style={styles.saveTop}
+          hitSlop={6}
+        >
           <Txt variant="bodyStrong" color={colors.accent}>
             Save
           </Txt>

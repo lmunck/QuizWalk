@@ -150,7 +150,7 @@ export default function Question() {
           <View style={styles.arrivedBadge}>
             <Icon name="flag" size={34} color={colors.white} />
           </View>
-          <Txt variant="label" color={colors.accent} caps center>
+          <Txt variant="labelWalk" color={colors.accent} caps center>
             {noBonus ? `Stop ${number}` : "You're here"}
           </Txt>
           <Txt variant="display" center accessibilityRole="header">
@@ -158,7 +158,7 @@ export default function Question() {
           </Txt>
           {stop.hint ? (
             <Card style={styles.hint}>
-              <Txt variant="label" color={colors.secondary} caps>
+              <Txt variant="labelWalk" color={colors.secondary} caps>
                 Look around
               </Txt>
               <Txt variant="body">{stop.hint}</Txt>
@@ -223,7 +223,7 @@ export default function Question() {
             <View style={styles.bonusTrack}>
               <View style={[styles.bonusFill, { width: `${fraction * 100}%` }]} />
             </View>
-            <Txt variant="caption" color={colors.muted}>
+            <Txt variant="callout" color={colors.muted}>
               Right answers score 10, plus up to {SPEED_BONUS_MAX} for speed. There is no time
               limit.
             </Txt>
@@ -271,7 +271,9 @@ export default function Question() {
                   ) : state === 'wrong' ? (
                     <Icon name="cross" size={16} color={colors.white} strokeWidth={3} />
                   ) : (
-                    <Txt style={styles.letterText}>{LETTERS[i]}</Txt>
+                    <Txt style={styles.letterText} maxFontSizeMultiplier={1.3}>
+                      {LETTERS[i]}
+                    </Txt>
                   )}
                 </View>
                 <Txt variant="body" style={styles.flex}>
@@ -323,7 +325,7 @@ export default function Question() {
                     accessibilityRole="link"
                     style={styles.source}
                   >
-                    <Txt variant="caption" color={colors.accent}>
+                    <Txt variant="callout" color={colors.accent}>
                       Source: {stop.source.title}
                     </Txt>
                   </Pressable>
@@ -425,7 +427,13 @@ const styles = StyleSheet.create({
   hint: { gap: spacing.xs, alignSelf: 'stretch' },
   body: { paddingHorizontal: spacing.lg, paddingBottom: spacing.xl, gap: spacing.lg },
   bonus: { gap: spacing.sm },
-  bonusRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' },
+  bonusRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    columnGap: spacing.sm,
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+  },
   bonusSeconds: { fontFamily: fonts.heading, fontSize: 17, fontVariant: ['tabular-nums'] },
   bonusTrack: { height: 10, borderRadius: 5, backgroundColor: colors.track, overflow: 'hidden' },
   bonusFill: { height: 10, borderRadius: 5, backgroundColor: colors.accent },
@@ -460,7 +468,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: colors.surface,
   },
-  letterText: { fontFamily: fonts.heading, fontSize: 14, color: colors.ink },
+  letterText: { fontFamily: fonts.heading, fontSize: 15, color: colors.ink },
   feedback: { gap: spacing.md - 4 },
   verdict: {
     flexDirection: 'row',

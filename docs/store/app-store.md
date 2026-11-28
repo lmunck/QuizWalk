@@ -11,11 +11,10 @@ is Denmark and the rest of Europe, and the app itself is in British English (spe
 only). Set the primary language to **English (U.K.)**. Storefronts without their own
 localisation show the primary language, so one localisation covers every country.
 
-**Marked text.** Text marked **[M4]** describes *Generate for me*, *Local* questions and
-*Report question*. On `m2-m5` today those screens are not in the app yet (see
-[`checklist.md`](checklist.md), step 1). If the build you submit lacks them, delete the marked
-lines before you paste. Apple rejects listings that describe features the app does not have
-(guideline 2.3.1).
+**Every feature described here is in the app** (M1 to M5, checked against the code on
+`final-pass`, 2026-11-28), including *Generate for me*, *Local* questions, *Swap* and *Report
+question*. Apple rejects listings that describe features the app does not have (guideline
+2.3.1), so check again if a later build drops one.
 
 ---
 
@@ -92,18 +91,14 @@ MAKE A WALK
 
 GOOD TO KNOW
 • Creators sign in with Apple or Google. Players never need an account.
-• QuizWalk uses your location only during a walk, to open the questions. Your position is shared only with the walk's creator, and only after you tap Start walk. Other teams never see where you are.
+• QuizWalk uses your location during a walk, to open the questions, and when you make one, to put the pins where you stand. Your position is shared only with the walk's creator, and only after you tap Start walk. Other teams never see where you are.
 • Something wrong with a question? Report it from the answer screen.
 • No ads, no analytics, no tracking.
 • Delete your data, or your account, in Settings at any time.
 • QuizWalk is in English.
 ```
 
-**[M4] lines** in the description: the three bullets "Generate for me…", "Pick categories…",
-"Swap any question…", and "Something wrong with a question?…". Without the M4 screens, delete
-those four bullets; the rest matches the app on `m2-m5` today.
-
-Length: 2,191 characters with every line in, 1,788 without the [M4] lines.
+Length: 2,242 characters.
 
 ### Keywords (100 max)
 
@@ -187,7 +182,7 @@ to use it:
 | Content | Rights |
 |---|---|
 | Apple Maps tiles | Through Apple's MapKit, which shows its own attribution |
-| Place names from OpenStreetMap (via Overpass) and walking routes from openrouteservice | Open Database Licence; needs "© OpenStreetMap contributors" shown in the app. **Not shown yet**, see the checklist |
+| Place names from OpenStreetMap (via Overpass) and walking routes from openrouteservice | Open Database Licence. The app shows "© OpenStreetMap contributors · openrouteservice" over the map in C2 and C4, and in Settings → About → *Map data*, which links to openstreetmap.org/copyright |
 | *Local* questions written from Wikipedia and Wikidata text | Facts are reworded into new questions, and each answer shows "Source: {article}" with a link (`question.tsx`) |
 | Questions written by Gemini and by Claude Code sessions | Generated for this app; both providers' terms let the developer use the output |
 | Questions written by creators | The creator's own content |
@@ -213,7 +208,7 @@ the code on `m2-m5`, spec §6 and §13, and the privacy page.
 
 | Apple data type | What QuizWalk collects | Purpose | Linked to the user | Tracking |
 |---|---|---|---|---|
-| **Location → Precise Location** | A player's last known position (one point, overwritten as they walk, not a trail), from *Start walk* until the team finishes or leaves or the walk ends; kept until 30 days after the walk ends (`walks/{w}/positions/{uid}`). Also the Start pin and stops a creator places, which come from their location when they use *Add stop here* or the default Start pin | App Functionality | Yes | No |
+| **Location → Precise Location** | A player's last known position (one point, overwritten as they walk, not a trail), from *Start walk* until the team finishes or leaves or the walk ends; kept until 30 days after the walk ends (`walks/{w}/positions/{uid}`). Also the Start pin and stops a creator places, which come from their location when they use *Add stop here*, the default Start pin of *Build it myself*, or the *Generate for me* map, which opens where they stand | App Functionality | Yes | No |
 | **Contact Info → Name** | The creator's "name players see" (`users/{uid}.displayName`, `walks.ownerName`), and the name Apple or Google hands over at sign-in. Team names, which for a solo player are usually their own name | App Functionality | Yes | No |
 | **Contact Info → Email Address** | The address Apple or Google hands over when a creator signs in (Apple may give a relay address). Kept by Firebase Authentication; shown only to the creator in Settings | App Functionality | Yes | No |
 | **Identifiers → User ID** | The Firebase user ID: a random one per install for players, one per account for creators. The Apple or Google account ID behind a creator's sign-in | App Functionality | Yes | No |
@@ -251,5 +246,5 @@ walked, and shows the creator where teams are (spec §13). Nothing else.
   phone's location. A creator who drags the pins by hand gives no location at all.
 - *Device ID* covers the push token. Apple has no category for push tokens; Device ID is the
   common, cautious choice.
-- *Other Usage Data* only matters once the M4 screens call the generation functions. It does no
-  harm to declare it now.
+- *Other Usage Data* is the rate-limit record: the times of a creator's *Refresh*, *Next*,
+  *Swap* and *Suggest a question* requests, and of the route checks C4 makes after edits.

@@ -77,6 +77,7 @@ export default function Home() {
           <Pressable
             onPress={() => router.push('/join')}
             accessibilityRole="button"
+            accessibilityLabel="Join with code"
             style={({ pressed }) => [styles.joinPill, pressed && { backgroundColor: colors.tint }]}
           >
             <Txt variant="calloutStrong">Join with code</Txt>
@@ -432,6 +433,8 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   top: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    rowGap: spacing.sm,
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
@@ -439,8 +442,9 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xs,
   },
   wordmark: { letterSpacing: -0.6, color: colors.accent },
-  topActions: { flexDirection: 'row', gap: spacing.sm },
+  topActions: { flexDirection: 'row', gap: spacing.sm, flexShrink: 1 },
   joinPill: {
+    flexShrink: 1,
     minHeight: 48,
     paddingHorizontal: spacing.md,
     borderRadius: radius.pill,

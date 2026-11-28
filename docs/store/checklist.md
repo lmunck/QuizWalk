@@ -12,9 +12,12 @@ Your steps, in order. The texts to paste are in [`app-store.md`](app-store.md),
    personal account can apply for production, and the clock runs only once they have opted in.
    Create the app as a **Game** ([`google-play.md`](google-play.md) §1), then follow
    `m2-m3-delivery.md` "What you need to do" step 7.
-2. **Land the missing app pieces** (see "Code and spec mismatches" below): the M4 screens,
-   including *Report question*, and the OpenStreetMap attribution. Then decide whether v1.0 ships
-   with them. If not, remove the **[M4]** lines from every text before pasting.
+2. **Merge `final-pass` into `m2-m5`** (and `m2-m5` into `main` when you are ready). It holds
+   the last app pieces the texts describe: the OpenStreetMap attribution, reroute on save in C4,
+   the report tools and the accessibility fixes. The M4 screens, *Report question* included,
+   were already on `m2-m5`. v1.0 ships with all of them (decision 14 below), so every text is
+   pasted whole.
+   Then **set up the report email** ([`review-notes.md`](review-notes.md) §5, 5 minutes).
 3. **Finish the M5 account steps** in `m5-privacy-delivery.md` "What you need to do": the
    `privacy@qualk.dk` forward (the stores show it publicly), the nulkommafire.com line, and the
    Apple key for token revocation. Also the Google Maps Android key (spec §18), or Android shows
@@ -58,14 +61,15 @@ Your steps, in order. The texts to paste are in [`app-store.md`](app-store.md),
 
 ## Code and spec mismatches
 
-Found while writing these docs, against `m2-m5` at `7a3f61d`. None was changed here.
+Found while writing these docs, against `m2-m5` at `7a3f61d`. Rows 1 to 4 were fixed on
+`final-pass` (2026-11-28, `m5-release-delivery.md`); 5 and 6 are still open.
 
 | # | What | Spec | Code | Effect on the stores |
 |---|---|---|---|---|
-| 1 | **The M4 screens are not in the app**: *Generate for me* is hidden, and there is no *Swap*, *Suggest a question* or ***Report question*** | §3 C2, C5, G2, P4; §8 "Reports and blocking" | `app/src/app/create.tsx` ("hidden until M4"); no report code in `app/src` | Google Play's AI-generated content policy needs in-app reporting once AI questions reach players. Apple 1.2 expects a way to report user-generated content, and today there is none, also for creator-written questions. Ship with *Report question*, or expect Apple to ask |
-| 2 | **No OpenStreetMap / openrouteservice attribution** in the app | §10: "shown in C4 and in Settings" | Settings' About has none; nothing in `app/src` | Needed by the ODbL as soon as routes or place names from OSM are shown (M4). The content-rights answer assumes it |
-| 3 | **Reports on creator-written questions are only logged** | §8: review is "a script or the Firestore console" | `functions/src/reports.ts`: "Creator-written ones are only logged"; the report is kept in `questionReports` | The review notes say we review reports. Nothing tells you when one arrives: check `questionReports` in the Firestore console regularly, or set a Cloud Logging alert on "Report on a creator-written question" |
-| 4 | **The creator's location is used for pins** | §13: "Location is only collected during an active walk" | `app/src/location/places.ts`: the Start pin and *Add stop here* use the phone's location | Declared in both privacy forms. The privacy page and §13 could say so in one line: "When you build a walk, the app can place the Start pin and stops at your location." |
+| 1 | **Fixed.** M4 app merged; reroute on save added on `final-pass`. Was: **the M4 screens are not in the app**: *Generate for me* is hidden, and there is no *Swap*, *Suggest a question* or ***Report question*** | §3 C2, C5, G2, P4; §8 "Reports and blocking" | `app/src/app/create.tsx` ("hidden until M4"); no report code in `app/src` | Google Play's AI-generated content policy needs in-app reporting once AI questions reach players. Apple 1.2 expects a way to report user-generated content, and today there is none, also for creator-written questions. Ship with *Report question*, or expect Apple to ask |
+| 2 | **Fixed.** Shown over the map in C2 and C4, and in Settings → About → *Map data*. Was: **no OpenStreetMap / openrouteservice attribution** in the app | §10: "shown in C4 and in Settings" | Settings' About has none; nothing in `app/src` | Needed by the ODbL as soon as routes or place names from OSM are shown (M4). The content-rights answer assumes it |
+| 3 | **Fixed.** `review-bank.ts list-reports`, `close-reports` and `remove-walk`; every report is logged for an email alert (`review-notes.md` §5). Was: **reports on creator-written questions are only logged** | §8: review is "a script or the Firestore console" | `functions/src/reports.ts`: "Creator-written ones are only logged"; the report is kept in `questionReports` | The review notes say we review reports. Nothing tells you when one arrives: check `questionReports` in the Firestore console regularly, or set a Cloud Logging alert on "Report on a creator-written question" |
+| 4 | **Fixed.** One line on the privacy page and in §13. Was: **the creator's location is used for pins** | §13: "Location is only collected during an active walk" | `app/src/location/places.ts`: the Start pin and *Add stop here* use the phone's location | Declared in both privacy forms. The privacy page and §13 could say so in one line: "When you build a walk, the app can place the Start pin and stops at your location." |
 | 5 | **The store name may not match the app's name** | §1: "QuizWalk" preferred, "Qualk" fallback | `app.config.ts` `name: 'QuizWalk'`, and "QuizWalk" all through the copy | If the store name becomes "Qualk", the home screen and screens still say QuizWalk (Apple 2.3.8) |
 | 6 | **P1's location card does not mention the pocket** | §9 pocket mode | P1: "Each question opens when you reach its stop…" | Not wrong, but adding "…also with the phone in your pocket, after Start walk" would make the background use plain to both reviewers before the system prompt |
 
@@ -101,12 +105,13 @@ Found while writing these docs, against `m2-m5` at `7a3f61d`. None was changed h
     script is the alternative.
 13. **Screenshots are captioned on a plain canvas** in the app's colours, 1320 × 2868 and
     1080 × 1920, so one design serves both stores and Android's tall screens fit Play's 2:1 rule.
+14. **v1.0 ships with the M4 screens** (made on `final-pass`, 2026-11-28). They are built,
+    tested and merged, and *Report question* is what Apple 1.2 and Play's AI-generated content
+    policy ask for. Leaving them out would mean rewriting every text and the review notes.
 
 ## Your decisions
 
 - **EU trader status (App Store Connect → Business → Digital Services Act).** Apple will not
   show the app in EU storefronts without it. If NulKommaFire is a trader (a business), Apple
   publishes its address, phone and email on the EU listing. Only you can answer this.
-- **Ship v1.0 with or without the M4 screens** (mismatch 1). Without *Report question*, Apple's
-  review may stop at 1.2.
 - **The demo walk's questions**: yours to write (in the app), or the seed script's.

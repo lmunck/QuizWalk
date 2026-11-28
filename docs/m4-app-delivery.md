@@ -151,8 +151,7 @@ the Report link is 15 pt like the rest of P4.
    the same checks as on the iPhone. Google Maps turns the map with a two-finger twist; the turn
    buttons should do the same. Tell me if the loop ever goes "down" the screen instead of up, or
    if zoom steps feel too big.
-3. **Reroute on save in C4** (plan M4·2's app side) is not built: after a creator moves, adds or
-   removes a stop, the distance is straight lines ("as the crow flies") until the next New
-   route, and *Off path* / *on water* are not shown. It is the next small piece of M4.
+3. **Reroute on save in C4** (plan M4·2's app side) was built in the final pass: see
+   [`m5-release-delivery.md`](m5-release-delivery.md).
 4. **Deploy and import, from `m4-backend-delivery.md`**, still apply: deploy the functions from
    `m2-m5`, and import the seed bank into `qualk-a173e`. This PR changes neither.

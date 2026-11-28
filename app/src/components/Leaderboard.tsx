@@ -74,7 +74,7 @@ export function Leaderboard({
                 {r.name}
                 {mine ? '  · you' : ''}
               </Txt>
-              <Txt variant="caption" color={colors.secondary} numberOfLines={1}>
+              <Txt variant="callout" color={colors.secondary} numberOfLines={1}>
                 {status}
                 {r.note ? ` · ${r.note}` : ''}
               </Txt>

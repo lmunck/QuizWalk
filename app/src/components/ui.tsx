@@ -4,6 +4,7 @@ import {
   Pressable,
   StyleSheet,
   TextInput,
+  useWindowDimensions,
   View,
   type StyleProp,
   type TextInputProps,
@@ -85,6 +86,9 @@ export function Row({
   right?: ReactNode;
   destructive?: boolean;
 }) {
+  // At the largest text sizes the value goes under the label, so neither is squeezed to a
+  // letter per line.
+  const stacked = useWindowDimensions().fontScale > 1.6;
   const content = (
     <View style={[styles.row, !last && styles.rowDivider]}>
       {icon ? (
@@ -94,13 +98,14 @@ export function Row({
         <Txt variant="callout" color={destructive ? colors.errorText : colors.ink}>
           {label}
         </Txt>
+        {value && stacked ? <Txt variant="calloutStrong">{value}</Txt> : null}
         {detail ? (
           <Txt variant="caption" color={colors.muted}>
             {detail}
           </Txt>
         ) : null}
       </View>
-      {value ? (
+      {value && !stacked ? (
         <Txt variant="calloutStrong" style={styles.rowValue}>
           {value}
         </Txt>
@@ -115,6 +120,7 @@ export function Row({
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={value ? `${label}, ${value}` : label}
+      accessibilityHint={detail}
       style={({ pressed }) => (pressed ? { backgroundColor: colors.tint } : null)}
     >
       {content}
@@ -297,7 +303,7 @@ export function Stepper({
 }) {
   return (
     <View style={styles.stepperRow}>
-      <Txt variant="callout" style={styles.flex}>
+      <Txt variant="callout" style={styles.flexShrinkText}>
         {label}
       </Txt>
       <View
@@ -359,8 +365,14 @@ export function Segmented<T extends string>({
   onChange: (v: T) => void;
   label: string;
 }) {
+  // At the largest text sizes the choices go one under the other instead of breaking words.
+  const stacked = useWindowDimensions().fontScale > 1.6;
   return (
-    <View style={styles.segmented} accessibilityRole="radiogroup" accessibilityLabel={label}>
+    <View
+      style={[styles.segmented, stacked ? styles.segmentedStacked : null]}
+      accessibilityRole="radiogroup"
+      accessibilityLabel={label}
+    >
       {options.map((o) => {
         const selected = o.value === value;
         return (
@@ -515,7 +527,15 @@ const styles = StyleSheet.create({
   },
   inputMulti: { minHeight: 96, textAlignVertical: 'top' },
   inputError: { borderColor: colors.error },
-  stepperRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, minHeight: 56 },
+  stepperRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: spacing.md,
+    minHeight: 56,
+  },
+  flexShrinkText: { flexShrink: 1 },
   stepper: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   stepButton: {
     width: minTouchTarget,
@@ -545,6 +565,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.sm,
   },
   segmentSelected: { backgroundColor: colors.ink },
+  segmentedStacked: { flexDirection: 'column', borderRadius: radius.lg },
   choice: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -25,6 +25,7 @@ export function Sheet({
   header,
   children,
   footer,
+  above,
   peek = 150,
   initial = 1,
   onLevelChange,
@@ -32,6 +33,8 @@ export function Sheet({
   header?: ReactNode;
   children: ReactNode;
   footer?: ReactNode;
+  /** Drawn just above the sheet's top edge and moves with it, such as the map's attribution. */
+  above?: ReactNode;
   /** Height in points when collapsed, above the footer. */
   peek?: number;
   initial?: SheetLevel;
@@ -104,29 +107,37 @@ export function Sheet({
 
   return (
     <Animated.View style={[styles.sheet, { height }]}>
-      <View {...pan.panHandlers}>
-        <Pressable
-          onPress={cycle}
-          accessibilityRole="button"
-          accessibilityLabel={level === 2 ? 'Collapse the list' : 'Expand the list'}
-          style={styles.handleArea}
-          hitSlop={8}
-        >
-          <View style={styles.handle} />
-        </Pressable>
-        {header}
-      </View>
-      <View style={styles.body}>{children}</View>
-      {footer ? (
-        <View
-          style={[styles.footer, { paddingBottom: Math.max(insets.bottom, spacing.md) }]}
-          onLayout={(e: LayoutChangeEvent) => setFooterH(e.nativeEvent.layout.height)}
-        >
-          {footer}
+      {/* At full height the map is all but covered, and the slot would meet the top bar. */}
+      {above && level < 2 ? (
+        <View pointerEvents="box-none" style={styles.above}>
+          {above}
         </View>
-      ) : (
-        <View style={{ height: insets.bottom }} />
-      )}
+      ) : null}
+      <View style={styles.inner}>
+        <View {...pan.panHandlers}>
+          <Pressable
+            onPress={cycle}
+            accessibilityRole="button"
+            accessibilityLabel={level === 2 ? 'Collapse the list' : 'Expand the list'}
+            style={styles.handleArea}
+            hitSlop={8}
+          >
+            <View style={styles.handle} />
+          </Pressable>
+          {header}
+        </View>
+        <View style={styles.body}>{children}</View>
+        {footer ? (
+          <View
+            style={[styles.footer, { paddingBottom: Math.max(insets.bottom, spacing.md) }]}
+            onLayout={(e: LayoutChangeEvent) => setFooterH(e.nativeEvent.layout.height)}
+          >
+            {footer}
+          </View>
+        ) : (
+          <View style={{ height: insets.bottom }} />
+        )}
+      </View>
     </Animated.View>
   );
 }
@@ -145,8 +156,15 @@ const styles = StyleSheet.create({
     shadowRadius: 16,
     shadowOffset: { width: 0, height: -2 },
     elevation: 12,
+  },
+  // The rounded corners clip here, so the shadow and the `above` slot stay outside.
+  inner: {
+    flex: 1,
+    borderTopLeftRadius: radius.xl,
+    borderTopRightRadius: radius.xl,
     overflow: 'hidden',
   },
+  above: { position: 'absolute', left: 0, right: 0, bottom: '100%', paddingBottom: spacing.xs },
   handleArea: { alignItems: 'center', paddingTop: 10, paddingBottom: 6, minHeight: 28 },
   handle: { width: 44, height: 5, borderRadius: 3, backgroundColor: colors.controlBorder },
   body: { flex: 1 },

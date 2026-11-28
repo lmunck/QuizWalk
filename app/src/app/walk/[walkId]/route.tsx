@@ -3,7 +3,8 @@
  * Tap a row to edit it (C5); Move up / Move down reorder; tapping a pin selects its row. Rows
  * mark blocking problems in the error style and warnings quietly. Publish & share is always
  * tappable and lists what blocks it (spec §3 C4). The distance is the routed one while the
- * route matches the pins (`route.key`), and straight lines, saying so, after an edit. Generated
+ * route matches the pins (`route.key`), and straight lines, saying so, after an edit until
+ * `reroute` has run: once the pins settle, and at once on Publish (useRerouteOnSave). Generated
  * walks offer New route, which confirms and goes back to C2's map screen.
  */
 import {
@@ -16,6 +17,7 @@ import {
   plural,
   routeKey,
   stopProblems,
+  walkDistanceM,
   walkProblems,
   type LatLng,
 } from '@qualk/shared';
@@ -37,6 +39,7 @@ import { Button, IconButton } from '@/components/Button';
 import { Dialog } from '@/components/Dialog';
 import { Icon } from '@/components/Icon';
 import {
+  MapAttribution,
   QMap,
   regionFor,
   RouteLine,
@@ -61,6 +64,7 @@ import {
   type Stop,
 } from '@/data/walks';
 import { PlaceSearch } from '@/features/PlaceSearch';
+import { useRerouteOnSave } from '@/features/useReroute';
 import { useOffline } from '@/lib/network';
 import { currentPlace, labelFor } from '@/location/places';
 import { colors, fonts, radius, spacing } from '@/theme/tokens';
@@ -81,6 +85,7 @@ export default function RouteBuilder() {
   const [title, setTitle] = useState<string>();
   const [confirmNewRoute, setConfirmNewRoute] = useState(false);
   const offline = useOffline();
+  const rerouting = useRerouteOnSave(walk.data, stops.data, offline);
 
   const problems = useMemo(
     () => (walk.data ? walkProblems(walk.data, stops.data) : { blocking: [], warnings: [] }),
@@ -116,7 +121,13 @@ export default function RouteBuilder() {
 
   const list = stops.data;
   const points: LatLng[] = [w.start, ...list.map((s) => s.location)];
-  const minutes = estimateWalkMinutes(w.distanceM, list.length);
+  const distance = routed
+    ? (w.route?.distanceM ?? w.distanceM)
+    : walkDistanceM(
+        w.start,
+        list.map((s) => s.location),
+      );
+  const minutes = estimateWalkMinutes(distance, list.length);
 
   const add = async (location: LatLng, label?: string) => {
     if (list.length >= 12) {
@@ -163,6 +174,8 @@ export default function RouteBuilder() {
     }
     setPublishing(true);
     try {
+      // A change still waiting to be routed goes first, so players see the routed distance.
+      await rerouting.flush();
       await publishWalk(w.id);
       router.replace(`/walk/${w.id}/share`);
     } catch (err) {
@@ -268,6 +281,7 @@ export default function RouteBuilder() {
       <Sheet
         peek={210}
         initial={1}
+        above={<MapAttribution style={styles.attribution} />}
         header={
           <View style={styles.sheetHeader}>
             <TextInput
@@ -283,11 +297,25 @@ export default function RouteBuilder() {
               accessibilityLabel="Walk title"
               returnKeyType="done"
             />
-            <Txt variant="caption" color={colors.secondary}>
-              {list.length === 0
-                ? 'No stops yet'
-                : `${plural(list.length, 'stop')} · ${formatDistance(w.distanceM)}${routed ? '' : ' as the crow flies'} · ${formatMinutes(minutes)}`}
-            </Txt>
+            <View style={styles.summaryRow} accessibilityLiveRegion="polite">
+              <Txt variant="caption" color={colors.secondary} style={styles.flexShrink}>
+                {list.length === 0
+                  ? 'No stops yet'
+                  : `${plural(list.length, 'stop')} · ${formatDistance(distance)}${routed ? '' : ' as the crow flies'} · ${formatMinutes(minutes)}`}
+              </Txt>
+              {rerouting.status.kind === 'routing' ? (
+                <View
+                  style={styles.routing}
+                  accessible
+                  accessibilityLabel="Finding the walking route"
+                >
+                  <ActivityIndicator size="small" color={colors.secondary} />
+                  <Txt variant="caption" color={colors.secondary}>
+                    Routing…
+                  </Txt>
+                </View>
+              ) : null}
+            </View>
             <View style={styles.addRow}>
               <Button
                 label="Add stop here"
@@ -334,6 +362,9 @@ export default function RouteBuilder() {
               icon="offline"
               text="You're offline. Edits are kept on this phone and sent when you're back online. Publishing needs a connection."
             />
+          ) : null}
+          {rerouting.status.kind === 'failed' && list.length > 0 ? (
+            <Banner kind="info" icon="info" text={rerouting.status.message} />
           ) : null}
           {list.length === 0 ? (
             <Banner
@@ -448,13 +479,14 @@ function StopRow({
 }) {
   const p = stopProblems(stop, number);
   const problem = p.blocking[0];
-  const warning = p.warnings[0];
+  // "Check this answer · Off path": every warning, since reroute can add one to unverified.
+  const warning = p.warnings.length > 0 ? p.warnings.map((x) => x.message).join(' · ') : undefined;
   return (
     <View style={[styles.row, selected ? styles.rowSelected : null]}>
       <Pressable
         onPress={onPress}
         accessibilityRole="button"
-        accessibilityLabel={`Stop ${number}, ${stop.placeName || 'no name'}. ${problem ? problem.message : stop.question}. Edit.`}
+        accessibilityLabel={`Stop ${number}, ${stop.placeName || 'no name'}. ${problem ? problem.message : stop.question}.${warning && !problem ? ` ${warning}.` : ''} Edit.`}
         style={({ pressed }) => [styles.rowMain, pressed && { opacity: 0.7 }]}
       >
         <View style={[styles.num, problem ? { backgroundColor: colors.error } : null]}>
@@ -471,9 +503,17 @@ function StopRow({
               {problem.message.replace(`Stop ${number} `, '').replace(/^./, (c) => c.toUpperCase())}
             </Txt>
           ) : warning ? (
-            <Txt variant="caption" color={colors.warningText} numberOfLines={1}>
-              {warning.message}
-            </Txt>
+            <View style={styles.warningLine}>
+              <Icon name="warning" size={14} color={colors.warningText} />
+              <Txt
+                variant="caption"
+                color={colors.warningText}
+                numberOfLines={1}
+                style={styles.flexShrink}
+              >
+                {warning}
+              </Txt>
+            </View>
           ) : (
             <Txt variant="caption" color={colors.secondary} numberOfLines={1}>
               {stop.question}
@@ -502,6 +542,11 @@ const styles = StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   flex: { flex: 1 },
   flexWide: { flex: 1.6 },
+  flexShrink: { flexShrink: 1 },
+  summaryRow: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: spacing.sm },
+  routing: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
+  warningLine: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
+  attribution: { marginLeft: spacing.sm },
   topBar: {
     position: 'absolute',
     left: spacing.md,

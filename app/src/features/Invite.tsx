@@ -135,6 +135,7 @@ export function CodeCard({ walk }: { walk: Walk }) {
           toast('Link copied');
         }}
         accessibilityRole="button"
+        accessibilityLabel={`Join link, ${link}. Copy.`}
         style={styles.linkRow}
       >
         <Txt variant="caption" color={colors.onInkMuted}>

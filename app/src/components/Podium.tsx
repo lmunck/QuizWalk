@@ -57,5 +57,5 @@ const styles = StyleSheet.create({
     paddingTop: spacing.md - 4,
     gap: 2,
   },
-  podiumRank: { fontFamily: fonts.heading, fontSize: 28 },
+  podiumRank: { fontFamily: fonts.heading, fontSize: 28, lineHeight: 34 },
 });
