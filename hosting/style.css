@@ -54,3 +54,50 @@ p {
     monospace;
   letter-spacing: 0.15em;
 }
+a {
+  color: var(--accent);
+}
+footer {
+  margin-top: 16px;
+  font-size: 15px;
+}
+/* Long pages such as /privacy: wider, left-aligned. */
+main.doc {
+  max-width: 720px;
+  text-align: left;
+}
+.doc h2 {
+  margin: 28px 0 8px;
+  font-size: 22px;
+}
+.doc h3 {
+  margin: 20px 0 4px;
+  font-size: 18px;
+}
+.doc ul {
+  padding-left: 20px;
+}
+.doc li {
+  margin: 6px 0;
+}
+.doc table {
+  width: 100%;
+  margin: 12px 0;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.doc th,
+.doc td {
+  padding: 8px 6px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.doc th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.doc td:first-child {
+  width: 36%;
+  font-weight: 600;
+}

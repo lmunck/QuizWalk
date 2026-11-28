@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase-admin/app';
+import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
-import { setGlobalOptions } from 'firebase-functions';
+import { logger, setGlobalOptions } from 'firebase-functions';
 import { defineBoolean } from 'firebase-functions/params';
 import {
   onDocumentCreated,
@@ -20,6 +21,11 @@ import {
   recomputeAllTeams,
   recomputeTeam,
 } from './core';
+import {
+  deleteAccount as deleteAccountCore,
+  deleteMyData as deleteMyDataCore,
+  purgeEndedWalks,
+} from './privacy';
 import { pushBlockedAlert, pushFinishNews, pushStatusChange, teamJustLeft } from './push';
 
 // Firestore lives in europe-west1 and functions run next to it (docs/v1-spec.md §1).
@@ -82,6 +88,32 @@ export const duplicateWalk = onCall(callable, (req) =>
   run(() => duplicateWalkCore(db(), creatorUid(req), req.data?.walkId)),
 );
 
+// ------------------------------------------------------------------ privacy (M5)
+
+/** Any signed-in user, anonymous included: a participant deletes their data without an account. */
+function signedInUid(req: CallableRequest): string {
+  if (!req.auth) throw new HttpsError('unauthenticated', 'Sign in first.');
+  return req.auth.uid;
+}
+
+/** S1 *Delete my data*: this install's teams, answers, positions and `playing` list. */
+export const deleteMyData = onCall(callable, (req) =>
+  run(() => deleteMyDataCore(db(), signedInUid(req))),
+);
+
+/** S1 *Delete account and all data*: walks, participant data, `users/{uid}`, the Auth user. */
+export const deleteAccount = onCall(callable, (req) =>
+  run(() =>
+    deleteAccountCore(db(), signedInUid(req), async (uid) => {
+      try {
+        await getAuth().deleteUser(uid);
+      } catch (err) {
+        if ((err as { code?: string }).code !== 'auth/user-not-found') throw err;
+      }
+    }),
+  ),
+);
+
 // ------------------------------------------------------------------ triggers
 
 /** Scores the answer and derives the team's totals from scratch (m1-design §5). */
@@ -137,5 +169,14 @@ export const hourly = onSchedule(
   { schedule: 'every 60 minutes', timeZone: 'Europe/Copenhagen' },
   async () => {
     await endExpiredWalks(db());
+  },
+);
+
+/** 30 days after a walk ends: participant data out, join code released (spec §6, §8). */
+export const daily = onSchedule(
+  { schedule: 'every day 04:00', timeZone: 'Europe/Copenhagen', timeoutSeconds: 540 },
+  async () => {
+    const purged = await purgeEndedWalks(db());
+    if (purged.length > 0) logger.info('Retention: participant data deleted', { walks: purged });
   },
 );
