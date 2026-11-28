@@ -11,5 +11,11 @@
     "noEmit": true,
     "types": ["node"]
   },
-  "include": ["src", "build.mjs", "vitest.config.ts", "../scripts/fill-bank.ts", "../scripts/review-bank.ts"]
+  "include": [
+    "src",
+    "build.mjs",
+    "vitest.config.ts",
+    "../scripts/fill-bank.ts",
+    "../scripts/review-bank.ts"
+  ]
 }
