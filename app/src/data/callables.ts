@@ -1,5 +1,16 @@
 /** Callable Cloud Functions (spec §8). These need a connection; callers show their errors. */
-import type { WalkOpenFor, WalkProblem } from '@qualk/shared';
+import type {
+  CallableErrorDetails,
+  GenerateWalkRequest,
+  GenerateWalkResponse,
+  RerouteResponse,
+  RouteForViewRequest,
+  RouteForViewResponse,
+  SwapQuestionRequest,
+  SwapQuestionResponse,
+  WalkOpenFor,
+  WalkProblem,
+} from '@qualk/shared';
 import { httpsCallable } from '@react-native-firebase/functions';
 
 import { functions } from './firebase';
@@ -27,6 +38,45 @@ export function deleteWalk(walkId: string) {
 
 export function duplicateWalk(walkId: string) {
   return call<{ walkId: string }, { walkId: string }>('duplicateWalk', { walkId });
+}
+
+/** C2's Refresh (m4-generation-design §11). Writes nothing. */
+export function routeForView(req: RouteForViewRequest) {
+  return call<RouteForViewRequest, RouteForViewResponse>('routeForView', req);
+}
+
+/** C2's Next and C3's Try again. Progress is in generationJobs/{walkId}. */
+export function generateWalk(req: GenerateWalkRequest) {
+  return call<GenerateWalkRequest, GenerateWalkResponse>('generateWalk', req);
+}
+
+/** C5's Swap and G2's Suggest a question: a proposal to accept or discard. Writes nothing. */
+export function swapQuestion(req: SwapQuestionRequest) {
+  return call<SwapQuestionRequest, SwapQuestionResponse>('swapQuestion', req);
+}
+
+/**
+ * C4 after edits: routes the pins along paths and writes the route, its distance and the
+ * stops' Off path / on water warnings (spec §8). Pins are not moved.
+ */
+export function reroute(walkId: string) {
+  return call<{ walkId: string }, RerouteResponse>('reroute', { walkId });
+}
+
+/** The `details` an M4 callable's error carries (`reason`, `retryAfterS`, …). */
+export function errorDetails(err: unknown): CallableErrorDetails {
+  const details = (err as { details?: unknown } | undefined)?.details;
+  return details && typeof details === 'object' ? (details as CallableErrorDetails) : {};
+}
+
+/** S1 *Delete my data*: this install's teams, answers, positions and playing list (spec §13). */
+export function deleteMyData() {
+  return call<Record<string, never>, { teams: number }>('deleteMyData', {});
+}
+
+/** S1 *Delete account and all data*: walks, participant data and the account (spec §8). */
+export function deleteAccount() {
+  return call<Record<string, never>, { walks: number; teams: number }>('deleteAccount', {});
 }
 
 /** The problems a refused publish or open carries, for listing them (C4, C6). */

@@ -15,7 +15,7 @@ import { ChoiceCard } from '@/components/ui';
 import { problemsFrom, openWalk } from '@/data/callables';
 import { errorMessage } from '@/data/errors';
 import { setUserPushToken } from '@/data/users';
-import { pushPermission, requestPushToken } from '@/lib/push';
+import { pushPermission, pushTokenIfAllowed, requestPushToken } from '@/lib/push';
 import { colors, spacing } from '@/theme/tokens';
 
 export function OpenWalkDialog({
@@ -41,8 +41,16 @@ export function OpenWalkDialog({
     setError(undefined);
     try {
       await openWalk(walkId, openFor);
-      if ((await pushPermission()) === 'undetermined') setAskPush(true);
-      else onOpened();
+      const permission = await pushPermission();
+      if (permission === 'undetermined') {
+        setAskPush(true);
+        return;
+      }
+      // Already allowed (an earlier walk, or Settings): keep the token current, without asking.
+      if (permission === 'granted' && uid) {
+        void pushTokenIfAllowed().then((token) => token && setUserPushToken(uid, token));
+      }
+      onOpened();
     } catch (err) {
       const problems = problemsFrom(err);
       setError(

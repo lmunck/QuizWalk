@@ -4,6 +4,9 @@
  * out, and cannot be restarted: backing out or restarting the app returns to the same clock.
  */
 import {
+  REPORT_REASON_LABELS,
+  REPORT_REASONS,
+  REPORT_THANKS,
   scoreAnswer,
   SPEED_BONUS_MAX,
   SPEED_BONUS_WINDOW_MS,
@@ -18,9 +21,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAuth } from '@/auth/AuthProvider';
 import { Button, IconButton } from '@/components/Button';
+import { Dialog } from '@/components/Dialog';
 import { Icon } from '@/components/Icon';
 import { Txt } from '@/components/Txt';
 import { Card, Pill } from '@/components/ui';
+import { reportQuestion } from '@/data/reports';
 import { submitAnswer, useAnswers } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
 import { tapRight, tapWrong } from '@/lib/feedback';
@@ -48,6 +53,8 @@ export default function Question() {
   const [openedAt, setOpenedAt] = useState<number | null | undefined>(undefined);
   const [now, setNow] = useState(clock);
   const [local, setLocal] = useState<{ choice: number; scored: ScoredAnswer }>();
+  const [reporting, setReporting] = useState(false);
+  const [reported, setReported] = useState(false);
 
   // A clock that already started (backed out, app restarted) continues where it was.
   useEffect(() => {
@@ -111,10 +118,12 @@ export default function Question() {
     void (scored.correct ? tapRight() : tapWrong());
   };
 
+  // Back to the walk screen: popped to when it is underneath, put in place otherwise (a
+  // question opened from the arrival notification while Home was showing). The walk screen
+  // must be mounted, because it points pocket mode at the next stop.
   const next = () => {
     if (isLast) router.replace(`/play/${walkId}/finish`);
-    else if (router.canGoBack()) router.back();
-    else router.replace(`/play/${walkId}/stop`);
+    else router.dismissTo({ pathname: '/play/[walkId]/stop', params: { walkId } });
   };
 
   const header = (
@@ -141,7 +150,7 @@ export default function Question() {
           <View style={styles.arrivedBadge}>
             <Icon name="flag" size={34} color={colors.white} />
           </View>
-          <Txt variant="label" color={colors.accent} caps center>
+          <Txt variant="labelWalk" color={colors.accent} caps center>
             {noBonus ? `Stop ${number}` : "You're here"}
           </Txt>
           <Txt variant="display" center accessibilityRole="header">
@@ -149,7 +158,7 @@ export default function Question() {
           </Txt>
           {stop.hint ? (
             <Card style={styles.hint}>
-              <Txt variant="label" color={colors.secondary} caps>
+              <Txt variant="labelWalk" color={colors.secondary} caps>
                 Look around
               </Txt>
               <Txt variant="body">{stop.hint}</Txt>
@@ -214,7 +223,7 @@ export default function Question() {
             <View style={styles.bonusTrack}>
               <View style={[styles.bonusFill, { width: `${fraction * 100}%` }]} />
             </View>
-            <Txt variant="caption" color={colors.muted}>
+            <Txt variant="callout" color={colors.muted}>
               Right answers score 10, plus up to {SPEED_BONUS_MAX} for speed. There is no time
               limit.
             </Txt>
@@ -262,7 +271,9 @@ export default function Question() {
                   ) : state === 'wrong' ? (
                     <Icon name="cross" size={16} color={colors.white} strokeWidth={3} />
                   ) : (
-                    <Txt style={styles.letterText}>{LETTERS[i]}</Txt>
+                    <Txt style={styles.letterText} maxFontSizeMultiplier={1.3}>
+                      {LETTERS[i]}
+                    </Txt>
                   )}
                 </View>
                 <Txt variant="body" style={styles.flex}>
@@ -314,16 +325,64 @@ export default function Question() {
                     accessibilityRole="link"
                     style={styles.source}
                   >
-                    <Txt variant="caption" color={colors.accent}>
+                    <Txt variant="callout" color={colors.accent}>
                       Source: {stop.source.title}
                     </Txt>
                   </Pressable>
                 ) : null}
               </Card>
             ) : null}
+            {reported ? (
+              <Txt
+                variant="callout"
+                color={colors.secondary}
+                center
+                accessibilityLiveRegion="polite"
+              >
+                {REPORT_THANKS}
+              </Txt>
+            ) : (
+              <Pressable
+                onPress={() => setReporting(true)}
+                accessibilityRole="button"
+                accessibilityLabel="Report question"
+                accessibilityHint="Asks what is wrong with it."
+                style={styles.report}
+              >
+                <Txt variant="callout" color={colors.secondary} style={styles.reportText}>
+                  Report question
+                </Txt>
+              </Pressable>
+            )}
           </View>
         ) : null}
       </ScrollView>
+      <Dialog
+        visible={reporting}
+        title="Report this question"
+        text="What's wrong with it?"
+        onDismiss={() => setReporting(false)}
+        actions={[
+          ...REPORT_REASONS.map((reason) => ({
+            label: REPORT_REASON_LABELS[reason],
+            kind: 'secondary' as const,
+            onPress: () => {
+              if (uid) {
+                reportQuestion({
+                  uid,
+                  walkId,
+                  stopId,
+                  bankQuestionId: stop.bankQuestionId,
+                  reason,
+                });
+              }
+              setReporting(false);
+              setReported(true);
+            },
+          })),
+          { label: 'Cancel', kind: 'ghost' as const, onPress: () => setReporting(false) },
+        ]}
+      />
       {done ? (
         <View style={[styles.footer, { paddingBottom: Math.max(insets.bottom, spacing.md) }]}>
           <Button
@@ -368,7 +427,13 @@ const styles = StyleSheet.create({
   hint: { gap: spacing.xs, alignSelf: 'stretch' },
   body: { paddingHorizontal: spacing.lg, paddingBottom: spacing.xl, gap: spacing.lg },
   bonus: { gap: spacing.sm },
-  bonusRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' },
+  bonusRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    columnGap: spacing.sm,
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+  },
   bonusSeconds: { fontFamily: fonts.heading, fontSize: 17, fontVariant: ['tabular-nums'] },
   bonusTrack: { height: 10, borderRadius: 5, backgroundColor: colors.track, overflow: 'hidden' },
   bonusFill: { height: 10, borderRadius: 5, backgroundColor: colors.accent },
@@ -403,7 +468,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: colors.surface,
   },
-  letterText: { fontFamily: fonts.heading, fontSize: 14, color: colors.ink },
+  letterText: { fontFamily: fonts.heading, fontSize: 15, color: colors.ink },
   feedback: { gap: spacing.md - 4 },
   verdict: {
     flexDirection: 'row',
@@ -415,6 +480,8 @@ const styles = StyleSheet.create({
   verdictRight: { backgroundColor: colors.successFill },
   verdictWrong: { backgroundColor: colors.errorFill },
   source: { marginTop: spacing.sm, minHeight: 32, justifyContent: 'center' },
+  report: { alignSelf: 'center', minHeight: 48, justifyContent: 'center', paddingHorizontal: 12 },
+  reportText: { textDecorationLine: 'underline' },
   footer: {
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.sm + 4,

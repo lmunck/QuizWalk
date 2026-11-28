@@ -1,0 +1,1214 @@
+{
+  "category": "nature",
+  "subcategory": "mammals",
+  "questions": [
+    {
+      "id": "nature.mammals.kids.01",
+      "difficulty": "kids",
+      "question": "Which animal has a long trunk?",
+      "correct": "Elephant",
+      "wrong": ["Giraffe", "Hippo", "Rhino"],
+      "explanation": "An elephant uses its trunk to smell, drink, pick things up and even to hug other elephants.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.02",
+      "difficulty": "kids",
+      "question": "What is a baby cow called?",
+      "correct": "Calf",
+      "wrong": ["Foal", "Lamb", "Cub"],
+      "explanation": "Baby elephants, giraffes and whales are also called calves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.03",
+      "difficulty": "kids",
+      "question": "Which animal has a very long neck and spots?",
+      "correct": "Giraffe",
+      "wrong": ["Zebra", "Camel", "Antelope"],
+      "explanation": "A giraffe's neck is so long that it can eat leaves high up in the trees.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.04",
+      "difficulty": "kids",
+      "question": "What do giant pandas mainly eat?",
+      "correct": "Bamboo",
+      "wrong": ["Fish", "Berries", "Meat"],
+      "explanation": "A panda can eat bamboo for many hours every day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.05",
+      "difficulty": "kids",
+      "question": "Which animal carries its baby in a pouch and hops?",
+      "correct": "Kangaroo",
+      "wrong": ["Rabbit", "Squirrel", "Fox"],
+      "explanation": "A baby kangaroo is called a joey. It lives in its mother's pouch for months.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.06",
+      "difficulty": "kids",
+      "question": "What is a baby bear called?",
+      "correct": "Cub",
+      "wrong": ["Joey", "Lamb", "Foal"],
+      "explanation": "Bear cubs are born very small and stay with their mother for a year or more.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.07",
+      "difficulty": "kids",
+      "question": "Which black-and-white striped animal lives in Africa?",
+      "correct": "Zebra",
+      "wrong": ["Lion", "Elephant", "Hippo"],
+      "explanation": "Every zebra has its own pattern of stripes, just like people have fingerprints.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.08",
+      "difficulty": "kids",
+      "question": "Which big cat has a mane?",
+      "correct": "Lion",
+      "wrong": ["Tiger", "Leopard", "Cheetah"],
+      "explanation": "Male lions grow a mane, which makes them look big and strong. Lions live in groups called prides.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.09",
+      "difficulty": "kids",
+      "question": "Which mammal can fly?",
+      "correct": "Bat",
+      "wrong": ["Mouse", "Rabbit", "Hedgehog"],
+      "explanation": "Bats are the only mammals that can truly fly. Flying squirrels can only glide from tree to tree.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.10",
+      "difficulty": "kids",
+      "question": "What do we call animals that eat only plants?",
+      "correct": "Herbivores",
+      "wrong": ["Carnivores", "Predators", "Scavengers"],
+      "explanation": "Cows, deer and rabbits are herbivores. Animals that eat meat are called carnivores.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.11",
+      "difficulty": "kids",
+      "question": "What covers the back of a hedgehog?",
+      "correct": "Spines",
+      "wrong": ["Feathers", "Scales", "A shell"],
+      "explanation": "A hedgehog rolls into a ball when it is scared, so only its spines show.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.12",
+      "difficulty": "kids",
+      "question": "Which animal builds dams in rivers?",
+      "correct": "Beaver",
+      "wrong": ["Otter", "Mole", "Rabbit"],
+      "explanation": "Beavers cut down trees with their strong teeth and build dams and lodges with the wood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.13",
+      "difficulty": "kids",
+      "question": "Which white bear lives near the North Pole?",
+      "correct": "Polar bear",
+      "wrong": ["Brown bear", "Black bear", "Panda"],
+      "explanation": "Polar bears hunt on the sea ice and have thick fur to stay warm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.14",
+      "difficulty": "kids",
+      "question": "What do mother mammals feed to their babies?",
+      "correct": "Milk",
+      "wrong": ["Seeds", "Insects", "Grass"],
+      "explanation": "Giving milk is one thing that all mammals have in common.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.15",
+      "difficulty": "kids",
+      "question": "Which animal gives us wool?",
+      "correct": "Sheep",
+      "wrong": ["Cow", "Pig", "Horse"],
+      "explanation": "Most sheep have their wool cut once a year. This is called shearing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.16",
+      "difficulty": "kids",
+      "question": "What is a baby horse called?",
+      "correct": "Foal",
+      "wrong": ["Calf", "Piglet", "Kid"],
+      "explanation": "A young female horse is called a filly, and a young male is called a colt.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.17",
+      "difficulty": "kids",
+      "question": "Which desert animal has one or two humps?",
+      "correct": "Camel",
+      "wrong": ["Horse", "Zebra", "Llama"],
+      "explanation": "A camel's hump stores fat, not water. The fat gives it energy on long walks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.18",
+      "difficulty": "kids",
+      "question": "Which small red-brown animal with a bushy tail climbs trees in Danish forests?",
+      "correct": "Red squirrel",
+      "wrong": ["Hare", "Mole", "Hedgehog"],
+      "explanation": "Red squirrels hide nuts and seeds in autumn and find them again in winter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.19",
+      "difficulty": "kids",
+      "question": "What do we call a group of wolves?",
+      "correct": "Pack",
+      "wrong": ["Herd", "Flock", "Swarm"],
+      "explanation": "A wolf pack is like a family. It usually has parents and their young.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.20",
+      "difficulty": "kids",
+      "question": "Which large animal beats its chest with its hands?",
+      "correct": "Gorilla",
+      "wrong": ["Koala", "Sloth", "Lion"],
+      "explanation": "Gorillas beat their chests to show how strong they are. They eat mostly leaves and fruit.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.21",
+      "difficulty": "kids",
+      "question": "Which slow animal sleeps in trees and hangs from branches?",
+      "correct": "Sloth",
+      "wrong": ["Monkey", "Squirrel", "Lemur"],
+      "explanation": "Sloths eat and sleep while hanging upside down. They are good swimmers too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.22",
+      "difficulty": "kids",
+      "question": "Which Australian animal eats eucalyptus leaves?",
+      "correct": "Koala",
+      "wrong": ["Kangaroo", "Wombat", "Emu"],
+      "explanation": "Koalas get most of their water from the leaves they eat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.23",
+      "difficulty": "kids",
+      "question": "Which wild animal is the ancestor of the dog?",
+      "correct": "Wolf",
+      "wrong": ["Fox", "Bear", "Hyena"],
+      "explanation": "Dogs were first tamed from wolves many thousands of years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.24",
+      "difficulty": "kids",
+      "question": "What do cows eat?",
+      "correct": "Grass",
+      "wrong": ["Meat", "Fish", "Insects"],
+      "explanation": "A cow spends many hours a day eating grass and chewing it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.25",
+      "difficulty": "kids",
+      "question": "Which animal has no teeth and catches insects with its long sticky tongue?",
+      "correct": "Anteater",
+      "wrong": ["Zebra", "Rabbit", "Elephant"],
+      "explanation": "Anteaters eat ants and termites. A giant anteater can flick its tongue in and out up to 150 times a minute.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.26",
+      "difficulty": "kids",
+      "question": "Which animal grows antlers on its head?",
+      "correct": "Deer",
+      "wrong": ["Cow", "Goat", "Horse"],
+      "explanation": "Antlers fall off every year and new ones grow back.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.27",
+      "difficulty": "kids",
+      "question": "Which animal sprays a smelly liquid to scare enemies?",
+      "correct": "Skunk",
+      "wrong": ["Rabbit", "Mouse", "Deer"],
+      "explanation": "A skunk gives a warning first. It stamps its feet and lifts its tail.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.28",
+      "difficulty": "kids",
+      "question": "Which animal has a horn on its nose?",
+      "correct": "Rhino",
+      "wrong": ["Elephant", "Hippo", "Buffalo"],
+      "explanation": "Some kinds of rhino have one horn, and others have two.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.29",
+      "difficulty": "kids",
+      "question": "Which animal has long ears, hops and lives in a burrow?",
+      "correct": "Rabbit",
+      "wrong": ["Cat", "Pig", "Sheep"],
+      "explanation": "Wild rabbits live in groups and dig networks of tunnels called warrens.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.30",
+      "difficulty": "kids",
+      "question": "Which pet purrs when it is happy?",
+      "correct": "Cat",
+      "wrong": ["Dog", "Tortoise", "Goldfish"],
+      "explanation": "A cat can also purr when it is hurt or scared. Purring may help it feel calm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.31",
+      "difficulty": "kids",
+      "question": "Which small animal digs tunnels underground and has tiny eyes?",
+      "correct": "Mole",
+      "wrong": ["Hare", "Deer", "Squirrel"],
+      "explanation": "Moles dig with their big front paws. They find worms with smell and touch.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.32",
+      "difficulty": "kids",
+      "question": "What do all mammals have on their bodies?",
+      "correct": "Hair or fur",
+      "wrong": ["Feathers", "Scales", "Shells"],
+      "explanation": "Even whales have a few hairs, at least when they are young. Hair helps most mammals stay warm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.33",
+      "difficulty": "kids",
+      "question": "Which animal is a horse's cousin with long ears?",
+      "correct": "Donkey",
+      "wrong": ["Camel", "Pig", "Goat"],
+      "explanation": "Donkeys are strong and calm. People have used them to carry loads for thousands of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.34",
+      "difficulty": "kids",
+      "question": "Which animal pulls Father Christmas's sleigh in stories?",
+      "correct": "Reindeer",
+      "wrong": ["Horse", "Donkey", "Ox"],
+      "explanation": "Real reindeer live in the cold far north. Their thick fur keeps them warm in the snow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.35",
+      "difficulty": "kids",
+      "question": "What is a baby sheep called?",
+      "correct": "Lamb",
+      "wrong": ["Calf", "Cub", "Puppy"],
+      "explanation": "Lambs are often born in spring. Their mother is called a ewe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.36",
+      "difficulty": "kids",
+      "question": "Monkeys, apes and humans all belong to which group?",
+      "correct": "Primates",
+      "wrong": ["Reptiles", "Rodents", "Marsupials"],
+      "explanation": "Primates have hands that can grip, and big brains for their size.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.37",
+      "difficulty": "kids",
+      "question": "Which striped big cat lives in the jungles of Asia?",
+      "correct": "Tiger",
+      "wrong": ["Lion", "Cheetah", "Puma"],
+      "explanation": "Tigers like water and are strong swimmers. Many other cats keep away from water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.38",
+      "difficulty": "kids",
+      "question": "Which wild animal is the ancestor of the farm pig?",
+      "correct": "Wild boar",
+      "wrong": ["Badger", "Rabbit", "Deer"],
+      "explanation": "Wild boars live in forests. They dig in the soil with their snouts to find food.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.39",
+      "difficulty": "kids",
+      "question": "Which animal has a black-and-white striped face and lives in a sett?",
+      "correct": "Badger",
+      "wrong": ["Hare", "Otter", "Squirrel"],
+      "explanation": "Badgers dig large underground homes called setts, and come out at night.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.kids.40",
+      "difficulty": "kids",
+      "question": "Which small pet stores food in its cheeks?",
+      "correct": "Hamster",
+      "wrong": ["Cat", "Dog", "Horse"],
+      "explanation": "A hamster's cheeks can stretch to carry seeds back to its nest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which Australian mammal lays eggs?",
+      "correct": "Platypus",
+      "wrong": ["Koala", "Wombat", "Kangaroo"],
+      "explanation": "The platypus and the echidna are the only mammals that lay eggs. The babies still drink milk.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.02",
+      "difficulty": "mixed",
+      "question": "How do bats find insects in the dark?",
+      "correct": "With sound echoes",
+      "wrong": ["With bright eyes", "With a strong smell", "With sharp claws"],
+      "explanation": "Bats are not blind, but in the dark they make high calls and listen to the echoes. This is called echolocation.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which animals follow the rains in a huge yearly journey across the Serengeti?",
+      "correct": "Wildebeest",
+      "wrong": ["Rhinos", "Hippos", "Giraffes"],
+      "explanation": "Over a million wildebeest travel in herds. Many zebras travel with them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which ape lives in the rainforests of Borneo and Sumatra?",
+      "correct": "Orangutan",
+      "wrong": ["Gorilla", "Chimpanzee", "Baboon"],
+      "explanation": "Gorillas and chimpanzees live in Africa. Orangutans live only in Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.05",
+      "difficulty": "mixed",
+      "question": "Which mammal is covered in scales that protect it?",
+      "correct": "Pangolin",
+      "wrong": ["Hedgehog", "Porcupine", "Anteater"],
+      "explanation": "A pangolin curls into a ball when it is in danger. It eats ants and termites.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.06",
+      "difficulty": "mixed",
+      "question": "About how long is an elephant pregnant before the calf is born?",
+      "correct": "About 22 months",
+      "wrong": ["About 9 months", "About 4 months", "About 3 years"],
+      "explanation": "This is longer than any other land mammal. A newborn calf weighs about 100 kilograms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.07",
+      "difficulty": "mixed",
+      "question": "Which Australian animal has fingerprints almost like human ones?",
+      "correct": "Koala",
+      "wrong": ["Kangaroo", "Wombat", "Platypus"],
+      "explanation": "Koalas' fingerprints are so like ours that they are hard to tell apart under a microscope.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.08",
+      "difficulty": "mixed",
+      "question": "How many neck bones does a giraffe have?",
+      "correct": "Seven",
+      "wrong": ["Three", "Fourteen", "Twenty-five"],
+      "explanation": "Humans have seven neck bones too. A giraffe's are just very, very long.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which marsupial lives in the Americas rather than Australia?",
+      "correct": "Opossum",
+      "wrong": ["Wombat", "Koala", "Tasmanian devil"],
+      "explanation": "The Virginia opossum carries its babies in a pouch. When scared, it may pretend to be dead.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which relative of the giraffe has zebra-like stripes on its legs?",
+      "correct": "Okapi",
+      "wrong": ["Zebra", "Tapir", "Warthog"],
+      "explanation": "The okapi lives in the rainforests of Central Africa. Scientists first described it in 1901.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which water-loving South American rodent is as big as a large dog?",
+      "correct": "Capybara",
+      "wrong": ["Chinchilla", "Hamster", "Squirrel"],
+      "explanation": "Capybaras live in groups near rivers and swim very well.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.12",
+      "difficulty": "mixed",
+      "question": "What do meerkats take turns doing while the group looks for food?",
+      "correct": "Standing guard",
+      "wrong": ["Digging wells", "Gathering nuts", "Building nests"],
+      "explanation": "The guard stands tall and barks if it sees a hawk or a snake.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.13",
+      "difficulty": "mixed",
+      "question": "What colour is a polar bear's skin under its white fur?",
+      "correct": "Black",
+      "wrong": ["White", "Pink", "Grey"],
+      "explanation": "The dark skin may help it soak up the sun's warmth. Each hair is see-through and only looks white.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which wild cat with tufted ears lives in the forests of Norway and Sweden?",
+      "correct": "Lynx",
+      "wrong": ["Cheetah", "Jaguar", "Puma"],
+      "explanation": "The lynx hunts alone, mostly at night. It is shy and hard to see.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which Nordic deer is special because both males and females grow antlers?",
+      "correct": "Reindeer",
+      "wrong": ["Roe deer", "Fallow deer", "Red deer"],
+      "explanation": "In most other deer, only the males have antlers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.16",
+      "difficulty": "mixed",
+      "question": "What can grow in a sloth's fur that helps it hide in the trees?",
+      "correct": "Green algae",
+      "wrong": ["Feathers", "Flowers", "Thorns"],
+      "explanation": "The green colour helps the sloth blend in with the leaves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.17",
+      "difficulty": "mixed",
+      "question": "What is special about the front teeth of rodents like mice and beavers?",
+      "correct": "They never stop growing",
+      "wrong": ["They are hollow", "They are poisonous", "They fall out each winter"],
+      "explanation": "Rodents gnaw on hard things such as wood and nuts to wear their teeth down.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.18",
+      "difficulty": "mixed",
+      "question": "Which sense is the strongest in a dog?",
+      "correct": "Smell",
+      "wrong": ["Sight", "Touch", "Taste"],
+      "explanation": "A dog's nose can pick up smells that people cannot notice at all.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.19",
+      "difficulty": "mixed",
+      "question": "What do cats use their whiskers for?",
+      "correct": "Feeling things nearby",
+      "wrong": ["Cleaning their fur", "Keeping warm", "Hearing high sounds"],
+      "explanation": "Whiskers help a cat feel the shape of small spaces, even in the dark.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which animal can sleep standing up by locking its leg joints?",
+      "correct": "Horse",
+      "wrong": ["Dog", "Rabbit", "Pig"],
+      "explanation": "Standing lets a horse run from danger quickly, but it must lie down for deep sleep.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.21",
+      "difficulty": "mixed",
+      "question": "What may a zebra's stripes help to keep away?",
+      "correct": "Biting flies",
+      "wrong": ["Cold winds", "Heavy rain", "Hungry snakes"],
+      "explanation": "Studies show that flies find it harder to land on striped coats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which ape uses sticks to catch termites?",
+      "correct": "Chimpanzee",
+      "wrong": ["Lemur", "Baboon", "Gibbon"],
+      "explanation": "Chimpanzees push a thin stick into a termite mound and pull it out covered in insects.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which African animal makes a sound like laughing?",
+      "correct": "Spotted hyena",
+      "wrong": ["Hippo", "Lion", "Warthog"],
+      "explanation": "The hyena's giggle is a way of talking to others in its clan, not a sign of fun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which big cat has claws that do not fully pull back into its paws?",
+      "correct": "Cheetah",
+      "wrong": ["Lion", "Tiger", "Leopard"],
+      "explanation": "The cheetah's claws work like running spikes and give it grip.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which spotted cat of the Asian mountains has a long, thick tail?",
+      "correct": "Snow leopard",
+      "wrong": ["Jaguar", "Ocelot", "Cheetah"],
+      "explanation": "It uses its tail for balance and wraps it round its body like a scarf to keep warm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.26",
+      "difficulty": "mixed",
+      "question": "Which small deer, called rådyr in Danish, is common in Denmark?",
+      "correct": "Roe deer",
+      "wrong": ["Red deer", "Reindeer", "Moose"],
+      "explanation": "Roe deer are shy and are often seen at the edge of fields at dawn and dusk.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which of these animals is a rodent?",
+      "correct": "Porcupine",
+      "wrong": ["Hedgehog", "Anteater", "Armadillo"],
+      "explanation": "Hedgehogs look similar but are not rodents. Porcupines are related to mice and beavers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.28",
+      "difficulty": "mixed",
+      "question": "What colour is a giraffe's tongue?",
+      "correct": "Dark purple",
+      "wrong": ["Bright red", "Yellow", "Orange"],
+      "explanation": "The dark colour may protect the tongue from the sun while it eats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.29",
+      "difficulty": "mixed",
+      "question": "What is a group of kangaroos called?",
+      "correct": "A mob",
+      "wrong": ["A pride", "A flock", "A swarm"],
+      "explanation": "A mob can have a few kangaroos or more than a hundred.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.30",
+      "difficulty": "mixed",
+      "question": "How many stomach chambers does a cow have?",
+      "correct": "Four",
+      "wrong": ["Two", "Six", "Eight"],
+      "explanation": "A cow chews its food, swallows it, brings it back up and chews it again.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.31",
+      "difficulty": "mixed",
+      "question": "Which African animal has a name meaning \"earth pig\" in Afrikaans?",
+      "correct": "Aardvark",
+      "wrong": ["Warthog", "Hyena", "Meerkat"],
+      "explanation": "The aardvark digs for ants and termites at night with its strong claws.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.32",
+      "difficulty": "mixed",
+      "question": "How many humps does a Bactrian camel have?",
+      "correct": "Two",
+      "wrong": ["One", "Three", "None"],
+      "explanation": "The one-humped camel is called a dromedary. Bactrian camels live in Central Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.33",
+      "difficulty": "mixed",
+      "question": "What is the name of Australia's wild dog?",
+      "correct": "Dingo",
+      "wrong": ["Coyote", "Jackal", "Husky"],
+      "explanation": "Dingoes probably came to Australia with seafarers thousands of years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.34",
+      "difficulty": "mixed",
+      "question": "Which small animal is famous for fighting snakes such as cobras?",
+      "correct": "Mongoose",
+      "wrong": ["Hare", "Lemur", "Bat"],
+      "explanation": "A mongoose is very fast and can dodge a snake's strike.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.35",
+      "difficulty": "mixed",
+      "question": "What does \"nocturnal\" mean for an animal?",
+      "correct": "It is active at night",
+      "wrong": ["It lives in trees", "It eats only plants", "It sleeps all winter"],
+      "explanation": "Bats, owls and hedgehogs are nocturnal. They sleep by day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.36",
+      "difficulty": "mixed",
+      "question": "Which large wild cattle species lives in the forests of Poland and nearby countries?",
+      "correct": "European bison",
+      "wrong": ["Yak", "Musk ox", "Water buffalo"],
+      "explanation": "The European bison, or wisent, almost died out. Wisents were saved by breeding in zoos and then set free in forests.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.37",
+      "difficulty": "mixed",
+      "question": "Which shaggy animal of Greenland's tundra forms a ring to protect its calves?",
+      "correct": "Musk ox",
+      "wrong": ["Reindeer", "Polar bear", "Arctic hare"],
+      "explanation": "Adults stand shoulder to shoulder with their horns out when wolves come near.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.38",
+      "difficulty": "mixed",
+      "question": "Why do pigs roll in mud?",
+      "correct": "To keep cool",
+      "wrong": ["To get warm", "To catch fish", "To dry their fur"],
+      "explanation": "Pigs cannot sweat much. Mud cools their skin and protects it from the sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.39",
+      "difficulty": "mixed",
+      "question": "Which monkey has a bright blue and red face?",
+      "correct": "Mandrill",
+      "wrong": ["Capuchin", "Macaque", "Marmoset"],
+      "explanation": "The male mandrill's colours become brighter when he is excited.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.mixed.40",
+      "difficulty": "mixed",
+      "question": "In a lion pride, which lions do most of the hunting?",
+      "correct": "The females",
+      "wrong": ["The males", "The cubs", "The oldest lions"],
+      "explanation": "The lionesses often hunt together as a team. The males mainly defend the pride's land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.01",
+      "difficulty": "expert",
+      "question": "What is the name for egg-laying mammals like the platypus and echidna?",
+      "correct": "Monotremes",
+      "wrong": ["Marsupials", "Placentals", "Ungulates"],
+      "explanation": "The name means 'one hole' in Greek. Their young hatch from leathery eggs and then drink milk.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.02",
+      "difficulty": "expert",
+      "question": "How many tiny bones are in a mammal's middle ear?",
+      "correct": "Three",
+      "wrong": ["Two", "Five", "Seven"],
+      "explanation": "They are the hammer, anvil and stirrup. Reptiles have only one bone there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.03",
+      "difficulty": "expert",
+      "question": "What forms most of a bat's wing?",
+      "correct": "Skin stretched between long fingers",
+      "wrong": [
+        "Feathers grown from the arms",
+        "Stiff hairs stuck together",
+        "Thin plates of bone"
+      ],
+      "explanation": "Bats belong to the group Chiroptera, which means hand-wing in Greek. Their long finger bones hold the skin out like an umbrella.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.04",
+      "difficulty": "expert",
+      "question": "Which member of the hyena family feeds mainly on termites?",
+      "correct": "Aardwolf",
+      "wrong": ["Spotted hyena", "Brown hyena", "Striped hyena"],
+      "explanation": "The aardwolf can eat hundreds of thousands of termites in one night.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.05",
+      "difficulty": "expert",
+      "question": "Which animal makes cube-shaped droppings?",
+      "correct": "Wombat",
+      "wrong": ["Koala", "Kangaroo", "Tapir"],
+      "explanation": "Wombats leave their droppings on rocks and logs to mark their territory. The cube shape may stop them rolling away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.06",
+      "difficulty": "expert",
+      "question": "Which kind of teeth are an elephant's tusks?",
+      "correct": "Incisors",
+      "wrong": ["Canines", "Molars", "Premolars"],
+      "explanation": "Tusks are upper front teeth that keep growing all through the elephant's life. Warthog tusks, by contrast, are canines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.07",
+      "difficulty": "expert",
+      "question": "What is a rhino's horn made of?",
+      "correct": "Keratin",
+      "wrong": ["Bone", "Ivory", "Enamel"],
+      "explanation": "Keratin is the same material that forms hair and fingernails.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.08",
+      "difficulty": "expert",
+      "question": "Which animal family does the giant panda belong to?",
+      "correct": "Bears",
+      "wrong": ["Raccoons", "Weasels", "Cats"],
+      "explanation": "DNA studies show that the giant panda is a true bear, even though it eats mostly bamboo.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.09",
+      "difficulty": "expert",
+      "question": "Which small rock-dwelling animal is a distant cousin of the elephant?",
+      "correct": "Rock hyrax",
+      "wrong": ["Marmot", "Meerkat", "Rabbit"],
+      "explanation": "Hyraxes look like guinea pigs, but their feet and teeth show they are related to elephants.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.10",
+      "difficulty": "expert",
+      "question": "Why do koalas sleep for most of the day?",
+      "correct": "Their leaf diet gives little energy",
+      "wrong": [
+        "They stay awake all night to hunt",
+        "They hibernate every winter",
+        "Their pouch is too hot"
+      ],
+      "explanation": "Eucalyptus leaves are hard to digest and low in energy, so koalas save it by resting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.11",
+      "difficulty": "expert",
+      "question": "Which small African mammal lives underground in a colony with one queen?",
+      "correct": "Naked mole-rat",
+      "wrong": ["Hamster", "Hedgehog", "Aardvark"],
+      "explanation": "Naked mole-rats live like ants or bees, with workers and one queen who has the babies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.12",
+      "difficulty": "expert",
+      "question": "What kind of sound do elephants use to talk over long distances?",
+      "correct": "Very low rumbles",
+      "wrong": ["High squeaks", "Clicks like a bat's", "Taps on tree trunks"],
+      "explanation": "Much of the rumble is too low for people to hear. It travels through the air and the ground for kilometres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.13",
+      "difficulty": "expert",
+      "question": "Which wild ancestor of farm cattle died out in Europe in the 1600s?",
+      "correct": "Aurochs",
+      "wrong": ["Wisent", "Yak", "Water buffalo"],
+      "explanation": "The aurochs was bigger than most modern cattle. The last one died in a royal forest in Poland in 1627.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.14",
+      "difficulty": "expert",
+      "question": "Which horse of the Mongolian steppe vanished from the wild and was brought back from zoos?",
+      "correct": "Przewalski's horse",
+      "wrong": ["Mustang", "Shetland pony", "Camargue horse"],
+      "explanation": "It is named after the explorer Nikolai Przhevalsky. In Mongolia it is called takhi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.15",
+      "difficulty": "expert",
+      "question": "How many toes does a horse have on each foot?",
+      "correct": "One",
+      "wrong": ["Two", "Three", "Four"],
+      "explanation": "A horse's hoof is really one big toenail. Its ancestors had several toes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.16",
+      "difficulty": "expert",
+      "question": "Which of these animals are the closest relatives of horses?",
+      "correct": "Rhinoceroses",
+      "wrong": ["Cows", "Camels", "Pigs"],
+      "explanation": "Horses, rhinos and tapirs are all odd-toed hoofed animals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.17",
+      "difficulty": "expert",
+      "question": "Which northern forest animal in the weasel family is also called a glutton?",
+      "correct": "Wolverine",
+      "wrong": ["Badger", "Otter", "Stoat"],
+      "explanation": "The wolverine is strong and can eat leftovers of large animals, even frozen meat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.18",
+      "difficulty": "expert",
+      "question": "Which small forest rodent sleeps through most of the winter and has golden-brown fur?",
+      "correct": "Hazel dormouse",
+      "wrong": ["Brown rat", "Field vole", "Wood mouse"],
+      "explanation": "The hazel dormouse sleeps for about half of the year and builds a nest of grass and leaves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.19",
+      "difficulty": "expert",
+      "question": "Which land mammal lived in Iceland before people arrived?",
+      "correct": "Arctic fox",
+      "wrong": ["Polar bear", "Reindeer", "Hare"],
+      "explanation": "The Arctic fox probably came over the sea ice. The other land mammals that live there, such as mice and reindeer, were brought by people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.20",
+      "difficulty": "expert",
+      "question": "Which small Nordic animal is known for its mass migrations?",
+      "correct": "Lemming",
+      "wrong": ["Mole", "Hedgehog", "Hare"],
+      "explanation": "Lemmings do not jump off cliffs on purpose. An old nature film helped to spread that myth.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.21",
+      "difficulty": "expert",
+      "question": "What do reindeer dig through the snow to find in winter?",
+      "correct": "Lichen",
+      "wrong": ["Pine cones", "Acorns", "Tree roots"],
+      "explanation": "Reindeer have wide hooves that work like snowshoes and help them dig.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.22",
+      "difficulty": "expert",
+      "question": "Which male mammal has a venomous spur on its back leg?",
+      "correct": "Platypus",
+      "wrong": ["Hedgehog", "Opossum", "Aardvark"],
+      "explanation": "The venom is strong enough to cause great pain in people. It is used in fights with other males.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.23",
+      "difficulty": "expert",
+      "question": "Why do cats' eyes shine in the dark?",
+      "correct": "A mirror layer behind the retina",
+      "wrong": ["Light made inside the eye", "Wet tears on the eye", "Their dark pupils"],
+      "explanation": "The mirror layer sends light back through the eye, which helps cats see in dim light.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.24",
+      "difficulty": "expert",
+      "question": "Which colours do dogs see best?",
+      "correct": "Blue and yellow",
+      "wrong": ["Red and green", "Pink and purple", "Only black and white"],
+      "explanation": "Dogs see fewer colours than people do, but they are not colour-blind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.25",
+      "difficulty": "expert",
+      "question": "Besides their fur, where else do tigers have stripes?",
+      "correct": "On their skin",
+      "wrong": ["On their claws", "On their tongue", "On their teeth"],
+      "explanation": "If you shaved a tiger, you would still see its stripes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.26",
+      "difficulty": "expert",
+      "question": "Which South American animal is the wild ancestor of the llama?",
+      "correct": "Guanaco",
+      "wrong": ["Vicuña", "Alpaca", "Camel"],
+      "explanation": "The alpaca came from the vicuña. Guanacos and vicuñas live wild in South America.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.27",
+      "difficulty": "expert",
+      "question": "What is the offspring of a male donkey and a female horse called?",
+      "correct": "Mule",
+      "wrong": ["Hinny", "Zebra", "Pony"],
+      "explanation": "A hinny has a horse father and a donkey mother. Mules are strong and good at carrying loads.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.28",
+      "difficulty": "expert",
+      "question": "Which tiny fox of the Sahara has huge ears that help it lose heat?",
+      "correct": "Fennec fox",
+      "wrong": ["Red fox", "Arctic fox", "Bat-eared fox"],
+      "explanation": "The fennec's big ears also help it hear insects moving under the sand.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.29",
+      "difficulty": "expert",
+      "question": "What are deer antlers made of?",
+      "correct": "Bone",
+      "wrong": ["Keratin", "Ivory", "Hard skin"],
+      "explanation": "Antlers grow fast and are covered in soft velvet until they are fully grown.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.30",
+      "difficulty": "expert",
+      "question": "Which striped marsupial from Tasmania died out in the 1930s?",
+      "correct": "Thylacine",
+      "wrong": ["Tasmanian devil", "Numbat", "Quoll"],
+      "explanation": "It was also called the Tasmanian tiger, but it was not related to tigers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.31",
+      "difficulty": "expert",
+      "question": "Which small mammal feels for food with 22 fleshy tentacles on its nose?",
+      "correct": "Star-nosed mole",
+      "wrong": ["Elephant shrew", "Hedgehog", "Giant anteater"],
+      "explanation": "It lives in wet ground in North America. Its nose has thousands of tiny touch sensors.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.32",
+      "difficulty": "expert",
+      "question": "The giant panda's \"thumb\" is really an enlarged what?",
+      "correct": "Wrist bone",
+      "wrong": ["Claw", "Toe", "Tendon"],
+      "explanation": "The extra bone helps the panda hold bamboo stems like a hand.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.33",
+      "difficulty": "expert",
+      "question": "Which bear is the only one native to South America?",
+      "correct": "Spectacled bear",
+      "wrong": ["Sloth bear", "Sun bear", "Giant panda"],
+      "explanation": "It has pale rings around its eyes that look like glasses.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.34",
+      "difficulty": "expert",
+      "question": "Which armoured animal of the Americas usually has identical quadruplets?",
+      "correct": "Nine-banded armadillo",
+      "wrong": ["Giant pangolin", "Virginia opossum", "Three-toed sloth"],
+      "explanation": "All four babies come from one egg, so they are identical.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.35",
+      "difficulty": "expert",
+      "question": "What is a scientist who studies mammals called?",
+      "correct": "A mammalogist",
+      "wrong": ["An ornithologist", "An entomologist", "A herpetologist"],
+      "explanation": "Ornithologists study birds, entomologists study insects and herpetologists study reptiles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.36",
+      "difficulty": "expert",
+      "question": "What does the name \"orangutan\" mean in Malay?",
+      "correct": "Person of the forest",
+      "wrong": ["Red ape", "Tree climber", "Gentle giant"],
+      "explanation": "Orang means person and hutan means forest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.37",
+      "difficulty": "expert",
+      "question": "Which farm animal descends from the wild mouflon?",
+      "correct": "Sheep",
+      "wrong": ["Goat", "Pig", "Horse"],
+      "explanation": "Mouflons are wild sheep that live on islands and in mountains of Europe and Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.38",
+      "difficulty": "expert",
+      "question": "Why are beavers' front teeth orange?",
+      "correct": "Iron in the enamel",
+      "wrong": ["Stains from tree bark", "Dye from the water", "Too much calcium"],
+      "explanation": "The iron makes the enamel harder, so the teeth stay sharp on wood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.39",
+      "difficulty": "expert",
+      "question": "Which lemur taps tree trunks to find insect grubs?",
+      "correct": "Aye-aye",
+      "wrong": ["Ring-tailed lemur", "Sifaka", "Indri"],
+      "explanation": "It listens to the taps and then gnaws a hole and pulls out the grubs with a long thin finger.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "nature.mammals.expert.40",
+      "difficulty": "expert",
+      "question": "What are a giraffe's horn-like bumps called?",
+      "correct": "Ossicones",
+      "wrong": ["Antlers", "Tusks", "Spurs"],
+      "explanation": "Ossicones are bone covered with skin and fur. Both male and female giraffes have them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

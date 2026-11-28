@@ -24,7 +24,7 @@ export function AnswerList({ walkId, teamId }: { walkId: string; teamId: string 
         if (stop.skippedForAll) {
           return (
             <Card key={stop.id} style={styles.card}>
-              <Txt variant="label" color={colors.muted} caps>
+              <Txt variant="labelWalk" color={colors.muted} caps>
                 Removed for everyone · {stop.placeName}
               </Txt>
               <Txt variant="callout" color={colors.muted}>
@@ -38,7 +38,7 @@ export function AnswerList({ walkId, teamId }: { walkId: string; teamId: string 
         if (!a) {
           return (
             <Card key={stop.id} style={styles.card}>
-              <Txt variant="label" color={colors.muted} caps>
+              <Txt variant="labelWalk" color={colors.muted} caps>
                 Stop {n} · {stop.placeName}
               </Txt>
               <Txt variant="callout" color={colors.muted}>
@@ -53,7 +53,7 @@ export function AnswerList({ walkId, teamId }: { walkId: string; teamId: string 
         return (
           <Card key={stop.id} style={styles.card}>
             <View style={styles.row}>
-              <Txt variant="label" color={colors.secondary} caps style={styles.flex}>
+              <Txt variant="labelWalk" color={colors.secondary} caps style={styles.flex}>
                 Stop {n} · {stop.placeName}
               </Txt>
               <Txt variant="calloutStrong" color={right ? colors.accent : colors.errorText}>

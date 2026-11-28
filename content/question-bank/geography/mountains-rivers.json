@@ -1,0 +1,1196 @@
+{
+  "category": "geography",
+  "subcategory": "mountains-rivers",
+  "questions": [
+    {
+      "id": "geography.mountains-rivers.kids.01",
+      "difficulty": "kids",
+      "question": "Which is the highest mountain above sea level in the world?",
+      "correct": "Mount Everest",
+      "wrong": ["Mount Kilimanjaro", "Mont Blanc", "Mount Fuji"],
+      "explanation": "Everest is on the border of Nepal and China. It is about 8,800 metres high.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.02",
+      "difficulty": "kids",
+      "question": "Which river flows through the city of Paris?",
+      "correct": "The Seine",
+      "wrong": ["The Thames", "The Rhine", "The Danube"],
+      "explanation": "Many famous sights, such as Notre-Dame, stand right next to the Seine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.03",
+      "difficulty": "kids",
+      "question": "Which river flows through London?",
+      "correct": "The Thames",
+      "wrong": ["The Seine", "The Nile", "The Rhine"],
+      "explanation": "Tower Bridge crosses the Thames, and tourist boats sail up and down it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.04",
+      "difficulty": "kids",
+      "question": "Mont Blanc, or 'White Mountain', is a very high peak in which mountain range?",
+      "correct": "The Alps",
+      "wrong": ["The Andes", "The Rockies", "The Himalayas"],
+      "explanation": "Mont Blanc stands on the border of France and Italy. It is the highest mountain in the Alps.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.05",
+      "difficulty": "kids",
+      "question": "Which huge hot desert covers much of North Africa?",
+      "correct": "The Sahara",
+      "wrong": ["The Gobi", "The Kalahari", "The Atacama"],
+      "explanation": "Parts of the Sahara have huge sand dunes. Other parts are rock and gravel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.06",
+      "difficulty": "kids",
+      "question": "Niagara Falls is a huge waterfall on the border between Canada and which other country?",
+      "correct": "The USA",
+      "wrong": ["Mexico", "Cuba", "Brazil"],
+      "explanation": "The Niagara River carries water from Lake Erie over the falls and on to Lake Ontario.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.07",
+      "difficulty": "kids",
+      "question": "In which country is Mount Fuji, a volcano with a snowy top?",
+      "correct": "Japan",
+      "wrong": ["China", "South Korea", "Thailand"],
+      "explanation": "Mount Fuji is the highest mountain in Japan, at about 3,800 metres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.08",
+      "difficulty": "kids",
+      "question": "Which famous river flows through Egypt and the city of Cairo?",
+      "correct": "The Nile",
+      "wrong": ["The Amazon", "The Rhine", "The Mississippi"],
+      "explanation": "The ancient Egyptians grew their food on the fertile land beside the Nile.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.09",
+      "difficulty": "kids",
+      "question": "The Amazon River and its huge rainforest are on which continent?",
+      "correct": "South America",
+      "wrong": ["Africa", "Asia", "Europe"],
+      "explanation": "The Amazon carries more water to the sea than any other river.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.10",
+      "difficulty": "kids",
+      "question": "On which continent is Mount Kilimanjaro, a giant volcano close to the equator?",
+      "correct": "Africa",
+      "wrong": ["Asia", "South America", "Europe"],
+      "explanation": "Kilimanjaro is a volcano in Tanzania. It is the highest mountain in Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.11",
+      "difficulty": "kids",
+      "question": "Which very salty lake lets people float easily on the water?",
+      "correct": "The Dead Sea",
+      "wrong": ["Lake Geneva", "Loch Ness", "Lake Victoria"],
+      "explanation": "The salt makes the water heavy, so people float on top of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.12",
+      "difficulty": "kids",
+      "question": "In which country is Loch Ness, a deep lake with a famous legend about a monster?",
+      "correct": "Scotland",
+      "wrong": ["Ireland", "Wales", "Norway"],
+      "explanation": "People say a monster nicknamed Nessie lives in the deep, dark water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.13",
+      "difficulty": "kids",
+      "question": "Which long mountain range runs along the west coast of South America?",
+      "correct": "The Andes",
+      "wrong": ["The Alps", "The Rockies", "The Pyrenees"],
+      "explanation": "The Andes run through seven countries, from Venezuela in the north to Argentina and Chile in the south.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.14",
+      "difficulty": "kids",
+      "question": "The Rocky Mountains are on which continent?",
+      "correct": "North America",
+      "wrong": ["South America", "Europe", "Asia"],
+      "explanation": "The Rockies stretch from Canada down through the USA.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.15",
+      "difficulty": "kids",
+      "question": "In old Greek stories, the gods lived on which mountain?",
+      "correct": "Mount Olympus",
+      "wrong": ["Mount Fuji", "Mount Etna", "Mount Kilimanjaro"],
+      "explanation": "Mount Olympus is a real mountain in Greece. It is about 2,900 metres high.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.16",
+      "difficulty": "kids",
+      "question": "What do we call the place where a river starts?",
+      "correct": "Its source",
+      "wrong": ["Its mouth", "Its bank", "Its delta"],
+      "explanation": "Many rivers start high in the mountains as tiny streams. The end of a river, where it meets the sea, is its mouth.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.17",
+      "difficulty": "kids",
+      "question": "Mount Etna is a big volcano on which Italian island?",
+      "correct": "Sicily",
+      "wrong": ["Sardinia", "Capri", "Elba"],
+      "explanation": "Etna erupts often and has snow on top in winter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.18",
+      "difficulty": "kids",
+      "question": "Which giant waterfall in Africa is named after a British queen?",
+      "correct": "Victoria Falls",
+      "wrong": ["Niagara Falls", "Angel Falls", "Iguazu Falls"],
+      "explanation": "Local people call it 'the smoke that thunders', because the spray rises high into the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.19",
+      "difficulty": "kids",
+      "question": "What do we call a huge, slow-moving river of ice on a mountain?",
+      "correct": "A glacier",
+      "wrong": ["An iceberg", "A geyser", "An avalanche"],
+      "explanation": "Glaciers move only a little each day. As they move, they grind the rock and carve out deep valleys.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.20",
+      "difficulty": "kids",
+      "question": "Finland is known as the land of thousands of what?",
+      "correct": "Lakes",
+      "wrong": ["Volcanoes", "Deserts", "Waterfalls"],
+      "explanation": "Finland has well over a hundred thousand lakes. Many Finns have a little cabin by one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.21",
+      "difficulty": "kids",
+      "question": "On which continent is the Gobi Desert?",
+      "correct": "Asia",
+      "wrong": ["Africa", "Europe", "Australia"],
+      "explanation": "The Gobi lies in Mongolia and China. Its summers can be hot, but its winters are freezing cold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.22",
+      "difficulty": "kids",
+      "question": "Which river flows through the city of Rome?",
+      "correct": "The Tiber",
+      "wrong": ["The Seine", "The Thames", "The Rhine"],
+      "explanation": "Rome was built beside the Tiber, not far from the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.23",
+      "difficulty": "kids",
+      "question": "The Pyrenees mountains form a border between France and which country?",
+      "correct": "Spain",
+      "wrong": ["Italy", "Germany", "Portugal"],
+      "explanation": "The tiny country of Andorra lies high in the Pyrenees.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.24",
+      "difficulty": "kids",
+      "question": "What do we call fast, rough water in a river, where it flows over rocks?",
+      "correct": "Rapids",
+      "wrong": ["Deltas", "Springs", "Banks"],
+      "explanation": "Some people go rafting or canoeing on rapids for fun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.25",
+      "difficulty": "kids",
+      "question": "What do we call a big area of land with very little rain?",
+      "correct": "A desert",
+      "wrong": ["A rainforest", "A meadow", "A swamp"],
+      "explanation": "Deserts can be hot, like the Sahara, or cold, like the Gobi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.26",
+      "difficulty": "kids",
+      "question": "Mount Everest is part of which mountain range?",
+      "correct": "The Himalayas",
+      "wrong": ["The Alps", "The Andes", "The Rockies"],
+      "explanation": "Himalaya means 'home of snow' in Sanskrit, an old language of India.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.27",
+      "difficulty": "kids",
+      "question": "Which big river starts in the Swiss Alps and flows through Germany to the North Sea?",
+      "correct": "The Rhine",
+      "wrong": ["The Seine", "The Thames", "The Tiber"],
+      "explanation": "Many castles stand on the hills beside the Rhine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.28",
+      "difficulty": "kids",
+      "question": "Into which ocean does the Amazon River flow?",
+      "correct": "The Atlantic Ocean",
+      "wrong": ["The Pacific Ocean", "The Indian Ocean", "The Arctic Ocean"],
+      "explanation": "At its mouth the Amazon is many kilometres wide.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.29",
+      "difficulty": "kids",
+      "question": "The Ganges is a big river in which country?",
+      "correct": "India",
+      "wrong": ["Brazil", "Egypt", "Italy"],
+      "explanation": "The Ganges starts in the Himalayas and flows through India into Bangladesh.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.30",
+      "difficulty": "kids",
+      "question": "The Yangtze is a very long river in which country?",
+      "correct": "China",
+      "wrong": ["India", "Japan", "Russia"],
+      "explanation": "The Yangtze flows into the East China Sea near the big city of Shanghai.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.31",
+      "difficulty": "kids",
+      "question": "In which country is the Black Forest, a hilly area with many fir trees?",
+      "correct": "Germany",
+      "wrong": ["France", "Poland", "Austria"],
+      "explanation": "The Black Forest is famous for cuckoo clocks and for a chocolate cake with cherries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.32",
+      "difficulty": "kids",
+      "question": "Which famous mountain lies on the border of Switzerland and Italy?",
+      "correct": "The Matterhorn",
+      "wrong": ["Mount Fuji", "Mount Kilimanjaro", "Ben Nevis"],
+      "explanation": "The Matterhorn is part of the Alps and is shaped like a sharp pyramid.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.33",
+      "difficulty": "kids",
+      "question": "What do we call the very top of a mountain?",
+      "correct": "The summit",
+      "wrong": ["The foot", "The slope", "The valley"],
+      "explanation": "Climbers cheer when they reach the summit. The bottom of a mountain is called its foot.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.34",
+      "difficulty": "kids",
+      "question": "What do we call a large area of fresh water with land all around it?",
+      "correct": "A lake",
+      "wrong": ["An island", "A peninsula", "A strait"],
+      "explanation": "A river often flows into a lake or out of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.35",
+      "difficulty": "kids",
+      "question": "Lake Victoria is a huge lake on which continent?",
+      "correct": "Africa",
+      "wrong": ["Asia", "Europe", "South America"],
+      "explanation": "The River Nile flows out of this lake on its long journey north to Egypt.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.36",
+      "difficulty": "kids",
+      "question": "Why is it hard to breathe at the top of very high mountains?",
+      "correct": "The air has less oxygen",
+      "wrong": ["The air is too hot", "There is no wind", "The air is too wet"],
+      "explanation": "The higher you go, the thinner the air gets. Some climbers on Everest use extra oxygen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.37",
+      "difficulty": "kids",
+      "question": "What do we call the big hills of sand that the wind builds in a desert?",
+      "correct": "Dunes",
+      "wrong": ["Glaciers", "Canyons", "Fjords"],
+      "explanation": "Wind can move dunes slowly across the desert. Some dunes are higher than a tall building.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.38",
+      "difficulty": "kids",
+      "question": "What do we call a place in a desert where there is water and plants can grow?",
+      "correct": "An oasis",
+      "wrong": ["A delta", "A glacier", "A lagoon"],
+      "explanation": "Travellers and animals can drink at an oasis. Many have palm trees.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.kids.39",
+      "difficulty": "kids",
+      "question": "Which long river flows from north to south through the middle of the USA?",
+      "correct": "The Mississippi",
+      "wrong": ["The Thames", "The Danube", "The Nile"],
+      "explanation": "Its name comes from an old Native American word that means 'great river'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which river flows through both Vienna and Budapest?",
+      "correct": "The Danube",
+      "wrong": ["The Rhine", "The Elbe", "The Seine"],
+      "explanation": "The Danube also flows through Bratislava and Belgrade, so it links four capital cities.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which river carved the Grand Canyon?",
+      "correct": "The Colorado",
+      "wrong": ["The Mississippi", "The Missouri", "The Columbia"],
+      "explanation": "The river has cut into the rock for millions of years, and the layers show Earth's history.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.03",
+      "difficulty": "mixed",
+      "question": "In which country is Angel Falls, a waterfall almost 1,000 metres high?",
+      "correct": "Venezuela",
+      "wrong": ["Brazil", "Peru", "Chile"],
+      "explanation": "It is often called the highest waterfall in the world. It is named after Jimmie Angel, an American pilot who flew over it in the 1930s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.04",
+      "difficulty": "mixed",
+      "question": "Iguazu Falls, a huge set of waterfalls, lies on the border of Argentina and which other country?",
+      "correct": "Brazil",
+      "wrong": ["Chile", "Peru", "Bolivia"],
+      "explanation": "The falls lie in a rainforest. Depending on how much water there is, they are made up of about 150 to 300 separate waterfalls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.05",
+      "difficulty": "mixed",
+      "question": "Which country has most of the Ural Mountains?",
+      "correct": "Russia",
+      "wrong": ["Poland", "Turkey", "Norway"],
+      "explanation": "The Urals run from north to south and are often seen as part of the border between Europe and Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.06",
+      "difficulty": "mixed",
+      "question": "In 1883 the volcano Krakatoa exploded. In which country is it?",
+      "correct": "Indonesia",
+      "wrong": ["The Philippines", "Japan", "Iceland"],
+      "explanation": "The sound of the explosion was heard thousands of kilometres away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.07",
+      "difficulty": "mixed",
+      "question": "Ben Nevis is the highest mountain in the United Kingdom. Which part of the UK is it in?",
+      "correct": "Scotland",
+      "wrong": ["England", "Wales", "Northern Ireland"],
+      "explanation": "Ben Nevis is 1,345 metres high.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.08",
+      "difficulty": "mixed",
+      "question": "Lake Geneva lies between Switzerland and which other country?",
+      "correct": "France",
+      "wrong": ["Italy", "Germany", "Austria"],
+      "explanation": "Cities such as Geneva and Lausanne stand on its shore.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which desert on the Pacific coast of South America is one of the driest places on Earth?",
+      "correct": "The Atacama",
+      "wrong": ["The Sahara", "The Gobi", "The Namib"],
+      "explanation": "In some parts of the Atacama, rain almost never falls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which is the longest river in Denmark?",
+      "correct": "The Gudenå",
+      "wrong": ["The Skjern Å", "The Storå", "The Odense Å"],
+      "explanation": "The Gudenå flows through Jutland, past Silkeborg and Randers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.11",
+      "difficulty": "mixed",
+      "question": "How many Great Lakes are there in North America?",
+      "correct": "Five",
+      "wrong": ["Three", "Seven", "Nine"],
+      "explanation": "The lakes are Superior, Michigan, Huron, Erie and Ontario. Canada and the USA share most of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which river flows through the Czech city of Prague?",
+      "correct": "The Vltava",
+      "wrong": ["The Danube", "The Vistula", "The Rhine"],
+      "explanation": "The famous Charles Bridge crosses the Vltava.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which river flows through St Petersburg in Russia?",
+      "correct": "The Neva",
+      "wrong": ["The Volga", "The Moskva", "The Don"],
+      "explanation": "The Neva is short, but it is wide and deep, and the city has many bridges over it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which river crosses the equator twice as it flows through the rainforest of Central Africa?",
+      "correct": "The Congo",
+      "wrong": ["The Niger", "The Zambezi", "The Nile"],
+      "explanation": "Two countries, the Republic of the Congo and the Democratic Republic of the Congo, are named after it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.15",
+      "difficulty": "mixed",
+      "question": "The Dolomites, mountains with pale rock, are in which country?",
+      "correct": "Italy",
+      "wrong": ["Austria", "Switzerland", "Slovenia"],
+      "explanation": "Their pale rock glows pink and orange in the evening sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.16",
+      "difficulty": "mixed",
+      "question": "The word 'geyser' comes from the name of a famous hot spring in which country?",
+      "correct": "Iceland",
+      "wrong": ["Japan", "New Zealand", "Italy"],
+      "explanation": "The Icelandic name Geysir comes from a word that means 'to gush'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.17",
+      "difficulty": "mixed",
+      "question": "Lake Titicaca lies high in the Andes, between Peru and which other country?",
+      "correct": "Bolivia",
+      "wrong": ["Chile", "Ecuador", "Argentina"],
+      "explanation": "The lake lies about 3,800 metres above sea level.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.18",
+      "difficulty": "mixed",
+      "question": "The ancient region of Mesopotamia lay between which two rivers?",
+      "correct": "The Tigris and the Euphrates",
+      "wrong": ["The Nile and the Jordan", "The Indus and the Ganges", "The Danube and the Rhine"],
+      "explanation": "Mesopotamia means 'between the rivers' in Greek. Early cities such as Babylon grew there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.19",
+      "difficulty": "mixed",
+      "question": "Into which sea does the River Danube flow?",
+      "correct": "The Black Sea",
+      "wrong": ["The Baltic Sea", "The Caspian Sea", "The Adriatic Sea"],
+      "explanation": "Where it meets the sea, the Danube forms a big delta full of birds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which river flows through the German port city of Hamburg?",
+      "correct": "The Elbe",
+      "wrong": ["The Rhine", "The Danube", "The Oder"],
+      "explanation": "The Elbe flows into the North Sea and is a busy route for ships.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.21",
+      "difficulty": "mixed",
+      "question": "Which river flows through Laos, Cambodia and Vietnam?",
+      "correct": "The Mekong",
+      "wrong": ["The Irrawaddy", "The Ganges", "The Yangtze"],
+      "explanation": "The Mekong starts high on the Tibetan Plateau in China and ends in a big delta in Vietnam.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which is the longest river in Australia?",
+      "correct": "The Murray",
+      "wrong": ["The Swan", "The Yarra", "The Hunter"],
+      "explanation": "The Murray flows through the south-east of Australia and reaches the sea in South Australia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which is the longest river in Ireland?",
+      "correct": "The Shannon",
+      "wrong": ["The Liffey", "The Boyne", "The Lee"],
+      "explanation": "The Shannon flows through several lakes before it reaches the Atlantic Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which mountain is the highest in Germany?",
+      "correct": "The Zugspitze",
+      "wrong": ["The Brocken", "The Watzmann", "The Feldberg"],
+      "explanation": "The summit is on the border with Austria. You can reach it by cable car.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which mountain range runs like a backbone down the length of Italy?",
+      "correct": "The Apennines",
+      "wrong": ["The Alps", "The Pyrenees", "The Carpathians"],
+      "explanation": "The Alps are in the far north of Italy, but the Apennines run down the whole country.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.26",
+      "difficulty": "mixed",
+      "question": "In which part of Africa are the Atlas Mountains?",
+      "correct": "North-west Africa",
+      "wrong": ["Southern Africa", "East Africa", "Central Africa"],
+      "explanation": "They run through Morocco, Algeria and Tunisia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.27",
+      "difficulty": "mixed",
+      "question": "Snowdon is the highest mountain in which country?",
+      "correct": "Wales",
+      "wrong": ["Scotland", "England", "Ireland"],
+      "explanation": "Its Welsh name is Yr Wyddfa. You can walk up it, or take a small mountain train from the village of Llanberis.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.28",
+      "difficulty": "mixed",
+      "question": "What do we call the fan-shaped area of land where a river splits up before it reaches the sea?",
+      "correct": "A delta",
+      "wrong": ["A fjord", "A canyon", "A plateau"],
+      "explanation": "The name comes from the Greek letter delta, which looks like a triangle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.29",
+      "difficulty": "mixed",
+      "question": "What do we call a small river that flows into a bigger river?",
+      "correct": "A tributary",
+      "wrong": ["A delta", "A source", "A lagoon"],
+      "explanation": "The Moselle is a tributary of the Rhine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.30",
+      "difficulty": "mixed",
+      "question": "What do we call a big, winding bend in a river?",
+      "correct": "A meander",
+      "wrong": ["A delta", "A rapid", "A gorge"],
+      "explanation": "The word comes from the Maeander, a very twisty river in Turkey.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.31",
+      "difficulty": "mixed",
+      "question": "Himmelbjerget is a famous Danish hill. In which part of Denmark is it?",
+      "correct": "Jutland",
+      "wrong": ["Zealand", "Funen", "Bornholm"],
+      "explanation": "It is about 147 metres high and was once believed to be the highest point in Denmark.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.32",
+      "difficulty": "mixed",
+      "question": "What is Råbjerg Mile, near Skagen in Denmark?",
+      "correct": "A wandering sand dune",
+      "wrong": ["A steep chalk cliff", "A deep forest lake", "A long river valley"],
+      "explanation": "The wind pushes the dune about 15 metres every year.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.33",
+      "difficulty": "mixed",
+      "question": "Which is the largest lake in Sweden?",
+      "correct": "Vänern",
+      "wrong": ["Vättern", "Mälaren", "Hjälmaren"],
+      "explanation": "The Göta River flows out of Vänern to the sea near Gothenburg.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.34",
+      "difficulty": "mixed",
+      "question": "Which desert covers most of Botswana?",
+      "correct": "The Kalahari",
+      "wrong": ["The Namib", "The Sahara", "The Gobi"],
+      "explanation": "The San people have lived in the Kalahari for thousands of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.35",
+      "difficulty": "mixed",
+      "question": "Why is China's Yellow River yellow-brown?",
+      "correct": "It carries a lot of fine yellow soil",
+      "wrong": ["Yellow flowers grow in it", "There is gold in the riverbed", "Algae live in it"],
+      "explanation": "The soil, called loess, washes into the river from the land it crosses.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.36",
+      "difficulty": "mixed",
+      "question": "A mountain's height is usually measured from which level?",
+      "correct": "Sea level",
+      "wrong": ["The nearest town", "The valley floor", "The tree line"],
+      "explanation": "That is why we say a mountain is 'so many metres above sea level'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.37",
+      "difficulty": "mixed",
+      "question": "Mount Pinatubo, which erupted strongly in 1991, is in which country?",
+      "correct": "The Philippines",
+      "wrong": ["Indonesia", "Japan", "Mexico"],
+      "explanation": "The gas and dust it threw high into the sky cooled the whole Earth a little for a year or two.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which river gave its name to India?",
+      "correct": "The Indus",
+      "wrong": ["The Ganges", "The Brahmaputra", "The Yamuna"],
+      "explanation": "The Indus starts in Tibet and flows mostly through Pakistan to the Arabian Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.39",
+      "difficulty": "mixed",
+      "question": "Which river flows through both Warsaw and Kraków?",
+      "correct": "The Vistula",
+      "wrong": ["The Oder", "The Danube", "The Elbe"],
+      "explanation": "The Vistula is the longest river in Poland. It flows into the Baltic Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.mixed.40",
+      "difficulty": "mixed",
+      "question": "Which river flows from the Alps through Geneva and Lyon to the Mediterranean?",
+      "correct": "The Rhône",
+      "wrong": ["The Loire", "The Seine", "The Garonne"],
+      "explanation": "In Lyon the Rhône is joined by the Saône. Near the sea it splits up and forms a delta called the Camargue.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.01",
+      "difficulty": "expert",
+      "question": "Which lake in Siberia is the deepest lake in the world?",
+      "correct": "Lake Baikal",
+      "wrong": ["Lake Superior", "Lake Victoria", "Lake Titicaca"],
+      "explanation": "Lake Baikal holds about a fifth of all the unfrozen fresh water on the surface of the Earth.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.02",
+      "difficulty": "expert",
+      "question": "The Volga, Europe's longest river, flows into which sea?",
+      "correct": "The Caspian Sea",
+      "wrong": ["The Black Sea", "The Baltic Sea", "The White Sea"],
+      "explanation": "The Caspian is the largest inland body of water in the world. It has no outlet to the ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.03",
+      "difficulty": "expert",
+      "question": "Denali is the highest mountain on which continent?",
+      "correct": "North America",
+      "wrong": ["Asia", "Africa", "South America"],
+      "explanation": "Denali, also called Mount McKinley, is in Alaska. Its name comes from a local Native word that means 'the high one'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.04",
+      "difficulty": "expert",
+      "question": "Aconcagua, the highest mountain in South America, lies in which country?",
+      "correct": "Argentina",
+      "wrong": ["Chile", "Peru", "Bolivia"],
+      "explanation": "At almost 7,000 metres, Aconcagua is the highest mountain outside Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.05",
+      "difficulty": "expert",
+      "question": "Mount Kosciuszko, the highest mountain on the Australian mainland, is in which mountain range?",
+      "correct": "The Snowy Mountains",
+      "wrong": ["The Blue Mountains", "The Flinders Ranges", "The Grampians"],
+      "explanation": "A Polish explorer named it after the Polish hero Tadeusz Kościuszko.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.06",
+      "difficulty": "expert",
+      "question": "Aoraki is the Māori name of which mountain, the highest in New Zealand?",
+      "correct": "Mount Cook",
+      "wrong": ["Mount Ruapehu", "Mount Taranaki", "Mount Tongariro"],
+      "explanation": "Mount Cook is in the Southern Alps, on the South Island.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.07",
+      "difficulty": "expert",
+      "question": "Galdhøpiggen is the highest mountain in Scandinavia. In which country is it?",
+      "correct": "Norway",
+      "wrong": ["Sweden", "Finland", "Iceland"],
+      "explanation": "It is in the Jotunheimen mountains and is about 2,470 metres high.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.08",
+      "difficulty": "expert",
+      "question": "Carrauntoohil is the highest mountain in which country?",
+      "correct": "Ireland",
+      "wrong": ["Wales", "Scotland", "Iceland"],
+      "explanation": "It is about 1,040 metres high and lies in County Kerry, in a range called MacGillycuddy's Reeks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.09",
+      "difficulty": "expert",
+      "question": "Which Italian island volcano is called the 'Lighthouse of the Mediterranean' because it erupts again and again?",
+      "correct": "Stromboli",
+      "wrong": ["Vesuvius", "Etna", "Santorini"],
+      "explanation": "Stromboli has erupted in small bursts for a very long time, so sailors could see it glow at night.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.10",
+      "difficulty": "expert",
+      "question": "Which mountain range curves through Slovakia, Poland, Ukraine and Romania?",
+      "correct": "The Carpathians",
+      "wrong": ["The Dinaric Alps", "The Balkan Mountains", "The Sudetes"],
+      "explanation": "Transylvania, home of the Dracula legend, lies inside the curve of the Carpathians.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.11",
+      "difficulty": "expert",
+      "question": "The Brenner Pass is a famous route through the Alps between Austria and which country?",
+      "correct": "Italy",
+      "wrong": ["Switzerland", "Germany", "Slovenia"],
+      "explanation": "It is one of the lowest passes across the main ridge of the Alps, so it has been used for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.12",
+      "difficulty": "expert",
+      "question": "Most of the Danube Delta, a huge wetland full of birds, lies in which country?",
+      "correct": "Romania",
+      "wrong": ["Hungary", "Serbia", "Bulgaria"],
+      "explanation": "A small part of the delta is in Ukraine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.13",
+      "difficulty": "expert",
+      "question": "Which huge lake was formed behind the Aswan High Dam in Egypt?",
+      "correct": "Lake Nasser",
+      "wrong": ["Lake Victoria", "Lake Chad", "Lake Tana"],
+      "explanation": "It is named after Egypt's leader in the 1950s and 1960s, and it stretches into Sudan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.14",
+      "difficulty": "expert",
+      "question": "The Blue Nile begins in which country?",
+      "correct": "Ethiopia",
+      "wrong": ["Uganda", "Tanzania", "Egypt"],
+      "explanation": "The Blue Nile flows out of Lake Tana. It meets the White Nile in Sudan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.15",
+      "difficulty": "expert",
+      "question": "Lake Constance borders Germany, Switzerland and which other country?",
+      "correct": "Austria",
+      "wrong": ["Italy", "France", "Czechia"],
+      "explanation": "The Rhine flows into the lake at one end and out of it again at the other.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.16",
+      "difficulty": "expert",
+      "question": "In which country is Lake Balaton, a large, shallow lake that is popular for summer holidays?",
+      "correct": "Hungary",
+      "wrong": ["Austria", "Poland", "Czechia"],
+      "explanation": "Balaton is often called the largest lake in Central Europe. Its shallow water warms up quickly in summer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.17",
+      "difficulty": "expert",
+      "question": "Which is the largest natural lake in England?",
+      "correct": "Windermere",
+      "wrong": ["Ullswater", "Derwentwater", "Coniston Water"],
+      "explanation": "Windermere lies in the Lake District in north-west England.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.18",
+      "difficulty": "expert",
+      "question": "Which is the largest lake in Finland?",
+      "correct": "Saimaa",
+      "wrong": ["Päijänne", "Oulujärvi", "Inari"],
+      "explanation": "Saimaa is a maze of islands and inlets. It is home to a rare freshwater seal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.19",
+      "difficulty": "expert",
+      "question": "Which is the largest glacier in Iceland?",
+      "correct": "Vatnajökull",
+      "wrong": ["Langjökull", "Hofsjökull", "Mýrdalsjökull"],
+      "explanation": "Several volcanoes lie hidden under the ice of Vatnajökull, which gives its name to a national park.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.20",
+      "difficulty": "expert",
+      "question": "The Aletsch Glacier, the longest glacier in the Alps, lies in which country?",
+      "correct": "Switzerland",
+      "wrong": ["Austria", "France", "Italy"],
+      "explanation": "It lies in the Bernese Alps, below the Jungfrau, and is part of a UNESCO World Heritage Site.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.21",
+      "difficulty": "expert",
+      "question": "The Rhine Falls near Schaffhausen are among the biggest waterfalls in Europe by water flow. In which country are they?",
+      "correct": "Switzerland",
+      "wrong": ["Germany", "Austria", "France"],
+      "explanation": "The falls are not very tall, but a huge amount of water goes over them every second.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.22",
+      "difficulty": "expert",
+      "question": "What do we call a curved lake left behind when a river cuts off one of its bends?",
+      "correct": "An oxbow lake",
+      "wrong": ["A crater lake", "A salt lake", "A tarn"],
+      "explanation": "The name comes from the U-shaped wooden collar used with oxen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.23",
+      "difficulty": "expert",
+      "question": "Which is the longest river in France?",
+      "correct": "The Loire",
+      "wrong": ["The Seine", "The Rhône", "The Garonne"],
+      "explanation": "Many famous castles stand along the Loire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.24",
+      "difficulty": "expert",
+      "question": "Which river is the longest in the United Kingdom?",
+      "correct": "The Severn",
+      "wrong": ["The Thames", "The Trent", "The Tay"],
+      "explanation": "The Severn starts in Wales, flows through England and ends in the Bristol Channel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.25",
+      "difficulty": "expert",
+      "question": "Which big river flows through Venezuela and into the Atlantic Ocean?",
+      "correct": "The Orinoco",
+      "wrong": ["The Amazon", "The Paraná", "The Magdalena"],
+      "explanation": "The Orinoco forms part of the border between Venezuela and Colombia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.26",
+      "difficulty": "expert",
+      "question": "Which West African river flows through the cities of Bamako and Niamey?",
+      "correct": "The Niger",
+      "wrong": ["The Senegal", "The Congo", "The Volta"],
+      "explanation": "Two countries, Niger and Nigeria, are named after this river. It makes a huge bend through West Africa and ends in a big delta.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.27",
+      "difficulty": "expert",
+      "question": "The Thar Desert lies in north-west India and which other country?",
+      "correct": "Pakistan",
+      "wrong": ["Iran", "Afghanistan", "Bangladesh"],
+      "explanation": "The Thar is also called the Great Indian Desert.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.28",
+      "difficulty": "expert",
+      "question": "Which desert fills the Tarim Basin in western China?",
+      "correct": "The Taklamakan",
+      "wrong": ["The Gobi", "The Thar", "The Kalahari"],
+      "explanation": "Old Silk Road trade routes went around the edges of this desert.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.29",
+      "difficulty": "expert",
+      "question": "Which Icelandic volcano's ash cloud stopped many flights over Europe in 2010?",
+      "correct": "Eyjafjallajökull",
+      "wrong": ["Hekla", "Katla", "Krafla"],
+      "explanation": "The ash was a danger to aeroplane engines, so airspace was closed for several days.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.30",
+      "difficulty": "expert",
+      "question": "Cotopaxi, one of the highest active volcanoes in the world, is in which country?",
+      "correct": "Ecuador",
+      "wrong": ["Peru", "Chile", "Colombia"],
+      "explanation": "Cotopaxi has a snow cap even though it lies close to the equator.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.31",
+      "difficulty": "expert",
+      "question": "The Grossglockner is the highest mountain in which country?",
+      "correct": "Austria",
+      "wrong": ["Switzerland", "Germany", "Slovenia"],
+      "explanation": "It is part of the Hohe Tauern range in the Alps.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.32",
+      "difficulty": "expert",
+      "question": "Which of the Great Lakes has the largest surface area?",
+      "correct": "Lake Superior",
+      "wrong": ["Lake Michigan", "Lake Huron", "Lake Erie"],
+      "explanation": "Superior is also the deepest of the five lakes, and it is often called the largest freshwater lake in the world by area.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.33",
+      "difficulty": "expert",
+      "question": "Which river flows through the city of Kyiv?",
+      "correct": "The Dnieper",
+      "wrong": ["The Dniester", "The Volga", "The Vistula"],
+      "explanation": "The Dnieper flows from Russia through Belarus and Ukraine to the Black Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.34",
+      "difficulty": "expert",
+      "question": "Which river reaches the Atlantic Ocean at Lisbon?",
+      "correct": "The Tagus",
+      "wrong": ["The Douro", "The Ebro", "The Guadalquivir"],
+      "explanation": "The Tagus is the longest river on the Iberian Peninsula.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.35",
+      "difficulty": "expert",
+      "question": "Which river flows through the French city of Bordeaux?",
+      "correct": "The Garonne",
+      "wrong": ["The Loire", "The Seine", "The Rhône"],
+      "explanation": "The Garonne starts in the Pyrenees and flows to the Atlantic Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.36",
+      "difficulty": "expert",
+      "question": "Which river flows through the Italian city of Florence?",
+      "correct": "The Arno",
+      "wrong": ["The Tiber", "The Adige", "The Piave"],
+      "explanation": "The Ponte Vecchio, a bridge with shops on it, crosses the Arno.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.37",
+      "difficulty": "expert",
+      "question": "Triglav is the highest mountain in which country?",
+      "correct": "Slovenia",
+      "wrong": ["Croatia", "Austria", "Serbia"],
+      "explanation": "Its name means 'three heads'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.38",
+      "difficulty": "expert",
+      "question": "The High Tatras mountains lie on the border between Poland and which other country?",
+      "correct": "Slovakia",
+      "wrong": ["Czechia", "Ukraine", "Romania"],
+      "explanation": "The Tatras are the highest part of the Carpathian Mountains.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.39",
+      "difficulty": "expert",
+      "question": "In which country is the Salar de Uyuni, the largest salt flat in the world?",
+      "correct": "Bolivia",
+      "wrong": ["Chile", "Argentina", "Peru"],
+      "explanation": "After rain, the thin layer of water turns the salt flat into a giant mirror of the sky.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.mountains-rivers.expert.40",
+      "difficulty": "expert",
+      "question": "In which country does the Okavango River end in a huge inland delta instead of reaching the sea?",
+      "correct": "Botswana",
+      "wrong": ["Namibia", "Angola", "Zambia"],
+      "explanation": "The delta lies in the Kalahari and is full of wildlife, including elephants and hippos.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

@@ -42,11 +42,28 @@ Useful extras:
 | `node scripts/seed-walk.mjs --code <CODE> --status ended` | Ends that walk (players see final results) |
 | `node scripts/seed-walk.mjs --code <CODE> --team "Harbour Hawks" --answered 2 --blocked` | A pretend team on the walk, for trying the live monitor alone |
 
+For *Generate for me* (M4), before starting the emulators: put the real routing and writing
+keys where the functions emulator reads them, without printing them, and load the question bank
+once the emulators run. Keep real use small: a Refresh is one routing call, and a walk with a
+*Local* stop can spend Gemini tokens.
+
+```bash
+for n in ORS_API_KEY GEMINI_API_KEY; do printf '%s=%s\n' $n "$(npx firebase functions:secrets:access $n --project qualk-a173e)"; done > functions/.secret.local
+npx tsx scripts/import-question-bank.ts
+```
+
+`functions/.secret.local` is git-ignored; delete it when you are done.
+
 In the simulator build:
 
 - **Sign in as test creator** replaces Apple and Google (the Auth emulator accepts a test
   account; real sign-in needs the real config).
 - **Simulate arrive** on the walk screen stands you at the stop.
+- **A simulated walk**, for pocket mode: `xcrun simctl location booted start --speed=5 55.67985,12.59060 55.68615,12.59060`
+  walks the phone north at 5 m/s. Send QuizWalk to the background (Home) and watch Metro's
+  `[pocket]` lines; the arrival notification appears as a banner.
+- **After restarting the emulators**, the simulator still holds the old anonymous user and joining
+  says "You're offline". `xcrun simctl keychain booted reset`, then open the app again.
 - The Android emulator works too, after `adb reverse tcp:9099 tcp:9099`, the same for `8080` and
   `5001`, then `QUALK_EMULATORS=1 npx expo run:android` (needs Android Studio, not installed on
   this Mac).
@@ -68,7 +85,7 @@ from here once you say yes; **You** marks steps that need your consoles.
 | C. Maps key for Android | Waiting for you |
 | D. Deploy | Done: rules, indexes and all nine functions, plus a cleanup policy for old function images |
 | E. App Check | Decided: enforcement off for the test period, deployed |
-| F. Builds | Current `preview` builds, both with the share cards: [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/882f7185-a4cf-4d74-aa69-b55f54b50fd3) (2026-11-27, with the fix for the launch crash below) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/622c962b-b8db-4f0b-a37d-03f47e77ec39) (commit `e96705c`). The Android build from 26 Nov closed at launch: AGP 9's R8 removed the constructor of WorkManager's database, which Room creates by reflection; the keep rules are in `app/app.config.ts`. Android needed Kotlin 2.4.0 for Firebase Auth 25; the iPhone needed your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
+| F. Builds | `preview` builds with pocket mode and *Directions* (M3), started 2026-11-27: [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/b1c74371-eb31-4e72-b422-63e51c3ab631) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/d51266f8-56f9-4033-94a1-9e490a459ae0). Before them, both with the share cards: [Android](https://expo.dev/accounts/lmunck/projects/qualk/builds/882f7185-a4cf-4d74-aa69-b55f54b50fd3) (2026-11-27, with the fix for the launch crash below) and [iPhone](https://expo.dev/accounts/lmunck/projects/qualk/builds/622c962b-b8db-4f0b-a37d-03f47e77ec39) (commit `e96705c`). The Android build from 26 Nov closed at launch: AGP 9's R8 removed the constructor of WorkManager's database, which Room creates by reflection; the keep rules are in `app/app.config.ts`. Android needed Kotlin 2.4.0 for Firebase Auth 25; the iPhone needed your one interactive build, which also set up the Apple push key. The `development` builds from M0 predate Firebase and need building again |
 
 Anonymous, Apple and Google sign-in were already enabled in the project's Authentication
 settings. A smoke test against the live project passed: anonymous sign-in, join-code lookup,
@@ -213,6 +230,8 @@ Hand over a code, say nothing else, and watch. Note every hesitation.
 2. Pick team or solo, name the team, allow location.
 3. Wait in the lobby until the walk opens; tap Start walk.
 4. Walk to each stop. When the question opens, gather round, tap Show question, answer.
+   With notifications allowed, put the phone in a pocket between stops: it buzzes at the stop,
+   and the notification opens the question. Try *Directions* once.
 5. At one stop, open **Can't reach it** and try **I'm here** or **Skip**.
 6. Put one phone in airplane mode for a stop, answer, switch back. Does the score catch up?
 7. Force-quit the app mid-walk, reopen, continue from Home.
@@ -225,8 +244,8 @@ Hand over a code, say nothing else, and watch. Note every hesitation.
 3. Open the walk (Today), watch the monitor, end the walk, read the results and share them.
 
 **Write down:** stops that unlocked early, late or never (and the GPS accuracy the walk screen
-showed), anything that read wrongly, battery use over the walk, and anything the tester asked
-about.
+showed), how far from the stop a pocketed phone buzzed (or that it did not), anything that read
+wrongly, battery use over the walk, and anything the tester asked about.
 
 ---
 
@@ -234,10 +253,12 @@ about.
 
 | Limit | Why | When |
 |---|---|---|
-| The screen must stay on while walking; no buzz in a pocket | Pocket mode is M3 and depends on the background-location spike (spec §9) | M3 |
+| Builds from before 27 Nov keep the screen on while walking; no buzz in a pocket | Pocket mode came in M3 (spec §9) | Builds from 27 Nov |
+| Pocket mode is checked on the simulator only | Needs a walk with real phones in pockets: `m2-m3-delivery.md`, "What you need to do" | Your field test |
+| Pocket mode needs notifications allowed; without them the screen stays on and P3 says "Keep QuizWalk open" | A phone in a pocket can only buzz through a notification | — |
 | Routes are straight lines between pins, "as the crow flies" | Walking routes need the OpenRouteService key | M4 |
 | No AI-generated walks | M4 | M4 |
-| Push notifications are written but untested | Needs the push credentials (spec §18, M2) and a real phone | M2 |
+| Pushes untested on real phones; Android gets none yet | Android needs the FCM V1 key uploaded to Expo (`m2-m3-delivery.md`, step 6) | Your step |
 | Builds from 26 Nov share results as text | The image share cards (results, standings so far, invite picture) came after those builds, and there are no over-the-air updates | Next build |
 | On Android, *Share invite* sends the message and link without the picture; the picture is *Share as a picture* on the Share screen | Android's share sheet takes text or a file, not both. iOS sends all three together | — |
 | No account deletion or privacy page | M5 | M5 |

@@ -154,7 +154,7 @@ It is written in step C with its tests.
 Nothing runs when a walk ends in M1: ranks are derived on each phone with `rankTeams`, and rules
 stop new answers, so there is nothing to freeze. `onWalkStatusChanged` arrives in M2 for the push.
 
-`duplicateWalk`, `deleteWalk`, `deleteAccount`, `reroute`, `generateWalk`, `suggestQuestion` and
+`duplicateWalk`, `deleteWalk`, `deleteAccount`, `reroute`, `generateWalk`, `swapQuestion` (once `suggestQuestion`) and
 the retention job are later milestones. **App Check** (App Attest / Play Integrity) is required
 on callables per §8; it is wired in M1 because retrofitting it means re-testing every call site.
 Play Integrity needs the app to exist in the Play Console (§18, still open), so until then the
@@ -282,11 +282,15 @@ P3 holds the screen awake with `expo-keep-awake` and tells the player to keep Qu
 Positions are written only after *Start walk*. The lobby's distance-to-start is local.
 
 `src/location/` exposes `useArrival(stop)` returning `{ distanceM, accuracyM, unlocked, canImHere }`
-(`canImHere` from `canUseImHere(distanceM, accuracyM)`), and `useHeading()` returning
-`{ bearingToStop, reliable }` so P3 can swap the arrow for a text bearing.
-M3 replaces the implementation with background updates and geofencing without touching a
-screen. Geofencing is available in `expo-location` and iOS allows 20 regions, comfortably
-above the 12-stop maximum — M3's problem, but the boundary is drawn for it now.
+(`canImHere` from `canUseImHere(distanceM, accuracyM)`), and `useHeading()` (`compass.ts`)
+returning `{ bearingToTarget, reliable }` so P3 can swap the arrow for a text bearing. The
+iPhone's heading comes from Core Location. Android's comes from the fused rotation-vector
+sensor through the local module `app/modules/qualk-heading`, because expo-location's Android
+heading uses the raw magnetometer and jumped on the first field test (2026-11-28). Readings are
+smoothed in `shared/src/compass.ts`.
+M3 adds background updates behind the same hooks without touching a screen (`pocket.ts`; how
+and why in `m2-m3-delivery.md`). Geofencing was considered and not used: on iOS it needs
+"Always" permission, which spec §9 rules out.
 
 G6 "Can't reach" is in M1: *I'm here* (`distance − accuracy ≤ 150 m`, no speed bonus), *Skip*
 (0 points, confirm), *Way blocked* (writes a `skipped` answer and an alert in one step, so the

@@ -7,6 +7,7 @@ import {
   AppleAuthProvider,
   GoogleAuthProvider,
   linkWithCredential,
+  revokeToken,
   signInAnonymously,
   signInWithCredential,
   signOut as firebaseSignOut,
@@ -14,6 +15,7 @@ import {
 } from '@react-native-firebase/auth';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import * as Crypto from 'expo-crypto';
+import { Platform } from 'react-native';
 import {
   GoogleOneTapSignIn,
   isCancelledResponse,
@@ -139,6 +141,30 @@ export async function signInForTesting(name: string): Promise<SignInResult> {
     name,
   });
   return finish(GoogleAuthProvider.credential(fakeToken), name);
+}
+
+/**
+ * Before deleting an account made with Sign in with Apple: Apple asks apps to revoke the
+ * user's tokens when an account is deleted. That needs a fresh authorization code, so Apple's
+ * sheet shows once more. Closing it throws SignInCancelled and nothing is deleted. Any other
+ * failure (for example Firebase not set up to revoke) is logged, so deletion never depends on it.
+ */
+export async function revokeAppleSignIn(): Promise<void> {
+  if (Platform.OS !== 'ios' || usingEmulators) return;
+  let code: string | null;
+  try {
+    code = (await AppleAuthentication.signInAsync({ requestedScopes: [] })).authorizationCode;
+  } catch (err) {
+    if ((err as { code?: string }).code === 'ERR_REQUEST_CANCELED') throw new SignInCancelled();
+    console.warn('Apple did not confirm, so its token was not revoked', err);
+    return;
+  }
+  if (!code) return;
+  try {
+    await revokeToken(auth, code);
+  } catch (err) {
+    console.warn('Apple token not revoked', err);
+  }
 }
 
 /** Signs out and back in anonymously, so the app always has a user (rules need one). */

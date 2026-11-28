@@ -1,0 +1,1240 @@
+{
+  "category": "history",
+  "subcategory": "middle-ages",
+  "questions": [
+    {
+      "id": "history.middle-ages.kids.01",
+      "difficulty": "kids",
+      "question": "Which people sailed from Scandinavia in longships to raid and trade?",
+      "correct": "Vikings",
+      "wrong": ["Romans", "Egyptians", "Aztecs"],
+      "explanation": "The Vikings came from Denmark, Norway and Sweden. Their ships were fast, so they could reach Britain, France and even North America.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.02",
+      "difficulty": "kids",
+      "question": "What is a moat around a castle?",
+      "correct": "A ditch filled with water",
+      "wrong": ["A tall tower", "A secret tunnel", "A heavy gate"],
+      "explanation": "A moat made it hard for enemies to reach the walls. They could not easily dig under the wall or push a tall ladder against it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.03",
+      "difficulty": "kids",
+      "question": "What was a knight's metal protective clothing called?",
+      "correct": "Armour",
+      "wrong": ["Robes", "Aprons", "Scarves"],
+      "explanation": "Armour was made of metal plates or rings. It was heavy, so knights often needed help to put it on.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.04",
+      "difficulty": "kids",
+      "question": "What animal did knights ride into battle?",
+      "correct": "A horse",
+      "wrong": ["A camel", "An ox", "An elephant"],
+      "explanation": "Knights trained their horses from a young age. A strong war horse had to stay calm among noise and fighting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.05",
+      "difficulty": "kids",
+      "question": "Which animal is often blamed for spreading the Black Death?",
+      "correct": "Rats",
+      "wrong": ["Cats", "Cows", "Pigeons"],
+      "explanation": "The disease was carried by fleas that lived on rats. Ships and towns full of rats helped the plague move across Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.06",
+      "difficulty": "kids",
+      "question": "What do we call a man who lived in a monastery and spent his life in prayer and work?",
+      "correct": "A monk",
+      "wrong": ["A knight", "A merchant", "A blacksmith"],
+      "explanation": "Monks also copied books by hand, grew herbs and looked after travellers. Monasteries were important places of learning.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.07",
+      "difficulty": "kids",
+      "question": "What were the letters of the Viking alphabet called?",
+      "correct": "Runes",
+      "wrong": ["Hieroglyphs", "Cuneiform", "Braille"],
+      "explanation": "Runes have straight lines that are easy to cut into wood or stone. The Vikings carved them on memorial stones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.08",
+      "difficulty": "kids",
+      "question": "Which Viking explorer is said to have reached North America around the year 1000?",
+      "correct": "Leif Erikson",
+      "wrong": ["Marco Polo", "Julius Caesar", "Captain Cook"],
+      "explanation": "Leif sailed west from Greenland with a small crew. He reached America almost 500 years before Columbus.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.09",
+      "difficulty": "kids",
+      "question": "What name did Vikings give to the land they found in North America?",
+      "correct": "Vinland",
+      "wrong": ["Ironland", "Sunland", "Bearland"],
+      "explanation": "The sagas say the Vikings found wild grapes there and named the land after them. They did not stay there for long.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.10",
+      "difficulty": "kids",
+      "question": "What did people lower over a castle's moat so they could cross it?",
+      "correct": "A drawbridge",
+      "wrong": ["A glass bridge", "A tunnel", "A ferry boat"],
+      "explanation": "A drawbridge could be pulled up when enemies came. Then nobody could reach the gate without swimming through the moat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.11",
+      "difficulty": "kids",
+      "question": "What was a young helper who learned to become a knight called?",
+      "correct": "A squire",
+      "wrong": ["A sheriff", "A bishop", "A baker"],
+      "explanation": "A boy first served as a page, then as a squire. He looked after a knight's horse and armour and learned to fight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.12",
+      "difficulty": "kids",
+      "question": "Which person told jokes and played tricks to amuse a king's court?",
+      "correct": "A jester",
+      "wrong": ["A bishop", "A judge", "A tax collector"],
+      "explanation": "Jesters wore bright clothes with bells. They were sometimes the only people allowed to make fun of the king.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.13",
+      "difficulty": "kids",
+      "question": "What animal head was often carved on the front of a Viking ship?",
+      "correct": "A dragon",
+      "wrong": ["A lion", "A camel", "A tiger"],
+      "explanation": "A fierce dragon head was meant to scare enemies and bad spirits. Some ships had a head that could be taken off before landing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.14",
+      "difficulty": "kids",
+      "question": "What was the Black Death?",
+      "correct": "A deadly disease",
+      "wrong": ["A great storm", "A war between kings", "A big castle fire"],
+      "explanation": "It spread from Asia across Europe. Many villages lost half of their people, and fields were left without farmers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.15",
+      "difficulty": "kids",
+      "question": "Which young French woman led soldiers in the 1400s and is a national hero?",
+      "correct": "Joan of Arc",
+      "wrong": ["Cleopatra", "Queen Victoria", "Marie Curie"],
+      "explanation": "Joan was only a teenager when she helped the French army win at Orléans. She is remembered as a symbol of France.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.16",
+      "difficulty": "kids",
+      "question": "Which Duke of Normandy won the Battle of Hastings in 1066?",
+      "correct": "William",
+      "wrong": ["Harold", "Alfred", "Richard"],
+      "explanation": "After winning, William became king of England. He is known as William the Conqueror and had many castles built.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.17",
+      "difficulty": "kids",
+      "question": "What was a quill pen made from?",
+      "correct": "A bird's feather",
+      "wrong": ["Plastic", "Glass", "Rubber"],
+      "explanation": "Writers cut the tip of a big feather, often from a goose, and dipped it in ink. Quills were used for many centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.18",
+      "difficulty": "kids",
+      "question": "What machine did armies use to throw huge stones at castle walls?",
+      "correct": "A trebuchet",
+      "wrong": ["A windmill", "A water wheel", "A plough"],
+      "explanation": "A trebuchet used a heavy weight to swing a long arm. It could throw stones as heavy as a grown man over a wall.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.19",
+      "difficulty": "kids",
+      "question": "Which animals often pulled the plough on medieval farms?",
+      "correct": "Oxen",
+      "wrong": ["Zebras", "Sheep", "Llamas"],
+      "explanation": "Oxen are strong and calm, and they were cheaper to feed than horses. Later, farmers began to use horses as well.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.20",
+      "difficulty": "kids",
+      "question": "Which bird did rich people train to hunt other animals?",
+      "correct": "A falcon",
+      "wrong": ["A parrot", "A duck", "A chicken"],
+      "explanation": "A falcon sat on a glove and flew off to catch prey. Hunting with birds is called falconry.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.21",
+      "difficulty": "kids",
+      "question": "What were most Viking shields made of?",
+      "correct": "Wood",
+      "wrong": ["Stone", "Glass", "Rubber"],
+      "explanation": "Shields were round and made of thin planks, often with a metal bump in the middle. They were light enough to carry on a long voyage.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.22",
+      "difficulty": "kids",
+      "question": "What was the Silk Road?",
+      "correct": "Trade routes linking Asia and Europe",
+      "wrong": ["A road paved with silk", "A river in China", "A canal through Italy"],
+      "explanation": "Traders carried silk, spices and ideas along it for hundreds of years. It was not one road but many paths.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.23",
+      "difficulty": "kids",
+      "question": "What did a town crier do?",
+      "correct": "Shouted the news in the street",
+      "wrong": ["Mended shoes", "Baked bread", "Looked after horses"],
+      "explanation": "Most people could not read, so a crier rang a bell and called out news and rules. He often stood in the market square.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.24",
+      "difficulty": "kids",
+      "question": "What is a siege?",
+      "correct": "An army surrounding a castle or town",
+      "wrong": ["A feast after a battle", "A race between knights", "A kind of castle gate"],
+      "explanation": "Armies would wait outside a castle until the people inside ran out of food. Sieges could last for months.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.25",
+      "difficulty": "kids",
+      "question": "Which Japanese warriors served lords and fought with swords?",
+      "correct": "Samurai",
+      "wrong": ["Gladiators", "Vikings", "Cossacks"],
+      "explanation": "Samurai were trained from childhood to ride, shoot a bow and use a sword. Loyalty to their lord was very important to them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.26",
+      "difficulty": "kids",
+      "question": "Where were prisoners kept in a castle?",
+      "correct": "In the dungeon",
+      "wrong": ["In the great hall", "In the kitchen", "In the chapel"],
+      "explanation": "A dungeon was a dark room, often under the castle. The word comes from the same old word as 'donjon', the castle's main tower.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.27",
+      "difficulty": "kids",
+      "question": "What was chain mail made of?",
+      "correct": "Small metal rings",
+      "wrong": ["Leather strips", "Wooden planks", "Wool thread"],
+      "explanation": "Thousands of rings were linked together by hand. A mail shirt could weigh more than ten kilograms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.28",
+      "difficulty": "kids",
+      "question": "What was the leader of a monastery called?",
+      "correct": "An abbot",
+      "wrong": ["A mayor", "A sheriff", "An admiral"],
+      "explanation": "The abbot decided how the monks lived and worked. Rich monasteries also owned land, farms and mills.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.29",
+      "difficulty": "kids",
+      "question": "Which weapon was very common among Vikings and was also useful for chopping wood?",
+      "correct": "An axe",
+      "wrong": ["A boomerang", "A blowpipe", "A whip"],
+      "explanation": "Swords were costly, so many Vikings fought with axes. A big two-handed axe was a fearsome weapon.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.30",
+      "difficulty": "kids",
+      "question": "Why were many castles built on hills?",
+      "correct": "To see enemies from far away",
+      "wrong": ["To grow more food", "To catch rainwater", "To be near the shops"],
+      "explanation": "A high place gave a long view, and attackers had to climb up to reach the walls. This made the castle easier to defend.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.31",
+      "difficulty": "kids",
+      "question": "What is a Viking saga?",
+      "correct": "A story of heroes and families",
+      "wrong": [
+        "A long, fast kind of ship",
+        "A sword made for a chief",
+        "A feast held in midwinter"
+      ],
+      "explanation": "Many sagas were told aloud for years and were written down in Iceland in the 1200s. They tell of voyages, feuds and settlers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.32",
+      "difficulty": "kids",
+      "question": "Which weapon had a bow fixed across a wooden handle and was fired with a trigger?",
+      "correct": "A crossbow",
+      "wrong": ["A spear", "A sling", "A longbow"],
+      "explanation": "A crossbow was easy to learn and could pierce armour. But it was slow to load, so a longbowman could shoot faster.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.33",
+      "difficulty": "kids",
+      "question": "What did medieval blacksmiths make?",
+      "correct": "Iron tools and horseshoes",
+      "wrong": ["Bread, buns and cakes", "Woollen cloth and coats", "Wooden barrels and tubs"],
+      "explanation": "A blacksmith heated iron in a fire and hammered it into shape. Every village needed one for ploughs, nails, hinges and knives.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.34",
+      "difficulty": "kids",
+      "question": "What were narrow slits in castle walls used for?",
+      "correct": "Shooting arrows out",
+      "wrong": ["Letting out smoke", "Hanging flags", "Passing food inside"],
+      "explanation": "Archers could shoot out through the slit, but the slit was too thin for enemies to shoot in easily.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.35",
+      "difficulty": "kids",
+      "question": "In the Middle Ages, what did people often use to keep meat and fish for winter?",
+      "correct": "Salt",
+      "wrong": ["Sand", "Soap", "Flour"],
+      "explanation": "Salt takes water out of food, so germs cannot grow. There were no fridges, so salted and smoked food was common.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.36",
+      "difficulty": "kids",
+      "question": "What did two knights try to do in a joust?",
+      "correct": "Knock each other off their horses",
+      "wrong": [
+        "Race each other to a river",
+        "Catch a deer in the forest",
+        "Climb up a castle wall"
+      ],
+      "explanation": "They charged at each other with long wooden lances. Jousts were part of tournaments and drew big crowds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.37",
+      "difficulty": "kids",
+      "question": "What did most people in the Middle Ages work as?",
+      "correct": "Farmers",
+      "wrong": ["Bankers", "Teachers", "Miners"],
+      "explanation": "Most families grew food on a small piece of land. Farm work followed the seasons and often took all day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.38",
+      "difficulty": "kids",
+      "question": "What is the painted design on a knight's shield that shows his family?",
+      "correct": "A coat of arms",
+      "wrong": ["A name tag", "A postcard", "A passport"],
+      "explanation": "Colours and animals on the shield told people who a knight was. This was useful in a battle when everyone wore armour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.39",
+      "difficulty": "kids",
+      "question": "What is the main, strongest tower of a castle called?",
+      "correct": "The keep",
+      "wrong": ["The moat", "The stable", "The garden"],
+      "explanation": "The keep was the last place to hide if enemies broke in. Its walls could be several metres thick.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which French town gives its name to a famous embroidery about the events of 1066?",
+      "correct": "Bayeux",
+      "wrong": ["Rouen", "Caen", "Calais"],
+      "explanation": "The Bayeux Tapestry is about 70 metres long. It shows the Norman invasion in many small scenes, like a comic strip.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which English king agreed to the Magna Carta in 1215?",
+      "correct": "John",
+      "wrong": ["Henry V", "Edward I", "Richard I"],
+      "explanation": "Rebel barons forced him to accept limits on his power. It said that even the king had to obey the law.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which ruler of the Franks was crowned emperor in Rome in the year 800?",
+      "correct": "Charlemagne",
+      "wrong": ["Clovis", "William the Conqueror", "Otto the Great"],
+      "explanation": "The Pope crowned him on Christmas Day. His empire covered much of western Europe, and he supported schools and scholars.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which island off England's coast was raided by Vikings in 793, shocking Europe?",
+      "correct": "Lindisfarne",
+      "wrong": ["The Isle of Wight", "Anglesey", "Skye"],
+      "explanation": "Lindisfarne had a famous monastery. This raid is often seen as the start of the Viking Age.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.05",
+      "difficulty": "mixed",
+      "question": "In which century did the Black Death sweep through Europe?",
+      "correct": "The 14th century",
+      "wrong": ["The 10th century", "The 12th century", "The 16th century"],
+      "explanation": "It arrived in the late 1340s and killed perhaps a third of all Europeans. Later waves of plague returned for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.06",
+      "difficulty": "mixed",
+      "question": "What was the Hanseatic League?",
+      "correct": "A union of northern trading towns",
+      "wrong": ["An order of knights", "A Viking army", "A religious order of monks"],
+      "explanation": "Towns like Hamburg, Bremen and Riga joined to protect their merchants and trade. At its height it controlled much of northern Europe's trade.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.07",
+      "difficulty": "mixed",
+      "question": "Which city was the capital of the Byzantine Empire?",
+      "correct": "Constantinople",
+      "wrong": ["Athens", "Alexandria", "Baghdad"],
+      "explanation": "The city stood where Europe meets Asia. Its great walls and its harbour helped it survive for about a thousand years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.08",
+      "difficulty": "mixed",
+      "question": "According to the sagas, why did Erik the Red name his land Greenland?",
+      "correct": "To make people want to settle there",
+      "wrong": [
+        "It was covered in forest",
+        "The ice looked green",
+        "A green sea washed its shores"
+      ],
+      "explanation": "Most of the island is covered in ice. But the south has green fields in summer, and Norse farmers lived there for about 450 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.09",
+      "difficulty": "mixed",
+      "question": "What did Viking warriors most likely wear on their heads?",
+      "correct": "Simple round iron helmets",
+      "wrong": ["Helmets with big horns", "Gold crowns", "Straw hats"],
+      "explanation": "No Viking helmet with horns has ever been found. The idea comes from paintings and costumes made hundreds of years later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.10",
+      "difficulty": "mixed",
+      "question": "What was the Domesday Book?",
+      "correct": "A survey of land and property",
+      "wrong": [
+        "A book of prayers for monks",
+        "A list of England's kings",
+        "A map of the king's castles"
+      ],
+      "explanation": "William the Conqueror had it made in 1086 to learn who owned what, so he could collect taxes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which war was Joan of Arc fighting in?",
+      "correct": "The Hundred Years' War",
+      "wrong": ["The Wars of the Roses", "The Thirty Years' War", "The Peasants' War"],
+      "explanation": "England and France fought on and off from 1337 to 1453. That is really 116 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.12",
+      "difficulty": "mixed",
+      "question": "Who introduced printing with movable metal type in Europe around 1450?",
+      "correct": "Johannes Gutenberg",
+      "wrong": ["Leonardo da Vinci", "William Caxton", "Martin Luther"],
+      "explanation": "His printing press made books cheaper and quicker to make. His Bible, printed in Mainz, is a famous early book.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.13",
+      "difficulty": "mixed",
+      "question": "What was a serf in medieval Europe?",
+      "correct": "A farm worker tied to a lord's land",
+      "wrong": [
+        "A knight without any land",
+        "A merchant in a large town",
+        "A monk who copied books"
+      ],
+      "explanation": "Serfs worked the lord's fields and paid him part of their crops. They could not move away without permission.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.14",
+      "difficulty": "mixed",
+      "question": "What was a 'thing' in Viking society?",
+      "correct": "An assembly of free men",
+      "wrong": ["A feast after a raid", "A fast type of warship", "A chief chosen for war"],
+      "explanation": "At the thing, people settled disputes and agreed on rules. The word lives on in parliaments like Denmark's Folketing and Norway's Storting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which city on the southern edge of the Sahara was a famous centre of trade and learning in the Middle Ages?",
+      "correct": "Timbuktu",
+      "wrong": ["Casablanca", "Lagos", "Nairobi"],
+      "explanation": "Timbuktu, in Mali, grew rich as camel caravans brought salt and gold. Scholars came to study, and thousands of its old books have survived.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which medieval empire built the great temple of Angkor Wat?",
+      "correct": "The Khmer Empire",
+      "wrong": ["The Mongol Empire", "The Inca Empire", "The Ottoman Empire"],
+      "explanation": "The Khmer ruled a large part of Southeast Asia from their capital at Angkor, in Cambodia. Angkor Wat was built in the 1100s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.17",
+      "difficulty": "mixed",
+      "question": "What was the title of the military ruler who held real power in Japan under the emperor?",
+      "correct": "Shogun",
+      "wrong": ["Geisha", "Ronin", "Sensei"],
+      "explanation": "The emperor stayed in Kyoto but was a figurehead. From 1185 shoguns ran the country for most of the next 700 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.18",
+      "difficulty": "mixed",
+      "question": "At which battle in 1415 did English longbowmen beat a larger French army?",
+      "correct": "Agincourt",
+      "wrong": ["Hastings", "Bannockburn", "Poitiers"],
+      "explanation": "Rain and mud slowed the heavily armoured French knights. English archers shot arrows from a safe distance.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which English king, known as 'the Great', fought the Vikings in the 800s?",
+      "correct": "Alfred",
+      "wrong": ["Harold", "Edward the Confessor", "Athelstan"],
+      "explanation": "Alfred beat a Viking army and made peace with them. He also loved learning and had many books translated into English.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which English king was nicknamed the Lionheart?",
+      "correct": "Richard I",
+      "wrong": ["John", "Edward III", "Henry II"],
+      "explanation": "He was famous as a brave fighter. He spent most of his reign abroad and spoke French more than English.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.21",
+      "difficulty": "mixed",
+      "question": "The Normans who conquered England in 1066 were descended from which northern people?",
+      "correct": "Vikings",
+      "wrong": ["Romans", "Celts", "Huns"],
+      "explanation": "The name Norman comes from 'Northman'. Vikings had settled in northern France about 150 years before 1066.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which Italian city, built on islands in a lagoon, grew rich on trade in the Middle Ages?",
+      "correct": "Venice",
+      "wrong": ["Florence", "Milan", "Turin"],
+      "explanation": "Venetian ships carried spices and silk from the East to Europe. The city built a strong navy to protect its trade.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.23",
+      "difficulty": "mixed",
+      "question": "What were medieval guilds?",
+      "correct": "Groups of craftsmen or merchants",
+      "wrong": ["Armies of peasants", "Schools run by the church", "Groups of travelling knights"],
+      "explanation": "A guild set prices and checked the quality of goods. It also helped members who were ill or poor.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which English city did Vikings call Jorvik?",
+      "correct": "York",
+      "wrong": ["Exeter", "Chester", "Dover"],
+      "explanation": "Jorvik became an important Viking trading town. Finds from digs there show Viking houses, shoes and combs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.25",
+      "difficulty": "mixed",
+      "question": "What was the motte in a motte-and-bailey castle?",
+      "correct": "A raised mound with a tower on top",
+      "wrong": ["A water-filled ditch", "The main gate", "A stone wall around the yard"],
+      "explanation": "The Normans built these castles quickly from earth and wood. The bailey was the fenced yard at the foot of the mound.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.26",
+      "difficulty": "mixed",
+      "question": "What was 'Greek fire', used by the Byzantine navy?",
+      "correct": "A burning liquid weapon",
+      "wrong": ["A signal beacon", "A hot oven", "A festival"],
+      "explanation": "It could keep burning on water. Its recipe was a closely guarded secret, and nobody is sure what it contained.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.27",
+      "difficulty": "mixed",
+      "question": "In which country was gunpowder first invented?",
+      "correct": "China",
+      "wrong": ["Italy", "Egypt", "Germany"],
+      "explanation": "Chinese alchemists discovered it around the 800s while looking for a potion for long life. It was later used in fire arrows, bombs and fireworks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.28",
+      "difficulty": "mixed",
+      "question": "Which Scottish king won the Battle of Bannockburn in 1314?",
+      "correct": "Robert the Bruce",
+      "wrong": ["William Wallace", "Macbeth", "Malcolm Canmore"],
+      "explanation": "The Scots beat a much larger English army. England finally accepted Scotland's independence in 1328.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.29",
+      "difficulty": "mixed",
+      "question": "At medieval feasts, what was often used as a plate?",
+      "correct": "A slice of stale bread",
+      "wrong": ["A flat stone", "A large seashell", "A sheet of paper"],
+      "explanation": "This bread plate was called a trencher. After the meal it was often given to the poor or to animals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which useful invention appeared in Italy in the late 1200s to help people read?",
+      "correct": "Eyeglasses",
+      "wrong": ["The telescope", "The microscope", "The thermometer"],
+      "explanation": "The first glasses had lenses held in front of the eyes. They were a great help to monks who copied books for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.31",
+      "difficulty": "mixed",
+      "question": "Which skill made Mongol armies so hard to beat?",
+      "correct": "Shooting arrows from fast horses",
+      "wrong": [
+        "Fighting in heavy armour on foot",
+        "Building huge castles",
+        "Sailing large fleets"
+      ],
+      "explanation": "Mongol riders could turn in the saddle and shoot backwards as they rode. They also tricked enemies by pretending to flee.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.32",
+      "difficulty": "mixed",
+      "question": "In a medieval town, what was an apprentice?",
+      "correct": "A young person learning a trade",
+      "wrong": ["A town guard", "A tax collector", "A travelling musician"],
+      "explanation": "Apprentices lived with the master and often worked for seven years. After that they could become journeymen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.33",
+      "difficulty": "mixed",
+      "question": "What is an illuminated manuscript?",
+      "correct": "A book decorated by hand with gold",
+      "wrong": [
+        "A book read by candlelight",
+        "A map drawn for sailors",
+        "A scroll about the stars"
+      ],
+      "explanation": "Monks painted tiny pictures and fancy letters on animal skin. The shiny gold leaf seemed to make the page glow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.34",
+      "difficulty": "mixed",
+      "question": "In the Wars of the Roses, which colour of rose was the symbol of the House of York?",
+      "correct": "White",
+      "wrong": ["Red", "Yellow", "Pink"],
+      "explanation": "The House of Lancaster is linked with the red rose. Henry Tudor won in 1485 and later joined the two roses in the Tudor rose.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.35",
+      "difficulty": "mixed",
+      "question": "In the Viking Age, what did it mean to go 'a-viking'?",
+      "correct": "Going on a raid by sea",
+      "wrong": ["Going to a big feast", "Going hunting in the woods", "Going to a market town"],
+      "explanation": "In Old Norse, 'víking' was the raiding voyage itself, not the people. Not all Scandinavians were Vikings.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.36",
+      "difficulty": "mixed",
+      "question": "England's name comes from which Germanic people who settled there after the Romans left?",
+      "correct": "The Angles",
+      "wrong": ["The Franks", "The Goths", "The Vandals"],
+      "explanation": "England means 'land of the Angles'. The Angles came with the Saxons and Jutes from northern Germany and Denmark.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.37",
+      "difficulty": "mixed",
+      "question": "The Lewis chess pieces, found in Scotland, were mostly carved from the tusks of which animal?",
+      "correct": "Walrus",
+      "wrong": ["Elephant", "Wild boar", "Mammoth"],
+      "explanation": "They were made in the 1100s, probably in Norway. Walrus ivory came from the Arctic and was traded across the North Atlantic.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.38",
+      "difficulty": "mixed",
+      "question": "What happened to workers' wages in England after the Black Death?",
+      "correct": "They rose",
+      "wrong": ["They fell", "They stayed the same", "They were stopped"],
+      "explanation": "So many people had died that workers were hard to find. Lords had to pay more, and some serfs left to find better jobs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.39",
+      "difficulty": "mixed",
+      "question": "What was the knights' code of honour and good behaviour called?",
+      "correct": "Chivalry",
+      "wrong": ["Heraldry", "Feudalism", "Piracy"],
+      "explanation": "Chivalry told knights to be brave, loyal and polite, and to protect the weak. In real life, not all knights followed it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.40",
+      "difficulty": "mixed",
+      "question": "After 1066, which language did the new Norman rulers speak, adding many words to English?",
+      "correct": "French",
+      "wrong": ["German", "Dutch", "Spanish"],
+      "explanation": "English still has many words from French, like 'beef', 'court' and 'justice'. The rulers used French for about three hundred years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.01",
+      "difficulty": "expert",
+      "question": "At Stamford Bridge in 1066, King Harold of England defeated which Norwegian king?",
+      "correct": "Harald Hardrada",
+      "wrong": ["Cnut the Great", "Olaf Tryggvason", "Erik Bloodaxe"],
+      "explanation": "Hardrada was killed in the battle. Less than three weeks later, Harold's tired army had to face William of Normandy at Hastings.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.02",
+      "difficulty": "expert",
+      "question": "What sparked the English Peasants' Revolt in 1381?",
+      "correct": "A new poll tax",
+      "wrong": ["A bad harvest", "A new king's crowning", "A plague of locusts"],
+      "explanation": "The tax had to be paid by almost every adult, rich or poor. Rebels led by Wat Tyler marched on London and met the young king Richard II.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.03",
+      "difficulty": "expert",
+      "question": "Which emperor built Hagia Sophia in Constantinople in the 530s?",
+      "correct": "Justinian",
+      "wrong": ["Constantine", "Theodosius", "Heraclius"],
+      "explanation": "Its huge dome seemed to float above the building. It was built in less than six years, which was very fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.04",
+      "difficulty": "expert",
+      "question": "In which country is L'Anse aux Meadows, a Viking site from about the year 1000?",
+      "correct": "Canada",
+      "wrong": ["Iceland", "The United States", "Scotland"],
+      "explanation": "It lies at the northern tip of Newfoundland. Finds there include a bronze pin and the remains of turf houses.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.05",
+      "difficulty": "expert",
+      "question": "The runic alphabet is called the Futhark. Why?",
+      "correct": "After its first six letters",
+      "wrong": ["After its inventor, Futh", "After a Viking king", "After a place in Norway"],
+      "explanation": "The first six runes are F, U, Th, A, R and K. In the same way, our word 'alphabet' comes from alpha and beta.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.06",
+      "difficulty": "expert",
+      "question": "What was the Varangian Guard?",
+      "correct": "The Byzantine emperor's elite bodyguard",
+      "wrong": [
+        "A unit of the Roman army",
+        "A fleet of Viking raiders",
+        "The French king's royal guard"
+      ],
+      "explanation": "Its men came mostly from Scandinavia and Rus, and later also from England. The Norse called Constantinople 'Miklagard', the great city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.07",
+      "difficulty": "expert",
+      "question": "Which Viking ship type was broad and deep, built for carrying cargo and settlers?",
+      "correct": "The knarr",
+      "wrong": ["The longship", "The galleon", "The dhow"],
+      "explanation": "A knarr could carry animals and goods across the North Atlantic. It was slower than a longship, but it had much more room.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.08",
+      "difficulty": "expert",
+      "question": "Eleanor of Aquitaine was queen of which two kingdoms, one after the other?",
+      "correct": "France and England",
+      "wrong": ["Spain and Portugal", "Scotland and Ireland", "Germany and Italy"],
+      "explanation": "She first married the French king Louis VII, then Henry II of England. Two of her sons became kings of England.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.09",
+      "difficulty": "expert",
+      "question": "Which Korean king created the Hangul alphabet in the 1440s?",
+      "correct": "Sejong",
+      "wrong": ["Gojong", "Taejo", "Jeongjo"],
+      "explanation": "He wanted ordinary people to be able to learn to read. Hangul has one letter for each sound and is easy to learn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.10",
+      "difficulty": "expert",
+      "question": "What wrecked much of the Mongol fleets that invaded Japan in 1274 and 1281?",
+      "correct": "Storms",
+      "wrong": ["A plague", "A volcano", "A tsunami"],
+      "explanation": "The Japanese called these storms 'kamikaze', meaning divine wind. The Mongols never conquered Japan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.11",
+      "difficulty": "expert",
+      "question": "In which country are the medieval rock-cut churches of Lalibela?",
+      "correct": "Ethiopia",
+      "wrong": ["Egypt", "Kenya", "Morocco"],
+      "explanation": "The churches were carved down into the rock from the top, not built up from the ground. They date from about the 1200s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.12",
+      "difficulty": "expert",
+      "question": "Which South Indian dynasty sent a fleet across the sea to Southeast Asia in 1025?",
+      "correct": "The Chola dynasty",
+      "wrong": ["The Maurya dynasty", "The Gupta dynasty", "The Mughal dynasty"],
+      "explanation": "The Cholas had one of the strongest navies of their time. They traded with China and with kingdoms in Southeast Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.13",
+      "difficulty": "expert",
+      "question": "Which city was the early capital of the Mongol Empire?",
+      "correct": "Karakorum",
+      "wrong": ["Samarkand", "Baghdad", "Damascus"],
+      "explanation": "Genghis Khan's son Ögedei built walls and a palace there in the 1230s. Craftsmen from many lands worked in the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.14",
+      "difficulty": "expert",
+      "question": "What was the tithe in medieval Europe?",
+      "correct": "A tenth of income paid to the church",
+      "wrong": [
+        "A tax on salt paid to the king",
+        "A fee for using the lord's mill",
+        "A fine for breaking the law"
+      ],
+      "explanation": "Farmers paid in grain, animals or wool. Large barns were built to store the tithe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.15",
+      "difficulty": "expert",
+      "question": "Which city was Charlemagne's favourite residence and the place where he was buried?",
+      "correct": "Aachen",
+      "wrong": ["Paris", "Rome", "Cologne"],
+      "explanation": "He built a palace chapel there, and kings of Germany were crowned in it for many centuries. It is known for its hot springs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.16",
+      "difficulty": "expert",
+      "question": "The Sutton Hoo ship burial, found in 1939, shows the wealth of which people?",
+      "correct": "The Anglo-Saxons",
+      "wrong": ["The Vikings", "The Romans", "The Picts"],
+      "explanation": "It was probably the grave of an East Anglian king who died around the year 625. It held a helmet, a purse of gold coins and fine jewellery.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.17",
+      "difficulty": "expert",
+      "question": "The Oseberg ship, buried around the year 834, was found in which country?",
+      "correct": "Norway",
+      "wrong": ["Denmark", "Sweden", "Iceland"],
+      "explanation": "It was the grave of two women, with beds, sledges and a cart. Clay in the burial mound kept the wood in very good condition.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.18",
+      "difficulty": "expert",
+      "question": "In 911 a Viking leader was given land in northern France. Who was he?",
+      "correct": "Rollo",
+      "wrong": ["Ragnar Lothbrok", "Erik the Red", "Harald Hardrada"],
+      "explanation": "His lands became known as Normandy. His descendants included William the Conqueror.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.19",
+      "difficulty": "expert",
+      "question": "Simon de Montfort held an early parliament in 1265 while fighting which English king?",
+      "correct": "Henry III",
+      "wrong": ["John", "Richard I", "Edward II"],
+      "explanation": "Simon called knights from the counties and men from the towns, as well as nobles. This is often seen as an early step towards modern parliaments.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.20",
+      "difficulty": "expert",
+      "question": "Which German city was the leading town of the Hanseatic League?",
+      "correct": "Lübeck",
+      "wrong": ["Munich", "Nuremberg", "Frankfurt"],
+      "explanation": "Lübeck lay near the Baltic Sea and was called the Queen of the Hanse. The League's big meetings were usually held there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.21",
+      "difficulty": "expert",
+      "question": "Which English monk, nicknamed 'the Venerable', wrote a history of the English people in the 700s?",
+      "correct": "Bede",
+      "wrong": ["Alcuin", "Gildas", "Asser"],
+      "explanation": "He lived in a monastery in northern England and rarely left it. He also helped to spread the habit of counting years from the birth of Christ.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.22",
+      "difficulty": "expert",
+      "question": "Where did King John seal the Magna Carta in 1215?",
+      "correct": "Runnymede",
+      "wrong": ["Westminster", "Canterbury", "Winchester"],
+      "explanation": "Runnymede is a meadow beside the River Thames. Four copies of the charter from 1215 survive.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.23",
+      "difficulty": "expert",
+      "question": "In the 900s, which Spanish city was the capital of the caliphs who ruled al-Andalus?",
+      "correct": "Córdoba",
+      "wrong": ["Seville", "Granada", "Toledo"],
+      "explanation": "It was then one of the biggest cities in Europe. Its Great Mosque, with hundreds of columns, was later turned into a cathedral.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.24",
+      "difficulty": "expert",
+      "question": "Viking ships were 'clinker-built'. What does that mean?",
+      "correct": "The planks overlapped each other",
+      "wrong": [
+        "They were cut from one tree",
+        "The planks were set edge to edge",
+        "They were covered in animal skins"
+      ],
+      "explanation": "Overlapping planks were fastened with iron rivets. This made the hull light and flexible in rough seas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.25",
+      "difficulty": "expert",
+      "question": "In 1347 ships brought the Black Death to the port of Messina. On which island is Messina?",
+      "correct": "Sicily",
+      "wrong": ["Sardinia", "Corsica", "Malta"],
+      "explanation": "Within months the plague reached the Italian mainland and France. Later, ports made ships wait 40 days before landing, which gave us the word quarantine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.26",
+      "difficulty": "expert",
+      "question": "Which Persian scholar wrote the 'Canon of Medicine', used in Europe for hundreds of years?",
+      "correct": "Avicenna",
+      "wrong": ["Galen", "Hippocrates", "Averroes"],
+      "explanation": "Avicenna, called Ibn Sina in Arabic, lived around the year 1000. European medical schools taught from his book into the 1600s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.27",
+      "difficulty": "expert",
+      "question": "Which Irish high king was killed at the Battle of Clontarf in 1014, even though his side won?",
+      "correct": "Brian Boru",
+      "wrong": ["Rory O'Connor", "Niall of the Nine Hostages", "Cormac mac Airt"],
+      "explanation": "His army beat the king of Leinster and his Viking allies from Dublin. Brian was too old to fight and was killed in his tent.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.28",
+      "difficulty": "expert",
+      "question": "Which Anglo-Saxon king gave his name to a long earthwork near the Welsh border?",
+      "correct": "Offa",
+      "wrong": ["Alfred", "Edgar", "Harold"],
+      "explanation": "Offa was king of Mercia in the 700s. His dyke runs for over a hundred kilometres, and a long-distance footpath follows it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.29",
+      "difficulty": "expert",
+      "question": "Which richly decorated medieval Gospel book is kept at Trinity College, Dublin?",
+      "correct": "The Book of Kells",
+      "wrong": ["The Domesday Book", "The Lindisfarne Gospels", "The Winchester Bible"],
+      "explanation": "Monks made it around the year 800. Its pages are full of tiny animals, knots and curling patterns.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.30",
+      "difficulty": "expert",
+      "question": "What was the scriptorium in a medieval monastery?",
+      "correct": "A room where books were copied by hand",
+      "wrong": [
+        "A kitchen for the monks",
+        "A place to store grain",
+        "A room for prayers in silence"
+      ],
+      "explanation": "Monks sat at slanted desks and copied for hours each day. One big book could take years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.31",
+      "difficulty": "expert",
+      "question": "What was Danegeld?",
+      "correct": "Money paid to make Vikings go away",
+      "wrong": ["A Viking law code", "A tax Vikings paid at home", "A Viking trade fair"],
+      "explanation": "English kings paid silver to buy peace. It often did not last, because the Vikings came back for more.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.32",
+      "difficulty": "expert",
+      "question": "Which people, from the steppe, settled in the plains of Hungary around the year 895?",
+      "correct": "The Magyars",
+      "wrong": ["The Huns", "The Goths", "The Avars"],
+      "explanation": "They raided far into Europe until their defeat at the Lechfeld in 955. In Hungarian, the word for Hungarian is 'magyar'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.33",
+      "difficulty": "expert",
+      "question": "Which West African ruler founded the Mali Empire in the 1200s?",
+      "correct": "Sundiata Keita",
+      "wrong": ["Mansa Musa", "Askia Muhammad", "Sonni Ali"],
+      "explanation": "His life is told in the Epic of Sundiata, passed down by West African griots, or storytellers. Mansa Musa ruled Mali later, in the 1300s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.34",
+      "difficulty": "expert",
+      "question": "The medieval trade fairs of which French region became hugely important for merchants?",
+      "correct": "Champagne",
+      "wrong": ["Brittany", "Alsace", "Provence"],
+      "explanation": "Merchants from Italy, Flanders and Germany met there throughout the year. Money changers there helped develop early banking.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.35",
+      "difficulty": "expert",
+      "question": "Which English king was nicknamed Longshanks?",
+      "correct": "Edward I",
+      "wrong": ["Edward III", "Henry II", "Richard II"],
+      "explanation": "He was very tall. He built many castles in Wales and fought wars against the Scots.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.36",
+      "difficulty": "expert",
+      "question": "Which warrior rulers of Egypt stopped the Mongol advance at Ain Jalut in 1260?",
+      "correct": "The Mamluks",
+      "wrong": ["The Janissaries", "The Varangians", "The Normans"],
+      "explanation": "The Mamluks had begun as slave soldiers and then took power. Their win kept the Mongols out of Egypt.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.37",
+      "difficulty": "expert",
+      "question": "Gibraltar is named after which commander, who crossed from Africa into Spain in 711?",
+      "correct": "Tariq ibn Ziyad",
+      "wrong": ["Saladin", "Harun al-Rashid", "Hannibal"],
+      "explanation": "The name comes from the Arabic 'Jabal Tariq', or Tariq's mountain. Within a few years, Muslim armies had taken most of Spain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.38",
+      "difficulty": "expert",
+      "question": "At the Battle of Tours in 732, which Frankish leader stopped an army advancing from Spain?",
+      "correct": "Charles Martel",
+      "wrong": ["Clovis", "Charlemagne", "Attila"],
+      "explanation": "Martel means 'the hammer'. His grandson was Charlemagne, who later ruled a much larger Frankish empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.39",
+      "difficulty": "expert",
+      "question": "In the three-field system, what did medieval farmers do with one of the fields each year?",
+      "correct": "Left it unplanted to rest",
+      "wrong": ["Used it for the lord's garden", "Flooded it", "Burned it"],
+      "explanation": "A field left to rest is called fallow. Animals grazed on it, and their dung helped the soil recover for the next crop.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.40",
+      "difficulty": "expert",
+      "question": "Kublai Khan's Yuan dynasty replaced which Chinese dynasty in 1279?",
+      "correct": "The Song dynasty",
+      "wrong": ["The Tang dynasty", "The Han dynasty", "The Ming dynasty"],
+      "explanation": "The Song had been rich and inventive, with paper money and early gunpowder weapons. The Yuan were the first foreign rulers of all China.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

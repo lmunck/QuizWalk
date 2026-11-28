@@ -1,20 +1,32 @@
 /**
  * P3 Walk to stop. Distance, a compass arrow (or a text bearing when the compass is unreliable)
  * and the map. The current stop is derived from the team's answers, so a restart loses
- * nothing. Until pocket mode ships (M3) the screen stays awake and says "Keep QuizWalk open"
- * (spec §3 P3, §9).
+ * nothing. In pocket mode (M3) the phone buzzes at the stop and *Directions* can hand over to
+ * the maps app. When pocket mode cannot buzz (no notifications, or switched off in
+ * `location/tuning.ts`) the screen stays awake and says "Keep QuizWalk open" instead, so it
+ * never promises a buzz it cannot deliver (spec §3 P3, §9).
  */
 import {
   compassPoint,
+  directionsUrl,
   formatDistance,
   formatMinutes,
   walkingMinutes,
   walkProgress,
 } from '@qualk/shared';
 import { useKeepAwake } from 'expo-keep-awake';
-import { Redirect, router, useLocalSearchParams } from 'expo-router';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
+import { Redirect, router, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  ActivityIndicator,
+  Linking,
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  useWindowDimensions,
+  View,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAuth } from '@/auth/AuthProvider';
@@ -30,7 +42,10 @@ import { Banner } from '@/components/ui';
 import { WalkMenu } from '@/features/WalkMenu';
 import { useAnswers, useTeam } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
-import { useArrival, useHeading } from '@/location/arrival';
+import { CompassArrow } from '@/components/CompassArrow';
+import { useArrival } from '@/location/arrival';
+import { useHeading } from '@/location/compass';
+import { setWalkScreenFocused, usePocketMode } from '@/location/pocket';
 import { simulatePosition, useLocationAccess } from '@/location/position';
 import { useWalkTracking } from '@/location/tracking';
 import { devTools } from '@/lib/env';
@@ -39,11 +54,19 @@ import { useOffline } from '@/lib/network';
 import { questionOpenedAt } from '@/lib/storage';
 import { colors, fonts, radius, spacing } from '@/theme/tokens';
 
-export default function WalkToStop() {
+/** Keeps the screen on while it is rendered (screen-on play, without pocket mode). */
+function KeepAwake() {
   useKeepAwake();
+  return null;
+}
+
+export default function WalkToStop() {
   const { walkId } = useLocalSearchParams<{ walkId: string }>();
   const { uid } = useAuth();
   const insets = useSafeAreaInsets();
+  const { height: windowH, fontScale } = useWindowDimensions();
+  // At the largest text sizes the header stacks and the card's buttons go one under the other.
+  const bigText = fontScale > 1.6;
   const toast = useToast();
   const offline = useOffline();
   const walk = useWalk(walkId);
@@ -73,6 +96,28 @@ export default function WalkToStop() {
 
   const walking = !!w && w.status === 'open' && !!me?.startedAt && !me.leftAt && !progress.finished;
   useWalkTracking({ walkId, uid, active: walking, startDistanceM: me?.distanceWalkedM ?? 0 });
+
+  const loaded = !walk.loading && !team.loading && !stops.loading && !answers.loading;
+  const pocket = usePocketMode(
+    w && stop
+      ? {
+          walkId,
+          walkTitle: w.title,
+          stopId: stop.id,
+          stopNumber,
+          placeName: stop.placeName || undefined,
+          location: stop.location,
+          radiusM: stop.radiusM,
+        }
+      : undefined,
+    loaded ? walking : undefined,
+  );
+  useFocusEffect(
+    useCallback(() => {
+      setWalkScreenFocused(true);
+      return () => setWalkScreenFocused(false);
+    }, []),
+  );
 
   const openQuestion = (stopId: string, imHere = false) =>
     router.push({
@@ -157,10 +202,16 @@ export default function WalkToStop() {
 
   const unsent = answers.pendingWrites ?? 0;
   const distance = arrival.distanceM;
-  const arrowUsable = heading.reliable && heading.arrowDeg !== undefined;
+  const arrowUsable = heading.reliable && heading.bearingToTarget !== undefined;
+
+  const directions = () =>
+    void Linking.openURL(
+      directionsUrl(Platform.OS === 'ios' ? 'apple' : 'google', stop.location),
+    ).catch(() => toast("Couldn't open the maps app."));
 
   return (
     <View style={styles.root}>
+      {pocket.on ? null : <KeepAwake />}
       <QMap
         ref={mapRef}
         style={StyleSheet.absoluteFill}
@@ -197,11 +248,18 @@ export default function WalkToStop() {
               <Txt variant="calloutStrong" numberOfLines={1} style={styles.flex}>
                 {w.title}
               </Txt>
+              {bigText ? null : (
+                <Txt variant="callout" color={colors.secondary}>
+                  Stop {stopNumber} of {progress.stops.length} · {progress.localScore} pts
+                </Txt>
+              )}
+              <Icon name="more" size={20} color={colors.secondary} />
+            </View>
+            {bigText ? (
               <Txt variant="callout" color={colors.secondary}>
                 Stop {stopNumber} of {progress.stops.length} · {progress.localScore} pts
               </Txt>
-              <Icon name="more" size={20} color={colors.secondary} />
-            </View>
+            ) : null}
             <ProgressSegments marks={progress.marks} />
           </Pressable>
         </View>
@@ -242,37 +300,45 @@ export default function WalkToStop() {
         style={[styles.card, { bottom: Math.max(insets.bottom, spacing.md) + spacing.sm }]}
         onLayout={(e) => setCardH(e.nativeEvent.layout.height)}
       >
-        <View style={styles.cardRow}>
-          <View
-            style={styles.arrowWell}
-            accessibilityElementsHidden
-            importantForAccessibility="no-hide-descendants"
-          >
-            {arrowUsable ? (
-              <Icon name="navigate" size={34} color={colors.white} rotate={heading.arrowDeg} />
-            ) : (
-              <Icon name="pin" size={30} color={colors.white} />
-            )}
+        {/* Scrolls at large text sizes, so the buttons and the header above stay on screen. */}
+        <ScrollView
+          style={{ maxHeight: windowH * 0.3 }}
+          contentContainerStyle={styles.cardText}
+          bounces={false}
+        >
+          <View style={[styles.cardRow, bigText ? styles.cardRowStacked : null]}>
+            <View
+              style={styles.arrowWell}
+              accessibilityElementsHidden
+              importantForAccessibility="no-hide-descendants"
+            >
+              {arrowUsable && heading.bearingToTarget !== undefined ? (
+                <CompassArrow bearingDeg={heading.bearingToTarget} size={34} color={colors.white} />
+              ) : (
+                <Icon name="pin" size={30} color={colors.white} />
+              )}
+            </View>
+            <View style={styles.flex} accessible accessibilityLiveRegion="polite">
+              <Txt style={styles.distance} color={colors.white} maxFontSizeMultiplier={1.8}>
+                {distance === undefined ? '–' : formatDistance(distance)}
+              </Txt>
+              <Txt variant="callout" color={colors.onInkMuted}>
+                {distance === undefined
+                  ? `Finding your position for stop ${stopNumber}…`
+                  : `to stop ${stopNumber}${
+                      !arrowUsable && heading.bearingToTarget !== undefined
+                        ? `, to the ${compassPoint(heading.bearingToTarget)}`
+                        : ''
+                    } · ${formatMinutes(walkingMinutes(distance))}`}
+              </Txt>
+            </View>
           </View>
-          <View style={styles.flex} accessible accessibilityLiveRegion="polite">
-            <Txt style={styles.distance} color={colors.white}>
-              {distance === undefined ? '–' : formatDistance(distance)}
-            </Txt>
-            <Txt variant="callout" color={colors.onInkMuted}>
-              {distance === undefined
-                ? `Finding your position for stop ${stopNumber}…`
-                : `to stop ${stopNumber}${
-                    !arrowUsable && heading.bearingToTarget !== undefined
-                      ? `, to the ${compassPoint(heading.bearingToTarget)}`
-                      : ''
-                  } · ${formatMinutes(walkingMinutes(distance))}`}
-            </Txt>
-          </View>
-        </View>
-        <Txt variant="callout" color={colors.onInkMuted}>
-          The question opens within {stop.radiusM} m. Keep QuizWalk open – the screen stays on while
-          you walk.
-        </Txt>
+          <Txt variant="callout" color={colors.onInkMuted}>
+            {pocket.on
+              ? `The question opens within ${stop.radiusM} m. Your phone buzzes at the stop, so it can stay in your pocket.`
+              : `The question opens within ${stop.radiusM} m. Keep QuizWalk open – the screen stays on while you walk.`}
+          </Txt>
+        </ScrollView>
         {arrival.unlocked || clockStarted ? (
           <Button
             label="Open the question"
@@ -282,22 +348,31 @@ export default function WalkToStop() {
             onPress={() => openQuestion(stop.id)}
           />
         ) : null}
-        <View style={styles.actions}>
+        <View style={[styles.actions, bigText ? styles.actionsStacked : null]}>
           <Button
             label="Can't reach it"
             kind="onDarkOutline"
             style={styles.flex}
             onPress={() => setCantReach(true)}
           />
-          {devTools && !arrival.unlocked ? (
+          {pocket.on ? (
             <Button
-              label="Simulate arrive"
-              kind="onDark"
+              label="Directions"
+              kind="onDarkOutline"
+              icon="navigate"
               style={styles.flex}
-              onPress={() => simulatePosition(stop.location)}
+              onPress={directions}
+              hint={`Opens stop ${stopNumber} in ${Platform.OS === 'ios' ? 'Apple Maps' : 'Google Maps'}. Your phone still buzzes when you get there.`}
             />
           ) : null}
         </View>
+        {devTools && !arrival.unlocked ? (
+          <Button
+            label="Simulate arrive"
+            kind="onDark"
+            onPress={() => simulatePosition(stop.location)}
+          />
+        ) : null}
       </View>
 
       <WalkMenu
@@ -353,6 +428,7 @@ const styles = StyleSheet.create({
     gap: spacing.md,
   },
   cardRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  cardRowStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   arrowWell: {
     width: 64,
     height: 64,
@@ -368,4 +444,6 @@ const styles = StyleSheet.create({
     fontVariant: ['tabular-nums'],
   },
   actions: { flexDirection: 'row', gap: spacing.sm + 2 },
+  actionsStacked: { flexDirection: 'column' },
+  cardText: { gap: spacing.md },
 });

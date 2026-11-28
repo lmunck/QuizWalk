@@ -1,0 +1,83 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-27T22:16:13Z",
+    "timestamp_areas_base": "2026-11-27T18:03:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "pin",
+      "id": 1,
+      "tags": {
+        "idx": "0"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25466125,
+      "tags": {
+        "name": "Peblinge Sø",
+        "name:da": "Peblinge Sø",
+        "name:de": "Peblinge-See",
+        "name:etymology:wikidata": "Q136682694",
+        "name:zh": "学生湖",
+        "name:zh-Hans": "学生湖",
+        "natural": "water",
+        "water": "lake",
+        "wikidata": "Q60772947"
+      }
+    },
+    {
+      "type": "pin",
+      "id": 2,
+      "tags": {
+        "idx": "1"
+      }
+    },
+    {
+      "type": "area",
+      "id": 3606476337,
+      "tags": {
+        "harbour": "yes",
+        "historic": "yes",
+        "name": "Nyhavn",
+        "name:ko": "니하운",
+        "name:ru": "Новая гавань",
+        "name:zh": "新港",
+        "natural": "water",
+        "tourism": "attraction",
+        "type": "multipolygon",
+        "wikidata": "Q943946",
+        "wikimedia_commons": "Category:Nyhavn",
+        "wikipedia": "da:Nyhavn"
+      }
+    },
+    {
+      "type": "pin",
+      "id": 3,
+      "tags": {
+        "idx": "2"
+      }
+    },
+    {
+      "type": "pin",
+      "id": 4,
+      "tags": {
+        "idx": "3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 512390397,
+      "tags": {
+        "name": "Flådens Leje",
+        "natural": "water",
+        "seamark:restricted_area:category": "military",
+        "seamark:restricted_area:restriction": "restricted_entry",
+        "seamark:type": "restricted_area"
+      }
+    }
+  ]
+}

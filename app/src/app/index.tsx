@@ -24,6 +24,7 @@ import { Txt } from '@/components/Txt';
 import { Card, EmptyState, Pill, SectionLabel } from '@/components/ui';
 import { deleteWalk, duplicateWalk } from '@/data/callables';
 import { errorMessage } from '@/data/errors';
+import { isStale, useRunningJobs } from '@/data/generation';
 import { useTeam, useTeams } from '@/data/teams';
 import { deleteDraft, useMyWalks, useStops, useWalksById, type Walk } from '@/data/walks';
 import { creatorHref, playerHref } from '@/lib/routes';
@@ -37,6 +38,13 @@ export default function Home() {
 
   const playingWalks = useWalksById(playing);
   const mine = useMyWalks(uid, isCreator);
+  const jobs = useRunningJobs(uid, isCreator);
+  // Read once per visit: a job that stopped updating long ago has failed (m4 design §11).
+  const [openedAt] = useState(() => Date.now());
+  const generating = useMemo(
+    () => new Set(jobs.data.filter((j) => !isStale(j, openedAt)).map((j) => j.walkId)),
+    [jobs.data, openedAt],
+  );
 
   // First run without a link: Welcome (G1). Anyone who has joined or created skips it.
   useEffect(() => {
@@ -69,6 +77,7 @@ export default function Home() {
           <Pressable
             onPress={() => router.push('/join')}
             accessibilityRole="button"
+            accessibilityLabel="Join with code"
             style={({ pressed }) => [styles.joinPill, pressed && { backgroundColor: colors.tint }]}
           >
             <Txt variant="calloutStrong">Join with code</Txt>
@@ -121,21 +130,21 @@ export default function Home() {
         {sections.ready.length > 0 ? (
           <Section label="Ready to open">
             {sections.ready.map((w) => (
-              <CreatorCard key={w.id} walk={w} />
+              <CreatorCard key={w.id} walk={w} generating={generating.has(w.id)} />
             ))}
           </Section>
         ) : null}
         {sections.drafts.length > 0 ? (
           <Section label="Drafts">
             {sections.drafts.map((w) => (
-              <CreatorCard key={w.id} walk={w} />
+              <CreatorCard key={w.id} walk={w} generating={generating.has(w.id)} />
             ))}
           </Section>
         ) : null}
         {sections.finished.length > 0 ? (
           <Section label="Finished">
             {sections.finished.map((w) => (
-              <CreatorCard key={w.id} walk={w} />
+              <CreatorCard key={w.id} walk={w} generating={generating.has(w.id)} />
             ))}
           </Section>
         ) : null}
@@ -269,7 +278,7 @@ function LiveCard({ walk }: { walk: Walk }) {
   );
 }
 
-function CreatorCard({ walk }: { walk: Walk }) {
+function CreatorCard({ walk, generating }: { walk: Walk; generating: boolean }) {
   const [menu, setMenu] = useState(false);
   const [busy, setBusy] = useState<'duplicate' | 'delete'>();
   const [confirmDelete, setConfirmDelete] = useState(false);
@@ -310,7 +319,12 @@ function CreatorCard({ walk }: { walk: Walk }) {
 
   return (
     <>
-      <Card onPress={() => router.push(creatorHref(walk) as Href)} style={styles.rowCard}>
+      <Card
+        onPress={() =>
+          router.push(generating ? `/walk/${walk.id}/generating` : (creatorHref(walk) as Href))
+        }
+        style={styles.rowCard}
+      >
         <View style={[styles.cardIcon, { backgroundColor: tint }]}>
           <Icon name={icon} size={22} color={iconColor} />
         </View>
@@ -318,7 +332,13 @@ function CreatorCard({ walk }: { walk: Walk }) {
           <Txt variant="bodyStrong" numberOfLines={2}>
             {walk.title}
           </Txt>
-          <CreatorLine walk={walk} />
+          {generating ? (
+            <Txt variant="caption" color={colors.secondary} numberOfLines={1}>
+              Generating…
+            </Txt>
+          ) : (
+            <CreatorLine walk={walk} />
+          )}
         </View>
         {busy ? (
           <ActivityIndicator color={colors.accent} />
@@ -413,6 +433,8 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   top: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    rowGap: spacing.sm,
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
@@ -420,8 +442,9 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xs,
   },
   wordmark: { letterSpacing: -0.6, color: colors.accent },
-  topActions: { flexDirection: 'row', gap: spacing.sm },
+  topActions: { flexDirection: 'row', gap: spacing.sm, flexShrink: 1 },
   joinPill: {
+    flexShrink: 1,
     minHeight: 48,
     paddingHorizontal: spacing.md,
     borderRadius: radius.pill,

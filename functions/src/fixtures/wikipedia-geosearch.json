@@ -1,0 +1,288 @@
+{
+  "55.680685,12.594850": [
+    {
+      "pageid": 51194180,
+      "title": "Ofelia Plads",
+      "location": { "latitude": 55.6814, "longitude": 12.5956 },
+      "wikidata": "Q12329915"
+    }
+  ],
+  "55.680000,12.590720": [
+    {
+      "pageid": 2395393,
+      "title": "Nyhavn",
+      "location": { "latitude": 55.67972222, "longitude": 12.59055556 },
+      "wikidata": "Q943946"
+    },
+    {
+      "pageid": 52508634,
+      "title": "Nyhavn 31",
+      "location": { "latitude": 55.68025278, "longitude": 12.59013056 },
+      "wikidata": "Q28225909"
+    },
+    {
+      "pageid": 52529281,
+      "title": "Nyhavn 33",
+      "location": { "latitude": 55.68021389, "longitude": 12.59027222 },
+      "wikidata": "Q28225913"
+    },
+    {
+      "pageid": 56414015,
+      "title": "Nyhavn 35",
+      "location": { "latitude": 55.68017778, "longitude": 12.590425 },
+      "wikidata": "Q48815962"
+    },
+    {
+      "pageid": 56425599,
+      "title": "Nyhavn 41",
+      "location": { "latitude": 55.68007222, "longitude": 12.59080278 },
+      "wikidata": "Q48816067"
+    },
+    {
+      "pageid": 58121709,
+      "title": "Nyhavn 43",
+      "location": { "latitude": 55.68003889, "longitude": 12.59095556 },
+      "wikidata": "Q56277532"
+    },
+    {
+      "pageid": 69254383,
+      "title": "Toldbodgade 5",
+      "location": { "latitude": 55.68006944, "longitude": 12.5915 },
+      "wikidata": "Q109554982"
+    },
+    {
+      "pageid": 69973429,
+      "title": "Nyhavn 47",
+      "location": { "latitude": 55.67993889, "longitude": 12.59131944 },
+      "wikidata": "Q104762401"
+    },
+    {
+      "pageid": 69979581,
+      "title": "Nyhavn 45",
+      "location": { "latitude": 55.68, "longitude": 12.59108889 },
+      "wikidata": "Q87320843"
+    },
+    {
+      "pageid": 70082961,
+      "title": "Nyhavn 37",
+      "location": { "latitude": 55.68013889, "longitude": 12.59056111 },
+      "wikidata": "Q85632919"
+    }
+  ],
+  "55.687611,12.589333": [
+    {
+      "pageid": 30841860,
+      "title": "St. Paul's Church, Copenhagen",
+      "location": { "latitude": 55.6875, "longitude": 12.5875 },
+      "wikidata": "Q7591041"
+    },
+    {
+      "pageid": 38808707,
+      "title": "Bygningskulturens Hus",
+      "location": { "latitude": 55.6881, "longitude": 12.5882 },
+      "wikidata": "Q12053961"
+    },
+    {
+      "pageid": 46848301,
+      "title": "Edouard Suenson Memorial",
+      "location": { "latitude": 55.68845, "longitude": 12.58951 },
+      "wikidata": "Q25042736"
+    },
+    {
+      "pageid": 60270479,
+      "title": "Esplanaden 6",
+      "location": { "latitude": 55.68728056, "longitude": 12.59093889 },
+      "wikidata": "Q65084170"
+    },
+    {
+      "pageid": 66277149,
+      "title": "Brøndumgård",
+      "location": { "latitude": 55.687, "longitude": 12.59026944 },
+      "wikidata": "Q104643339"
+    }
+  ],
+  "55.681146,12.595329": [
+    {
+      "pageid": 51194180,
+      "title": "Ofelia Plads",
+      "location": { "latitude": 55.6814, "longitude": 12.5956 },
+      "wikidata": "Q12329915"
+    }
+  ],
+  "55.686582,12.594692": [
+    {
+      "pageid": 2088897,
+      "title": "Designmuseum Denmark",
+      "location": { "latitude": 55.686375, "longitude": 12.59335 },
+      "wikidata": "Q834603"
+    },
+    {
+      "pageid": 17638174,
+      "title": "Fødselsstiftelsen",
+      "location": { "latitude": 55.6856, "longitude": 12.5943 },
+      "wikidata": "Q3430235"
+    },
+    {
+      "pageid": 25414282,
+      "title": "Danish Energy Agency",
+      "location": { "latitude": 55.6868, "longitude": 12.5958 },
+      "wikidata": "Q5219714"
+    },
+    {
+      "pageid": 37732950,
+      "title": "Classen Library",
+      "location": { "latitude": 55.686, "longitude": 12.5951 },
+      "wikidata": "Q129608"
+    },
+    {
+      "pageid": 40737949,
+      "title": "Danish Shipowners' Association",
+      "location": { "latitude": 55.6866, "longitude": 12.5951 },
+      "wikidata": "Q12307255"
+    },
+    {
+      "pageid": 51296938,
+      "title": "Jan von Osten House",
+      "location": { "latitude": 55.6862, "longitude": 12.5953 },
+      "wikidata": "Q28225788"
+    },
+    {
+      "pageid": 53613037,
+      "title": "Løwe House",
+      "location": { "latitude": 55.68713056, "longitude": 12.59352222 },
+      "wikidata": "Q30621563"
+    },
+    {
+      "pageid": 58125434,
+      "title": "Amaliegade 43",
+      "location": { "latitude": 55.68742778, "longitude": 12.59580556 },
+      "wikidata": "Q56277640"
+    },
+    {
+      "pageid": 58215434,
+      "title": "Amaliegade 37",
+      "location": { "latitude": 55.68698889, "longitude": 12.59544722 },
+      "wikidata": "Q56279852"
+    },
+    {
+      "pageid": 66426170,
+      "title": "Amaliegade 41",
+      "location": { "latitude": 55.6873, "longitude": 12.59563889 },
+      "wikidata": "Q104829447"
+    }
+  ],
+  "55.681589,12.584728": [
+    {
+      "pageid": 22611773,
+      "title": "Hotel d'Angleterre",
+      "location": { "latitude": 55.6806, "longitude": 12.5846 },
+      "wikidata": "Q3121408"
+    },
+    {
+      "pageid": 30835842,
+      "title": "Baron Boltens Gård",
+      "location": { "latitude": 55.68194444, "longitude": 12.58472222 },
+      "wikidata": "Q4862177"
+    },
+    {
+      "pageid": 34816461,
+      "title": "Studieskolen",
+      "location": { "latitude": 55.6826, "longitude": 12.5845 },
+      "wikidata": "Q7628092"
+    },
+    {
+      "pageid": 51985100,
+      "title": "Ny Adelgade",
+      "location": { "latitude": 55.6812, "longitude": 12.584 },
+      "wikidata": "Q27429963"
+    },
+    {
+      "pageid": 69265458,
+      "title": "Gothersgade 29",
+      "location": { "latitude": 55.68198056, "longitude": 12.58298056 },
+      "wikidata": "Q95697793"
+    },
+    {
+      "pageid": 72359593,
+      "title": "Ny Adelgade 9",
+      "location": { "latitude": 55.68133, "longitude": 12.58335 },
+      "wikidata": "Q115478126"
+    }
+  ],
+  "55.684664,12.585924": [
+    {
+      "pageid": 6157681,
+      "title": "Danish Data Protection Agency",
+      "location": { "latitude": 55.6853, "longitude": 12.5867 },
+      "wikidata": "Q1172291"
+    },
+    {
+      "pageid": 33234344,
+      "title": "Borgergade",
+      "location": { "latitude": 55.68416667, "longitude": 12.58527778 },
+      "wikidata": "Q3380402"
+    },
+    {
+      "pageid": 33240281,
+      "title": "Dronningegården",
+      "location": { "latitude": 55.68444444, "longitude": 12.58416667 },
+      "wikidata": "Q5308340"
+    },
+    {
+      "pageid": 33264118,
+      "title": "Dronningens Tværgade",
+      "location": { "latitude": 55.684, "longitude": 12.5859 },
+      "wikidata": "Q5308343"
+    },
+    {
+      "pageid": 44093558,
+      "title": "Adelgade",
+      "location": { "latitude": 55.6852, "longitude": 12.5847 },
+      "wikidata": "Q11956901"
+    },
+    {
+      "pageid": 69193944,
+      "title": "Store Kongensgade 59",
+      "location": { "latitude": 55.68436111, "longitude": 12.58743889 },
+      "wikidata": "Q85821721"
+    }
+  ],
+  "55.683564,12.594593": [
+    {
+      "pageid": 1056476,
+      "title": "Amalienborg",
+      "location": { "latitude": 55.68402778, "longitude": 12.59333333 },
+      "wikidata": "Q211053"
+    },
+    {
+      "pageid": 3238848,
+      "title": "Brockdorff's Palace",
+      "location": { "latitude": 55.68416667, "longitude": 12.59444444 },
+      "wikidata": "Q4972772"
+    },
+    {
+      "pageid": 3256605,
+      "title": "Moltke's Palace",
+      "location": { "latitude": 55.68416667, "longitude": 12.59444444 },
+      "wikidata": "Q30587660"
+    },
+    {
+      "pageid": 28000837,
+      "title": "Amaliehaven",
+      "location": { "latitude": 55.68333333, "longitude": 12.595 },
+      "wikidata": "Q3434243"
+    },
+    {
+      "pageid": 34261883,
+      "title": "Toldbodgade",
+      "location": { "latitude": 55.6842, "longitude": 12.595 },
+      "wikidata": "Q7814120"
+    },
+    {
+      "pageid": 38273041,
+      "title": "Equestrian statue of Frederick V",
+      "location": { "latitude": 55.68388889, "longitude": 12.59305556 },
+      "wikidata": "Q3424549"
+    }
+  ]
+}

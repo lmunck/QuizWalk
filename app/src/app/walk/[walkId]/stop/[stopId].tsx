@@ -1,7 +1,9 @@
 /**
  * C5 Edit stop. Place name, question, 2–4 answers as rows with a "correct" radio, explanation,
  * hint, radius, and the pin (tap the mini map for Move pin). Cancel with unsaved changes asks
- * first; Delete stop sits at the bottom and confirms (spec §3 C5).
+ * first; Delete stop sits at the bottom and confirms (spec §3 C5). *Swap* (C5) and *Suggest a
+ * question* (G2, a stop with no question yet) offer a question from the bank to accept or
+ * discard; nothing is written until the stop is saved.
  */
 import {
   MAX_OPTIONS,
@@ -9,19 +11,24 @@ import {
   STOP_RADII_M,
   stopProblems,
   type LatLng,
+  type ProposedQuestion,
   type StopRadius,
+  type StopWarning,
 } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { Button, IconButton } from '@/components/Button';
+import { useToast } from '@/components/Toast';
 import { Dialog } from '@/components/Dialog';
 import { Icon } from '@/components/Icon';
 import { QMap, RadiusCircle, StopMarker } from '@/components/MapPieces';
 import { Screen } from '@/components/Screen';
 import { Txt } from '@/components/Txt';
 import { Banner, Field, Segmented } from '@/components/ui';
+import { swapQuestion } from '@/data/callables';
+import { errorMessage } from '@/data/errors';
 import { deleteStop, updateStop, useStops, useWalk, type Stop } from '@/data/walks';
 import { MovePin } from '@/features/MovePin';
 import { useOffline } from '@/lib/network';
@@ -37,6 +44,15 @@ interface Draft {
   radiusM: StopRadius;
   location: LatLng;
 }
+
+/** Whether the question text or answers differ: an edited bank question is no longer the bank's. */
+const changedQuestion = (
+  a: Pick<Draft, 'question' | 'options' | 'correctIndex'>,
+  b: Pick<Draft, 'question' | 'options' | 'correctIndex'>,
+) =>
+  a.question !== b.question ||
+  a.correctIndex !== b.correctIndex ||
+  JSON.stringify(a.options) !== JSON.stringify(b.options);
 
 const fromStop = (s: Stop): Draft => ({
   placeName: s.placeName,
@@ -89,6 +105,14 @@ function Editor({
   const [movingPin, setMovingPin] = useState(false);
   const offline = useOffline();
   const [confirm, setConfirm] = useState<'discard' | 'delete'>();
+  const toast = useToast();
+  const [proposal, setProposal] = useState<ProposedQuestion>();
+  const [offered, setOffered] = useState<string[]>([]);
+  const [asking, setAsking] = useState(false);
+  const [accepted, setAccepted] = useState<ProposedQuestion>();
+  // G2: a stop with no question yet gets *Suggest a question*, which can find a Local one for
+  // the pin; a stop with a question gets *Swap*.
+  const suggesting = stop.question.trim() === '' && !stop.bankQuestionId && !accepted;
   const number = stops.findIndex((s) => s.id === stop.id) + 1;
   const original = fromStop(stop);
   const dirty = JSON.stringify(original) !== JSON.stringify(draft);
@@ -106,13 +130,72 @@ function Editor({
         d.correctIndex === i ? 0 : d.correctIndex > i ? d.correctIndex - 1 : d.correctIndex,
     }));
 
+  const ask = async () => {
+    setAsking(true);
+    try {
+      const res = await swapQuestion({
+        walkId,
+        ...(suggesting ? { location: draft.location } : { stopId: stop.id }),
+        exclude: offered,
+      });
+      if (!res.proposal) {
+        setProposal(undefined);
+        toast(
+          offered.length > 0
+            ? 'No more questions to offer for this stop.'
+            : 'No question to offer for this stop right now.',
+        );
+        return;
+      }
+      setOffered((o) => [...o, res.proposal!.bankQuestionId]);
+      setProposal(res.proposal);
+    } catch (err) {
+      setProposal(undefined);
+      toast(errorMessage(err, 'Could not get a question. Check your connection.'), 'error');
+    } finally {
+      setAsking(false);
+    }
+  };
+
+  const accept = (p: ProposedQuestion) => {
+    setDraft((d) => ({
+      ...d,
+      question: p.question,
+      options: [...p.options],
+      correctIndex: p.correctIndex,
+      explanation: p.explanation,
+      placeName: suggesting && p.placeName ? p.placeName : d.placeName,
+    }));
+    setAccepted(p);
+    setProposal(undefined);
+  };
+
+  /** What the stop's bank fields become on save (m4-generation-design §11). */
+  const bankFields = (q: Pick<Draft, 'question' | 'options' | 'correctIndex'>) => {
+    if (accepted) {
+      const kept: StopWarning[] = stop.warnings.filter((w) => w !== 'unverified');
+      return {
+        origin: 'ai' as const,
+        source: accepted.source ?? null,
+        bankQuestionId: changedQuestion(q, accepted) ? null : accepted.bankQuestionId,
+        warnings: [...kept, ...accepted.warnings.filter((w) => !kept.includes(w))],
+      };
+    }
+    if (stop.bankQuestionId && changedQuestion(q, stop)) return { bankQuestionId: null };
+    return {};
+  };
+
   const save = () => {
     if (!walk) return;
-    updateStop(walk, stops, stop.id, {
-      placeName: draft.placeName.trim(),
+    const q = {
       question: draft.question.trim(),
       options: draft.options.map((o) => o.trim()),
       correctIndex: draft.correctIndex,
+    };
+    updateStop(walk, stops, stop.id, {
+      placeName: draft.placeName.trim(),
+      ...q,
+      ...bankFields(q),
       explanation: draft.explanation.trim(),
       hint: draft.hint.trim(),
       radiusM: draft.radiusM,
@@ -132,7 +215,13 @@ function Editor({
       onBack={close}
       title={isNew ? `New stop ${number}` : `Stop ${number}`}
       headerRight={
-        <Pressable onPress={save} accessibilityRole="button" style={styles.saveTop} hitSlop={6}>
+        <Pressable
+          onPress={save}
+          accessibilityRole="button"
+          accessibilityLabel="Save stop"
+          style={styles.saveTop}
+          hitSlop={6}
+        >
           <Txt variant="bodyStrong" color={colors.accent}>
             Save
           </Txt>
@@ -177,6 +266,19 @@ function Editor({
         placeholder="Nyhavn"
         maxLength={80}
         helper="Shown to players when they arrive."
+      />
+      <Button
+        label={suggesting ? 'Suggest a question' : 'Swap question'}
+        icon={suggesting ? 'sparkle' : 'swap'}
+        kind="secondary"
+        loading={asking && !proposal}
+        disabled={offline}
+        hint={
+          suggesting
+            ? 'Offers a question from the question bank, to use or discard.'
+            : 'Offers another question from the question bank, to use or discard.'
+        }
+        onPress={() => void ask()}
       />
       <Field
         label="Question"
@@ -295,6 +397,27 @@ function Editor({
         }}
       />
       <Dialog
+        visible={proposal !== undefined}
+        title={suggesting ? 'Suggested question' : 'Another question'}
+        onDismiss={() => setProposal(undefined)}
+        actions={[
+          { label: 'Use this question', onPress: () => proposal && accept(proposal) },
+          {
+            label: 'Show another',
+            kind: 'secondary',
+            loading: asking,
+            onPress: () => void ask(),
+          },
+          {
+            label: suggesting ? 'Discard' : 'Keep mine',
+            kind: 'ghost',
+            onPress: () => setProposal(undefined),
+          },
+        ]}
+      >
+        {proposal ? <ProposalView proposal={proposal} /> : null}
+      </Dialog>
+      <Dialog
         visible={confirm === 'discard'}
         title="Discard your changes?"
         text="The changes to this stop are not saved."
@@ -340,8 +463,54 @@ function Editor({
   );
 }
 
+function ProposalView({ proposal }: { proposal: ProposedQuestion }) {
+  return (
+    <View style={styles.proposal}>
+      {proposal.placeName ? (
+        <Txt variant="caption" color={colors.secondary}>
+          About {proposal.placeName}
+        </Txt>
+      ) : null}
+      <Txt variant="bodyStrong">{proposal.question}</Txt>
+      {proposal.options.map((o, i) => {
+        const right = i === proposal.correctIndex;
+        return (
+          <View
+            key={i}
+            style={styles.proposalOption}
+            accessible
+            accessibilityLabel={right ? `${o}, the right answer` : o}
+          >
+            <Icon
+              name={right ? 'check' : 'minus'}
+              size={18}
+              color={right ? colors.accent : colors.controlBorder}
+              strokeWidth={right ? 2.8 : 2}
+            />
+            <Txt variant="callout" style={styles.flex}>
+              {o}
+            </Txt>
+          </View>
+        );
+      })}
+      {proposal.explanation ? (
+        <Txt variant="caption" color={colors.secondary}>
+          {proposal.explanation}
+        </Txt>
+      ) : null}
+      {proposal.warnings.includes('unverified') ? (
+        <Txt variant="caption" color={colors.warningText}>
+          Written from {proposal.source?.title ?? 'Wikipedia'}. Check the answer before you publish.
+        </Txt>
+      ) : null}
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   flex: { flex: 1 },
+  proposal: { gap: spacing.sm },
+  proposalOption: { flexDirection: 'row', gap: spacing.sm, alignItems: 'center' },
   saveTop: { minHeight: minTouchTarget, justifyContent: 'center', paddingHorizontal: spacing.sm },
   miniMapWrap: {
     height: 150,

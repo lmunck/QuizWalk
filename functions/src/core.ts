@@ -7,7 +7,9 @@ import { randomInt } from 'node:crypto';
 
 import {
   generateJoinCode,
+  normaliseCategories,
   recomputeTeamTotals,
+  routeKey,
   walkDistanceM,
   walkEndsAtMs,
   walkProblems,
@@ -15,8 +17,8 @@ import {
   type StopWarning,
   type SubmittedAnswer,
   type WalkOpenFor,
-  type WalkProblem,
 } from '@qualk/shared';
+import { QualkError } from './errors';
 import {
   FieldValue,
   type DocumentReference,
@@ -25,16 +27,7 @@ import {
   Timestamp,
 } from 'firebase-admin/firestore';
 
-/** A failure the caller can show as it is. Callables turn it into an HttpsError. */
-export class QualkError extends Error {
-  constructor(
-    readonly code: 'not-found' | 'permission-denied' | 'failed-precondition' | 'invalid-argument',
-    message: string,
-    readonly problems?: WalkProblem[],
-  ) {
-    super(message);
-  }
-}
+export { QualkError } from './errors';
 
 const toLatLng = (g: GeoPoint): LatLng => ({ latitude: g.latitude, longitude: g.longitude });
 
@@ -49,7 +42,7 @@ interface StopRow {
   warnings?: StopWarning[];
 }
 
-async function ownedWalk(db: Firestore, uid: string, walkId: string) {
+export async function ownedWalk(db: Firestore, uid: string, walkId: string) {
   if (typeof walkId !== 'string' || walkId.length === 0 || walkId.includes('/')) {
     throw new QualkError('invalid-argument', 'No walk given.');
   }
@@ -84,17 +77,16 @@ async function validated(walkRef: DocumentReference, walk: FirebaseFirestore.Doc
     throw new QualkError(
       'failed-precondition',
       more > 0 ? `${first}, and ${more} more to fix.` : `${first}.`,
-      problems.blocking,
+      { problems: problems.blocking },
     );
   }
+  const pins = stops.map((s) => toLatLng(s.location));
+  const start = toLatLng(walk.start);
+  // The routed distance while the route matches the pins (spec §4 Distance), else straight lines.
+  const routed = walk.route?.key && walk.route.key === routeKey(start, pins);
   return {
     stopCount: stops.length,
-    distanceM: Math.round(
-      walkDistanceM(
-        toLatLng(walk.start),
-        stops.map((s) => toLatLng(s.location)),
-      ),
-    ),
+    distanceM: Math.round(routed ? Number(walk.route.distanceM) : walkDistanceM(start, pins)),
   };
 }
 
@@ -275,7 +267,7 @@ export async function duplicateWalk(
     ownerUid: uid,
     ownerName: walk.ownerName ?? '',
     title: walk.title,
-    ...(walk.topic ? { topic: walk.topic } : {}),
+    ...(Array.isArray(walk.categories) ? { categories: normaliseCategories(walk.categories) } : {}),
     ...(walk.difficulty ? { difficulty: walk.difficulty } : {}),
     status: 'draft',
     modes: walk.modes ?? { solo: true, team: true },

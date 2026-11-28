@@ -1,11 +1,13 @@
 /**
- * Foreground location (spec §9, m1-design §9). One watch is shared by every screen that needs
- * a position, so P3, the map and the position uploader never start two. M3 swaps this for
- * background updates without touching a screen.
+ * Location on screen (spec §9, m1-design §9). One watch is shared by every screen that needs a
+ * position, so P3, the map and the position uploader never start two. In a pocket (M3) the
+ * pocket-mode updates feed the same listeners (`pocket.ts`), so no screen knows the difference.
  */
 import * as Location from 'expo-location';
 import { useEffect, useState } from 'react';
-import { Linking, Platform } from 'react-native';
+import { AppState, Linking, Platform } from 'react-native';
+
+import { FOREGROUND_WATCH } from './tuning';
 
 export interface Fix {
   latitude: number;
@@ -68,8 +70,19 @@ let lastFix: Fix | undefined;
 let simulated: Fix | undefined;
 
 function emit(fix: Fix) {
+  // Two sources can be running (the on-screen watch and pocket mode): never go back in time.
+  if (lastFix && fix.atMs < lastFix.atMs) return;
   lastFix = fix;
   listeners.forEach((l) => l(simulated ?? fix));
+}
+
+/**
+ * Pocket mode's fixes, while QuizWalk is not on screen. On screen the watch below is more
+ * precise and more frequent, so pocket fixes are only passed on in the background.
+ */
+export function emitPocketFix(fix: Fix): void {
+  if (AppState.currentState === 'active' && subscription) return;
+  emit(fix);
 }
 
 async function startWatch() {
@@ -79,8 +92,11 @@ async function startWatch() {
     const access = await getLocationAccess();
     if (access.status !== 'granted') return;
     subscription = await Location.watchPositionAsync(
-      // Balanced is "within one hundred metres", useless against a 25–60 m radius (m1-design §9).
-      { accuracy: Location.Accuracy.High, distanceInterval: 2, timeInterval: 2_000 },
+      {
+        accuracy: FOREGROUND_WATCH.accuracy,
+        distanceInterval: FOREGROUND_WATCH.distanceIntervalM,
+        timeInterval: FOREGROUND_WATCH.timeIntervalMs,
+      },
       (loc) =>
         emit({
           latitude: loc.coords.latitude,
@@ -100,6 +116,11 @@ async function startWatch() {
 function stopWatch() {
   subscription?.remove();
   subscription = undefined;
+}
+
+/** The most recent fix from any source, if there has been one. */
+export function latestFix(): Fix | undefined {
+  return simulated ?? lastFix;
 }
 
 /** Subscribe to fixes. The watch runs while at least one subscriber exists. */

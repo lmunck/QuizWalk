@@ -1,0 +1,1216 @@
+{
+  "category": "science",
+  "subcategory": "chemistry",
+  "questions": [
+    {
+      "id": "science.chemistry.kids.01",
+      "difficulty": "kids",
+      "question": "What is the chemical formula of water?",
+      "correct": "H2O",
+      "wrong": ["CO2", "NaCl", "O2"],
+      "explanation": "Each water molecule has two hydrogen atoms and one oxygen atom joined together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.02",
+      "difficulty": "kids",
+      "question": "At what temperature does pure water freeze, in degrees Celsius?",
+      "correct": "0",
+      "wrong": ["10", "50", "100"],
+      "explanation": "Pure water turns into solid ice at 0 °C. Ice takes up more space than the water it came from, so it floats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.03",
+      "difficulty": "kids",
+      "question": "At what temperature does water boil at sea level, in degrees Celsius?",
+      "correct": "100",
+      "wrong": ["50", "150", "200"],
+      "explanation": "At 100 °C, water turns into a gas. High on mountains, where the air pressure is lower, water boils at a lower temperature.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.04",
+      "difficulty": "kids",
+      "question": "What do we call water when it is a gas?",
+      "correct": "Water vapour",
+      "wrong": ["Ice", "Snow", "Dew"],
+      "explanation": "Water vapour is invisible. The white cloud you see over a kettle is tiny drops of water, not vapour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.05",
+      "difficulty": "kids",
+      "question": "Which chemical symbol stands for gold?",
+      "correct": "Au",
+      "wrong": ["Ag", "Go", "Gl"],
+      "explanation": "Au comes from aurum, the Latin word for gold. Gold is a soft, yellow metal that does not rust.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.06",
+      "difficulty": "kids",
+      "question": "What is the chemical name of table salt?",
+      "correct": "Sodium chloride",
+      "wrong": ["Calcium carbonate", "Magnesium sulphate", "Hydrogen peroxide"],
+      "explanation": "Table salt is made of sodium and chlorine joined together. Both of them are dangerous alone, but safe together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.07",
+      "difficulty": "kids",
+      "question": "Which element is the lightest of all?",
+      "correct": "Hydrogen",
+      "wrong": ["Helium", "Oxygen", "Carbon"],
+      "explanation": "A hydrogen atom is the simplest atom there is. It has just one proton and one electron.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.08",
+      "difficulty": "kids",
+      "question": "Which gas is often used to fill party balloons so they float up?",
+      "correct": "Helium",
+      "wrong": ["Oxygen", "Carbon dioxide", "Nitrogen"],
+      "explanation": "Helium is lighter than air, so a helium balloon rises. Unlike hydrogen, helium does not burn, so it is safe to use.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.09",
+      "difficulty": "kids",
+      "question": "Which metal gets covered in orange-brown rust when it stays wet?",
+      "correct": "Iron",
+      "wrong": ["Gold", "Silver", "Aluminium"],
+      "explanation": "Rust forms when iron meets water and air. Painting iron keeps the water away and slows rust.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.10",
+      "difficulty": "kids",
+      "question": "Which metal is a liquid at normal room temperature?",
+      "correct": "Mercury",
+      "wrong": ["Iron", "Copper", "Lead"],
+      "explanation": "Mercury is silvery and heavy. It is poisonous, so it is no longer used in most thermometers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.11",
+      "difficulty": "kids",
+      "question": "Which reddish-brown metal is often used in electric wires?",
+      "correct": "Copper",
+      "wrong": ["Lead", "Zinc", "Aluminium"],
+      "explanation": "Copper lets electricity flow very easily. It is also used for water pipes and some coins.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.12",
+      "difficulty": "kids",
+      "question": "Which element are diamonds made of?",
+      "correct": "Carbon",
+      "wrong": ["Silicon", "Calcium", "Iron"],
+      "explanation": "A diamond is pure carbon with its atoms packed very tightly. It is the hardest natural material.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.13",
+      "difficulty": "kids",
+      "question": "What are the tiny building blocks that all matter is made of?",
+      "correct": "Atoms",
+      "wrong": ["Cells", "Crystals", "Bubbles"],
+      "explanation": "Atoms are far too small to see with an ordinary microscope. Everything around you is made of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.14",
+      "difficulty": "kids",
+      "question": "Lemons taste sour because they contain which acid?",
+      "correct": "Citric acid",
+      "wrong": ["Acetic acid", "Formic acid", "Sulphuric acid"],
+      "explanation": "Citric acid is also found in oranges and limes. It is a weak acid that is safe to eat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.15",
+      "difficulty": "kids",
+      "question": "Which gas is made when you mix baking soda and vinegar?",
+      "correct": "Carbon dioxide",
+      "wrong": ["Helium", "Oxygen", "Hydrogen"],
+      "explanation": "The bubbles are carbon dioxide. This is why the mixture fizzes up in school volcano experiments.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.16",
+      "difficulty": "kids",
+      "question": "What do we call it when sugar mixes completely into water and seems to disappear?",
+      "correct": "Dissolving",
+      "wrong": ["Melting", "Freezing", "Burning"],
+      "explanation": "The sugar is still there in tiny pieces. The water just tastes sweet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.17",
+      "difficulty": "kids",
+      "question": "How can you get the salt back from salty water?",
+      "correct": "Let the water evaporate",
+      "wrong": ["Pour it through paper", "Stir it very fast", "Add more water"],
+      "explanation": "When the water dries into the air, the salt stays behind. People have made sea salt like this for thousands of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.18",
+      "difficulty": "kids",
+      "question": "Which metal has the chemical symbol Ag?",
+      "correct": "Silver",
+      "wrong": ["Aluminium", "Argon", "Gold"],
+      "explanation": "Ag comes from argentum, the Latin word for silver. Argentina is named after it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.19",
+      "difficulty": "kids",
+      "question": "Fire needs fuel, heat and which gas from the air?",
+      "correct": "Oxygen",
+      "wrong": ["Helium", "Neon", "Argon"],
+      "explanation": "Without oxygen a fire goes out. That is why a lid on a candle jar puts the flame out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.20",
+      "difficulty": "kids",
+      "question": "Which gas glows orange-red in glass tubes in bright signs?",
+      "correct": "Neon",
+      "wrong": ["Oxygen", "Argon", "Carbon dioxide"],
+      "explanation": "Neon is a rare gas in the air. Electricity makes it glow when it flows through the tube.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.21",
+      "difficulty": "kids",
+      "question": "What do we call a mixture of two or more metals?",
+      "correct": "An alloy",
+      "wrong": ["A crystal", "An ore", "A salt"],
+      "explanation": "Bronze, made of copper and tin, is an alloy. Alloys are often harder than the pure metals they are made from.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.22",
+      "difficulty": "kids",
+      "question": "Glass is mostly made by melting which natural material?",
+      "correct": "Sand",
+      "wrong": ["Salt", "Chalk", "Clay"],
+      "explanation": "Sand is heated to a very high temperature until it melts. Then it cools into clear glass.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.23",
+      "difficulty": "kids",
+      "question": "Most plastic is made from which of these?",
+      "correct": "Oil",
+      "wrong": ["Wood", "Sand", "Salt"],
+      "explanation": "Factories turn oil into plastic. Oil formed deep underground from tiny sea creatures that lived millions of years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.24",
+      "difficulty": "kids",
+      "question": "What do we call it when a solid turns into a liquid?",
+      "correct": "Melting",
+      "wrong": ["Freezing", "Boiling", "Evaporating"],
+      "explanation": "Heat makes the tiny particles in a solid move more, so they slide past each other. A melting ice cube is a good example.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.25",
+      "difficulty": "kids",
+      "question": "What is the name of the chart that shows all the chemical elements?",
+      "correct": "The periodic table",
+      "wrong": ["The food pyramid", "The times table", "The calendar"],
+      "explanation": "It puts the elements in order, starting with hydrogen. There are more than 100 elements in the table.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.26",
+      "difficulty": "kids",
+      "question": "Which famous scientist discovered the elements radium and polonium?",
+      "correct": "Marie Curie",
+      "wrong": ["Isaac Newton", "Charles Darwin", "Albert Einstein"],
+      "explanation": "Marie Curie found them with her husband, Pierre. She was born in Poland and named polonium after her home country.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.27",
+      "difficulty": "kids",
+      "question": "In which state of matter is the air around us?",
+      "correct": "Gas",
+      "wrong": ["Solid", "Liquid", "Powder"],
+      "explanation": "Air is a mix of different gases. You cannot see it, but you can feel it when the wind blows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.28",
+      "difficulty": "kids",
+      "question": "Which element is often added to swimming pools to kill germs?",
+      "correct": "Chlorine",
+      "wrong": ["Helium", "Gold", "Sodium"],
+      "explanation": "Chlorine kills germs that could make swimmers ill. Many countries also add a little to tap water to make it safe to drink.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.29",
+      "difficulty": "kids",
+      "question": "What is the 'lead' in a pencil really made of?",
+      "correct": "Graphite",
+      "wrong": ["Lead", "Tin", "Zinc"],
+      "explanation": "Graphite is a soft, grey form of carbon. It leaves a mark because thin layers rub off on the paper.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.30",
+      "difficulty": "kids",
+      "question": "Which of these changes makes a new substance?",
+      "correct": "Burning wood",
+      "wrong": ["Melting ice", "Cutting paper", "Freezing juice"],
+      "explanation": "When wood burns it turns into ash and gases. That is a chemical change, and you cannot turn it back.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.31",
+      "difficulty": "kids",
+      "question": "What do we call two or more atoms joined together?",
+      "correct": "A molecule",
+      "wrong": ["A cell", "A bubble", "A nucleus"],
+      "explanation": "A water molecule has three atoms. Some molecules, such as DNA, are made of huge numbers of atoms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.32",
+      "difficulty": "kids",
+      "question": "Kitchen foil is made from which light, silvery metal?",
+      "correct": "Aluminium",
+      "wrong": ["Lead", "Gold", "Iron"],
+      "explanation": "Aluminium is very light and does not rust. It can be rolled into sheets thinner than paper.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.33",
+      "difficulty": "kids",
+      "question": "What should you wear in a school laboratory to protect your eyes?",
+      "correct": "Safety goggles",
+      "wrong": ["Sunglasses", "A scarf", "Headphones"],
+      "explanation": "Safety goggles keep drops and splashes out of your eyes. Chemists wear them when they mix or heat chemicals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.34",
+      "difficulty": "kids",
+      "question": "Which of these is a mixture?",
+      "correct": "Seawater",
+      "wrong": ["Gold", "Oxygen", "Distilled water"],
+      "explanation": "Seawater is water with salts and other things mixed in. Pure substances like gold have only one kind of matter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.35",
+      "difficulty": "kids",
+      "question": "In which of these does sugar dissolve fastest?",
+      "correct": "Hot water",
+      "wrong": ["Cold water", "Ice", "Oil"],
+      "explanation": "Particles move faster in warm water, so they pull the sugar apart quicker. Sugar does not dissolve in oil.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.36",
+      "difficulty": "kids",
+      "question": "What happens when you pour cooking oil onto water?",
+      "correct": "The oil floats on top",
+      "wrong": ["The oil sinks", "They mix completely", "The oil turns to gas"],
+      "explanation": "Oil is lighter than water and does not mix with it. That is why oil patches float on puddles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.37",
+      "difficulty": "kids",
+      "question": "What do we call a substance made of only one kind of atom?",
+      "correct": "An element",
+      "wrong": ["A mixture", "A compound", "A solution"],
+      "explanation": "Gold, oxygen and iron are all elements. Water is not an element because it has two kinds of atoms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.38",
+      "difficulty": "kids",
+      "question": "What do we call it when a gas cools and turns into drops of liquid?",
+      "correct": "Condensation",
+      "wrong": ["Evaporation", "Melting", "Freezing"],
+      "explanation": "Drops on a cold glass of water are condensation. They come from water vapour in the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.39",
+      "difficulty": "kids",
+      "question": "What is the chemical symbol for helium?",
+      "correct": "He",
+      "wrong": ["H", "Hl", "Em"],
+      "explanation": "Helium has two letters because H is already taken by hydrogen. Many symbols have a capital letter and a small one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.kids.40",
+      "difficulty": "kids",
+      "question": "Which state of matter keeps its own shape?",
+      "correct": "Solid",
+      "wrong": ["Liquid", "Gas", "Vapour"],
+      "explanation": "The particles in a solid are packed tightly and cannot slide past each other. A liquid takes the shape of its container.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which element has the chemical symbol Na?",
+      "correct": "Sodium",
+      "wrong": ["Nitrogen", "Neon", "Nickel"],
+      "explanation": "Na comes from natrium, a Latin name for sodium. It comes from natron, a salt the ancient Egyptians used to make mummies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which element has the chemical symbol K?",
+      "correct": "Potassium",
+      "wrong": ["Krypton", "Calcium", "Carbon"],
+      "explanation": "K comes from kalium, an old name for potassium. Bananas are a well-known source.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which element has the chemical symbol Pb?",
+      "correct": "Lead",
+      "wrong": ["Platinum", "Potassium", "Phosphorus"],
+      "explanation": "Pb comes from plumbum, the Latin word for lead. The word plumber comes from it, because old pipes were made of lead.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which gas makes up most of the air we breathe?",
+      "correct": "Nitrogen",
+      "wrong": ["Oxygen", "Carbon dioxide", "Argon"],
+      "explanation": "Air is about 78 per cent nitrogen and 21 per cent oxygen. We breathe nitrogen in and out without using it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.05",
+      "difficulty": "mixed",
+      "question": "What is the pH of pure water?",
+      "correct": "7",
+      "wrong": ["0", "10", "14"],
+      "explanation": "pH 7 is neutral. Acids have a pH below 7, and bases (alkalis) have a pH above 7.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.06",
+      "difficulty": "mixed",
+      "question": "What colour does blue litmus paper turn when it touches an acid?",
+      "correct": "Red",
+      "wrong": ["Green", "Yellow", "Black"],
+      "explanation": "Litmus is a dye made from lichens. It turns red in acid and stays blue in a base.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.07",
+      "difficulty": "mixed",
+      "question": "Which Russian chemist made the first widely used periodic table, in 1869?",
+      "correct": "Dmitri Mendeleev",
+      "wrong": ["Antoine Lavoisier", "Marie Curie", "Robert Boyle"],
+      "explanation": "Mendeleev arranged the elements by weight and by how they behave. His table is the ancestor of the modern one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.08",
+      "difficulty": "mixed",
+      "question": "Helium, neon and argon belong to which group of elements?",
+      "correct": "Noble gases",
+      "wrong": ["Halogens", "Alkali metals", "Transition metals"],
+      "explanation": "Noble gases hardly ever react with other elements. That is why they are called noble, like aristocrats who keep to themselves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which particle in an atom has a negative charge?",
+      "correct": "Electron",
+      "wrong": ["Proton", "Neutron", "Photon"],
+      "explanation": "Electrons are much lighter than protons and neutrons. They move around the nucleus.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which two kinds of particles are found in the nucleus of an atom?",
+      "correct": "Protons and neutrons",
+      "wrong": ["Protons and electrons", "Neutrons and electrons", "Electrons and photons"],
+      "explanation": "The nucleus is tiny but holds almost all the mass of the atom. Electrons are outside it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.11",
+      "difficulty": "mixed",
+      "question": "Brass is made mostly of copper and which other metal?",
+      "correct": "Zinc",
+      "wrong": ["Tin", "Iron", "Lead"],
+      "explanation": "Brass is shiny and gold-coloured. It is used for instruments such as trumpets and for door handles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.12",
+      "difficulty": "mixed",
+      "question": "Steel is iron mixed with a small amount of which element?",
+      "correct": "Carbon",
+      "wrong": ["Helium", "Gold", "Chlorine"],
+      "explanation": "Even a little carbon makes iron much harder and stronger. Steel is used in bridges, cars and tools.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.13",
+      "difficulty": "mixed",
+      "question": "Why do road crews spread salt on icy roads in winter?",
+      "correct": "It lowers the freezing point of water",
+      "wrong": [
+        "It raises the freezing point of water",
+        "It makes the road surface warmer",
+        "It makes the ice evaporate"
+      ],
+      "explanation": "Salty water needs to be colder than 0 °C to freeze. So the ice melts, unless it is very cold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.14",
+      "difficulty": "mixed",
+      "question": "What is the chemical formula of carbon dioxide?",
+      "correct": "CO2",
+      "wrong": ["CO", "C2O", "CO3"],
+      "explanation": "Each molecule has one carbon atom and two oxygen atoms. CO, with one oxygen atom, is carbon monoxide, a poisonous gas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which gas, with the formula CH4, is the main part of natural gas?",
+      "correct": "Methane",
+      "wrong": ["Helium", "Ammonia", "Ozone"],
+      "explanation": "Methane is made of one carbon atom and four hydrogen atoms. It has no smell, so a smelly chemical is added for safety.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.16",
+      "difficulty": "mixed",
+      "question": "How many oxygen atoms does one molecule of ozone have?",
+      "correct": "3",
+      "wrong": ["1", "2", "4"],
+      "explanation": "The oxygen we breathe has two atoms, O2. Ozone has three, O3, and high in the sky it blocks harmful ultraviolet light from the Sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.17",
+      "difficulty": "mixed",
+      "question": "Dry ice turns straight from a solid into a gas. What is this called?",
+      "correct": "Sublimation",
+      "wrong": ["Condensation", "Evaporation", "Melting"],
+      "explanation": "Dry ice is frozen carbon dioxide at about minus 78 °C. It never becomes a liquid under normal air pressure.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.18",
+      "difficulty": "mixed",
+      "question": "What did alchemists famously try to make from cheaper metals?",
+      "correct": "Gold",
+      "wrong": ["Diamond", "Glass", "Iron"],
+      "explanation": "Alchemists never managed it. Their experiments did lead to new tools and methods that early chemists used.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which French chemist, often called the father of modern chemistry, gave oxygen its name?",
+      "correct": "Antoine Lavoisier",
+      "wrong": ["Louis Pasteur", "Blaise Pascal", "Henri Becquerel"],
+      "explanation": "Lavoisier showed that burning is a reaction with oxygen. He also helped to start the metric system.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.20",
+      "difficulty": "mixed",
+      "question": "Marie Curie won Nobel Prizes in physics and in which other subject?",
+      "correct": "Chemistry",
+      "wrong": ["Medicine", "Peace", "Literature"],
+      "explanation": "She was the first woman to win a Nobel Prize, and the first person to win two.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.21",
+      "difficulty": "mixed",
+      "question": "What makes fireworks glow in different colours?",
+      "correct": "Different metal salts",
+      "wrong": [
+        "Lasers inside the rocket",
+        "Coloured glass in the shell",
+        "Paint in the gunpowder"
+      ],
+      "explanation": "Strontium compounds give red, copper gives blue and barium gives green when they burn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.22",
+      "difficulty": "mixed",
+      "question": "Why do old copper roofs turn green?",
+      "correct": "Copper reacts with air and water",
+      "wrong": [
+        "Algae grow on the metal",
+        "They are painted green",
+        "Sunlight bleaches the copper"
+      ],
+      "explanation": "The green layer protects the copper underneath. Many old church roofs in Denmark are green for this reason.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.23",
+      "difficulty": "mixed",
+      "question": "Chlorine, fluorine and iodine belong to which group of elements?",
+      "correct": "Halogens",
+      "wrong": ["Noble gases", "Alkali metals", "Transition metals"],
+      "explanation": "The name halogen means salt-former. They react with metals to make salts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.24",
+      "difficulty": "mixed",
+      "question": "Sodium and potassium are soft metals that react fiercely with water. What group are they in?",
+      "correct": "Alkali metals",
+      "wrong": ["Noble gases", "Halogens", "Transition metals"],
+      "explanation": "They must be stored under oil. They are so soft that you can cut them with a knife.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which of these has the lowest pH, so is the most acidic?",
+      "correct": "Lemon juice",
+      "wrong": ["Milk", "Pure water", "Baking soda in water"],
+      "explanation": "Lemon juice is about pH 2. Milk is almost neutral, and baking soda is a mild base.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.26",
+      "difficulty": "mixed",
+      "question": "Which method separates the different colours in a drop of ink?",
+      "correct": "Chromatography",
+      "wrong": ["Distillation", "Filtration", "Evaporation"],
+      "explanation": "The ink is carried up a strip of paper by water. Different colours travel at different speeds, so they spread out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which process makes drinking water from seawater by boiling it and cooling the steam?",
+      "correct": "Distillation",
+      "wrong": ["Filtration", "Fermentation", "Electrolysis"],
+      "explanation": "The salt stays behind in the pot when the water boils. Ships have used this method for a long time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.28",
+      "difficulty": "mixed",
+      "question": "What do we call a reaction in which a substance burns in oxygen?",
+      "correct": "Combustion",
+      "wrong": ["Fermentation", "Corrosion", "Evaporation"],
+      "explanation": "Combustion gives out heat and light. Burning petrol in an engine is combustion too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.29",
+      "difficulty": "mixed",
+      "question": "What do we call a substance that speeds up a reaction but is not used up?",
+      "correct": "A catalyst",
+      "wrong": ["A solvent", "An indicator", "A fuel"],
+      "explanation": "Cars have catalytic converters that turn harmful gases into less harmful ones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.30",
+      "difficulty": "mixed",
+      "question": "Why does soap help to wash grease off your hands?",
+      "correct": "It holds on to both water and grease",
+      "wrong": [
+        "It burns the grease away",
+        "It turns grease into a gas",
+        "It makes the water hotter"
+      ],
+      "explanation": "Soap molecules wrap around grease and let the water carry it away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.31",
+      "difficulty": "mixed",
+      "question": "What do we call large molecules made of long repeating chains, such as plastics?",
+      "correct": "Polymers",
+      "wrong": ["Isotopes", "Alloys", "Crystals"],
+      "explanation": "Poly means many. Natural polymers include cotton, wool and rubber.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.32",
+      "difficulty": "mixed",
+      "question": "What does 24-carat gold mean?",
+      "correct": "It is pure gold",
+      "wrong": ["It is half gold", "It is gold-plated", "It is very heavy"],
+      "explanation": "Pure gold is very soft, so jewellery is often 18-carat or less. It is mixed with other metals to make it harder.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.33",
+      "difficulty": "mixed",
+      "question": "Which English scientist said in the early 1800s that each element is made of its own kind of atom?",
+      "correct": "John Dalton",
+      "wrong": ["Isaac Newton", "Michael Faraday", "James Watt"],
+      "explanation": "Dalton also suffered from colour blindness. For many years it was called Daltonism.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.34",
+      "difficulty": "mixed",
+      "question": "What do we call a substance made of two or more elements chemically joined together?",
+      "correct": "A compound",
+      "wrong": ["A mixture", "An alloy", "A solution"],
+      "explanation": "Water is a compound of hydrogen and oxygen. Its properties are very different from those of the gases it is made of.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.35",
+      "difficulty": "mixed",
+      "question": "What do the elements in the same column of the periodic table have in common?",
+      "correct": "Similar chemical behaviour",
+      "wrong": ["The same weight", "The same colour", "The same state of matter"],
+      "explanation": "Columns are called groups. Copper, silver and gold share a group, and all three have long been used for coins.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.36",
+      "difficulty": "mixed",
+      "question": "What is the common name of sodium bicarbonate?",
+      "correct": "Baking soda",
+      "wrong": ["Table salt", "Chalk", "Bleach"],
+      "explanation": "It is a mild base that helps cakes rise. It is also used for cleaning.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.37",
+      "difficulty": "mixed",
+      "question": "Limestone and marble are mainly made of which compound?",
+      "correct": "Calcium carbonate",
+      "wrong": ["Sodium chloride", "Silicon dioxide", "Calcium chloride"],
+      "explanation": "Chalk, seashells and eggshells are mostly calcium carbonate too. Acid makes it fizz.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which two gases are made when electricity splits water?",
+      "correct": "Hydrogen and oxygen",
+      "wrong": ["Hydrogen and nitrogen", "Oxygen and carbon dioxide", "Helium and oxygen"],
+      "explanation": "Water is H2O, so you get twice as much hydrogen as oxygen. This process is called electrolysis.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.mixed.39",
+      "difficulty": "mixed",
+      "question": "In which state of matter are the particles furthest apart?",
+      "correct": "Gas",
+      "wrong": ["Liquid", "Solid", "They are the same in all states"],
+      "explanation": "Gas particles spread out to fill their container. That is why a gas can be squeezed into a smaller space.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.01",
+      "difficulty": "expert",
+      "question": "Which gas is the third most common in dry air, after nitrogen and oxygen?",
+      "correct": "Argon",
+      "wrong": ["Carbon dioxide", "Neon", "Helium"],
+      "explanation": "Argon makes up almost one per cent of the air. Its name means lazy in Greek, because it does not react.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.02",
+      "difficulty": "expert",
+      "question": "Which element is named after the city of Copenhagen?",
+      "correct": "Hafnium",
+      "wrong": ["Holmium", "Erbium", "Lutetium"],
+      "explanation": "Hafnium comes from Hafnia, the Latin name for Copenhagen. It was discovered there in 1923.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.03",
+      "difficulty": "expert",
+      "question": "In 1825, which light metal was first isolated by the Danish scientist H. C. Ørsted?",
+      "correct": "Aluminium",
+      "wrong": ["Lithium", "Magnesium", "Titanium"],
+      "explanation": "Ørsted is best known for discovering electromagnetism. Aluminium was once more precious than gold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.04",
+      "difficulty": "expert",
+      "question": "Which scale did Danish chemist Søren Sørensen introduce at the Carlsberg Laboratory in 1909?",
+      "correct": "The pH scale",
+      "wrong": ["The Mohs scale", "The Kelvin scale", "The Richter scale"],
+      "explanation": "The pH scale measures how acidic or basic a liquid is. It is used for soil, swimming pools and food.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.05",
+      "difficulty": "expert",
+      "question": "What did Swedish chemist Jöns Jacob Berzelius introduce in the early 1800s?",
+      "correct": "Letters as symbols for elements",
+      "wrong": ["The periodic table", "Colour codes for acids", "Roman numerals for atoms"],
+      "explanation": "Thanks to him we write O, Fe and Na. Before that, chemists used drawings and circles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.06",
+      "difficulty": "expert",
+      "question": "Aluminium is made from which ore?",
+      "correct": "Bauxite",
+      "wrong": ["Hematite", "Galena", "Cinnabar"],
+      "explanation": "Bauxite is often a red-brown rock. Hematite is an ore of iron, galena of lead and cinnabar of mercury.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.07",
+      "difficulty": "expert",
+      "question": "Which mixture of acids can dissolve gold?",
+      "correct": "Aqua regia",
+      "wrong": ["Aqua vitae", "Lye", "Brine"],
+      "explanation": "Aqua regia is Latin for royal water. It is a mix of nitric and hydrochloric acids.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.08",
+      "difficulty": "expert",
+      "question": "Iron is galvanised by coating it with which metal?",
+      "correct": "Zinc",
+      "wrong": ["Tin", "Copper", "Lead"],
+      "explanation": "Zinc corrodes before iron does, so it protects the iron even where the coating is scratched. Many fences and car parts are galvanised.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.09",
+      "difficulty": "expert",
+      "question": "Which gas smells like rotten eggs?",
+      "correct": "Hydrogen sulphide",
+      "wrong": ["Methane", "Ammonia", "Ozone"],
+      "explanation": "Hydrogen sulfide is found around volcanoes and in swamps. It is poisonous in large amounts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.10",
+      "difficulty": "expert",
+      "question": "The element helium was first detected in what?",
+      "correct": "The light from the Sun",
+      "wrong": ["A deep mine", "Sea water", "Volcanic ash"],
+      "explanation": "Scientists saw an unknown line in sunlight in 1868. They named it after Helios, the Greek sun god.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.11",
+      "difficulty": "expert",
+      "question": "The name of the gas chlorine comes from a Greek word meaning what?",
+      "correct": "Pale green",
+      "wrong": ["Salty", "Bleach", "Cleaning"],
+      "explanation": "Chlorine gas is yellow-green. The same Greek word gave us chlorophyll, the green colour in leaves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.12",
+      "difficulty": "expert",
+      "question": "What do we call different forms of the same element, such as diamond and graphite?",
+      "correct": "Allotropes",
+      "wrong": ["Isotopes", "Isomers", "Alloys"],
+      "explanation": "Both are pure carbon, but their atoms are joined in different patterns. This gives very different properties.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.13",
+      "difficulty": "expert",
+      "question": "What do we call atoms of the same element that have different numbers of neutrons?",
+      "correct": "Isotopes",
+      "wrong": ["Ions", "Isomers", "Allotropes"],
+      "explanation": "Carbon-12 and carbon-14 are isotopes. They react in almost the same way, but carbon-14 is radioactive.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.14",
+      "difficulty": "expert",
+      "question": "What do we call an atom that has gained or lost electrons?",
+      "correct": "An ion",
+      "wrong": ["An isotope", "A molecule", "An alloy"],
+      "explanation": "Ions have an electric charge. An atom that loses electrons becomes positive, and one that gains electrons becomes negative.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.15",
+      "difficulty": "expert",
+      "question": "Besides mercury, which element is liquid at normal room temperature?",
+      "correct": "Bromine",
+      "wrong": ["Chlorine", "Iodine", "Fluorine"],
+      "explanation": "Bromine is a dark red-brown liquid with a sharp smell. Its name comes from the Greek word for stench.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.16",
+      "difficulty": "expert",
+      "question": "Which is the most reactive of all the non-metal elements?",
+      "correct": "Fluorine",
+      "wrong": ["Oxygen", "Chlorine", "Nitrogen"],
+      "explanation": "Fluorine reacts with almost every other element, even the noble gas xenon.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.17",
+      "difficulty": "expert",
+      "question": "Why are noble gases like neon and argon so unreactive?",
+      "correct": "Their outer electron shells are full",
+      "wrong": ["They have no electrons", "They are too light", "They are radioactive"],
+      "explanation": "Atoms react to fill their outer shells. Noble gas atoms are already full, so they have no need to.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.18",
+      "difficulty": "expert",
+      "question": "Chemists count atoms in big groups. What is the name of a group of about 6 × 10²³ particles?",
+      "correct": "A mole",
+      "wrong": ["A gram", "A litre", "A joule"],
+      "explanation": "The number is called Avogadro's number. One mole of carbon atoms weighs about 12 grams.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.19",
+      "difficulty": "expert",
+      "question": "What weak attraction between water molecules explains water's high boiling point?",
+      "correct": "Hydrogen bonds",
+      "wrong": ["Magnetic bonds", "Nuclear forces", "Gravity"],
+      "explanation": "Hydrogen bonds take extra energy to break, so water boils at a much higher temperature than other small molecules of its size.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.20",
+      "difficulty": "expert",
+      "question": "Which metal has the highest melting point, and was used in old light bulb filaments?",
+      "correct": "Tungsten",
+      "wrong": ["Iron", "Tin", "Titanium"],
+      "explanation": "Tungsten melts at over 3,400 °C. Its symbol is W, from its other name, wolfram.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.21",
+      "difficulty": "expert",
+      "question": "Which metal melts at about 30 °C, so it can melt in your hand?",
+      "correct": "Gallium",
+      "wrong": ["Tin", "Lead", "Zinc"],
+      "explanation": "Gallium is silvery and soft. A spoon made of it would melt in a cup of hot tea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.22",
+      "difficulty": "expert",
+      "question": "The name of the gas neon comes from a Greek word meaning what?",
+      "correct": "New",
+      "wrong": ["Bright", "Cold", "Hidden"],
+      "explanation": "Neon was discovered in 1898 by William Ramsay and Morris Travers. It was the new gas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.23",
+      "difficulty": "expert",
+      "question": "Why did Mendeleev leave gaps in his periodic table of 1869?",
+      "correct": "For elements not yet discovered",
+      "wrong": [
+        "He thought some elements were not real",
+        "He ran out of known gases",
+        "He wanted a neat square shape"
+      ],
+      "explanation": "He even predicted what the missing elements would be like. Gallium and germanium later matched his guesses.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.24",
+      "difficulty": "expert",
+      "question": "What is the chemical formula of ammonia?",
+      "correct": "NH3",
+      "wrong": ["NO2", "N2O", "HN3"],
+      "explanation": "Ammonia has one nitrogen and three hydrogen atoms. It has a sharp smell and is used in fertilisers and cleaners.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.25",
+      "difficulty": "expert",
+      "question": "An amalgam is an alloy that always contains which metal?",
+      "correct": "Mercury",
+      "wrong": ["Gold", "Iron", "Tin"],
+      "explanation": "Dentists used amalgam for fillings. Gold miners also used mercury to collect fine gold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.26",
+      "difficulty": "expert",
+      "question": "What forms when an acid reacts with a base?",
+      "correct": "A salt and water",
+      "wrong": ["A metal and a gas", "An oil and a gas", "A new acid"],
+      "explanation": "This is called neutralisation. Hydrochloric acid and sodium hydroxide make table salt and water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.27",
+      "difficulty": "expert",
+      "question": "The name of the element phosphorus comes from a Greek word meaning what?",
+      "correct": "Bringer of light",
+      "wrong": ["Hard stone", "Bitter taste", "Sea salt"],
+      "explanation": "White phosphorus glows in the dark when it meets air. It was found by an alchemist in 1669.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.28",
+      "difficulty": "expert",
+      "question": "Which English scientist is credited with discovering hydrogen in 1766?",
+      "correct": "Henry Cavendish",
+      "wrong": ["Isaac Newton", "Michael Faraday", "Charles Darwin"],
+      "explanation": "Cavendish called it inflammable air. Later Lavoisier named it hydrogen, which means water-maker.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.29",
+      "difficulty": "expert",
+      "question": "Which English chemist isolated sodium and potassium using electricity in 1807?",
+      "correct": "Humphry Davy",
+      "wrong": ["Michael Faraday", "Joseph Priestley", "Henry Cavendish"],
+      "explanation": "Davy also invented a safety lamp for miners. Michael Faraday began his career as Davy's assistant.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.30",
+      "difficulty": "expert",
+      "question": "Which is the lightest of all metals?",
+      "correct": "Lithium",
+      "wrong": ["Aluminium", "Sodium", "Magnesium"],
+      "explanation": "Lithium is so light that it floats on oil. It is used in rechargeable batteries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.31",
+      "difficulty": "expert",
+      "question": "Salt water conducts electricity because it contains what?",
+      "correct": "Charged ions",
+      "wrong": ["Free neutrons", "Metal atoms", "Tiny bubbles"],
+      "explanation": "Dissolved salt splits into ions that can carry current. Pure water conducts very poorly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.32",
+      "difficulty": "expert",
+      "question": "What is the name of the process of getting metal from its ore by heating it?",
+      "correct": "Smelting",
+      "wrong": ["Distilling", "Galvanising", "Fermenting"],
+      "explanation": "In a blast furnace, carbon from coke takes the oxygen away from iron ore and leaves the iron behind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.33",
+      "difficulty": "expert",
+      "question": "Which metal sits at the centre of the green molecule chlorophyll?",
+      "correct": "Magnesium",
+      "wrong": ["Iron", "Copper", "Zinc"],
+      "explanation": "Plants use chlorophyll to catch sunlight. The haemoglobin in our blood has a similar ring of atoms, but with iron at its centre.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.34",
+      "difficulty": "expert",
+      "question": "What do we call compounds made only of carbon and hydrogen?",
+      "correct": "Hydrocarbons",
+      "wrong": ["Carbohydrates", "Hydrates", "Carbonates"],
+      "explanation": "Methane, petrol and paraffin wax are made of hydrocarbons. Carbohydrates, such as sugar, also contain oxygen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.35",
+      "difficulty": "expert",
+      "question": "What is the chemical name of laughing gas?",
+      "correct": "Nitrous oxide",
+      "wrong": ["Nitrogen dioxide", "Nitric acid", "Ammonia"],
+      "explanation": "Dentists have used nitrous oxide to ease pain since the 1840s. It is also used to whip cream in spray cans.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.36",
+      "difficulty": "expert",
+      "question": "What colour does sodium make a flame burn in a flame test?",
+      "correct": "Bright yellow",
+      "wrong": ["Red", "Green", "Blue"],
+      "explanation": "Many metals give a flame their own colour. The orange-yellow glow of old street lamps also comes from sodium.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.37",
+      "difficulty": "expert",
+      "question": "How many electrons can the first shell of an atom hold?",
+      "correct": "2",
+      "wrong": ["4", "8", "18"],
+      "explanation": "The first shell is the one closest to the nucleus. The second shell can hold up to eight electrons.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.38",
+      "difficulty": "expert",
+      "question": "Which element is the second most common in Earth's crust, after oxygen?",
+      "correct": "Silicon",
+      "wrong": ["Aluminium", "Iron", "Calcium"],
+      "explanation": "Most rocks and sand contain silicon joined to oxygen. Aluminium comes third.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.39",
+      "difficulty": "expert",
+      "question": "What do we call a reaction that gives out heat?",
+      "correct": "Exothermic",
+      "wrong": ["Endothermic", "Neutral", "Elastic"],
+      "explanation": "Burning is exothermic. Endothermic reactions take heat in, so they can make things feel cold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.chemistry.expert.40",
+      "difficulty": "expert",
+      "question": "Which gas bubbles off when zinc reacts with dilute hydrochloric acid?",
+      "correct": "Hydrogen",
+      "wrong": ["Oxygen", "Helium", "Nitrogen"],
+      "explanation": "Hydrogen burns with a small pop. Metals above hydrogen in the reactivity series push it out of acids.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

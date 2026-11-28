@@ -35,9 +35,13 @@ export function TeamBadge({
       importantForAccessibility="no-hide-descendants"
     >
       <Txt
-        style={{ fontFamily: fonts.heading, fontSize: size * 0.4, lineHeight: size * 0.5 }}
+        style={{
+          fontFamily: fonts.heading,
+          fontSize: Math.max(13, size * 0.4),
+          lineHeight: Math.max(16, size * 0.5),
+        }}
         color={colors.white}
-        maxFontSizeMultiplier={1.2}
+        maxFontSizeMultiplier={size < 34 ? 1 : 1.2}
       >
         {teamInitials(name)}
       </Txt>

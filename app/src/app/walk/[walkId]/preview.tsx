@@ -152,5 +152,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: colors.surface,
   },
-  letterText: { fontFamily: fonts.heading, fontSize: 14, color: colors.ink },
+  letterText: { fontFamily: fonts.heading, fontSize: 15, color: colors.ink },
 });

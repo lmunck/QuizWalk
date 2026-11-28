@@ -8,19 +8,28 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-25 (evening), after the M1 build. Delivery notes: [`m1-delivery.md`](m1-delivery.md);
-how to test: [`user-testing.md`](user-testing.md).
+Updated 2026-11-28, after the M2 wrap-up, M3, the M4 backend, the M4 screens, M5's privacy
+work and the M4/M5 final pass. Delivery notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
+[`m4-backend-delivery.md`](m4-backend-delivery.md), [`m4-app-delivery.md`](m4-app-delivery.md),
+[`m5-privacy-delivery.md`](m5-privacy-delivery.md), [`m5-release-delivery.md`](m5-release-delivery.md); how to test: [`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
-| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion: 89 unit tests |
-| Security rules | Spec §7 in full, 38 allow/deny tests against the emulator, in CI |
-| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator, in CI. **Not deployed yet** |
-| App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6) plus C7 live monitor and C8 team detail from M2. Verified end to end on the iOS simulator against the emulators |
-| Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash |
-| Firebase app registrations, Maps key, App Check, EAS builds with the real config | Not done: account steps, listed in `user-testing.md` part 2 |
-| Pocket-mode spike (A7) | Not done: needs a real phone and a walk |
+| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion, pocket-mode accuracy steps, *Directions* links; from M4 the categories, route geometry and phone-side Refresh helpers, bank rules and the callable contracts: 161 unit tests |
+| Security rules | Spec §7 in full, including the M4 collections: 50 allow/deny tests against the emulator, in CI, plus 4 from M5 showing deletion is server-only (`rules-tests/privacy.test.ts`; no rule changed). Deployed |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`, and from M4 `routeForView`, `reroute`, `generateWalk`, `swapQuestion`, `topUpQuestions`, `onQuestionReported`, `onStopWritten`: 48 unit tests (M4's on recorded service answers) and 46 tests against the emulator, in CI. M4's deployed to `qualk-a173e` on 2026-11-27; `onTeamUpdated` goes out with the next deploy from `m2-m5`. From M5 `deleteMyData`, `deleteAccount` and `daily`, with 7 more emulator tests; deployed 2026-11-28 |
+| Privacy (M5·1, 2026-11-28) | `qualk.dk/privacy` live; S1 *Delete my data* (players) and *Delete account and all data* (creators); 30-day retention with join-code release. App Check on Firestore stays in monitor mode until Play Integrity exists; the steps to enforce are in [`m5-privacy-delivery.md`](m5-privacy-delivery.md) |
+| App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6), all of M2 (C7, C8, share cards, duplicate and delete, push tokens and notification taps) and M3's pocket mode and *Directions*. Verified end to end on the iOS simulator against the emulators, including a simulated walk with the app in the background |
+| Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash; an Android notification icon from M3. `preview` builds with pocket mode started 2026-11-27 (links in `m2-m3-delivery.md`) |
+| Firebase app registrations, Maps key, App Check, EAS builds with the real config | Done on 2026-11-26, except the Google Maps key for Android (yours, `user-testing.md` part 2) |
+| Pocket mode (A7, M3·1–3) | Built on "When In Use" for both platforms, one switch per platform for the alternative (`app/src/location/tuning.ts`). Settled from expo-location 58's code and the iOS simulator; the walk with a phone in a pocket is yours |
+| Battery (M3·4) | Knobs in place with defaults from spec §9; measuring on phones is yours |
+| M2 account steps | FCM V1 key for Android pushes, the Play closed test, the three-phone check: yours, in `m2-m3-delivery.md` |
+| M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). |
+| M4 app (2026-11-28) | C2's choice and map screen (Refresh, the spacing check, zoom, turn and north-up buttons, the default number of questions), C3 with leaving, failure and *Play it myself*, Home's "Generating…", C4's *New route* and routed distance, C5's *Swap*, G2's *Suggest a question*, P4's *Report question*. Run end to end on the iOS simulator against the emulators with real ORS and Gemini: [`m4-app-delivery.md`](m4-app-delivery.md). Left: the map screen on real phones, Android (reroute on save came with the final pass) |
+| Store paperwork (M5·4, 2026-11-28) | App Store and Play listings, privacy label and Data safety answers, review notes, screenshot plan and the release checklist in [`store/`](store/checklist.md). Nothing submitted; of the six places where code and spec differed, four were fixed in the final pass and two (the store name, P1's pocket line) are yours |
+| M4/M5 final pass (2026-11-28) | OSM attribution in C2, C4 and Settings; C4 reroutes once the pins settle, with *Off path* / *on water*; `review-bank.ts list-reports`, `close-reports`, `remove-walk` and a logged line for every report; the editor's location in the privacy page; store docs without **[M4]** markers; accessibility pass (M5·3) with P3, P4, C2 and S1 fixed at the largest text size; eight captioned iPhone screenshots. `reroute`, `onQuestionReported` and the privacy page deployed; no EAS build needed: [`m5-release-delivery.md`](m5-release-delivery.md). Left: the report email alert, the C2 and Android screenshots, reroute on a real phone |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -155,15 +164,20 @@ Scope depends on the A7 spike.
 
 | # | Work |
 |---|---|
-| 1 | **You:** ORS and OpenRouter keys as Firebase secrets |
+| 1 | **You:** ORS and Gemini keys as Firebase secrets (`ORS_API_KEY`, `GEMINI_API_KEY`; Gemini instead of OpenRouter, decided 2026-11-27). Done 2026-11-27 |
 | 2 | Routing module and `reroute`: snapping, real polyline and distance, "off path" / "on water" warnings in C4 |
-| 3 | Generation pipeline in four testable stages, each runnable alone from a script against recorded inputs, then `generateWalk` and `generationJobs` |
-| 4 | C2's *Generate for me* path and C3, including leaving and returning, and the "only found N places" state |
-| 5 | `suggestQuestion` in G2 and C5's *New question* as accept/discard |
-| 6 | *New route*, *Play it myself*, rate limiting |
+| 3 | `routeForView` and C2's map screen: *Refresh*, the stop-spacing check on the phone and on the server, zoom and turn buttons, the default number of questions |
+| 4 | Question bank: categories in `shared/`, the script that fills the bank with its fact-check pass, `topUpQuestions`. Replace `topic` with `categories` in the shared types and `duplicateWalk` |
+| 5 | `generateWalk` (naming stops, picking questions, *Local* questions, the title) with `generationJobs` and C3, including leaving and returning |
+| 6 | `swapQuestion`: C5's *Swap* and G2's *Suggest a question* as accept/discard |
+| 7 | *Report question* on P4, `onQuestionReported`, bank counts in `onAnswerCreated`, rules for the new collections and their tests |
+| 8 | *New route*, *Play it myself*, rate limiting |
 
-**Check:** generate walks in three different places (a city centre, a suburb, a village) and
-walk one. Read every question against its source before trusting the fact-check pass.
+Design: [`m4-generation-design.md`](m4-generation-design.md). The server side of rows 2 and 4–7 was built on 2026-11-27 and is deployed: [`m4-backend-delivery.md`](m4-backend-delivery.md). The screens of rows 3 and 5–8 were built on 2026-11-28: [`m4-app-delivery.md`](m4-app-delivery.md); row 2's app side (reroute on save in C4) is still to do. The contracts the screens are built against are in the design doc's §11.
+
+**Check:** generate walks in a city centre, a suburb, a village and a forest, at several zoom
+levels and directions, and walk one. Before the bank goes live, read a sample from every
+category. Read every *Local* question against its source before trusting the fact-check pass.
 
 ---
 
@@ -171,10 +185,10 @@ walk one. Read every question against its source before trusting the fact-check 
 
 | # | Work |
 |---|---|
-| 1 | Privacy page; `deleteAccount`; participant *Delete my data*; the `daily` retention job with join-code release |
-| 2 | App Check enforced on Firestore, after a period in monitor mode shows no legitimate traffic failing |
+| 1 | Privacy page; `deleteAccount`; participant *Delete my data*; the `daily` retention job with join-code release. **Done 2026-11-28** ([`m5-privacy-delivery.md`](m5-privacy-delivery.md)) |
+| 2 | App Check enforced on Firestore, after a period in monitor mode shows no legitimate traffic failing. **Decided 2026-11-28:** monitor mode until Play Integrity exists, because enforcement is per service, not per platform; then callables first, a week of watching, then Firestore (steps in `m5-privacy-delivery.md`) |
 | 3 | Accessibility pass with VoiceOver and TalkBack on every screen at the largest text size |
-| 4 | Store listings, screenshots, privacy labels and Data safety, review notes for location |
+| 4 | Store listings, screenshots, privacy labels and Data safety, review notes for location. **Written 2026-11-28** ([`store/checklist.md`](store/checklist.md)); nothing uploaded yet |
 | 5 | TestFlight and the Play closed test (running since M2) → production |
 
 ---
@@ -183,7 +197,7 @@ walk one. Read every question against its source before trusting the fact-check 
 
 | Point | Settled in | Effect if it goes the wrong way |
 |---|---|---|
-| Pocket mode on When-In-Use permission | M1·A (A7) | M3 shrinks or changes shape (spec §9 fallbacks) |
+| Pocket mode on When-In-Use permission | Simulator 2026-11-27; real phones in field test 3 | Flip `POCKET_ENGINE` per platform, then the spec §9 fallbacks |
 | Google sign-in library under SDK 58 | M1·A (A5) | One more build cycle |
 | Unlock radius and widening on real streets | Field test 1 | Constants in `shared/rules.ts` and the default radius change |
 | Play Console account | Your task, M0 | Android stays on debug App Check tokens and cannot start the closed test |

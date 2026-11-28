@@ -1,0 +1,1170 @@
+{
+  "category": "geography",
+  "subcategory": "oceans-islands",
+  "questions": [
+    {
+      "id": "geography.oceans-islands.kids.01",
+      "difficulty": "kids",
+      "question": "Which is the biggest ocean on Earth?",
+      "correct": "Pacific Ocean",
+      "wrong": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+      "explanation": "The Pacific Ocean is bigger than all the land on Earth put together. It stretches from Asia and Australia to the Americas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.02",
+      "difficulty": "kids",
+      "question": "Which is the smallest ocean?",
+      "correct": "Arctic Ocean",
+      "wrong": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"],
+      "explanation": "The Arctic Ocean lies around the North Pole. Much of it is covered by sea ice, especially in winter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.03",
+      "difficulty": "kids",
+      "question": "Which is the biggest island in the world?",
+      "correct": "Greenland",
+      "wrong": ["Iceland", "Madagascar", "Cuba"],
+      "explanation": "Greenland is huge, and ice covers most of it. Australia is bigger, but we call it a continent, not an island.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.04",
+      "difficulty": "kids",
+      "question": "Which ocean lies between Europe and North America?",
+      "correct": "Atlantic Ocean",
+      "wrong": ["Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+      "explanation": "Ships and planes cross the Atlantic Ocean every day. Vikings were some of the first Europeans to sail across it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.05",
+      "difficulty": "kids",
+      "question": "What do we call a piece of land with water on all sides?",
+      "correct": "Island",
+      "wrong": ["Peninsula", "Valley", "Plain"],
+      "explanation": "An island can be tiny or huge. Greenland and Zealand are islands, and so is Iceland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.06",
+      "difficulty": "kids",
+      "question": "What do we call a piece of land with water on three sides?",
+      "correct": "Peninsula",
+      "wrong": ["Island", "Lagoon", "Valley"],
+      "explanation": "A peninsula is joined to a bigger piece of land on one side. Italy is a good example: it sticks out into the Mediterranean Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.07",
+      "difficulty": "kids",
+      "question": "Which Danish island lies far out in the Baltic Sea, closer to Sweden?",
+      "correct": "Bornholm",
+      "wrong": ["Funen", "Zealand", "Langeland"],
+      "explanation": "Bornholm is far from the rest of Denmark. Many people go there by boat, and it is nicknamed the Sunshine Island.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.08",
+      "difficulty": "kids",
+      "question": "Which huge coral reef lies off the coast of Australia?",
+      "correct": "Great Barrier Reef",
+      "wrong": ["Great Shark Reef", "Big Blue Reef", "Giant Coral Wall"],
+      "explanation": "The Great Barrier Reef is made by tiny animals called corals. It is so big that it can be seen from space.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.09",
+      "difficulty": "kids",
+      "question": "Which canal lets ships sail between the Atlantic and Pacific Oceans through Central America?",
+      "correct": "Panama Canal",
+      "wrong": ["Suez Canal", "Kiel Canal", "Corinth Canal"],
+      "explanation": "The Panama Canal cuts through a narrow part of land. Ships save a very long trip around the bottom of South America.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.10",
+      "difficulty": "kids",
+      "question": "Which canal in Egypt lets ships go between the Mediterranean Sea and the Red Sea?",
+      "correct": "Suez Canal",
+      "wrong": ["Panama Canal", "Kiel Canal", "Corinth Canal"],
+      "explanation": "The Suez Canal saves ships a long trip around Africa. It has no locks, because the two seas are at about the same level.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.11",
+      "difficulty": "kids",
+      "question": "Which warm ocean lies south of Asia, between Africa and Australia?",
+      "correct": "Indian Ocean",
+      "wrong": ["Atlantic Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "explanation": "The water of the Indian Ocean is warm, and many tropical islands lie in it, such as the Maldives and Mauritius.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.12",
+      "difficulty": "kids",
+      "question": "On which big island in the Indian Ocean do lemurs live?",
+      "correct": "Madagascar",
+      "wrong": ["Iceland", "Sicily", "Cuba"],
+      "explanation": "Wild lemurs live almost only on Madagascar. Many other animals and plants there are found nowhere else.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.13",
+      "difficulty": "kids",
+      "question": "Which big island lies just off the southern tip of mainland Italy?",
+      "correct": "Sicily",
+      "wrong": ["Crete", "Cyprus", "Malta"],
+      "explanation": "Sicily is part of Italy. A narrow strip of sea, only a few kilometres wide, separates it from the mainland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.14",
+      "difficulty": "kids",
+      "question": "About how much of the Earth is covered by water?",
+      "correct": "About 70 percent",
+      "wrong": ["About 10 percent", "About 30 percent", "About 50 percent"],
+      "explanation": "Most of it is salty sea water. With so much water, Earth is often called the blue planet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.15",
+      "difficulty": "kids",
+      "question": "Which country has two main islands, the North Island and the South Island?",
+      "correct": "New Zealand",
+      "wrong": ["Ireland", "Iceland", "Japan"],
+      "explanation": "New Zealand lies in the Pacific Ocean, south-east of Australia. Its biggest city, Auckland, is on the North Island.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.16",
+      "difficulty": "kids",
+      "question": "Which sea lies between Denmark and the United Kingdom?",
+      "correct": "North Sea",
+      "wrong": ["Baltic Sea", "Black Sea", "Red Sea"],
+      "explanation": "The North Sea is fairly shallow and often stormy. Fishing boats and oil rigs work there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.17",
+      "difficulty": "kids",
+      "question": "Which sea lies between Africa and Saudi Arabia?",
+      "correct": "Red Sea",
+      "wrong": ["Black Sea", "White Sea", "Yellow Sea"],
+      "explanation": "The Red Sea is warm and has beautiful coral reefs. Its name may come from tiny red algae that sometimes colour the water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.18",
+      "difficulty": "kids",
+      "question": "What do we call a narrow piece of water that joins two bigger seas?",
+      "correct": "Strait",
+      "wrong": ["Bay", "Cape", "Reef"],
+      "explanation": "A strait can be very busy with ships. The Øresund, between Denmark and Sweden, is a strait.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.19",
+      "difficulty": "kids",
+      "question": "What do we call the land along the edge of the sea?",
+      "correct": "Coast",
+      "wrong": ["Peak", "Valley", "Plain"],
+      "explanation": "Coasts can be sandy, rocky or covered with cliffs. Denmark has a very long coast because it has so many islands.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.20",
+      "difficulty": "kids",
+      "question": "What do we call a group of many islands close together?",
+      "correct": "Archipelago",
+      "wrong": ["Peninsula", "Continent", "Glacier"],
+      "explanation": "Some countries, such as the Philippines and the Maldives, are archipelagos. Denmark has hundreds of islands too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.21",
+      "difficulty": "kids",
+      "question": "Which Asian country is made of four big islands and thousands of small ones?",
+      "correct": "Japan",
+      "wrong": ["Vietnam", "Thailand", "India"],
+      "explanation": "Japan lies in the Pacific Ocean. Its islands have many volcanoes, and earthquakes happen often.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.22",
+      "difficulty": "kids",
+      "question": "Which part of Denmark is a peninsula, not an island?",
+      "correct": "Jutland",
+      "wrong": ["Zealand", "Funen", "Bornholm"],
+      "explanation": "Jutland is joined to the mainland of Europe. The rest of Denmark is made up of islands, such as Funen and Bornholm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.23",
+      "difficulty": "kids",
+      "question": "Which is the biggest island in Denmark itself, not counting Greenland?",
+      "correct": "Zealand",
+      "wrong": ["Funen", "Bornholm", "Falster"],
+      "explanation": "Copenhagen lies mostly on Zealand. The island also has Kronborg Castle at Helsingør, where Shakespeare set his play Hamlet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.24",
+      "difficulty": "kids",
+      "question": "Which island state belongs to Australia and has a famous \"devil\" animal?",
+      "correct": "Tasmania",
+      "wrong": ["Madagascar", "Sicily", "Iceland"],
+      "explanation": "The Tasmanian devil is named after the island. Tasmania lies south of mainland Australia, across the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.25",
+      "difficulty": "kids",
+      "question": "What do we call a safe place by the coast where ships can stop?",
+      "correct": "Harbour",
+      "wrong": ["Glacier", "Canyon", "Meadow"],
+      "explanation": "A harbour has calm water and shelter from storms. Many big cities, such as Copenhagen, began as harbour towns.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.26",
+      "difficulty": "kids",
+      "question": "Which sea lies east of Denmark and touches Sweden, Germany and Poland?",
+      "correct": "Baltic Sea",
+      "wrong": ["North Sea", "Black Sea", "Red Sea"],
+      "explanation": "The Baltic Sea is less salty than the oceans. It freezes in parts of the north in winter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.27",
+      "difficulty": "kids",
+      "question": "What is an iceberg?",
+      "correct": "A big piece of ice floating in the sea",
+      "wrong": ["A mountain under the sea", "A frozen river on land", "A cold wind from the north"],
+      "explanation": "Only the top of an iceberg shows above the water. Most of it is hidden below the surface.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.28",
+      "difficulty": "kids",
+      "question": "What do we call a deep, narrow valley in the sea floor?",
+      "correct": "Trench",
+      "wrong": ["Reef", "Bay", "Beach"],
+      "explanation": "Trenches are the deepest parts of the oceans. Light from the Sun never reaches the bottom of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.29",
+      "difficulty": "kids",
+      "question": "What do we call a strip of sand or small stones next to the sea?",
+      "correct": "Beach",
+      "wrong": ["Cliff", "Glacier", "Canyon"],
+      "explanation": "Waves carry sand and pebbles onto the beach. The Danish west coast has beaches that go on for many kilometres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.30",
+      "difficulty": "kids",
+      "question": "Which group of islands in the North Atlantic belongs to the Danish Kingdom and has many sheep and puffins?",
+      "correct": "Faroe Islands",
+      "wrong": ["Canary Islands", "Maldives", "Galápagos"],
+      "explanation": "The Faroe Islands have steep green hills and a lot of rain. They lie between Iceland and Norway.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.31",
+      "difficulty": "kids",
+      "question": "Tenerife and Lanzarote belong to which group of islands?",
+      "correct": "Canary Islands",
+      "wrong": ["Faroe Islands", "Maldives", "Hebrides"],
+      "explanation": "The Canary Islands belong to Spain but lie off the coast of Africa. They are popular for sunny holidays.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.32",
+      "difficulty": "kids",
+      "question": "Which is the biggest island in Europe?",
+      "correct": "Great Britain",
+      "wrong": ["Ireland", "Iceland", "Sicily"],
+      "explanation": "England, Scotland and Wales are all on the island of Great Britain. Iceland is the next biggest island in Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.33",
+      "difficulty": "kids",
+      "question": "Which of these is usually the biggest body of salt water?",
+      "correct": "An ocean",
+      "wrong": ["A sea", "A bay", "A strait"],
+      "explanation": "Seas are smaller than oceans and are often partly surrounded by land. The Baltic Sea is a good example.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.34",
+      "difficulty": "kids",
+      "question": "The islands of Hawaii lie in which ocean?",
+      "correct": "Pacific Ocean",
+      "wrong": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+      "explanation": "Hawaii is made of volcanic islands far out in the Pacific Ocean. It is thousands of kilometres from any continent.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.35",
+      "difficulty": "kids",
+      "question": "What do we call a pointed piece of land that sticks out into the sea?",
+      "correct": "Cape",
+      "wrong": ["Bay", "Lake", "Valley"],
+      "explanation": "A cape often has a lighthouse to warn ships. The North Cape in Norway is a famous one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.36",
+      "difficulty": "kids",
+      "question": "Which island is nicknamed the Emerald Isle because of its green fields?",
+      "correct": "Ireland",
+      "wrong": ["Iceland", "Greenland", "Cuba"],
+      "explanation": "Ireland gets a lot of rain, so the grass stays bright green. The island lies west of Great Britain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.37",
+      "difficulty": "kids",
+      "question": "Which Italian city is built on more than a hundred small islands?",
+      "correct": "Venice",
+      "wrong": ["Naples", "Pisa", "Genoa"],
+      "explanation": "Venice has canals instead of roads for cars. People travel by boat, and many buildings stand on wooden poles in the water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.kids.38",
+      "difficulty": "kids",
+      "question": "Orkney and Shetland are islands near the north coast of which country?",
+      "correct": "Scotland",
+      "wrong": ["Wales", "Norway", "Ireland"],
+      "explanation": "Orkney and Shetland are known for strong winds, seabirds and ancient stone houses. Vikings once ruled there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which sea lies between Turkey in the south and Ukraine in the north?",
+      "correct": "Black Sea",
+      "wrong": ["Red Sea", "Baltic Sea", "White Sea"],
+      "explanation": "The Black Sea's deep water has very little oxygen, so old shipwrecks on its floor are very well preserved.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which strait splits the city of Istanbul between Europe and Asia?",
+      "correct": "Bosphorus",
+      "wrong": ["Strait of Gibraltar", "Strait of Dover", "Strait of Messina"],
+      "explanation": "Bridges and tunnels join the two sides of Istanbul. Ships sailing in or out of the Black Sea must pass through the Bosphorus.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which strait links the Atlantic Ocean to the Mediterranean Sea?",
+      "correct": "Strait of Gibraltar",
+      "wrong": ["Bosphorus", "Strait of Dover", "Strait of Hormuz"],
+      "explanation": "Spain and Morocco face each other across the Strait of Gibraltar. At the narrowest point it is only about 14 kilometres wide.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which is the biggest island in the Caribbean?",
+      "correct": "Cuba",
+      "wrong": ["Jamaica", "Hispaniola", "Puerto Rico"],
+      "explanation": "Cuba is a long, narrow island at the northern edge of the Caribbean Sea. Hispaniola is the second biggest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.05",
+      "difficulty": "mixed",
+      "question": "Borneo is shared by Indonesia, Malaysia and which other country?",
+      "correct": "Brunei",
+      "wrong": ["Singapore", "Thailand", "Philippines"],
+      "explanation": "Borneo is a huge island with old rainforests. They are home to orangutans, which live in the wild only on Borneo and Sumatra.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.06",
+      "difficulty": "mixed",
+      "question": "Which is the biggest island in the Mediterranean Sea?",
+      "correct": "Sicily",
+      "wrong": ["Sardinia", "Crete", "Cyprus"],
+      "explanation": "Sicily is part of Italy, and its biggest city is Palermo. The island lies near the centre of the Mediterranean Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.07",
+      "difficulty": "mixed",
+      "question": "The Galápagos Islands, linked to Charles Darwin, belong to which country?",
+      "correct": "Ecuador",
+      "wrong": ["Peru", "Chile", "Mexico"],
+      "explanation": "The islands lie in the Pacific Ocean, about 1,000 kilometres from the coast. Darwin visited them in 1835 and studied the animals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.08",
+      "difficulty": "mixed",
+      "question": "Easter Island, famous for its giant stone statues, belongs to which country?",
+      "correct": "Chile",
+      "wrong": ["Peru", "Mexico", "Ecuador"],
+      "explanation": "Easter Island is one of the most remote inhabited islands. It lies in the Pacific Ocean, more than 3,000 km from Chile.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.09",
+      "difficulty": "mixed",
+      "question": "Madeira and the Azores are islands in the Atlantic that belong to which country?",
+      "correct": "Portugal",
+      "wrong": ["Spain", "France", "Morocco"],
+      "explanation": "Both island groups are volcanic. Madeira is known for its flowers and the Azores for hot springs and green hills.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which is the biggest Greek island?",
+      "correct": "Crete",
+      "wrong": ["Rhodes", "Corfu", "Mykonos"],
+      "explanation": "Crete was home to the Minoans, who built great palaces, such as Knossos, more than 3,500 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which island is the second biggest in the Mediterranean Sea?",
+      "correct": "Sardinia",
+      "wrong": ["Corsica", "Cyprus", "Crete"],
+      "explanation": "Sardinia is part of Italy and lies west of the mainland. It has many ancient stone towers called nuraghi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.12",
+      "difficulty": "mixed",
+      "question": "Corsica, the birthplace of Napoleon, belongs to which country?",
+      "correct": "France",
+      "wrong": ["Italy", "Spain", "Greece"],
+      "explanation": "Corsica is a mountain island close to Italy but part of France. Napoleon was born there in 1769.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which island country lies just off the southern tip of India?",
+      "correct": "Sri Lanka",
+      "wrong": ["Madagascar", "Indonesia", "Maldives"],
+      "explanation": "Sri Lanka is shaped a little like a teardrop. It is famous for its tea and its elephants.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which ocean trench contains the deepest known place on Earth?",
+      "correct": "Mariana Trench",
+      "wrong": ["Tonga Trench", "Japan Trench", "Puerto Rico Trench"],
+      "explanation": "The Mariana Trench in the Pacific is deeper than Mount Everest is high. Its bottom is almost 11 kilometres below the surface.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which warm flow of ocean water helps keep north-west Europe mild?",
+      "correct": "Gulf Stream",
+      "wrong": ["Humboldt Current", "Labrador Current", "Benguela Current"],
+      "explanation": "The Gulf Stream starts near Florida, and its warm water flows on across the Atlantic. Without it, Europe's winters would be colder.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which cape in South Africa was a key point on the sea route from Europe to India?",
+      "correct": "Cape of Good Hope",
+      "wrong": ["Cape Horn", "Cape Verde", "North Cape"],
+      "explanation": "Ships sailed around the Cape of Good Hope before the Suez Canal opened. Vasco da Gama passed it in 1497.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.17",
+      "difficulty": "mixed",
+      "question": "The Kiel Canal in Germany links the North Sea with which other sea?",
+      "correct": "Baltic Sea",
+      "wrong": ["Black Sea", "Irish Sea", "Red Sea"],
+      "explanation": "Ships use the Kiel Canal to avoid the long trip around Denmark. It saves a lot of time and fuel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.18",
+      "difficulty": "mixed",
+      "question": "Which sea lies between Greece and Turkey?",
+      "correct": "Aegean Sea",
+      "wrong": ["Adriatic Sea", "Black Sea", "Baltic Sea"],
+      "explanation": "The Aegean Sea is full of islands, such as Lesbos, Rhodes and the Cyclades. Ancient Greek sailors knew it very well.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.19",
+      "difficulty": "mixed",
+      "question": "Which sea lies between Australia and New Zealand?",
+      "correct": "Tasman Sea",
+      "wrong": ["Coral Sea", "Timor Sea", "Red Sea"],
+      "explanation": "The Tasman Sea is named after the Dutch explorer Abel Tasman. He sailed there in 1642.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which sea lies off the west coast of India?",
+      "correct": "Arabian Sea",
+      "wrong": ["Bay of Bengal", "Red Sea", "Black Sea"],
+      "explanation": "The Arabian Sea is part of the Indian Ocean. Seasonal winds called monsoons have helped traders cross it for thousands of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.21",
+      "difficulty": "mixed",
+      "question": "Which large bay lies east of India and west of Myanmar?",
+      "correct": "Bay of Bengal",
+      "wrong": ["Bay of Biscay", "Hudson Bay", "Bay of Fundy"],
+      "explanation": "The Bay of Bengal is one of the biggest bays in the world. Great rivers, such as the Ganges, flow into it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which island in the eastern Mediterranean lies south of Turkey?",
+      "correct": "Cyprus",
+      "wrong": ["Malta", "Sardinia", "Corsica"],
+      "explanation": "Cyprus is the third biggest island in the Mediterranean. Copper was mined there long ago, and the word copper comes from its name.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.23",
+      "difficulty": "mixed",
+      "question": "Zanzibar, an island with spice farms, lies off the coast of which country?",
+      "correct": "Tanzania",
+      "wrong": ["Kenya", "Mozambique", "Somalia"],
+      "explanation": "Zanzibar lies in the Indian Ocean. For centuries it was a busy trading place for spices such as cloves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.24",
+      "difficulty": "mixed",
+      "question": "Papua New Guinea shares its main island with which other country?",
+      "correct": "Indonesia",
+      "wrong": ["Australia", "Philippines", "Malaysia"],
+      "explanation": "New Guinea is the second biggest island in the world. Papua New Guinea has its eastern half and Indonesia its western half.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which group of islands lies off the west coast of Scotland?",
+      "correct": "Hebrides",
+      "wrong": ["Orkney", "Shetland", "Channel Islands"],
+      "explanation": "The Hebrides include Skye, Lewis and Islay. Many people there speak Scottish Gaelic.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.26",
+      "difficulty": "mixed",
+      "question": "Which Arctic island group belongs to Norway and is known for polar bears?",
+      "correct": "Svalbard",
+      "wrong": ["Faroe Islands", "Shetland", "Åland"],
+      "explanation": "Svalbard lies far north of the Arctic Circle. A global seed vault there keeps seeds safe for the future.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.27",
+      "difficulty": "mixed",
+      "question": "What was the \"Northwest Passage\" that explorers searched for?",
+      "correct": "A sea route north of Canada",
+      "wrong": [
+        "A sea route north of Russia",
+        "A canal through Central America",
+        "A pass through the Rocky Mountains"
+      ],
+      "explanation": "Explorers wanted a short sea route from the Atlantic to the Pacific. Ice made it very hard, and Roald Amundsen first sailed it from 1903 to 1906.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.28",
+      "difficulty": "mixed",
+      "question": "Spain and Portugal share which large peninsula?",
+      "correct": "Iberian Peninsula",
+      "wrong": ["Scandinavian Peninsula", "Balkan Peninsula", "Arabian Peninsula"],
+      "explanation": "The Iberian Peninsula is in south-west Europe. The Pyrenees mountains separate it from France.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.29",
+      "difficulty": "mixed",
+      "question": "Norway and Sweden share which large peninsula?",
+      "correct": "Scandinavian Peninsula",
+      "wrong": ["Iberian Peninsula", "Balkan Peninsula", "Arabian Peninsula"],
+      "explanation": "The Scandinavian Peninsula is the biggest in Europe. Denmark is not on it, but it is close by.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.30",
+      "difficulty": "mixed",
+      "question": "Yemen and Oman lie on which large peninsula?",
+      "correct": "Arabian Peninsula",
+      "wrong": ["Iberian Peninsula", "Balkan Peninsula", "Scandinavian Peninsula"],
+      "explanation": "The Arabian Peninsula is mostly desert, and Saudi Arabia covers most of it. It is one of the biggest peninsulas in the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.31",
+      "difficulty": "mixed",
+      "question": "What is a fjord?",
+      "correct": "A long sea inlet between steep cliffs",
+      "wrong": ["A sandy beach", "A ring of coral around an island", "A big lake inside a volcano"],
+      "explanation": "Glaciers carved fjords long ago, and the sea filled the valleys. Norway is famous for its fjords.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.32",
+      "difficulty": "mixed",
+      "question": "Which sea has the Isle of Man in the middle of it?",
+      "correct": "Irish Sea",
+      "wrong": ["North Sea", "Celtic Sea", "Baltic Sea"],
+      "explanation": "The Irish Sea lies between Great Britain and Ireland. Ferries cross it from Wales, England and Scotland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.33",
+      "difficulty": "mixed",
+      "question": "Which ocean is named after a country?",
+      "correct": "Indian Ocean",
+      "wrong": ["Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"],
+      "explanation": "The Indian Ocean is named after India, which sticks out into it. Traders sailed it for thousands of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.34",
+      "difficulty": "mixed",
+      "question": "Which Greek island was shaped by a huge volcano and is famous for white houses above a sea-filled crater?",
+      "correct": "Santorini",
+      "wrong": ["Crete", "Corfu", "Rhodes"],
+      "explanation": "A giant eruption more than 3,500 years ago blew out the middle of the island. What is left is a ring of cliffs around a bay.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.35",
+      "difficulty": "mixed",
+      "question": "Mount Fuji and Tokyo are both on which Japanese island?",
+      "correct": "Honshu",
+      "wrong": ["Hokkaido", "Kyushu", "Shikoku"],
+      "explanation": "Honshu is the biggest island of Japan. It has most of Japan's big cities.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.36",
+      "difficulty": "mixed",
+      "question": "The Suez Canal is the border between which two continents?",
+      "correct": "Africa and Asia",
+      "wrong": ["Europe and Asia", "Europe and Africa", "Asia and Australia"],
+      "explanation": "That makes Egypt a country in two continents. Most of it is in Africa, but the part east of the canal is in Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.37",
+      "difficulty": "mixed",
+      "question": "What is an atoll?",
+      "correct": "A ring-shaped coral island",
+      "wrong": ["A frozen sea cave", "A river island", "A hill of black sand"],
+      "explanation": "An atoll is a ring of coral around a lagoon. The Maldives are made up of many atolls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which strait separates Russia from Alaska?",
+      "correct": "Bering Strait",
+      "wrong": ["Davis Strait", "Strait of Dover", "Strait of Hormuz"],
+      "explanation": "The Bering Strait is less than 90 kilometres wide at its narrowest. It is named after Vitus Bering, a Danish explorer who sailed for Russia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.mixed.39",
+      "difficulty": "mixed",
+      "question": "Newfoundland, an island in the Atlantic, is part of which country?",
+      "correct": "Canada",
+      "wrong": ["Iceland", "Denmark", "United States"],
+      "explanation": "Vikings landed in Newfoundland about a thousand years ago. Fishing was the island's main work for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.01",
+      "difficulty": "expert",
+      "question": "Which bay lies off the north coast of Spain and the west coast of France?",
+      "correct": "Bay of Biscay",
+      "wrong": ["Bay of Fundy", "Hudson Bay", "Botany Bay"],
+      "explanation": "The Bay of Biscay is part of the Atlantic Ocean. Its waters can be rough and stormy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.02",
+      "difficulty": "expert",
+      "question": "Which peninsula in north-west France juts out into the Atlantic Ocean?",
+      "correct": "Brittany",
+      "wrong": ["Picardy", "Aquitaine", "Provence"],
+      "explanation": "Brittany has a rocky coast and a Celtic culture. Its name is related to the name of Britain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.03",
+      "difficulty": "expert",
+      "question": "Which sea separates Italy from the Balkan Peninsula, with Venice at its northern end?",
+      "correct": "Adriatic Sea",
+      "wrong": ["Tyrrhenian Sea", "Aegean Sea", "Black Sea"],
+      "explanation": "The Adriatic Sea is long and narrow. It is part of the Mediterranean, and Croatia has a coast full of islands along it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.04",
+      "difficulty": "expert",
+      "question": "Tahiti, an island in the South Pacific, belongs to which European country?",
+      "correct": "France",
+      "wrong": ["United Kingdom", "Spain", "Netherlands"],
+      "explanation": "Tahiti is the biggest island of French Polynesia, and the town of Papeete on Tahiti is its capital.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.05",
+      "difficulty": "expert",
+      "question": "At the northern tip of Denmark near Skagen, the Skagerrak meets which other body of water?",
+      "correct": "Kattegat",
+      "wrong": ["Øresund", "Great Belt", "Wadden Sea"],
+      "explanation": "At Grenen, near Skagen, waves from two seas crash together. The Skagerrak and the Kattegat flow into each other.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.06",
+      "difficulty": "expert",
+      "question": "Which strait separates the Danish island of Funen from Jutland?",
+      "correct": "Little Belt",
+      "wrong": ["Great Belt", "Øresund", "Fehmarn Belt"],
+      "explanation": "The Little Belt is narrow, and two bridges cross it. The Great Belt is a different strait, between Funen and Zealand.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.07",
+      "difficulty": "expert",
+      "question": "Which two big Danish islands lie south of Zealand?",
+      "correct": "Lolland and Falster",
+      "wrong": ["Funen and Langeland", "Mors and Fur", "Samsø and Ærø"],
+      "explanation": "Lolland and Falster are low and flat, with fertile farmland. Bridges and a tunnel link them to each other.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.08",
+      "difficulty": "expert",
+      "question": "Iceland sits on which long underwater mountain chain?",
+      "correct": "Mid-Atlantic Ridge",
+      "wrong": ["East Pacific Rise", "Ninetyeast Ridge", "Hawaiian Ridge"],
+      "explanation": "The ridge is where two plates of the Earth's crust move apart. Iceland is one of the few places where it rises above the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.09",
+      "difficulty": "expert",
+      "question": "Which island off Iceland was formed by an undersea volcano in 1963?",
+      "correct": "Surtsey",
+      "wrong": ["Heimaey", "Grímsey", "Hrísey"],
+      "explanation": "Surtsey appeared out of the sea during several years of eruptions. Scientists have watched how plants and animals arrived there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.10",
+      "difficulty": "expert",
+      "question": "Which is the biggest island in Sweden?",
+      "correct": "Gotland",
+      "wrong": ["Öland", "Fårö", "Visingsö"],
+      "explanation": "Gotland lies in the Baltic Sea. Its main town, Visby, has a well-kept medieval wall.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.11",
+      "difficulty": "expert",
+      "question": "The Åland Islands, where most people speak Swedish, belong to which country?",
+      "correct": "Finland",
+      "wrong": ["Sweden", "Estonia", "Denmark"],
+      "explanation": "The islands lie between Sweden and Finland. They govern themselves and, under old treaties, have no armed forces.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.12",
+      "difficulty": "expert",
+      "question": "Which gulf in the northern Baltic Sea lies between Sweden and Finland?",
+      "correct": "Gulf of Bothnia",
+      "wrong": ["Gulf of Finland", "Gulf of Riga", "Gulf of Gdańsk"],
+      "explanation": "Much of the Gulf of Bothnia freezes in winter. Ships there often need icebreakers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.13",
+      "difficulty": "expert",
+      "question": "Which sea in the Atlantic Ocean has no coast and is named after a floating seaweed?",
+      "correct": "Sargasso Sea",
+      "wrong": ["Coral Sea", "Caribbean Sea", "Sea of Marmara"],
+      "explanation": "The Sargasso Sea is bounded by ocean currents instead of land. European eels swim there to lay their eggs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.14",
+      "difficulty": "expert",
+      "question": "The name of which ocean comes from a Greek word for \"bear\"?",
+      "correct": "Arctic Ocean",
+      "wrong": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"],
+      "explanation": "The Greek word arktos means bear. The Greeks named the far north after the Great Bear, a group of stars in the northern sky.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.15",
+      "difficulty": "expert",
+      "question": "Which famous cape lies at the southern tip of South America?",
+      "correct": "Cape Horn",
+      "wrong": ["Cape Agulhas", "Cape Verde", "Cape York"],
+      "explanation": "Cape Horn is known for rough seas and strong winds. Sailors feared the trip around it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.16",
+      "difficulty": "expert",
+      "question": "Which strait near the southern tip of South America is named after an explorer who sailed for Spain?",
+      "correct": "Strait of Magellan",
+      "wrong": ["Drake Passage", "Bering Strait", "Davis Strait"],
+      "explanation": "Ferdinand Magellan found this route between the Atlantic and Pacific Oceans in 1520. It is a winding passage with strong winds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.17",
+      "difficulty": "expert",
+      "question": "In which year did the Suez Canal open?",
+      "correct": "1869",
+      "wrong": ["1769", "1914", "1952"],
+      "explanation": "It opened after about ten years of work. The Panama Canal followed in 1914.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.18",
+      "difficulty": "expert",
+      "question": "Which strait is the narrowest part of the English Channel?",
+      "correct": "Strait of Dover",
+      "wrong": ["North Channel", "St George's Channel", "Pentland Firth"],
+      "explanation": "On a clear day you can see France from the white cliffs of Dover. The Channel Tunnel runs under this strait.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.19",
+      "difficulty": "expert",
+      "question": "Which strait separates Sicily from mainland Italy?",
+      "correct": "Strait of Messina",
+      "wrong": ["Strait of Dover", "Bosphorus", "Strait of Gibraltar"],
+      "explanation": "The Strait of Messina is only about three kilometres wide at its narrowest. Old Greek stories placed the monsters Scylla and Charybdis there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.20",
+      "difficulty": "expert",
+      "question": "The Dardanelles links the Aegean Sea with which small sea?",
+      "correct": "Sea of Marmara",
+      "wrong": ["Black Sea", "Adriatic Sea", "Caspian Sea"],
+      "explanation": "Ships from the Aegean pass through the Dardanelles and cross the Sea of Marmara. Then the Bosphorus leads on to the Black Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.21",
+      "difficulty": "expert",
+      "question": "Which strait lies between Malaysia and the Indonesian island of Sumatra?",
+      "correct": "Strait of Malacca",
+      "wrong": ["Strait of Hormuz", "Bering Strait", "Strait of Magellan"],
+      "explanation": "Ships sailing between the Indian Ocean and the Pacific often use the Strait of Malacca. It is a very important sea route.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.22",
+      "difficulty": "expert",
+      "question": "Which strait separates Tasmania from mainland Australia?",
+      "correct": "Bass Strait",
+      "wrong": ["Cook Strait", "Torres Strait", "Strait of Malacca"],
+      "explanation": "It is named after George Bass, a British explorer. Strong winds and big waves can make it hard to cross by boat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.23",
+      "difficulty": "expert",
+      "question": "Which stretch of sea separates Madagascar from the African mainland?",
+      "correct": "Mozambique Channel",
+      "wrong": ["Gulf of Aden", "Cabot Strait", "Strait of Hormuz"],
+      "explanation": "The Mozambique Channel lies in the Indian Ocean. Long ago, Madagascar broke away from Africa and drifted off.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.24",
+      "difficulty": "expert",
+      "question": "Which island at the southern tip of South America is shared by Chile and Argentina?",
+      "correct": "Tierra del Fuego",
+      "wrong": ["Chiloé", "Easter Island", "South Georgia"],
+      "explanation": "The name means \"Land of Fire\" in Spanish. Early sailors saw fires lit by the people who lived there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.25",
+      "difficulty": "expert",
+      "question": "Which is the biggest island in Germany?",
+      "correct": "Rügen",
+      "wrong": ["Usedom", "Sylt", "Fehmarn"],
+      "explanation": "Rügen lies in the Baltic Sea and is famous for its white chalk cliffs. A bridge and a causeway link it to the mainland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.26",
+      "difficulty": "expert",
+      "question": "The narrow Corinth Canal cuts through land in which country?",
+      "correct": "Greece",
+      "wrong": ["Italy", "Turkey", "Spain"],
+      "explanation": "The Corinth Canal is only about 6 kilometres long. It cuts across a strip of land, so ships do not need to sail around a peninsula.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.27",
+      "difficulty": "expert",
+      "question": "Singapore is an island country at the southern tip of which peninsula?",
+      "correct": "Malay Peninsula",
+      "wrong": ["Korean Peninsula", "Arabian Peninsula", "Indian Peninsula"],
+      "explanation": "A causeway and a bridge link Singapore to Malaysia. Singapore also has many smaller islands around its coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.28",
+      "difficulty": "expert",
+      "question": "Which volcanic peninsula in the Russian Far East is known for bears and hot springs?",
+      "correct": "Kamchatka",
+      "wrong": ["Yamal", "Taymyr", "Kola"],
+      "explanation": "Kamchatka has more than a hundred volcanoes. It is so remote that most visitors arrive by plane.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.29",
+      "difficulty": "expert",
+      "question": "Which desert peninsula lies between the Gulf of Suez and the Gulf of Aqaba?",
+      "correct": "Sinai",
+      "wrong": ["Musandam", "Qatar", "Peloponnese"],
+      "explanation": "Sinai is the part of Egypt that lies in Asia, east of the Suez Canal. Its south is rocky and mountainous.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.30",
+      "difficulty": "expert",
+      "question": "The Great Barrier Reef lies off the coast of which Australian state?",
+      "correct": "Queensland",
+      "wrong": ["New South Wales", "Victoria", "Western Australia"],
+      "explanation": "The reef is about 2,300 kilometres long. It lies in the Coral Sea, off Australia's north-east coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.31",
+      "difficulty": "expert",
+      "question": "Which sea north of Norway and Russia is named after a Dutch explorer?",
+      "correct": "Barents Sea",
+      "wrong": ["Kara Sea", "Norwegian Sea", "Laptev Sea"],
+      "explanation": "Willem Barentsz explored the Arctic in the 1590s. Warm Atlantic water keeps the southern part of the sea free of ice all year.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.32",
+      "difficulty": "expert",
+      "question": "After his defeat at Waterloo, Napoleon was sent to which remote island in the South Atlantic?",
+      "correct": "Saint Helena",
+      "wrong": ["Elba", "Corsica", "Malta"],
+      "explanation": "Saint Helena is thousands of kilometres from Europe, so he could not escape. He died there in 1821.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.33",
+      "difficulty": "expert",
+      "question": "The name \"Mediterranean\" comes from Latin words meaning what?",
+      "correct": "In the middle of the land",
+      "wrong": ["Sea of many islands", "Gateway to the East", "Warm blue water"],
+      "explanation": "The Romans saw the sea as lying in the middle of the lands they knew. Europe, Africa and Asia all touch it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.34",
+      "difficulty": "expert",
+      "question": "Which strait links the Red Sea to the Gulf of Aden?",
+      "correct": "Bab-el-Mandeb",
+      "wrong": ["Strait of Hormuz", "Strait of Malacca", "Strait of Dover"],
+      "explanation": "The name means \"Gate of Tears\" in Arabic. It lies between Yemen and the Horn of Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.35",
+      "difficulty": "expert",
+      "question": "Which cape is the southernmost point of Africa?",
+      "correct": "Cape Agulhas",
+      "wrong": ["Cape of Good Hope", "Cape Horn", "Cape Verde"],
+      "explanation": "Cape Agulhas in South Africa marks where the Atlantic and Indian Oceans are said to meet. Many people think the Cape of Good Hope is further south.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.36",
+      "difficulty": "expert",
+      "question": "What do we call a narrow strip of land that joins two bigger pieces of land, like Panama?",
+      "correct": "Isthmus",
+      "wrong": ["Peninsula", "Archipelago", "Atoll"],
+      "explanation": "The Isthmus of Panama joins North and South America. The Panama Canal cuts right across it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.37",
+      "difficulty": "expert",
+      "question": "Which Baltic island is shared by Germany and Poland?",
+      "correct": "Usedom",
+      "wrong": ["Rügen", "Bornholm", "Gotland"],
+      "explanation": "Usedom is known for sandy beaches and old seaside towns. The border between Germany and Poland runs across it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.38",
+      "difficulty": "expert",
+      "question": "Which strait separates the North Island and the South Island of New Zealand?",
+      "correct": "Cook Strait",
+      "wrong": ["Bass Strait", "Torres Strait", "Foveaux Strait"],
+      "explanation": "Cook Strait is named after Captain James Cook. Ferries cross it, though the sea can be rough.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.oceans-islands.expert.39",
+      "difficulty": "expert",
+      "question": "Which peninsula in south-east Mexico separates the Gulf of Mexico from the Caribbean Sea?",
+      "correct": "Yucatán",
+      "wrong": ["Baja California", "Florida", "Labrador"],
+      "explanation": "The Yucatán Peninsula was home to the Maya. Their stone cities, such as Chichén Itzá, can still be visited.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

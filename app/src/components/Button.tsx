@@ -106,7 +106,7 @@ export function Button({
           <Txt
             variant="button"
             color={k.fg}
-            style={kind === 'ghost' ? styles.ghostText : undefined}
+            style={[styles.label, kind === 'ghost' ? styles.ghostText : undefined]}
             numberOfLines={2}
             center
           >
@@ -157,6 +157,8 @@ export function IconButton({
 }
 
 const styles = StyleSheet.create({
+  // Shrinks beside the icon, so a long label wraps inside the button at large text sizes.
+  label: { flexShrink: 1 },
   base: {
     borderRadius: radius.pill,
     alignItems: 'center',

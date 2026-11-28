@@ -11,6 +11,7 @@ ui-debug.log*
 functions/lib/
 
 # Secrets never belong in the repo
+.secret.local
 .env
 .env.*
 !.env.example
@@ -24,3 +25,6 @@ functions/lib/
 *.mobileprovision
 service-account*.json
 dist-app/
+
+# Fill-bank run logs (token use and cost per batch)
+scripts/logs/
