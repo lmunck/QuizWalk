@@ -28,6 +28,7 @@ work. Delivery notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](
 | M2 account steps | FCM V1 key for Android pushes, the Play closed test, the three-phone check: yours, in `m2-m3-delivery.md` |
 | M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). |
 | M4 app (2026-11-28) | C2's choice and map screen (Refresh, the spacing check, zoom, turn and north-up buttons, the default number of questions), C3 with leaving, failure and *Play it myself*, Home's "Generating…", C4's *New route* and routed distance, C5's *Swap*, G2's *Suggest a question*, P4's *Report question*. Run end to end on the iOS simulator against the emulators with real ORS and Gemini: [`m4-app-delivery.md`](m4-app-delivery.md). Left: reroute on save in C4, the map screen on real phones, Android |
+| Store paperwork (M5·4, 2026-11-28) | App Store and Play listings, privacy label and Data safety answers, review notes, screenshot plan and the release checklist in [`store/`](store/checklist.md). Nothing submitted; the checklist lists six places where code and spec differ, the M4 screens and *Report question* first |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -186,7 +187,7 @@ category. Read every *Local* question against its source before trusting the fac
 | 1 | Privacy page; `deleteAccount`; participant *Delete my data*; the `daily` retention job with join-code release. **Done 2026-11-28** ([`m5-privacy-delivery.md`](m5-privacy-delivery.md)) |
 | 2 | App Check enforced on Firestore, after a period in monitor mode shows no legitimate traffic failing. **Decided 2026-11-28:** monitor mode until Play Integrity exists, because enforcement is per service, not per platform; then callables first, a week of watching, then Firestore (steps in `m5-privacy-delivery.md`) |
 | 3 | Accessibility pass with VoiceOver and TalkBack on every screen at the largest text size |
-| 4 | Store listings, screenshots, privacy labels and Data safety, review notes for location |
+| 4 | Store listings, screenshots, privacy labels and Data safety, review notes for location. **Written 2026-11-28** ([`store/checklist.md`](store/checklist.md)); nothing uploaded yet |
 | 5 | TestFlight and the Play closed test (running since M2) → production |
 
 ---
