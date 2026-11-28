@@ -17,6 +17,7 @@ import { Row, RowGroup, SectionLabel } from '@/components/ui';
 import { leaveWalk } from '@/data/teams';
 import type { Walk } from '@/data/walks';
 import { useOffline } from '@/lib/network';
+import { stopPocketMode } from '@/location/pocket';
 import { colors, spacing } from '@/theme/tokens';
 
 import { useStandings } from './standings';
@@ -45,6 +46,7 @@ export function WalkMenu({
 
   const leave = () => {
     if (uid) leaveWalk(walk.id, uid, true);
+    void stopPocketMode();
     setConfirmLeave(false);
     onDismiss();
     router.replace('/');

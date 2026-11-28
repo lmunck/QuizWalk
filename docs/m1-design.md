@@ -284,9 +284,9 @@ Positions are written only after *Start walk*. The lobby's distance-to-start is 
 `src/location/` exposes `useArrival(stop)` returning `{ distanceM, accuracyM, unlocked, canImHere }`
 (`canImHere` from `canUseImHere(distanceM, accuracyM)`), and `useHeading()` returning
 `{ bearingToStop, reliable }` so P3 can swap the arrow for a text bearing.
-M3 replaces the implementation with background updates and geofencing without touching a
-screen. Geofencing is available in `expo-location` and iOS allows 20 regions, comfortably
-above the 12-stop maximum — M3's problem, but the boundary is drawn for it now.
+M3 adds background updates behind the same hooks without touching a screen (`pocket.ts`; how
+and why in `m2-m3-delivery.md`). Geofencing was considered and not used: on iOS it needs
+"Always" permission, which spec §9 rules out.
 
 G6 "Can't reach" is in M1: *I'm here* (`distance − accuracy ≤ 150 m`, no speed bonus), *Skip*
 (0 points, confirm), *Way blocked* (writes a `skipped` answer and an alert in one step, so the

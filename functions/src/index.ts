@@ -29,7 +29,7 @@ import { DEFAULT_OVERPASS_URLS, overpassClient } from './places/overpass';
 import { wikiClient } from './places/wiki';
 import { checkRateLimit } from './rateLimit';
 import { applyReport, countAnswer, countStopChange } from './reports';
-import { pushBlockedAlert, pushFinishNews, pushStatusChange } from './push';
+import { pushBlockedAlert, pushFinishNews, pushStatusChange, teamJustLeft } from './push';
 import { orsRouter } from './routing/ors';
 import { reroute as rerouteCore } from './routing/reroute';
 import { routeForView as routeForViewCore } from './routing/view';
@@ -214,6 +214,18 @@ export const onAnswerCreated = onDocumentCreated(
     await pushFinishNews(db(), walkId, teamUid, wasFinished);
   },
 );
+
+/**
+ * A team leaving mid-walk may leave nobody walking: "Everyone has finished" then goes to the
+ * creator, as it does after the last answer. Teams write often (distance walked), so
+ * everything but a fresh `leftAt` returns at once.
+ */
+export const onTeamUpdated = onDocumentUpdated('walks/{walkId}/teams/{teamUid}', async (event) => {
+  const before = event.data?.before.data();
+  const after = event.data?.after.data();
+  if (!teamJustLeft(before, after)) return;
+  await pushFinishNews(db(), event.params.walkId, event.params.teamUid, before?.finishedAt != null);
+});
 
 /** Skip for everyone: points on the stop are voided and every team is recalculated. */
 export const onStopUpdated = onDocumentUpdated('walks/{walkId}/stops/{stopId}', async (event) => {

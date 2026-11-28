@@ -8,6 +8,7 @@ Turn any walk into a quiz. Creators generate a walk from the map, or build one b
 - M4 generation design: [`docs/m4-generation-design.md`](docs/m4-generation-design.md)
 - Implementation plan: [`docs/implementation-plan.md`](docs/implementation-plan.md)
 - M1 delivery notes: [`docs/m1-delivery.md`](docs/m1-delivery.md)
+- M2 wrap-up and M3 delivery notes: [`docs/m2-m3-delivery.md`](docs/m2-m3-delivery.md)
 - M4 backend delivery notes: [`docs/m4-backend-delivery.md`](docs/m4-backend-delivery.md)
 - How to test, locally and on phones: [`docs/user-testing.md`](docs/user-testing.md)
 

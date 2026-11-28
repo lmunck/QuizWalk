@@ -18,7 +18,7 @@ import {
   walkProgress,
 } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { useAuth } from '@/auth/AuthProvider';
@@ -33,6 +33,7 @@ import { useStops, useWalk } from '@/data/walks';
 import { useShareCard } from '@/features/shareCard';
 import { useStandings } from '@/features/standings';
 import { useOffline } from '@/lib/network';
+import { stopPocketMode } from '@/location/pocket';
 import { colors, fonts, spacing } from '@/theme/tokens';
 
 export default function Finish() {
@@ -45,6 +46,8 @@ export default function Finish() {
   const { standings } = useStandings(walkId, { startedOnly: true });
   const offline = useOffline();
   const card = useShareCard('Share standings');
+  // Finished: no more stops to guide to (spec §9, tracking stops when the team finishes).
+  useEffect(() => void stopPocketMode(), []);
 
   const progress = useMemo(
     () =>
