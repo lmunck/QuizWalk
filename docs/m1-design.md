@@ -282,8 +282,12 @@ P3 holds the screen awake with `expo-keep-awake` and tells the player to keep Qu
 Positions are written only after *Start walk*. The lobby's distance-to-start is local.
 
 `src/location/` exposes `useArrival(stop)` returning `{ distanceM, accuracyM, unlocked, canImHere }`
-(`canImHere` from `canUseImHere(distanceM, accuracyM)`), and `useHeading()` returning
-`{ bearingToStop, reliable }` so P3 can swap the arrow for a text bearing.
+(`canImHere` from `canUseImHere(distanceM, accuracyM)`), and `useHeading()` (`compass.ts`)
+returning `{ bearingToTarget, reliable }` so P3 can swap the arrow for a text bearing. The
+iPhone's heading comes from Core Location. Android's comes from the fused rotation-vector
+sensor through the local module `app/modules/qualk-heading`, because expo-location's Android
+heading uses the raw magnetometer and jumped on the first field test (2026-11-28). Readings are
+smoothed in `shared/src/compass.ts`.
 M3 adds background updates behind the same hooks without touching a screen (`pocket.ts`; how
 and why in `m2-m3-delivery.md`). Geofencing was considered and not used: on iOS it needs
 "Always" permission, which spec §9 rules out.

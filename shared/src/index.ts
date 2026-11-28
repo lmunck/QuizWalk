@@ -8,6 +8,7 @@ export * from './progress';
 export * from './teams';
 export * from './format';
 export * from './pocket';
+export * from './compass';
 export * from './categories';
 export * from './route';
 export * from './bank';

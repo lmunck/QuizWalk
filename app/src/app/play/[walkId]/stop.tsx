@@ -42,7 +42,9 @@ import { Banner } from '@/components/ui';
 import { WalkMenu } from '@/features/WalkMenu';
 import { useAnswers, useTeam } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
-import { useArrival, useHeading } from '@/location/arrival';
+import { CompassArrow } from '@/components/CompassArrow';
+import { useArrival } from '@/location/arrival';
+import { useHeading } from '@/location/compass';
 import { setWalkScreenFocused, usePocketMode } from '@/location/pocket';
 import { simulatePosition, useLocationAccess } from '@/location/position';
 import { useWalkTracking } from '@/location/tracking';
@@ -200,7 +202,7 @@ export default function WalkToStop() {
 
   const unsent = answers.pendingWrites ?? 0;
   const distance = arrival.distanceM;
-  const arrowUsable = heading.reliable && heading.arrowDeg !== undefined;
+  const arrowUsable = heading.reliable && heading.bearingToTarget !== undefined;
 
   const directions = () =>
     void Linking.openURL(
@@ -310,8 +312,8 @@ export default function WalkToStop() {
               accessibilityElementsHidden
               importantForAccessibility="no-hide-descendants"
             >
-              {arrowUsable ? (
-                <Icon name="navigate" size={34} color={colors.white} rotate={heading.arrowDeg} />
+              {arrowUsable && heading.bearingToTarget !== undefined ? (
+                <CompassArrow bearingDeg={heading.bearingToTarget} size={34} color={colors.white} />
               ) : (
                 <Icon name="pin" size={30} color={colors.white} />
               )}
