@@ -1,45 +1,122 @@
 /**
- * S1 Settings: account, the name players see, sign out, app version (spec §3 S1). Account
- * deletion and the privacy page arrive in M5 (m1-design §1).
+ * S1 Settings: account, the name players see, sign out, privacy, deletion, app version
+ * (spec §3 S1, §13). Creators get *Delete account and all data*; participants, who have no
+ * account, get *Delete my data*. Both run in Cloud Functions (spec §8) and need a connection.
  */
 import Constants from 'expo-constants';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Linking, StyleSheet, View } from 'react-native';
 
 import { useAuth } from '@/auth/AuthProvider';
-import { signOut, walkInProgress } from '@/auth/signIn';
+import { revokeAppleSignIn, SignInCancelled, signOut, walkInProgress } from '@/auth/signIn';
 import { Button } from '@/components/Button';
 import { Dialog } from '@/components/Dialog';
 import { Screen } from '@/components/Screen';
 import { useToast } from '@/components/Toast';
 import { Txt } from '@/components/Txt';
 import { Field, Row, RowGroup, SectionLabel } from '@/components/ui';
+import { deleteAccount, deleteMyData } from '@/data/callables';
 import { errorMessage } from '@/data/errors';
 import { setDisplayName } from '@/data/users';
 import { usingEmulators } from '@/lib/env';
+import { forgetWalksOnThisPhone } from '@/lib/storage';
+import { stopPocketMode } from '@/location/pocket';
 import { colors, spacing } from '@/theme/tokens';
+
+const PRIVACY_URL = 'https://qualk.dk/privacy';
+
+type Confirm =
+  | { kind: 'signOut'; walk: boolean }
+  | { kind: 'deleteData'; walk: boolean }
+  | { kind: 'deleteAccount'; walk: boolean };
+
+function confirmText(c: Confirm): { title: string; text: string; action: string } {
+  const walk = c.walk ? 'You are in a walk on this phone. ' : '';
+  switch (c.kind) {
+    case 'signOut':
+      return {
+        title: 'Sign out?',
+        text: c.walk
+          ? 'You are in a walk on this phone. If you sign out, this phone loses its place in that walk.'
+          : 'Your walks stay with your account. Sign in again to see them.',
+        action: 'Sign out',
+      };
+    case 'deleteData':
+      return {
+        title: 'Delete your data?',
+        text:
+          `${walk}This removes your teams, answers and locations from every walk joined on this ` +
+          'phone, and the list of walks on Home. Your teams leave the standings, also in a walk ' +
+          'that is still open. This cannot be undone.',
+        action: 'Delete my data',
+      };
+    case 'deleteAccount':
+      return {
+        title: 'Delete your account?',
+        text:
+          `${walk}All your walks are deleted with their stops, questions, teams and results, ` +
+          'including a walk that is open now. Your teams in other walks, your name and your ' +
+          'sign-in go too. This cannot be undone.',
+        action: 'Delete everything',
+      };
+  }
+}
 
 export default function Settings() {
   const { uid, isCreator, displayName, providerName, email } = useAuth();
   const toast = useToast();
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(displayName ?? '');
-  const [confirmOut, setConfirmOut] = useState<'plain' | 'walk'>();
+  const [confirm, setConfirm] = useState<Confirm>();
   const [busy, setBusy] = useState(false);
 
-  const askSignOut = async () => {
-    setConfirmOut(uid && (await walkInProgress(uid)) ? 'walk' : 'plain');
+  const ask = async (kind: Confirm['kind']) => {
+    setConfirm({ kind, walk: !!uid && (await walkInProgress(uid)) });
   };
 
   const doSignOut = async () => {
+    await signOut();
+    router.replace('/');
+  };
+
+  const doDeleteData = async () => {
+    await stopPocketMode();
+    const { teams } = await deleteMyData();
+    await forgetWalksOnThisPhone();
+    toast(teams > 0 ? 'Your data is deleted.' : 'There was no data to delete.');
+    router.replace('/');
+  };
+
+  const doDeleteAccount = async () => {
+    if (providerName === 'Apple') await revokeAppleSignIn();
+    await stopPocketMode();
+    await deleteAccount();
+    await forgetWalksOnThisPhone();
+    // The account is gone on the server; this clears it on the phone and starts afresh.
+    await signOut();
+    toast('Your account and all its data are deleted.');
+    router.replace('/');
+  };
+
+  const run = async () => {
+    if (!confirm) return;
     setBusy(true);
     try {
-      await signOut();
-      setConfirmOut(undefined);
-      router.replace('/');
+      if (confirm.kind === 'signOut') await doSignOut();
+      else if (confirm.kind === 'deleteData') await doDeleteData();
+      else await doDeleteAccount();
+      setConfirm(undefined);
     } catch (err) {
-      toast(errorMessage(err, 'Could not sign out. Try again.'), 'error');
+      if (err instanceof SignInCancelled) {
+        setConfirm(undefined);
+        return;
+      }
+      const fallback =
+        confirm.kind === 'signOut'
+          ? 'Could not sign out. Try again.'
+          : 'Could not delete. Check your connection and try again.';
+      toast(errorMessage(err, fallback), 'error');
     } finally {
       setBusy(false);
     }
@@ -54,6 +131,8 @@ export default function Settings() {
       toast(errorMessage(err, 'Could not save your name.'), 'error');
     }
   };
+
+  const dialog = confirm ? confirmText(confirm) : undefined;
 
   return (
     <Screen title="Settings">
@@ -79,7 +158,7 @@ export default function Settings() {
               icon="logout"
               label="Sign out"
               destructive
-              onPress={() => void askSignOut()}
+              onPress={() => void ask('signOut')}
               last
             />
           </RowGroup>
@@ -95,6 +174,37 @@ export default function Settings() {
             />
           </>
         )}
+      </View>
+
+      <View style={styles.block}>
+        <SectionLabel>Privacy</SectionLabel>
+        <RowGroup>
+          <Row
+            icon="info"
+            label="Privacy policy"
+            detail="What QuizWalk keeps, why, and for how long."
+            onPress={() => void Linking.openURL(PRIVACY_URL)}
+          />
+          {isCreator ? (
+            <Row
+              icon="trash"
+              label="Delete account and all data"
+              detail="Your walks, their results, your teams and your sign-in."
+              destructive
+              onPress={() => void ask('deleteAccount')}
+              last
+            />
+          ) : (
+            <Row
+              icon="trash"
+              label="Delete my data"
+              detail="Your teams, answers and locations. Otherwise they go 30 days after a walk ends."
+              destructive
+              onPress={() => void ask('deleteData')}
+              last
+            />
+          )}
+        </RowGroup>
       </View>
 
       <View style={styles.block}>
@@ -129,22 +239,23 @@ export default function Settings() {
         <Field label="Name" value={name} onChangeText={setName} maxLength={40} autoFocus />
       </Dialog>
       <Dialog
-        visible={confirmOut !== undefined}
-        title="Sign out?"
-        text={
-          confirmOut === 'walk'
-            ? 'You are in a walk on this phone. If you sign out, this phone loses its place in that walk.'
-            : 'Your walks stay with your account. Sign in again to see them.'
-        }
-        onDismiss={() => setConfirmOut(undefined)}
+        visible={dialog !== undefined}
+        title={dialog?.title ?? ''}
+        text={dialog?.text}
+        onDismiss={() => (busy ? undefined : setConfirm(undefined))}
         actions={[
           {
-            label: 'Sign out',
+            label: dialog?.action ?? '',
             kind: 'destructive',
             loading: busy,
-            onPress: () => void doSignOut(),
+            onPress: () => void run(),
           },
-          { label: 'Cancel', kind: 'ghost', onPress: () => setConfirmOut(undefined) },
+          {
+            label: 'Cancel',
+            kind: 'ghost',
+            disabled: busy,
+            onPress: () => setConfirm(undefined),
+          },
         ]}
       />
     </Screen>

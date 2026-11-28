@@ -15,6 +15,19 @@ async function safely<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
   }
 }
 
+/**
+ * After *Delete my data* or account deletion: forgets every walk's question clocks and refused
+ * answers on this phone. Whether Welcome was seen is kept.
+ */
+export const forgetWalksOnThisPhone = () =>
+  safely(async () => {
+    const keys = await AsyncStorage.getAllKeys();
+    const walkKeys = keys.filter(
+      (k) => k.startsWith('qualk:clock:') || k.startsWith('qualk:rejected:'),
+    );
+    if (walkKeys.length > 0) await AsyncStorage.multiRemove(walkKeys);
+  }, undefined);
+
 /** First run without a link shows Welcome (G1); after any choice it never shows again. */
 export const hasSeenWelcome = () =>
   safely(async () => (await AsyncStorage.getItem(WELCOME_SEEN)) === '1', false);

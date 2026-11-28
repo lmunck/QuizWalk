@@ -1,6 +1,6 @@
 # QuizWalk (Qualk) — v1 specification
 
-Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17) · generation design 2026-11-27 (§1, §3, §4, §6–§8, §14–§17, §19; the how and why are in [`m4-generation-design.md`](m4-generation-design.md)) · M3 pocket mode 2026-11-27 (§3 P3, §8, §9, §11, §19; the how and why are in [`m2-m3-delivery.md`](m2-m3-delivery.md)) · M4 backend 2026-11-27: Gemini instead of OpenRouter, and what building it settled (§1, §5–§8, §15, §18, §19; [`m4-backend-delivery.md`](m4-backend-delivery.md))
+Status: **Draft for approval** · 2026-11-04 · UX review folded in 2026-11-24 (§3, §4, §9, §11, §14) · design review 2026-11-25 (§4, §6–§9, §17) · generation design 2026-11-27 (§1, §3, §4, §6–§8, §14–§17, §19; the how and why are in [`m4-generation-design.md`](m4-generation-design.md)) · M3 pocket mode 2026-11-27 (§3 P3, §8, §9, §11, §19; the how and why are in [`m2-m3-delivery.md`](m2-m3-delivery.md)) · M4 backend 2026-11-27: Gemini instead of OpenRouter, and what building it settled (§1, §5–§8, §15, §18, §19; [`m4-backend-delivery.md`](m4-backend-delivery.md)) · M5 privacy 2026-11-28: deletion, retention, App Check timing (§6–§8, §12, §13, §18; [`m5-privacy-delivery.md`](m5-privacy-delivery.md))
 Build order: [`implementation-plan.md`](implementation-plan.md) · Design reference: [`/design`](../design/README.md), with screen IDs C1–C9, P1–P6 and G1–G6. The mockups were not redrawn after the UX review; where a mockup and §3 disagree, §3 wins.
 
 The aim of v1 is a small, robust app that does one loop well:
@@ -60,7 +60,7 @@ Legend: **Keep** = as designed · **Change** = kept with listed changes · **Mer
 | C7 | Live monitor | Change | Map with each team's *last known* position + leaderboard, in a sheet with the same three heights as C4. Teams not heard from for 2 minutes are dimmed and labelled "seen 6 min ago". An *Invite* pill shows the join code for late-comers. **"Message all" cut.** Adds an alerts strip for "Way blocked" reports with *Skip stop for everyone*. *End walk* is a secondary button, not the accent one, and its confirm says how many teams are still walking. When every team that started has finished or left, a banner offers *End walk & show results* (not in a week-long walk, where more teams may still join). In a week-long walk the header shows "Open until Sun 29 Nov", and teams that have not walked today are listed under the leaderboard without a map pin instead of as stale pins. |
 | C8 | Team detail | Change | Read-only: stats + per-stop results. **Both buttons cut**: skipping is done for everyone from C7; messaging is cut. |
 | C9 | Results | Keep | Podium, stats. Tapping a team opens C8. "Reuse walk" duplicates it as a new draft. "Share results" shares an image card. |
-| S1 | Settings | **New** | Account, sign out, **Delete account and all data**, privacy policy link, app version. |
+| S1 | Settings | **New** | Account, sign out, **Delete account and all data** (creators) or **Delete my data** (no account), privacy policy link, app version. Each delete confirms with what is lost. |
 
 ### Participant
 
@@ -179,6 +179,7 @@ walks/{walkId}
   distanceM                              // §4 Distance; on the walk so P1 can show it before joining
   openFor?: 'day'|'week'                 // set with openedAt; ends openedAt + 12 h or + 7 days
   stopCount, createdAt, updatedAt, openedAt?, endedAt?
+  participantDataDeletedAt?              // set by `daily` when it purged the walk; `joinCode` is removed then
 
 walks/{walkId}/stops/{stopId}
   order, location: GeoPoint, placeName, radiusM
@@ -273,7 +274,9 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 - `questionBank`, `places`: no client access. Functions pick the questions and copy them into stops. The functions' own `bankTopUps`, `bankMeta` and `rateLimits` have no client access either.
 - `questionReports`: **create** by a team of the walk with `uid == auth.uid` and `createdAt` the server time, under the id built from the question (or walk and stop) and the uid, so each person reports a question once. A bank question can only be reported as it is on that stop (`questionId` equals the stop's `bankQuestionId`). No client read, update or delete.
 
-**App Check** is enforced on callables from the first one written, and on Firestore itself before release (M5), which is what stops a script from guessing join codes.
+**App Check** is enforced on callables from the first one written, and on Firestore itself before release (M5), which is what stops a script from guessing join codes. *Decided 2026-11-28:* both stay in monitor mode until Play Integrity exists, because enforcement is set per Firebase service for every app at once, not per platform. Callables go first, then Firestore after a week of clean metrics ([`m5-privacy-delivery.md`](m5-privacy-delivery.md)).
+
+Deleting data and the 30-day purge run in functions (`deleteMyData`, `deleteAccount`, `daily`, §8), so no rule allows a started team to remove its answers, position or alerts.
 
 ---
 
@@ -289,7 +292,8 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 | `openWalk` | callable | Validate again (a `ready` walk can still be edited), set `openFor`, `openedAt`, `ready → open`. |
 | `deleteWalk` | callable | Delete a walk that is not `open`, with its stops, teams, answers, positions, alerts and join code. |
 | `duplicateWalk` | callable | "Reuse walk" → new draft. |
-| `deleteAccount` | callable | Delete the user's walks (recursively), their participant data, and the Auth user. |
+| `deleteAccount` | callable | S1 *Delete account and all data*: the user's walks recursively, open ones included, with their join codes and generation jobs; their participant data in other walks (as `deleteMyData`); `rateLimits/{uid}`; `users/{uid}`; and last the Auth user, so a failure part-way can be retried. On iOS, an Apple user confirms with Apple once more first, so the app can revoke the Sign in with Apple token. |
+| `deleteMyData` | callable | S1 *Delete my data*, anonymous users included: this uid's teams with their answers, positions, alerts and question reports in every walk that can still hold them (ready, open, ended in the last 60 days, or on `playing`), then `playing` and `pushToken`. A team removed from an open walk drops out of the standings; if it was the last one walking, the creator gets "Everyone has finished". |
 | `onAnswerCreated` | Firestore trigger | Score the answer, update team totals, add to the bank question's `answered`/`correct` counts when the stop has a `bankQuestionId`, set `finishedAt` (from the last answer's client time, §4). When no team is still walking (every team that started has finished or left), push "Everyone has finished" to the creator. In a week-long walk, push "Fjord Kids finished: 96 points" for each team instead. |
 | `onTeamUpdated` | Firestore trigger | A started team setting `leftAt` may leave nobody walking: the same "Everyone has finished" check as `onAnswerCreated`. Every other team write returns at once. |
 | `onStopUpdated` | Firestore trigger | `skippedForAll` → recalculate all team scores. |
@@ -299,7 +303,7 @@ A walk's id is unguessable and is only handed out through its join code, so **ho
 | `onStopWritten` | Firestore trigger | A creator swapping a bank question in counts as `used`; swapping it out, editing it (the app drops `bankQuestionId`) or deleting its stop counts as `replaced`. Writes by functions don't count. |
 | `topUpQuestions` | background | Add 20–25 questions to one bank pool (below). At most one per pool at a time, a 6-hour cooldown per pool, and at most 20 a day. |
 | `hourly` | scheduled | Auto-end walks past their end time (`openedAt` + 12 h or + 7 days, by `openFor`). Hourly, not daily: a daily job would leave a "12-hour" walk open for up to 36. |
-| `daily` | scheduled | Delete participant data (teams, answers, positions, alerts) and the join code 30 days after `endedAt`. |
+| `daily` | scheduled | 04:00 Copenhagen time. Delete participant data (teams, answers, positions, alerts) and the join code 30 days after `endedAt`; take the walk off `playing` lists; set `participantDataDeletedAt` so the next run skips it. The walk and its stops stay with the creator. A join code is deleted only while it still points at the walk. |
 
 API keys live in **Secret Manager** via Functions secrets (`GEMINI_API_KEY`, `ORS_API_KEY`), never in the app or repo. The fill script reads the same Gemini key with the Firebase CLI. Callables require **App Check** (App Attest / Play Integrity).
 
@@ -405,7 +409,7 @@ All files live in `hosting/` and deploy with the rest of the project.
 | Path | Content |
 |---|---|
 | `/` | Simple landing page with store badges |
-| `/privacy` | New Qualk privacy policy (§13) |
+| `/privacy` | New Qualk privacy policy (§13). Live since 2026-11-28; linked from S1 and the landing page |
 | `/play?code=XXXXX` | Opens the app if installed. Otherwise shows the code + App Store / Google Play buttons. |
 | `/.well-known/apple-app-site-association` | appID `3JMZLMZVTS.com.lmunck.Qualk`, path `/play*`. Served as `application/json`. |
 | `/.well-known/assetlinks.json` | `com.lmunck.qualk` + SHA-256 fingerprints (upload key and Play App Signing key) |
@@ -432,10 +436,15 @@ On nulkommafire.com, the "Qualk" line of the shared privacy page links to `qualk
 | Participant location (last known only) | Monitor map, distance walked | Creator of that walk only | 30 days after walk ends |
 | Answers and timing | Scoring | Creator; own team | 30 days after walk ends |
 | Push token | Notifications | Nobody (system) | With the team/user record |
+| Way-blocked alerts | Tell the creator | Creator of that walk | 30 days after walk ends |
+| Question reports (uid, reason) | Hide bad questions | Nobody (functions) | Until *Delete my data* or account deletion; the counts they leave on a bank question have no personal data and stay |
+| `playing` list | Way back into a walk | That user | Each walk taken off 30 days after it ends |
+| Rate-limit times | Fair use of generation | Nobody (functions) | A day at most; deleted with the account |
 
 - Location is only collected **during an active walk**.
-- Participant locations never leave Firebase. ORS only receives the route's points and stop coordinates; the LLM only receives categories and place information.
-- **In-app deletion:** creators: S1 "Delete account and all data". Participants: "Delete my data" in S1 (removes their teams/answers/positions).
+- Participant locations never leave Firebase. ORS only receives the route's points and stop coordinates; Overpass and Wikipedia receive coordinates along a route; Gemini only receives categories and place information. All of these are called from functions, never from the phone.
+- **In-app deletion:** creators: S1 "Delete account and all data". Participants: "Delete my data" in S1 (removes their teams/answers/positions, alerts, reports and `playing`; shown only to someone without an account, since account deletion covers it for creators).
+- A team in the lobby of a walk that is never opened is not covered by the 30-day rule (there is no `endedAt`); it goes when the creator deletes the walk or the player deletes their data.
 - No ads, no analytics SDKs, no tracking. This is declared accordingly in Apple privacy labels and the Play Data safety form.
 - Not aimed at children as account holders. Children play as part of a team on an adult's phone. The app is not submitted to Apple's Kids category.
 - App review notes explain why background location is used: "unlocks questions at stops while the phone is in a pocket".
@@ -550,7 +559,10 @@ These need your accounts or consoles. Each will be walked through step by step w
 - [ ] **M2** Google Play: start the closed test (12 testers for 14 days is required before a personal account can release; the clock only runs once testers have opted in)
 - [ ] **M2** Push credentials: an FCM V1 service-account key uploaded to Expo for Android; EAS generates the APNs key for iOS
 - [x] **M4** OpenRouteService API key and Gemini API key (Google AI Studio, same Google Cloud project; decided 2026-11-27 instead of OpenRouter) → stored as the Firebase secrets `ORS_API_KEY` and `GEMINI_API_KEY` (done 2026-11-27)
-- [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect
+- [ ] **M5** Update the Qualk line on nulkommafire.com's privacy page; update privacy/support/marketing URLs in App Store Connect (`https://qualk.dk/privacy` is live; steps in `m5-privacy-delivery.md`)
+- [ ] **M5** Make `privacy@qualk.dk` reach you (the privacy page's contact address)
+- [ ] **M5** Sign in with Apple token revocation: the Apple key, Services ID and Team ID in Firebase Auth's Apple provider, so deleting an account revokes the Apple sign-in
+- [ ] **M5** App Check: register Play Integrity once the Play Console app exists, then enforce on callables and, after a week of clean metrics, on Firestore
 
 ---
 

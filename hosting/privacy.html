@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · QuizWalk</title>
+    <meta
+      name="description"
+      content="What the QuizWalk app collects, why, where it is stored, who receives it, how long it is kept and how to delete it."
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="doc">
+      <p class="muted"><a href="/">QuizWalk</a></p>
+      <h1>Privacy policy</h1>
+      <p class="muted">
+        Last updated 28 November 2026. Applies to the QuizWalk app (also called Qualk) for iPhone
+        and Android, and to qualk.dk.
+      </p>
+
+      <p>
+        QuizWalk turns a walk into a quiz. Someone creates a walk and shares a code; teams walk to
+        each stop, answer a question and see the standings. We collect only what that game needs.
+        There are no ads, no analytics and no tracking, and we never sell data.
+      </p>
+
+      <h2>Who we are</h2>
+      <p>
+        QuizWalk is made by <a href="https://nulkommafire.com">NulKommaFire</a>, an independent
+        developer in Denmark, who is responsible for your data. Questions and requests:
+        <a href="mailto:privacy@qualk.dk">privacy@qualk.dk</a>.
+      </p>
+
+      <h2>What we collect, and why</h2>
+      <h3>If you play</h3>
+      <p>You don't need an account to play. The app gives this phone a random ID instead.</p>
+      <ul>
+        <li>
+          <strong>Your team:</strong> the team name you choose, how many players, solo or team, the
+          team colour, and when you joined, started, finished or left. Everyone in the walk sees
+          this on the standings, so pick a name you are happy to show.
+        </li>
+        <li>
+          <strong>Your answers:</strong> which answer you chose and how long you took, to work out
+          your points.
+        </li>
+        <li>
+          <strong>Your location</strong>, only during a walk: the phone uses it to open each
+          question when you reach the stop. Once you tap <em>Start walk</em>, your last known
+          position (one point, overwritten as you go, not a trail) is shared with the walk's creator
+          so they can see where teams are, and the app adds up the distance walked. Other teams
+          never see where you are. Location is never collected outside a walk, and the app asks only
+          for "While using the app".
+        </li>
+        <li>
+          <strong>Reports</strong> you send: a blocked way to a stop (seen by the creator), or a
+          question you think is wrong or offensive.
+        </li>
+        <li>
+          <strong>The list of walks joined on this phone</strong>, so you can get back into a walk.
+        </li>
+        <li>
+          <strong>A push token</strong>, if you allow notifications, so the app can tell you when a
+          walk opens, when you reach a stop and when the results are in.
+        </li>
+      </ul>
+
+      <h3>If you create walks</h3>
+      <ul>
+        <li>
+          <strong>Your account:</strong> you sign in with Apple or Google. We receive an ID for your
+          account and the email address Apple or Google hands over (Apple may give a private relay
+          address). Only you see the address, in Settings.
+        </li>
+        <li>
+          <strong>The name players see</strong>, such as "Waiting for Anders", which you can change
+          in Settings.
+        </li>
+        <li>
+          <strong>Your walks:</strong> the start, the route, the stops, the questions and their
+          answers. Players of a walk see it once you publish it.
+        </li>
+        <li>
+          <strong>Generating a walk:</strong> the job's progress, and the times of your recent
+          requests, to keep usage within fair limits.
+        </li>
+        <li><strong>A push token</strong>, for news about your walks.</li>
+      </ul>
+
+      <h2>Where it is stored</h2>
+      <p>
+        Everything above is stored in Google Firebase. The database (Cloud Firestore) and the server
+        code (Cloud Functions) run in Google's <strong>europe-west1</strong> region in Belgium.
+        Sign-in uses Firebase Authentication, a global Google service. The phone also keeps a few
+        small things on the phone itself (when a question was opened, so the bonus clock cannot be
+        restarted, and answers that arrived too late); these are never sent anywhere.
+      </p>
+
+      <h2>Who receives what</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Who</th>
+            <th>What they receive</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Other teams in a walk</td>
+            <td>Team names, players, scores and times on the standings. Never locations.</td>
+          </tr>
+          <tr>
+            <td>The walk's creator</td>
+            <td>
+              The teams, their answers, their last known position after <em>Start walk</em>, and
+              blocked-way reports.
+            </td>
+          </tr>
+          <tr>
+            <td>Google (Firebase)</td>
+            <td>Stores and processes the data above for us, as described under "Where".</td>
+          </tr>
+          <tr>
+            <td>OpenRouteService (HeiGIT, Germany)</td>
+            <td>
+              When a creator makes a walk: the route's points and the stop coordinates, to work out
+              a walking route. Nothing about who you are.
+            </td>
+          </tr>
+          <tr>
+            <td>OpenStreetMap (Overpass servers) and Wikipedia / Wikidata</td>
+            <td>
+              When a creator generates a walk: coordinates along the route, to find named places
+              nearby and read about them. Nothing about who you are.
+            </td>
+          </tr>
+          <tr>
+            <td>Google Gemini</td>
+            <td>
+              When a creator generates a walk or a question: quiz categories, difficulty and
+              information about places (their names and Wikipedia text), to write questions. Nothing
+              about you, your team or your location.
+            </td>
+          </tr>
+          <tr>
+            <td>Expo Push Service (Expo, USA)</td>
+            <td>
+              Push tokens and the text of each notification (for example a walk's title, a team name
+              and its score). It hands them to Apple or Google for delivery.
+            </td>
+          </tr>
+          <tr>
+            <td>Apple and Google</td>
+            <td>
+              Sign-in, if you create walks. A check that the app is genuine (App Attest, Play
+              Integrity). Map images for the area on screen (Apple Maps on iPhone, Google Maps on
+              Android), and the next stop if you tap <em>Directions</em>.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Calls to OpenRouteService, OpenStreetMap, Wikipedia and Gemini are made by our server, not
+        by your phone, so they never see your phone's address or your location. Some of these
+        services are outside the EU; they get only what is listed here.
+      </p>
+
+      <h2>How long we keep it</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Kept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Teams, answers and timing, last known positions, blocked-way reports</td>
+            <td>30 days after the walk ends, then deleted automatically</td>
+          </tr>
+          <tr>
+            <td>A walk's join code</td>
+            <td>Until 30 days after the walk ends; then it stops working</td>
+          </tr>
+          <tr>
+            <td>The list of walks joined on this phone</td>
+            <td>Each walk is taken off 30 days after it ends</td>
+          </tr>
+          <tr>
+            <td>Push tokens</td>
+            <td>With your team (30 days after the walk) or your account</td>
+          </tr>
+          <tr>
+            <td>Question reports</td>
+            <td>
+              Until you delete your data or account. Counts without anything personal, such as how
+              often a question was reported, are kept.
+            </td>
+          </tr>
+          <tr>
+            <td>Your account, your name and your walks</td>
+            <td>Until you delete them or your account</td>
+          </tr>
+          <tr>
+            <td>Times of recent generate requests</td>
+            <td>A day at most</td>
+          </tr>
+          <tr>
+            <td>Server logs (errors, no locations)</td>
+            <td>30 days</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        A team that joined a walk that never opened stays in its lobby until the creator deletes the
+        walk, or until you delete your data.
+      </p>
+
+      <h2>Deleting your data in the app</h2>
+      <ul>
+        <li>
+          <strong>Players:</strong> Settings → <em>Delete my data</em>. This removes your teams,
+          answers, locations and reports from every walk joined on this phone, and the list of
+          walks. If a walk is still open, your team leaves it and the standings update.
+        </li>
+        <li>
+          <strong>Creators:</strong> Settings → <em>Delete account and all data</em>. This deletes
+          your walks with everything in them (including a walk that is open), your teams in other
+          walks, your name and your account. If you signed in with Apple, the app also asks Apple to
+          forget the sign-in.
+        </li>
+      </ul>
+      <p>
+        Both happen at once and cannot be undone. Removing the app from your phone does not delete
+        anything on our side, but your walk data is still deleted 30 days after each walk ends. You
+        can also write to us to have your data deleted or to get a copy of it.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        QuizWalk is not aimed at children as account holders. Children can play as part of a team on
+        an adult's phone.
+      </p>
+
+      <h2>Your rights</h2>
+      <p>
+        Under the GDPR you can ask to see, correct, delete or get a copy of your data, and object to
+        how we use it. Write to <a href="mailto:privacy@qualk.dk">privacy@qualk.dk</a>. Since
+        players have no account, tell us the walk's code and your team name so we can find your
+        team. You can also complain to the Danish Data Protection Agency,
+        <a href="https://www.datatilsynet.dk">Datatilsynet</a>.
+      </p>
+      <p>
+        We use your data to run the game you asked for. Location and notifications are used only
+        after you allow them on your phone, and you can turn them off in your phone's settings at
+        any time.
+      </p>
+
+      <h2>This website</h2>
+      <p>
+        qualk.dk is served by Firebase Hosting. It sets no cookies and has no analytics. Google
+        handles your IP address to deliver the pages.
+      </p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version is posted here with a new date.</p>
+    </main>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase-admin/app';
+import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
-import { setGlobalOptions } from 'firebase-functions';
+import { logger, setGlobalOptions } from 'firebase-functions';
 import { defineBoolean, defineSecret, defineString } from 'firebase-functions/params';
 import {
   onDocumentCreated,
@@ -27,6 +28,11 @@ import { geminiLlm } from './llm/gemini';
 import type { Models } from './llm/llm';
 import { DEFAULT_OVERPASS_URLS, overpassClient } from './places/overpass';
 import { wikiClient } from './places/wiki';
+import {
+  deleteAccount as deleteAccountCore,
+  deleteMyData as deleteMyDataCore,
+  purgeEndedWalks,
+} from './privacy';
 import { checkRateLimit } from './rateLimit';
 import { applyReport, countAnswer, countStopChange } from './reports';
 import { pushBlockedAlert, pushFinishNews, pushStatusChange, teamJustLeft } from './push';
@@ -121,6 +127,32 @@ export const deleteWalk = onCall(callable, (req) =>
 
 export const duplicateWalk = onCall(callable, (req) =>
   run(() => duplicateWalkCore(db(), creatorUid(req), req.data?.walkId)),
+);
+
+// ------------------------------------------------------------------ privacy (M5)
+
+/** Any signed-in user, anonymous included: a participant deletes their data without an account. */
+function signedInUid(req: CallableRequest): string {
+  if (!req.auth) throw new HttpsError('unauthenticated', 'Sign in first.');
+  return req.auth.uid;
+}
+
+/** S1 *Delete my data*: this install's teams, answers, positions and `playing` list. */
+export const deleteMyData = onCall(callable, (req) =>
+  run(() => deleteMyDataCore(db(), signedInUid(req))),
+);
+
+/** S1 *Delete account and all data*: walks, participant data, `users/{uid}`, the Auth user. */
+export const deleteAccount = onCall(callable, (req) =>
+  run(() =>
+    deleteAccountCore(db(), signedInUid(req), async (uid) => {
+      try {
+        await getAuth().deleteUser(uid);
+      } catch (err) {
+        if ((err as { code?: string }).code !== 'auth/user-not-found') throw err;
+      }
+    }),
+  ),
 );
 
 // ------------------------------------------------------------------ M4: generation
@@ -256,5 +288,14 @@ export const hourly = onSchedule(
   { schedule: 'every 60 minutes', timeZone: 'Europe/Copenhagen' },
   async () => {
     await endExpiredWalks(db());
+  },
+);
+
+/** 30 days after a walk ends: participant data out, join code released (spec §6, §8). */
+export const daily = onSchedule(
+  { schedule: 'every day 04:00', timeZone: 'Europe/Copenhagen', timeoutSeconds: 540 },
+  async () => {
+    const purged = await purgeEndedWalks(db());
+    if (purged.length > 0) logger.info('Retention: participant data deleted', { walks: purged });
   },
 );
