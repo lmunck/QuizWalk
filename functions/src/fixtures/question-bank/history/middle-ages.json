@@ -1,0 +1,66 @@
+{
+  "category": "history",
+  "subcategory": "middle-ages",
+  "questions": [
+    {
+      "id": "history.middle-ages.kids.01",
+      "difficulty": "kids",
+      "question": "What did Vikings call their long, narrow wooden ships?",
+      "correct": "Longships",
+      "wrong": ["Galleons", "Junks", "Canoes"],
+      "explanation": "Longships were light and fast, and could sail up rivers as well as across seas.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.01",
+      "difficulty": "mixed",
+      "question": "In which year did the Battle of Hastings take place?",
+      "correct": "1066",
+      "wrong": ["1016", "1086", "1106"],
+      "explanation": "William of Normandy defeated King Harold at Hastings in 1066.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which English king was killed at the Battle of Hastings in 1066?",
+      "correct": "Harold Godwinson",
+      "wrong": ["Edward the Confessor", "William Rufus", "Athelstan"],
+      "explanation": "Harold died at Hastings, fighting the Norman army.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.01",
+      "difficulty": "expert",
+      "question": "Which Danish king gave his name to the wireless technology Bluetooth?",
+      "correct": "Harald Bluetooth",
+      "wrong": ["Gorm the Old", "Sweyn Forkbeard", "Cnut the Great"],
+      "explanation": "Harald Gormsson united Denmark in the 10th century.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.expert.02",
+      "difficulty": "expert",
+      "question": "Which Norwegian king, known as Hardrada, died at the Battle of Stamford Bridge near York in September 1066, fighting the English army of King Harold Godwinson?",
+      "correct": "Harald Hardrada",
+      "wrong": ["Olaf Tryggvason", "Magnus the Good", "Haakon the Good"],
+      "explanation": "Too long a question for the file format.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.middle-ages.kids.02",
+      "difficulty": "kids",
+      "question": "What did Viking warriors carry to protect themselves?",
+      "correct": "Round shields",
+      "wrong": ["Round shields", "Umbrellas", "Kites"],
+      "explanation": "A repeated answer.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

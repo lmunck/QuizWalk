@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"questions\": [\n    {\n      \"question\": \"Which of these birds is famous for being able to fly backwards?\",\n      \"correct\": \"Hummingbird\",\n      \"wrong\": [\n        \"Robin\",\n        \"Barn owl\",\n        \"Sparrow\"\n      ],\n      \"explanation\": \"Hummingbirds have special wing joints that let them flutter backwards, forwards, and even hover in mid-air.\"\n    },\n    {\n      \"question\": \"Where in the wild would you go to find Emperor penguins?\",\n      \"correct\": \"Antarctica\",\n      \"wrong\": [\n        \"The Arctic\",\n        \"Canada\",\n        \"Greenland\"\n      ],\n      \"explanation\": \"Emperor penguins live on the ice of Antarctica in the southern hemisphere, never in the northern Arctic.\"\n    },\n    {\n      \"question\": \"What is the collective name for a group of flamingos?\",\n      \"correct\": \"A flamboyance\",\n      \"wrong\": [\n        \"A parliament\",\n        \"A sparkle\",\n        \"A carnival\"\n      ],\n      \"explanation\": \"A group of flamingos is called a flamboyance, matching their brightly coloured pink feathers.\"\n    }\n  ]\n}",
+            "thoughtSignature": "Ep8BCpwBAVjVB3t03Z8fvGRtCc7d0jdZNq2+kzT6aNromliiy4HuiW2oYT4F/vhehB3nP7bFQ5vYjZxiHXl9bKFaD6g68yxBzeJ5lsxQ7VdFujfQx3z07/juTaJljUvJZFOePfl89xoDu8FTWI8A0zeRtyM7uAjN5ghPSoyRstdUbM62dLb8kEWY1w4enf+QiuVeLzsfy71kVMRQMnp2evyb"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 309,
+    "candidatesTokenCount": 274,
+    "totalTokenCount": 583,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 309
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "3AYKa6fjOa-YvdIPmPfegQE"
+}

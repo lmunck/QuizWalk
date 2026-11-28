@@ -1,0 +1,4599 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-27T22:38:33Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 286533157,
+      "lat": 55.6823201,
+      "lon": 12.5841755,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "info@cantinacph.dk",
+        "fvst:navnelbnr": "653328",
+        "name": "Cantina",
+        "opening_hours": "Su-We 11:00-23:00; Th 11:00-01:00; Fr-Sa 11:00-02:00",
+        "phone": "+45 88169995",
+        "ref:DK:cvr": "37380148",
+        "ref:DK:cvr:pnummer": "1021070560",
+        "website": "https://www.cantinacph.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292352715,
+      "lat": 55.6821848,
+      "lon": 12.5856599,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "118010",
+        "name": "Den Lille Fede",
+        "opening_hours": "17:30-22:00; Su off",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+45 33337002",
+        "ref:DK:cvr": "30608933",
+        "ref:DK:cvr:pnummer": "1013573510",
+        "reservation": "yes",
+        "website": "https://denlillefede.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292353033,
+      "lat": 55.6841125,
+      "lon": 12.5856999,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "fvst:navnelbnr": "113479",
+        "name": "Royal Garden",
+        "opening_hours": "Tu-Su 12:00-23:00",
+        "opening_hours:kitchen": "Tu-Su 12:00-22:00",
+        "phone": "+45 33151607",
+        "ref:DK:cvr": "27017932",
+        "ref:DK:cvr:pnummer": "1009705100",
+        "website": "https://www.royalgarden.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 496564342,
+      "lat": 55.6873712,
+      "lon": 12.5880529,
+      "tags": {
+        "description": "Nyboder mindestuer showcases everyday life in the neighborhood from it's inception in 1631",
+        "museum": "local",
+        "name": "Nyboder Mindestuer",
+        "tourism": "museum",
+        "website": "https://nybodersmindestuer.dk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 741236304,
+      "lat": 55.6840019,
+      "lon": 12.5932119,
+      "tags": {
+        "artist:wikidata": "Q2735088",
+        "artist_name": "Jacques François Joseph Saly",
+        "artwork_type": "statue",
+        "description": "Rytterstatue af Kong Frederik den 5.",
+        "material": "bronze",
+        "name": "Frederik V",
+        "start_date": "1771",
+        "statue": "equestrian",
+        "statue:type": "equestrian_statue",
+        "tourism": "artwork",
+        "wikidata": "Q3424549",
+        "wikimedia_commons": "File:Frederik V statue in Amalienborg Palace Copenhagen 2014 01.jpg",
+        "wikipedia": "da:Frederik V (rytterstatue)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 783281649,
+      "lat": 55.6794098,
+      "lon": 12.5909843,
+      "tags": {
+        "check_date": "2026-08-28",
+        "fvst:name": "SØMANDSHJEMMET BETHEL",
+        "fvst:navnelbnr": "113193",
+        "name": "Hotel Bethel",
+        "old_name": "Sømandshjemmet Bethel",
+        "ref:DK:cvr": "64946110",
+        "ref:DK:cvr:pnummer": "1002198596",
+        "tourism": "hotel",
+        "website": "https://www.hotel-bethel.dk/",
+        "wikidata": "Q12317289",
+        "wikipedia": "da:Hotel Bethel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 894212149,
+      "lat": 55.6799914,
+      "lon": 12.5917501,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2026-01-17",
+        "cuisine": "open_face_sandwich",
+        "fvst:navnelbnr": "131320",
+        "name": "Told & Snaps",
+        "opening_hours": "Su-Fr 11:30-15:30; Sa 11:30-16:00",
+        "phone": "+45 3393 8385",
+        "ref:DK:cvr": "31595568",
+        "ref:DK:cvr:pnummer": "1014563322",
+        "website": "https://www.toldogsnaps.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 894234116,
+      "lat": 55.67981,
+      "lon": 12.5918566,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "email": "capo@lasirene.dk",
+        "fvst:name": "RISTORANTE LA SIRENE",
+        "fvst:navnelbnr": "115219",
+        "name": "La Sirène",
+        "opening_hours": "11:00-24:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+45 3332 7102",
+        "ref:DK:cvr": "18603535",
+        "ref:DK:cvr:pnummer": "1002324854",
+        "website": "https://www.lasirene.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 898917987,
+      "lat": 55.6822504,
+      "lon": 12.5853881,
+      "tags": {
+        "amenity": "nightclub",
+        "name": "Den Røde Baron",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 898920410,
+      "lat": 55.6815566,
+      "lon": 12.5842922,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "1486278",
+        "name": "Natcafeen",
+        "ref:DK:cvr": "45056007",
+        "ref:DK:cvr:pnummer": "1030639975",
+        "website": "https://natcafeen.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 898920753,
+      "lat": 55.6816072,
+      "lon": 12.5841215,
+      "tags": {
+        "amenity": "nightclub",
+        "name": "Duke"
+      }
+    },
+    {
+      "type": "node",
+      "id": 898924504,
+      "lat": 55.6816089,
+      "lon": 12.5832999,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegetarian": "no",
+        "email": "info@groennegade.dk",
+        "fvst:navnelbnr": "115675",
+        "indoor_seating": "yes",
+        "name": "Restaurant Grønnegade",
+        "note": "opening hours are for the kitchen",
+        "opening_hours": "Mo-Th 17:30-22:00; Fr-Sa 17:30-23:00; Dec 17:30-22:00",
+        "outdoor_seating": "no",
+        "phone": "+45 33933133",
+        "ref:DK:cvr": "26903793",
+        "ref:DK:cvr:pnummer": "1009573336",
+        "smoking": "no",
+        "website": "https://www.groennegade.dk/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1440264455,
+      "lat": 55.6884472,
+      "lon": 12.5895009,
+      "tags": {
+        "historic": "memorial",
+        "memorial": "bust",
+        "name": "Edouard Suenson",
+        "wikidata": "Q25042736",
+        "wikipedia": "de:Edouard-Suenson-Denkmal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497197048,
+      "lat": 55.6813679,
+      "lon": 12.5858844,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "dinner": "yes",
+        "fvst:navnelbnr": "119131",
+        "lunch": "yes",
+        "name": "Trattoria Fiat",
+        "note": "opening hours for kitchen",
+        "opening_hours": "Su-We 12:00-16:00,17:30-22:00; Th-Sa 12:00-16:00,17:30-23:00",
+        "payment:credit_cards": "yes",
+        "phone": "+45 3314 2277",
+        "ref:DK:cvr": "30688759",
+        "ref:DK:cvr:pnummer": "1013377231",
+        "reservation": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://f-i-a-t.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497197629,
+      "lat": 55.680937,
+      "lon": 12.584646,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "AL Sydbank",
+        "brand:wikidata": "Q825159",
+        "check_date": "2026-04-30",
+        "check_date:opening_hours": "2026-04-30",
+        "name": "AL Sydbank",
+        "opening_hours": "Mo-Fr 10:00-16:00; Sa-Su off",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497198641,
+      "lat": 55.6812131,
+      "lon": 12.5837207,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "526791",
+        "name": "Palæ Bar",
+        "opening_hours": "Mo 11:00-01:00, Tu-Sa 11:00-03:00, Su 16:00-01:00",
+        "ref:DK:cvr": "29732469",
+        "ref:DK:cvr:pnummer": "1012555527",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497201304,
+      "lat": 55.6817658,
+      "lon": 12.5837032,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "119026",
+        "name": "Da Vinci",
+        "ref:DK:cvr": "29326703",
+        "ref:DK:cvr:pnummer": "1012032966",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1599832431,
+      "lat": 55.6800695,
+      "lon": 12.5907903,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-29",
+        "cuisine": "steak_house",
+        "fvst:navnelbnr": "112522",
+        "name": "Nyhavns Hereford House",
+        "ref:DK:cvr": "33271182",
+        "ref:DK:cvr:pnummer": "1016484519",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1629994151,
+      "lat": 55.6804068,
+      "lon": 12.5895232,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-11-16",
+        "cuisine": "danish",
+        "fvst:name": "CAP HORN",
+        "fvst:navnelbnr": "912533",
+        "indoor_seating": "yes",
+        "name": "Cap Horn",
+        "opening_hours": "09:00-24:00",
+        "opening_hours:kitchen": "10:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+45 33128504",
+        "ref:DK:cvr": "40608524",
+        "ref:DK:cvr:pnummer": "1024972875",
+        "website": "https://www.caphorn.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1629995901,
+      "lat": 55.6803457,
+      "lon": 12.5897588,
+      "tags": {
+        "amenity": "pub",
+        "check_date": "2025-08-23",
+        "fvst:navnelbnr": "114345",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Hyttefadet",
+        "opening_hours": "Mo-Th,Su 09:00-24:00; Fr-Sa 09:00-02:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "ref:DK:cvr": "18408171",
+        "ref:DK:cvr:pnummer": "1003245273",
+        "website": "https://hyttefadet.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1629996639,
+      "lat": 55.6803121,
+      "lon": 12.5898879,
+      "tags": {
+        "amenity": "pub",
+        "fvst:navnelbnr": "786680",
+        "indoor_seating": "yes",
+        "name": "Skipperkroen",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "17720082",
+        "ref:DK:cvr:pnummer": "1024218275",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1629999347,
+      "lat": 55.6802753,
+      "lon": 12.5900424,
+      "tags": {
+        "amenity": "pub",
+        "check_date": "2024-11-16",
+        "fvst:navnelbnr": "786684",
+        "indoor_seating": "yes",
+        "name": "Fisken",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "17720082",
+        "ref:DK:cvr:pnummer": "1024218119",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1629999920,
+      "lat": 55.6802483,
+      "lon": 12.590156,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fvst:navnelbnr": "116867",
+        "name": "Venezia",
+        "opening_hours": "10:00-24:00",
+        "opening_hours:kitchen": "11:00-22:00",
+        "phone": "+45 33145844",
+        "ref:DK:cvr": "32478514",
+        "ref:DK:cvr:pnummer": "1015585850",
+        "website": "https://venezia-nyhavn.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630002862,
+      "lat": 55.680137,
+      "lon": 12.590546,
+      "tags": {
+        "alt_name": "Nyhavn 37",
+        "amenity": "restaurant",
+        "check_date": "2024-11-16",
+        "fvst:name": "Nyhavn 37",
+        "fvst:navnelbnr": "786682",
+        "indoor_seating": "yes",
+        "name": "Nyhavn 37",
+        "opening_hours": "09:00-22:00",
+        "opening_hours:kitchen": "Mo-Th 11:00-22:00; Fr-Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "17720082",
+        "ref:DK:cvr:pnummer": "1024218321",
+        "wheelchair": "limited",
+        "wikidata": "Q85632919"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630003367,
+      "lat": 55.680111,
+      "lon": 12.590678,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-29",
+        "fvst:name": "FBB & JM 1",
+        "fvst:navnelbnr": "706981",
+        "indoor_seating": "yes",
+        "name": "Restaurant Havfruen",
+        "opening_hours": "11:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+45 33111138",
+        "ref:DK:cvr": "38610279",
+        "ref:DK:cvr:pnummer": "1022407720",
+        "toilets": "yes",
+        "website": "https://www.restauranthavfruen.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630006984,
+      "lat": 55.6800414,
+      "lon": 12.5909221,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-29",
+        "fvst:navnelbnr": "112694",
+        "name": "Ved Kajen",
+        "note": "Opening hours are for last seating",
+        "opening_hours": "12:00-22:15",
+        "outdoor_seating": "yes",
+        "phone": "+45 3316 2900",
+        "ref:DK:cvr": "27898580",
+        "ref:DK:cvr:pnummer": "1010697235",
+        "website": "http://www.ved-kajen.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630011691,
+      "lat": 55.6798485,
+      "lon": 12.5916796,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-05-12",
+        "fvst:navnelbnr": "977305",
+        "indoor_seating": "yes",
+        "name": "Vaffelbageren",
+        "outdoor_seating": "yes",
+        "phone": "+45 3314 0698",
+        "ref:DK:cvr": "41925698",
+        "shop": "ice_cream",
+        "website": "https://www.vaffelbageren.dk/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630171352,
+      "lat": 55.6796321,
+      "lon": 12.5908298,
+      "tags": {
+        "amenity": "theatre",
+        "fvst:name": "Liva service",
+        "fvst:navnelbnr": "1283550",
+        "name": "Cafe Liva",
+        "ref:DK:cvr": "36899158",
+        "ref:DK:cvr:pnummer": "1029092423"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630177434,
+      "lat": 55.679773,
+      "lon": 12.5895616,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "119324",
+        "name": "Gilleleje",
+        "opening_hours": "Tu-Sa 11:30-16:00; Dec Fr[1],Sa[1],Fr[2],Sa[2],Fr[3],Sa[3] 11:30-16:00,18:00-23:00; Nov Fr[3],Sa[3],Fr[4],Sa[4],Fr[5],Sa[5] 11:30-16:00,18:00-23:00 \"from Nov 11 to 17:00, \"",
+        "phone": "+45 33125858",
+        "ref:DK:cvr": "31434815",
+        "ref:DK:cvr:pnummer": "1017007382",
+        "website": "https://restaurant-gilleleje.dk/",
+        "wikidata": "Q63457430"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2572066165,
+      "lat": 55.6803032,
+      "lon": 12.592531,
+      "tags": {
+        "government": "administrative",
+        "name": "Teknologirådet",
+        "office": "government",
+        "phone": "+45 33 32 05 03",
+        "website": "https://tekno.dk/",
+        "wikidata": "Q7728870",
+        "wikipedia": "da:Teknologirådet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3026794164,
+      "lat": 55.6872265,
+      "lon": 12.590038,
+      "tags": {
+        "name": "Artpusher Gallery",
+        "tourism": "gallery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762386665,
+      "lat": 55.6809171,
+      "lon": 12.5844498,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "121555",
+        "indoor_seating": "yes",
+        "name": "Fishmarket",
+        "opening_hours": "Mo-Th 11:00-24:00; Fr-Sa 11:00-01:00",
+        "opening_hours:kitchen": "Mo-Sa 11:30-15:00, 17:30-22:30",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "33248733",
+        "ref:DK:cvr:pnummer": "1016380918",
+        "website": "https://fishmarket.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762408693,
+      "lat": 55.6799215,
+      "lon": 12.5913418,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "danish",
+        "fvst:navnelbnr": "520101",
+        "indoor_seating": "yes",
+        "name": "Nyhavnskroen",
+        "outdoor_seating": "yes",
+        "phone": "+45 33 32 14 19",
+        "ref:DK:cvr": "33876238",
+        "ref:DK:cvr:pnummer": "1017472719",
+        "website": "https://nyhavnskroen.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3887006773,
+      "lat": 55.6814081,
+      "lon": 12.5850751,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "diet:vegetarian": "yes",
+        "fvst:navnelbnr": "541653",
+        "indoor_seating": "yes",
+        "name": "Bistro Royal",
+        "opening_hours": "Mo-Fr 08:00-24:00; Sa 12:00-24:00; Su 12:00-23:00",
+        "operator": "madklubben",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "34877742",
+        "ref:DK:cvr:pnummer": "1019066599",
+        "website": "https://www.madklubben.dk/bistro-royal/menu/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3921256682,
+      "lat": 55.6813283,
+      "lon": 12.5860369,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "fvst:navnelbnr": "527170",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Ravage",
+        "opening_hours": "Su-Th 10:00-24:00; Fr-Sa 10:00-02:00",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+45 33325151",
+        "ref:DK:cvr": "35143106",
+        "ref:DK:cvr:pnummer": "1018389785",
+        "reservation": "yes",
+        "toilets": "yes",
+        "website": "https://ravage.dk/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4018546256,
+      "lat": 55.6801972,
+      "lon": 12.5902748,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger;fish_and_chips",
+        "fvst:navnelbnr": "117885",
+        "indoor_seating": "yes",
+        "name": "NyhavnC",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "11770347",
+        "ref:DK:cvr:pnummer": "1013239653",
+        "website": "https://www.nyhavnc.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4018777297,
+      "lat": 55.681259,
+      "lon": 12.5835806,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-10-24",
+        "cuisine": "sandwich",
+        "fvst:navnelbnr": "564409",
+        "name": "Fars Dreng",
+        "opening_hours": "08:00-19:00; Sa 09:30-19:00; Su 09:30-16:30",
+        "opening_hours:signed": "no",
+        "phone": "+45 30868989",
+        "ref:DK:cvr": "36708514",
+        "ref:DK:cvr:pnummer": "1024369621",
+        "website": "https://www.farsdreng.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4328446362,
+      "lat": 55.681469,
+      "lon": 12.5855013,
+      "tags": {
+        "amenity": "cafe",
+        "branch": "Kongens Nytorv",
+        "brand": "Espresso House",
+        "brand:wikidata": "Q10489162",
+        "brand:wikipedia": "en:Espresso House",
+        "check_date": "2026-08-29",
+        "cuisine": "coffee_shop",
+        "fvst:navnelbnr": "646768",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Espresso House",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+45 26 16 50 62",
+        "ref:DK:cvr": "10011663",
+        "ref:DK:cvr:pnummer": "1014180288",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://dk.espressohouse.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4331285862,
+      "lat": 55.6799959,
+      "lon": 12.5914182,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "danish",
+        "fvst:navnelbnr": "796405",
+        "name": "Brooklyn Bar",
+        "payment:credit_cards": "yes",
+        "phone": "+45 3336 5336",
+        "ref:DK:cvr": "17720082",
+        "ref:DK:cvr:pnummer": "1024490234"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4485099932,
+      "lat": 55.682537,
+      "lon": 12.5843767,
+      "tags": {
+        "name": "Dansk Flygtningehjælp",
+        "name:en": "Danish Refugee Council",
+        "office": "ngo",
+        "website": "https://flygtning.dk/",
+        "wikidata": "Q3272284",
+        "wikipedia": "da:Dansk Flygtningehjælp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4715837029,
+      "lat": 55.6816577,
+      "lon": 12.584914,
+      "tags": {
+        "amenity": "bar",
+        "facebook": "https://m.facebook.com/pages/category/Pub/Wall-Street-Pub-187011364648720/",
+        "fvst:name": "T og M Partners . C/O Wall Street Pub",
+        "fvst:navnelbnr": "697806",
+        "name": "Wall Street Pub",
+        "phone": "+45 33 14 77 42",
+        "ref:DK:cvr": "25508149",
+        "ref:DK:cvr:pnummer": "1007788157",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5276233168,
+      "lat": 55.6811035,
+      "lon": 12.5842178,
+      "tags": {
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "bar": "no",
+        "cuisine": "gourmet",
+        "email": "mail@restaurantfrank.dk",
+        "fvst:navnelbnr": "1493710",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Frank",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "payment:gift_card": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+45 38414137",
+        "ref:DK:cvr": "41312114",
+        "ref:DK:cvr:pnummer": "1031055152",
+        "smoking": "no",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://restaurantfrank.dk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5879928594,
+      "lat": 55.681038,
+      "lon": 12.594957,
+      "tags": {
+        "amenity": "fast_food",
+        "fvst:navnelbnr": "711920",
+        "name": "Luftkastellet Ofelia",
+        "ref:DK:cvr": "37767603",
+        "ref:DK:cvr:pnummer": "1021474068",
+        "seasonal": "summer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6093840332,
+      "lat": 55.6870458,
+      "lon": 12.5938377,
+      "tags": {
+        "check_date": "2018-11-26",
+        "frequency": "50",
+        "location": "outdoor",
+        "man_made": "street_cabinet",
+        "name": "3380",
+        "operator": "Nexel",
+        "operator:wikidata": "Q131350338",
+        "owner": "Radius Elnet",
+        "owner:wikidata": "Q130385961",
+        "power": "substation",
+        "ref": "53380",
+        "ref:sign": "KB relief",
+        "street_cabinet:lock": "Ruko A2A-6",
+        "substation": "minor_distribution",
+        "utility": "power",
+        "voltage": "10000;400"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6093840337,
+      "lat": 55.6870178,
+      "lon": 12.5938141,
+      "tags": {
+        "check_date": "2018-11-26",
+        "frequency": "50",
+        "location": "outdoor",
+        "man_made": "street_cabinet",
+        "name": "3381",
+        "operator": "Nexel",
+        "operator:wikidata": "Q131350338",
+        "owner": "Radius Elnet",
+        "owner:wikidata": "Q130385961",
+        "power": "substation",
+        "ref": "53381",
+        "ref:sign": "KB relief",
+        "street_cabinet:lock": "Ruko A2A-6",
+        "substation": "minor_distribution",
+        "utility": "power",
+        "voltage": "10000;400"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6093840341,
+      "lat": 55.6873152,
+      "lon": 12.5951509,
+      "tags": {
+        "check_date": "2018-11-26",
+        "frequency": "50",
+        "location": "outdoor",
+        "man_made": "street_cabinet",
+        "name": "3595",
+        "operator": "Nexel",
+        "operator:wikidata": "Q131350338",
+        "owner": "Radius Elnet",
+        "owner:wikidata": "Q130385961",
+        "power": "substation",
+        "ref": "53595",
+        "ref:sign": "KB relief",
+        "street_cabinet:lock": "Ruko A2A-6",
+        "substation": "minor_distribution",
+        "utility": "power",
+        "voltage": "10000;400"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6398866081,
+      "lat": 55.6818699,
+      "lon": 12.5852737,
+      "tags": {
+        "check_date": "2019-04-11",
+        "frequency": "50",
+        "location": "outdoor",
+        "man_made": "street_cabinet",
+        "manufacturer": "Siemens",
+        "name": "3155",
+        "operator": "Nexel",
+        "operator:wikidata": "Q131350338",
+        "owner": "Radius Elnet",
+        "owner:wikidata": "Q130385961",
+        "power": "substation",
+        "ref": "53155",
+        "ref:sign": "KB relief",
+        "substation": "minor_distribution",
+        "utility": "power",
+        "voltage": "10000;400"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6680198138,
+      "lat": 55.6819814,
+      "lon": 12.5849163,
+      "tags": {
+        "amenity": "cafe",
+        "fvst:navnelbnr": "805241",
+        "name": "Boltens Café & Vinbar",
+        "ref:DK:cvr": "39072343",
+        "ref:DK:cvr:pnummer": "1023001183"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6693570070,
+      "lat": 55.6812174,
+      "lon": 12.5837622,
+      "tags": {
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-10-24",
+        "fvst:navnelbnr": "906843",
+        "name": "Bar Deco",
+        "opening_hours": "Mo-We 16:00-01:00, Th-Sa 16:00-02:00, Su 15:00-00:00",
+        "opening_hours:signed": "no",
+        "phone": "+45 26157437",
+        "ref:DK:cvr": "29732469",
+        "ref:DK:cvr:pnummer": "1024847019",
+        "website": "https://bardeco.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6705186705,
+      "lat": 55.681489,
+      "lon": 12.5834876,
+      "tags": {
+        "amenity": "cafe",
+        "fvst:name": "Frederik Bagger Grønnegade",
+        "fvst:navnelbnr": "903688",
+        "name": "Frederik Bagger Flagship",
+        "ref:DK:cvr": "36059567",
+        "ref:DK:cvr:pnummer": "1024682133",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6741289632,
+      "lat": 55.6868564,
+      "lon": 12.5951828,
+      "tags": {
+        "amenity": "courthouse",
+        "email": "post@shret.dk",
+        "name": "Sø- og Handelsretten",
+        "phone": "+45 99 68 46 00",
+        "website": "http://www.soeoghandelsretten.dk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6753350978,
+      "lat": 55.6865494,
+      "lon": 12.5950474,
+      "tags": {
+        "check_date": "2023-08-25",
+        "name": "Danske Rederier",
+        "name:da": "Danske Rederier",
+        "name:en": "Danish Shipping",
+        "office": "association",
+        "start_date": "1884",
+        "website": "https://www.danishshipping.dk/",
+        "wikidata": "Q12307255",
+        "wikipedia": "da:Danske Rederier"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7343082940,
+      "lat": 55.681151,
+      "lon": 12.5953659,
+      "tags": {
+        "artwork_type": "installation",
+        "name": "The wave",
+        "panoramax": "0146a883-17e4-422a-bc1e-74707297d774",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7704461106,
+      "lat": 55.6818378,
+      "lon": 12.5851909,
+      "tags": {
+        "name": "Galleri KANT",
+        "phone": "+45 2338 4924",
+        "tourism": "gallery",
+        "website": "https://gallerikant.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7717533360,
+      "lat": 55.680072,
+      "lon": 12.591528,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "smørrebrød",
+        "fvst:navnelbnr": "945618",
+        "name": "Restaurant Carl Nielsen",
+        "opening_hours": "11:30-17:00; Mo off",
+        "phone": "+45 7025 1625",
+        "ref:DK:cvr": "40380973",
+        "ref:DK:cvr:pnummer": "1024546523",
+        "website": "https://restaurantcarlnielsen.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8112044321,
+      "lat": 55.6816061,
+      "lon": 12.5843072,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2023-08-31",
+        "fvst:navnelbnr": "638057",
+        "name": "Aloha Beach Bar",
+        "opening_hours": "Mo-We 18:00-03:00, Th 18:00-04:00, Fr-Sa 18:00-03:05",
+        "phone": "+45 69692031",
+        "ref:DK:cvr": "36402652",
+        "website": "https://alohabeachbar.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8112044322,
+      "lat": 55.6817663,
+      "lon": 12.5836756,
+      "tags": {
+        "alt_name": "Bada Bing",
+        "amenity": "stripclub",
+        "check_date": "2023-08-31",
+        "fvst:navnelbnr": "1402739",
+        "name": "Bada Bing København",
+        "ref:DK:cvr": "38969404",
+        "ref:DK:cvr:pnummer": "1022880728",
+        "website": "https://badabingcph.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8117602438,
+      "lat": 55.6817464,
+      "lon": 12.58466,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "516447",
+        "name": "Stereo Bar",
+        "ref:DK:cvr": "34711941"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8119069626,
+      "lat": 55.6811217,
+      "lon": 12.584053,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "1458464",
+        "indoor_seating": "yes",
+        "name": "Kongens bar",
+        "opening_hours": "Tu-Th 15:00-01:00, Fr,Sa 15:00-02:00; Su,Mo off",
+        "outdoor_seating": "no",
+        "ref:DK:cvr": "45102912",
+        "ref:DK:cvr:pnummer": "1030700577",
+        "smoking": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8399922410,
+      "lat": 55.6817301,
+      "lon": 12.5838995,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-08-31",
+        "fvst:navnelbnr": "959809",
+        "name": "PitaNordic",
+        "phone": "+45 40501188",
+        "ref:DK:cvr": "41459433",
+        "ref:DK:cvr:pnummer": "1025960447"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8533379912,
+      "lat": 55.6881555,
+      "lon": 12.5905204,
+      "tags": {
+        "country": "GR",
+        "diplomatic": "embassy",
+        "embassy": "yes",
+        "level": "3",
+        "name": "Grækenlands ambassade",
+        "name:el": "Πρεσβεία της Ελλάδας",
+        "name:en": "Embassy of Greece",
+        "name:fr": "Ambassade de Grèce",
+        "office": "diplomatic",
+        "opening_hours": "Mo-Fr 09:00-16:30",
+        "phone": "+45 3311 4533",
+        "target": "DK",
+        "website": "https://www.mfa.gr/copenhagen",
+        "wikidata": "Q105999777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9049386890,
+      "lat": 55.6801626,
+      "lon": 12.5915873,
+      "tags": {
+        "alt_name": "Eat Thai",
+        "amenity": "restaurant",
+        "check_date": "2024-12-29",
+        "cuisine": "thai",
+        "fvst:navnelbnr": "987643",
+        "name": "Charm",
+        "ref:DK:cvr": "42297925",
+        "ref:DK:cvr:pnummer": "1027014255"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9109551235,
+      "lat": 55.6803066,
+      "lon": 12.5948097,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "1109560",
+        "indoor_seating": "yes",
+        "name": "Skuespilhuset Pausebar",
+        "outdoor_seating": "no",
+        "ref:DK:cvr": "10842255",
+        "ref:DK:cvr:pnummer": "1013080417"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9653711176,
+      "lat": 55.6820736,
+      "lon": 12.5839722,
+      "tags": {
+        "branch": "Gothersgade",
+        "brand": "SHC",
+        "leisure": "fitness_centre",
+        "name": "SHC Gothersgade",
+        "opening_hours": "Mo-Th 06:00-22:00; Fr 06:00-19:00; Sa 08:00-18:00; Su 08:00-18:00",
+        "website": "https://sportinghealthclub.dk/shc-gothersgade/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9662350848,
+      "lat": 55.6816331,
+      "lon": 12.5841715,
+      "tags": {
+        "amenity": "nightclub",
+        "fvst:navnelbnr": "1486278",
+        "name": "Lola",
+        "opening_hours": "We-Su 22:00-05:00",
+        "website": "https://lolaclub.dk/kobenhavn/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10841574557,
+      "lat": 55.6880576,
+      "lon": 12.5884684,
+      "tags": {
+        "amenity": "events_venue",
+        "fvst:navnelbnr": "1252625",
+        "name": "God Smag Borgergade",
+        "ref:DK:cvr": "33779224",
+        "ref:DK:cvr:pnummer": "1028218032",
+        "website": "https://www.god-smag.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10904862337,
+      "lat": 55.6796707,
+      "lon": 12.5899481,
+      "tags": {
+        "amenity": "restaurant",
+        "branch": "Nyhavn",
+        "check_date": "2023-07-15",
+        "cuisine": "pizza",
+        "fvst:navnelbnr": "1290798",
+        "name": "Gorms Nyhavn 14",
+        "opening_hours": "Mo-We,Su 17:00-22:00; Th 12:00-22:00; Fr-Sa 12:00-23:00",
+        "operator": "Gorms",
+        "phone": "+45 60401202",
+        "ref:DK:cvr": "43968793",
+        "ref:DK:cvr:pnummer": "1029194404",
+        "website": "https://wearegorms.dk/restauranter/gorms-nyhavn/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11802063688,
+      "lat": 55.6796136,
+      "lon": 12.5909597,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "smørrebrød",
+        "fvst:navnelbnr": "1350474",
+        "name": "Judie",
+        "opening_hours": "11:30-17:00; Mo off",
+        "phone": "+45 61471744",
+        "ref:DK:cvr": "44012014",
+        "ref:DK:cvr:pnummer": "1029255543",
+        "website": "https://judienyhavn.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11844868465,
+      "lat": 55.6803686,
+      "lon": 12.5896233,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "111650",
+        "indoor_seating": "yes",
+        "name": "Bistro 23",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "24228282",
+        "ref:DK:cvr:pnummer": "1010001532",
+        "website": "https://bistro23.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11880797233,
+      "lat": 55.6794823,
+      "lon": 12.5907444,
+      "tags": {
+        "check_date": "2026-08-28",
+        "name": "Hotel Bethel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12146639613,
+      "lat": 55.6818967,
+      "lon": 12.5841227,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "fvst:navnelbnr": "1424748",
+        "indoor_seating": "yes",
+        "name": "Original Slice",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "44555247",
+        "ref:DK:cvr:pnummer": "1029992408",
+        "website": "https://originalslice.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12166072269,
+      "lat": 55.6809878,
+      "lon": 12.5947972,
+      "tags": {
+        "amenity": "boat_rental",
+        "name": "Hey Captain",
+        "ref:DK:cvr": "37701351",
+        "website": "https://www.heycaptain.dk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734166792,
+      "lat": 55.6819426,
+      "lon": 12.5835921,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-04-06",
+        "cuisine": "dansk",
+        "name": "Copenhagen Hotdog Deli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12823319102,
+      "lat": 55.6815266,
+      "lon": 12.5846649,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "vietnamese",
+        "fvst:navnelbnr": "1459920",
+        "name": "Le Petit HIAN",
+        "ref:DK:cvr": "44126192",
+        "ref:DK:cvr:pnummer": "1030788954",
+        "website": "https://www.lepetithian.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12823319103,
+      "lat": 55.6816812,
+      "lon": 12.5840448,
+      "tags": {
+        "alt_name": "LumLum Thai Street Kitchen",
+        "amenity": "fast_food",
+        "cuisine": "thai",
+        "fvst:navnelbnr": "1581549",
+        "level": "-1",
+        "name": "LumLum Gothersgade",
+        "ref:DK:cvr": "43540165",
+        "ref:DK:cvr:pnummer": "1032460905"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713630,
+      "lat": 55.68427,
+      "lon": 12.585321,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "fvst:navnelbnr": "1394277",
+        "name": "Posh Jah",
+        "opening_hours": "17:30-24:00,Fr-Sa 17:30-01:00",
+        "phone": "+45 51900590",
+        "ref:DK:cvr": "37696633",
+        "ref:DK:cvr:pnummer": "1029375794",
+        "website": "https://poshjah.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713631,
+      "lat": 55.6820206,
+      "lon": 12.5848694,
+      "tags": {
+        "amenity": "bar",
+        "fvst:navnelbnr": "1480336",
+        "name": "Pool",
+        "note": "The name is correct, suspicious name warning is wrong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713632,
+      "lat": 55.682059,
+      "lon": 12.5856231,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "vietnamese",
+        "fvst:navnelbnr": "1475225",
+        "name": "Banh Mi Chp",
+        "phone": "+45 21297070",
+        "ref:DK:cvr": "45169901",
+        "ref:DK:cvr:pnummer": "1031103920",
+        "takeaway": "yes",
+        "website": "https://www.banhmicph.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713633,
+      "lat": 55.6821542,
+      "lon": 12.5853275,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "1475223",
+        "name": "Sài Gòn",
+        "opening_hours": "12:00-22:00; Tu-We 17:00-22:00;Su-Mo off",
+        "phone": "+45 21297009",
+        "ref:DK:cvr": "45169901",
+        "ref:DK:cvr:pnummer": "1031103939",
+        "website": "https://sai-gon.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713634,
+      "lat": 55.6817689,
+      "lon": 12.5845012,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "vietnamese",
+        "fvst:navnelbnr": "1481895",
+        "indoor_seating": "yes",
+        "name": "Mr Pho",
+        "opening_hours": "11:30-22:00;12:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+45 31273136",
+        "ref:DK:cvr": "44668092",
+        "ref:DK:cvr:pnummer": "1030638855",
+        "website": "https://www.phocopenhagen.dk/",
+        "website:menu": "https://www.phocopenhagen.dk/#Menu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713635,
+      "lat": 55.6817711,
+      "lon": 12.5846229,
+      "tags": {
+        "amenity": "bar",
+        "brand:website": "https://camping.bar/",
+        "fvst:navnelbnr": "1423028",
+        "name": "Camping Boltensgård",
+        "ref:DK:cvr": "41266112",
+        "ref:DK:cvr:pnummer": "1030133125"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912713636,
+      "lat": 55.6816443,
+      "lon": 12.5835663,
+      "tags": {
+        "amenity": "fast_food",
+        "brand:website": "https://www.oakberry.com/",
+        "fvst:navnelbnr": "1425109",
+        "name": "OAKBERRY Grønnegade",
+        "ref:DK:cvr": "44330954",
+        "ref:DK:cvr:pnummer": "1030216977"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12920336210,
+      "lat": 55.6815468,
+      "lon": 12.583507,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "facebook": "https://www.facebook.com/cubcoffeebar/",
+        "fvst:navnelbnr": "1483734",
+        "level": "-1",
+        "name": "HANS",
+        "ref:DK:cvr": "38764330",
+        "ref:DK:cvr:pnummer": "1031163710"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12959841021,
+      "lat": 55.6817882,
+      "lon": 12.5857548,
+      "tags": {
+        "amenity": "restaurant",
+        "fvst:navnelbnr": "1454298",
+        "name": "SK 12",
+        "opening_hours": "We-Fr 12:00-22:00",
+        "phone": "+45 22918160",
+        "ref:DK:cvr": "39963124",
+        "ref:DK:cvr:pnummer": "1024066009",
+        "website": "https://sk12.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12986437050,
+      "lat": 55.6812877,
+      "lon": 12.5840269,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "fvst:navnelbnr": "1484269",
+        "level": "-1",
+        "name": "Etta",
+        "ref:DK:cvr": "45523640",
+        "ref:DK:cvr:pnummer": "1031364716"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13020664895,
+      "lat": 55.6812382,
+      "lon": 12.584196,
+      "tags": {
+        "amenity": "bar",
+        "cuisine": "tapas",
+        "drink:wine": "retail",
+        "fvst:navnelbnr": "1484987",
+        "name": "Vininvestoren bar og butik",
+        "ref:DK:cvr": "45502864",
+        "ref:DK:cvr:pnummer": "1031201175",
+        "shop": "alcohol",
+        "website": "https://vininvestoren.dk/pages/vinbar-koebenhavn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13081632204,
+      "lat": 55.6821013,
+      "lon": 12.5851463,
+      "tags": {
+        "amenity": "bar",
+        "description": "Øl og Whisky-bar",
+        "drink:beer": "designated",
+        "drink:whisky": "designated",
+        "fvst:navnelbnr": "1492413",
+        "indoor_seating": "yes",
+        "name": "Ølhaven",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "44505320",
+        "ref:DK:cvr:pnummer": "1030073971",
+        "website": "https://www.olhaven.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13462319374,
+      "lat": 55.6817196,
+      "lon": 12.5834115,
+      "tags": {
+        "amenity": "cafe",
+        "fvst:navnelbnr": "1493159",
+        "name": "Biscoff Cph",
+        "opening_hours": "08:00-18:00;Fr 08:00-19:00;Sa 09:00-19:00;Su 10:00-15:00",
+        "phone": "+45 35306453",
+        "ref:DK:cvr": "45085783",
+        "ref:DK:cvr:pnummer": "1030679039",
+        "website": "https://www.biscoffcph.dk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13813256752,
+      "lat": 55.6805959,
+      "lon": 12.5951986,
+      "tags": {
+        "artist_name": "Eva Hjort",
+        "historic": "memorial",
+        "material": "bronze",
+        "memorial": "bust",
+        "name": "Bodil Begtrup",
+        "name:etymology:wikidata": "Q279699",
+        "panoramax": "7370fbeb-abd2-4a4a-999e-02f1963934e4",
+        "start_date": "202605",
+        "subject:wikidata": "Q279699; Q60060591"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1521723,
+      "center": {
+        "lat": 55.6852511,
+        "lon": 12.5864678
+      },
+      "tags": {
+        "cycleway": "track",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Sølvgade",
+        "name:etymology:wikidata": "Q1090",
+        "sidewalk:left": "no",
+        "sidewalk:right": "yes",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q17111245"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1702962,
+      "center": {
+        "lat": 55.6874198,
+        "lon": 12.5911959
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Esplanaden",
+        "name:etymology:wikidata": "Q88372",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q5399045"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1702963,
+      "center": {
+        "lat": 55.6872668,
+        "lon": 12.5959165
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Amaliegade",
+        "name:etymology:wikidata": "Q4581904",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3432062"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1702964,
+      "center": {
+        "lat": 55.6804765,
+        "lon": 12.5920087
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "maxweight": "12",
+        "name": "Toldbodgade",
+        "name:etymology:wikidata": "Q12323412",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q7814120"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1702966,
+      "center": {
+        "lat": 55.6808027,
+        "lon": 12.5851125
+      },
+      "tags": {
+        "bicycle": "use_sidepath",
+        "cycleway:left": "no",
+        "cycleway:right": "separate",
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Kongens Nytorv",
+        "name:etymology:wikidata": "Q1589941",
+        "oneway": "yes",
+        "ref": "O2",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "sett",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "wikidata": "Q1589941",
+        "wikipedia": "da:Kongens Nytorv"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1714609,
+      "center": {
+        "lat": 55.6785706,
+        "lon": 12.5889409
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Holbergsgade",
+        "name:etymology:wikidata": "Q216692",
+        "sidewalk": "both",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q57655930"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1722728,
+      "center": {
+        "lat": 55.6875623,
+        "lon": 12.5894681
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Gernersgade",
+        "name:etymology:wikidata": "Q5757002",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21698059"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1793060,
+      "center": {
+        "lat": 55.686971,
+        "lon": 12.5889944
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Sankt Pauls Gade",
+        "name:etymology:wikidata": "Q7591041",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21750212"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1815738,
+      "center": {
+        "lat": 55.679659,
+        "lon": 12.5885137
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Heibergsgade",
+        "name:etymology:wikidata": "Q402274",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q57316321"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1880399,
+      "center": {
+        "lat": 55.6813468,
+        "lon": 12.5827184
+      },
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Grønnegade",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "source:maxspeed": "DK:zone:30",
+        "surface": "asphalt",
+        "wikidata": "Q17492339"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1880908,
+      "center": {
+        "lat": 55.6884833,
+        "lon": 12.587455
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Haregade",
+        "name:etymology": "Hare",
+        "name:etymology:wikidata": "Q26838",
+        "name:etymology:wikipedia": "da:Europæisk hare",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q21685989"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1881010,
+      "center": {
+        "lat": 55.6818602,
+        "lon": 12.5869188
+      },
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Palægade",
+        "name:etymology": "Palæhaven tilhørende Thotts Palæ",
+        "name:etymology:wikidata": "Q7796923",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q23890131"
+      }
+    },
+    {
+      "type": "way",
+      "id": 2384033,
+      "center": {
+        "lat": 55.684669,
+        "lon": 12.5859283
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "track",
+        "foot": "yes",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 2384072,
+      "center": {
+        "lat": 55.6845479,
+        "lon": 12.5848623
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "sidewalk": "both",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3543679,
+      "center": {
+        "lat": 55.6800051,
+        "lon": 12.5937841
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Kvæsthusgade",
+        "name:etymology:wikidata": "Q113138002",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q67087482"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3992837,
+      "center": {
+        "lat": 55.6829666,
+        "lon": 12.5845855
+      },
+      "tags": {
+        "check_date:cycleway": "2023-06-02",
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3993155,
+      "center": {
+        "lat": 55.6888802,
+        "lon": 12.5903081
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Jens Kofods Gade",
+        "name:etymology:wikidata": "Q72480",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q60441877",
+        "zone:maxspeed": "DK:40"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4215976,
+      "center": {
+        "lat": 55.6879076,
+        "lon": 12.5909466
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Bornholmsgade",
+        "name:etymology:wikidata": "Q769680",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q60429608",
+        "zone:maxspeed": "DK:40"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4215977,
+      "center": {
+        "lat": 55.6884051,
+        "lon": 12.5906888
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Hammerensgade",
+        "name:etymology:wikidata": "Q5645686",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "surface": "asphalt",
+        "wikidata": "Q12315125",
+        "wikipedia": "da:Hammerensgade",
+        "zone:maxspeed": "DK:40"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4369466,
+      "center": {
+        "lat": 55.6811538,
+        "lon": 12.5863169
+      },
+      "tags": {
+        "cycleway:both": "track",
+        "cycleway:left:oneway": "-1",
+        "cycleway:width": "2.40",
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Kongens Nytorv",
+        "name:etymology:wikidata": "Q1589941",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "ref": "O2",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "wikidata": "Q1589941",
+        "wikipedia": "da:Kongens Nytorv"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4375853,
+      "center": {
+        "lat": 55.6796284,
+        "lon": 12.5912986
+      },
+      "tags": {
+        "bridge": "yes",
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "maxweight": "12",
+        "name": "Nyhavnsbroen",
+        "name:etymology:wikidata": "Q943946",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q84511108"
+      }
+    },
+    {
+      "type": "way",
+      "id": 10763081,
+      "center": {
+        "lat": 55.6807589,
+        "lon": 12.5840448
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "maxspeed:advisory": "10",
+        "name": "Hovedvagtsgade",
+        "name:etymology": "Københavns hovedvagt",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "source:maxspeed": "DK:zone:30",
+        "surface": "asphalt",
+        "wikidata": "Q61884583"
+      }
+    },
+    {
+      "type": "way",
+      "id": 24429818,
+      "center": {
+        "lat": 55.6840157,
+        "lon": 12.5843211
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "sidewalk": "both",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25524623,
+      "center": {
+        "lat": 55.6819022,
+        "lon": 12.5938049
+      },
+      "tags": {
+        "air_conditioning": "yes",
+        "building": "yes",
+        "fvst:name": "COPENHAGEN ADMIRAL HOTEL (CAH2)",
+        "fvst:navnelbnr": "1491712",
+        "internet_access": "wlan",
+        "name": "Admiral",
+        "phone": "+45 33 74 14 14",
+        "ref:DK:cvr": "44178028",
+        "ref:DK:cvr:pnummer": "1029472692",
+        "roof:colour": "black",
+        "stars": "4",
+        "tourism": "hotel",
+        "website": "https://admiralhotel.dk/",
+        "wheelchair": "yes",
+        "wikidata": "Q3489755",
+        "wikipedia": "da:Copenhagen Admiral Hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25701472,
+      "center": {
+        "lat": 55.6800693,
+        "lon": 12.5947035
+      },
+      "tags": {
+        "amenity": "theatre",
+        "building": "yes",
+        "check_date": "2026-10-23",
+        "name": "Skuespilhuset",
+        "name:ko": "덴마크 국립극장",
+        "phone": "+45 3369 6969",
+        "start_date": "2008",
+        "theatre:type": "stage",
+        "tourism": "attraction",
+        "website": "https://kglteater.dk/",
+        "wheelchair": "yes",
+        "wikidata": "Q4568402",
+        "wikipedia": "da:Skuespilhuset"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25812781,
+      "center": {
+        "lat": 55.6876379,
+        "lon": 12.5878839
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Rævegade",
+        "name:etymology:wikidata": "Q8331",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21698617"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26604472,
+      "center": {
+        "lat": 55.6879239,
+        "lon": 12.588129
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Gernersgade",
+        "name:etymology:wikidata": "Q5757002",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21698059"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27291215,
+      "center": {
+        "lat": 55.6863742,
+        "lon": 12.5935393
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Grønnegården"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27359108,
+      "center": {
+        "lat": 55.6810299,
+        "lon": 12.5929973
+      },
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "source": "DK:urban",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27360022,
+      "center": {
+        "lat": 55.6866558,
+        "lon": 12.5887231
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Olfert Fischers Gade",
+        "name:etymology:wikidata": "Q3430341",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21768476"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27360027,
+      "center": {
+        "lat": 55.687965,
+        "lon": 12.5893635
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "no",
+        "maxspeed": "40",
+        "name": "Tigergade",
+        "name:etymology:wikidata": "Q19939",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q21686001"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27360029,
+      "center": {
+        "lat": 55.6889864,
+        "lon": 12.5868782
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "foot": "yes",
+        "highway": "residential",
+        "horse": "yes",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Suensonsgade",
+        "name:etymology:wikidata": "Q12309365",
+        "oneway": "no",
+        "sidewalk": "both",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "vehicle": "yes",
+        "wikidata": "Q21660131"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27360036,
+      "center": {
+        "lat": 55.6887665,
+        "lon": 12.5891094
+      },
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "horse": "no",
+        "lit": "yes",
+        "motor_vehicle": "no",
+        "name": "Elsdyrsgade",
+        "name:etymology": "Elg",
+        "name:etymology:wikidata": "Q35517",
+        "name:etymology:wikipedia": "da:Elg",
+        "sidewalk": "both",
+        "surface": "paving_stones",
+        "wikidata": "Q21660023"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27361263,
+      "center": {
+        "lat": 55.6873344,
+        "lon": 12.5876306
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Sankt Pauls Gade",
+        "name:etymology:wikidata": "Q7591041",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "sett",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q21750212"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27386070,
+      "center": {
+        "lat": 55.6856282,
+        "lon": 12.586652
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "yes",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36522888,
+      "center": {
+        "lat": 55.6840642,
+        "lon": 12.5854705
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36523013,
+      "center": {
+        "lat": 55.6816608,
+        "lon": 12.5844763
+      },
+      "tags": {
+        "cycleway:both": "track",
+        "cycleway:left:oneway": "-1",
+        "cycleway:left:width": "2.30",
+        "cycleway:right:width": "2.15",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Gothersgade",
+        "name:etymology:wikidata": "Q42193",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "wikidata": "Q3429049",
+        "wikipedia": "da:Gothersgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 86443267,
+      "center": {
+        "lat": 55.6830224,
+        "lon": 12.5843824
+      },
+      "tags": {
+        "check_date:cycleway": "2023-06-02",
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 86443270,
+      "center": {
+        "lat": 55.6859082,
+        "lon": 12.587075
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87177096,
+      "center": {
+        "lat": 55.6856498,
+        "lon": 12.5945825
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Amaliegade",
+        "name:etymology:wikidata": "Q4581904",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3432062"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87177100,
+      "center": {
+        "lat": 55.6807936,
+        "lon": 12.5939024
+      },
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87177105,
+      "center": {
+        "lat": 55.6855439,
+        "lon": 12.5959554
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Toldbodgade",
+        "name:etymology:wikidata": "Q12323412",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "surface": "asphalt",
+        "wikidata": "Q7814120"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87325152,
+      "center": {
+        "lat": 55.6871814,
+        "lon": 12.5881539
+      },
+      "tags": {
+        "cycleway": "lane",
+        "highway": "residential",
+        "horse": "yes",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87325157,
+      "center": {
+        "lat": 55.682969,
+        "lon": 12.5940809
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Toldbodgade",
+        "name:etymology:wikidata": "Q12323412",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q7814120"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87325171,
+      "center": {
+        "lat": 55.6821056,
+        "lon": 12.5828235
+      },
+      "tags": {
+        "cycleway": "track",
+        "cycleway:left:oneway": "-1",
+        "cycleway:left:width": "2.30",
+        "highway": "tertiary",
+        "horse": "no",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Gothersgade",
+        "name:etymology:wikidata": "Q42193",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "wikidata": "Q3429049",
+        "wikipedia": "da:Gothersgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106105466,
+      "center": {
+        "lat": 55.6834526,
+        "lon": 12.5935347
+      },
+      "tags": {
+        "alt_name": "Schacks Palæ",
+        "building": "yes",
+        "building:architect": "Nicolai Eigtved",
+        "building:architecture": "rococo",
+        "building:colour": "#deccb7",
+        "building:levels": "3",
+        "building:material": "sandstone",
+        "name": "Christian den IX's Palæ",
+        "name:etymology:wikidata": "Q151305",
+        "note": "Dronning Margrethe benytter nu palæet som residenspalæ.",
+        "roof:colour": "#353440",
+        "roof:shape": "hipped",
+        "start_date": "1755",
+        "tourism": "attraction",
+        "wikidata": "Q112821537",
+        "wikimedia_commons": "Category:Christian IX's Palæ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106228713,
+      "center": {
+        "lat": 55.6841847,
+        "lon": 12.5941675
+      },
+      "tags": {
+        "alt_name": "Brockdorffs Palæ",
+        "building": "yes",
+        "building:architect": "Nicolai Eigtved",
+        "building:architecture": "rococo",
+        "building:colour": "#deccb7",
+        "building:levels": "3",
+        "building:material": "sandstone",
+        "name": "Frederik den VIII's Palæ",
+        "name:etymology:wikidata": "Q152756",
+        "roof:colour": "#353440",
+        "roof:shape": "hipped",
+        "start_date": "1758",
+        "tourism": "attraction",
+        "wikidata": "Q4972772",
+        "wikimedia_commons": "Category:Frederik VIII's Palæ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113940941,
+      "center": {
+        "lat": 55.6848483,
+        "lon": 12.58538
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "8",
+        "name": "Dronningensgård"
+      }
+    },
+    {
+      "type": "way",
+      "id": 132403429,
+      "center": {
+        "lat": 55.6811764,
+        "lon": 12.5853754
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "kiosk",
+        "contact:instagram": "https://www.instagram.com/taarnet_paa_kgs_nytorv/",
+        "description": "Historisk telefonkiosk nu indrettet med cafe.",
+        "email": "info@greentowerscopenhagen.dk",
+        "fvst:navnelbnr": "1281015",
+        "historic": "yes",
+        "indoor_seating": "no",
+        "name": "Taarnet på Kongens Nytorv",
+        "opening_hours": "Su-Th 08:00-22:00; Fr-Sa 08:00-24:00",
+        "outdoor_seating": "yes",
+        "ref:DK:cvr": "34449961",
+        "ref:DK:cvr:pnummer": "1028811876",
+        "seasonal": "summer",
+        "website": "https://www.greentowerscopenhagen.dk",
+        "wheelchair": "yes",
+        "wikimedia_commons": "Category:Kongens_Nytorv_16F"
+      }
+    },
+    {
+      "type": "way",
+      "id": 132617504,
+      "center": {
+        "lat": 55.6792007,
+        "lon": 12.5897714
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Jacob Gades Hus",
+        "name:etymology:wikidata": "Q453460",
+        "wikidata": "Q93500871"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133045890,
+      "center": {
+        "lat": 55.6805531,
+        "lon": 12.5840798
+      },
+      "tags": {
+        "alt_name": "Angleterre",
+        "architect": "Vilhelm Dahlerup",
+        "building": "hotel",
+        "building:levels": "5",
+        "email": "info@dangleterre.com",
+        "internet_access": "wlan",
+        "name": "Hotel d’Angleterre",
+        "name:etymology": "den engelske klub i København",
+        "phone": "+45 33120095",
+        "roof:levels": "1",
+        "roof:shape": "quadruple_saltbox",
+        "rooms": "35",
+        "start_date": "1873",
+        "tourism": "hotel",
+        "website": "http://www.dangleterre.dk/",
+        "wheelchair": "yes",
+        "wikidata": "Q3121408",
+        "wikipedia": "da:Hotel d’Angleterre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133940396,
+      "center": {
+        "lat": 55.6808955,
+        "lon": 12.5900287
+      },
+      "tags": {
+        "building": "apartments",
+        "name": "Brigadér Hallings Gård",
+        "name:etymology:wikidata": "Q12341578",
+        "wikidata": "Q28225876"
+      }
+    },
+    {
+      "type": "way",
+      "id": 142140836,
+      "center": {
+        "lat": 55.6811714,
+        "lon": 12.5933585
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150196910,
+      "center": {
+        "lat": 55.679772,
+        "lon": 12.5903491
+      },
+      "tags": {
+        "amenity": "theatre",
+        "building": "boat",
+        "fvst:navnelbnr": "116952",
+        "name": "Bådteatret",
+        "ref:DK:cvr": "42611514",
+        "ref:DK:cvr:pnummer": "1003071149",
+        "seamark:type": "hulk",
+        "website": "https://www.baadteatret.dk/",
+        "wikidata": "Q11962760",
+        "wikipedia": "da:Bådteatret"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155770924,
+      "center": {
+        "lat": 55.6834359,
+        "lon": 12.5949893
+      },
+      "tags": {
+        "architect": "Jean Delogne",
+        "leisure": "park",
+        "name": "Amaliehaven",
+        "name:etymology:wikidata": "Q211053",
+        "name:ko": "아말리에 정원",
+        "start_date": "1983-05-10",
+        "wikidata": "Q3434243",
+        "wikipedia": "da:Amaliehaven"
+      }
+    },
+    {
+      "type": "way",
+      "id": 164042528,
+      "center": {
+        "lat": 55.6847139,
+        "lon": 12.5843048
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Adelgade",
+        "name:etymology:wikidata": "Q4993744",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q11956901",
+        "wikipedia": "da:Adelgade (København)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 164042529,
+      "center": {
+        "lat": 55.684459,
+        "lon": 12.5840846
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Adelgade",
+        "name:etymology:wikidata": "Q4993744",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q11956901",
+        "wikipedia": "da:Adelgade (København)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 164933763,
+      "center": {
+        "lat": 55.6856205,
+        "lon": 12.585084
+      },
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Adelgade",
+        "name:etymology:wikidata": "Q4993744",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q11956901",
+        "wikipedia": "da:Adelgade (København)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 165504541,
+      "center": {
+        "lat": 55.6846585,
+        "lon": 12.5964045
+      },
+      "tags": {
+        "bicycle": "yes",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "name": "Larsens Plads",
+        "name:etymology:wikidata": "Q12323866",
+        "smoothness": "intermediate",
+        "surface": "paving_stones",
+        "wikidata": "Q3429066"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169116883,
+      "center": {
+        "lat": 55.6840724,
+        "lon": 12.5842704
+      },
+      "tags": {
+        "highway": "service",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "service": "parking_aisle",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169116884,
+      "center": {
+        "lat": 55.6842115,
+        "lon": 12.5843906
+      },
+      "tags": {
+        "highway": "service",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "service": "parking_aisle",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169116885,
+      "center": {
+        "lat": 55.6845997,
+        "lon": 12.5847259
+      },
+      "tags": {
+        "highway": "service",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "service": "parking_aisle",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169116886,
+      "center": {
+        "lat": 55.6844529,
+        "lon": 12.5845992
+      },
+      "tags": {
+        "highway": "service",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "service": "parking_aisle",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179625022,
+      "center": {
+        "lat": 55.684001,
+        "lon": 12.5932084
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "smoothness": "bad",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179641794,
+      "center": {
+        "lat": 55.683651,
+        "lon": 12.5929216
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "motorcar": "yes",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "smoothness": "bad",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179641795,
+      "center": {
+        "lat": 55.6837657,
+        "lon": 12.5940909
+      },
+      "tags": {
+        "bicycle": "yes",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179902623,
+      "center": {
+        "lat": 55.6812076,
+        "lon": 12.5841136
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "maxspeed:advisory": "10",
+        "name": "Ny Adelgade",
+        "name:etymology:wikidata": "Q4993744",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:30",
+        "surface": "asphalt",
+        "wikidata": "Q27429963"
+      }
+    },
+    {
+      "type": "way",
+      "id": 224021410,
+      "center": {
+        "lat": 55.6882882,
+        "lon": 12.589522
+      },
+      "tags": {
+        "bicycle": "yes",
+        "highway": "pedestrian",
+        "horse": "yes",
+        "lit": "no",
+        "maxspeed": "40",
+        "name": "Suensonsgade",
+        "name:etymology:wikidata": "Q12309365",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q21660131"
+      }
+    },
+    {
+      "type": "way",
+      "id": 237214022,
+      "center": {
+        "lat": 55.6826164,
+        "lon": 12.5862968
+      },
+      "tags": {
+        "cycleway:left": "no",
+        "cycleway:right": "track",
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Store Kongensgade",
+        "oneway": "yes",
+        "oneway:bicycle": "yes",
+        "ref": "O2",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "intermediate",
+        "surface": "asphalt",
+        "wikidata": "Q12337357",
+        "wikipedia": "da:Store Kongensgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266646070,
+      "center": {
+        "lat": 55.6794295,
+        "lon": 12.590946
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sømandskirken",
+        "religion": "christian",
+        "wikidata": "Q34057957"
+      }
+    },
+    {
+      "type": "way",
+      "id": 304697944,
+      "center": {
+        "lat": 55.6804341,
+        "lon": 12.5862749
+      },
+      "tags": {
+        "name": "Kongens Nytorv",
+        "place": "square",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "wikidata": "Q1589941",
+        "wikipedia": "da:Kongens Nytorv"
+      }
+    },
+    {
+      "type": "way",
+      "id": 305585316,
+      "center": {
+        "lat": 55.6844716,
+        "lon": 12.5840161
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "intermediate",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 305585317,
+      "center": {
+        "lat": 55.6856574,
+        "lon": 12.585
+      },
+      "tags": {
+        "cycleway": "track",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Sølvgade",
+        "name:etymology:wikidata": "Q1090",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q17111245"
+      }
+    },
+    {
+      "type": "way",
+      "id": 330184536,
+      "center": {
+        "lat": 55.6858518,
+        "lon": 12.596222
+      },
+      "tags": {
+        "building": "residential",
+        "name": "De engelske rækkehuse",
+        "wikidata": "Q28225871"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332071937,
+      "center": {
+        "lat": 55.6822445,
+        "lon": 12.5852128
+      },
+      "tags": {
+        "name": "Boltens Gård",
+        "name:etymology": "Henrik Bolten",
+        "name:etymology:wikidata": "Q12316318",
+        "place": "square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 367146203,
+      "center": {
+        "lat": 55.6808865,
+        "lon": 12.5896827
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Lille Strandstræde",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q77262434",
+        "zone:maxspeed": "DK:40"
+      }
+    },
+    {
+      "type": "way",
+      "id": 378106484,
+      "center": {
+        "lat": 55.6839797,
+        "lon": 12.5931363
+      },
+      "tags": {
+        "area": "yes",
+        "castle_type": "palace",
+        "historic": "castle",
+        "name": "Amalienborg",
+        "name:de": "Schloss Amalienborg",
+        "name:etymology:wikidata": "Q4581904",
+        "name:is": "Amalíuborg",
+        "name:ko": "아말리엔보르 성",
+        "name:zh": "阿馬林堡宮",
+        "protected_area": "cultural_assets",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "wikidata": "Q211053",
+        "wikipedia": "da:Amalienborg"
+      }
+    },
+    {
+      "type": "way",
+      "id": 379889351,
+      "center": {
+        "lat": 55.68345,
+        "lon": 12.5927541
+      },
+      "tags": {
+        "bicycle": "yes",
+        "covered": "yes",
+        "cycleway": "no",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "motorcar": "yes",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "oneway": "yes",
+        "smoothness": "bad",
+        "surface": "sett",
+        "tunnel": "building_passage",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 382352037,
+      "center": {
+        "lat": 55.683448,
+        "lon": 12.5927618
+      },
+      "tags": {
+        "building": "yes",
+        "building:architect": "C.F. Harsdorff",
+        "building:colour": "#deccb7",
+        "building:material": "wood",
+        "historic": "yes",
+        "name": "Kolonnaden",
+        "roof:colour": "#393d52",
+        "wikidata": "Q124552088",
+        "wikimedia_commons": "File:MJK 52244 Colonnade (Amalienborg).jpg"
+      }
+    },
+    {
+      "type": "way",
+      "id": 429838468,
+      "center": {
+        "lat": 55.6816637,
+        "lon": 12.5951818
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "500",
+        "fee": "yes",
+        "layer": "-1",
+        "name": "Kvæsthusmolen",
+        "parking": "underground",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 495951545,
+      "center": {
+        "lat": 55.6838292,
+        "lon": 12.5863262
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Dronningens Tværgade",
+        "name:etymology": "Sophie Amalie af Braunschweig-Lüneburg",
+        "name:etymology:wikidata": "Q231764",
+        "name:etymology:wikipedia": "da:Sophie Amalie af Braunschweig-Lüneburg",
+        "oneway": "no",
+        "sidewalk": "both",
+        "sidewalk:left:surface": "sett",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q5308343"
+      }
+    },
+    {
+      "type": "way",
+      "id": 497246305,
+      "center": {
+        "lat": 55.6815348,
+        "lon": 12.5853697
+      },
+      "tags": {
+        "cycleway:left": "no",
+        "cycleway:right": "shared_lane",
+        "cycleway:right:lane": "pictogram",
+        "highway": "primary",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Store Kongensgade",
+        "oneway": "yes",
+        "oneway:bicycle": "yes",
+        "ref": "O2",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "turn:lanes": "through|through|right",
+        "wikidata": "Q12337357",
+        "wikipedia": "da:Store Kongensgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 529519844,
+      "center": {
+        "lat": 55.6816637,
+        "lon": 12.595727
+      },
+      "tags": {
+        "name": "Ofelia Plads",
+        "name:etymology:wikidata": "Q1800888",
+        "place": "square",
+        "wikidata": "Q12329915",
+        "wikipedia": "da:Ofelia Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 592473450,
+      "center": {
+        "lat": 55.6816738,
+        "lon": 12.5954922
+      },
+      "tags": {
+        "highway": "pedestrian",
+        "lit": "yes",
+        "name": "Kvæsthusbroen",
+        "name:etymology:wikidata": "Q113138002",
+        "smoothness": "good",
+        "surface": "concrete",
+        "wikidata": "Q12323264"
+      }
+    },
+    {
+      "type": "way",
+      "id": 609541141,
+      "center": {
+        "lat": 55.681532,
+        "lon": 12.5916381
+      },
+      "tags": {
+        "name": "Sankt Annæ Plads",
+        "name:de": "Sankt-Anna-Platz",
+        "name:en": "Saint Ann's Square",
+        "name:etymology:wikidata": "Q164294",
+        "place": "square",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 715671894,
+      "center": {
+        "lat": 55.6820967,
+        "lon": 12.5951132
+      },
+      "tags": {
+        "name": "Kvæsthusgraven",
+        "natural": "water"
+      }
+    },
+    {
+      "type": "way",
+      "id": 733746164,
+      "center": {
+        "lat": 55.6808367,
+        "lon": 12.5942613
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1106170664,
+      "center": {
+        "lat": 55.6845022,
+        "lon": 12.5936321
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1106170665,
+      "center": {
+        "lat": 55.6832874,
+        "lon": 12.5926186
+      },
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "pedestrian",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "motor_vehicle": "permit",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "sidewalk": "both",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1132467848,
+      "center": {
+        "lat": 55.6797801,
+        "lon": 12.5914216
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "maxweight": "12",
+        "name": "Nyhavnsbroen",
+        "name:etymology:wikidata": "Q943946",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q84511108"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1132467849,
+      "center": {
+        "lat": 55.679474,
+        "lon": 12.5911827
+      },
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "maxweight": "12",
+        "name": "Nyhavnsbroen",
+        "name:etymology:wikidata": "Q943946",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "smoothness": "excellent",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q84511108"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1153033185,
+      "center": {
+        "lat": 55.6819082,
+        "lon": 12.5835569
+      },
+      "tags": {
+        "cycleway:both": "track",
+        "cycleway:left:oneway": "-1",
+        "cycleway:left:width": "2.30",
+        "highway": "tertiary",
+        "horse": "no",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Gothersgade",
+        "name:etymology:wikidata": "Q42193",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "wikidata": "Q3429049",
+        "wikipedia": "da:Gothersgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1171767079,
+      "center": {
+        "lat": 55.6882264,
+        "lon": 12.5890541
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "horse": "yes",
+        "lane_markings": "no",
+        "lit": "no",
+        "maxspeed": "40",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1171767080,
+      "center": {
+        "lat": 55.6886879,
+        "lon": 12.5895216
+      },
+      "tags": {
+        "cycleway": "lane",
+        "highway": "residential",
+        "horse": "yes",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190778058,
+      "center": {
+        "lat": 55.6810496,
+        "lon": 12.593828
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190778059,
+      "center": {
+        "lat": 55.6811084,
+        "lon": 12.5936038
+      },
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190778060,
+      "center": {
+        "lat": 55.6809142,
+        "lon": 12.5934433
+      },
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "source": "DK:urban",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307538577,
+      "center": {
+        "lat": 55.6839885,
+        "lon": 12.5931278
+      },
+      "tags": {
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "place": "square",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340238520,
+      "center": {
+        "lat": 55.6796259,
+        "lon": 12.5913043
+      },
+      "tags": {
+        "bridge:structure": "beam",
+        "layer": "1",
+        "man_made": "bridge",
+        "name": "Nyhavnsbroen"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 152202,
+      "center": {
+        "lat": 55.6532318,
+        "lon": 12.5422764
+      },
+      "tags": {
+        "by_night": "yes",
+        "colour": "#008d41",
+        "colour:text": "green",
+        "from": "Vanløse",
+        "name": "Metro M1: Vanløse => Vestamager",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "note:de": "M1 in forward direction",
+        "operator": "Inmetro",
+        "public_transport:version": "2",
+        "ref": "M1",
+        "route": "subway",
+        "to": "Vestamager",
+        "type": "route",
+        "wikidata": "Q1880894",
+        "wikipedia": "da:M1 (metro)"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 152224,
+      "center": {
+        "lat": 55.6587756,
+        "lon": 12.57035
+      },
+      "tags": {
+        "by_night": "yes",
+        "colour": "#ffc600",
+        "comment": "Forward direction of line M2",
+        "from": "Vanløse",
+        "name": "Metro M2: Vanløse => Lufthavnen",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Inmetro",
+        "public_transport:version": "2",
+        "ref": "M2",
+        "route": "subway",
+        "text_colour": "yellow",
+        "to": "Lufthavnen",
+        "type": "route",
+        "wikidata": "Q1880954",
+        "wikipedia": "da:M2"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 152332,
+      "center": {
+        "lat": 55.6533345,
+        "lon": 12.54208
+      },
+      "tags": {
+        "by_night": "yes",
+        "colour": "#008d41",
+        "colour:text": "green",
+        "from": "Vestamager",
+        "name": "Metro M1: Vestamager => Vanløse",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Inmetro",
+        "public_transport:version": "2",
+        "ref": "M1",
+        "route": "subway",
+        "to": "Vanløse",
+        "type": "route",
+        "wikidata": "Q1880894",
+        "wikipedia": "da:M1 (metro)"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 152339,
+      "center": {
+        "lat": 55.6588972,
+        "lon": 12.5701528
+      },
+      "tags": {
+        "by_night": "yes",
+        "colour": "#ffc600",
+        "comment": "backward direction of line M2",
+        "from": "Lufthavnen",
+        "name": "Metro M2: Lufthavnen => Vanløse",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Inmetro",
+        "public_transport:version": "2",
+        "ref": "M2",
+        "route": "subway",
+        "text_colour": "yellow",
+        "to": "Vanløse",
+        "type": "route",
+        "wikidata": "Q1880954",
+        "wikipedia": "da:M2"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1320608,
+      "center": {
+        "lat": 55.5951782,
+        "lon": 13.4196985
+      },
+      "tags": {
+        "ISO3166-2": "DK-84",
+        "admin_level": "4",
+        "boundary": "administrative",
+        "flag": "File:Flag_of_the_Capital_Region_of_Denmark.svg",
+        "name": "Region Hovedstaden",
+        "name:bg": "Столична област",
+        "name:ce": "Коьрта гӀалин регион",
+        "name:cs": "Hovedstaden",
+        "name:da": "Region Hovedstaden",
+        "name:de": "Hauptstadtregion",
+        "name:en": "Capital Region of Denmark",
+        "name:eo": "Regiono Hovedstaden",
+        "name:es": "Región Capital",
+        "name:et": "Pealinna piirkond",
+        "name:fi": "Pääkaupunkialue",
+        "name:frr": "Regiuun Hovedstaden",
+        "name:gv": "Ard Preeu-valjagh ny Danvarg",
+        "name:hu": "Fővárosi régió",
+        "name:hy": "Մայրաքաղաքային տարածաշրջան",
+        "name:ka": "დედაქალაქის რეგიონი",
+        "name:kk": "Астаналық облыс",
+        "name:ko": "덴마크 수도 지역",
+        "name:la": "Regio Capitis",
+        "name:lt": "Sostinės regionas",
+        "name:mk": "Престолнински регион",
+        "name:ms": "Wilayah Hovedstaden",
+        "name:nds": "Hööftstadt-Region",
+        "name:nl": "Hoofdstad",
+        "name:os": "Сæйраг сахары облæст",
+        "name:pl": "Region Stołeczny",
+        "name:pt": "Região da Capital",
+        "name:ro": "Regiunea Hovedstaden",
+        "name:ru": "Столичная область",
+        "name:se": "Oaivegávpoga regiuvdna",
+        "name:sk": "Hovedstaden",
+        "name:sv": "Region Huvudstaden",
+        "name:uk": "Столичний регіон",
+        "name:vi": "Vùng thủ đô Đan Mạch",
+        "ref": "1084",
+        "ref:nuts": "DK01",
+        "ref:nuts:2": "DK01",
+        "type": "boundary",
+        "wikidata": "Q26073",
+        "wikipedia": "da:Region Hovedstaden"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2192363,
+      "center": {
+        "lat": 55.6727863,
+        "lon": 12.5936221
+      },
+      "tags": {
+        "admin_level": "7",
+        "alt_name:gl": "Concello de Copenhague",
+        "boundary": "administrative",
+        "name": "Københavns Kommune",
+        "name:br": "Kumun Kopenhagen",
+        "name:ca": "Municipi de Copenhaguen",
+        "name:da": "Københavns Kommune",
+        "name:de": "Kopenhagen",
+        "name:en": "Copenhagen Municipality",
+        "name:es": "Municipio de Copenhague",
+        "name:fi": "Kööpenhaminan kunta",
+        "name:fr": "Commune de Copenhague",
+        "name:frr": "Kopenhuuwen Komuun",
+        "name:gl": "Concello de Copenhaguen",
+        "name:hu": "Koppenhága község",
+        "name:id": "Munisipalitas Copenhagen",
+        "name:ms": "Munisipaliti Copenhagen",
+        "name:nds": "Kommun Kopenhagen",
+        "name:nn": "København kommune",
+        "name:no": "Københavns kommune",
+        "name:pt": "Comuna de Copenhaga",
+        "name:pt-BR": "Comuna de Copenhague",
+        "name:sv": "Köpenhamns kommun",
+        "population": "591481",
+        "ref": "101",
+        "type": "boundary",
+        "wikidata": "Q504125",
+        "wikipedia": "da:Københavns Kommune"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2365392,
+      "center": {
+        "lat": 55.677459,
+        "lon": 12.5901103
+      },
+      "tags": {
+        "name": "Inderhavnen",
+        "name:ko": "도심 항구",
+        "natural": "water",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2888305,
+      "center": {
+        "lat": 55.7469735,
+        "lon": 12.4816031
+      },
+      "tags": {
+        "colour": "#E7792B",
+        "cycle_highway": "yes",
+        "cycle_network": "Supercykelstier",
+        "distance": "20.7",
+        "from": "Farum C",
+        "name": "Farumruten",
+        "network": "rcn",
+        "ref": "C95",
+        "route": "bicycle",
+        "to": "Kongens Nytorv",
+        "type": "route",
+        "website": "https://supercykelstier.dk/rute/farumruten/",
+        "wikidata": "Q105495562"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 3295112,
+      "center": {
+        "lat": 55.7583788,
+        "lon": 12.3260403
+      },
+      "tags": {
+        "colour": "#E7792B",
+        "cycle_highway": "yes",
+        "cycle_network": "Supercykelstier",
+        "from": "Frederikssund St.",
+        "name": "Frederikssundsruten",
+        "network": "rcn",
+        "ref": "C97",
+        "route": "bicycle",
+        "to": "Kgs. Nytorv",
+        "type": "route",
+        "website": "https://supercykelstier.dk/rute/frederikssundruten/",
+        "wikidata": "Q106581634"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5175856,
+      "center": {
+        "lat": 55.5456802,
+        "lon": 11.7541164
+      },
+      "tags": {
+        "alt_name:it": "Zelanda",
+        "name": "Sjælland",
+        "name:ca": "Selàndia",
+        "name:da": "Sjælland",
+        "name:de": "Seeland",
+        "name:en": "Zealand",
+        "name:fr": "Seeland",
+        "name:is": "Sjáland",
+        "name:it": "Selandia",
+        "name:ja": "シェラン島",
+        "name:nl": "Seeland",
+        "name:pl": "Zelandia",
+        "name:ru": "Зеландия",
+        "name:sv": "Själland",
+        "name:tok": "ma Selan",
+        "place": "island",
+        "type": "multipolygon",
+        "wikidata": "Q25535",
+        "wikipedia": "da:Sjælland"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5693118,
+      "center": {
+        "lat": 55.686375,
+        "lon": 12.5935418
+      },
+      "tags": {
+        "building": "yes",
+        "check_date": "2026-04-15",
+        "contact:facebook": "DesignmuseumDanmark",
+        "contact:instagram": "designmuseumdanmark",
+        "email": "info@designmuseum.dk",
+        "museum": "design;craft",
+        "name": "Designmuseum Danmark",
+        "name:da": "Designmuseum Danmark",
+        "name:de": "Designmuseum Danmark",
+        "name:en": "Danish Museum of Art & Design",
+        "name:es": "Museo de Diseño de Dinamarca",
+        "name:fr": "Musée du Design danois",
+        "name:ru": "Музей дизайна",
+        "name:zh": "設計博物館",
+        "old_name": "Kunstindustrimuseet",
+        "opening_hours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-20:00",
+        "phone": "+45 3318 5656",
+        "tourism": "museum",
+        "type": "multipolygon",
+        "website": "https://designmuseum.dk",
+        "wikidata": "Q834603",
+        "wikipedia": "da:Designmuseum Danmark"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 6476337,
+      "center": {
+        "lat": 55.6797366,
+        "lon": 12.5909092
+      },
+      "tags": {
+        "harbour": "yes",
+        "historic": "yes",
+        "name": "Nyhavn",
+        "name:ko": "니하운",
+        "name:ru": "Новая гавань",
+        "name:zh": "新港",
+        "natural": "water",
+        "tourism": "attraction",
+        "type": "multipolygon",
+        "wikidata": "Q943946",
+        "wikimedia_commons": "Category:Nyhavn",
+        "wikipedia": "da:Nyhavn"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10157170,
+      "center": {
+        "lat": 55.6886004,
+        "lon": 12.5613623
+      },
+      "tags": {
+        "colour": "#ff0a0a",
+        "name": "Cityringen (clockwise)",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Metro Service A/S",
+        "public_transport:version": "2",
+        "ref": "M3",
+        "roundtrip": "yes",
+        "route": "subway",
+        "type": "route",
+        "wikidata": "Q1094251",
+        "wikipedia": "da:Cityringen"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10283922,
+      "center": {
+        "lat": 55.6886281,
+        "lon": 12.5612932
+      },
+      "tags": {
+        "colour": "#ff0a0a",
+        "name": "Cityringen (counterclockwise)",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Metro Service A/S",
+        "public_transport:version": "2",
+        "ref": "M3",
+        "roundtrip": "yes",
+        "route": "subway",
+        "type": "route",
+        "wikidata": "Q1094251",
+        "wikipedia": "da:Cityringen"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10411748,
+      "center": {
+        "lat": 55.6859193,
+        "lon": 12.5857681
+      },
+      "tags": {
+        "building": "apartments",
+        "name": "Borgergården",
+        "operator": "Lejerbo",
+        "type": "multipolygon",
+        "wikidata": "Q78598475",
+        "wikimedia_commons": "Category:Borgergården"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10925796,
+      "center": {
+        "lat": 55.6788751,
+        "lon": 12.5552394
+      },
+      "tags": {
+        "colour": "#009cd3",
+        "from": "Orientkaj",
+        "name": "Metro M4: Orientkaj => København Syd",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Metro Service A/S",
+        "public_transport:version": "2",
+        "ref": "M4",
+        "route": "subway",
+        "to": "København Syd",
+        "type": "route",
+        "via": "København H",
+        "wikidata": "Q88965328"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10925797,
+      "center": {
+        "lat": 55.678803,
+        "lon": 12.5552713
+      },
+      "tags": {
+        "colour": "#009cd3",
+        "from": "København Syd",
+        "name": "Metro M4: København Syd => Orientkaj",
+        "network": "Takst Sjælland",
+        "network:metro": "Metroen",
+        "operator": "Metro Service A/S",
+        "public_transport:version": "2",
+        "ref": "M4",
+        "route": "subway",
+        "to": "Orientkaj",
+        "type": "route",
+        "via": "København H",
+        "wikidata": "Q88965328"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 14249784,
+      "center": {
+        "lat": 55.6805822,
+        "lon": 12.5860733
+      },
+      "tags": {
+        "access": "no",
+        "foot": "designated",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "name": "Kongens Nytorv",
+        "name:etymology:wikidata": "Q1589941",
+        "smoothness": "good",
+        "surface": "sett",
+        "type": "multipolygon",
+        "wikidata": "Q1589941",
+        "wikipedia": "da:Kongens Nytorv"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1722728,
+      "bounds": {
+        "minlat": 55.6873389,
+        "minlon": 12.5886695,
+        "maxlat": 55.6877858,
+        "maxlon": 12.5902667
+      },
+      "geometry": [
+        { "lat": 55.6877858, "lon": 12.5886695 },
+        { "lat": 55.6874264, "lon": 12.5900273 },
+        { "lat": 55.6874198, "lon": 12.5900521 },
+        { "lat": 55.6873389, "lon": 12.5902667 }
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Gernersgade",
+        "name:etymology:wikidata": "Q5757002",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:zone:40",
+        "surface": "asphalt",
+        "wikidata": "Q21698059"
+      }
+    },
+    {
+      "type": "way",
+      "id": 2384033,
+      "bounds": {
+        "minlat": 55.6840749,
+        "minlon": 12.5854326,
+        "maxlat": 55.685263,
+        "maxlon": 12.586424
+      },
+      "geometry": [
+        { "lat": 55.6840749, "lon": 12.5854326 },
+        { "lat": 55.6841554, "lon": 12.5854998 },
+        { "lat": 55.6842126, "lon": 12.5855475 },
+        { "lat": 55.6849754, "lon": 12.586184 },
+        { "lat": 55.6851112, "lon": 12.5862973 },
+        { "lat": 55.6851303, "lon": 12.5863132 },
+        { "lat": 55.685263, "lon": 12.586424 }
+      ],
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "track",
+        "foot": "yes",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Borgergade",
+        "name:etymology:wikidata": "Q52090",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3380402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3543679,
+      "bounds": {
+        "minlat": 55.6793324,
+        "minlon": 12.593225,
+        "maxlat": 55.6806778,
+        "maxlon": 12.5943431
+      },
+      "geometry": [
+        { "lat": 55.6806778, "lon": 12.5943431 },
+        { "lat": 55.6799752, "lon": 12.5937591 },
+        { "lat": 55.6798263, "lon": 12.5936354 },
+        { "lat": 55.6797908, "lon": 12.5936059 },
+        { "lat": 55.6793324, "lon": 12.593225 }
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Kvæsthusgade",
+        "name:etymology:wikidata": "Q113138002",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q67087482"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36523013,
+      "bounds": {
+        "minlat": 55.6814418,
+        "minlon": 12.5836627,
+        "maxlat": 55.6818798,
+        "maxlon": 12.58529
+      },
+      "geometry": [
+        { "lat": 55.6814418, "lon": 12.58529 },
+        { "lat": 55.6814799, "lon": 12.5851484 },
+        { "lat": 55.6816216, "lon": 12.5846219 },
+        { "lat": 55.6816645, "lon": 12.5844625 },
+        { "lat": 55.6818798, "lon": 12.5836627 }
+      ],
+      "tags": {
+        "cycleway:both": "track",
+        "cycleway:left:oneway": "-1",
+        "cycleway:left:width": "2.30",
+        "cycleway:right:width": "2.15",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Gothersgade",
+        "name:etymology:wikidata": "Q42193",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "wikidata": "Q3429049",
+        "wikipedia": "da:Gothersgade"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87177100,
+      "bounds": {
+        "minlat": 55.6806778,
+        "minlon": 12.5934616,
+        "maxlat": 55.6809093,
+        "maxlon": 12.5943431
+      },
+      "geometry": [
+        { "lat": 55.6809093, "lon": 12.5934616 },
+        { "lat": 55.6808143, "lon": 12.5938214 },
+        { "lat": 55.6806778, "lon": 12.5943431 }
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87325157,
+      "bounds": {
+        "minlat": 55.6813343,
+        "minlon": 12.5927314,
+        "maxlat": 55.6846037,
+        "maxlon": 12.5954303
+      },
+      "geometry": [
+        { "lat": 55.6846037, "lon": 12.5954303 },
+        { "lat": 55.6843546, "lon": 12.5952239 },
+        { "lat": 55.6836244, "lon": 12.5946361 },
+        { "lat": 55.6832917, "lon": 12.5943453 },
+        { "lat": 55.6826832, "lon": 12.5938453 },
+        { "lat": 55.6826227, "lon": 12.5937956 },
+        { "lat": 55.6825527, "lon": 12.5937378 },
+        { "lat": 55.682494, "lon": 12.5936893 },
+        { "lat": 55.6824294, "lon": 12.5936426 },
+        { "lat": 55.6820322, "lon": 12.5933079 },
+        { "lat": 55.681959, "lon": 12.5932482 },
+        { "lat": 55.6819201, "lon": 12.5932162 },
+        { "lat": 55.6813343, "lon": 12.5927314 }
+      ],
+      "tags": {
+        "cycleway": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "40",
+        "name": "Toldbodgade",
+        "name:etymology:wikidata": "Q12323412",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "source:maxspeed": "sign",
+        "surface": "asphalt",
+        "wikidata": "Q7814120"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179641795,
+      "bounds": {
+        "minlat": 55.6836244,
+        "minlon": 12.5935456,
+        "maxlat": 55.6839069,
+        "maxlon": 12.5946361
+      },
+      "geometry": [
+        { "lat": 55.6839069, "lon": 12.5935456 },
+        { "lat": 55.6837846, "lon": 12.5939927 },
+        { "lat": 55.6836637, "lon": 12.594478 },
+        { "lat": 55.6836244, "lon": 12.5946361 }
+      ],
+      "tags": {
+        "bicycle": "yes",
+        "hgv": "destination",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "maxweight": "2",
+        "motor_vehicle": "permit",
+        "name": "Amalienborg Slotsplads",
+        "name:etymology:wikidata": "Q211053",
+        "surface": "sett",
+        "wikidata": "Q11957655",
+        "wikimedia_commons": "Category:Amalienborg Slotsplads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 180380518,
+      "bounds": {
+        "minlat": 55.6798123,
+        "minlon": 12.5873438,
+        "maxlat": 55.6808658,
+        "maxlon": 12.5914479
+      },
+      "geometry": [
+        { "lat": 55.6798123, "lon": 12.5914479 },
+        { "lat": 55.6803862, "lon": 12.5891695 },
+        { "lat": 55.6806941, "lon": 12.5879992 },
+        { "lat": 55.6807419, "lon": 12.5878154 },
+        { "lat": 55.6808658, "lon": 12.5873438 }
+      ],
+      "tags": {
+        "bicycle": "dismount",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "motor_vehicle": "no",
+        "name": "Nyhavn",
+        "smoothness": "bad",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 592473450,
+      "bounds": {
+        "minlat": 55.6806666,
+        "minlon": 12.5944049,
+        "maxlat": 55.6826809,
+        "maxlon": 12.5965796
+      },
+      "geometry": [
+        { "lat": 55.6826809, "lon": 12.5965796 },
+        { "lat": 55.6806666, "lon": 12.5949422 },
+        { "lat": 55.6807344, "lon": 12.5945611 },
+        { "lat": 55.6807623, "lon": 12.5944049 }
+      ],
+      "tags": {
+        "highway": "pedestrian",
+        "lit": "yes",
+        "name": "Kvæsthusbroen",
+        "name:etymology:wikidata": "Q113138002",
+        "smoothness": "good",
+        "surface": "concrete",
+        "wikidata": "Q12323264"
+      }
+    },
+    {
+      "type": "way",
+      "id": 733746164,
+      "bounds": {
+        "minlat": 55.6806778,
+        "minlon": 12.5940343,
+        "maxlat": 55.6809955,
+        "maxlon": 12.5944883
+      },
+      "geometry": [
+        { "lat": 55.6806778, "lon": 12.5943431 },
+        { "lat": 55.6807623, "lon": 12.5944049 },
+        { "lat": 55.6808763, "lon": 12.5944883 },
+        { "lat": 55.6809955, "lon": 12.5940343 }
+      ],
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "maxspeed:advisory": "30",
+        "name": "Sankt Annæ Plads",
+        "name:etymology:wikidata": "Q164294",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "good",
+        "source:maxspeed": "DK:urban",
+        "surface": "asphalt",
+        "wikidata": "Q3365803",
+        "wikipedia": "da:Sankt Annæ Plads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087092589,
+      "bounds": {
+        "minlat": 55.6818347,
+        "minlon": 12.5845995,
+        "maxlat": 55.6820192,
+        "maxlon": 12.5847691
+      },
+      "geometry": [
+        { "lat": 55.6820192, "lon": 12.5847691 },
+        { "lat": 55.6818347, "lon": 12.5845995 }
+      ],
+      "tags": {
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Boltens Gård",
+        "name:etymology": "Henrik Bolten",
+        "name:etymology:wikidata": "Q12316318",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087092591,
+      "bounds": {
+        "minlat": 55.6817278,
+        "minlon": 12.5845105,
+        "maxlat": 55.6818347,
+        "maxlon": 12.5845995
+      },
+      "geometry": [
+        { "lat": 55.6818347, "lon": 12.5845995 },
+        { "lat": 55.6817278, "lon": 12.5845105 }
+      ],
+      "tags": {
+        "highway": "service",
+        "layer": "-1",
+        "motor_vehicle": "no",
+        "name": "Boltens Gård",
+        "name:etymology": "Henrik Bolten",
+        "name:etymology:wikidata": "Q12316318",
+        "surface": "asphalt",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087092592,
+      "bounds": {
+        "minlat": 55.6816645,
+        "minlon": 12.5844625,
+        "maxlat": 55.6817278,
+        "maxlon": 12.5845105
+      },
+      "geometry": [
+        { "lat": 55.6817278, "lon": 12.5845105 },
+        { "lat": 55.6816645, "lon": 12.5844625 }
+      ],
+      "tags": {
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Boltens Gård",
+        "name:etymology": "Henrik Bolten",
+        "name:etymology:wikidata": "Q12316318",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}
