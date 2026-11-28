@@ -611,3 +611,179 @@ describe('generationJobs: read by owner, written by functions only', () => {
     await assertFails(updateDoc(doc(creator(OWNER), 'generationJobs/j1'), { status: 'done' }));
   });
 });
+
+describe('generationJobs (M4): the job id is the walk id; owner can wait for it and list', () => {
+  it('lets a signed-in user wait on a job that does not exist yet, and the owner list theirs', async () => {
+    await assertSucceeds(getDoc(doc(creator(OWNER), 'generationJobs/not-yet')));
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      await setDoc(doc(ctx.firestore(), 'generationJobs/j1'), {
+        ownerUid: OWNER,
+        walkId: WALK,
+        status: 'running',
+      });
+    });
+    await assertSucceeds(
+      getDocs(
+        query(
+          collection(creator(OWNER), 'generationJobs'),
+          where('ownerUid', '==', OWNER),
+          where('status', '==', 'running'),
+        ),
+      ),
+    );
+  });
+
+  it("denies listing other people's jobs", async () => {
+    await assertFails(getDocs(collection(creator(OWNER), 'generationJobs')));
+    await assertFails(
+      getDocs(
+        query(collection(creator(STRANGER), 'generationJobs'), where('ownerUid', '==', OWNER)),
+      ),
+    );
+  });
+});
+
+// ------------------------------------------------------------------ M4: generated walks
+
+describe('walks (M4): categories replace topic, difficulty is one of three', () => {
+  it('lets the owner set categories and a difficulty', async () => {
+    await assertSucceeds(
+      setDoc(
+        doc(creator(OWNER), 'walks/new'),
+        walkData({ categories: ['history', 'local'], difficulty: 'kids' }),
+      ),
+    );
+    await seed('draft');
+    await assertSucceeds(
+      updateDoc(doc(creator(OWNER), `walks/${WALK}`), { categories: [], difficulty: 'expert' }),
+    );
+  });
+
+  it('denies the old free-text topic, a bad difficulty and a non-list', async () => {
+    await assertFails(setDoc(doc(creator(OWNER), 'walks/new'), walkData({ topic: 'Vikings' })));
+    await seed('draft');
+    await assertFails(updateDoc(doc(creator(OWNER), `walks/${WALK}`), { difficulty: 'hard' }));
+    await assertFails(updateDoc(doc(creator(OWNER), `walks/${WALK}`), { categories: 'history' }));
+  });
+});
+
+describe('stops (M4): a stop may keep the bank question it came from', () => {
+  it('lets the owner write a bankQuestionId and remove it again', async () => {
+    await seed('draft');
+    const ref = doc(creator(OWNER), `walks/${WALK}/stops/${STOP}`);
+    await assertSucceeds(updateDoc(ref, { bankQuestionId: 'abc123' }));
+    await assertSucceeds(setDoc(ref, stopData()));
+  });
+
+  it('denies a bankQuestionId that is not a short string', async () => {
+    await seed('draft');
+    const ref = doc(creator(OWNER), `walks/${WALK}/stops/${STOP}`);
+    await assertFails(updateDoc(ref, { bankQuestionId: 42 }));
+    await assertFails(updateDoc(ref, { bankQuestionId: 'x'.repeat(41) }));
+  });
+});
+
+describe('questionBank, places and function bookkeeping: no client access', () => {
+  const paths = [
+    'questionBank/q1',
+    'places/wikidata:Q1',
+    'bankMeta/spend',
+    'bankTopUps/history.medieval.kids',
+    `rateLimits/${OWNER}`,
+  ];
+
+  it('lets functions write them (rules disabled)', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      for (const p of paths) await assertSucceeds(setDoc(doc(ctx.firestore(), p), { x: 1 }));
+    });
+  });
+
+  it('denies every client read and write, even by a creator for their own uid', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      for (const p of paths) await setDoc(doc(ctx.firestore(), p), { x: 1 });
+    });
+    for (const p of paths) {
+      await assertFails(getDoc(doc(creator(OWNER), p)));
+      await assertFails(setDoc(doc(creator(OWNER), p), { x: 2 }));
+    }
+    await assertFails(getDocs(collection(anon(PLAYER), 'questionBank')));
+  });
+});
+
+describe('questionReports: one per person and question, by a team of the walk', () => {
+  const BANK_Q = 'bq1';
+
+  async function seedReportable(bank: boolean) {
+    await seed('open', { team: started });
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      await setDoc(
+        doc(ctx.firestore(), `walks/${WALK}/stops/${STOP}`),
+        stopData(bank ? { bankQuestionId: BANK_Q, origin: 'ai' } : {}),
+      );
+    });
+  }
+
+  const bankReport = (overrides: DocumentData = {}) => ({
+    uid: PLAYER,
+    reason: 'wrong',
+    createdAt: serverTimestamp(),
+    walkId: WALK,
+    stopId: STOP,
+    questionId: BANK_Q,
+    ...overrides,
+  });
+
+  it('lets a team report a bank question, once, under its id', async () => {
+    await seedReportable(true);
+    const ref = doc(anon(PLAYER), `questionReports/bank_${BANK_Q}_${PLAYER}`);
+    await assertSucceeds(setDoc(ref, bankReport()));
+    await assertFails(setDoc(ref, bankReport({ reason: 'offensive' })));
+  });
+
+  it("lets a team report a creator's own question under the walk and stop", async () => {
+    await seedReportable(false);
+    const { questionId: _q, ...report } = bankReport({ reason: 'confusing' });
+    void _q;
+    await assertSucceeds(
+      setDoc(doc(anon(PLAYER), `questionReports/stop_${WALK}_${STOP}_${PLAYER}`), report),
+    );
+  });
+
+  it('denies other ids, other uids, strangers, made-up questions and bad fields', async () => {
+    await seedReportable(true);
+    const db = anon(PLAYER);
+    // Someone else's id, or an id that doesn't match the question.
+    await assertFails(setDoc(doc(db, `questionReports/bank_${BANK_Q}_${STRANGER}`), bankReport()));
+    await assertFails(setDoc(doc(db, `questionReports/anything`), bankReport()));
+    // Reporting as someone else.
+    await assertFails(
+      setDoc(doc(db, `questionReports/bank_${BANK_Q}_${PLAYER}`), bankReport({ uid: STRANGER })),
+    );
+    // A question that isn't the stop's.
+    await assertFails(
+      setDoc(doc(db, `questionReports/bank_other_${PLAYER}`), bankReport({ questionId: 'other' })),
+    );
+    // Not a team of this walk.
+    await assertFails(
+      setDoc(
+        doc(anon(STRANGER), `questionReports/bank_${BANK_Q}_${STRANGER}`),
+        bankReport({ uid: STRANGER }),
+      ),
+    );
+    // A made-up reason, a client time, an extra field.
+    const id = `questionReports/bank_${BANK_Q}_${PLAYER}`;
+    await assertFails(setDoc(doc(db, id), bankReport({ reason: 'boring' })));
+    await assertFails(setDoc(doc(db, id), bankReport({ createdAt: Timestamp.now() })));
+    await assertFails(setDoc(doc(db, id), bankReport({ note: 'hi' })));
+  });
+
+  it('denies reading, changing or deleting a report', async () => {
+    await seedReportable(true);
+    const id = `questionReports/bank_${BANK_Q}_${PLAYER}`;
+    await assertSucceeds(setDoc(doc(anon(PLAYER), id), bankReport()));
+    await assertFails(getDoc(doc(anon(PLAYER), id)));
+    await assertFails(getDoc(doc(creator(OWNER), id)));
+    await assertFails(updateDoc(doc(anon(PLAYER), id), { reason: 'offensive' }));
+    await assertFails(deleteDoc(doc(anon(PLAYER), id)));
+  });
+});

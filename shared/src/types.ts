@@ -5,6 +5,9 @@
  * either Firebase SDK. Both the Admin SDK and React Native Firebase types satisfy them.
  */
 
+import type { GenerationStep } from './callables';
+import type { CategoryId } from './categories';
+
 export interface LatLng {
   latitude: number;
   longitude: number;
@@ -41,10 +44,15 @@ export interface JoinCodeDoc {
 }
 
 export interface WalkRoute {
-  /** Encoded polyline from OpenRouteService. */
+  /** Encoded polyline from OpenRouteService (precision 5; `decodePolyline`). */
   polyline: string;
   distanceM: number;
   durationS: number;
+  /**
+   * `routeKey(start, stops)` of the pins the route was made for. While it matches, the walk's
+   * distance is the routed one; after an edit it is straight lines until `reroute` runs.
+   */
+  key?: string;
 }
 
 /** walks/{walkId} */
@@ -52,8 +60,8 @@ export interface WalkDoc {
   ownerUid: string;
   ownerName: string;
   title: string;
-  /** Generated walks only. */
-  topic?: string;
+  /** Generated walks: the chosen categories. Missing or empty means Auto. */
+  categories?: CategoryId[];
   difficulty?: Difficulty;
   status: WalkStatus;
   joinCode?: string;
@@ -92,6 +100,8 @@ export interface StopDoc {
   hint?: string;
   source?: { title: string; url: string };
   origin: 'ai' | 'manual';
+  /** The question came from the bank (spec §8). Its text is still copied onto the stop. */
+  bankQuestionId?: string;
   warnings: StopWarning[];
   skippedForAll: boolean;
 }
@@ -147,15 +157,29 @@ export interface AlertDoc {
   resolved: boolean;
 }
 
-/** generationJobs/{jobId} */
+/**
+ * generationJobs/{jobId}. The job id is the walk id, so C3 and Home can find a walk's job
+ * without being told. Written by generateWalk only.
+ */
 export interface GenerationJobDoc {
   ownerUid: string;
   walkId: string;
   status: 'running' | 'done' | 'failed';
-  step: 0 | 1 | 2 | 3 | 4;
+  /** The steps C3 shows. `writing` is added only when a Local stop's place is new. */
+  steps: GenerationStep[];
+  /** 0 before the first step; then 1-based, the step running now. Equal to steps.length when done. */
+  step: number;
+  /** One line per finished step: "8 stops named", "8 questions picked". */
   stepDetail: string[];
+  /**
+   * Not written: C3 must not show question text, so *Play it myself* has no spoilers. Kept in
+   * the type because the spec's data model lists it.
+   */
   latestQuestion?: string;
+  /** Set when `status` is `failed`: a sentence C3 can show. */
   error?: string;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
 }
 
 export const STOP_RADII_M = [25, 40, 60] as const;

@@ -24,3 +24,6 @@ functions/lib/
 *.mobileprovision
 service-account*.json
 dist-app/
+
+# Fill-bank run logs (token use and cost per batch)
+scripts/logs/

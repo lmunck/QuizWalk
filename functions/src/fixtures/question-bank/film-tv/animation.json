@@ -1,0 +1,26 @@
+{
+  "category": "film-tv",
+  "subcategory": "animation",
+  "questions": [
+    {
+      "id": "film-tv.animation.kids.01",
+      "difficulty": "kids",
+      "question": "What kind of fish is Nemo in Finding Nemo?",
+      "correct": "A clownfish",
+      "wrong": ["A goldfish", "A pufferfish", "A shark"],
+      "explanation": "Nemo is an orange-and-white clownfish who lives in a sea anemone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "film-tv.animation.kids.02",
+      "difficulty": "kids",
+      "question": "What kind of fish is Nemo in the film Finding Nemo?",
+      "correct": "Clownfish",
+      "wrong": ["Goldfish", "Pufferfish", "Shark"],
+      "explanation": "The same question again, in other words.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

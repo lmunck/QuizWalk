@@ -1,0 +1,332 @@
+{
+  "entities": {
+    "Q3424549": {
+      "type": "item",
+      "id": "Q3424549",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Frederik V (rytterstatue)", "badges": [] },
+        "dewiki": { "site": "dewiki", "title": "Reiterstandbild von Friedrich V.", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Equestrian statue of Frederick V", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "Fredrik V (ryttarstaty)", "badges": [] }
+      }
+    },
+    "Q25042736": {
+      "type": "item",
+      "id": "Q25042736",
+      "sitelinks": {
+        "dewiki": { "site": "dewiki", "title": "Edouard-Suenson-Denkmal", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Edouard Suenson Memorial", "badges": [] }
+      }
+    },
+    "Q17111245": {
+      "type": "item",
+      "id": "Q17111245",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Sølvgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Sølvgade", "badges": [] }
+      }
+    },
+    "Q5399045": {
+      "type": "item",
+      "id": "Q5399045",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Esplanaden", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Esplanaden, Copenhagen", "badges": [] }
+      }
+    },
+    "Q3432062": {
+      "type": "item",
+      "id": "Q3432062",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Amaliegade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Amaliegade", "badges": [] }
+      }
+    },
+    "Q7814120": {
+      "type": "item",
+      "id": "Q7814120",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Toldbodgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Toldbodgade", "badges": [] }
+      }
+    },
+    "Q1589941": {
+      "type": "item",
+      "id": "Q1589941",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Kongens Nytorv", "badges": [] },
+        "dewiki": { "site": "dewiki", "title": "Kongens Nytorv", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Kongens Nytorv", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "Kongens Nytorv", "badges": [] }
+      }
+    },
+    "Q57655930": {
+      "type": "item",
+      "id": "Q57655930",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Holbergsgade", "badges": [] } }
+    },
+    "Q21698059": {
+      "type": "item",
+      "id": "Q21698059",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Gernersgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Gernersgade", "badges": [] }
+      }
+    },
+    "Q21750212": {
+      "type": "item",
+      "id": "Q21750212",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Sankt Pauls Gade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Sankt Pauls Gade", "badges": [] }
+      }
+    },
+    "Q57316321": {
+      "type": "item",
+      "id": "Q57316321",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Heibergsgade", "badges": [] } }
+    },
+    "Q17492339": {
+      "type": "item",
+      "id": "Q17492339",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Grønnegade (København)", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Grønnegade", "badges": [] }
+      }
+    },
+    "Q21685989": {
+      "type": "item",
+      "id": "Q21685989",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Haregade", "badges": [] } }
+    },
+    "Q23890131": {
+      "type": "item",
+      "id": "Q23890131",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Palægade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Palægade", "badges": [] }
+      }
+    },
+    "Q3380402": {
+      "type": "item",
+      "id": "Q3380402",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Borgergade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Borgergade", "badges": [] }
+      }
+    },
+    "Q5308343": {
+      "type": "item",
+      "id": "Q5308343",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Dronningens Tværgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Dronningens Tværgade", "badges": [] }
+      }
+    },
+    "Q67087482": {
+      "type": "item",
+      "id": "Q67087482",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Kvæsthusgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Kvæsthusgade", "badges": [] }
+      }
+    },
+    "Q60441877": {
+      "type": "item",
+      "id": "Q60441877",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Jens Kofods Gade", "badges": [] } }
+    },
+    "Q60429608": {
+      "type": "item",
+      "id": "Q60429608",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Bornholmsgade", "badges": [] } }
+    },
+    "Q12315125": {
+      "type": "item",
+      "id": "Q12315125",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Hammerensgade", "badges": [] } }
+    },
+    "Q84511108": {
+      "type": "item",
+      "id": "Q84511108",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Nyhavnsbroen", "badges": [] } }
+    },
+    "Q61884583": {
+      "type": "item",
+      "id": "Q61884583",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Hovedvagtsgade", "badges": [] } }
+    },
+    "Q4568402": {
+      "type": "item",
+      "id": "Q4568402",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Skuespilhuset", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Royal Danish Playhouse", "badges": [] }
+      }
+    },
+    "Q21698617": {
+      "type": "item",
+      "id": "Q21698617",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Rævegade", "badges": [] } }
+    },
+    "Q3365803": {
+      "type": "item",
+      "id": "Q3365803",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Sankt Annæ Plads", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Sankt Annæ Plads", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "Sankt Annæ Plads", "badges": [] }
+      }
+    },
+    "Q21768476": {
+      "type": "item",
+      "id": "Q21768476",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Olfert Fischers Gade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Olfert Fischers Gade", "badges": [] }
+      }
+    },
+    "Q21686001": {
+      "type": "item",
+      "id": "Q21686001",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Tigergade", "badges": [] } }
+    },
+    "Q21660131": {
+      "type": "item",
+      "id": "Q21660131",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Suensonsgade", "badges": [] } }
+    },
+    "Q21660023": {
+      "type": "item",
+      "id": "Q21660023",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Elsdyrsgade", "badges": [] } }
+    },
+    "Q3429049": {
+      "type": "item",
+      "id": "Q3429049",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Gothersgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Gothersgade", "badges": [] }
+      }
+    },
+    "Q112821537": { "type": "item", "id": "Q112821537", "sitelinks": {} },
+    "Q4972772": {
+      "type": "item",
+      "id": "Q4972772",
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Brockdorff's Palace", "badges": [] } }
+    },
+    "Q93500871": { "type": "item", "id": "Q93500871", "sitelinks": {} },
+    "Q28225876": {
+      "type": "item",
+      "id": "Q28225876",
+      "sitelinks": {
+        "enwiki": { "site": "enwiki", "title": "Brigadér Halling House", "badges": [] }
+      }
+    },
+    "Q11962760": {
+      "type": "item",
+      "id": "Q11962760",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Bådteatret", "badges": [] } }
+    },
+    "Q3434243": {
+      "type": "item",
+      "id": "Q3434243",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Amaliehaven", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Amaliehaven", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "Amaliehaven", "badges": [] }
+      }
+    },
+    "Q11956901": {
+      "type": "item",
+      "id": "Q11956901",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Adelgade (København)", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Adelgade", "badges": [] }
+      }
+    },
+    "Q3429066": {
+      "type": "item",
+      "id": "Q3429066",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Larsens Plads", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Larsens Plads", "badges": [] }
+      }
+    },
+    "Q11957655": { "type": "item", "id": "Q11957655", "sitelinks": {} },
+    "Q27429963": {
+      "type": "item",
+      "id": "Q27429963",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Ny Adelgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Ny Adelgade", "badges": [] }
+      }
+    },
+    "Q12337357": {
+      "type": "item",
+      "id": "Q12337357",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Store Kongensgade", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Store Kongensgade", "badges": [] }
+      }
+    },
+    "Q34057957": { "type": "item", "id": "Q34057957", "sitelinks": {} },
+    "Q28225871": {
+      "type": "item",
+      "id": "Q28225871",
+      "sitelinks": {
+        "enwiki": { "site": "enwiki", "title": "English Terrace (Toldbodgade)", "badges": [] }
+      }
+    },
+    "Q77262434": {
+      "type": "item",
+      "id": "Q77262434",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Lille Strandstræde", "badges": [] } }
+    },
+    "Q211053": {
+      "type": "item",
+      "id": "Q211053",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Amalienborg", "badges": [] },
+        "dewiki": { "site": "dewiki", "title": "Schloss Amalienborg", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Amalienborg", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "Amalienborg", "badges": [] }
+      }
+    },
+    "Q124552088": { "type": "item", "id": "Q124552088", "sitelinks": {} },
+    "Q12329915": {
+      "type": "item",
+      "id": "Q12329915",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "Ofelia Plads", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "Ofelia Plads", "badges": [] }
+      }
+    },
+    "Q12323264": {
+      "type": "item",
+      "id": "Q12323264",
+      "sitelinks": { "dawiki": { "site": "dawiki", "title": "Kvæsthusbroen", "badges": [] } }
+    },
+    "Q1880894": {
+      "type": "item",
+      "id": "Q1880894",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "M1 (metro)", "badges": [] },
+        "dewiki": { "site": "dewiki", "title": "M1 (Metro Kopenhagen)", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "M1 (Copenhagen Metro)", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "M1 (Köpenhamns metro)", "badges": [] }
+      }
+    },
+    "Q1880954": {
+      "type": "item",
+      "id": "Q1880954",
+      "sitelinks": {
+        "dawiki": { "site": "dawiki", "title": "M2 (metro)", "badges": [] },
+        "dewiki": { "site": "dewiki", "title": "M2 (Metro Kopenhagen)", "badges": [] },
+        "enwiki": { "site": "enwiki", "title": "M2 (Copenhagen Metro)", "badges": [] },
+        "svwiki": { "site": "svwiki", "title": "M2 (Köpenhamns metro)", "badges": [] }
+      }
+    }
+  },
+  "success": 1
+}

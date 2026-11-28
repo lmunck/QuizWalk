@@ -1,0 +1,1230 @@
+{
+  "category": "science",
+  "subcategory": "earth-weather",
+  "questions": [
+    {
+      "id": "science.earth-weather.kids.01",
+      "difficulty": "kids",
+      "question": "What is the water that falls from clouds in small drops called?",
+      "correct": "Rain",
+      "wrong": ["Fog", "Frost", "Hail"],
+      "explanation": "Raindrops are not shaped like tears. Small drops are round, and big ones get flattened at the bottom as they fall.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.02",
+      "difficulty": "kids",
+      "question": "What do we call the soft white flakes that fall when it is very cold?",
+      "correct": "Snow",
+      "wrong": ["Hail", "Fog", "Dew"],
+      "explanation": "Snow forms when water in clouds freezes into tiny ice crystals. The crystals stick together and make flakes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.03",
+      "difficulty": "kids",
+      "question": "What is hot, melted rock called when it flows out of a volcano?",
+      "correct": "Lava",
+      "wrong": ["Ash", "Steam", "Mud"],
+      "explanation": "Lava can be hotter than 1,000 degrees Celsius. When it cools, it turns into hard rock.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.04",
+      "difficulty": "kids",
+      "question": "Which season is the coldest in Denmark?",
+      "correct": "Winter",
+      "wrong": ["Spring", "Summer", "Autumn"],
+      "explanation": "In winter the days are short and the Sun is low in the sky. So the ground and air get less heat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.05",
+      "difficulty": "kids",
+      "question": "What do you see in the sky when the Sun shines through rain?",
+      "correct": "A rainbow",
+      "wrong": ["An aurora", "An eclipse", "A comet"],
+      "explanation": "Sunlight bends inside the raindrops and splits into colours. You must have the Sun behind you to see it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.06",
+      "difficulty": "kids",
+      "question": "What is the loud noise that follows a flash of lightning?",
+      "correct": "Thunder",
+      "wrong": ["An echo", "A siren", "A squeak"],
+      "explanation": "Light travels much faster than sound, so we see the flash first and hear the bang a little later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.07",
+      "difficulty": "kids",
+      "question": "What is a tornado?",
+      "correct": "A spinning tube of wind",
+      "wrong": ["A very big wave", "A thick fog", "A hot rain"],
+      "explanation": "A tornado hangs down from a storm cloud and can lift things off the ground. Most last only a few minutes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.08",
+      "difficulty": "kids",
+      "question": "What do we call a huge tropical storm with strong winds and heavy rain over the sea?",
+      "correct": "A hurricane",
+      "wrong": ["A blizzard", "A heatwave", "A drizzle"],
+      "explanation": "Hurricanes get their energy from warm sea water. They get weaker when they move over land or cold water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.09",
+      "difficulty": "kids",
+      "question": "What is the outer layer of the Earth, where we live, called?",
+      "correct": "The crust",
+      "wrong": ["The core", "The mantle", "The magma"],
+      "explanation": "The crust is thin compared with the rest of the Earth, like the skin of an apple.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.10",
+      "difficulty": "kids",
+      "question": "What is the very middle of the Earth called?",
+      "correct": "The core",
+      "wrong": ["The crust", "The mantle", "The surface"],
+      "explanation": "The core is about as hot as the surface of the Sun. It starts almost 3,000 km below our feet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.11",
+      "difficulty": "kids",
+      "question": "What do we call balls of ice that fall from storm clouds?",
+      "correct": "Hail",
+      "wrong": ["Dew", "Mist", "Drizzle"],
+      "explanation": "Strong rising winds in a storm cloud hold the hailstones up while more ice freezes onto them. Some grow as big as golf balls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.12",
+      "difficulty": "kids",
+      "question": "What is fog?",
+      "correct": "A cloud close to the ground",
+      "wrong": ["Dust blown by the wind", "Smoke from far-away fires", "Frozen rain"],
+      "explanation": "Fog is made of tiny water drops, just like a cloud. If you walk into fog on a hill, you are inside a cloud.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.13",
+      "difficulty": "kids",
+      "question": "What do we put on a roof to show which way the wind blows?",
+      "correct": "A weather vane",
+      "wrong": ["An aerial", "A chimney", "A gutter"],
+      "explanation": "The pointer of a weather vane turns until it faces into the wind. Many old vanes are shaped like cockerels.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.14",
+      "difficulty": "kids",
+      "question": "Which tool do we use to measure how hot or cold the air is?",
+      "correct": "A thermometer",
+      "wrong": ["A barometer", "A compass", "A stopwatch"],
+      "explanation": "A thermometer shows the temperature in degrees. In Denmark we use degrees Celsius.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.15",
+      "difficulty": "kids",
+      "question": "Which tool measures how much rain has fallen?",
+      "correct": "A rain gauge",
+      "wrong": ["A compass", "A telescope", "A stopwatch"],
+      "explanation": "A simple rain gauge is a container with a scale on the side. It shows how many millimetres of rain have fallen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.16",
+      "difficulty": "kids",
+      "question": "How many sides does a snowflake usually have?",
+      "correct": "Six",
+      "wrong": ["Four", "Five", "Eight"],
+      "explanation": "Water molecules freeze into a six-sided pattern. That is why snowflakes have six arms or six corners.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.17",
+      "difficulty": "kids",
+      "question": "Which light rock from volcanoes can float on water?",
+      "correct": "Pumice",
+      "wrong": ["Granite", "Marble", "Slate"],
+      "explanation": "Pumice is full of tiny holes made by gas bubbles in the lava. The holes make it so light that it floats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.18",
+      "difficulty": "kids",
+      "question": "What do we call it when the ground shakes suddenly?",
+      "correct": "An earthquake",
+      "wrong": ["A tornado", "A tsunami", "An eruption"],
+      "explanation": "Earthquakes happen when big pieces of the Earth's crust slip past each other and the rock suddenly moves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.19",
+      "difficulty": "kids",
+      "question": "What do we call the way water moves from sea to sky to land and back again?",
+      "correct": "The water cycle",
+      "wrong": ["The rock cycle", "The wind cycle", "The tide cycle"],
+      "explanation": "The Sun warms the sea and the water rises as vapour. It makes clouds, falls as rain and runs back to the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.20",
+      "difficulty": "kids",
+      "question": "What do we call it when the Sun warms water and it rises into the air as invisible gas?",
+      "correct": "Evaporation",
+      "wrong": ["Freezing", "Melting", "Erosion"],
+      "explanation": "This is why puddles slowly disappear after the rain stops. The water has not gone away. It is in the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.21",
+      "difficulty": "kids",
+      "question": "What are clouds made of?",
+      "correct": "Tiny drops of water and ice",
+      "wrong": ["Smoke from fires", "Floating cotton", "Dust from space"],
+      "explanation": "The drops are so small and light that they float in the air. They only fall when they join and get heavy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.22",
+      "difficulty": "kids",
+      "question": "What do we call a long time with little or no rain?",
+      "correct": "A drought",
+      "wrong": ["A flood", "A blizzard", "A gale"],
+      "explanation": "During a drought, rivers and lakes get low and plants dry up. Farmers can struggle to grow food.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.23",
+      "difficulty": "kids",
+      "question": "What do we call it when too much water covers land that is normally dry?",
+      "correct": "A flood",
+      "wrong": ["A drought", "A heatwave", "A breeze"],
+      "explanation": "Floods can happen after heavy rain, when snow melts fast, or when the sea rises in a storm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.24",
+      "difficulty": "kids",
+      "question": "What is a heavy snowstorm with strong wind called?",
+      "correct": "A blizzard",
+      "wrong": ["A drizzle", "A heatwave", "A shower"],
+      "explanation": "In a blizzard the wind blows the snow around, so it is hard to see anything even a few metres away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.25",
+      "difficulty": "kids",
+      "question": "In which season do the leaves on many trees turn red and yellow and fall off?",
+      "correct": "Autumn",
+      "wrong": ["Spring", "Summer", "Winter"],
+      "explanation": "Trees stop making green colour when the days get shorter. Then the red and yellow colours show up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.26",
+      "difficulty": "kids",
+      "question": "Which smooth, shiny stone, often white, do sculptors use for statues?",
+      "correct": "Marble",
+      "wrong": ["Coal", "Pumice", "Slate"],
+      "explanation": "Marble is easy to carve and polishes well. Many famous statues from Greece and Rome are made of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.27",
+      "difficulty": "kids",
+      "question": "What is lightning?",
+      "correct": "A giant electric spark",
+      "wrong": ["A beam from the Moon", "A burning cloud", "A spinning wind"],
+      "explanation": "Lightning is a huge spark that jumps inside a cloud or between a cloud and the ground. It is about five times hotter than the Sun's surface.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.28",
+      "difficulty": "kids",
+      "question": "What are the tiny drops of water you find on grass in the early morning?",
+      "correct": "Dew",
+      "wrong": ["Hail", "Smog", "Steam"],
+      "explanation": "At night, grass and leaves get cold. Water vapour in the air turns into drops on them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.29",
+      "difficulty": "kids",
+      "question": "What do we call the opening at the top of a volcano?",
+      "correct": "The crater",
+      "wrong": ["The cave", "The valley", "The tunnel"],
+      "explanation": "Lava, ash and gas come out of the crater when a volcano erupts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.30",
+      "difficulty": "kids",
+      "question": "Which clear gem is the hardest mineral found in nature?",
+      "correct": "Diamond",
+      "wrong": ["Ruby", "Emerald", "Quartz"],
+      "explanation": "Diamonds form deep in the Earth, where it is very hot and the pressure is huge. Only another diamond can scratch a diamond.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.31",
+      "difficulty": "kids",
+      "question": "What do we call the layer of air around the Earth?",
+      "correct": "The atmosphere",
+      "wrong": ["The mantle", "The horizon", "The orbit"],
+      "explanation": "The atmosphere gives us air to breathe and protects us from much of the Sun's harmful light.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.32",
+      "difficulty": "kids",
+      "question": "What do we call a report that says what the weather will be like tomorrow?",
+      "correct": "A weather forecast",
+      "wrong": ["A weather diary", "A weather record", "A weather map key"],
+      "explanation": "Forecasters use satellites, computers and measurements from all over the world to work out what the weather will do.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.33",
+      "difficulty": "kids",
+      "question": "Which soft white rock was used to write on blackboards?",
+      "correct": "Chalk",
+      "wrong": ["Granite", "Basalt", "Coal"],
+      "explanation": "Chalk is so soft that tiny bits rub off as you write, leaving a white line on the dark board.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.34",
+      "difficulty": "kids",
+      "question": "Which black rock do people dig up and burn for heat and power?",
+      "correct": "Coal",
+      "wrong": ["Chalk", "Granite", "Marble"],
+      "explanation": "Coal is dug out of mines deep underground or from huge open pits. When it burns, it gives off heat and smoke.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.35",
+      "difficulty": "kids",
+      "question": "What do we call a giant sea wave made by an earthquake under the sea?",
+      "correct": "A tsunami",
+      "wrong": ["A tornado", "A hurricane", "A monsoon"],
+      "explanation": "A tsunami can cross a whole ocean. Near the coast it grows tall and rushes onto the land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.36",
+      "difficulty": "kids",
+      "question": "Which kind of climate is hot and wet all year, with rainforests?",
+      "correct": "Tropical",
+      "wrong": ["Polar", "Temperate", "Desert"],
+      "explanation": "Rainforests grow near the equator. The Sun is high in the sky all year, so it is always warm, and in many places it rains almost every day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.37",
+      "difficulty": "kids",
+      "question": "What do we call hot water that shoots high into the air from a hole in the ground?",
+      "correct": "A geyser",
+      "wrong": ["A glacier", "A fjord", "A delta"],
+      "explanation": "Water deep underground is heated by hot rock until it boils and bursts up. Then the hole fills with water again, and it all happens once more.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.38",
+      "difficulty": "kids",
+      "question": "What do we call the tiny white ice crystals on grass and windows on a very cold morning?",
+      "correct": "Frost",
+      "wrong": ["Dew", "Drizzle", "Steam"],
+      "explanation": "Frost forms when water vapour turns straight into ice on a surface colder than 0 degrees.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.39",
+      "difficulty": "kids",
+      "question": "What is sand mostly made from?",
+      "correct": "Tiny bits of broken rock",
+      "wrong": ["Crushed glass", "Dried mud", "Old leaves"],
+      "explanation": "Wind, water and ice slowly break rock into smaller and smaller pieces. Some white beaches are made of broken shells and coral instead.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.kids.40",
+      "difficulty": "kids",
+      "question": "What do we call a mountain with an opening where hot rock can come out?",
+      "correct": "A volcano",
+      "wrong": ["A glacier", "A canyon", "A cave"],
+      "explanation": "Volcanoes form where hot melted rock from deep in the Earth finds a way up to the surface.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.01",
+      "difficulty": "mixed",
+      "question": "Which type of cloud looks like white cotton-wool puffs on a fine day?",
+      "correct": "Cumulus",
+      "wrong": ["Cirrus", "Stratus", "Nimbostratus"],
+      "explanation": "Cumulus means 'heap' in Latin. If it grows very tall and dark, it can turn into a storm cloud.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.02",
+      "difficulty": "mixed",
+      "question": "What do we call it when wind, water or ice carry away bits of soil and rock?",
+      "correct": "Erosion",
+      "wrong": ["Eruption", "Evaporation", "Expansion"],
+      "explanation": "Over millions of years, erosion by rivers and glaciers can carve out deep valleys and canyons.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.03",
+      "difficulty": "mixed",
+      "question": "What does a barometer measure?",
+      "correct": "Air pressure",
+      "wrong": ["Wind speed", "Rainfall", "Temperature"],
+      "explanation": "When air pressure falls, bad weather is often coming. Old sailors watched their barometers closely.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which black, glassy rock forms when lava cools very fast?",
+      "correct": "Obsidian",
+      "wrong": ["Granite", "Limestone", "Sandstone"],
+      "explanation": "People in the Stone Age made sharp knives and arrow tips from obsidian, because it breaks into very sharp edges.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.05",
+      "difficulty": "mixed",
+      "question": "What do we call a mix of rain and snow falling together?",
+      "correct": "Sleet",
+      "wrong": ["Hail", "Drizzle", "Frost"],
+      "explanation": "Sleet happens when snow melts a little as it falls through warmer air near the ground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.06",
+      "difficulty": "mixed",
+      "question": "In weather forecasts, what is a 'front'?",
+      "correct": "Where warm and cold air meet",
+      "wrong": [
+        "A line of tall clouds at sea",
+        "The first rain of a storm",
+        "A calm area of high air"
+      ],
+      "explanation": "Fronts often bring clouds, rain and a change in temperature when they pass over.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.07",
+      "difficulty": "mixed",
+      "question": "Which layer of the Earth lies between the crust and the core?",
+      "correct": "The mantle",
+      "wrong": ["The biosphere", "The hydrosphere", "The atmosphere"],
+      "explanation": "The mantle makes up most of the Earth's volume. It is solid, hot rock, but over millions of years it flows very slowly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.08",
+      "difficulty": "mixed",
+      "question": "What is the pool of melted rock under a volcano called?",
+      "correct": "A magma chamber",
+      "wrong": ["A lava tube", "A crater lake", "An ash pit"],
+      "explanation": "Magma is called lava once it reaches the surface. A chamber can lie several kilometres underground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which two metals mostly make up the Earth's core?",
+      "correct": "Iron and nickel",
+      "wrong": ["Gold and silver", "Copper and tin", "Lead and zinc"],
+      "explanation": "Iron and nickel are heavy, so they sank to the middle when the Earth was young and melted.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.10",
+      "difficulty": "mixed",
+      "question": "What are the huge, slowly moving pieces of the Earth's crust called?",
+      "correct": "Tectonic plates",
+      "wrong": ["Magma chambers", "Rock cycles", "Ash layers"],
+      "explanation": "The plates move a few centimetres a year, about as fast as your fingernails grow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.11",
+      "difficulty": "mixed",
+      "question": "Where do most earthquakes happen?",
+      "correct": "Along the edges of tectonic plates",
+      "wrong": ["Only near the equator", "Only on mountain tops", "Evenly all over the planet"],
+      "explanation": "At plate edges, the plates push, pull or slide past each other. Sometimes they get stuck and then slip suddenly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which ocean is surrounded by the 'Ring of Fire', a belt of volcanoes and earthquakes?",
+      "correct": "The Pacific Ocean",
+      "wrong": ["The Atlantic Ocean", "The Indian Ocean", "The Arctic Ocean"],
+      "explanation": "The ring follows the edges of the plates around the Pacific. Japan, Chile and New Zealand all lie on it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.13",
+      "difficulty": "mixed",
+      "question": "What kind of rock forms when magma or lava cools and hardens?",
+      "correct": "Igneous",
+      "wrong": ["Sedimentary", "Metamorphic", "Carbonate"],
+      "explanation": "The word igneous comes from the Latin word for fire. Granite and basalt are both igneous rocks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.14",
+      "difficulty": "mixed",
+      "question": "Marble is a rock made when heat and pressure change which other rock?",
+      "correct": "Limestone",
+      "wrong": ["Granite", "Sandstone", "Basalt"],
+      "explanation": "Marble is metamorphic, which means 'changed form'. Pure limestone turns into white marble.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.15",
+      "difficulty": "mixed",
+      "question": "What is chalk mostly made from?",
+      "correct": "Tiny shells of plankton",
+      "wrong": ["Crushed volcanic ash", "Hardened river mud", "Dried desert sand"],
+      "explanation": "Most chalk formed on the sea floor while dinosaurs lived. The Cretaceous period is named after chalk, which is 'creta' in Latin.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.16",
+      "difficulty": "mixed",
+      "question": "In a cave, what do we call the icicle-shaped rock that hangs down from the ceiling?",
+      "correct": "A stalactite",
+      "wrong": ["A stalagmite", "A geode", "A fossil"],
+      "explanation": "A stalactite grows from the ceiling. A stalagmite grows up from the floor. Remember: stalaCtites hang from the Ceiling.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.17",
+      "difficulty": "mixed",
+      "question": "Which mineral is the softest on the Mohs hardness scale?",
+      "correct": "Talc",
+      "wrong": ["Quartz", "Calcite", "Feldspar"],
+      "explanation": "Talc is so soft you can scratch it with a fingernail. It feels smooth and greasy, a bit like soap.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.18",
+      "difficulty": "mixed",
+      "question": "Which mineral is the main part of most beach sand?",
+      "correct": "Quartz",
+      "wrong": ["Mica", "Salt", "Gypsum"],
+      "explanation": "Quartz is very hard and does not break down easily, so it stays behind when softer minerals wear away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.19",
+      "difficulty": "mixed",
+      "question": "Coal formed mainly from what?",
+      "correct": "Ancient plants",
+      "wrong": ["Cooled lava", "Sea shells", "Frozen sand"],
+      "explanation": "Plants in warm swamp forests died and got buried. Over millions of years, heat and pressure turned them into coal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.20",
+      "difficulty": "mixed",
+      "question": "In which layer of the atmosphere does our weather happen?",
+      "correct": "The troposphere",
+      "wrong": ["The stratosphere", "The mesosphere", "The thermosphere"],
+      "explanation": "The troposphere is the lowest layer, with most of the air and nearly all the clouds. It is thicker over the equator than over the poles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.21",
+      "difficulty": "mixed",
+      "question": "What does the ozone layer do?",
+      "correct": "It absorbs harmful ultraviolet light",
+      "wrong": [
+        "It makes rain clouds",
+        "It keeps the ground warm at night",
+        "It stops all meteors"
+      ],
+      "explanation": "Ultraviolet light from the Sun can harm skin and eyes. The ozone layer soaks up the most dangerous kinds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.22",
+      "difficulty": "mixed",
+      "question": "What is the weather like in the very centre of a hurricane?",
+      "correct": "Calm, often with clear sky",
+      "wrong": ["The strongest winds of all", "Heavy hail", "Thick snow"],
+      "explanation": "The calm centre is called the eye. It is surrounded by the eyewall, where the winds are strongest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.23",
+      "difficulty": "mixed",
+      "question": "What does humidity tell us?",
+      "correct": "How much water vapour is in the air",
+      "wrong": ["How fast the wind blows", "How hot the Sun is", "How heavy the air is"],
+      "explanation": "On a humid day the air feels sticky, because sweat dries more slowly from your skin.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which instrument measures wind speed?",
+      "correct": "An anemometer",
+      "wrong": ["A hygrometer", "A barometer", "A seismograph"],
+      "explanation": "Many anemometers have three small cups that spin faster when the wind is stronger.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.25",
+      "difficulty": "mixed",
+      "question": "What does a seismograph record?",
+      "correct": "Shaking of the ground",
+      "wrong": ["Air pressure", "Wind direction", "Rainfall"],
+      "explanation": "Seismographs pick up shaking from earthquakes, even from very far away on the other side of the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.26",
+      "difficulty": "mixed",
+      "question": "You see lightning, then count 3 seconds before you hear thunder. How far away is the strike?",
+      "correct": "About 1 kilometre",
+      "wrong": ["About 100 metres", "About 3 kilometres", "About 10 kilometres"],
+      "explanation": "Sound travels about 1 kilometre in 3 seconds. Light is so fast that you see the flash almost at once.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which scale measures wind strength, from calm to hurricane force?",
+      "correct": "The Beaufort scale",
+      "wrong": ["The Richter scale", "The Mohs scale", "The Kelvin scale"],
+      "explanation": "It is named after Francis Beaufort, an officer in the British navy, who drew it up for sailors in 1805.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.28",
+      "difficulty": "mixed",
+      "question": "What is a monsoon?",
+      "correct": "A seasonal wind that brings heavy rain",
+      "wrong": [
+        "A fast spinning column of air",
+        "A wave caused by an earthquake",
+        "A cloud made of ice"
+      ],
+      "explanation": "Monsoon winds change direction with the seasons. In South Asia, the summer monsoon brings most of the year's rain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.29",
+      "difficulty": "mixed",
+      "question": "What makes the wind blow?",
+      "correct": "Air moving from high to low pressure",
+      "wrong": [
+        "The Moon pulling on the air",
+        "Clouds pushing the air along",
+        "The Earth's core giving off heat"
+      ],
+      "explanation": "Warm air rises, so air pressure is lower there. Cooler air flows in to fill the gap, and we feel it as wind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which climate zone is Denmark in?",
+      "correct": "Temperate",
+      "wrong": ["Tropical", "Polar", "Desert"],
+      "explanation": "In temperate zones the seasons change through the year and it is neither very hot nor very cold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.31",
+      "difficulty": "mixed",
+      "question": "What is a savanna?",
+      "correct": "A grassland with wet and dry seasons",
+      "wrong": ["A cold plain with no trees", "A thick, wet rainforest", "A sandy desert"],
+      "explanation": "Savannas, like those in East Africa, have scattered trees and tall grass. Many large animals graze there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.32",
+      "difficulty": "mixed",
+      "question": "What is permafrost?",
+      "correct": "Ground that stays frozen for years",
+      "wrong": [
+        "Ice floating on the Arctic Sea",
+        "A very cold wind from the north",
+        "A thick layer of winter fog"
+      ],
+      "explanation": "Permafrost covers much of the far north, such as Siberia, Alaska and northern Canada.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.33",
+      "difficulty": "mixed",
+      "question": "What do we call a volcano that scientists expect never to erupt again?",
+      "correct": "Extinct",
+      "wrong": ["Dormant", "Active", "Rising"],
+      "explanation": "A dormant volcano is only sleeping and may wake up again. An extinct one has lost its supply of magma.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.34",
+      "difficulty": "mixed",
+      "question": "Hailstones grow inside which kind of cloud?",
+      "correct": "Cumulonimbus",
+      "wrong": ["Cirrus", "Stratus", "Altostratus"],
+      "explanation": "Cumulonimbus clouds are tall storm clouds. Strong rising winds inside them hold the hailstones up while more ice freezes on.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.35",
+      "difficulty": "mixed",
+      "question": "Which type of cloud is thin and wispy and found very high up?",
+      "correct": "Cirrus",
+      "wrong": ["Cumulus", "Stratus", "Nimbostratus"],
+      "explanation": "Cirrus clouds are made of ice crystals. Sometimes they are the first sign that bad weather is on the way.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.36",
+      "difficulty": "mixed",
+      "question": "Which Danish island is known for its cliffs of hard granite?",
+      "correct": "Bornholm",
+      "wrong": ["Funen", "Zealand", "Lolland"],
+      "explanation": "Most of Denmark is covered by clay, sand and gravel left by the ice ages. On Bornholm, ancient hard rock comes up to the surface.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.37",
+      "difficulty": "mixed",
+      "question": "What causes the sound of thunder?",
+      "correct": "Air heated very fast by lightning",
+      "wrong": [
+        "Clouds crashing into each other",
+        "Rain hitting the ground",
+        "Ice breaking inside the cloud"
+      ],
+      "explanation": "A lightning bolt heats the air around it in a split second. The air expands fast and makes a shock wave we hear as thunder.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.38",
+      "difficulty": "mixed",
+      "question": "What is smog?",
+      "correct": "Fog or haze made worse by pollution",
+      "wrong": [
+        "Very heavy, wet snowfall",
+        "A thin kind of morning frost",
+        "Warm mist rising off the sea"
+      ],
+      "explanation": "The word comes from 'smoke' and 'fog'. It is worst in cities with lots of traffic and little wind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.mixed.39",
+      "difficulty": "mixed",
+      "question": "Why is it usually colder high up on a mountain?",
+      "correct": "Rising air expands and cools",
+      "wrong": [
+        "The Sun is much further away",
+        "There is no wind to bring warmth",
+        "Clouds keep it in shadow"
+      ],
+      "explanation": "The Sun warms the ground, and the ground warms the air above it. As air rises, the pressure falls, so the air spreads out and cools.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.01",
+      "difficulty": "expert",
+      "question": "In which layer of the atmosphere is the ozone layer found?",
+      "correct": "The stratosphere",
+      "wrong": ["The troposphere", "The mesosphere", "The thermosphere"],
+      "explanation": "The ozone layer lies about 15 to 35 km up, well above the height where planes usually fly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.02",
+      "difficulty": "expert",
+      "question": "What is the boundary between the Earth's crust and mantle called?",
+      "correct": "The Moho",
+      "wrong": ["The Wegener line", "The Richter zone", "The Kelvin layer"],
+      "explanation": "Moho is short for Mohorovičić, the Croatian scientist who found it in 1909. Earthquake waves change speed there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.03",
+      "difficulty": "expert",
+      "question": "Which scientist put forward the idea of continental drift in 1912?",
+      "correct": "Alfred Wegener",
+      "wrong": ["Charles Darwin", "Charles Lyell", "Charles Richter"],
+      "explanation": "Wegener saw that South America and Africa fit like puzzle pieces. Most scientists only accepted his idea decades later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.04",
+      "difficulty": "expert",
+      "question": "About 300 million years ago almost all land was joined in one supercontinent. What was it called?",
+      "correct": "Pangaea",
+      "wrong": ["Rodinia", "Atlantis", "Lemuria"],
+      "explanation": "Pangaea means 'all earth'. It broke apart slowly, and the pieces drifted to where our continents are now.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.05",
+      "difficulty": "expert",
+      "question": "What is a caldera?",
+      "correct": "Basin left by a collapsed volcano",
+      "wrong": [
+        "A tunnel that carries lava",
+        "A steep cone built of ash",
+        "A crack where lava leaks out"
+      ],
+      "explanation": "A caldera forms when a magma chamber empties and the ground above falls in. Some calderas are many kilometres wide.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.06",
+      "difficulty": "expert",
+      "question": "What is a pyroclastic flow?",
+      "correct": "A fast, hot cloud of gas and ash",
+      "wrong": ["A slow river of lava", "A wave of seawater", "A flow of cold mud"],
+      "explanation": "Pyroclastic flows can race down a volcano at well over 100 km an hour. They are far more dangerous than slow lava flows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.07",
+      "difficulty": "expert",
+      "question": "Which group of minerals is the most common in the Earth's crust?",
+      "correct": "Feldspars",
+      "wrong": ["Quartz", "Micas", "Carbonates"],
+      "explanation": "Feldspars are found in granite, basalt and many other rocks. Quartz is common too, but there is much less of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.08",
+      "difficulty": "expert",
+      "question": "What is a lahar?",
+      "correct": "A flow of mud and volcanic ash",
+      "wrong": ["A lake in a crater", "A cloud of hot gas", "A type of lava rock"],
+      "explanation": "Lahars happen when rain or melted ice mixes with loose ash on a volcano. They flow quickly down river valleys.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.09",
+      "difficulty": "expert",
+      "question": "Which type of volcano has wide, gentle slopes because its lava is very runny?",
+      "correct": "A shield volcano",
+      "wrong": ["A cinder cone", "A lava dome", "A stratovolcano"],
+      "explanation": "Hawaii's Mauna Loa is a shield volcano. The name comes from the shape, like a warrior's shield lying on the ground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.10",
+      "difficulty": "expert",
+      "question": "Which scale rates an earthquake by the shaking and damage people see and feel?",
+      "correct": "The Mercalli scale",
+      "wrong": ["The Richter scale", "The Mohs scale", "The Fahrenheit scale"],
+      "explanation": "The Mercalli scale uses numbers in Roman numerals, from I (hardly felt) to XII (total destruction).",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.11",
+      "difficulty": "expert",
+      "question": "Which earthquake waves reach a seismograph first?",
+      "correct": "P waves",
+      "wrong": ["S waves", "Love waves", "Rayleigh waves"],
+      "explanation": "P stands for primary. These waves are the fastest. S waves, the secondary ones, come next.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.12",
+      "difficulty": "expert",
+      "question": "Earthquake S waves cannot pass through which layer of the Earth?",
+      "correct": "The outer core",
+      "wrong": ["The mantle", "The crust", "The inner core"],
+      "explanation": "S waves cannot move through liquid. Their shadow told scientists that the outer core must be melted metal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.13",
+      "difficulty": "expert",
+      "question": "What do we call a plate boundary where two plates slide past each other?",
+      "correct": "A transform boundary",
+      "wrong": ["A convergent boundary", "A divergent boundary", "A hot spot"],
+      "explanation": "Plates at transform boundaries get stuck and then slip, which causes earthquakes, such as along the San Andreas Fault.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.14",
+      "difficulty": "expert",
+      "question": "Which soft mineral is the main material in plasterboard?",
+      "correct": "Gypsum",
+      "wrong": ["Pyrite", "Halite", "Mica"],
+      "explanation": "Gypsum is heated to make plaster. A fingernail can scratch it, because it scores only 2 on the Mohs scale.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.15",
+      "difficulty": "expert",
+      "question": "Slate forms when heat and pressure change which soft sedimentary rock?",
+      "correct": "Shale",
+      "wrong": ["Limestone", "Sandstone", "Chalk"],
+      "explanation": "Slate splits into thin, flat sheets, which is why people use it for roof tiles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.16",
+      "difficulty": "expert",
+      "question": "Rubies and sapphires are both forms of which mineral?",
+      "correct": "Corundum",
+      "wrong": ["Quartz", "Beryl", "Topaz"],
+      "explanation": "Corundum scores 9 on the Mohs scale, just below diamond. A little chromium gives ruby its red colour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.17",
+      "difficulty": "expert",
+      "question": "On the Mohs scale of hardness, quartz scores about what?",
+      "correct": "7",
+      "wrong": ["3", "5", "9"],
+      "explanation": "Mohs hardness runs from 1 to 10. Quartz at 7 is harder than glass and most steel, so it can scratch both.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.18",
+      "difficulty": "expert",
+      "question": "What name is given to the fast winds that blow high up in the atmosphere and steer weather systems?",
+      "correct": "Jet streams",
+      "wrong": ["Trade winds", "Monsoons", "Sea breezes"],
+      "explanation": "Jet streams blow about 10 km up. Planes flying from west to east can ride them to save time and fuel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.19",
+      "difficulty": "expert",
+      "question": "What do we call a warm, dry wind that flows down the lee side of the Alps?",
+      "correct": "The Föhn",
+      "wrong": ["The Mistral", "The Sirocco", "The Bora"],
+      "explanation": "The Föhn can raise the temperature by 10 degrees or more in a few hours. It can melt snow very fast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.20",
+      "difficulty": "expert",
+      "question": "In the Northern Hemisphere, the Earth's spin bends winds and ocean currents to which side?",
+      "correct": "To the right",
+      "wrong": ["To the left", "Towards the equator", "Towards the poles"],
+      "explanation": "This bending is the Coriolis effect. It makes large storms such as hurricanes spin anticlockwise in the north and clockwise in the south.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.21",
+      "difficulty": "expert",
+      "question": "What did sailors call the calm, windless area near the equator?",
+      "correct": "The doldrums",
+      "wrong": ["The Roaring Forties", "The Furious Fifties", "Typhoon Alley"],
+      "explanation": "Sailing ships could get stuck there for days or even weeks. The phrase 'in the doldrums' also means feeling bored or low.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.22",
+      "difficulty": "expert",
+      "question": "What is the dew point?",
+      "correct": "Temperature at which vapour condenses",
+      "wrong": [
+        "Temperature at which water boils",
+        "Temperature at which snow melts",
+        "Warmest temperature of the day"
+      ],
+      "explanation": "If air cools below its dew point, the water vapour turns into drops. That is how dew, fog and clouds form.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.23",
+      "difficulty": "expert",
+      "question": "Which Greek thinker wrote 'Meteorologica', an early book about the weather?",
+      "correct": "Aristotle",
+      "wrong": ["Plato", "Archimedes", "Pythagoras"],
+      "explanation": "Aristotle wrote it about 2,300 years ago. It covers rain, wind and thunder, and even earthquakes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.24",
+      "difficulty": "expert",
+      "question": "What does 'El Niño' mean in Spanish?",
+      "correct": "The boy",
+      "wrong": ["The storm", "The wave", "The heat"],
+      "explanation": "Fishermen in Peru saw that the warm water often arrived around Christmas, so they named it after the Christ child.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.25",
+      "difficulty": "expert",
+      "question": "Which scale rates tornadoes by the damage they cause?",
+      "correct": "The Fujita scale",
+      "wrong": ["The Saffir-Simpson scale", "The Mercalli scale", "The Mohs scale"],
+      "explanation": "The scale is named after Ted Fujita, a Japanese-American scientist. It goes from F0 (light damage) to F5 (extreme).",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.26",
+      "difficulty": "expert",
+      "question": "Which thin, high cloud sheet can make a ring of light around the Sun or Moon?",
+      "correct": "Cirrostratus",
+      "wrong": ["Cumulonimbus", "Stratocumulus", "Nimbostratus"],
+      "explanation": "The ring, called a halo, is made as sunlight bends through ice crystals in the cloud.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.27",
+      "difficulty": "expert",
+      "question": "Which type of cloud has a smooth, lens or saucer shape and forms near mountains?",
+      "correct": "Lenticular",
+      "wrong": ["Mammatus", "Noctilucent", "Contrail"],
+      "explanation": "Lenticular clouds form when moist air flows over mountains in waves. They often seem to hover in one place.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.28",
+      "difficulty": "expert",
+      "question": "Where do most lightning flashes happen?",
+      "correct": "Inside or between clouds",
+      "wrong": ["From a cloud to the ground", "From the ground to a cloud", "Over the sea"],
+      "explanation": "Only about one flash in four reaches the ground. Most stay in the sky, where we often just see a flicker.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.29",
+      "difficulty": "expert",
+      "question": "In the lower atmosphere, how much does the air temperature fall for each kilometre you climb?",
+      "correct": "About 6 °C",
+      "wrong": ["About 1 °C", "About 15 °C", "About 30 °C"],
+      "explanation": "So if it is 20 °C at sea level, the air about 3 km up is near freezing. That is why high mountain tops are often snowy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.30",
+      "difficulty": "expert",
+      "question": "What is a 'rain shadow'?",
+      "correct": "A dry area behind a mountain range",
+      "wrong": [
+        "The dark shadow of a rain cloud",
+        "Light drizzle that falls at night",
+        "A rainbow seen in fog"
+      ],
+      "explanation": "Wet air loses its rain as it rises over the mountains. The air that comes down the other side is dry.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.31",
+      "difficulty": "expert",
+      "question": "Which dark volcanic rock makes up most of the crust under the oceans?",
+      "correct": "Basalt",
+      "wrong": ["Granite", "Limestone", "Sandstone"],
+      "explanation": "Continents are made largely of lighter, granite-like rock. Ocean crust is thinner and heavier for its size.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.32",
+      "difficulty": "expert",
+      "question": "What is it called when one tectonic plate slides under another?",
+      "correct": "Subduction",
+      "wrong": ["Rifting", "Uplift", "Folding"],
+      "explanation": "Subduction often makes deep ocean trenches and lines of volcanoes. It also causes some of the largest earthquakes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.33",
+      "difficulty": "expert",
+      "question": "Cave stalactites are mostly made of which mineral?",
+      "correct": "Calcite",
+      "wrong": ["Pyrite", "Mica", "Feldspar"],
+      "explanation": "Water with dissolved limestone drips from the ceiling. Each drop leaves a tiny bit of calcite behind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.34",
+      "difficulty": "expert",
+      "question": "Amber, which people find on Danish beaches, is the hardened remains of what?",
+      "correct": "Tree resin",
+      "wrong": ["Sea-snail shells", "Volcanic glass", "Fish teeth"],
+      "explanation": "Some Baltic amber is about 40 million years old. It sometimes holds trapped insects.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.35",
+      "difficulty": "expert",
+      "question": "Who invented the mercury barometer in 1643?",
+      "correct": "Evangelista Torricelli",
+      "wrong": ["Blaise Pascal", "Galileo Galilei", "Robert Boyle"],
+      "explanation": "Torricelli, who had worked with Galileo, filled a glass tube with mercury. He saw that air pressure held the mercury up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.36",
+      "difficulty": "expert",
+      "question": "Which process breaks rock into smaller pieces without moving them away?",
+      "correct": "Weathering",
+      "wrong": ["Erosion", "Deposition", "Subduction"],
+      "explanation": "Frost, heat, rain and plant roots all weather rock. Water that freezes in a crack swells and pushes the rock apart.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.37",
+      "difficulty": "expert",
+      "question": "The 'Year Without a Summer' in 1816 followed an eruption of which volcano?",
+      "correct": "Tambora",
+      "wrong": ["Krakatoa", "Vesuvius", "Etna"],
+      "explanation": "Tambora, in Indonesia, erupted in 1815. Its gas and ash spread around the world and dimmed the sunlight, and harvests failed in many parts of Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.38",
+      "difficulty": "expert",
+      "question": "Which Dane is seen as a founder of geology for saying that lower rock layers are older?",
+      "correct": "Nicolas Steno",
+      "wrong": ["Tycho Brahe", "Niels Bohr", "Ole Rømer"],
+      "explanation": "Steno worked in the 1600s. His idea is that new layers form on top of old ones, which helps us read Earth's history.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.earth-weather.expert.39",
+      "difficulty": "expert",
+      "question": "Which scientist found in 1936 that the Earth has a solid inner core?",
+      "correct": "Inge Lehmann",
+      "wrong": ["Marie Curie", "Lise Meitner", "Mary Anning"],
+      "explanation": "Inge Lehmann was a Danish earthquake scientist. She saw that some earthquake waves were bent by something deep inside the liquid core.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

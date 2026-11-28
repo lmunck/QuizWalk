@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "body": {
+    "bbox": [12.583663, 55.679812, 12.59658, 55.687786],
+    "metadata": {
+      "attribution": "openrouteservice.org | OpenStreetMap contributors",
+      "engine": {
+        "build_date": "2026-11-18T10:33:03Z",
+        "graph_date": "2026-11-23T01:03:39Z",
+        "osm_date": "2026-11-22T00:00:00Z",
+        "version": "10.1.1"
+      },
+      "service": "routing",
+      "system_message": "Please note that the URL api.openrouteservice.org has been deprecated. All information available at ask.openrouteservice.org",
+      "timestamp": 1795818982106
+    },
+    "routes": [
+      {
+        "bbox": [12.583663, 55.679812, 12.59658, 55.687786],
+        "geometry": "__zrI_czkAmAtH{@hFIb@Y~AEXJLHZWnAQbA[dBQdAED]GEVk@dDk@~CgCuBKj@SQg@a@eA{@g@a@_CmBFWmFeEBQiCuBy@o@gA{@{@s@}@u@}@q@y@q@hAqGNm@Bg@QmCA_@S}COmCLGJ?hA|@RoAHi@EOhAyGROVyAjA~@hA~@vCzBJH|BfBPcAd@^x@yEzD|CJHXTzAjALJFDtB`BFc@Jk@V{A@ERqAV{AVPPkBqKgIpKfIQjBNJYfBSfAADc@hCG`@hG~Ee@pC",
+        "summary": {
+          "distance": 3515.4,
+          "duration": 2531.1000000000004
+        },
+        "warnings": [
+          {
+            "code": 4,
+            "message": "Extra info requested but not available: roadaccessrestrictions"
+          }
+        ],
+        "way_points": [0, 20, 38, 73, 83]
+      }
+    ]
+  }
+}

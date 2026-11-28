@@ -1,0 +1,1192 @@
+{
+  "category": "history",
+  "subcategory": "nordic-history",
+  "questions": [
+    {
+      "id": "history.nordic-history.kids.01",
+      "difficulty": "kids",
+      "question": "Which Danish king's nickname gave its name to Bluetooth wireless technology?",
+      "correct": "Harald",
+      "wrong": ["Valdemar", "Frederik", "Christian"],
+      "explanation": "The Bluetooth logo joins the old runes for H and B. Harald united the Danes about 1,000 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.02",
+      "difficulty": "kids",
+      "question": "Margrete I ruled which three countries at the same time?",
+      "correct": "Denmark, Norway and Sweden",
+      "wrong": [
+        "Denmark, Germany and Poland",
+        "Sweden, Russia and Poland",
+        "Denmark, England and Scotland"
+      ],
+      "explanation": "In 1397 the three kingdoms joined in the Kalmar Union. Margrete ruled them until she died in 1412.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.03",
+      "difficulty": "kids",
+      "question": "Which king built Rosenborg Castle in Copenhagen as a summer home?",
+      "correct": "Christian IV",
+      "wrong": ["Harald Bluetooth", "Frederik VII", "Gorm the Old"],
+      "explanation": "Christian IV was king for about 60 years. He built many castles, towers and new towns.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.04",
+      "difficulty": "kids",
+      "question": "Until 1944, Iceland was linked to which other country?",
+      "correct": "Denmark",
+      "wrong": ["Norway", "Sweden", "Finland"],
+      "explanation": "On 17 June 1944 Iceland became a republic. Icelanders celebrate that day as their national day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.05",
+      "difficulty": "kids",
+      "question": "In April 1940 soldiers from which country marched into Denmark?",
+      "correct": "Germany",
+      "wrong": ["Britain", "Russia", "Sweden"],
+      "explanation": "Denmark was occupied until May 1945. The Danish army stopped fighting after only a few hours.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.06",
+      "difficulty": "kids",
+      "question": "On the evening of 4 May, Danes put what in their windows to remember the end of the war in 1945?",
+      "correct": "Candles",
+      "wrong": ["Pumpkins", "Balloons", "Paper stars"],
+      "explanation": "During the war people had to cover their windows at night. Candles in the window mean light and freedom.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.07",
+      "difficulty": "kids",
+      "question": "King Canute the Great ruled Denmark, Norway and which country across the North Sea?",
+      "correct": "England",
+      "wrong": ["Ireland", "France", "Spain"],
+      "explanation": "Canute became king of England in 1016. His three lands are called the North Sea Empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.08",
+      "difficulty": "kids",
+      "question": "Which big Swedish warship sank on its first voyage in 1628?",
+      "correct": "Vasa",
+      "wrong": ["Titanic", "Mary Rose", "Fram"],
+      "explanation": "The Vasa lay on the seabed for over 300 years. It was lifted in 1961 and placed in a museum in Stockholm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.09",
+      "difficulty": "kids",
+      "question": "In 1917 Finland declared itself independent from which large country?",
+      "correct": "Russia",
+      "wrong": ["Germany", "Sweden", "Denmark"],
+      "explanation": "Finland's Independence Day is 6 December. Before 1917 Finland had been part of the Russian Empire for over 100 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.10",
+      "difficulty": "kids",
+      "question": "Many Danish kings and queens are buried in a big cathedral in which city?",
+      "correct": "Roskilde",
+      "wrong": ["Aarhus", "Esbjerg", "Aalborg"],
+      "explanation": "Roskilde Cathedral has the tombs of many monarchs, including Margrete I and Christian IV.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.11",
+      "difficulty": "kids",
+      "question": "Shakespeare's play Hamlet is set at which Danish castle?",
+      "correct": "Kronborg",
+      "wrong": ["Rosenborg", "Amalienborg", "Frederiksborg"],
+      "explanation": "Kronborg is in Helsingør, which English writers called Elsinore. Hamlet is a prince of Denmark in the play.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.12",
+      "difficulty": "kids",
+      "question": "Tycho Brahe, a Danish nobleman in the 1500s, spent his life studying what?",
+      "correct": "Stars and planets",
+      "wrong": ["Birds and fish", "Rocks and soil", "Ships and the sea"],
+      "explanation": "He built an observatory on the island of Ven and measured the sky before the telescope was invented.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.13",
+      "difficulty": "kids",
+      "question": "What does the name Copenhagen mean in old Danish?",
+      "correct": "Merchants' harbour",
+      "wrong": ["King's castle", "Green island", "Sea gate"],
+      "explanation": "Copenhagen began as a small fishing and trading town. Bishop Absalon built a castle there around 1167.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.14",
+      "difficulty": "kids",
+      "question": "Until 1658, Malmö and the land around it belonged to Denmark. What is this region called?",
+      "correct": "Skåne",
+      "wrong": ["Lapland", "Dalarna", "Småland"],
+      "explanation": "Denmark lost it to Sweden after a war, in the Treaty of Roskilde in 1658.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.15",
+      "difficulty": "kids",
+      "question": "In 1969 oil was found under the North Sea off which Nordic country, making it rich?",
+      "correct": "Norway",
+      "wrong": ["Finland", "Iceland", "Sweden"],
+      "explanation": "The Ekofisk field started a new oil industry in Norway. The country later saved some of the oil money for the future.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.16",
+      "difficulty": "kids",
+      "question": "Which famous amusement park opened in Copenhagen in 1843?",
+      "correct": "Tivoli",
+      "wrong": ["Legoland", "Liseberg", "Efteling"],
+      "explanation": "Its founder Georg Carstensen wanted a place for fun and music in the middle of the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.17",
+      "difficulty": "kids",
+      "question": "Carl Linnaeus, a Swede in the 1700s, became famous for sorting and naming what?",
+      "correct": "Plants and animals",
+      "wrong": ["Stars and planets", "Clouds and winds", "Rivers and lakes"],
+      "explanation": "He gave plants and animals two-part Latin names, like Homo sapiens for humans. Scientists all over the world use this system.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.18",
+      "difficulty": "kids",
+      "question": "The Round Tower in Copenhagen has a wide ramp inside instead of stairs. What was it first built as?",
+      "correct": "An observatory",
+      "wrong": ["A prison", "A lighthouse", "A fire station"],
+      "explanation": "King Christian IV had it built in 1642, together with a church and a library.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.19",
+      "difficulty": "kids",
+      "question": "Harald Bluetooth had a big carved stone raised for his parents in which small Danish town?",
+      "correct": "Jelling",
+      "wrong": ["Roskilde", "Ribe", "Skagen"],
+      "explanation": "It is often called Denmark's birth certificate. It stands by a church, between two big burial mounds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.20",
+      "difficulty": "kids",
+      "question": "Which Danish writer of fairy tales was born in Odense in 1805?",
+      "correct": "Hans Christian Andersen",
+      "wrong": ["Astrid Lindgren", "Roald Dahl", "Tove Jansson"],
+      "explanation": "He wrote The Little Mermaid and The Ugly Duckling. His tales have been translated into over 100 languages.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.21",
+      "difficulty": "kids",
+      "question": "Which animal is shown three times on Denmark's national coat of arms?",
+      "correct": "Lions",
+      "wrong": ["Bears", "Eagles", "Wolves"],
+      "explanation": "The three blue lions have been a Danish royal symbol for over 800 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.22",
+      "difficulty": "kids",
+      "question": "Which famous toy name comes from the Danish words 'leg godt', meaning 'play well'?",
+      "correct": "Lego",
+      "wrong": ["Playmobil", "Meccano", "Barbie"],
+      "explanation": "Ole Kirk Christiansen, a carpenter in Billund, began making wooden toys in 1932. Plastic bricks came later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.23",
+      "difficulty": "kids",
+      "question": "Sweden did not take sides in World War II. What do we call a country like that?",
+      "correct": "Neutral",
+      "wrong": ["Occupied", "Allied", "Defeated"],
+      "explanation": "Sweden also stayed out of World War I.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.24",
+      "difficulty": "kids",
+      "question": "In the winter of 1658 a Swedish army marched to the island of Zealand across what?",
+      "correct": "The frozen sea",
+      "wrong": ["A new bridge", "A narrow river", "A mountain pass"],
+      "explanation": "The army crossed the ice of the Great Belt. It was a daring march, and the Danes were very surprised.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.25",
+      "difficulty": "kids",
+      "question": "Which Indigenous people have lived in northern Norway, Sweden and Finland for thousands of years?",
+      "correct": "The Sami",
+      "wrong": ["The Inuit", "The Celts", "The Basques"],
+      "explanation": "Many Sami have herded reindeer for hundreds of years. Their homeland is called Sápmi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.26",
+      "difficulty": "kids",
+      "question": "In 1939 which big country attacked Finland in the Winter War?",
+      "correct": "The Soviet Union",
+      "wrong": ["Germany", "Sweden", "Britain"],
+      "explanation": "The Finns fought hard in deep snow. They kept their independence but gave up some land in 1940.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.27",
+      "difficulty": "kids",
+      "question": "Copenhagen's old stock exchange, Børsen, had a spire shaped like the twisted tails of which animals?",
+      "correct": "Dragons",
+      "wrong": ["Lions", "Elephants", "Dolphins"],
+      "explanation": "Christian IV had Børsen built for merchants in the 1600s. On its spire, four dragons twisted their tails together to a point.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.28",
+      "difficulty": "kids",
+      "question": "The Danish money called 'krone' is named after what royal object?",
+      "correct": "A crown",
+      "wrong": ["A sword", "A throne", "A ring"],
+      "explanation": "In the 1870s Denmark, Sweden and Norway formed a money union, and all three began to use the krone or krona.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.29",
+      "difficulty": "kids",
+      "question": "Trelleborg, a Danish fortress from about the year 980, was built in what shape?",
+      "correct": "A circle",
+      "wrong": ["A triangle", "A square", "A star"],
+      "explanation": "It had a round wall with four gates and long houses inside. It is thought that Harald Bluetooth had it built.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.30",
+      "difficulty": "kids",
+      "question": "Which animal holds an axe on Norway's coat of arms?",
+      "correct": "A lion",
+      "wrong": ["A bear", "An eagle", "A wolf"],
+      "explanation": "The axe is the sign of King Olav II, later called Saint Olav. He died in a battle in 1030.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.31",
+      "difficulty": "kids",
+      "question": "The Danevirke was built to protect the south of Denmark. What was it?",
+      "correct": "A long wall",
+      "wrong": ["A big ship", "A tall tower", "A deep canal"],
+      "explanation": "Parts of it are more than 1,200 years old. Harald Bluetooth later made it stronger.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.32",
+      "difficulty": "kids",
+      "question": "The Celsius temperature scale is named after a scientist from which Nordic country?",
+      "correct": "Sweden",
+      "wrong": ["Norway", "Finland", "Iceland"],
+      "explanation": "Anders Celsius was an astronomer in Uppsala in the 1700s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.33",
+      "difficulty": "kids",
+      "question": "In 1917 Denmark sold its islands in the Caribbean Sea to which country?",
+      "correct": "The United States",
+      "wrong": ["Britain", "France", "Spain"],
+      "explanation": "The islands became the US Virgin Islands. The United States paid about 25 million dollars in gold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.34",
+      "difficulty": "kids",
+      "question": "What destroyed a large part of Copenhagen in 1728?",
+      "correct": "A big fire",
+      "wrong": ["A flood", "An earthquake", "A storm"],
+      "explanation": "The fire burned for several days and many people lost their homes. The city was built up again.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.35",
+      "difficulty": "kids",
+      "question": "On 17 May, which country celebrates its national day with big children's parades?",
+      "correct": "Norway",
+      "wrong": ["Denmark", "Sweden", "Finland"],
+      "explanation": "The day marks 17 May 1814, when Norway signed its own constitution. Children march through the towns with flags.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.36",
+      "difficulty": "kids",
+      "question": "In 1801 the British admiral Nelson fought a battle outside which Nordic capital?",
+      "correct": "Copenhagen",
+      "wrong": ["Oslo", "Stockholm", "Helsinki"],
+      "explanation": "Legend says Nelson held his telescope to his blind eye so he could not see the order to stop. Britain won.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.37",
+      "difficulty": "kids",
+      "question": "Gorm the Old is often called the first king of Denmark. Which famous king was his son?",
+      "correct": "Harald Bluetooth",
+      "wrong": ["Canute the Great", "Valdemar the Great", "Christian IV"],
+      "explanation": "Gorm died around the year 958. His son Harald then ruled Denmark for almost 30 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.kids.38",
+      "difficulty": "kids",
+      "question": "The Althing was started in Iceland around the year 930. What was it?",
+      "correct": "A parliament",
+      "wrong": ["A church", "A school", "A fortress"],
+      "explanation": "Chieftains and farmers met every summer at Þingvellir to make laws and settle arguments.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.01",
+      "difficulty": "mixed",
+      "question": "In which Swedish town was the union of Denmark, Norway and Sweden agreed in 1397?",
+      "correct": "Kalmar",
+      "wrong": ["Uppsala", "Malmö", "Lund"],
+      "explanation": "The Kalmar Union lasted for over 100 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.02",
+      "difficulty": "mixed",
+      "question": "After a big fire in 1624, King Christian IV built a new town where Oslo lies. What did he call it?",
+      "correct": "Christiania",
+      "wrong": ["Christianshavn", "Kristiansand", "Trondheim"],
+      "explanation": "Christiania got back the name Oslo in 1925.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.03",
+      "difficulty": "mixed",
+      "question": "When Norway left its union with Sweden, it chose a prince from which country as its king?",
+      "correct": "Denmark",
+      "wrong": ["Sweden", "Britain", "Germany"],
+      "explanation": "He took the name Haakon VII, after old Norwegian kings. His wife, Maud, was a British princess.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.04",
+      "difficulty": "mixed",
+      "question": "In 1814 Denmark lost Norway but kept Iceland, Greenland and which North Atlantic islands?",
+      "correct": "The Faroe Islands",
+      "wrong": ["Shetland", "Orkney", "The Hebrides"],
+      "explanation": "Norway went to the Swedish king, but Norwegians wrote their own constitution that year.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.05",
+      "difficulty": "mixed",
+      "question": "Frederik VII signed Denmark's first constitution in 1849. What did it end?",
+      "correct": "The king's absolute power",
+      "wrong": ["A war with Prussia", "Danish rule in Iceland", "The state church"],
+      "explanation": "Only some men could vote at first. Women got the vote much later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.06",
+      "difficulty": "mixed",
+      "question": "In the war of 1864, Denmark lost Schleswig and Holstein to Prussia and which other country?",
+      "correct": "Austria",
+      "wrong": ["Russia", "France", "Britain"],
+      "explanation": "Denmark lost the battle at Dybbøl in April 1864 and had to give up the lands in the south.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.07",
+      "difficulty": "mixed",
+      "question": "In 1906 which country in Europe was first to give women the right to vote in national elections?",
+      "correct": "Finland",
+      "wrong": ["Norway", "Denmark", "Sweden"],
+      "explanation": "In 1907 Finland also elected 19 women to parliament, the first in Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.08",
+      "difficulty": "mixed",
+      "question": "Ships sailing through the Øresund had to pay a toll to the Danish king. Which castle guarded the strait?",
+      "correct": "Kronborg",
+      "wrong": ["Frederiksborg", "Egeskov", "Koldinghus"],
+      "explanation": "The toll lasted from the 1400s until 1857 and made the Danish kings rich.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which Swedish king, known as a daring soldier, was killed in Norway in 1718?",
+      "correct": "Charles XII",
+      "wrong": ["Gustav III", "Gustav Vasa", "Oscar II"],
+      "explanation": "He spent most of his rule at war with Russia, Denmark and Poland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which Swedish diplomat led the United Nations from 1953 until his death in a plane crash in 1961?",
+      "correct": "Dag Hammarskjöld",
+      "wrong": ["Olof Palme", "Raoul Wallenberg", "Folke Bernadotte"],
+      "explanation": "He was given the Nobel Peace Prize after his death.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.11",
+      "difficulty": "mixed",
+      "question": "In 1812 the Russian emperor made which city the capital of Finland?",
+      "correct": "Helsinki",
+      "wrong": ["Turku", "Tampere", "Vyborg"],
+      "explanation": "Finland had been ruled by Sweden until 1809. Turku was the main city before Helsinki, which lies closer to Saint Petersburg.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.12",
+      "difficulty": "mixed",
+      "question": "In 1835 Elias Lönnrot published which Finnish national epic, made from old folk poems?",
+      "correct": "The Kalevala",
+      "wrong": ["Beowulf", "The Poetic Edda", "The Iliad"],
+      "explanation": "The Kalevala made many Finns proud of their own language long before independence.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which two Nordic countries joined the EU in 1995, together with Austria?",
+      "correct": "Finland and Sweden",
+      "wrong": ["Norway and Finland", "Denmark and Iceland", "Norway and Sweden"],
+      "explanation": "Norway also voted on joining in 1994, but the answer was no.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.14",
+      "difficulty": "mixed",
+      "question": "In which year did Sweden change from driving on the left to driving on the right?",
+      "correct": "1967",
+      "wrong": ["1927", "1947", "1987"],
+      "explanation": "Everyone stopped at 4.50 in the morning, changed sides and drove on at 5.00. Ordinary traffic was banned for a few hours that night.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.15",
+      "difficulty": "mixed",
+      "question": "What did Iceland and Britain argue about in the Cod Wars from the 1950s to the 1970s?",
+      "correct": "Who could fish near Iceland",
+      "wrong": ["Who owned an island", "Oil under the sea", "Whale hunting"],
+      "explanation": "Iceland made its fishing limits bigger several times, because fish were its main export.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which country's soldiers came to the Faroe Islands in 1940 and stayed during World War II?",
+      "correct": "Britain",
+      "wrong": ["Germany", "Russia", "Sweden"],
+      "explanation": "Britain wanted to stop Germany from using the islands. The Faroes got home rule in 1948.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.17",
+      "difficulty": "mixed",
+      "question": "In August 1943 Danish sailors did what to many of their navy's ships, so Germany could not use them?",
+      "correct": "They sank them",
+      "wrong": [
+        "They sailed them to Britain",
+        "They hid them in fjords",
+        "They sold them to Germany"
+      ],
+      "explanation": "It happened on 29 August 1943, the day Germany declared a state of emergency in Denmark. A few ships escaped to Sweden.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.18",
+      "difficulty": "mixed",
+      "question": "In October 1943 fishing boats carried thousands of Danish Jews to safety in which country?",
+      "correct": "Sweden",
+      "wrong": ["Britain", "Norway", "Finland"],
+      "explanation": "Many Danes helped to hide them and to pay the fishermen. Most of Denmark's Jews were saved.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.19",
+      "difficulty": "mixed",
+      "question": "In 1973 Denmark joined the European Economic Community together with which two countries?",
+      "correct": "Britain and Ireland",
+      "wrong": ["Norway and Sweden", "Norway and Iceland", "Finland and Norway"],
+      "explanation": "Norway had planned to join as well, but its voters said no in 1972.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which three Nordic countries were among the twelve founders of NATO in 1949?",
+      "correct": "Denmark, Iceland and Norway",
+      "wrong": [
+        "Finland, Norway and Sweden",
+        "Denmark, Finland and Sweden",
+        "Finland, Iceland and Sweden"
+      ],
+      "explanation": "Sweden and Finland stayed outside for many decades.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.21",
+      "difficulty": "mixed",
+      "question": "In 1676 the Danish astronomer Ole Rømer showed that what has a speed?",
+      "correct": "Light",
+      "wrong": ["Sound", "Gravity", "Heat"],
+      "explanation": "He saw that Jupiter's moon Io appeared late when Jupiter was far from Earth. Light needs time to travel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.22",
+      "difficulty": "mixed",
+      "question": "Harald Bluetooth's big rune stone says he made the Danes what?",
+      "correct": "Christian",
+      "wrong": ["Rich", "Free", "Sailors"],
+      "explanation": "The three-sided stone is from the second half of the 900s. One side shows Christ, one of the oldest pictures of him in Scandinavia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.23",
+      "difficulty": "mixed",
+      "question": "In 1620 Denmark started a trading colony at Tranquebar in which country?",
+      "correct": "India",
+      "wrong": ["Brazil", "Indonesia", "Nigeria"],
+      "explanation": "Tranquebar was Danish for over 200 years. In 1845 Denmark sold it to Britain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.24",
+      "difficulty": "mixed",
+      "question": "How did Northern Schleswig return to Denmark in 1920?",
+      "correct": "A vote by the people",
+      "wrong": ["Denmark won a war", "Germany sold it", "Britain gave it"],
+      "explanation": "After World War I people voted in two zones. The north chose Denmark and the south chose Germany.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.25",
+      "difficulty": "mixed",
+      "question": "Swedish diplomat Raoul Wallenberg saved thousands of Jews in 1944 in which city?",
+      "correct": "Budapest",
+      "wrong": ["Berlin", "Warsaw", "Vienna"],
+      "explanation": "He handed out protective passports and rented safe houses. He disappeared in 1945.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.26",
+      "difficulty": "mixed",
+      "question": "After Christiansborg Palace burned in 1794, the Danish royal family moved to which palace?",
+      "correct": "Amalienborg",
+      "wrong": ["Rosenborg", "Fredensborg", "Kronborg"],
+      "explanation": "Amalienborg was first built for four noble families in the 1750s. It has four matching palaces around a square.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which Danish king, nicknamed Forkbeard, was accepted as king of England in 1013?",
+      "correct": "Svend",
+      "wrong": ["Gorm", "Erik", "Olaf"],
+      "explanation": "He died only a few weeks later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.28",
+      "difficulty": "mixed",
+      "question": "Gorm the Old raised a small rune stone at Jelling for his wife. What was her name?",
+      "correct": "Thyra",
+      "wrong": ["Margrete", "Dagmar", "Ingrid"],
+      "explanation": "The stone calls her the adornment of Denmark. Their son Harald later raised the big stone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.29",
+      "difficulty": "mixed",
+      "question": "During the occupation of Denmark, which king rode through Copenhagen on his horse every morning?",
+      "correct": "Christian X",
+      "wrong": ["Frederik IX", "Christian IX", "Haakon VII"],
+      "explanation": "Many Danes saw this as a sign that the king stayed with his people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which town on the west coast of Jutland is often called the oldest town in Denmark?",
+      "correct": "Ribe",
+      "wrong": ["Aalborg", "Odense", "Esbjerg"],
+      "explanation": "Ribe was already a trading place around the year 700.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.31",
+      "difficulty": "mixed",
+      "question": "Norway's constitution of 1814 was written in which village?",
+      "correct": "Eidsvoll",
+      "wrong": ["Lillehammer", "Stiklestad", "Bergen"],
+      "explanation": "It is among the oldest written constitutions in Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.32",
+      "difficulty": "mixed",
+      "question": "In which year did Norway end its union with Sweden?",
+      "correct": "1905",
+      "wrong": ["1814", "1945", "1920"],
+      "explanation": "Norwegians voted on it, and almost everyone who voted said yes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.33",
+      "difficulty": "mixed",
+      "question": "Iceland's national day, 17 June, is the birthday of which independence hero?",
+      "correct": "Jón Sigurðsson",
+      "wrong": ["Leif Erikson", "Snorri Sturluson", "Ingólfur Arnarson"],
+      "explanation": "He was born in 1811 and led Iceland's fight for self-rule in the 1800s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.34",
+      "difficulty": "mixed",
+      "question": "In 1866 the Danish princess Dagmar married a crown prince. Later she became empress of which country?",
+      "correct": "Russia",
+      "wrong": ["Germany", "Austria", "France"],
+      "explanation": "She took the name Maria Feodorovna. Her son Nicholas II was the last Russian tsar.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.35",
+      "difficulty": "mixed",
+      "question": "In 1807 Britain attacked Copenhagen to take away what?",
+      "correct": "The Danish navy",
+      "wrong": ["The royal jewels", "The Danish king", "Greenland"],
+      "explanation": "Britain feared Napoleon would use the ships. After this Denmark sided with France, which later cost it Norway.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.36",
+      "difficulty": "mixed",
+      "question": "In the 1600s Sweden was a great power that controlled lands around which sea?",
+      "correct": "The Baltic Sea",
+      "wrong": ["The Black Sea", "The Irish Sea", "The Adriatic Sea"],
+      "explanation": "Besides Finland, Sweden ruled Estonia and parts of Latvia, Russia and northern Germany.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.37",
+      "difficulty": "mixed",
+      "question": "In 1972 Margrethe II became queen of Denmark after the death of her father. What was his name?",
+      "correct": "Frederik IX",
+      "wrong": ["Christian X", "Frederik VIII", "Christian IX"],
+      "explanation": "She was the first woman to rule Denmark since Margrete I.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.38",
+      "difficulty": "mixed",
+      "question": "Before the euro, what was the money of Finland called?",
+      "correct": "The markka",
+      "wrong": ["The krona", "The krone", "The guilder"],
+      "explanation": "Finland got its own markka in 1860, while it was ruled by Russia. Euro notes and coins replaced it in 2002.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.mixed.39",
+      "difficulty": "mixed",
+      "question": "Soviet soldiers stayed on which Danish island until 1946?",
+      "correct": "Bornholm",
+      "wrong": ["Funen", "Zealand", "Læsø"],
+      "explanation": "They came in May 1945 to take over from the German army and left in April 1946.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.01",
+      "difficulty": "expert",
+      "question": "Johann Friedrich Struensee, a German doctor, ruled Denmark in 1770-72 in the name of which king?",
+      "correct": "Christian VII",
+      "wrong": ["Frederik V", "Christian VI", "Frederik VI"],
+      "explanation": "He brought in many reforms, including freedom of the press, before he was removed and executed in 1772.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.02",
+      "difficulty": "expert",
+      "question": "In 1788 Denmark ended the 'stavnsbånd'. It had tied which group to the land where they were born?",
+      "correct": "Male peasants",
+      "wrong": ["Merchants", "Craftsmen", "Priests"],
+      "explanation": "The 1788 law freed them step by step, fully by 1800. It was one of the big farm reforms of the time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.03",
+      "difficulty": "expert",
+      "question": "In 1792 Denmark-Norway decided to end which trade, from 1803?",
+      "correct": "The slave trade",
+      "wrong": ["The fur trade", "The grain trade", "The timber trade"],
+      "explanation": "It was the first European country to decide this. Slavery itself continued in its colonies until 1848.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.04",
+      "difficulty": "expert",
+      "question": "N. F. S. Grundtvig, a Danish priest and poet of the 1800s, is known as the father of which type of school?",
+      "correct": "Folk high schools",
+      "wrong": ["Technical schools", "Sunday schools", "Military schools"],
+      "explanation": "The first folk high school opened in Rødding in 1844. Adults, mostly young farmers, studied there together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.05",
+      "difficulty": "expert",
+      "question": "Which Danish king introduced the Lutheran Reformation in 1536?",
+      "correct": "Christian III",
+      "wrong": ["Christian II", "Frederik I", "Christian IV"],
+      "explanation": "After a civil war he took over church property and made Denmark and Norway Lutheran.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.06",
+      "difficulty": "expert",
+      "question": "Which Swedish nobleman led the rebellion against Danish rule and was elected king in 1523?",
+      "correct": "Gustav Vasa",
+      "wrong": ["Charles XII", "Sten Sture", "Gustav II Adolf"],
+      "explanation": "His election broke up the Kalmar Union. Sweden's national day, 6 June, marks the date.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.07",
+      "difficulty": "expert",
+      "question": "Which Swedish king died at the Battle of Lützen in Germany in 1632?",
+      "correct": "Gustav II Adolf",
+      "wrong": ["Charles X Gustav", "Charles XII", "Oscar I"],
+      "explanation": "Sweden won the battle, but its king, called the Lion of the North, was killed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.08",
+      "difficulty": "expert",
+      "question": "Which Danish king became absolute ruler in 1660, after the war with Sweden?",
+      "correct": "Frederik III",
+      "wrong": ["Christian IV", "Christian V", "Frederik IV"],
+      "explanation": "He won the support of townspeople and the clergy. The King's Law of 1665 made the new rule official.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.09",
+      "difficulty": "expert",
+      "question": "In 1943 Norwegian saboteurs attacked a plant at Vemork that made what?",
+      "correct": "Heavy water",
+      "wrong": ["Dynamite", "Poison gas", "Jet fuel"],
+      "explanation": "Heavy water was thought to be useful for atomic bomb research. In 1965 the story was made into the film The Heroes of Telemark.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.10",
+      "difficulty": "expert",
+      "question": "In 1980 Iceland elected Vigdís Finnbogadóttir. What made her election special?",
+      "correct": "First woman president chosen by voters",
+      "wrong": [
+        "Iceland's first ever president",
+        "First Nordic woman prime minister",
+        "First Icelander to lead the UN"
+      ],
+      "explanation": "She served four terms, from 1980 to 1996. In Iceland the president is chosen by a vote of the people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.11",
+      "difficulty": "expert",
+      "question": "In 1783 a huge eruption in Iceland caused famine there and a strange haze over Europe. What is the eruption called?",
+      "correct": "Laki",
+      "wrong": ["Hekla", "Katla", "Eyjafjallajökull"],
+      "explanation": "Many Icelanders died of hunger in the years after the eruption.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.12",
+      "difficulty": "expert",
+      "question": "In 1982 Greenlanders voted to leave which European organisation, which they did in 1985?",
+      "correct": "The EEC",
+      "wrong": ["NATO", "The Nordic Council", "The UN"],
+      "explanation": "Greenland had joined in 1973 with Denmark, even though most Greenlanders had voted no.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.13",
+      "difficulty": "expert",
+      "question": "Why did the Dano-Norwegian priest Hans Egede sail to Greenland in 1721?",
+      "correct": "To look for lost Norse Christians",
+      "wrong": ["To mine gold", "To find a sea route to China", "To study the northern lights"],
+      "explanation": "He found no Norse people, only Inuit, so he started a Lutheran mission among them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.14",
+      "difficulty": "expert",
+      "question": "In 1951 the USA began building a large air base in northwest Greenland. What was it called?",
+      "correct": "Thule Air Base",
+      "wrong": ["Sondrestrom Air Base", "Narsarsuaq Air Base", "Keflavík Air Base"],
+      "explanation": "It followed a 1951 defence agreement between Denmark and the USA, early in the Cold War.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.15",
+      "difficulty": "expert",
+      "question": "In 1921 the League of Nations decided that the Swedish-speaking Åland Islands should belong to which country?",
+      "correct": "Finland",
+      "wrong": ["Sweden", "Russia", "Estonia"],
+      "explanation": "The islands were given wide self-rule and were to stay free of military forces.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.16",
+      "difficulty": "expert",
+      "question": "Founded in 1477, which university is the oldest in the Nordic countries?",
+      "correct": "Uppsala",
+      "wrong": ["Copenhagen", "Lund", "Oslo"],
+      "explanation": "The University of Copenhagen followed only two years later, in 1479.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.17",
+      "difficulty": "expert",
+      "question": "Sweden's Riksbank, founded in 1668, is often called the oldest what?",
+      "correct": "Central bank",
+      "wrong": ["Stock exchange", "Savings bank", "Insurance company"],
+      "explanation": "Sweden was also early with banknotes, issued from 1661.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.18",
+      "difficulty": "expert",
+      "question": "In the 1950s the Nordic countries agreed that their citizens could cross borders without what?",
+      "correct": "Passports",
+      "wrong": ["Customs checks", "Paying a toll", "Health papers"],
+      "explanation": "The Nordic Council, where members of the Nordic parliaments meet, was set up in 1952.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.19",
+      "difficulty": "expert",
+      "question": "At the end of the Winter War in 1940, Finland gave up much of which region to the Soviet Union?",
+      "correct": "Karelia",
+      "wrong": ["Lapland", "Åland", "Ostrobothnia"],
+      "explanation": "Many people left their homes in Karelia and moved to other parts of Finland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.20",
+      "difficulty": "expert",
+      "question": "In 1626 Christian IV's army lost the battle at Lutter. Which big European war was it part of?",
+      "correct": "The Thirty Years' War",
+      "wrong": ["The Hundred Years' War", "The Great Northern War", "The Seven Years' War"],
+      "explanation": "Denmark left the war with the Peace of Lübeck in 1629.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.21",
+      "difficulty": "expert",
+      "question": "In 1863 a Danish prince became king of Greece. Under which name did he rule?",
+      "correct": "George I",
+      "wrong": ["Otto", "Constantine", "Alexander"],
+      "explanation": "He was the son of Christian IX and ruled Greece for about 50 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.22",
+      "difficulty": "expert",
+      "question": "In which Swedish town did Norway and Sweden agree in 1905 on a peaceful end to their union?",
+      "correct": "Karlstad",
+      "wrong": ["Uppsala", "Lund", "Örebro"],
+      "explanation": "The Karlstad agreement avoided a war between the two countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.23",
+      "difficulty": "expert",
+      "question": "Who was elected king of Norway at Eidsvoll in 1814?",
+      "correct": "Christian Frederik",
+      "wrong": ["Charles XIII", "Bernadotte", "Frederik VI"],
+      "explanation": "He was king for only a few months. After a short war with Sweden he gave up the throne.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.24",
+      "difficulty": "expert",
+      "question": "In 1810 Sweden chose a French marshal as heir to the throne. What was his family name?",
+      "correct": "Bernadotte",
+      "wrong": ["Bonaparte", "Murat", "Ney"],
+      "explanation": "He became king in 1818 as Charles XIV John. His family name became the name of Sweden's royal house.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.25",
+      "difficulty": "expert",
+      "question": "Which Danish admiral won the Battle of Køge Bay against Sweden in 1677?",
+      "correct": "Niels Juel",
+      "wrong": ["Peter Tordenskjold", "Olfert Fischer", "Cort Adeler"],
+      "explanation": "Juel's victory gave Denmark control of the sea in the Scanian War.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.26",
+      "difficulty": "expert",
+      "question": "The Danish tale of Amleth, which inspired Hamlet, was written down around 1200 by whom?",
+      "correct": "Saxo Grammaticus",
+      "wrong": ["Snorri Sturluson", "Adam of Bremen", "Absalon"],
+      "explanation": "Saxo worked for Bishop Absalon and wrote a long history of the Danes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.27",
+      "difficulty": "expert",
+      "question": "After giving up her throne in 1654, Sweden's Queen Christina settled in which city?",
+      "correct": "Rome",
+      "wrong": ["Paris", "Vienna", "Copenhagen"],
+      "explanation": "She had become Catholic and spent most of the rest of her life in Rome, supporting art and science.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.28",
+      "difficulty": "expert",
+      "question": "In 1361 King Valdemar IV took the rich trading town of Visby on which island?",
+      "correct": "Gotland",
+      "wrong": ["Öland", "Bornholm", "Funen"],
+      "explanation": "Gotland was a rich trading centre in the Baltic. The attack caused trouble with the Hanseatic League.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.29",
+      "difficulty": "expert",
+      "question": "Who became the first president of Iceland in 1944?",
+      "correct": "Sveinn Björnsson",
+      "wrong": ["Jón Sigurðsson", "Vigdís Finnbogadóttir", "Ásgeir Ásgeirsson"],
+      "explanation": "He had led Iceland as regent since 1941, during World War II.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.30",
+      "difficulty": "expert",
+      "question": "Who is traditionally said to have founded Stockholm around the year 1252?",
+      "correct": "Birger Jarl",
+      "wrong": ["Gustav Vasa", "Erik the Victorious", "Magnus Ladulås"],
+      "explanation": "Birger Jarl was a powerful Swedish leader, and his son became king.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.31",
+      "difficulty": "expert",
+      "question": "In 1448 the Danes chose Christian I as king. Which royal family did he start?",
+      "correct": "Oldenburg",
+      "wrong": ["Habsburg", "Bernadotte", "Vasa"],
+      "explanation": "Oldenburg kings ruled Denmark until 1863, when the Glücksburg branch took over.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.32",
+      "difficulty": "expert",
+      "question": "In which year did the Faroe Islands get home rule inside the Danish kingdom?",
+      "correct": "1948",
+      "wrong": ["1918", "1973", "1979"],
+      "explanation": "Greenland got home rule 31 years later, in 1979.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.33",
+      "difficulty": "expert",
+      "question": "In 1874 which king became the first Danish king to visit Iceland, bringing it a constitution?",
+      "correct": "Christian IX",
+      "wrong": ["Frederik VII", "Christian X", "Frederik VI"],
+      "explanation": "The visit came during the celebration of 1,000 years since the settling of Iceland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.34",
+      "difficulty": "expert",
+      "question": "Who was crowned in Kalmar in 1397 as king of Denmark, Norway and Sweden?",
+      "correct": "Erik of Pomerania",
+      "wrong": ["Albert of Mecklenburg", "Christopher of Bavaria", "Christian I"],
+      "explanation": "Margrete I chose him as her heir, but she kept the real power until she died in 1412.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.35",
+      "difficulty": "expert",
+      "question": "Which governor freed the enslaved people in the Danish West Indies in 1848?",
+      "correct": "Peter von Scholten",
+      "wrong": ["Hans Egede", "Niels Juel", "Ove Gjedde"],
+      "explanation": "He announced it on 3 July 1848, after thousands of enslaved people had risen up on St Croix.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.36",
+      "difficulty": "expert",
+      "question": "After Charles XII died in 1718, Sweden entered a period of parliamentary rule. What is it called?",
+      "correct": "The Age of Liberty",
+      "wrong": ["The Golden Age", "The Great Power Era", "The Age of Reason"],
+      "explanation": "Parliament held the power until Gustav III took it back in 1772.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.37",
+      "difficulty": "expert",
+      "question": "Sweden's old parliament had four estates: nobles, clergy, townspeople and which group?",
+      "correct": "Peasants",
+      "wrong": ["Soldiers", "Doctors", "Fishermen"],
+      "explanation": "Sweden kept this system until 1866, when a two-chamber parliament replaced it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.38",
+      "difficulty": "expert",
+      "question": "The 1918 Act of Union between Iceland and Denmark could be ended after how many years?",
+      "correct": "25",
+      "wrong": ["10", "50", "100"],
+      "explanation": "Iceland used that right and declared a republic in 1944.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.39",
+      "difficulty": "expert",
+      "question": "What was Nuuk, the capital of Greenland, called in Danish until 1979?",
+      "correct": "Godthåb",
+      "wrong": ["Frederikshavn", "Håbets Ø", "Christiansted"],
+      "explanation": "Godthåb means Good Hope. Hans Egede founded the town in 1728.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.nordic-history.expert.40",
+      "difficulty": "expert",
+      "question": "In 1850 Denmark sold its forts on the Gold Coast in West Africa to which country?",
+      "correct": "Britain",
+      "wrong": ["The Netherlands", "Portugal", "France"],
+      "explanation": "The main fort was Christiansborg at Accra, later the capital of Ghana.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

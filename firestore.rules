@@ -60,9 +60,64 @@ service cloud.firestore {
 
     // ---------------------------------------------------------------- generation jobs
 
+    // The job id is the walk id. C3 subscribes before generateWalk has written the job, so a
+    // missing job can be read (it reveals nothing). Home lists the owner's running jobs.
     match /generationJobs/{jobId} {
-      allow get: if signedIn() && resource.data.ownerUid == request.auth.uid;
-      allow list, write: if false;
+      allow get: if signedIn() && (resource == null || resource.data.ownerUid == request.auth.uid);
+      allow list: if signedIn() && resource.data.ownerUid == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ---------------------------------------------------------------- question bank
+
+    // Functions pick questions and copy them into stops; no client reads the bank (spec §7).
+    match /questionBank/{questionId} {
+      allow read, write: if false;
+    }
+
+    match /places/{placeKey} {
+      allow read, write: if false;
+    }
+
+    // Functions' own bookkeeping: spend, top-up locks, rate limits.
+    match /bankMeta/{docId} {
+      allow read, write: if false;
+    }
+
+    match /bankTopUps/{poolKey} {
+      allow read, write: if false;
+    }
+
+    match /rateLimits/{uid} {
+      allow read, write: if false;
+    }
+
+    // P4's Report question (spec §7). One per person and question: the id is built from the
+    // question (or, for a creator's own question, the walk and stop) and the reporter's uid,
+    // and a second report would be an update, which is denied. Only a team of the walk can
+    // report, and a bank question only as it appears on that stop.
+    match /questionReports/{reportId} {
+      function reportedStop(d) {
+        return get(/databases/$(database)/documents/walks/$(d.walkId)/stops/$(d.stopId)).data;
+      }
+
+      allow create: if signedIn()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['uid', 'reason', 'createdAt', 'walkId', 'stopId',
+                                                 'questionId'])
+        && request.resource.data.reason in ['wrong', 'offensive', 'confusing']
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.walkId is string
+        && request.resource.data.stopId is string
+        && exists(/databases/$(database)/documents/walks/$(request.resource.data.walkId)/teams/$(request.auth.uid))
+        && (('questionId' in request.resource.data)
+            ? (request.resource.data.questionId is string
+               && reportId == 'bank_' + request.resource.data.questionId + '_' + request.auth.uid
+               && reportedStop(request.resource.data).get('bankQuestionId', '') == request.resource.data.questionId)
+            : (reportId == 'stop_' + request.resource.data.walkId + '_' + request.resource.data.stopId
+                           + '_' + request.auth.uid
+               && reportedStop(request.resource.data).get('bankQuestionId', '') == ''));
+      allow read, update, delete: if false;
     }
 
     // ---------------------------------------------------------------- walks
@@ -70,7 +125,7 @@ service cloud.firestore {
     // Fields the owner edits while a walk is a draft or ready. Status, join code and the
     // open/end times are set by functions (and by the owner's one end write).
     function walkEditableKeys() {
-      return ['title', 'ownerName', 'topic', 'difficulty', 'modes', 'maxPlayers', 'whenText',
+      return ['title', 'ownerName', 'categories', 'difficulty', 'modes', 'maxPlayers', 'whenText',
               'start', 'startLabel', 'shape', 'route', 'stopCount', 'distanceM', 'updatedAt'];
     }
 
@@ -83,7 +138,10 @@ service cloud.firestore {
         && d.shape in ['loop', 'oneway']
         && d.stopCount is int && d.stopCount >= 0 && d.stopCount <= 12
         && d.distanceM is number && d.distanceM >= 0
-        && (!('whenText' in d) || (d.whenText is string && d.whenText.size() <= 60));
+        && (!('whenText' in d) || (d.whenText is string && d.whenText.size() <= 60))
+        // Generated walks: missing or empty categories mean Auto (spec §6).
+        && (!('categories' in d) || (d.categories is list && d.categories.size() <= 12))
+        && (!('difficulty' in d) || d.difficulty in ['kids', 'mixed', 'expert']);
     }
 
     match /walks/{walkId} {
@@ -122,7 +180,8 @@ service cloud.firestore {
       function validStop(d) {
         return d.keys().hasOnly(['order', 'location', 'placeName', 'radiusM', 'question', 'options',
                                  'correctIndex', 'explanation', 'hint', 'source', 'origin',
-                                 'warnings', 'skippedForAll'])
+                                 'bankQuestionId', 'warnings', 'skippedForAll'])
+          && (!('bankQuestionId' in d) || (d.bankQuestionId is string && d.bankQuestionId.size() <= 40))
           && d.order is int && d.order >= 0
           && isLatLng(d.location)
           && d.placeName is string && d.placeName.size() <= 80

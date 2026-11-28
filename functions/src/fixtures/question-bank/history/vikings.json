@@ -1,0 +1,16 @@
+{
+  "category": "history",
+  "subcategory": "vikings",
+  "questions": [
+    {
+      "id": "history.vikings.kids.01",
+      "difficulty": "kids",
+      "question": "Which Norse god carried a hammer called Mjolnir?",
+      "correct": "Thor",
+      "wrong": ["Odin", "Loki", "Freya"],
+      "explanation": "A file whose subcategory has no mapping.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

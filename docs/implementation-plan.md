@@ -8,21 +8,23 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-27, after the M2 wrap-up and M3. Delivery notes: [`m1-delivery.md`](m1-delivery.md),
-[`m2-m3-delivery.md`](m2-m3-delivery.md); how to test: [`user-testing.md`](user-testing.md).
+Updated 2026-11-27, after the M2 wrap-up, M3 and the M4 backend. Delivery notes:
+[`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
+[`m4-backend-delivery.md`](m4-backend-delivery.md); how to test: [`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
-| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion, pocket-mode accuracy steps, *Directions* links: 109 unit tests |
-| Security rules | Spec §7 in full, 38 allow/deny tests against the emulator, in CI |
-| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`: 14 tests against the emulator and 2 unit tests, in CI. Deployed to `qualk-a173e` on 2026-11-26, except `onTeamUpdated` (M2 wrap-up, waiting for a deploy: `m2-m3-delivery.md`) |
+| `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion, pocket-mode accuracy steps, *Directions* links; from M4 the categories, route geometry and phone-side Refresh helpers, bank rules and the callable contracts: 161 unit tests |
+| Security rules | Spec §7 in full, including the M4 collections: 50 allow/deny tests against the emulator, in CI. Deployed |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`, and from M4 `routeForView`, `reroute`, `generateWalk`, `swapQuestion`, `topUpQuestions`, `onQuestionReported`, `onStopWritten`: 48 unit tests (M4's on recorded service answers) and 46 tests against the emulator, in CI. M4's deployed to `qualk-a173e` on 2026-11-27; `onTeamUpdated` goes out with the next deploy from `m2-m5` |
 | App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6), all of M2 (C7, C8, share cards, duplicate and delete, push tokens and notification taps) and M3's pocket mode and *Directions*. Verified end to end on the iOS simulator against the emulators, including a simulated walk with the app in the background |
 | Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash; an Android notification icon from M3. `preview` builds with pocket mode started 2026-11-27 (links in `m2-m3-delivery.md`) |
 | Firebase app registrations, Maps key, App Check, EAS builds with the real config | Done on 2026-11-26, except the Google Maps key for Android (yours, `user-testing.md` part 2) |
 | Pocket mode (A7, M3·1–3) | Built on "When In Use" for both platforms, one switch per platform for the alternative (`app/src/location/tuning.ts`). Settled from expo-location 58's code and the iOS simulator; the walk with a phone in a pocket is yours |
 | Battery (M3·4) | Knobs in place with defaults from spec §9; measuring on phones is yours |
 | M2 account steps | FCM V1 key for Android pushes, the Play closed test, the three-phone check: yours, in `m2-m3-delivery.md` |
+| M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). The M4 screens (C2 map, C3, *Swap*, *Suggest a question*, *Report question*) are next |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -157,7 +159,7 @@ Scope depends on the A7 spike.
 
 | # | Work |
 |---|---|
-| 1 | **You:** ORS and OpenRouter keys as Firebase secrets |
+| 1 | **You:** ORS and Gemini keys as Firebase secrets (`ORS_API_KEY`, `GEMINI_API_KEY`; Gemini instead of OpenRouter, decided 2026-11-27). Done 2026-11-27 |
 | 2 | Routing module and `reroute`: snapping, real polyline and distance, "off path" / "on water" warnings in C4 |
 | 3 | `routeForView` and C2's map screen: *Refresh*, the stop-spacing check on the phone and on the server, zoom and turn buttons, the default number of questions |
 | 4 | Question bank: categories in `shared/`, the script that fills the bank with its fact-check pass, `topUpQuestions`. Replace `topic` with `categories` in the shared types and `duplicateWalk` |
@@ -166,7 +168,7 @@ Scope depends on the A7 spike.
 | 7 | *Report question* on P4, `onQuestionReported`, bank counts in `onAnswerCreated`, rules for the new collections and their tests |
 | 8 | *New route*, *Play it myself*, rate limiting |
 
-Design: [`m4-generation-design.md`](m4-generation-design.md).
+Design: [`m4-generation-design.md`](m4-generation-design.md). The server side of rows 2 and 4–7 was built on 2026-11-27 and is deployed: [`m4-backend-delivery.md`](m4-backend-delivery.md). The contracts the screens are built against are in the design doc's §11.
 
 **Check:** generate walks in a city centre, a suburb, a village and a forest, at several zoom
 levels and directions, and walk one. Before the bank goes live, read a sample from every
