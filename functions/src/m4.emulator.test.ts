@@ -154,7 +154,7 @@ describe('generateWalk', () => {
       expect(s).toMatchObject({ origin: 'ai', radiusM: 40, warnings: [], skippedForAll: false });
       subs.add(q.subcategory);
     }
-    expect(subs.size).toBe(6);
+    expect(subs.size).toBe(7);
     // The last stop is back at the start.
     expect(distanceM(stops[7]!.location, routePoints[0]!)).toBeLessThan(80);
 

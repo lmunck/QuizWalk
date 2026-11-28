@@ -24,7 +24,7 @@ Anything outside that loop goes in [§16 Not in v1](#16-not-in-v1). A new idea e
 | Language | English only. |
 | Maps | `react-native-maps`: Apple Maps on iOS, Google Maps on Android. Draggable pins in the editor. |
 | Routing | OpenRouteService (OSM-based, `foot-walking`, at `api.heigit.org/openrouteservice` since the old address closed on 2026-11-24), called only from Cloud Functions, behind one swappable module. A generated route fits the creator's map view (§3 C2, §8). |
-| Content | A shared **question bank** by category: written by Google's Gemini API (one Google AI Studio key in the same Google Cloud project), fact-checked by a second, stronger Gemini model, filled ahead of time and topped up in the background. *Local* questions are written from Wikipedia/Wikidata about places on the route (found with OpenStreetMap Overpass) and kept per place. Walks are made from the bank, so generating one rarely spends tokens (§8). |
+| Content | A shared **question bank** by category: filled ahead of time with a seed bank written by Claude Code sessions (a writer model and an independent reviewer on a different model) and loaded by `scripts/import-question-bank.ts`, plus a one-off Gemini fill from 2026-11-27 (tagged `seedBatch: 'gemini-2026-11-27'`). In production, Google's Gemini API (one Google AI Studio key in the same Google Cloud project) writes top-ups and *Local* questions, and a second, stronger Gemini model fact-checks them. *Local* questions are written from Wikipedia/Wikidata about places on the route (found with OpenStreetMap Overpass) and kept per place. Walks are made from the bank, so generating one rarely spends tokens (§8). |
 | Locations | Firestore `GeoPoint`. No geohash: we never query by proximity. Distances are computed on the phone. |
 | Cheating | Accepted risk. The full quiz, including correct answers, is downloaded to the phone for offline play. No money is involved. Points are still calculated server-side. |
 | Push | `expo-notifications` + Expo Push Service. |
@@ -223,6 +223,7 @@ questionBank/{questionId}              // functions only
   stats: { used, answered, correct, replaced, reports, reasons: { wrong, offensive, confusing } }
   model, checkModel, createdAt, rand     // rand: random picks with a range query
   reviewedAt?                            // set by the review script when a question is kept
+  seedBatch?, batchFlagged?              // bulk loads ('gemini-2026-11-27', 'claude-2026-11-27'); flagged as a batch
 
 places/{placeKey}                        // functions only; recorded even when no good question came out
   name, location: GeoPoint, generatedAt, questionCount, source?
@@ -324,7 +325,7 @@ A second Refresh on the same view moves the three far points a little to give a 
 **Question bank.**
 
 - The categories, and subcategories that creators never see, are typed code in `shared/`. The first list is: History, Geography, Science, Nature & animals, Space, Sport, Music, Film & TV, Food & drink, Art & books, Words & language, Local. Auto mixes categories that suit the difficulty.
-- A script fills the bank ahead of time for every category, subcategory and difficulty, 20–25 questions per LLM call. `topUpQuestions` adds more in the background when a creator has fewer than about twice a walk's worth of unused questions left in a pool. The prompt includes the pool's existing correct answers, so new questions don't repeat them.
+- The bank is filled ahead of time for every category, subcategory and difficulty: by the seed bank's JSON files in `content/question-bank/`, imported with `scripts/import-question-bank.ts` (decided 2026-11-28), and by the Gemini fill of 2026-11-27. `scripts/fill-bank.ts` (20–25 questions per call, capped at $10) stays for a deliberate refill but isn't used at volume. `topUpQuestions` adds more in the background when a creator has fewer than about twice a walk's worth of unused questions left in a pool. The prompt includes the pool's existing correct answers, so new questions don't repeat them.
 - A second model fact-checks every question, and a failure is dropped, not rewritten. Only facts that stay true are allowed (no "current" office holders or records). Each question records its model and date.
 - Picking leaves out questions the creator has used before, picks at random within the pool, spreads a walk over subcategories, and shuffles the correct and wrong answers.
 
@@ -476,7 +477,7 @@ Accessibility in v1: Dynamic Type / font scaling, screen-reader labels on all co
 | Item | Expected |
 |---|---|
 | Firestore, Functions, Hosting | Within free quotas |
-| LLM (Gemini API) | Filling the question bank once: about $6 for ~7,800 questions on 2026-11-27 prices (`m4-backend-delivery.md` has the actual spend), capped at $10 by the fill script. Then top-ups (at most 20 a day) and *Local* questions for new places → < $5/month. Gemini 4 prices double on 2026-12-01 and 3.8 Flash's on 2027-01-01 |
+| LLM (Gemini API) | The one-off fill of 2026-11-27 cost $6.99 for 8,305 questions. The seed bank is written by Claude Code sessions, not Gemini. In production: top-ups (at most 20 a day, about $0.02–0.04 each) and *Local* questions for new places (about $0.008 a place) → < $5/month. Gemini 4 prices double on 2026-12-01 and 3.8 Flash's on 2027-01-01 |
 | OpenRouteService | Free plan (2,000 routes/day). A Refresh is 1–2 routes, limited to about 30 per creator per hour |
 | Overpass, Wikipedia, Wikidata | Free public services. One Overpass query per generated walk |
 | Maps (Apple, Google mobile SDK) | Free |

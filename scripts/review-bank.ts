@@ -11,6 +11,9 @@
  *   npx tsx scripts/review-bank.ts keep <id> --project qualk-a173e               # back to active
  *   npx tsx scripts/review-bank.ts search "\\b(drugs?|beer)\\b" --project qualk-a173e  # every match
  *   npx tsx scripts/review-bank.ts stats --project qualk-a173e                   # counts, spend
+ *   npx tsx scripts/review-bank.ts tag-batch gemini-2026-11-27 --project …       # untagged → batch
+ *   npx tsx scripts/review-bank.ts flag-batch gemini-2026-11-27 --project …      # hide a whole batch
+ *   npx tsx scripts/review-bank.ts unflag-batch gemini-2026-11-27 --project …    # and back
  */
 import { createRequire } from 'node:module';
 import { dirname, join } from 'node:path';
@@ -137,6 +140,42 @@ async function search(db: Firestore, pattern: string) {
   console.log(`\n${hits} of ${snap.size} match`);
 }
 
+/** Writes in chunks, so a batch of thousands fits Firestore's 500-write limit. */
+async function updateAll(
+  db: Firestore,
+  refs: FirebaseFirestore.DocumentReference[],
+  data: Record<string, unknown>,
+) {
+  for (let i = 0; i < refs.length; i += 400) {
+    const b = db.batch();
+    for (const ref of refs.slice(i, i + 400)) b.update(ref, data);
+    await b.commit();
+  }
+}
+
+/** Gives every bank question without a seedBatch this one (the Gemini fill's, after the fact). */
+async function tagBatch(db: Firestore, batch: string) {
+  const snap = await db.collection('questionBank').where('kind', '==', 'trivia').get();
+  const refs = snap.docs.filter((d) => !d.get('seedBatch')).map((d) => d.ref);
+  await updateAll(db, refs, { seedBatch: batch });
+  console.log(`${refs.length} questions tagged ${batch}`);
+}
+
+/** Hides a whole batch, or brings back the ones hidden that way (not ones flagged by reports). */
+async function flagBatch(db: Firestore, batch: string, flag: boolean) {
+  let q = db.collection('questionBank').where('seedBatch', '==', batch);
+  q = flag ? q.where('status', '==', 'active') : q.where('batchFlagged', '==', true);
+  const refs = (await q.get()).docs.map((d) => d.ref);
+  await updateAll(
+    db,
+    refs,
+    flag
+      ? { status: 'flagged', batchFlagged: true }
+      : { status: 'active', batchFlagged: FieldValue.delete() },
+  );
+  console.log(`${refs.length} questions in ${batch} ${flag ? 'flagged' : 'back to active'}`);
+}
+
 async function stats(db: Firestore) {
   const bank = db.collection('questionBank');
   for (const status of ['active', 'flagged', 'blocked']) {
@@ -173,7 +212,15 @@ async function main() {
   else if (command === 'keep') await setStatus(db, ids, 'active');
   else if (command === 'stats') await stats(db);
   else if (command === 'search') await search(db, ids[0] ?? '.');
-  else console.log('Commands: sample, flagged, search <regex>, block <id…>, keep <id…>, stats');
+  else if (command === 'tag-batch' && ids[0]) await tagBatch(db, ids[0]);
+  else if (command === 'flag-batch' && ids[0]) await flagBatch(db, ids[0], true);
+  else if (command === 'unflag-batch' && ids[0]) await flagBatch(db, ids[0], false);
+  else {
+    console.log(
+      'Commands: sample, flagged, search <regex>, block <id…>, keep <id…>, stats, ' +
+        'tag-batch <batch>, flag-batch <batch>, unflag-batch <batch>',
+    );
+  }
 }
 
 main().catch((err) => {

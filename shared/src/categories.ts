@@ -63,6 +63,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'modern', topic: 'the 1700s and 1800s: revolutions, industry and inventions' },
       { id: 'twentieth', topic: 'the 20th century' },
       { id: 'everyday', topic: 'everyday life in the past: homes, clothes, school, toys' },
+      { id: 'nordic', topic: 'Danish and Nordic history' },
     ],
   },
   {
@@ -76,6 +77,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'cities', topic: 'cities and famous landmarks' },
       { id: 'flags', topic: 'flags, borders and where countries are' },
       { id: 'islands', topic: 'islands, coasts and peninsulas' },
+      { id: 'europe', topic: 'the countries, cities and landscapes of Europe' },
     ],
   },
   {
@@ -89,6 +91,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'inventions', topic: 'inventions and the people who made them' },
       { id: 'weather', topic: 'weather and climate' },
       { id: 'earth', topic: 'the Earth: rocks, earthquakes and the oceans' },
+      { id: 'maths', topic: 'maths and numbers' },
     ],
   },
   {
@@ -102,6 +105,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'small', topic: 'insects, spiders and other small creatures' },
       { id: 'plants', topic: 'plants, trees and fungi' },
       { id: 'habits', topic: 'how animals live: food, homes, migration and senses' },
+      { id: 'dinosaurs', topic: 'dinosaurs and prehistoric life' },
     ],
   },
   {
@@ -140,7 +144,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'instruments', topic: 'musical instruments' },
       { id: 'stage', topic: 'musicals and music in films' },
       { id: 'world', topic: 'folk and world music, and music around the world' },
-      { id: 'theory', topic: 'musical terms, notes and how music is written', notFor: ['kids'] },
+      { id: 'theory', topic: 'musical terms, notes and how music is written' },
     ],
   },
   {
@@ -149,11 +153,11 @@ export const CATEGORIES: readonly Category[] = [
     auto: ALL,
     subcategories: [
       { id: 'animated', topic: 'animated films' },
-      { id: 'classic', topic: 'classic films from before 1990', notFor: ['kids'] },
+      { id: 'classic', topic: 'classic films from before 1990' },
       { id: 'making', topic: 'how films are made: directors, studios and awards' },
       { id: 'series', topic: 'TV series' },
       { id: 'fantasy', topic: 'superhero, fantasy and science-fiction films' },
-      { id: 'children', topic: "children's TV and family films", notFor: ['expert'] },
+      { id: 'children', topic: "children's TV and family films" },
     ],
   },
   {
@@ -178,7 +182,7 @@ export const CATEGORIES: readonly Category[] = [
       { id: 'buildings', topic: 'sculpture and architecture' },
       { id: 'childrens', topic: "children's books and their authors" },
       { id: 'novels', topic: 'classic novels and their authors' },
-      { id: 'poetry', topic: 'poetry and plays', notFor: ['kids'] },
+      { id: 'poetry', topic: 'poetry and plays' },
       { id: 'myths', topic: 'myths, legends and fairy tales' },
     ],
   },

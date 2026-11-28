@@ -29,6 +29,8 @@ export interface FillOptions {
   /** Calls per minute to the model API, across workers (each batch is two calls). */
   rpm: number;
   log: (entry: FillLogEntry) => void;
+  /** Recorded on every question written, e.g. 'gemini-2026-11-27'. */
+  seedBatch?: string;
   now?: () => number;
   sleep?: (ms: number) => Promise<void>;
 }
@@ -130,7 +132,14 @@ export async function fillBank(
           const res = await writeTrivia(llm, models, pool, ask, existing);
           const added = await insertQuestions(
             db,
-            res.kept.map((q) => triviaDoc(pool, q, { models, rand: Math.random, nowMs: now() })),
+            res.kept.map((q) =>
+              triviaDoc(pool, q, {
+                models,
+                rand: Math.random,
+                nowMs: now(),
+                seedBatch: opts.seedBatch,
+              }),
+            ),
           );
           const cost = await recordSpend(db, 'fill', res.usage, now());
           spent += cost;

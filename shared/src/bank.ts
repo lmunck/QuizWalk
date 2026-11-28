@@ -71,6 +71,13 @@ export interface BankQuestionDoc {
   createdAt: TimestampLike;
   /** Set by the review script when a flagged question is kept. */
   reviewedAt?: TimestampLike;
+  /**
+   * Which bulk load wrote it: 'gemini-2026-11-27' for the Gemini fill, 'claude-2026-11-27' for the
+   * imported Claude-written bank. The review script can flag or unflag a whole batch.
+   */
+  seedBatch?: string;
+  /** Flagged with its whole batch, so unflagging the batch leaves report-flagged ones alone. */
+  batchFlagged?: boolean;
   /** In [0, 1): random picks with a range query. */
   rand: number;
 }
@@ -221,6 +228,9 @@ export function cleanWrittenQuestion(q: WrittenQuestion): WrittenQuestion {
   };
 }
 
+/** The answer without case, accents, punctuation or a leading article. */
+const answerKey = (s: string) => norm(s).replace(/^(the|a|an) /, '');
+
 function wordSet(s: string): Set<string> {
   return new Set(
     norm(s)
@@ -238,20 +248,17 @@ export function repeatsExisting(
   existing: Pick<WrittenQuestion, 'question' | 'correct'>[],
 ): boolean {
   const text = norm(q.question);
-  const answer = norm(q.correct);
+  const answer = answerKey(q.correct);
   const words = wordSet(q.question);
   return existing.some((e) => {
     if (norm(e.question) === text) return true;
-    if (norm(e.correct) !== answer) return false;
+    if (answerKey(e.correct) !== answer) return false;
     const other = wordSet(e.question);
     const shared = [...words].filter((w) => other.has(w)).length;
     const union = new Set([...words, ...other]).size;
     return union > 0 && shared / union >= 0.5;
   });
 }
-
-/** The answer without case, accents, punctuation or a leading article. */
-const answerKey = (s: string) => norm(s).replace(/^(the|a|an) /, '');
 
 /**
  * Whether two questions are about the same thing, so one walk never gets both: the same

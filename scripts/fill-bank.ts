@@ -18,7 +18,10 @@
  *
  * Options: --project <id>  --cap <usd, default 10>  --target <per pool, default 40>
  *          --concurrency <default 6>  --rpm <model calls per minute, default 60>
- *          --only <category,…>  --fake  --dry-run
+ *          --only <category,…>  --batch <seedBatch, default gemini-YYYY-MM-DD>  --fake  --dry-run
+ *
+ * Decided 2026-11-28: the seed bank is written by Claude Code sessions and loaded with
+ * import-question-bank.ts; Gemini isn't used at volume. This script stays for a deliberate refill.
  */
 import { execFileSync } from 'node:child_process';
 import { appendFileSync, mkdirSync, readFileSync } from 'node:fs';
@@ -48,6 +51,7 @@ const { values: args } = parseArgs({
     concurrency: { type: 'string', default: '6' },
     rpm: { type: 'string', default: '60' },
     only: { type: 'string' },
+    batch: { type: 'string', default: `gemini-${new Date().toISOString().slice(0, 10)}` },
     fake: { type: 'boolean', default: false },
     'dry-run': { type: 'boolean', default: false },
   },
@@ -163,6 +167,7 @@ async function main() {
     capUsd,
     concurrency: Number(args.concurrency),
     rpm: Number(args.rpm),
+    seedBatch: args.batch,
     log,
   });
   appendFileSync(logFile, `${JSON.stringify({ at: new Date().toISOString(), report })}\n`);

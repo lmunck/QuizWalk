@@ -50,29 +50,32 @@ describe('categories', () => {
     ]);
   });
 
-  it('gives every trivia category six subcategories with unique ids', () => {
+  it('gives every trivia category six or seven subcategories with unique ids', () => {
     for (const c of CATEGORIES.filter((c) => c.id !== 'local')) {
-      expect(c.subcategories).toHaveLength(6);
-      expect(new Set(c.subcategories.map((s) => s.id)).size).toBe(6);
+      expect(c.subcategories.length).toBeGreaterThanOrEqual(6);
+      expect(c.subcategories.length).toBeLessThanOrEqual(7);
+      expect(new Set(c.subcategories.map((s) => s.id)).size).toBe(c.subcategories.length);
     }
   });
 
-  it('leaves out pools that do not suit a difficulty', () => {
-    expect(subcategoriesFor('music', 'kids').map((s) => s.id)).not.toContain('theory');
-    expect(subcategoriesFor('music', 'expert').map((s) => s.id)).toContain('theory');
+  it('has a pool for every subcategory at every difficulty, and none for Local', () => {
+    // The seed bank covers all three difficulties everywhere (decided 2026-11-28).
+    expect(subcategoriesFor('music', 'kids').map((s) => s.id)).toContain('theory');
+    expect(subcategoriesFor('history', 'kids').map((s) => s.id)).toContain('nordic');
     expect(subcategoriesFor('local', 'mixed')).toEqual([]);
   });
 
   it('lists every pool once, and round-trips pool keys', () => {
     const pools = allPools();
-    expect(pools.length).toBe(11 * 6 * 3 - 4);
+    expect(pools.length).toBe((11 * 6 + 4) * 3);
     expect(new Set(pools.map(poolKey)).size).toBe(pools.length);
     expect(parsePoolKey('history.medieval.kids')).toEqual({
       category: 'history',
       subcategory: 'medieval',
       difficulty: 'kids',
     });
-    expect(parsePoolKey('music.theory.kids')).toBeUndefined();
+    expect(parsePoolKey('history.nordic.kids')).toMatchObject({ subcategory: 'nordic' });
+    expect(parsePoolKey('history.vikings.kids')).toBeUndefined();
     expect(parsePoolKey('nonsense')).toBeUndefined();
   });
 

@@ -48,6 +48,8 @@ export interface NewQuestionMeta {
   models: { writer: string; checker: string };
   rand: Rng;
   nowMs?: number;
+  /** Set by bulk loads (the fill script); top-ups and Local questions leave it out. */
+  seedBatch?: string;
 }
 
 export function triviaDoc(
@@ -71,6 +73,7 @@ export function triviaDoc(
     checkModel: meta.models.checker,
     createdAt: Timestamp.fromMillis(meta.nowMs ?? Date.now()),
     rand: meta.rand(),
+    ...(meta.seedBatch ? { seedBatch: meta.seedBatch } : {}),
   };
 }
 
