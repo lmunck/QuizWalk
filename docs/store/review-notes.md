@@ -6,9 +6,8 @@ The texts to paste into App Store Connect and the Play Console, and what a revie
 the app. Nothing has been submitted. Where a text says `{DEMO CODE}` or `{END DATE}`, fill it in
 from §3 first.
 
-Every claim below is taken from the code on `m2-m5` and the spec. Lines marked **[M4]** describe
-*Generate for me* and *Report question*, which are not in the app yet (see
-[`checklist.md`](checklist.md), step 1). Delete them if the build lacks those screens.
+Every claim below is taken from the code on `final-pass` (M1 to M5, 2026-11-28) and the spec,
+and every feature it names is in the app, *Generate for me* and *Report question* included.
 
 ---
 
@@ -36,13 +35,13 @@ Tap Join a walk, enter {DEMO CODE}, then Allow location & join (choose "Allow Wh
 
 2) PLAY A WHOLE WALK WHERE YOU ARE (about 3 minutes)
 a. On Home tap New quiz walk (on the very first screen it is Create a walk). Sign in with Apple (any Apple ID) or Continue with Google (account below). Enter a name.
-b. Give a title, tap Start building. In the route builder tap Add stop here, tap the new stop's row, write a question and two answers, mark the right one, Save stop.
+b. Tap Build it myself, give a title, tap Start building. (Generate for me instead makes a whole walk from the map.) In the route builder tap Add stop here, tap the new stop's row, write a question and two answers, mark the right one, Save stop.
 c. Tap Publish & share, then Open walk, choose Today, Open walk.
 d. Back on Home, tap Join with code and enter the code from the share screen. Join, then Start walk. The stop is where you stand, so its question opens within seconds. Indoors, if GPS is weak, use Can't reach it, then I'm here.
 e. To end: Home, Live now, your walk, End walk. The results appear for the creator and the team.
 
 LOCATION
-Location is used only during a walk, to open each question at its stop. We ask only for "When In Use"; "Always" is never requested. After the player taps Start walk with the app on screen, location updates continue while the phone is locked or in a pocket (location background mode, blue indicator), so the phone can buzz with a local notification at the stop. They stop when the team finishes or leaves, when the walk ends, or when the app is closed. If notifications are refused there is no background use: the screen stays on and the app says "Keep QuizWalk open". The only location uploaded is the team's last known position (one point, overwritten, at most every 30 s), visible only to the walk's creator and deleted 30 days after the walk ends. Nothing is uploaded before Start walk.
+Location is used during a walk, to open each question at its stop, and while building a walk, to put the Start pin and stops where the creator stands. We ask only for "When In Use"; "Always" is never requested. After the player taps Start walk with the app on screen, location updates continue while the phone is locked or in a pocket (location background mode, blue indicator), so the phone can buzz with a local notification at the stop. They stop when the team finishes or leaves, when the walk ends, or when the app is closed. If notifications are refused there is no background use: the screen stays on and the app says "Keep QuizWalk open". The only location uploaded is the team's last known position (one point, overwritten, at most every 30 s), visible only to the walk's creator and deleted 30 days after the walk ends. Nothing is uploaded before Start walk.
 
 SIGN-IN
 Players never need an account. Sign-in (Apple or Google) is asked for only when someone creates a walk.
@@ -59,13 +58,7 @@ Settings, Delete account and all data (creators; on iPhone, Apple is asked to re
 No ads, no analytics, no tracking.
 ```
 
-The two **[M4]** paragraphs are "AI-GENERATED QUESTIONS" and the first two sentences of
-"REPORTING AND MODERATION". Without the M4 screens, replace that whole section with: "Walks are
-private: there is no public list or search, and only people given the code see a walk. Players
-can leave a walk at any time. Contact: privacy@qualk.dk." and say in the checklist's open
-point that Report question is still missing (Apple may ask for it under 1.2).
-
-Length: about 3,600 characters with the placeholders filled in. Check the count after filling
+Length: about 3,870 characters with the placeholders filled in. Check the count after filling
 them; App Store Connect stops at 4,000.
 
 ### Attachment
@@ -90,10 +83,10 @@ Add one set of instructions:
 | Any other information | The text below |
 
 ```text
-Players need no account: tap Join a walk, enter {DEMO CODE} (open until {END DATE}, then it shows results). Its stops are in Copenhagen; use Can't reach it to skip. To play where you are: Create a walk, Continue with Google (account above), title, Start building, Add stop here, tap the stop, write a question, Save stop, Publish & share, Open walk, Today. Then Join with code, Join, Start walk: the question opens at once. Report question is on the answer screen.
+Players need no account: tap Join a walk, enter {DEMO CODE} (open until {END DATE}, then it shows results). Its stops are in Copenhagen; use Can't reach it to skip. To play where you are: Create a walk, Continue with Google (account above), Build it myself, title, Start building, Add stop here, tap the stop, write a question, Save stop, Publish & share, Open walk, Today. Then Join with code, Join, Start walk: the question opens at once. Report question is on the answer screen.
 ```
 
-The last sentence is **[M4]**. Kept under 500 characters in case the field is limited.
+Kept under 500 characters in case the field is limited.
 
 ### 2.2 Foreground service permissions → Location
 
@@ -168,7 +161,7 @@ ended` and delete `walks/{id}` (with its subcollections), `joinCodes/{CODE}` and
 | Making, publishing, opening, ending a walk | Yes | Path 2 |
 | Live monitor, results, share card | Yes | Path 2 |
 | Pocket mode (buzz with the phone in a pocket) | Only by walking | The video |
-| *Generate for me* **[M4]** | Yes, if the build has it | Path 2, *Generate for me* instead of building by hand |
+| *Generate for me*, *Swap*, *Report question* | Yes | Path 2, *Generate for me* instead of *Build it myself*; *Report question* under any answer's feedback |
 | Week-long walk | Only the open state | The demo walk |
 
 ## 5. Reports: how you hear of them and what you can do

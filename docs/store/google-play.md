@@ -10,10 +10,10 @@ Screenshots: [`screenshots.md`](screenshots.md).
 **Spelling.** British, as in the app and the spec. Set the default language to **English
 (United Kingdom) – en-GB**. Play shows it in every country that has no translation of its own.
 
-**Marked text.** Lines marked **[M4]** describe *Generate for me*, *Local* questions, *Swap* and
-*Report question*, which are not in the app on `m2-m5` yet. Delete them if the build you upload
-lacks those screens: Play's metadata policy, like Apple's, refuses listings that promise
-features the app does not have.
+**Every feature described here is in the app** (M1 to M5, checked against the code on
+`final-pass`, 2026-11-28), including *Generate for me*, *Local* questions, *Swap* and *Report
+question*. Play's metadata policy, like Apple's, refuses listings that promise features the app
+does not have, so check again if a later build drops one.
 
 **Android, step by step.** Where a step happens on the phone rather than in the Play Console,
 it is spelled out, since this is your first Android phone.
@@ -80,7 +80,7 @@ MAKE A WALK
 
 GOOD TO KNOW
 • Creators sign in with Google. Players never need an account.
-• QuizWalk uses your location only during a walk, to open the questions. Your position is shared only with the walk's creator, and only after you tap Start walk. Other teams never see where you are.
+• QuizWalk uses your location during a walk, to open the questions, and when you make one, to put the pins where you stand. Your position is shared only with the walk's creator, and only after you tap Start walk. Other teams never see where you are.
 • While you walk, a notification shows that QuizWalk is guiding you to the next stop. It goes away when your walk ends.
 • Something wrong with a question? Report it from the answer screen.
 • No ads, no analytics, no tracking.
@@ -88,11 +88,9 @@ GOOD TO KNOW
 • QuizWalk is in English.
 ```
 
-**[M4] lines:** "Generate for me…", "Pick categories…", "Swap any question…" and "Something wrong
-with a question?…". It differs from the App Store text in two places: Google sign-in only
-(Android shows no Apple button, `sign-in.tsx`), and one line about the foreground-service
-notification, which Android users see and iPhone users do not. Length: 2,302 characters, 1,899
-without the [M4] lines.
+It differs from the App Store text in two places: Google sign-in only (Android shows no Apple
+button, `sign-in.tsx`), and one line about the foreground-service notification, which Android
+users see and iPhone users do not. Length: 2,353 characters.
 
 ### Graphics
 
@@ -214,7 +212,7 @@ Tick these, and nothing else:
 
 | Play category → type | What QuizWalk collects |
 |---|---|
-| **Location → Precise location** | A player's last known position (one point, overwritten, not a trail) from *Start walk* until the team finishes or leaves or the walk ends; kept until 30 days after the walk ends. A creator's Start pin and stops when they place them from the phone's location |
+| **Location → Precise location** | A player's last known position (one point, overwritten, not a trail) from *Start walk* until the team finishes or leaves or the walk ends; kept until 30 days after the walk ends. A creator's Start pin and stops when they place them from the phone's location (*Add stop here*, the default Start pin, or the *Generate for me* map, which opens where they stand) |
 | **Personal info → Name** | The creator's "name players see" and the name Google hands over at sign-in. Team names, which for a solo player are usually their own name |
 | **Personal info → Email address** | The address Google hands over when a creator signs in. Kept by Firebase Authentication; shown only to the creator |
 | **Personal info → User IDs** | The Firebase user ID (random per install for players, per account for creators) and the Google account ID behind a creator's sign-in |

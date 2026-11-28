@@ -46,14 +46,13 @@ The first three show up in search results, so they explain the game: walk, answe
 | 2 | P4 Question | **Answer when you get there** (Fast answers earn a bonus) | "Stop 4", the H.C. Andersen question, four answers, the bonus clock part-drained (about +4) | Both |
 | 3 | P4 feedback | **See if you got it right** (With the points and the story behind it) | A right answer: tick, "Right!", "+14 points (10 + 4 speed bonus)", the explanation | Both |
 | 4 | P6 Final results (or C9) | **See who comes out on top** | The podium with three or four teams, in their colours with initials | Both |
-| 5 | C2 Generate for me **[M4]** | **Zoom the map, get a walk** (QuizWalk makes the route and the questions) | The map after a Refresh, the loop with its stops, the sheet with categories and "8 stops · 3 km · about 55 min" | Both, if the build has it |
+| 5 | C2 Generate for me | **Zoom the map, get a walk** (QuizWalk makes the route and the questions) | The map after a Refresh, the loop with its stops, the sheet with categories and "8 stops · 3 km · about 55 min" | Both |
 | 6 | C4 Route builder | **Or build it yourself** (Drop the pins, write the questions) | The map with 5 stops and the sheet at half height listing them | Both |
 | 7 | C6 Share | **Share a five-letter code** (Or the QR code, or a link) | The code in large letters, the QR, a few teams that have joined | Both |
 | 8 | C7 Live monitor | **Follow the teams live** | The map with three team markers, the leaderboard sheet, a "Way blocked" alert. Take it within 2 minutes of adding the pretend teams: after that they show as dimmed ("seen 3 min ago"), since the script sets their last-seen time once | Both |
 | 9 | P1 Join | **Join with a code. No account needed.** | The walk summary with the time estimate, Solo / Team, the team name, the location card | App Store only |
 
-Without the M4 screens: drop row 5. Then Play takes rows 1–4 and 6–9 (eight), and the App Store
-takes all eight as well.
+Play takes eight: rows 1–8. The App Store takes all nine.
 
 **Left out on purpose:** Welcome (its illustration may read as aimed at children, see the Play
 target audience), sign-in, Settings (both show "Test build" rows in an emulator build), and the
