@@ -38,11 +38,12 @@ Each milestone's delivery notes have the details and the reasons for each decisi
 
 ## Decisions for you
 
-1. **Keep or retire the Gemini questions.** To hide them all:
-   `npx tsx scripts/review-bank.ts flag-batch gemini-2026-11-27 --project qualk-a173e`
-   (`unflag-batch` brings them back). To read a sample first: `… sample --project qualk-a173e --per 6`.
-   Space, Sport, Music, Film & TV, Food, Art & books, Words and most of Nature have only Gemini
-   questions. Retiring them empties those categories until Claude writes them.
+1. **Keep or retire the Gemini questions.** Decided 2026-11-28: **kept**. They stay live, and
+   reports and the correct-rate checks moderate them like the rest of the bank. To hide them all
+   later: `npx tsx scripts/review-bank.ts flag-batch gemini-2026-11-27 --project qualk-a173e`
+   (`unflag-batch` brings them back). Space, Sport, Music, Film & TV, Food, Art & books, Words and
+   most of Nature have only Gemini questions, so retiring them would empty those categories until
+   Claude writes them.
 2. **Whether Claude should write the remaining categories** in a later session, in the same
    format as `content/question-bank/` (its README has the rules).
 3. **The store name** (QuizWalk, then the fallbacks), **Apple's EU trader status**, and **a
