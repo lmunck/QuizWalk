@@ -2,9 +2,10 @@
 
 2026-11-28 · for version 1.0.0
 
-Which screens to capture, in what order, with which caption, and at what size. Nothing has been
-captured yet. iPhone screenshots are taken on the simulator; Android ones on your Android phone
-(this Mac has no Android SDK, `m2-m3-delivery.md`).
+Which screens to capture, in what order, with which caption, and at what size. The iPhone set
+was captured and framed on 2026-11-28: eight of the nine shots are in
+[`screenshots/ios/`](screenshots/ios/) (§6). Android ones are yours, on your Android phone: this
+Mac has no Android SDK and the Android build has no Maps key yet (`m2-m3-delivery.md`).
 
 ## 1. Sizes
 
@@ -119,3 +120,40 @@ needs the Google Maps Android key first (spec §18), or it shows a placeholder.
 5. **Get them to the Mac:** in Google Photos select them → **Share** → **Quick Share** or
    **Drive**, or open [photos.google.com](https://photos.google.com) on the Mac and download them.
 6. Frame them onto 1080 × 1920 canvases as in §2.
+
+## 6. The iPhone set, as taken on 2026-11-28
+
+In [`screenshots/ios/`](screenshots/ios/): the framed images to upload (1320 × 2868, PNG, no
+alpha channel), and in `raw/` the plain captures (1206 × 2622). Taken against the local
+emulators with seeded walks around Nyhavn and Kastellet and pretend teams ("Harbour Hawks",
+"Fjord Kids", "Canal Crew"); the creator is "Anders". No real person's data is on any of them.
+
+| File | Screen | Caption (second line) | Note |
+|---|---|---|---|
+| `01-walk.png` | P3 | Walk to each stop (The map shows the way) | "Stop 2 of 5 · 14 pts", 250 m, a ✓ on stop 1. The text bearing shows, since the simulator has no compass |
+| `02-question.png` | P4 | Answer when you get there (Fast answers earn a bonus) | Stop 4, the H.C. Andersen question, "Speed bonus +4" |
+| `03-feedback.png` | P4 feedback | See if you got it right (With the points and the story behind it) | "Right! +14 points (10 + 4 speed bonus)" on stop 1, with its explanation |
+| `04-results.png` | P6 | See who comes out on top | The podium and all teams |
+| — | C2 Generate for me | Zoom the map, get a walk | **Not taken.** Refresh needs openrouteservice, and the emulator here had no ORS key. Take it on a build with the real config, or put `ORS_API_KEY=…` in `functions/.secret.local` and run the emulators (`user-testing.md` part 1) |
+| `06-route-builder.png` | C4 | Or build it yourself (Drop the pins, write the questions) | Five stops in Kastellet. The list is scrolled one notch: without ORS the emulator's `reroute` fails and C4 shows its quiet "Couldn't find a walking route" note, which a real build does not |
+| `07-share.png` | C6 | Share a five-letter code (Or the QR code, or a link) | Code, QR and link; the joined teams are below the fold |
+| `08-live-monitor.png` | C7 | Follow the teams live | Three teams on the map, the "way is blocked" alert, the leaderboard |
+| `09-join.png` | P1 | Join with a code. No account needed. | The walk summary, Team / Solo, the team name, the location card |
+
+**Device.** Taken on the **iPhone 18 Pro** simulator, not the 17 Pro Max that §1 names: the
+simulator tool needs your approval for each device, and only the 18 Pro had it while you were
+away. The framing scales each capture to 80 % of a 1320 × 2868 canvas, which is the 6.9-inch size
+App Store Connect asks for, so nothing is lost. The raw 1206 × 2622 captures also fit App Store
+Connect's optional 6.3-inch slot. A Release build was used, so no development buttons show.
+
+**Captions** are drawn by [`scripts/frame-screenshot.swift`](../../scripts/frame-screenshot.swift)
+(Space Grotesk and Inter from the app's own font packages, §2's layout). To make one again:
+
+```bash
+swiftc -O scripts/frame-screenshot.swift -o /tmp/frame
+/tmp/frame docs/store/screenshots/ios/raw/01-walk.png docs/store/screenshots/ios/01-walk.png 1320 2868 "Walk to each stop" "The map shows the way"
+```
+
+The same script makes Play's 1080 × 1920 images from your Android captures: give it `1080 1920`.
+
+**Upload order** (App Store): 01, 02, 03, 04, then 06, 07, 08, 09, and C2 as fifth once taken.
