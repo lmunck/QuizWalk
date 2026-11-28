@@ -290,5 +290,5 @@ const styles = StyleSheet.create({
     borderWidth: 2.5,
     borderColor: colors.white,
   },
-  teamText: { fontFamily: fonts.heading, fontSize: 12, lineHeight: 15 },
+  teamText: { fontFamily: fonts.heading, fontSize: 13, lineHeight: 16 },
 });

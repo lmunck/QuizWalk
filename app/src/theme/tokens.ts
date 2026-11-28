@@ -84,6 +84,8 @@ export const type = {
   callout: { fontFamily: fonts.body, fontSize: 15, lineHeight: 21 },
   calloutStrong: { fontFamily: fonts.bodySemiBold, fontSize: 15, lineHeight: 21 },
   label: { fontFamily: fonts.bodySemiBold, fontSize: 13, lineHeight: 17, letterSpacing: 0.6 },
+  /** The label style at the 15 pt floor of what players read while walking (P3, P4). */
+  labelWalk: { fontFamily: fonts.bodySemiBold, fontSize: 15, lineHeight: 19, letterSpacing: 0.6 },
   caption: { fontFamily: fonts.body, fontSize: 13, lineHeight: 18 },
   button: { fontFamily: fonts.bodySemiBold, fontSize: 17, lineHeight: 22 },
   number: {

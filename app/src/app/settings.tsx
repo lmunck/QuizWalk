@@ -214,7 +214,7 @@ export default function Settings() {
           <Row label="Version" value={Constants.expoConfig?.version ?? '–'} />
           <Row
             label="Location"
-            detail="Used only during a walk, to unlock questions. Shared with the walk's creator only after you tap Start walk."
+            detail="Used during a walk to unlock questions, and when you build one to put pins where you stand. Shared with the walk's creator only after you tap Start walk."
           />
           <Row
             label="Map data"

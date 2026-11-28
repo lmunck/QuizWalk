@@ -70,7 +70,7 @@ export function WalkMenu({
           <View style={styles.block}>
             <SectionLabel>Standings so far</SectionLabel>
             {offline ? (
-              <Txt variant="caption" color={colors.muted}>
+              <Txt variant="callout" color={colors.muted}>
                 Offline: standings update when you are back online.
               </Txt>
             ) : null}

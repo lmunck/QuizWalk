@@ -473,7 +473,7 @@ Changes from the mockups, and why:
 - **Team colours** no longer include the error orange (`#B4471B`, also the warning pin) or the ink (`#16211B`, also the start pin). Every team colour must give white initials ≥ 4.5:1 and must not be the accent, error or ink colour. The eight were picked by simulating red-green colour blindness: the closest pair stays about twice as far apart as in the first set of four. Several are still close cousins (blue, sky, cyan), so colour is never the only cue: a team marker always carries its initials.
 - **Touch targets.** The mockups draw back buttons, steppers and pills at 44 pt; build them at 48.
 - **Text size.** Nothing a player needs while walking (P3, P4) is set below 15 pt. Elsewhere 13 pt is the floor.
-- **Layouts scroll.** The mockups are fixed 390 × 844 frames. With larger text sizes every screen must scroll rather than clip, and bottom buttons stay pinned.
+- **Layouts scroll.** The mockups are fixed 390 × 844 frames. With larger text sizes every screen must scroll rather than clip, and bottom buttons stay pinned. Body text grows as far as the system lets it (about 3× at the largest accessibility size); titles grow at most 1.8–2.8× and button labels 2×, as iOS's own Title styles do, so a title never fills the screen. At the largest sizes, side-by-side choices and buttons go one under the other, and the map screens (C2, P3) keep their sheets or cards to part of the screen and scroll inside them, so the map stays usable.
 - **Destructive actions** (End walk, Delete, Skip, New route) are never the accent-coloured button and always confirm.
 - **Haptics:** a buzz on arrival, and distinct taps for right and wrong.
 

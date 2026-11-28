@@ -134,7 +134,7 @@ function Option({
       </View>
       <View style={styles.flex}>
         <Txt variant="calloutStrong">{title}</Txt>
-        <Txt variant="caption" color={colors.secondary}>
+        <Txt variant="callout" color={colors.secondary}>
           {text}
         </Txt>
       </View>

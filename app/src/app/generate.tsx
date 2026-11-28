@@ -97,10 +97,14 @@ interface Result extends RouteForViewResponse {
 function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
   const { uid, displayName } = useAuth();
   const insets = useSafeAreaInsets();
-  const { width, height } = useWindowDimensions();
+  const { width, height, fontScale } = useWindowDimensions();
+  // At the largest text sizes the sheet scrolls more and its buttons stack, so the map stays.
+  const bigText = fontScale > 1.6;
   const mapRef = useRef<QMapRef>(null);
 
   const [sheetH, setSheetH] = useState(0);
+  // Where the top bar ends: the map credit goes just under it, clear of the Start pin.
+  const [topBarBottom, setTopBarBottom] = useState(0);
   const [mapReady, setMapReady] = useState(false);
   const [categories, setCategories] = useState<CategoryId[]>(() =>
     normaliseCategories(walk?.categories),
@@ -298,6 +302,26 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
           ? { text: walkSummaryLine(result.count, result.route.distanceM), error: false }
           : undefined;
 
+  // The summary line: inside the scrolling part at the largest text sizes, so the map stays.
+  const summary = (
+    <View style={styles.lineWrap} accessibilityLiveRegion="polite">
+      {line ? (
+        <Txt
+          variant="callout"
+          color={line.error ? colors.errorText : colors.ink}
+          center
+          style={line.error ? undefined : styles.summary}
+        >
+          {line.text}
+        </Txt>
+      ) : (
+        <Txt variant="callout" color={colors.muted} center>
+          Refresh to make a walking loop that fits the map.
+        </Txt>
+      )}
+    </View>
+  );
+
   return (
     <View style={styles.root}>
       <QMap
@@ -350,7 +374,13 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
         </View>
       </View>
 
-      <View style={[styles.topBar, { top: insets.top + spacing.sm }]}>
+      <View
+        style={[styles.topBar, { top: insets.top + spacing.sm }]}
+        onLayout={(e) => {
+          const { y, height: h } = e.nativeEvent.layout;
+          setTopBarBottom(Math.round(y + h));
+        }}
+      >
         <IconButton
           icon={walk ? 'back' : 'close'}
           label={walk ? 'Back to the route' : 'Cancel'}
@@ -358,7 +388,7 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
           onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))}
         />
         <View style={styles.hintPill}>
-          <Txt variant="caption" color={colors.secondary}>
+          <Txt variant="caption" color={colors.secondary} maxFontSizeMultiplier={1.6}>
             Move the map to choose the start. Zoom and turn it to shape the walk.
           </Txt>
         </View>
@@ -389,8 +419,8 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
         </Pressable>
       </View>
 
-      {sheetH > 0 ? (
-        <MapAttribution style={[styles.attribution, { bottom: sheetH + spacing.xs }]} />
+      {topBarBottom > 0 ? (
+        <MapAttribution style={[styles.attribution, { top: topBarBottom + spacing.xs }]} />
       ) : null}
 
       <View
@@ -398,7 +428,7 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
         onLayout={(e) => setSheetH(Math.round(e.nativeEvent.layout.height))}
       >
         <ScrollView
-          style={{ maxHeight: height * 0.45 }}
+          style={{ maxHeight: height * (bigText ? 0.3 : 0.45) }}
           contentContainerStyle={styles.sheetBody}
           bounces={false}
         >
@@ -440,24 +470,10 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
               setServerMessage(undefined);
             }}
           />
+          {bigText ? summary : null}
         </ScrollView>
-        <View style={styles.lineWrap} accessibilityLiveRegion="polite">
-          {line ? (
-            <Txt
-              variant="callout"
-              color={line.error ? colors.errorText : colors.ink}
-              center
-              style={line.error ? undefined : styles.summary}
-            >
-              {line.text}
-            </Txt>
-          ) : (
-            <Txt variant="callout" color={colors.muted} center>
-              Refresh to make a walking loop that fits the map.
-            </Txt>
-          )}
-        </View>
-        <View style={styles.actions}>
+        {bigText ? null : summary}
+        <View style={[styles.actions, bigText ? styles.actionsStacked : null]}>
           <Button
             label="Refresh"
             icon="refresh"
@@ -531,7 +547,8 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.sm,
   },
   side: { position: 'absolute', right: spacing.md, gap: spacing.sm },
-  attribution: { position: 'absolute', left: spacing.sm },
+  // Left of the zoom and turn buttons, under the top bar.
+  attribution: { position: 'absolute', left: spacing.sm, maxWidth: '70%' },
   compass: {
     width: 48,
     height: 48,
@@ -602,4 +619,5 @@ const styles = StyleSheet.create({
   },
   summary: { fontFamily: fonts.bodySemiBold },
   actions: { flexDirection: 'row', gap: spacing.sm + 2, paddingHorizontal: spacing.lg },
+  actionsStacked: { flexDirection: 'column' },
 });
