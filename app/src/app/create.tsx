@@ -1,6 +1,7 @@
 /**
- * C2 Create, "Build it myself": a title, then the route builder with a Start pin at the
- * creator's location (spec §3 C2). "Generate for me" is hidden until M4.
+ * C2 Create: two equal choices, Generate for me (the map screen) and Build it myself (spec §3
+ * C2). Build it myself asks only for a title, then opens the route builder with a Start pin at
+ * the creator's location.
  */
 import { router } from 'expo-router';
 import { useState } from 'react';
@@ -12,7 +13,7 @@ import { Icon } from '@/components/Icon';
 import { Screen } from '@/components/Screen';
 import { useToast } from '@/components/Toast';
 import { Txt } from '@/components/Txt';
-import { Field } from '@/components/ui';
+import { Card, Field } from '@/components/ui';
 import { createDraft } from '@/data/walks';
 import { currentPlace } from '@/location/places';
 import { colors, radius, spacing } from '@/theme/tokens';
@@ -23,6 +24,7 @@ export default function Create() {
   const [title, setTitle] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string>();
+  const [manual, setManual] = useState(false);
 
   const create = async () => {
     if (!uid) return;
@@ -47,9 +49,29 @@ export default function Create() {
     }
   };
 
+  if (!manual) {
+    return (
+      <Screen back="close" largeTitle="New quiz walk">
+        <Choice
+          icon="sparkle"
+          title="Generate for me"
+          text="Choose an area on the map. The route, stops and questions are made for you, and you can change them all."
+          onPress={() => router.replace('/generate')}
+        />
+        <Choice
+          icon="edit"
+          title="Build it myself"
+          text="Put the stops where you want them and write your own questions."
+          onPress={() => setManual(true)}
+        />
+      </Screen>
+    );
+  }
+
   return (
     <Screen
-      back="close"
+      back="back"
+      onBack={() => setManual(false)}
       largeTitle="New quiz walk"
       footer={<Button label="Start building" large loading={busy} onPress={() => void create()} />}
     >
@@ -86,6 +108,33 @@ export default function Create() {
   );
 }
 
+function Choice({
+  icon,
+  title,
+  text,
+  onPress,
+}: {
+  icon: 'sparkle' | 'edit';
+  title: string;
+  text: string;
+  onPress: () => void;
+}) {
+  return (
+    <Card onPress={onPress} accessibilityLabel={`${title}. ${text}`} style={styles.choice}>
+      <View style={styles.stepIcon}>
+        <Icon name={icon} size={22} color={colors.accent} />
+      </View>
+      <View style={styles.flex}>
+        <Txt variant="subheading">{title}</Txt>
+        <Txt variant="callout" color={colors.secondary}>
+          {text}
+        </Txt>
+      </View>
+      <Icon name="chevronRight" size={20} color={colors.secondary} />
+    </Card>
+  );
+}
+
 function Step({ icon, text }: { icon: 'pin' | 'plus' | 'edit'; text: string }) {
   return (
     <View style={styles.step}>
@@ -102,6 +151,7 @@ function Step({ icon, text }: { icon: 'pin' | 'plus' | 'edit'; text: string }) {
 const styles = StyleSheet.create({
   flex: { flex: 1 },
   how: { gap: spacing.md, marginTop: spacing.sm },
+  choice: { flexDirection: 'row', alignItems: 'center', gap: spacing.md - 4, minHeight: 96 },
   step: { flexDirection: 'row', gap: spacing.md - 4, alignItems: 'center' },
   stepIcon: {
     width: 40,

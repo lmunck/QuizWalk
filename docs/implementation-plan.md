@@ -8,10 +8,10 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-28, after the M2 wrap-up, M3, the M4 backend and M5's privacy work. Delivery
-notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
-[`m5-privacy-delivery.md`](m5-privacy-delivery.md),
-[`m4-backend-delivery.md`](m4-backend-delivery.md); how to test: [`user-testing.md`](user-testing.md).
+Updated 2026-11-28, after the M2 wrap-up, M3, the M4 backend, the M4 screens and M5's privacy
+work. Delivery notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
+[`m4-backend-delivery.md`](m4-backend-delivery.md), [`m4-app-delivery.md`](m4-app-delivery.md),
+[`m5-privacy-delivery.md`](m5-privacy-delivery.md); how to test: [`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
@@ -26,7 +26,8 @@ notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.
 | Pocket mode (A7, M3·1–3) | Built on "When In Use" for both platforms, one switch per platform for the alternative (`app/src/location/tuning.ts`). Settled from expo-location 58's code and the iOS simulator; the walk with a phone in a pocket is yours |
 | Battery (M3·4) | Knobs in place with defaults from spec §9; measuring on phones is yours |
 | M2 account steps | FCM V1 key for Android pushes, the Play closed test, the three-phone check: yours, in `m2-m3-delivery.md` |
-| M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). The M4 screens (C2 map, C3, *Swap*, *Suggest a question*, *Report question*) are next |
+| M4 backend (2026-11-27) | Routing (`routeForView`, `reroute`), the question bank (categories, rules, fill script, top-ups, reports and counts), `generateWalk` and `swapQuestion`, with their contracts in `shared/`. Deployed to `qualk-a173e`; the bank is filled. Details and what's left: [`m4-backend-delivery.md`](m4-backend-delivery.md). |
+| M4 app (2026-11-28) | C2's choice and map screen (Refresh, the spacing check, zoom, turn and north-up buttons, the default number of questions), C3 with leaving, failure and *Play it myself*, Home's "Generating…", C4's *New route* and routed distance, C5's *Swap*, G2's *Suggest a question*, P4's *Report question*. Run end to end on the iOS simulator against the emulators with real ORS and Gemini: [`m4-app-delivery.md`](m4-app-delivery.md). Left: reroute on save in C4, the map screen on real phones, Android |
 | Google Play Console account and app | Still open (spec §18) |
 
 ## How the work is ordered
@@ -170,7 +171,7 @@ Scope depends on the A7 spike.
 | 7 | *Report question* on P4, `onQuestionReported`, bank counts in `onAnswerCreated`, rules for the new collections and their tests |
 | 8 | *New route*, *Play it myself*, rate limiting |
 
-Design: [`m4-generation-design.md`](m4-generation-design.md). The server side of rows 2 and 4–7 was built on 2026-11-27 and is deployed: [`m4-backend-delivery.md`](m4-backend-delivery.md). The contracts the screens are built against are in the design doc's §11.
+Design: [`m4-generation-design.md`](m4-generation-design.md). The server side of rows 2 and 4–7 was built on 2026-11-27 and is deployed: [`m4-backend-delivery.md`](m4-backend-delivery.md). The screens of rows 3 and 5–8 were built on 2026-11-28: [`m4-app-delivery.md`](m4-app-delivery.md); row 2's app side (reroute on save in C4) is still to do. The contracts the screens are built against are in the design doc's §11.
 
 **Check:** generate walks in a city centre, a suburb, a village and a forest, at several zoom
 levels and directions, and walk one. Before the bank goes live, read a sample from every

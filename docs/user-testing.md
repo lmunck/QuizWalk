@@ -42,6 +42,18 @@ Useful extras:
 | `node scripts/seed-walk.mjs --code <CODE> --status ended` | Ends that walk (players see final results) |
 | `node scripts/seed-walk.mjs --code <CODE> --team "Harbour Hawks" --answered 2 --blocked` | A pretend team on the walk, for trying the live monitor alone |
 
+For *Generate for me* (M4), before starting the emulators: put the real routing and writing
+keys where the functions emulator reads them, without printing them, and load the question bank
+once the emulators run. Keep real use small: a Refresh is one routing call, and a walk with a
+*Local* stop can spend Gemini tokens.
+
+```bash
+for n in ORS_API_KEY GEMINI_API_KEY; do printf '%s=%s\n' $n "$(npx firebase functions:secrets:access $n --project qualk-a173e)"; done > functions/.secret.local
+npx tsx scripts/import-question-bank.ts
+```
+
+`functions/.secret.local` is git-ignored; delete it when you are done.
+
 In the simulator build:
 
 - **Sign in as test creator** replaces Apple and Google (the Auth emulator accepts a test

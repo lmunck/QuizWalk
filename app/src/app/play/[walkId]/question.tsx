@@ -4,6 +4,9 @@
  * out, and cannot be restarted: backing out or restarting the app returns to the same clock.
  */
 import {
+  REPORT_REASON_LABELS,
+  REPORT_REASONS,
+  REPORT_THANKS,
   scoreAnswer,
   SPEED_BONUS_MAX,
   SPEED_BONUS_WINDOW_MS,
@@ -18,9 +21,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAuth } from '@/auth/AuthProvider';
 import { Button, IconButton } from '@/components/Button';
+import { Dialog } from '@/components/Dialog';
 import { Icon } from '@/components/Icon';
 import { Txt } from '@/components/Txt';
 import { Card, Pill } from '@/components/ui';
+import { reportQuestion } from '@/data/reports';
 import { submitAnswer, useAnswers } from '@/data/teams';
 import { useStops, useWalk } from '@/data/walks';
 import { tapRight, tapWrong } from '@/lib/feedback';
@@ -48,6 +53,8 @@ export default function Question() {
   const [openedAt, setOpenedAt] = useState<number | null | undefined>(undefined);
   const [now, setNow] = useState(clock);
   const [local, setLocal] = useState<{ choice: number; scored: ScoredAnswer }>();
+  const [reporting, setReporting] = useState(false);
+  const [reported, setReported] = useState(false);
 
   // A clock that already started (backed out, app restarted) continues where it was.
   useEffect(() => {
@@ -323,9 +330,57 @@ export default function Question() {
                 ) : null}
               </Card>
             ) : null}
+            {reported ? (
+              <Txt
+                variant="callout"
+                color={colors.secondary}
+                center
+                accessibilityLiveRegion="polite"
+              >
+                {REPORT_THANKS}
+              </Txt>
+            ) : (
+              <Pressable
+                onPress={() => setReporting(true)}
+                accessibilityRole="button"
+                accessibilityLabel="Report question"
+                accessibilityHint="Asks what is wrong with it."
+                style={styles.report}
+              >
+                <Txt variant="callout" color={colors.secondary} style={styles.reportText}>
+                  Report question
+                </Txt>
+              </Pressable>
+            )}
           </View>
         ) : null}
       </ScrollView>
+      <Dialog
+        visible={reporting}
+        title="Report this question"
+        text="What's wrong with it?"
+        onDismiss={() => setReporting(false)}
+        actions={[
+          ...REPORT_REASONS.map((reason) => ({
+            label: REPORT_REASON_LABELS[reason],
+            kind: 'secondary' as const,
+            onPress: () => {
+              if (uid) {
+                reportQuestion({
+                  uid,
+                  walkId,
+                  stopId,
+                  bankQuestionId: stop.bankQuestionId,
+                  reason,
+                });
+              }
+              setReporting(false);
+              setReported(true);
+            },
+          })),
+          { label: 'Cancel', kind: 'ghost' as const, onPress: () => setReporting(false) },
+        ]}
+      />
       {done ? (
         <View style={[styles.footer, { paddingBottom: Math.max(insets.bottom, spacing.md) }]}>
           <Button
@@ -417,6 +472,8 @@ const styles = StyleSheet.create({
   verdictRight: { backgroundColor: colors.successFill },
   verdictWrong: { backgroundColor: colors.errorFill },
   source: { marginTop: spacing.sm, minHeight: 32, justifyContent: 'center' },
+  report: { alignSelf: 'center', minHeight: 48, justifyContent: 'center', paddingHorizontal: 12 },
+  reportText: { textDecorationLine: 'underline' },
   footer: {
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.sm + 4,
