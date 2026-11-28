@@ -44,7 +44,12 @@ export type IconName =
   | 'sparkle'
   | 'key'
   | 'bell'
-  | 'logout';
+  | 'logout'
+  | 'rotateLeft'
+  | 'rotateRight'
+  | 'compass'
+  | 'refresh'
+  | 'swap';
 
 const PATHS: Record<IconName, string[]> = {
   back: ['M15 5l-7 7 7 7'],
@@ -132,6 +137,12 @@ const PATHS: Record<IconName, string[]> = {
   ],
   bell: ['M18 16V11a6 6 0 00-12 0v5l-2 2h16l-2-2z', 'M10 21h4'],
   logout: ['M15 4h4v16h-4', 'M10 17l5-5-5-5', 'M15 12H3'],
+  rotateLeft: ['M4 4v5h5', 'M4.6 9A8 8 0 1112 20'],
+  rotateRight: ['M20 4v5h-5', 'M19.4 9A8 8 0 1012 20'],
+  // A north needle: the filled half points up while the map is north-up.
+  compass: ['M12 3l3.5 9h-7L12 3z', 'M8.5 12L12 21l3.5-9'],
+  refresh: ['M20 5v5h-5', 'M4 19v-5h5', 'M18.4 10A7 7 0 005.6 8', 'M5.6 14a7 7 0 0012.8 2'],
+  swap: ['M7 4L3 8l4 4', 'M3 8h13', 'M17 12l4 4-4 4', 'M21 16H8'],
 };
 
 interface Props {

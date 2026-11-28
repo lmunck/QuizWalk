@@ -1,6 +1,7 @@
 /** walks/{walkId} and walks/{walkId}/stops (spec §6). */
 import {
   DEFAULT_STOP_RADIUS_M,
+  routeKey,
   walkDistanceM,
   type LatLng,
   type StopDoc,
@@ -9,6 +10,7 @@ import {
 import {
   collection,
   deleteDoc,
+  deleteField,
   doc,
   GeoPoint,
   getDoc,
@@ -88,16 +90,16 @@ export function useStops(walkId: string | undefined): Live<Stop[]> {
 
 // ------------------------------------------------------------------ writes (owner)
 
-/** Straight-line totals the walk doc carries so P1 can show them before joining. */
-function totalsFor(start: LatLng, stopsInOrder: { location: LatLng }[]) {
+/**
+ * Totals the walk doc carries so P1 can show them before joining: the routed distance while
+ * the route still matches the pins (`route.key`), straight lines otherwise (spec §4 Distance).
+ */
+function totalsFor(walk: Pick<Walk, 'route'>, start: LatLng, stopsInOrder: { location: LatLng }[]) {
+  const pins = stopsInOrder.map((s) => s.location);
+  const routed = walk.route?.key !== undefined && walk.route.key === routeKey(start, pins);
   return {
     stopCount: stopsInOrder.length,
-    distanceM: Math.round(
-      walkDistanceM(
-        start,
-        stopsInOrder.map((s) => s.location),
-      ),
-    ),
+    distanceM: Math.round(routed ? walk.route!.distanceM : walkDistanceM(start, pins)),
     updatedAt: serverTimestamp(),
   };
 }
@@ -146,7 +148,7 @@ export function moveStart(walk: Walk, stops: Stop[], start: LatLng, startLabel?:
   updateDoc(walkRef(walk.id), {
     start: geo(start),
     ...(startLabel !== undefined ? { startLabel } : {}),
-    ...totalsFor(start, stops),
+    ...totalsFor(walk, start, stops),
   }).catch(failed('Could not move the start'));
 }
 
@@ -181,7 +183,7 @@ export function addStop(
   next.forEach((s, i) => {
     if (s.id !== ref.id && s.order !== i) batch.update(doc(stopsCol(walk.id), s.id), { order: i });
   });
-  batch.update(walkRef(walk.id), totalsFor(walk.start, next));
+  batch.update(walkRef(walk.id), totalsFor(walk, walk.start, next));
   batch.commit().catch(failed('Could not add the stop'));
   return ref.id;
 }
@@ -189,19 +191,35 @@ export function addStop(
 type StopEdit = Partial<
   Pick<
     StopDoc,
-    'placeName' | 'radiusM' | 'question' | 'options' | 'correctIndex' | 'explanation' | 'hint'
+    | 'placeName'
+    | 'radiusM'
+    | 'question'
+    | 'options'
+    | 'correctIndex'
+    | 'explanation'
+    | 'hint'
+    | 'origin'
+    | 'warnings'
   >
-> & { location?: LatLng };
+> & {
+  location?: LatLng;
+  /** Null removes it: a swapped-in question has none, or the creator's edit made it theirs. */
+  source?: StopDoc['source'] | null;
+  /** Null removes it: the question is no longer the bank's (m4-generation-design §11). */
+  bankQuestionId?: string | null;
+};
 
 export function updateStop(walk: Walk, stops: Stop[], stopId: string, fields: StopEdit): void {
   const batch = writeBatch(db);
-  const { location, ...rest } = fields;
+  const { location, source, bankQuestionId, ...rest } = fields;
   batch.update(doc(stopsCol(walk.id), stopId), {
     ...rest,
     ...(location ? { location: geo(location) } : {}),
+    ...(source !== undefined ? { source: source ?? deleteField() } : {}),
+    ...(bankQuestionId !== undefined ? { bankQuestionId: bankQuestionId ?? deleteField() } : {}),
   });
   const next = stops.map((s) => (s.id === stopId && location ? { ...s, location } : s));
-  batch.update(walkRef(walk.id), totalsFor(walk.start, next));
+  batch.update(walkRef(walk.id), totalsFor(walk, walk.start, next));
   batch.commit().catch(failed('Could not save the stop'));
 }
 
@@ -211,7 +229,7 @@ export function reorderStops(walk: Walk, inNewOrder: Stop[]): void {
   inNewOrder.forEach((s, i) => {
     if (s.order !== i) batch.update(doc(stopsCol(walk.id), s.id), { order: i });
   });
-  batch.update(walkRef(walk.id), totalsFor(walk.start, inNewOrder));
+  batch.update(walkRef(walk.id), totalsFor(walk, walk.start, inNewOrder));
   batch.commit().catch(failed('Could not reorder the stops'));
 }
 
@@ -222,7 +240,7 @@ export function deleteStop(walk: Walk, stops: Stop[], stopId: string): void {
   rest.forEach((s, i) => {
     if (s.order !== i) batch.update(doc(stopsCol(walk.id), s.id), { order: i });
   });
-  batch.update(walkRef(walk.id), totalsFor(walk.start, rest));
+  batch.update(walkRef(walk.id), totalsFor(walk, walk.start, rest));
   batch.commit().catch(failed('Could not delete the stop'));
 }
 

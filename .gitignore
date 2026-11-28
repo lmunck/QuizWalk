@@ -11,6 +11,7 @@ ui-debug.log*
 functions/lib/
 
 # Secrets never belong in the repo
+.secret.local
 .env
 .env.*
 !.env.example

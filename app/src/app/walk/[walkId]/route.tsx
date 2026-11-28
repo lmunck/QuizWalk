@@ -2,22 +2,26 @@
  * C4 Route builder. Start pin and stops on a map, a sheet with three heights listing the stops.
  * Tap a row to edit it (C5); Move up / Move down reorder; tapping a pin selects its row. Rows
  * mark blocking problems in the error style and warnings quietly. Publish & share is always
- * tappable and lists what blocks it (spec §3 C4). Distances are straight lines until routing
- * arrives in M4, and say so.
+ * tappable and lists what blocks it (spec §3 C4). The distance is the routed one while the
+ * route matches the pins (`route.key`), and straight lines, saying so, after an edit. Generated
+ * walks offer New route, which confirms and goes back to C2's map screen.
  */
 import {
   bestInsertIndex,
+  decodePolyline,
   estimateWalkMinutes,
   formatDistance,
   formatMinutes,
   insertPositionLabel,
   plural,
+  routeKey,
   stopProblems,
   walkProblems,
   type LatLng,
 } from '@qualk/shared';
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
+import { Polyline } from 'react-native-maps';
 import {
   ActivityIndicator,
   Pressable,
@@ -75,12 +79,28 @@ export default function RouteBuilder() {
   const [blocked, setBlocked] = useState<{ message: string; stopId?: string }[]>();
   const [publishing, setPublishing] = useState(false);
   const [title, setTitle] = useState<string>();
+  const [confirmNewRoute, setConfirmNewRoute] = useState(false);
   const offline = useOffline();
 
   const problems = useMemo(
     () => (walk.data ? walkProblems(walk.data, stops.data) : { blocking: [], warnings: [] }),
     [walk.data, stops.data],
   );
+  // The routed line, while it still matches the pins (spec §4 Distance).
+  const routed = useMemo(() => {
+    const r = walk.data?.route;
+    if (!walk.data || !r?.polyline || stops.data.length === 0) return undefined;
+    const key = routeKey(
+      walk.data.start,
+      stops.data.map((s) => s.location),
+    );
+    if (r.key !== key) return undefined;
+    try {
+      return decodePolyline(r.polyline);
+    } catch {
+      return undefined;
+    }
+  }, [walk.data, stops.data]);
 
   if (walk.loading || stops.loading) {
     return (
@@ -188,7 +208,17 @@ export default function RouteBuilder() {
           });
         }}
       >
-        <RouteLine points={points} />
+        {routed ? (
+          <Polyline
+            coordinates={routed}
+            strokeColor={colors.accent}
+            strokeWidth={4}
+            lineCap="round"
+            lineJoin="round"
+          />
+        ) : (
+          <RouteLine points={points} />
+        )}
         <StartMarker
           coordinate={w.start}
           draggable
@@ -221,6 +251,18 @@ export default function RouteBuilder() {
             Long-press the map to add a stop · drag pins to move them
           </Txt>
         </View>
+        {w.shape === 'loop' ? (
+          <Pressable
+            onPress={() => setConfirmNewRoute(true)}
+            accessibilityRole="button"
+            accessibilityLabel="New route"
+            accessibilityHint="Asks first. The stops move to a new route; trivia questions are kept."
+            style={({ pressed }) => [styles.newRoute, pressed && { backgroundColor: colors.tint }]}
+          >
+            <Icon name="refresh" size={18} />
+            <Txt variant="calloutStrong">New route</Txt>
+          </Pressable>
+        ) : null}
       </View>
 
       <Sheet
@@ -244,7 +286,7 @@ export default function RouteBuilder() {
             <Txt variant="caption" color={colors.secondary}>
               {list.length === 0
                 ? 'No stops yet'
-                : `${plural(list.length, 'stop')} · ${formatDistance(w.distanceM)} as the crow flies · ${formatMinutes(minutes)}`}
+                : `${plural(list.length, 'stop')} · ${formatDistance(w.distanceM)}${routed ? '' : ' as the crow flies'} · ${formatMinutes(minutes)}`}
             </Txt>
             <View style={styles.addRow}>
               <Button
@@ -332,6 +374,23 @@ export default function RouteBuilder() {
           setSearching(false);
           void add(p.location, p.label);
         }}
+      />
+      <Dialog
+        visible={confirmNewRoute}
+        title="Choose a new route?"
+        text="You lose the stop positions and any Local questions. Trivia questions and the ones you wrote are kept, in their order."
+        onDismiss={() => setConfirmNewRoute(false)}
+        actions={[
+          {
+            label: 'Choose a new route',
+            kind: 'destructive',
+            onPress: () => {
+              setConfirmNewRoute(false);
+              router.push({ pathname: '/generate', params: { walkId } });
+            },
+          },
+          { label: 'Keep this route', kind: 'ghost', onPress: () => setConfirmNewRoute(false) },
+        ]}
       />
       <Dialog
         visible={blocked !== undefined}
@@ -457,6 +516,17 @@ const styles = StyleSheet.create({
     borderRadius: radius.pill,
     paddingHorizontal: spacing.md - 4,
     paddingVertical: spacing.sm,
+  },
+  newRoute: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    minHeight: 48,
+    paddingHorizontal: spacing.md - 4,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
   sheetHeader: { paddingHorizontal: spacing.lg, paddingBottom: spacing.sm, gap: spacing.xs + 2 },
   titleInput: {
