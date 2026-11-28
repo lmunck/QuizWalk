@@ -571,6 +571,9 @@ describe('reroute', () => {
     expect(res.stops[1]).toMatchObject({ offsetM: null });
     expect(res.stops[1]!.warnings).toHaveLength(1);
     expect(res.route!.key).toBeUndefined();
+    // The walk's distance is straight lines, not the route that left the stop out.
+    expect(res.distanceM).not.toBe(1234);
+    expect((await walk.get()).data()!.distanceM).toBe(res.distanceM);
   });
 
   it('clears the route of a walk with no stops, and refuses an open walk', async () => {

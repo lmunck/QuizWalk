@@ -3,6 +3,7 @@ import type {
   CallableErrorDetails,
   GenerateWalkRequest,
   GenerateWalkResponse,
+  RerouteResponse,
   RouteForViewRequest,
   RouteForViewResponse,
   SwapQuestionRequest,
@@ -52,6 +53,14 @@ export function generateWalk(req: GenerateWalkRequest) {
 /** C5's Swap and G2's Suggest a question: a proposal to accept or discard. Writes nothing. */
 export function swapQuestion(req: SwapQuestionRequest) {
   return call<SwapQuestionRequest, SwapQuestionResponse>('swapQuestion', req);
+}
+
+/**
+ * C4 after edits: routes the pins along paths and writes the route, its distance and the
+ * stops' Off path / on water warnings (spec §8). Pins are not moved.
+ */
+export function reroute(walkId: string) {
+  return call<{ walkId: string }, RerouteResponse>('reroute', { walkId });
 }
 
 /** The `details` an M4 callable's error carries (`reason`, `retryAfterS`, …). */

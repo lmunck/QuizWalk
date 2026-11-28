@@ -212,6 +212,12 @@ type StopEdit = Partial<
 export function updateStop(walk: Walk, stops: Stop[], stopId: string, fields: StopEdit): void {
   const batch = writeBatch(db);
   const { location, source, bankQuestionId, ...rest } = fields;
+  // A moved pin's Off path / on water marks are out of date; reroute checks it again (C4).
+  const moved = location ? stops.find((s) => s.id === stopId) : undefined;
+  const marks = rest.warnings ?? moved?.warnings ?? [];
+  if (moved && marks.some((w) => w === 'offPath' || w === 'onWater')) {
+    rest.warnings = marks.filter((w) => w !== 'offPath' && w !== 'onWater');
+  }
   batch.update(doc(stopsCol(walk.id), stopId), {
     ...rest,
     ...(location ? { location: geo(location) } : {}),
