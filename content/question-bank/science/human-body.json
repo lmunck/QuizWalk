@@ -1,0 +1,1214 @@
+{
+  "category": "science",
+  "subcategory": "human-body",
+  "questions": [
+    {
+      "id": "science.human-body.kids.01",
+      "difficulty": "kids",
+      "question": "Which organ pumps blood around your body?",
+      "correct": "Heart",
+      "wrong": ["Lungs", "Stomach", "Liver"],
+      "explanation": "Your heart is a strong muscle. It beats about 100,000 times every day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.02",
+      "difficulty": "kids",
+      "question": "Which organ do you use to think and remember?",
+      "correct": "Brain",
+      "wrong": ["Heart", "Lungs", "Stomach"],
+      "explanation": "Your brain sends messages along nerves to every part of your body.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.03",
+      "difficulty": "kids",
+      "question": "Which organs fill with air when you breathe in?",
+      "correct": "Lungs",
+      "wrong": ["Kidneys", "Liver", "Bladder"],
+      "explanation": "Air goes in through your nose or mouth and down to your lungs. There, oxygen passes into your blood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.04",
+      "difficulty": "kids",
+      "question": "What is the name for all the bones in your body together?",
+      "correct": "Skeleton",
+      "wrong": ["Skin", "Muscles", "Nerves"],
+      "explanation": "A skeleton holds you up and protects your organs. Muscles pull on it so you can move.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.05",
+      "difficulty": "kids",
+      "question": "How many teeth does a grown-up usually have, wisdom teeth included?",
+      "correct": "32",
+      "wrong": ["20", "44", "52"],
+      "explanation": "Grown-up teeth have different shapes for cutting, tearing and grinding food.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.06",
+      "difficulty": "kids",
+      "question": "What is the black circle in the middle of your eye called?",
+      "correct": "Pupil",
+      "wrong": ["Iris", "Retina", "Cornea"],
+      "explanation": "The pupil is a hole that lets light into your eye.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.07",
+      "difficulty": "kids",
+      "question": "Which tube carries food from your mouth to your stomach?",
+      "correct": "Oesophagus",
+      "wrong": ["Windpipe", "Spinal cord", "Vein"],
+      "explanation": "It is about 25 centimetres long. Food takes just a few seconds to travel down it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.08",
+      "difficulty": "kids",
+      "question": "Which bone protects your brain?",
+      "correct": "Skull",
+      "wrong": ["Ribs", "Spine", "Pelvis"],
+      "explanation": "Your skull is made of several bones that grow together as you grow up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.09",
+      "difficulty": "kids",
+      "question": "Which part of your mouth helps you to taste food?",
+      "correct": "Tongue",
+      "wrong": ["Teeth", "Lips", "Cheeks"],
+      "explanation": "Your tongue is covered in tiny bumps. Some of them hold your taste buds.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.10",
+      "difficulty": "kids",
+      "question": "What is the largest organ of the human body?",
+      "correct": "Skin",
+      "wrong": ["Heart", "Brain", "Stomach"],
+      "explanation": "Skin covers your whole body. It keeps water in and germs out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.11",
+      "difficulty": "kids",
+      "question": "Which gas does your body make and breathe out?",
+      "correct": "Carbon dioxide",
+      "wrong": ["Oxygen", "Helium", "Hydrogen"],
+      "explanation": "Plants use carbon dioxide to make food. They give out the oxygen that we breathe in.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.12",
+      "difficulty": "kids",
+      "question": "What is the joint in the middle of your arm called?",
+      "correct": "Elbow",
+      "wrong": ["Knee", "Wrist", "Shoulder"],
+      "explanation": "Your elbow works like a door hinge. It lets your arm bend and straighten.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.13",
+      "difficulty": "kids",
+      "question": "How many sets of teeth do people normally grow in a lifetime?",
+      "correct": "Two",
+      "wrong": ["One", "Three", "Four"],
+      "explanation": "Baby teeth fall out from about the age of six. Grown-up teeth must then last for life.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.14",
+      "difficulty": "kids",
+      "question": "What can you feel on your wrist that shows your heart is beating?",
+      "correct": "Pulse",
+      "wrong": ["Sneeze", "Shiver", "Hiccup"],
+      "explanation": "Each pulse is one heartbeat pushing blood through your arteries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.15",
+      "difficulty": "kids",
+      "question": "What are the tiny holes in your skin called?",
+      "correct": "Pores",
+      "wrong": ["Freckles", "Wrinkles", "Scars"],
+      "explanation": "Your skin has millions of pores. Sweat comes out of some, and oil that keeps your skin soft comes out of others.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.16",
+      "difficulty": "kids",
+      "question": "Which two organs clean your blood and make urine?",
+      "correct": "Kidneys",
+      "wrong": ["Lungs", "Heart", "Stomach"],
+      "explanation": "Kidneys are shaped like beans. A person can live well with only one.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.17",
+      "difficulty": "kids",
+      "question": "How many main senses do people usually count?",
+      "correct": "Five",
+      "wrong": ["Two", "Three", "Four"],
+      "explanation": "They are sight, hearing, smell, taste and touch. Scientists count more, such as your sense of balance.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.18",
+      "difficulty": "kids",
+      "question": "Which bones form a cage around your heart and lungs?",
+      "correct": "Ribs",
+      "wrong": ["Skull", "Pelvis", "Thigh bones"],
+      "explanation": "Ribs can move a little, which lets your chest get bigger when you breathe in.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.19",
+      "difficulty": "kids",
+      "question": "Which mineral in milk and cheese helps to build strong bones and teeth?",
+      "correct": "Calcium",
+      "wrong": ["Iron", "Sodium", "Zinc"],
+      "explanation": "Green vegetables such as broccoli also contain calcium.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.20",
+      "difficulty": "kids",
+      "question": "What do we call the little bumps on your skin when you are cold?",
+      "correct": "Goose bumps",
+      "wrong": ["Freckles", "Blisters", "Scars"],
+      "explanation": "Tiny muscles pull on your hairs. Animals fluff up their fur in the same way to stay warm.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.21",
+      "difficulty": "kids",
+      "question": "What is another name for your backbone?",
+      "correct": "Spine",
+      "wrong": ["Ribcage", "Pelvis", "Collarbone"],
+      "explanation": "Your spine is made of small bones stacked on top of each other. That is why you can bend and twist.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.22",
+      "difficulty": "kids",
+      "question": "What are the tiny living building blocks of your body called?",
+      "correct": "Cells",
+      "wrong": ["Atoms", "Genes", "Germs"],
+      "explanation": "Your body has trillions of cells. Different types do different jobs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.23",
+      "difficulty": "kids",
+      "question": "Where in your body are your biceps?",
+      "correct": "Upper arm",
+      "wrong": ["Chest", "Back", "Neck"],
+      "explanation": "The biceps is a muscle that bends your elbow. It bulges when you lift something.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.24",
+      "difficulty": "kids",
+      "question": "Which bag-shaped organ in your belly mixes food with strong juices?",
+      "correct": "Stomach",
+      "wrong": ["Bladder", "Kidney", "Lung"],
+      "explanation": "Your stomach squeezes and churns food into a thick soup. This takes a few hours.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.25",
+      "difficulty": "kids",
+      "question": "What is the salty water that comes from your eyes when you cry?",
+      "correct": "Tears",
+      "wrong": ["Sweat", "Saliva", "Blood"],
+      "explanation": "Tears also keep your eyes wet and wash out dust every time you blink.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.26",
+      "difficulty": "kids",
+      "question": "What do we call the small, round bone at the front of your knee?",
+      "correct": "Kneecap",
+      "wrong": ["Shin bone", "Heel bone", "Thigh bone"],
+      "explanation": "The kneecap guards your knee joint. Its other name is the patella.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.27",
+      "difficulty": "kids",
+      "question": "What marks on your fingertips are different for every person?",
+      "correct": "Fingerprints",
+      "wrong": ["Freckles", "Wrinkles", "Scars"],
+      "explanation": "Even identical twins have different fingerprints.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.28",
+      "difficulty": "kids",
+      "question": "What does a doctor use to listen to your heart?",
+      "correct": "Stethoscope",
+      "wrong": ["Telescope", "Microscope", "Thermometer"],
+      "explanation": "The doctor puts the flat end on your chest and listens through tubes held at the ears.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.29",
+      "difficulty": "kids",
+      "question": "What does your body make to cool you down when you are hot?",
+      "correct": "Sweat",
+      "wrong": ["Tears", "Saliva", "Mucus"],
+      "explanation": "When sweat dries on your skin, it takes some heat away. That is how you cool down.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.30",
+      "difficulty": "kids",
+      "question": "What is the watery liquid in your mouth that helps you swallow food?",
+      "correct": "Saliva",
+      "wrong": ["Sweat", "Tears", "Blood"],
+      "explanation": "You make about a litre of saliva a day. It also keeps your mouth clean and moist.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.31",
+      "difficulty": "kids",
+      "question": "What covers the ends of your fingers and toes to protect them?",
+      "correct": "Nails",
+      "wrong": ["Hairs", "Freckles", "Wrinkles"],
+      "explanation": "Fingernails grow faster than toenails. Both are made of the same tough stuff as hair.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.32",
+      "difficulty": "kids",
+      "question": "Which organ stores urine until you go to the toilet?",
+      "correct": "Bladder",
+      "wrong": ["Stomach", "Liver", "Lung"],
+      "explanation": "A bladder is stretchy, like a balloon. It tells your brain when it is getting full.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.33",
+      "difficulty": "kids",
+      "question": "What do we call a place where two bones meet?",
+      "correct": "Joint",
+      "wrong": ["Muscle", "Tendon", "Nerve"],
+      "explanation": "Some joints let you move a lot. Others, like those in your skull, hardly move at all.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.34",
+      "difficulty": "kids",
+      "question": "What is the doctor's word for a broken bone?",
+      "correct": "Fracture",
+      "wrong": ["Sprain", "Bruise", "Blister"],
+      "explanation": "Bones can heal by themselves. A cast holds the pieces still while they grow back together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.35",
+      "difficulty": "kids",
+      "question": "Which tube carries air from your throat down to your lungs?",
+      "correct": "Windpipe",
+      "wrong": ["Spinal cord", "Vein", "Intestine"],
+      "explanation": "The windpipe has rings of stiff cartilage that keep it open, so air can always get through.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.36",
+      "difficulty": "kids",
+      "question": "Which sense tells you that a cat's fur is soft?",
+      "correct": "Touch",
+      "wrong": ["Hearing", "Smell", "Taste"],
+      "explanation": "Touch sensors are all over your skin. Your fingertips and lips are extra sensitive.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.37",
+      "difficulty": "kids",
+      "question": "What are the two holes in your nose called?",
+      "correct": "Nostrils",
+      "wrong": ["Pupils", "Pores", "Dimples"],
+      "explanation": "Tiny hairs inside your nose catch dust before it reaches your lungs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.38",
+      "difficulty": "kids",
+      "question": "What happens to your heartbeat when you run fast?",
+      "correct": "It beats faster",
+      "wrong": ["It beats slower", "It stops for a moment", "It stays the same"],
+      "explanation": "Your muscles need more oxygen when you run. The heart pumps more blood to bring it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.39",
+      "difficulty": "kids",
+      "question": "What do we call opening and closing your eyelids quickly?",
+      "correct": "Blinking",
+      "wrong": ["Sneezing", "Yawning", "Coughing"],
+      "explanation": "You blink about 15 to 20 times a minute. Each blink spreads tears over your eye.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.kids.40",
+      "difficulty": "kids",
+      "question": "What is the thin skin inside your ear that shakes when sound reaches it?",
+      "correct": "Eardrum",
+      "wrong": ["Earlobe", "Earwax", "Ear canal"],
+      "explanation": "The shaking passes on through three tiny bones to the inner ear.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.01",
+      "difficulty": "mixed",
+      "question": "In which part of the body is the smallest bone?",
+      "correct": "The ear",
+      "wrong": ["The finger", "The nose", "The toe"],
+      "explanation": "The stirrup bone in your middle ear is only about 3 millimetres long.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.02",
+      "difficulty": "mixed",
+      "question": "What is the longest bone in the human body?",
+      "correct": "Thigh bone (femur)",
+      "wrong": ["Shin bone (tibia)", "Upper arm bone (humerus)", "Collarbone (clavicle)"],
+      "explanation": "The femur is also the strongest bone. It makes up about a quarter of your height.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which blood cells carry oxygen around the body?",
+      "correct": "Red blood cells",
+      "wrong": ["White blood cells", "Platelets", "Nerve cells"],
+      "explanation": "Mature red blood cells have no nucleus, which leaves more room for oxygen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which vitamin does your skin make when it is in sunlight?",
+      "correct": "Vitamin D",
+      "wrong": ["Vitamin A", "Vitamin C", "Vitamin K"],
+      "explanation": "In northern countries the winter sun is weak. People then get vitamin D from food such as oily fish.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.05",
+      "difficulty": "mixed",
+      "question": "How many chambers does the human heart have?",
+      "correct": "Four",
+      "wrong": ["Two", "Three", "Six"],
+      "explanation": "Two small chambers receive blood and two larger ones pump it out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.06",
+      "difficulty": "mixed",
+      "question": "Which large dome-shaped muscle under your lungs helps you breathe?",
+      "correct": "Diaphragm",
+      "wrong": ["Biceps", "Hamstring", "Calf"],
+      "explanation": "When it tightens and flattens, it pulls air into your lungs. Hiccups are sudden jerks of it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.07",
+      "difficulty": "mixed",
+      "question": "What is the hardest substance in the human body?",
+      "correct": "Tooth enamel",
+      "wrong": ["Bone", "Fingernail", "Cartilage"],
+      "explanation": "Enamel is harder than bone, but acids from sugary food and drinks can wear it away.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.08",
+      "difficulty": "mixed",
+      "question": "Which large organ in your upper right belly makes bile to help digest fat?",
+      "correct": "Liver",
+      "wrong": ["Spleen", "Pancreas", "Stomach"],
+      "explanation": "The liver also cleans your blood and stores energy for the body.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which blood cells help your body fight germs?",
+      "correct": "White blood cells",
+      "wrong": ["Red blood cells", "Platelets", "Fat cells"],
+      "explanation": "You have far fewer white blood cells than red ones. Many leave the blood to hunt germs in the body.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.10",
+      "difficulty": "mixed",
+      "question": "Which tiny pieces in your blood help it to clot after a cut?",
+      "correct": "Platelets",
+      "wrong": ["Red blood cells", "White blood cells", "Bone cells"],
+      "explanation": "Platelets stick together and plug the hole. The clot then dries into a scab.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.11",
+      "difficulty": "mixed",
+      "question": "Why does food seem tasteless when your nose is blocked?",
+      "correct": "You can't smell the food",
+      "wrong": ["Your tongue stops working", "Your teeth go numb", "Saliva stops flowing"],
+      "explanation": "Much of what we call flavour comes from smell, which reaches the nose from the back of the mouth.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.12",
+      "difficulty": "mixed",
+      "question": "About how much of an adult's body is water?",
+      "correct": "About 60%",
+      "wrong": ["About 15%", "About 30%", "About 90%"],
+      "explanation": "Blood and the brain are even more watery. Fat tissue contains less water than muscle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which hormone from the pancreas helps control the sugar in your blood?",
+      "correct": "Insulin",
+      "wrong": ["Adrenaline", "Melatonin", "Thyroxine"],
+      "explanation": "Doctors in Canada first used insulin as a medicine in 1922, to treat diabetes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which hormone makes your heart beat faster when you get a fright?",
+      "correct": "Adrenaline",
+      "wrong": ["Insulin", "Melatonin", "Thyroxine"],
+      "explanation": "Adrenaline gets your body ready to run or fight. It is made by two small glands on top of your kidneys.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which hormone, made in the brain when it gets dark, helps you feel sleepy?",
+      "correct": "Melatonin",
+      "wrong": ["Adrenaline", "Insulin", "Thyroxine"],
+      "explanation": "Light makes your brain produce less of it. This is why a dark room helps you sleep.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which layer at the back of the eye turns light into signals for the brain?",
+      "correct": "Retina",
+      "wrong": ["Cornea", "Iris", "Pupil"],
+      "explanation": "The retina has well over 100 million light-sensing cells.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.17",
+      "difficulty": "mixed",
+      "question": "What are the nerve cells of the brain called?",
+      "correct": "Neurons",
+      "wrong": ["Nephrons", "Platelets", "Follicles"],
+      "explanation": "Neurons send tiny electrical signals to each other. The brain has tens of billions of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.18",
+      "difficulty": "mixed",
+      "question": "About how many bones does an adult have?",
+      "correct": "206",
+      "wrong": ["106", "306", "506"],
+      "explanation": "Babies are born with about 300 soft bones. Many of them join together as the child grows.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.19",
+      "difficulty": "mixed",
+      "question": "About how many times a minute does a resting adult heart beat?",
+      "correct": "About 70",
+      "wrong": ["About 20", "About 150", "About 300"],
+      "explanation": "Children's hearts beat faster. Fit athletes often have slower resting heartbeats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which set shows the four main blood groups?",
+      "correct": "A, B, AB and O",
+      "wrong": ["A, B, C and D", "A, B, O and X", "A, AB, C and O"],
+      "explanation": "The groups depend on markers on red blood cells. Doctors must match them before giving blood to someone.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.21",
+      "difficulty": "mixed",
+      "question": "Which pigment gives skin and hair their colour?",
+      "correct": "Melanin",
+      "wrong": ["Keratin", "Collagen", "Calcium"],
+      "explanation": "Skin makes more melanin in sunshine, which is why it gets darker.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.22",
+      "difficulty": "mixed",
+      "question": "Besides sweet, sour, salty and bitter, what is the fifth basic taste?",
+      "correct": "Umami",
+      "wrong": ["Spicy", "Creamy", "Cooling"],
+      "explanation": "Umami is a savoury taste found in cheese, tomatoes and mushrooms. It was named in Japan in 1908.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which bendy, tough material gives your ears and nose their shape?",
+      "correct": "Cartilage",
+      "wrong": ["Muscle", "Fat", "Tendon"],
+      "explanation": "Cartilage also covers the ends of bones in joints, so they slide smoothly.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which tough cords join your muscles to your bones?",
+      "correct": "Tendons",
+      "wrong": ["Ligaments", "Veins", "Nerves"],
+      "explanation": "When a muscle pulls on a tendon, the tendon pulls the bone and your limb moves.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.25",
+      "difficulty": "mixed",
+      "question": "How many baby teeth does a child have when the full set has grown?",
+      "correct": "20",
+      "wrong": ["12", "28", "32"],
+      "explanation": "Babies are born with no teeth showing. The first usually appear at about six months old.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.26",
+      "difficulty": "mixed",
+      "question": "In which part of a cell is most of your DNA kept?",
+      "correct": "The nucleus",
+      "wrong": ["The cell membrane", "The ribosome", "The lysosome"],
+      "explanation": "DNA holds the instructions for building your body. The nucleus keeps it safe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which cell parts are called the powerhouses of the cell?",
+      "correct": "Mitochondria",
+      "wrong": ["Nuclei", "Ribosomes", "Lysosomes"],
+      "explanation": "They release energy from food. Muscle cells have lots of them because they use so much energy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.28",
+      "difficulty": "mixed",
+      "question": "In which organ does most of the food you eat pass into your blood?",
+      "correct": "Small intestine",
+      "wrong": ["Stomach", "Large intestine", "Oesophagus"],
+      "explanation": "It is called small because it is narrow, not short. It is much longer than the large intestine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.29",
+      "difficulty": "mixed",
+      "question": "Which side of the body does the left half of your brain mostly control?",
+      "correct": "The right side",
+      "wrong": ["The left side", "Only the face", "Only the legs"],
+      "explanation": "The nerves cross over on their way down, so each half of the brain steers the opposite side.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which bundle of nerves runs inside your backbone?",
+      "correct": "Spinal cord",
+      "wrong": ["Windpipe", "Aorta", "Food pipe"],
+      "explanation": "The spinal cord carries messages between your brain and the rest of your body.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.31",
+      "difficulty": "mixed",
+      "question": "What happens to your pupils when you go into a dark room?",
+      "correct": "They get bigger",
+      "wrong": ["They get smaller", "They change colour", "They close completely"],
+      "explanation": "Bigger pupils let in more light, so you can see better. In bright light they shrink again.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.32",
+      "difficulty": "mixed",
+      "question": "Why do you shiver when you are very cold?",
+      "correct": "Your muscles shake to make heat",
+      "wrong": ["Your skin makes more sweat", "Your blood slows down", "Your bones shrink"],
+      "explanation": "Your brain starts the shivering when your body cools down. Working muscles always make some heat, which is why exercise warms you up too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.33",
+      "difficulty": "mixed",
+      "question": "What stops blood from flowing backwards in your heart?",
+      "correct": "Valves",
+      "wrong": ["Filters", "Pores", "Cartilage"],
+      "explanation": "The 'lub-dub' sound of a heartbeat is the sound of the valves closing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.34",
+      "difficulty": "mixed",
+      "question": "Which blood vessels carry blood away from your heart?",
+      "correct": "Arteries",
+      "wrong": ["Veins", "Nerves", "Tendons"],
+      "explanation": "Arteries have thick, strong walls because blood is pushed through them with force.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.35",
+      "difficulty": "mixed",
+      "question": "When you hit your 'funny bone', what do you really hit?",
+      "correct": "A nerve",
+      "wrong": ["A muscle", "A tendon", "A vein"],
+      "explanation": "The ulnar nerve runs close to the skin at the elbow, so a knock there gives a strange tingling.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.36",
+      "difficulty": "mixed",
+      "question": "Which is the largest muscle in the human body?",
+      "correct": "Buttock muscle",
+      "wrong": ["Chest muscle", "Calf muscle", "Upper arm muscle"],
+      "explanation": "Its proper name is gluteus maximus. It moves your thigh and helps you stand up and climb stairs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.37",
+      "difficulty": "mixed",
+      "question": "About how many months does a baby grow before it is born?",
+      "correct": "Nine",
+      "wrong": ["Six", "Twelve", "Fifteen"],
+      "explanation": "Doctors count a pregnancy as about 40 weeks.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.38",
+      "difficulty": "mixed",
+      "question": "What do we call the substances your body makes to find and fight germs?",
+      "correct": "Antibodies",
+      "wrong": ["Vitamins", "Hormones", "Minerals"],
+      "explanation": "Vaccines train your body to make antibodies before you meet the real germ.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.39",
+      "difficulty": "mixed",
+      "question": "Having two eyes helps you to judge what?",
+      "correct": "How far away things are",
+      "wrong": ["What colour things are", "How heavy things are", "How loud things are"],
+      "explanation": "Each eye sees from a slightly different angle. The brain compares the two views to work out distance.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.mixed.40",
+      "difficulty": "mixed",
+      "question": "What do we call an automatic reaction, like pulling your hand from something hot?",
+      "correct": "A reflex",
+      "wrong": ["A habit", "A dream", "A memory"],
+      "explanation": "Signals for this reflex take a short cut through the spinal cord, so your body reacts before you have time to think.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.01",
+      "difficulty": "expert",
+      "question": "What are the tiny air sacs in the lungs, where oxygen passes into the blood?",
+      "correct": "Alveoli",
+      "wrong": ["Bronchi", "Follicles", "Ventricles"],
+      "explanation": "Your lungs hold hundreds of millions of alveoli. Their thin walls let oxygen in and carbon dioxide out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.02",
+      "difficulty": "expert",
+      "question": "Which part of the brain, at the back, mostly controls balance and smooth movement?",
+      "correct": "Cerebellum",
+      "wrong": ["Hippocampus", "Pituitary gland", "Corpus callosum"],
+      "explanation": "Cerebellum means 'little brain' in Latin. It sits under the main part of the brain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.03",
+      "difficulty": "expert",
+      "question": "How many chromosomes are in most human body cells?",
+      "correct": "46",
+      "wrong": ["12", "30", "64"],
+      "explanation": "You get 23 from each parent. Egg and sperm cells have only 23.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.04",
+      "difficulty": "expert",
+      "question": "Which Danish scientist won the 1920 Nobel Prize in Medicine for work on how blood reaches working muscles?",
+      "correct": "August Krogh",
+      "wrong": ["Niels Bohr", "Hans Christian Ørsted", "Ole Rømer"],
+      "explanation": "Krogh worked in Copenhagen. He showed that tiny blood vessels in muscles open up when the muscle works.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.05",
+      "difficulty": "expert",
+      "question": "Which Danish doctor won a Nobel Prize in 1903 for treating a skin disease with light?",
+      "correct": "Niels Finsen",
+      "wrong": ["Niels Bohr", "Tycho Brahe", "Thomas Bartholin"],
+      "explanation": "He used strong light to treat lupus vulgaris, a kind of tuberculosis of the skin. He founded a light institute in Copenhagen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.06",
+      "difficulty": "expert",
+      "question": "Which snail-shaped part of the inner ear turns sound into nerve signals?",
+      "correct": "Cochlea",
+      "wrong": ["Eardrum", "Ear canal", "Eustachian tube"],
+      "explanation": "Its name comes from an ancient Greek word for snail. Tiny hair cells inside it pick up the vibrations.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.07",
+      "difficulty": "expert",
+      "question": "What are the tiniest blood vessels, where oxygen passes into the body's tissues, called?",
+      "correct": "Capillaries",
+      "wrong": ["Arteries", "Veins", "Valves"],
+      "explanation": "Capillary walls are only one cell thick, so oxygen and nutrients can pass through them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.08",
+      "difficulty": "expert",
+      "question": "What is the name for the waves of muscle squeezing that push food along your gut?",
+      "correct": "Peristalsis",
+      "wrong": ["Osmosis", "Respiration", "Circulation"],
+      "explanation": "It is why astronauts can swallow in space. The muscles squeeze the food along, so gravity is not needed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.09",
+      "difficulty": "expert",
+      "question": "Hair and nails are mostly made of which tough protein?",
+      "correct": "Keratin",
+      "wrong": ["Collagen", "Haemoglobin", "Insulin"],
+      "explanation": "Keratin is also in the top layer of your skin. Animal horns and claws contain it too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.10",
+      "difficulty": "expert",
+      "question": "About how much of your body's energy does the brain use at rest?",
+      "correct": "About 20%",
+      "wrong": ["About 2%", "About 50%", "About 80%"],
+      "explanation": "The brain is only about 2% of your weight, but it uses roughly a fifth of your energy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.11",
+      "difficulty": "expert",
+      "question": "Which pea-sized gland at the base of the brain is called the 'master gland'?",
+      "correct": "Pituitary gland",
+      "wrong": ["Thyroid gland", "Pancreas", "Thymus"],
+      "explanation": "It makes hormones that tell other glands what to do. A nearby part of the brain controls it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.12",
+      "difficulty": "expert",
+      "question": "Where is the eye's blind spot, where you cannot see?",
+      "correct": "Where the optic nerve leaves the eye",
+      "wrong": [
+        "At the very centre of the retina",
+        "Where the lens meets the iris",
+        "In the middle of the pupil"
+      ],
+      "explanation": "There are no light-sensing cells there. You don't notice it because the brain fills the gap.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.13",
+      "difficulty": "expert",
+      "question": "How many lobes does your right lung have?",
+      "correct": "Three",
+      "wrong": ["Two", "Four", "Five"],
+      "explanation": "The left lung has only two lobes, which leaves room for the heart.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.14",
+      "difficulty": "expert",
+      "question": "Which thick bundle of nerve fibres joins the two halves of the brain?",
+      "correct": "Corpus callosum",
+      "wrong": ["Brainstem", "Hypothalamus", "Optic nerve"],
+      "explanation": "Its name is Latin for 'tough body'. Its hundreds of millions of nerve fibres let the two halves share information.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.15",
+      "difficulty": "expert",
+      "question": "Which part of the brain is vital for forming new memories of facts and events?",
+      "correct": "Hippocampus",
+      "wrong": ["Cerebellum", "Brainstem", "Pituitary gland"],
+      "explanation": "Its name comes from the Greek for 'seahorse', because of its curved shape. There is one on each side of the brain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.16",
+      "difficulty": "expert",
+      "question": "Which part of the brain, joined to the spinal cord, controls your breathing and heart rate automatically?",
+      "correct": "Brainstem",
+      "wrong": ["Cerebellum", "Frontal lobe", "Corpus callosum"],
+      "explanation": "You do not have to think about breathing while you sleep, because the brainstem handles it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.17",
+      "difficulty": "expert",
+      "question": "Which small, U-shaped bone in the neck does not touch any other bone?",
+      "correct": "Hyoid bone",
+      "wrong": ["Breastbone", "Collarbone", "Tailbone"],
+      "explanation": "It holds up the tongue and is held in place by muscles and ligaments.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.18",
+      "difficulty": "expert",
+      "question": "Which is the largest artery in the human body?",
+      "correct": "Aorta",
+      "wrong": ["Carotid artery", "Femoral artery", "Renal artery"],
+      "explanation": "It is about as wide as a garden hose, and it carries blood to nearly the whole body.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.19",
+      "difficulty": "expert",
+      "question": "Which chamber of the heart pumps blood out to the whole body?",
+      "correct": "Left ventricle",
+      "wrong": ["Right ventricle", "Left atrium", "Right atrium"],
+      "explanation": "Its wall is thicker than the right ventricle's because it must push blood much further.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.20",
+      "difficulty": "expert",
+      "question": "What is the pale yellow liquid part of blood called?",
+      "correct": "Plasma",
+      "wrong": ["Lymph", "Bile", "Mucus"],
+      "explanation": "Plasma is mostly water and makes up a little over half of your blood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.21",
+      "difficulty": "expert",
+      "question": "Which is the longest nerve in the human body?",
+      "correct": "Sciatic nerve",
+      "wrong": ["Vagus nerve", "Optic nerve", "Ulnar nerve"],
+      "explanation": "It runs from the lower back down each leg and is about as thick as your thumb.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.22",
+      "difficulty": "expert",
+      "question": "Which light-sensing cells in the retina let you see colour?",
+      "correct": "Cones",
+      "wrong": ["Rods", "Goblet cells", "Hair cells"],
+      "explanation": "Cones work best in bright light. Rods work in dim light but see only shades of grey.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.23",
+      "difficulty": "expert",
+      "question": "Which flap closes over your windpipe when you swallow?",
+      "correct": "Epiglottis",
+      "wrong": ["Tonsil", "Adenoid", "Palate"],
+      "explanation": "It keeps food and drink out of your windpipe. If something goes down the wrong way, you cough it back up.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.24",
+      "difficulty": "expert",
+      "question": "What is the type of cell division that makes new body cells for growth and repair?",
+      "correct": "Mitosis",
+      "wrong": ["Meiosis", "Osmosis", "Diffusion"],
+      "explanation": "Meiosis is the other main type. It makes egg and sperm cells.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.25",
+      "difficulty": "expert",
+      "question": "Which blood type is the 'universal donor' for red blood cells?",
+      "correct": "O negative",
+      "wrong": ["AB positive", "A positive", "B negative"],
+      "explanation": "O negative red cells have no A, B or Rh markers, so most people's bodies accept them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.26",
+      "difficulty": "expert",
+      "question": "The enzyme in your saliva starts to break down which food substance?",
+      "correct": "Starch",
+      "wrong": ["Protein", "Salt", "Water"],
+      "explanation": "Chew a piece of bread for a long time and it starts to taste sweet, because starch turns into sugar.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.27",
+      "difficulty": "expert",
+      "question": "In which soft tissue inside bones are new blood cells made?",
+      "correct": "Bone marrow",
+      "wrong": ["Cartilage", "Ligaments", "Joint fluid"],
+      "explanation": "Bone marrow makes millions of new blood cells every second.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.28",
+      "difficulty": "expert",
+      "question": "Which lobe, at the back of the brain, mainly handles what you see?",
+      "correct": "Occipital lobe",
+      "wrong": ["Frontal lobe", "Temporal lobe", "Parietal lobe"],
+      "explanation": "Signals from the eyes travel to this area, which turns them into the pictures you see.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.29",
+      "difficulty": "expert",
+      "question": "In the 1660s, the Danish scientist Niels Steensen (Steno) showed that which organ is a muscle?",
+      "correct": "The heart",
+      "wrong": ["The liver", "The brain", "The lungs"],
+      "explanation": "Before that, many people believed the heart was the body's heat source. Steno is also famous in geology for his rules about layers of rock.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.30",
+      "difficulty": "expert",
+      "question": "Which vitamin does the body need to help blood clot?",
+      "correct": "Vitamin K",
+      "wrong": ["Vitamin A", "Vitamin C", "Vitamin E"],
+      "explanation": "Danish scientist Henrik Dam named it K, for 'Koagulation', the German word for clotting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.31",
+      "difficulty": "expert",
+      "question": "What is the outermost layer of human skin called?",
+      "correct": "Epidermis",
+      "wrong": ["Dermis", "Hypodermis", "Follicle"],
+      "explanation": "The epidermis constantly renews itself. Its top cells are dead and flake off all the time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.32",
+      "difficulty": "expert",
+      "question": "What is the clear 'window' at the very front of the eye called?",
+      "correct": "Cornea",
+      "wrong": ["Lens", "Retina", "Sclera"],
+      "explanation": "The cornea has no blood vessels. While your eyes are open, it takes most of its oxygen straight from the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.33",
+      "difficulty": "expert",
+      "question": "What is the small piece of flesh that hangs at the back of your mouth called?",
+      "correct": "Uvula",
+      "wrong": ["Tonsil", "Epiglottis", "Adenoid"],
+      "explanation": "It hangs from the soft palate, which rises when you swallow to stop food going up into your nose.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.34",
+      "difficulty": "expert",
+      "question": "Which vessels carry oxygen-rich blood from the lungs to the heart?",
+      "correct": "Pulmonary veins",
+      "wrong": ["Pulmonary arteries", "Vena cava", "Aorta"],
+      "explanation": "Most veins carry blood that is low in oxygen. The pulmonary veins are the big exception.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.35",
+      "difficulty": "expert",
+      "question": "Which gland behind the breastbone helps train white blood cells in childhood?",
+      "correct": "Thymus",
+      "wrong": ["Thyroid", "Pancreas", "Adrenal gland"],
+      "explanation": "The thymus is biggest in children and shrinks in adults.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.36",
+      "difficulty": "expert",
+      "question": "Which strong, rope-like protein gives strength to skin, bones and tendons?",
+      "correct": "Collagen",
+      "wrong": ["Haemoglobin", "Insulin", "Amylase"],
+      "explanation": "Collagen is the most common protein in the human body. It works like a strong glue holding tissues together.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.37",
+      "difficulty": "expert",
+      "question": "What is the wrinkled outer layer of the brain, where much thinking happens, called?",
+      "correct": "Cerebral cortex",
+      "wrong": ["Spinal cord", "Brainstem", "Hypothalamus"],
+      "explanation": "The folds give the cortex a larger area, so more of it fits inside the skull.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.38",
+      "difficulty": "expert",
+      "question": "What mainly triggers your urge to breathe?",
+      "correct": "Too much carbon dioxide in the blood",
+      "wrong": [
+        "Too little water in the blood",
+        "Too little sugar in the blood",
+        "Too little iron in the blood"
+      ],
+      "explanation": "A build-up of carbon dioxide tells the brainstem to make you breathe. That is why holding your breath gets harder and harder.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.39",
+      "difficulty": "expert",
+      "question": "About how long does a red blood cell live?",
+      "correct": "About four months",
+      "wrong": ["About one day", "About one week", "About ten years"],
+      "explanation": "Old red blood cells are broken down, mostly in the spleen and liver. Their iron is used again to make new ones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "science.human-body.expert.40",
+      "difficulty": "expert",
+      "question": "The image that forms on the retina is which way up?",
+      "correct": "Upside down",
+      "wrong": ["The right way up", "Sideways", "Split in two"],
+      "explanation": "The brain flips the image, so the world looks the right way up to you.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

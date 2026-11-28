@@ -1,0 +1,1210 @@
+{
+  "category": "history",
+  "subcategory": "explorers-empires",
+  "questions": [
+    {
+      "id": "history.explorers-empires.kids.01",
+      "difficulty": "kids",
+      "question": "Which explorer sailed west from Spain in 1492 and reached islands in the Americas?",
+      "correct": "Christopher Columbus",
+      "wrong": ["Marco Polo", "James Cook", "Roald Amundsen"],
+      "explanation": "He hoped to find a sea route to Asia. Instead he landed on islands in the Caribbean that Europeans did not know.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.02",
+      "difficulty": "kids",
+      "question": "Which explorer's expedition was the first to sail all the way around the world?",
+      "correct": "Ferdinand Magellan",
+      "wrong": ["Leif Erikson", "James Cook", "Amerigo Vespucci"],
+      "explanation": "Magellan was killed on the way, in 1521. One of his ships, the Victoria, finished the trip in 1522.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.03",
+      "difficulty": "kids",
+      "question": "Which explorer led the first team to reach the South Pole, in 1911?",
+      "correct": "Roald Amundsen",
+      "wrong": ["Robert Scott", "Ernest Shackleton", "James Cook"],
+      "explanation": "Amundsen's team arrived in December 1911. Scott's British team got there about a month later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.04",
+      "difficulty": "kids",
+      "question": "Which mountain did Edmund Hillary and Tenzing Norgay climb in 1953?",
+      "correct": "Mount Everest",
+      "wrong": ["K2", "Mont Blanc", "Kilimanjaro"],
+      "explanation": "They were the first people known to stand on top of it. Everest is on the border between Nepal and Tibet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.05",
+      "difficulty": "kids",
+      "question": "Which explorer from Venice told the story of his travels in Asia in a famous book?",
+      "correct": "Marco Polo",
+      "wrong": ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama"],
+      "explanation": "He left Venice in 1271 with his father and uncle. His book made many Europeans curious about Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.06",
+      "difficulty": "kids",
+      "question": "Which explorer mapped the coast of New Zealand and the east coast of Australia in the 1700s?",
+      "correct": "James Cook",
+      "wrong": ["Christopher Columbus", "Marco Polo", "Vasco da Gama"],
+      "explanation": "Cook made three long voyages in the Pacific Ocean. His maps were so good that sailors used them for many years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.07",
+      "difficulty": "kids",
+      "question": "What was the name of the Aztec capital city, built on an island in a lake?",
+      "correct": "Tenochtitlan",
+      "wrong": ["Machu Picchu", "Cusco", "Chichen Itza"],
+      "explanation": "Long roads called causeways joined the island to the shore. Mexico City was later built on the same place.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.08",
+      "difficulty": "kids",
+      "question": "Which mountain range was the heart of the Inca Empire?",
+      "correct": "The Andes",
+      "wrong": ["The Alps", "The Rocky Mountains", "The Himalayas"],
+      "explanation": "The Inca built roads and rope bridges over the high mountains. Runners carried messages along the roads.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.09",
+      "difficulty": "kids",
+      "question": "Which people built the mountain city of Machu Picchu?",
+      "correct": "The Inca",
+      "wrong": ["The Aztecs", "The Maya", "The Egyptians"],
+      "explanation": "Machu Picchu lies high in the Andes mountains of Peru. It was built in the 1400s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.10",
+      "difficulty": "kids",
+      "question": "Who started the Mongol Empire around the year 1206?",
+      "correct": "Genghis Khan",
+      "wrong": ["Attila the Hun", "Alexander the Great", "Napoleon"],
+      "explanation": "He joined many tribes into one people. His empire later grew to be one of the biggest land empires ever.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.11",
+      "difficulty": "kids",
+      "question": "Which animal did Mongol warriors ride into battle?",
+      "correct": "Horses",
+      "wrong": ["Camels", "Elephants", "Donkeys"],
+      "explanation": "Each warrior took several horses with him, so he could change to a fresh one. Mongol children learned to ride very young.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.12",
+      "difficulty": "kids",
+      "question": "Vasco da Gama sailed from Portugal around Africa to which country?",
+      "correct": "India",
+      "wrong": ["China", "Brazil", "Japan"],
+      "explanation": "He reached the city of Calicut in 1498. It was the first sea route from Europe to India.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.13",
+      "difficulty": "kids",
+      "question": "Why did Emperor Shah Jahan build the Taj Mahal?",
+      "correct": "As a tomb for his wife",
+      "wrong": ["As a fort against enemies", "As a school for children", "As a market for traders"],
+      "explanation": "His wife Mumtaz Mahal died in 1631. He ruled the Mughal Empire and wanted a beautiful place to remember her.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.14",
+      "difficulty": "kids",
+      "question": "What was the name of Columbus's largest ship on his first trip?",
+      "correct": "Santa María",
+      "wrong": ["Mayflower", "Endeavour", "Golden Hind"],
+      "explanation": "The Santa María ran onto a reef at Christmas 1492 and was lost. The smaller Niña took Columbus home.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.15",
+      "difficulty": "kids",
+      "question": "What animals pulled Roald Amundsen's sledges to the South Pole?",
+      "correct": "Dogs",
+      "wrong": ["Horses", "Reindeer", "Camels"],
+      "explanation": "Dogs were fast and strong in the cold. Scott's team used ponies and pulled many sledges by hand.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.16",
+      "difficulty": "kids",
+      "question": "What was the ruler of the Ottoman Empire called?",
+      "correct": "Sultan",
+      "wrong": ["Pharaoh", "Tsar", "Shogun"],
+      "explanation": "For centuries the sultans ruled from Constantinople, a city now called Istanbul. The empire lasted for more than 600 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.17",
+      "difficulty": "kids",
+      "question": "Which queen ruled Britain from 1837 to 1901, when the British Empire was very big?",
+      "correct": "Queen Victoria",
+      "wrong": ["Queen Elizabeth I", "Queen Mary I", "Queen Anne"],
+      "explanation": "She became queen at 18. In 1876 she also got the title Empress of India.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.18",
+      "difficulty": "kids",
+      "question": "Which continent did the Scottish explorer David Livingstone explore in the 1800s?",
+      "correct": "Africa",
+      "wrong": ["Asia", "South America", "Australia"],
+      "explanation": "Livingstone was a doctor from Scotland. He crossed Africa and was the first European to see a huge waterfall there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.19",
+      "difficulty": "kids",
+      "question": "Which animal did the Inca use to carry loads in the mountains?",
+      "correct": "The llama",
+      "wrong": ["The camel", "The horse", "The elephant"],
+      "explanation": "Llamas can walk on steep paths and live in thin mountain air. The Inca also used llama wool.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.20",
+      "difficulty": "kids",
+      "question": "Why do people in Brazil speak Portuguese?",
+      "correct": "It was ruled by Portugal",
+      "wrong": ["It was ruled by Spain", "It was ruled by England", "It was ruled by Italy"],
+      "explanation": "Portuguese ships reached Brazil in 1500. Portugal ruled it until 1822.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.21",
+      "difficulty": "kids",
+      "question": "Which of these foods came to Europe from the Americas after 1492?",
+      "correct": "Potatoes",
+      "wrong": ["Carrots", "Cabbage", "Onions"],
+      "explanation": "Explorers also brought tomatoes, maize and chocolate. At first many Europeans were afraid to eat potatoes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.22",
+      "difficulty": "kids",
+      "question": "America is named after the first name of which Italian explorer?",
+      "correct": "Amerigo Vespucci",
+      "wrong": ["Christopher Columbus", "John Cabot", "Ferdinand Magellan"],
+      "explanation": "Vespucci said that the lands in the west were a new continent. A mapmaker put his name on a map in 1507.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.23",
+      "difficulty": "kids",
+      "question": "Magellan named the Pacific Ocean. What does the word Pacific mean?",
+      "correct": "Peaceful",
+      "wrong": ["Stormy", "Giant", "Empty"],
+      "explanation": "His ships found calm water after a hard trip through a stormy strait near the tip of South America. So he called the sea peaceful.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.24",
+      "difficulty": "kids",
+      "question": "What did sailors use to find north when the sky was cloudy?",
+      "correct": "A compass",
+      "wrong": ["A telescope", "A microscope", "A thermometer"],
+      "explanation": "A compass needle is a small magnet that turns to point north. This helped explorers to steer far from land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.25",
+      "difficulty": "kids",
+      "question": "What is the round tent of the Mongol herders called?",
+      "correct": "A yurt",
+      "wrong": ["An igloo", "A teepee", "A wigwam"],
+      "explanation": "A yurt has a wooden frame covered with felt. It is easy to take down and carry to a new camp.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.26",
+      "difficulty": "kids",
+      "question": "Edmund Hillary, who climbed Mount Everest in 1953, came from which country?",
+      "correct": "New Zealand",
+      "wrong": ["Canada", "Ireland", "Australia"],
+      "explanation": "Hillary was a beekeeper before he became famous. He also helped to build schools in Nepal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.27",
+      "difficulty": "kids",
+      "question": "How many ships did Columbus have on his first trip across the Atlantic Ocean?",
+      "correct": "Three",
+      "wrong": ["One", "Seven", "Twelve"],
+      "explanation": "The ships were the Niña, the Pinta and the Santa María. About 90 men sailed with him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.28",
+      "difficulty": "kids",
+      "question": "Which continent is the South Pole on?",
+      "correct": "Antarctica",
+      "wrong": ["Australia", "Africa", "South America"],
+      "explanation": "Antarctica is covered by thick ice. No one lives there for good, but scientists stay at research stations for a time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.29",
+      "difficulty": "kids",
+      "question": "Marco Polo travelled from Italy to which far-away country, where he stayed for many years?",
+      "correct": "China",
+      "wrong": ["India", "Japan", "Egypt"],
+      "explanation": "He travelled along the Silk Road. He told Europeans about paper money and other things they had never seen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.30",
+      "difficulty": "kids",
+      "question": "Which animal did the Spanish bring to the Americas that Native peoples had not seen before?",
+      "correct": "Horses",
+      "wrong": ["Llamas", "Turkeys", "Jaguars"],
+      "explanation": "Later, many Native peoples learned to ride and used horses for hunting and travel.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.31",
+      "difficulty": "kids",
+      "question": "What is a colony?",
+      "correct": "A land ruled by a faraway country",
+      "wrong": ["A big ship", "A group of explorers", "A kind of map"],
+      "explanation": "Many European countries had colonies in Africa, Asia and the Americas. Most of them are now independent countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.32",
+      "difficulty": "kids",
+      "question": "Which illness did sailors on long trips often get when they had no fresh fruit?",
+      "correct": "Scurvy",
+      "wrong": ["Measles", "Mumps", "Malaria"],
+      "explanation": "Scurvy comes from too little vitamin C. Oranges and lemons stopped it, and later sailors took them on board.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.33",
+      "difficulty": "kids",
+      "question": "Zheng He sailed huge ships to Africa in the early 1400s. Which country was he from?",
+      "correct": "China",
+      "wrong": ["Japan", "India", "Korea"],
+      "explanation": "His fleet had hundreds of ships and thousands of men, far more than Columbus had.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.34",
+      "difficulty": "kids",
+      "question": "In old stories, explorers in South America searched for El Dorado. What was it?",
+      "correct": "A city of gold",
+      "wrong": ["A fountain of youth", "A castle of ice", "A forest of glass"],
+      "explanation": "El Dorado was never found. The stories made many Spanish explorers go deep into the jungle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.35",
+      "difficulty": "kids",
+      "question": "Which spice did explorers sail to Asia to find, because it sold for a high price in Europe?",
+      "correct": "Pepper",
+      "wrong": ["Vanilla", "Paprika", "Chilli"],
+      "explanation": "Black pepper grew in southern India. Explorers also looked for cloves and nutmeg from the Spice Islands.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.36",
+      "difficulty": "kids",
+      "question": "Which animal carried goods across the deserts on the Silk Road?",
+      "correct": "The camel",
+      "wrong": ["The bison", "The reindeer", "The zebra"],
+      "explanation": "Camels can walk for days without water. Traders travelled in long groups called caravans.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.37",
+      "difficulty": "kids",
+      "question": "Captain Cook claimed the east coast of Australia in 1770. For which country?",
+      "correct": "Britain",
+      "wrong": ["France", "Spain", "The Netherlands"],
+      "explanation": "Cook named the land New South Wales. British ships later brought many settlers there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.38",
+      "difficulty": "kids",
+      "question": "Akbar and Shah Jahan were emperors of which empire in India?",
+      "correct": "The Mughal Empire",
+      "wrong": ["The Roman Empire", "The Inca Empire", "The Aztec Empire"],
+      "explanation": "The Mughal Empire began in 1526 and lasted until 1857. Its emperors built forts, gardens and the Taj Mahal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.39",
+      "difficulty": "kids",
+      "question": "Which country did the polar explorer Roald Amundsen come from?",
+      "correct": "Norway",
+      "wrong": ["Denmark", "Sweden", "Finland"],
+      "explanation": "Amundsen's team were expert skiers, which helped them move fast over the snow and ice.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.kids.40",
+      "difficulty": "kids",
+      "question": "The Aztecs made a drink from which beans?",
+      "correct": "Cocoa beans",
+      "wrong": ["Coffee beans", "Soya beans", "Kidney beans"],
+      "explanation": "The drink was bitter and often had spices in it. Cocoa beans were also used as money.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.01",
+      "difficulty": "mixed",
+      "question": "Where did Ferdinand Magellan die in 1521, during his trip around the world?",
+      "correct": "The Philippines",
+      "wrong": ["Brazil", "Chile", "Indonesia"],
+      "explanation": "He was killed in a fight on the small island of Mactan. His crew went on without him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.02",
+      "difficulty": "mixed",
+      "question": "Ibn Battuta, who travelled over much of Africa and Asia in the 1300s, was born in which country?",
+      "correct": "Morocco",
+      "wrong": ["Egypt", "Iran", "Spain"],
+      "explanation": "He left his home town of Tangier at 21 and travelled for about 30 years. He told his story in a book.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.03",
+      "difficulty": "mixed",
+      "question": "Zheng He led huge fleets across the Indian Ocean in the early 1400s. Which Chinese dynasty did he serve?",
+      "correct": "The Ming dynasty",
+      "wrong": ["The Tang dynasty", "The Han dynasty", "The Qing dynasty"],
+      "explanation": "He made seven great voyages between 1405 and 1433. His fleets sailed as far as East Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.04",
+      "difficulty": "mixed",
+      "question": "Hernán Cortés and his soldiers defeated which empire in 1521?",
+      "correct": "The Aztec Empire",
+      "wrong": ["The Inca Empire", "The Maya Empire", "The Mongol Empire"],
+      "explanation": "They had help from local peoples who were enemies of the Aztecs. Many people also died from new diseases.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.05",
+      "difficulty": "mixed",
+      "question": "Francisco Pizarro captured the ruler Atahualpa in 1532. Which empire did Atahualpa rule?",
+      "correct": "The Inca Empire",
+      "wrong": ["The Aztec Empire", "The Ottoman Empire", "The Mughal Empire"],
+      "explanation": "The Inca ruler was captured in the town of Cajamarca in Peru. Spain then took control of the Inca lands.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.06",
+      "difficulty": "mixed",
+      "question": "Which British explorer reached the South Pole in January 1912 and found that Amundsen had been there first?",
+      "correct": "Robert Falcon Scott",
+      "wrong": ["Ernest Shackleton", "John Franklin", "Edmund Hillary"],
+      "explanation": "Scott and his four companions died on the way back. Their camp and diaries were found by a search party.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.07",
+      "difficulty": "mixed",
+      "question": "What happened to Ernest Shackleton's ship Endurance in 1915?",
+      "correct": "Sea ice crushed it",
+      "wrong": ["It hit a reef near Australia", "It burned in a harbour", "A warship captured it"],
+      "explanation": "The ship got stuck in ice in the Weddell Sea. Everyone on board survived, and the last of them were rescued in 1916.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.08",
+      "difficulty": "mixed",
+      "question": "Tenzing Norgay, who climbed Everest with Hillary, belonged to which mountain people?",
+      "correct": "The Sherpas",
+      "wrong": ["The Gurkhas", "The Bedouin", "The Inuit"],
+      "explanation": "Many Sherpas work as mountain guides in Nepal. They are used to living and working at great height.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.09",
+      "difficulty": "mixed",
+      "question": "Which Mongol ruler, a grandson of Genghis Khan, became the emperor of China in the 1200s?",
+      "correct": "Kublai Khan",
+      "wrong": ["Timur", "Akbar", "Babur"],
+      "explanation": "He started the Yuan dynasty and moved his capital to a place now called Beijing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.10",
+      "difficulty": "mixed",
+      "question": "In 1453 Sultan Mehmed II took which city, ending the Byzantine Empire?",
+      "correct": "Constantinople",
+      "wrong": ["Athens", "Alexandria", "Rome"],
+      "explanation": "The city is now called Istanbul. Its great walls were hit by very large cannons.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which country's explorers, including Cossacks, crossed Siberia to the Pacific coast in the 1600s?",
+      "correct": "Russia",
+      "wrong": ["China", "Sweden", "Poland"],
+      "explanation": "Many of them travelled along rivers, because it was easier than walking through the forests. They hunted for valuable furs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.12",
+      "difficulty": "mixed",
+      "question": "Magellan was Portuguese, but which country's king paid for his voyage around the world?",
+      "correct": "Spain",
+      "wrong": ["Portugal", "England", "France"],
+      "explanation": "The King of Portugal said no to his plan. So Magellan went to the Spanish king, who agreed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.13",
+      "difficulty": "mixed",
+      "question": "What was the nickname of Prince Henry of Portugal, who sent ships to explore Africa's coast in the 1400s?",
+      "correct": "The Navigator",
+      "wrong": ["The Bold", "The Brave", "The Wise"],
+      "explanation": "Henry himself did not sail far. His captains reached Madeira and the Azores, and went far down the coast of West Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.14",
+      "difficulty": "mixed",
+      "question": "On which island group did Captain Cook die in 1779?",
+      "correct": "Hawaii",
+      "wrong": ["Tahiti", "Fiji", "New Zealand"],
+      "explanation": "Cook was the first European known to visit Hawaii. He died there on his third voyage in the Pacific.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which English sailor went around the world between 1577 and 1580 in the Golden Hind?",
+      "correct": "Francis Drake",
+      "wrong": ["Walter Raleigh", "John Cabot", "Henry Hudson"],
+      "explanation": "He was the first English captain to sail around the world. Queen Elizabeth I made him a knight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.16",
+      "difficulty": "mixed",
+      "question": "The Bering Strait is named after Vitus Bering. Which country was he born in?",
+      "correct": "Denmark",
+      "wrong": ["Norway", "Sweden", "Russia"],
+      "explanation": "Bering was born in Horsens. He sailed for the Russian tsar and explored the sea between Asia and Alaska.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.17",
+      "difficulty": "mixed",
+      "question": "In 1947 Thor Heyerdahl crossed the Pacific Ocean on a balsa raft with what name?",
+      "correct": "Kon-Tiki",
+      "wrong": ["Fram", "Endeavour", "Santa María"],
+      "explanation": "He wanted to show that people could have sailed from South America to the Pacific islands in old times.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.18",
+      "difficulty": "mixed",
+      "question": "Which Norwegian let his ship Fram freeze into the Arctic ice in 1893, to drift across the sea?",
+      "correct": "Fridtjof Nansen",
+      "wrong": ["Roald Amundsen", "Thor Heyerdahl", "Ernest Shackleton"],
+      "explanation": "The drift took almost three years. Nansen and one companion left the ship and went on towards the Pole on skis.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.19",
+      "difficulty": "mixed",
+      "question": "In 1488 Bartolomeu Dias sailed past which cape near the southern tip of Africa?",
+      "correct": "The Cape of Good Hope",
+      "wrong": ["Cape Horn", "Cape Verde", "Cape Cod"],
+      "explanation": "Dias is said to have called it the Cape of Storms. The King of Portugal gave it a more hopeful name.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which Ottoman sultan, nicknamed 'the Magnificent', ruled in the 1500s?",
+      "correct": "Suleiman",
+      "wrong": ["Selim", "Saladin", "Akbar"],
+      "explanation": "He ruled for 46 years, longer than any other Ottoman sultan. In Turkey he is called 'the Lawgiver'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.21",
+      "difficulty": "mixed",
+      "question": "The Spanish conquerors of the Americas, such as Cortés and Pizarro, were called what?",
+      "correct": "Conquistadors",
+      "wrong": ["Matadors", "Gauchos", "Mariners"],
+      "explanation": "Conquistador is the Spanish word for conqueror. Many of them hoped to win gold and land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.22",
+      "difficulty": "mixed",
+      "question": "Which country did John Cabot sail for when he reached North America in 1497?",
+      "correct": "England",
+      "wrong": ["Spain", "Portugal", "France"],
+      "explanation": "Cabot was born in Italy. He landed on the coast of present-day Canada.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which French explorer sailed up the St Lawrence River in the 1530s and claimed land for France?",
+      "correct": "Jacques Cartier",
+      "wrong": ["Henry Hudson", "Francis Drake", "Abel Tasman"],
+      "explanation": "He heard the word 'kanata' from local people, meaning village. This word later gave Canada its name.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which conqueror, also called Tamerlane, ruled his empire from the city of Samarkand?",
+      "correct": "Timur",
+      "wrong": ["Genghis Khan", "Babur", "Suleiman"],
+      "explanation": "He built an empire in Central Asia in the late 1300s. His descendants included the founder of the Mughal Empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which Aztec emperor met Hernán Cortés in 1519?",
+      "correct": "Moctezuma II",
+      "wrong": ["Atahualpa", "Pachacuti", "Huayna Capac"],
+      "explanation": "Moctezuma welcomed Cortés into Tenochtitlan. Within two years the Spanish had taken the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.26",
+      "difficulty": "mixed",
+      "question": "What did the Inca use instead of writing to keep records of numbers?",
+      "correct": "Knotted strings",
+      "wrong": ["Clay tablets", "Painted stones", "Carved pictures"],
+      "explanation": "These strings are called quipu. The knots showed numbers, such as counts of people or goods.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.27",
+      "difficulty": "mixed",
+      "question": "Roald Amundsen was the first to sail through which sea route north of Canada, in 1903–06?",
+      "correct": "The Northwest Passage",
+      "wrong": ["The Northeast Passage", "The Drake Passage", "The Strait of Magellan"],
+      "explanation": "His small ship spent three winters in the Arctic on the way. He learned from the Inuit how to dress and travel in the cold.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.28",
+      "difficulty": "mixed",
+      "question": "Mansa Musa, who travelled to Mecca in 1324 with great amounts of gold, ruled which West African empire?",
+      "correct": "The Mali Empire",
+      "wrong": ["The Ghana Empire", "The Songhai Empire", "The Ethiopian Empire"],
+      "explanation": "He gave away so much gold on his trip that its price in Cairo fell for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.29",
+      "difficulty": "mixed",
+      "question": "What was the capital of the Inca Empire?",
+      "correct": "Cusco",
+      "wrong": ["Lima", "Bogotá", "La Paz"],
+      "explanation": "Cusco lies high in the Andes of Peru. The Spanish later built churches on top of its Inca stone walls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which journalist and explorer found David Livingstone in Africa in 1871?",
+      "correct": "Henry Morton Stanley",
+      "wrong": ["Mungo Park", "Richard Burton", "John Speke"],
+      "explanation": "Stanley is said to have greeted him with the words 'Dr Livingstone, I presume?'",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.31",
+      "difficulty": "mixed",
+      "question": "Most of the Ottoman Empire's heartland later became which country?",
+      "correct": "Turkey",
+      "wrong": ["Egypt", "Greece", "Iran"],
+      "explanation": "The Republic of Turkey was founded in 1923. The Ottoman Empire had ruled parts of three continents.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.32",
+      "difficulty": "mixed",
+      "question": "Which Spanish queen helped to pay for Columbus's first trip across the Atlantic?",
+      "correct": "Isabella",
+      "wrong": ["Elizabeth", "Victoria", "Catherine"],
+      "explanation": "Isabella was Queen of Castile. Her marriage to Ferdinand of Aragon joined the two biggest kingdoms of Spain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.33",
+      "difficulty": "mixed",
+      "question": "What was the name of the ship that James Cook sailed on his first voyage around the world?",
+      "correct": "Endeavour",
+      "wrong": ["Beagle", "Bounty", "Mayflower"],
+      "explanation": "Endeavour was a coal ship that the Royal Navy bought for the voyage. It was strong and had a flat bottom.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.34",
+      "difficulty": "mixed",
+      "question": "In the 1800s, which country ruled most of India?",
+      "correct": "Britain",
+      "wrong": ["France", "Portugal", "The Netherlands"],
+      "explanation": "First the British East India Company ruled, and from 1858 the British Crown took over.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.35",
+      "difficulty": "mixed",
+      "question": "Polynesian sailors crossed huge areas of the Pacific without compasses. What did they read to find their way?",
+      "correct": "Stars, waves and birds",
+      "wrong": ["Printed charts", "Radio signals", "Coloured flags"],
+      "explanation": "They remembered the paths of stars and how waves bend around islands. In this way they settled islands far apart.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.36",
+      "difficulty": "mixed",
+      "question": "Cook's first voyage, which left England in 1768, went to Tahiti to watch what?",
+      "correct": "Venus crossing the Sun",
+      "wrong": ["A solar eclipse", "A comet", "A meteor shower"],
+      "explanation": "Astronomers wanted to measure how far away the Sun is. Cook then sailed on to New Zealand and Australia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.37",
+      "difficulty": "mixed",
+      "question": "Which valuable metal from mines such as Potosí made Spain rich in the 1500s?",
+      "correct": "Silver",
+      "wrong": ["Iron", "Tin", "Lead"],
+      "explanation": "Potosí is a mountain town in what is now Bolivia. Silver coins from there were used in many countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.38",
+      "difficulty": "mixed",
+      "question": "What do historians call the time, from the 1400s, when European ships explored much of the world?",
+      "correct": "The Age of Discovery",
+      "wrong": ["The Age of Steam", "The Age of Reason", "The Stone Age"],
+      "explanation": "New ships, maps and compasses made long sea trips possible. Many of these trips led to colonies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.39",
+      "difficulty": "mixed",
+      "question": "Which European country ruled Java and much of what is now Indonesia for centuries?",
+      "correct": "The Netherlands",
+      "wrong": ["Spain", "Portugal", "Belgium"],
+      "explanation": "The Dutch East India Company began its rule there in the 1600s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.mixed.40",
+      "difficulty": "mixed",
+      "question": "Which famous river's source did British explorers such as Speke and Burton search for in the 1800s?",
+      "correct": "The Nile",
+      "wrong": ["The Congo", "The Niger", "The Zambezi"],
+      "explanation": "Speke reached Lake Victoria in 1858 and said it was the source of the river.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.01",
+      "difficulty": "expert",
+      "question": "Which Spanish sailor captained the Victoria and brought it home in 1522, finishing the first trip around the world?",
+      "correct": "Juan Sebastián Elcano",
+      "wrong": ["Bartolomeu Dias", "Vasco Núñez de Balboa", "Hernán Cortés"],
+      "explanation": "Only 18 men came home on the Victoria, three years after five ships had set out.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.02",
+      "difficulty": "expert",
+      "question": "Which Spanish explorer was the first European to see the Pacific Ocean from the Americas, in 1513?",
+      "correct": "Vasco Núñez de Balboa",
+      "wrong": ["Hernán Cortés", "Francisco Pizarro", "Ponce de León"],
+      "explanation": "He crossed the narrow land of Panama and called the new sea the South Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.03",
+      "difficulty": "expert",
+      "question": "The Treaty of Tordesillas in 1494 shared newly found lands between which two countries?",
+      "correct": "Spain and Portugal",
+      "wrong": ["Spain and England", "Portugal and France", "England and the Netherlands"],
+      "explanation": "A line on the map gave lands to the west to Spain and lands to the east to Portugal. This is one reason why Brazil speaks Portuguese.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.04",
+      "difficulty": "expert",
+      "question": "Which Portuguese commander led the fleet that reached Brazil in 1500, on its way to India?",
+      "correct": "Pedro Álvares Cabral",
+      "wrong": ["Vasco da Gama", "Afonso de Albuquerque", "Ferdinand Magellan"],
+      "explanation": "His fleet sailed far out into the Atlantic to catch the winds. Cabral claimed the land for Portugal.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.05",
+      "difficulty": "expert",
+      "question": "Who founded the Mughal Empire after winning the Battle of Panipat in 1526?",
+      "correct": "Babur",
+      "wrong": ["Akbar", "Timur", "Humayun"],
+      "explanation": "Babur came from Central Asia and was a descendant of both Timur and Genghis Khan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.06",
+      "difficulty": "expert",
+      "question": "Who were the Janissaries in the Ottoman Empire?",
+      "correct": "The sultan's elite foot soldiers",
+      "wrong": [
+        "The sultan's tax collectors",
+        "Merchants in the spice trade",
+        "Builders of the navy's ships"
+      ],
+      "explanation": "They lived in barracks and were paid by the sultan. Their name comes from Turkish words meaning 'new soldiers'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.07",
+      "difficulty": "expert",
+      "question": "What was the Mongol Empire's relay system of riders and stations for carrying messages called?",
+      "correct": "The Yam",
+      "wrong": ["The Kurultai", "The Tumen", "The Ger"],
+      "explanation": "Riders changed horses at stations, so messages travelled very far in a short time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.08",
+      "difficulty": "expert",
+      "question": "In 1258 a Mongol army led by Hulagu captured which great city?",
+      "correct": "Baghdad",
+      "wrong": ["Damascus", "Cairo", "Samarkand"],
+      "explanation": "It ended the rule of the Abbasid caliphs in Baghdad, which had lasted about 500 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.09",
+      "difficulty": "expert",
+      "question": "Which Mongol state collected tribute from Russian princes from the 1200s to the 1400s?",
+      "correct": "The Golden Horde",
+      "wrong": ["The Yuan dynasty", "The Ilkhanate", "The Chagatai Khanate"],
+      "explanation": "It was one of the parts the Mongol Empire split into. Moscow grew strong while it paid tribute.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.10",
+      "difficulty": "expert",
+      "question": "Which writer helped Marco Polo write down his travels while both were in prison in Genoa?",
+      "correct": "Rustichello",
+      "wrong": ["Dante Alighieri", "Giovanni Boccaccio", "Petrarch"],
+      "explanation": "Rustichello of Pisa was a writer of knight stories. The book was first written in a form of Old French.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.11",
+      "difficulty": "expert",
+      "question": "Who was the last Aztec emperor, captured by the Spanish in 1521?",
+      "correct": "Cuauhtémoc",
+      "wrong": ["Moctezuma I", "Atahualpa", "Pachacuti"],
+      "explanation": "He came to power after Moctezuma II and then Cuitláhuac had died. The Spanish took Tenochtitlan after a long siege.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.12",
+      "difficulty": "expert",
+      "question": "Which small ship did Roald Amundsen use to sail through the Northwest Passage?",
+      "correct": "Gjøa",
+      "wrong": ["Fram", "Maud", "Belgica"],
+      "explanation": "Gjøa was a fishing boat with only seven men on board. It was small enough to sail in shallow icy water.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.13",
+      "difficulty": "expert",
+      "question": "What does the name of Nansen's ship Fram mean in Norwegian?",
+      "correct": "Forward",
+      "wrong": ["Freedom", "Winter", "Northern"],
+      "explanation": "Fram was built to be pushed up, not crushed, by pack ice. Later Amundsen used it to sail to Antarctica.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.14",
+      "difficulty": "expert",
+      "question": "Which ship carried Scott's last expedition to Antarctica in 1910?",
+      "correct": "Terra Nova",
+      "wrong": ["Discovery", "Endurance", "Nimrod"],
+      "explanation": "Discovery was used on Scott's first expedition. Nimrod was Shackleton's ship.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.15",
+      "difficulty": "expert",
+      "question": "After Endurance was lost, to which island did Shackleton sail in a small boat to get help?",
+      "correct": "South Georgia",
+      "wrong": ["The Falkland Islands", "Elephant Island", "Tierra del Fuego"],
+      "explanation": "The boat James Caird sailed more than 1,200 kilometres from Elephant Island. Shackleton then crossed the island's mountains on foot.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.16",
+      "difficulty": "expert",
+      "question": "On his second voyage, James Cook became the first known person to cross which line?",
+      "correct": "The Antarctic Circle",
+      "wrong": ["The Arctic Circle", "The Equator", "The Tropic of Cancer"],
+      "explanation": "He crossed it in 1773 but never saw land, because it was hidden behind the ice.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.17",
+      "difficulty": "expert",
+      "question": "In 1958 Edmund Hillary drove to the South Pole with what?",
+      "correct": "Farm tractors",
+      "wrong": ["Dog sleds", "Camels", "Hovercraft"],
+      "explanation": "He was part of an expedition that crossed Antarctica. Hillary's tractors reached the Pole before the main team.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.18",
+      "difficulty": "expert",
+      "question": "Which Greenland-born explorer led a long trip across Arctic North America to Alaska in 1921–24?",
+      "correct": "Knud Rasmussen",
+      "wrong": ["Roald Amundsen", "Ejnar Mikkelsen", "Fridtjof Nansen"],
+      "explanation": "His mother was part Inuit, and he grew up speaking Greenlandic. On the trip he studied the culture of the Inuit.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.19",
+      "difficulty": "expert",
+      "question": "Who was the only member of the Danish expedition to Arabia, sent in 1761, to come home alive?",
+      "correct": "Carsten Niebuhr",
+      "wrong": ["Peter Forsskål", "Vitus Bering", "Ole Rømer"],
+      "explanation": "King Frederik V sent scientists to explore Arabia. Niebuhr made maps that were used for many years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.20",
+      "difficulty": "expert",
+      "question": "What was Genghis Khan's birth name?",
+      "correct": "Temüjin",
+      "wrong": ["Ögedei", "Subutai", "Hulagu"],
+      "explanation": "He took the title Genghis Khan in 1206, when a great meeting of the tribes chose him as their leader.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.21",
+      "difficulty": "expert",
+      "question": "In 1529 the Ottoman army besieged which European city?",
+      "correct": "Vienna",
+      "wrong": ["Kraków", "Prague", "Rome"],
+      "explanation": "The siege did not succeed, because of rain and a long supply line. They tried again in 1683.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.22",
+      "difficulty": "expert",
+      "question": "Which dynasty ruled Persia from 1501 to 1736 and made Isfahan a grand city?",
+      "correct": "The Safavids",
+      "wrong": ["The Qajars", "The Seljuks", "The Abbasids"],
+      "explanation": "The Safavids were rivals of the Ottomans for many years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.23",
+      "difficulty": "expert",
+      "question": "In 1510 which city on India's west coast became the centre of Portuguese power in Asia?",
+      "correct": "Goa",
+      "wrong": ["Calicut", "Bombay", "Madras"],
+      "explanation": "Portugal ruled Goa for about 450 years, until 1961.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.24",
+      "difficulty": "expert",
+      "question": "Which island group was known to Europeans as the Spice Islands, because cloves and nutmeg grew there?",
+      "correct": "The Moluccas",
+      "wrong": ["The Philippines", "The Canary Islands", "The Seychelles"],
+      "explanation": "The Moluccas are now part of Indonesia. Many European countries fought to control them, because the spices were worth so much.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.25",
+      "difficulty": "expert",
+      "question": "Cape Horn at the tip of South America is named after a town in which country?",
+      "correct": "The Netherlands",
+      "wrong": ["Spain", "Portugal", "Denmark"],
+      "explanation": "Dutch sailors Schouten and Le Maire named it in 1616 after the town of Hoorn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.26",
+      "difficulty": "expert",
+      "question": "Which African river did the Scottish explorer Mungo Park follow in 1796 and 1805?",
+      "correct": "The Niger",
+      "wrong": ["The Congo", "The Nile", "The Zambezi"],
+      "explanation": "Park wanted to find where the river ended. He died on the second trip.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.27",
+      "difficulty": "expert",
+      "question": "Which Chinese monk travelled to India in the 600s, and inspired the story 'Journey to the West'?",
+      "correct": "Xuanzang",
+      "wrong": ["Zheng He", "Confucius", "Marco Polo"],
+      "explanation": "He travelled for about 16 years and brought home hundreds of books.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.28",
+      "difficulty": "expert",
+      "question": "Which Greek explorer sailed to northern Europe in the 300s BC and wrote about a land called Thule?",
+      "correct": "Pytheas",
+      "wrong": ["Herodotus", "Hanno", "Ptolemy"],
+      "explanation": "He came from the Greek colony of Massalia, now Marseille. He wrote that summer nights in the far north were very short.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.29",
+      "difficulty": "expert",
+      "question": "Which British officer's lost expedition of 1845 searched for the Northwest Passage with the ships Erebus and Terror?",
+      "correct": "Sir John Franklin",
+      "wrong": ["James Clark Ross", "William Parry", "Henry Hudson"],
+      "explanation": "None of his 129 men returned. The wrecks of both ships were found in 2014 and 2016.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.30",
+      "difficulty": "expert",
+      "question": "Which scientist explored Latin America from 1799 to 1804 and wrote about its nature?",
+      "correct": "Alexander von Humboldt",
+      "wrong": ["Charles Darwin", "Carl Linnaeus", "Alfred Wallace"],
+      "explanation": "Humboldt climbed volcanoes and measured plants at different heights. Many places are named after him.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.31",
+      "difficulty": "expert",
+      "question": "Which explorer first sailed through the Northeast Passage, north of Russia, in 1878–79 aboard the Vega?",
+      "correct": "Adolf Erik Nordenskiöld",
+      "wrong": ["Fridtjof Nansen", "Roald Amundsen", "Sven Hedin"],
+      "explanation": "He was born in Finland and worked in Sweden. The ship was stuck in ice for months near the Bering Strait.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.32",
+      "difficulty": "expert",
+      "question": "What was New York called when the Dutch ruled it?",
+      "correct": "New Amsterdam",
+      "wrong": ["New Rotterdam", "New Delft", "New Hague"],
+      "explanation": "The Dutch settlement was on the island of Manhattan. The English took it in 1664.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.33",
+      "difficulty": "expert",
+      "question": "Which Chinese port was a Portuguese trading base from the 1500s?",
+      "correct": "Macau",
+      "wrong": ["Hong Kong", "Shanghai", "Tianjin"],
+      "explanation": "Portuguese traders settled there in the 1550s. Portugal handed Macau back to China in 1999.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.34",
+      "difficulty": "expert",
+      "question": "The Spanish Manila galleons crossed the Pacific between Manila and which port in Mexico?",
+      "correct": "Acapulco",
+      "wrong": ["Veracruz", "Tampico", "Mazatlán"],
+      "explanation": "The ships carried silver to Asia and brought silk and spices back.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.35",
+      "difficulty": "expert",
+      "question": "In October 1492 Columbus first landed in the Americas on an island in which group?",
+      "correct": "The Bahamas",
+      "wrong": ["The Azores", "The Canary Islands", "The Virgin Islands"],
+      "explanation": "He called the island San Salvador. He left from the Canary Islands about five weeks earlier.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.36",
+      "difficulty": "expert",
+      "question": "Which mapmaker first put the name 'America' on a map, in 1507?",
+      "correct": "Martin Waldseemüller",
+      "wrong": ["Gerardus Mercator", "Abraham Ortelius", "Claudius Ptolemy"],
+      "explanation": "He named the land after Amerigo Vespucci. He left the name off his later maps, but it had already caught on.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.37",
+      "difficulty": "expert",
+      "question": "Zheng He's first voyage began in 1405 under which Ming emperor?",
+      "correct": "The Yongle Emperor",
+      "wrong": ["The Kangxi Emperor", "The Qianlong Emperor", "Qin Shi Huang"],
+      "explanation": "Yongle also moved the capital to Beijing and built the Forbidden City.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.38",
+      "difficulty": "expert",
+      "question": "What were the Aztec 'chinampas'?",
+      "correct": "Farming plots built in lakes",
+      "wrong": ["Stairs on temples", "War canoes", "Stone calendars"],
+      "explanation": "They made rich soil, and farmers could grow several harvests a year near Tenochtitlan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.39",
+      "difficulty": "expert",
+      "question": "Which Dutch captain made the first recorded European landing in Australia, in 1606?",
+      "correct": "Willem Janszoon",
+      "wrong": ["Abel Tasman", "Willem Barentsz", "Dirk Hartog"],
+      "explanation": "He sailed the ship Duyfken along the coast of Cape York. He did not know it was a new continent.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.explorers-empires.expert.40",
+      "difficulty": "expert",
+      "question": "What does the Inca name for their empire, Tawantinsuyu, mean?",
+      "correct": "Four regions together",
+      "wrong": ["Land of gold", "Children of the Sun", "House of stone"],
+      "explanation": "The four regions met in the capital, Cusco. Roads ran out from Cusco to each of them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

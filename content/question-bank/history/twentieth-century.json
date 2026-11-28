@@ -1,0 +1,1222 @@
+{
+  "category": "history",
+  "subcategory": "twentieth-century",
+  "questions": [
+    {
+      "id": "history.twentieth-century.kids.01",
+      "difficulty": "kids",
+      "question": "In 1912, a huge ship hit an iceberg on its first trip and sank. What was its name?",
+      "correct": "Titanic",
+      "wrong": ["Mayflower", "Cutty Sark", "Santa Maria"],
+      "explanation": "The Titanic sailed from England and sank in the cold North Atlantic. It did not carry enough lifeboats for everyone, so ships had to carry more after that.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.02",
+      "difficulty": "kids",
+      "question": "Which city was split in two by a wall, with East on one side and West on the other?",
+      "correct": "Berlin",
+      "wrong": ["Vienna", "Warsaw", "Prague"],
+      "explanation": "The Berlin Wall stood for 28 years, from 1961 to 1989. East German guards watched it so that people could not escape to the western part.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.03",
+      "difficulty": "kids",
+      "question": "Which leader used peaceful protest to help India win its independence?",
+      "correct": "Mahatma Gandhi",
+      "wrong": ["Napoleon", "Winston Churchill", "Abraham Lincoln"],
+      "explanation": "Gandhi believed in non-violence. He marched, fasted and spoke out. People called him Mahatma, which means 'great soul'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.04",
+      "difficulty": "kids",
+      "question": "Nelson Mandela spent many years in prison. In 1994 he became president of which country?",
+      "correct": "South Africa",
+      "wrong": ["Kenya", "Nigeria", "Egypt"],
+      "explanation": "Mandela became president after South Africa's first election in which people of every skin colour could vote. He worked to bring the country together after years of unfair rules.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.05",
+      "difficulty": "kids",
+      "question": "In which year did the First World War begin?",
+      "correct": "1914",
+      "wrong": ["1894", "1929", "1939"],
+      "explanation": "The war ended in 1918. People hoped it was the war to end all wars, but a second world war began only 21 years later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.06",
+      "difficulty": "kids",
+      "question": "In which year did the Second World War end?",
+      "correct": "1945",
+      "wrong": ["1918", "1939", "1950"],
+      "explanation": "The war in Europe ended in May 1945 and the war in Asia ended in September 1945. The war had lasted about six years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.07",
+      "difficulty": "kids",
+      "question": "What did the suffragettes fight for?",
+      "correct": "The right for women to vote",
+      "wrong": ["Shorter school days", "Free bus rides", "A new national flag"],
+      "explanation": "Suffragettes in Britain marched and made speeches. Some women could first vote in UK general elections in 1918, and women got the same voting rights as men in 1928.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.08",
+      "difficulty": "kids",
+      "question": "Which girl hid in Amsterdam during the Second World War and wrote a famous diary?",
+      "correct": "Anne Frank",
+      "wrong": ["Florence Nightingale", "Joan of Arc", "Marie Curie"],
+      "explanation": "Anne Frank and her family hid in secret rooms behind her father's office for over two years. Her diary was published after the war and is read all over the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.09",
+      "difficulty": "kids",
+      "question": "Which group of countries was set up in 1945 to help keep the peace?",
+      "correct": "The United Nations",
+      "wrong": ["The Red Cross", "The Hanseatic League", "The Olympic Games"],
+      "explanation": "The United Nations began after the Second World War with 51 member countries. Its main office is in New York.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.10",
+      "difficulty": "kids",
+      "question": "From which country did India become independent in 1947?",
+      "correct": "Britain",
+      "wrong": ["France", "Russia", "Germany"],
+      "explanation": "India became independent at midnight on 15 August 1947. Many Indians had campaigned for this for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.11",
+      "difficulty": "kids",
+      "question": "Which American leader gave a famous speech in 1963 about his dream of equal rights for all?",
+      "correct": "Martin Luther King Jr.",
+      "wrong": ["Abraham Lincoln", "George Washington", "Benjamin Franklin"],
+      "explanation": "King led peaceful marches for equal rights for Black people in the USA. More than 200,000 people came to hear his speech in Washington, D.C.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.12",
+      "difficulty": "kids",
+      "question": "Which two countries are joined by the Channel Tunnel, which opened in 1994?",
+      "correct": "Britain and France",
+      "wrong": ["Britain and Ireland", "Denmark and Sweden", "Spain and Morocco"],
+      "explanation": "Trains run under the sea floor, so people can cross without a ferry or a plane. You can travel by train between London and Paris.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.13",
+      "difficulty": "kids",
+      "question": "During the Second World War, what did British families use to buy a fixed amount of food each week?",
+      "correct": "Ration books",
+      "wrong": ["Credit cards", "Pocket watches", "Library cards"],
+      "explanation": "Food such as sugar, butter and meat was rationed because ships bringing food were attacked. Some rationing lasted until 1954.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.14",
+      "difficulty": "kids",
+      "question": "In the Second World War, many children left British cities to live in the countryside. What were they called?",
+      "correct": "Evacuees",
+      "wrong": ["Pilgrims", "Settlers", "Cadets"],
+      "explanation": "Children were sent away to stay safe from bombs. They often lived with strangers and carried their gas mask in a small box.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.15",
+      "difficulty": "kids",
+      "question": "Who was Britain's prime minister for most of the Second World War?",
+      "correct": "Winston Churchill",
+      "wrong": ["Lord Nelson", "Duke of Wellington", "Oliver Cromwell"],
+      "explanation": "Churchill gave powerful radio speeches that gave people hope. He also loved painting and later won the Nobel Prize in Literature.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.16",
+      "difficulty": "kids",
+      "question": "After the Second World War, which country was split into East and West?",
+      "correct": "Germany",
+      "wrong": ["Spain", "Norway", "Greece"],
+      "explanation": "East Germany was ruled by a communist government. West Germany held free elections. The two parts joined again in 1990.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.17",
+      "difficulty": "kids",
+      "question": "The Cold War was a long struggle between which two big powers?",
+      "correct": "The USA and the Soviet Union",
+      "wrong": ["Britain and France", "China and India", "Germany and Japan"],
+      "explanation": "It was called 'cold' because the two sides never fought each other directly. It lasted from the late 1940s until about 1991.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.18",
+      "difficulty": "kids",
+      "question": "Which birds carried messages for soldiers in the First World War?",
+      "correct": "Pigeons",
+      "wrong": ["Parrots", "Owls", "Swans"],
+      "explanation": "Homing pigeons can find their way back home, even from a battlefield. Some of them were given medals for bravery.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.19",
+      "difficulty": "kids",
+      "question": "What were the long ditches in which soldiers lived and fought on the Western Front in the First World War?",
+      "correct": "Trenches",
+      "wrong": ["Moats", "Canals", "Wells"],
+      "explanation": "Trenches were cold, wet and muddy. Armies dug lines of them across France and Belgium, and the front hardly moved for years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.20",
+      "difficulty": "kids",
+      "question": "Who became the first woman to fly alone across the Atlantic Ocean, in 1932?",
+      "correct": "Amelia Earhart",
+      "wrong": ["Agatha Christie", "Queen Victoria", "Coco Chanel"],
+      "explanation": "Earhart flew from Newfoundland to Northern Ireland in less than 15 hours. She disappeared in 1937 while trying to fly around the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.21",
+      "difficulty": "kids",
+      "question": "In 1953, who was crowned queen of the United Kingdom?",
+      "correct": "Elizabeth II",
+      "wrong": ["Victoria", "Elizabeth I", "Anne"],
+      "explanation": "The crowning took place in Westminster Abbey in London. The ceremony was shown live on television, and millions of people watched.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.22",
+      "difficulty": "kids",
+      "question": "In the 1930s, the Hindenburg carried passengers across the Atlantic. What kind of vehicle was it?",
+      "correct": "A giant airship",
+      "wrong": ["A steam train", "A submarine", "A helicopter"],
+      "explanation": "It floated because it was filled with a gas lighter than air. In 1937 it caught fire while landing in the USA, and passenger airships soon stopped.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.23",
+      "difficulty": "kids",
+      "question": "In 1964, which country opened the first high-speed 'bullet train' line?",
+      "correct": "Japan",
+      "wrong": ["China", "France", "Germany"],
+      "explanation": "The Shinkansen first ran between Tokyo and Osaka, just before the Tokyo Olympic Games.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.24",
+      "difficulty": "kids",
+      "question": "In the Second World War, why did people in cities cover their windows at night?",
+      "correct": "So bombers could not see the lights",
+      "wrong": ["To keep their rooms warm", "To save paper", "To stop birds flying in"],
+      "explanation": "This was called the blackout. Street lamps were turned off and car headlights were covered too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.25",
+      "difficulty": "kids",
+      "question": "The German car brand Volkswagen has a name that means what in English?",
+      "correct": "People's car",
+      "wrong": ["Fast wagon", "Strong horse", "Family truck"],
+      "explanation": "The Volkswagen Beetle was planned as a cheap car for ordinary families. It became one of the best-selling cars ever made.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.26",
+      "difficulty": "kids",
+      "question": "Which new armoured vehicles with caterpillar tracks first fought in the First World War?",
+      "correct": "Tanks",
+      "wrong": ["Tractors", "Bulldozers", "Hovercraft"],
+      "explanation": "Tanks first fought in 1916. They could cross trenches and mud that stopped ordinary vehicles. 'Tank' was a code word to hide what they were.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.27",
+      "difficulty": "kids",
+      "question": "Before the Second World War began, what did people call the First World War?",
+      "correct": "The Great War",
+      "wrong": ["The Cold War", "The Hundred Years' War", "The Long War"],
+      "explanation": "It was the biggest war the world had seen. The name 'First World War' only became common after a second world war began.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.28",
+      "difficulty": "kids",
+      "question": "Before trucks were common, which animals pulled big guns and carried supplies in the First World War?",
+      "correct": "Horses",
+      "wrong": ["Zebras", "Kangaroos", "Llamas"],
+      "explanation": "Millions of horses and mules worked in the war. They could pull heavy loads through deep mud where early trucks got stuck.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.29",
+      "difficulty": "kids",
+      "question": "In the 1930s, families sat around what to hear news, music and plays at home?",
+      "correct": "A radio",
+      "wrong": ["A computer", "A mobile phone", "A video recorder"],
+      "explanation": "Radio brought voices from far away into people's homes. Many people heard their leaders speak on the radio for the first time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.30",
+      "difficulty": "kids",
+      "question": "During air raids in the Second World War, where did many Londoners shelter at night?",
+      "correct": "In Underground stations",
+      "wrong": ["In big castles", "On boats on the river", "In the zoo"],
+      "explanation": "Thousands of people took blankets down into the tube stations. Some stations even had libraries and concerts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.31",
+      "difficulty": "kids",
+      "question": "In 1955, which woman refused to give up her seat on a bus and became famous in the fight for equal rights?",
+      "correct": "Rosa Parks",
+      "wrong": ["Anne Frank", "Helen Keller", "Queen Victoria"],
+      "explanation": "She was arrested, and Black people in her city stopped using the buses for over a year. The protest helped to change the unfair rules.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.32",
+      "difficulty": "kids",
+      "question": "In Britain, people wear a red flower in November to remember soldiers. What flower is it?",
+      "correct": "A poppy",
+      "wrong": ["A rose", "A tulip", "A daisy"],
+      "explanation": "Red poppies grew on the battlefields in France and Belgium after the First World War. Remembrance Day is on 11 November.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.33",
+      "difficulty": "kids",
+      "question": "Which famous passenger plane could fly faster than the speed of sound?",
+      "correct": "Concorde",
+      "wrong": ["The Boeing 747", "The Airbus A380", "The Wright Flyer"],
+      "explanation": "Concorde flew from London or Paris to New York in under four hours. It was built by British and French companies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.34",
+      "difficulty": "kids",
+      "question": "Which city was the capital of the Soviet Union?",
+      "correct": "Moscow",
+      "wrong": ["Kyiv", "Warsaw", "Prague"],
+      "explanation": "The Soviet Union lasted from 1922 to 1991. In its later years it was made up of 15 republics, and Russia was the biggest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.35",
+      "difficulty": "kids",
+      "question": "What kind of ships were the Titanic and the Queen Mary?",
+      "correct": "Ocean liners",
+      "wrong": ["Aircraft carriers", "Fishing boats", "Tugboats"],
+      "explanation": "Ocean liners carried passengers across the Atlantic before jet planes made flying cheap. Some were like floating hotels.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.36",
+      "difficulty": "kids",
+      "question": "What were the German U-boats of the world wars?",
+      "correct": "Submarines",
+      "wrong": ["Tanks", "Airships", "Trains"],
+      "explanation": "'U-boat' comes from the German word 'Unterseeboot', which means 'undersea boat'. They attacked ships that carried food and supplies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.37",
+      "difficulty": "kids",
+      "question": "What does it mean when a country becomes 'independent'?",
+      "correct": "It governs itself",
+      "wrong": ["It joins another country", "It stops all trade", "It gets a new king"],
+      "explanation": "Many countries celebrate the day they became independent every year with a national holiday.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.38",
+      "difficulty": "kids",
+      "question": "What is a 'ceasefire' in a war?",
+      "correct": "An agreement to stop fighting",
+      "wrong": ["A new type of gun", "A soldier's uniform", "A place for soldiers to rest"],
+      "explanation": "A ceasefire can be the first step towards a peace treaty. It can be short or it can last a long time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.39",
+      "difficulty": "kids",
+      "question": "What do we call people who must leave their country to escape war or danger?",
+      "correct": "Refugees",
+      "wrong": ["Tourists", "Pilgrims", "Explorers"],
+      "explanation": "Millions of people became refugees in the 20th century. The UN set up a special refugee agency in 1950 to help them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.kids.40",
+      "difficulty": "kids",
+      "question": "What is a dictator?",
+      "correct": "A ruler with all the power",
+      "wrong": [
+        "A leader chosen in a fair vote",
+        "A judge in a court",
+        "A guard who protects a king"
+      ],
+      "explanation": "Many dictators in the 20th century ruled without free elections and did not allow people to disagree with them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.01",
+      "difficulty": "mixed",
+      "question": "In which city was the heir to the throne of Austria-Hungary shot in 1914, a spark for the First World War?",
+      "correct": "Sarajevo",
+      "wrong": ["Vienna", "Belgrade", "Berlin"],
+      "explanation": "Archduke Franz Ferdinand was visiting Sarajevo, now the capital of Bosnia and Herzegovina. Within weeks, several big powers were at war.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.02",
+      "difficulty": "mixed",
+      "question": "In 1919, a peace treaty with Germany was signed in a famous palace near which city?",
+      "correct": "Paris",
+      "wrong": ["London", "Berlin", "Brussels"],
+      "explanation": "The Treaty of Versailles was signed in the Hall of Mirrors. Many Germans thought it was harsh, which added to anger and trouble later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.03",
+      "difficulty": "mixed",
+      "question": "Who led the Bolsheviks when they took power in Russia in October 1917?",
+      "correct": "Vladimir Lenin",
+      "wrong": ["Nicholas II", "Mikhail Gorbachev", "Peter the Great"],
+      "explanation": "Lenin led the Soviet government until his death in 1924. The last tsar, Nicholas II, had given up the throne earlier in 1917.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.04",
+      "difficulty": "mixed",
+      "question": "In 1929 share prices in New York crashed, and soon millions of people lost their jobs. What is that time called?",
+      "correct": "The Great Depression",
+      "wrong": ["The Cold War", "The Roaring Twenties", "The Baby Boom"],
+      "explanation": "The Great Depression lasted through the 1930s and hit many countries, because banks and trade failed around the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.05",
+      "difficulty": "mixed",
+      "question": "In September 1939, Germany invaded which country, leading Britain and France to declare war?",
+      "correct": "Poland",
+      "wrong": ["Austria", "Denmark", "Belgium"],
+      "explanation": "The Soviet Union also entered Poland from the east soon after. The invasion began the Second World War in Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.06",
+      "difficulty": "mixed",
+      "question": "On D-Day in June 1944, Allied soldiers landed on beaches in which part of France?",
+      "correct": "Normandy",
+      "wrong": ["Brittany", "Provence", "Alsace"],
+      "explanation": "Thousands of ships and aircraft took part. The landings began the liberation of France and north-west Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.07",
+      "difficulty": "mixed",
+      "question": "In 1940, hundreds of small civilian boats helped rescue trapped Allied soldiers from which French port?",
+      "correct": "Dunkirk",
+      "wrong": ["Calais", "Le Havre", "Cherbourg"],
+      "explanation": "More than 300,000 soldiers were taken to Britain in about nine days. The 'Dunkirk spirit' means pulling together in a crisis.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.08",
+      "difficulty": "mixed",
+      "question": "In the Second World War, British codebreakers at Bletchley Park broke the codes of which German machine?",
+      "correct": "Enigma",
+      "wrong": ["Zeppelin", "Messerschmitt", "Panzer"],
+      "explanation": "Polish codebreakers first broke Enigma in the 1930s and shared their work with Britain. Reading its messages helped the Allies track German U-boats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.09",
+      "difficulty": "mixed",
+      "question": "After the Second World War, leaders of Nazi Germany were put on trial in which German city?",
+      "correct": "Nuremberg",
+      "wrong": ["Munich", "Hamburg", "Cologne"],
+      "explanation": "The Nuremberg trials began in 1945. They helped to set the idea that leaders can be judged for crimes against humanity.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.10",
+      "difficulty": "mixed",
+      "question": "What was the name of the 1948 US aid programme that helped to rebuild Western Europe?",
+      "correct": "The Marshall Plan",
+      "wrong": ["The Churchill Plan", "The Lisbon Plan", "The Geneva Plan"],
+      "explanation": "It was named after the US Secretary of State George Marshall. Money and goods went to many countries, but the Soviet Union and its allies said no.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.11",
+      "difficulty": "mixed",
+      "question": "In 1948 the Soviets blocked the roads into West Berlin. How did the Western Allies bring in food and coal?",
+      "correct": "By aeroplane",
+      "wrong": [
+        "By boat on the river Spree",
+        "By train through a secret tunnel",
+        "By long lorry convoys"
+      ],
+      "explanation": "The blockade lasted about 11 months. Planes landed in West Berlin day and night, and some pilots dropped sweets for the children.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.12",
+      "difficulty": "mixed",
+      "question": "In 1949, the USA, Canada and ten European countries formed a defence alliance. What is it called?",
+      "correct": "NATO",
+      "wrong": ["OPEC", "UNESCO", "FIFA"],
+      "explanation": "It began with 12 members. They promise that an attack on one of them counts as an attack on them all.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which of these countries was one of the six founders of the European Economic Community in 1957?",
+      "correct": "Italy",
+      "wrong": ["Denmark", "Spain", "Ireland"],
+      "explanation": "The six were Belgium, France, Italy, Luxembourg, the Netherlands and West Germany. They signed the Treaty of Rome.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which dictator ruled the Soviet Union from the late 1920s until 1953?",
+      "correct": "Joseph Stalin",
+      "wrong": ["Vladimir Lenin", "Mikhail Gorbachev", "Leonid Brezhnev"],
+      "explanation": "His name means 'man of steel', a name he took himself. He turned the USSR into an industrial power, but millions of people suffered.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.15",
+      "difficulty": "mixed",
+      "question": "In 1962 the world feared nuclear war when the USA and the Soviet Union argued over missiles on which island?",
+      "correct": "Cuba",
+      "wrong": ["Iceland", "Cyprus", "Malta"],
+      "explanation": "The Cuban Missile Crisis lasted about two weeks. It ended when the Soviet Union agreed to remove its missiles and the USA promised not to invade Cuba.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.16",
+      "difficulty": "mixed",
+      "question": "In which year did the Berlin Wall fall?",
+      "correct": "1989",
+      "wrong": ["1969", "1979", "1999"],
+      "explanation": "On 9 November 1989, East Germany opened its border. Crowds climbed on the wall to celebrate, and Germany became one country again in 1990.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.17",
+      "difficulty": "mixed",
+      "question": "In which year did the Soviet Union break up into separate countries?",
+      "correct": "1991",
+      "wrong": ["1981", "1989", "2001"],
+      "explanation": "It split into 15 independent countries, including Russia, Ukraine and Estonia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.18",
+      "difficulty": "mixed",
+      "question": "Who was the last leader of the Soviet Union?",
+      "correct": "Mikhail Gorbachev",
+      "wrong": ["Joseph Stalin", "Nikita Khrushchev", "Leonid Brezhnev"],
+      "explanation": "He came to power in 1985 and worked with Western leaders to reduce nuclear weapons. He won the Nobel Peace Prize in 1990.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.19",
+      "difficulty": "mixed",
+      "question": "In 1997, Britain handed which large port city back to China?",
+      "correct": "Hong Kong",
+      "wrong": ["Macau", "Singapore", "Shanghai"],
+      "explanation": "Britain had ruled it since the 1840s. Portugal handed back nearby Macau to China in 1999.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.20",
+      "difficulty": "mixed",
+      "question": "Which West African country, once called the Gold Coast, became independent from Britain in 1957?",
+      "correct": "Ghana",
+      "wrong": ["Nigeria", "Senegal", "Sierra Leone"],
+      "explanation": "Its first leader was Kwame Nkrumah. Many other African countries became independent in the years that followed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.21",
+      "difficulty": "mixed",
+      "question": "Who founded the modern Republic of Turkey in 1923?",
+      "correct": "Mustafa Kemal Atatürk",
+      "wrong": ["Suleiman the Magnificent", "Saladin", "Mehmed the Conqueror"],
+      "explanation": "He brought in the Latin alphabet in 1928. Later the Turkish parliament gave him the name Atatürk, which means 'Father of the Turks'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.22",
+      "difficulty": "mixed",
+      "question": "From which English port did the Titanic begin its first voyage?",
+      "correct": "Southampton",
+      "wrong": ["Liverpool", "Dover", "Plymouth"],
+      "explanation": "The ship was built in Belfast, then sailed to Southampton. After stops in France and Ireland, it set out for New York.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.23",
+      "difficulty": "mixed",
+      "question": "In 1940, the RAF fought in the air to stop a German invasion plan. What is this battle called?",
+      "correct": "The Battle of Britain",
+      "wrong": ["The Battle of the Bulge", "The Battle of Midway", "The Battle of Jutland"],
+      "explanation": "Spitfire and Hurricane fighters defended Britain. Pilots from many countries took part, including Poland and Czechoslovakia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.24",
+      "difficulty": "mixed",
+      "question": "In 1930 Gandhi led a long walk to the sea to protest against a British tax on what?",
+      "correct": "Salt",
+      "wrong": ["Tea", "Cotton", "Rice"],
+      "explanation": "He walked nearly 400 kilometres and then picked up natural salt on the beach. Thousands of Indians followed his example.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.25",
+      "difficulty": "mixed",
+      "question": "What was the system of racial separation in South Africa, which ended in the early 1990s, called?",
+      "correct": "Apartheid",
+      "wrong": ["Colonialism", "Communism", "Federalism"],
+      "explanation": "The word means 'apartness' in Afrikaans. Under it, people were forced to live and study apart according to skin colour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.26",
+      "difficulty": "mixed",
+      "question": "Who flew alone and non-stop across the Atlantic from New York to Paris in 1927?",
+      "correct": "Charles Lindbergh",
+      "wrong": ["Amelia Earhart", "Louis Blériot", "Howard Hughes"],
+      "explanation": "His flight took about 33 hours in a small plane called the Spirit of St. Louis. He became world-famous overnight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which organisation, set up after the First World War to keep the peace, was the forerunner of the UN?",
+      "correct": "The League of Nations",
+      "wrong": ["The Hanseatic League", "The Warsaw Pact", "The Red Cross"],
+      "explanation": "The League began in 1920 and was based in Geneva. It could not stop the aggression of the 1930s, and it ended after the Second World War.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.28",
+      "difficulty": "mixed",
+      "question": "In 1986 there was a serious accident at the Chernobyl nuclear power plant. In which country is Chernobyl?",
+      "correct": "Ukraine",
+      "wrong": ["Poland", "Belarus", "Lithuania"],
+      "explanation": "At the time Ukraine was part of the Soviet Union. Radioactive dust spread over much of Europe, even as far as Scandinavia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.29",
+      "difficulty": "mixed",
+      "question": "The 'Kindertransport' rescued about 10,000 mostly Jewish children in 1938-39 by taking them to which country?",
+      "correct": "Britain",
+      "wrong": ["Spain", "Italy", "Greece"],
+      "explanation": "The children travelled by train and ship. Many had to say goodbye to their families, who stayed behind.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which British woman founded the Women's Social and Political Union in 1903 to win the vote for women?",
+      "correct": "Emmeline Pankhurst",
+      "wrong": ["Florence Nightingale", "Queen Victoria", "Mary Seacole"],
+      "explanation": "Her daughters Christabel and Sylvia also campaigned for women's votes. The group's motto was 'Deeds, not words'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.31",
+      "difficulty": "mixed",
+      "question": "Which country had a civil war from 1936 to 1939 that ended with General Franco in power?",
+      "correct": "Spain",
+      "wrong": ["Portugal", "Greece", "Italy"],
+      "explanation": "Volunteers from many countries came to fight. Franco then ruled Spain as a dictator until his death in 1975.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.32",
+      "difficulty": "mixed",
+      "question": "Benito Mussolini was a dictator who ruled which country from the 1920s to 1943?",
+      "correct": "Italy",
+      "wrong": ["Spain", "Greece", "Austria"],
+      "explanation": "He led the Fascist party and took Italy into the war on Hitler's side in 1940. He was removed from power in 1943.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.33",
+      "difficulty": "mixed",
+      "question": "In 1936, which British king gave up the throne so that he could marry an American divorcee?",
+      "correct": "Edward VIII",
+      "wrong": ["George V", "George VI", "Edward VII"],
+      "explanation": "His younger brother became King George VI. Edward was king for less than a year and then became the Duke of Windsor.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.34",
+      "difficulty": "mixed",
+      "question": "When India became independent in 1947, which new country was created next to it?",
+      "correct": "Pakistan",
+      "wrong": ["Nepal", "Bhutan", "Afghanistan"],
+      "explanation": "The land was divided between mostly Hindu India and mostly Muslim Pakistan. Millions of people moved across the new border.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.35",
+      "difficulty": "mixed",
+      "question": "In which year was Nelson Mandela released from prison after 27 years?",
+      "correct": "1990",
+      "wrong": ["1980", "1985", "1994"],
+      "explanation": "Crowds around the world watched his release on television. He later led talks that ended apartheid.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.36",
+      "difficulty": "mixed",
+      "question": "From 1920 to 1933 the USA banned making and selling alcohol. What was this called?",
+      "correct": "Prohibition",
+      "wrong": ["Isolation", "Quarantine", "Embargo"],
+      "explanation": "It helped criminal gangs grow rich by selling alcohol in secret. The law was cancelled in 1933.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.37",
+      "difficulty": "mixed",
+      "question": "What name do people give to the German bombing of British cities in 1940 and 1941?",
+      "correct": "The Blitz",
+      "wrong": ["The Siege", "The Raid", "The Storm"],
+      "explanation": "'Blitz' comes from the German word 'Blitzkrieg', which means 'lightning war'. London was bombed on 57 nights in a row.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.38",
+      "difficulty": "mixed",
+      "question": "What was 'Checkpoint Charlie' in Cold War Berlin?",
+      "correct": "A crossing point in the Berlin Wall",
+      "wrong": [
+        "A secret tunnel under the wall",
+        "A spy's code name in Moscow",
+        "A famous bridge over the river"
+      ],
+      "explanation": "Foreigners and diplomats could cross there. In 1961 American and Soviet tanks faced each other near it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.39",
+      "difficulty": "mixed",
+      "question": "In which month in 1918 did the fighting of the First World War end?",
+      "correct": "November",
+      "wrong": ["March", "June", "September"],
+      "explanation": "Fighting stopped at 11 a.m. on 11 November. The agreement was signed in a railway carriage in a forest in France.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.mixed.40",
+      "difficulty": "mixed",
+      "question": "After 1945, how many powers each ran a zone of occupied Berlin?",
+      "correct": "Four",
+      "wrong": ["Two", "Three", "Six"],
+      "explanation": "Britain, France, the USA and the Soviet Union each ran a part. The three western zones later joined to make West Berlin.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.01",
+      "difficulty": "expert",
+      "question": "Which shipping company owned the Titanic?",
+      "correct": "White Star Line",
+      "wrong": ["Cunard Line", "Maersk Line", "Holland America Line"],
+      "explanation": "Its main rival was Cunard, whose ships Lusitania and Mauretania were famous for their speed.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.02",
+      "difficulty": "expert",
+      "question": "Germany's plan to win quickly in 1914 by sweeping through Belgium to attack France is named after which general?",
+      "correct": "Alfred von Schlieffen",
+      "wrong": ["Otto von Bismarck", "Paul von Hindenburg", "Erich Ludendorff"],
+      "explanation": "The plan failed to knock out France in six weeks. The Allied line held, and the war turned into years of trench fighting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.03",
+      "difficulty": "expert",
+      "question": "Which treaty of March 1918 took Soviet Russia out of the First World War?",
+      "correct": "Brest-Litovsk",
+      "wrong": ["Versailles", "Trianon", "Rapallo"],
+      "explanation": "Russia gave up large areas, including the Baltic lands, to Germany. The treaty was cancelled when Germany lost in November.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.04",
+      "difficulty": "expert",
+      "question": "Which German democracy of 1919 to 1933 is named after a town where its constitution was written?",
+      "correct": "The Weimar Republic",
+      "wrong": ["The Prussian Empire", "The Hanseatic Republic", "The Rhine Federation"],
+      "explanation": "It faced hyperinflation in 1923 and mass unemployment after 1929. It ended soon after Hitler became chancellor in 1933.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.05",
+      "difficulty": "expert",
+      "question": "At the 1938 Munich Agreement, which border region of Czechoslovakia was given to Germany?",
+      "correct": "The Sudetenland",
+      "wrong": ["Galicia", "Transylvania", "Alsace"],
+      "explanation": "Britain and France hoped this would keep the peace, but in March 1939 Germany occupied Prague and the rest of the Czech lands.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.06",
+      "difficulty": "expert",
+      "question": "In August 1939, which two countries signed a pact that secretly planned to divide Poland?",
+      "correct": "Germany and the Soviet Union",
+      "wrong": ["Germany and Italy", "Britain and France", "Italy and Japan"],
+      "explanation": "It is called the Molotov-Ribbentrop Pact, after the two foreign ministers. It surprised the world, because the two governments had been bitter enemies.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.07",
+      "difficulty": "expert",
+      "question": "Operation Barbarossa in 1941 was Germany's invasion of which country?",
+      "correct": "The Soviet Union",
+      "wrong": ["Britain", "France", "Sweden"],
+      "explanation": "It began on 22 June 1941 and was one of the largest invasions in history. The Russian winter and long supply lines helped to stop it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.08",
+      "difficulty": "expert",
+      "question": "Which Volga city, renamed Volgograd in 1961, was the scene of a turning-point battle in 1942 and 1943?",
+      "correct": "Stalingrad",
+      "wrong": ["Smolensk", "Leningrad", "Sevastopol"],
+      "explanation": "Fighting in the city lasted until February 1943, when Germany's Sixth Army surrendered.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.09",
+      "difficulty": "expert",
+      "question": "In February 1945, Churchill, Roosevelt and Stalin met at a Crimean resort to plan post-war Europe. Which conference was this?",
+      "correct": "Yalta",
+      "wrong": ["Potsdam", "Tehran", "Casablanca"],
+      "explanation": "The leaders agreed on zones for Germany after the war and on a conference to found the UN. Disagreements about Poland later fuelled the Cold War.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.10",
+      "difficulty": "expert",
+      "question": "Which French foreign minister proposed in 1950 to pool coal and steel, so that war with Germany became unthinkable?",
+      "correct": "Robert Schuman",
+      "wrong": ["Charles de Gaulle", "Georges Clemenceau", "Aristide Briand"],
+      "explanation": "His idea led to the Coal and Steel Community of 1951, with six members. Europe Day, 9 May, marks the date of his speech.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.11",
+      "difficulty": "expert",
+      "question": "Which military alliance of the Soviet Union and its allies, founded in 1955, was the Eastern counterpart to NATO?",
+      "correct": "The Warsaw Pact",
+      "wrong": ["The Baltic Alliance", "The Comintern", "The Eastern Union"],
+      "explanation": "It was formed soon after West Germany joined NATO, and it was dissolved in 1991.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.12",
+      "difficulty": "expert",
+      "question": "Which Egyptian leader nationalised the Suez Canal in 1956, leading to a crisis with Britain and France?",
+      "correct": "Gamal Abdel Nasser",
+      "wrong": ["Anwar Sadat", "King Farouk", "Hosni Mubarak"],
+      "explanation": "Britain, France and Israel took military action. The USA and the Soviet Union both opposed it, and the three withdrew.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.13",
+      "difficulty": "expert",
+      "question": "In 1956, Soviet tanks crushed a people's uprising in which city?",
+      "correct": "Budapest",
+      "wrong": ["Prague", "Warsaw", "Bucharest"],
+      "explanation": "About 200,000 Hungarians fled to the West, most of them through Austria.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.14",
+      "difficulty": "expert",
+      "question": "Which reformer led the 1968 'Prague Spring' in Czechoslovakia?",
+      "correct": "Alexander Dubček",
+      "wrong": ["Václav Havel", "Lech Wałęsa", "Imre Nagy"],
+      "explanation": "Soviet-led armies invaded in August 1968 and ended the reforms. Dubček was removed from office.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.15",
+      "difficulty": "expert",
+      "question": "In 1956, which Soviet leader secretly criticised Stalin's rule in a speech to party delegates?",
+      "correct": "Nikita Khrushchev",
+      "wrong": ["Leonid Brezhnev", "Vladimir Lenin", "Georgy Zhukov"],
+      "explanation": "The 'secret speech' shocked many communists. It was part of a period of reform known as the 'thaw'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.16",
+      "difficulty": "expert",
+      "question": "In 1960, who became the world's first woman prime minister?",
+      "correct": "Sirimavo Bandaranaike",
+      "wrong": ["Indira Gandhi", "Golda Meir", "Benazir Bhutto"],
+      "explanation": "She led Ceylon, which was renamed Sri Lanka in 1972. She was prime minister at three different times.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.17",
+      "difficulty": "expert",
+      "question": "Who became the first prime minister of independent India in 1947?",
+      "correct": "Jawaharlal Nehru",
+      "wrong": ["Mahatma Gandhi", "Muhammad Ali Jinnah", "Subhas Chandra Bose"],
+      "explanation": "He was a close friend of Gandhi's and led the country until his death in 1964. His daughter Indira later also became prime minister.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.18",
+      "difficulty": "expert",
+      "question": "Which North African country gained independence from France in 1962 after a long war?",
+      "correct": "Algeria",
+      "wrong": ["Tunisia", "Morocco", "Libya"],
+      "explanation": "About 130 years of French rule ended after a war that lasted nearly eight years. Many French settlers left.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.19",
+      "difficulty": "expert",
+      "question": "In 1960, the large Central African colony with Leopoldville as its capital gained independence from which country?",
+      "correct": "Belgium",
+      "wrong": ["France", "Portugal", "Britain"],
+      "explanation": "Leopoldville was later renamed Kinshasa. The colony had been run personally by King Leopold II until Belgium took it over in 1908.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.20",
+      "difficulty": "expert",
+      "question": "A 1974 revolution in Portugal that ended a long dictatorship was named after which flower?",
+      "correct": "The carnation",
+      "wrong": ["The rose", "The tulip", "The poppy"],
+      "explanation": "People put red carnations in the soldiers' gun barrels, and the coup passed with very little violence. Portugal's colonies in Africa became independent soon after.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.21",
+      "difficulty": "expert",
+      "question": "Which king helped Spain move from dictatorship to democracy after Franco's death in 1975?",
+      "correct": "Juan Carlos I",
+      "wrong": ["Alfonso XIII", "Philip II", "Ferdinand VII"],
+      "explanation": "Franco had chosen him as his successor, but he led Spain towards free elections in 1977.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.22",
+      "difficulty": "expert",
+      "question": "The Solidarity trade union, led by Lech Wałęsa, began in 1980 at a shipyard in which Polish city?",
+      "correct": "Gdańsk",
+      "wrong": ["Kraków", "Warsaw", "Wrocław"],
+      "explanation": "Solidarity was the first free trade union in the Soviet bloc. In 1989 Poland held partly free elections that Solidarity won.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.23",
+      "difficulty": "expert",
+      "question": "Which playwright became president of Czechoslovakia after the Velvet Revolution of 1989?",
+      "correct": "Václav Havel",
+      "wrong": ["Alexander Dubček", "Lech Wałęsa", "Milan Kundera"],
+      "explanation": "The revolution was called 'velvet' because power changed hands peacefully. Havel was a writer who had been jailed for criticising the government.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.24",
+      "difficulty": "expert",
+      "question": "In which country was the 1992 treaty that created the European Union signed?",
+      "correct": "The Netherlands",
+      "wrong": ["Belgium", "Luxembourg", "Italy"],
+      "explanation": "The treaty was signed in the city of Maastricht. It set out the plan for a single currency, which was later named the euro.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.25",
+      "difficulty": "expert",
+      "question": "The Schengen Agreement on open borders in Europe is named after a village in which country?",
+      "correct": "Luxembourg",
+      "wrong": ["Switzerland", "Belgium", "Germany"],
+      "explanation": "It was signed in 1985 on a boat on the river Moselle, close to where Luxembourg, France and Germany meet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.26",
+      "difficulty": "expert",
+      "question": "What was the 'Anschluss' of March 1938?",
+      "correct": "Germany's takeover of Austria",
+      "wrong": [
+        "Germany's invasion of Poland",
+        "Italy joining Germany's pact",
+        "Germany leaving the League of Nations"
+      ],
+      "explanation": "'Anschluss' is German for 'connection'. The Treaty of Versailles had banned a union of the two countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.27",
+      "difficulty": "expert",
+      "question": "Who became the first Secretary-General of the United Nations in 1946?",
+      "correct": "Trygve Lie",
+      "wrong": ["Dag Hammarskjöld", "Kofi Annan", "U Thant"],
+      "explanation": "Trygve Lie was from Norway. He had been his country's foreign minister during the Second World War.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.28",
+      "difficulty": "expert",
+      "question": "In which year did the UN General Assembly adopt the Universal Declaration of Human Rights?",
+      "correct": "1948",
+      "wrong": ["1945", "1955", "1963"],
+      "explanation": "Eleanor Roosevelt chaired the committee that wrote it. It sets out basic rights for all people, such as freedom of speech.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.29",
+      "difficulty": "expert",
+      "question": "In the 1980s Gorbachev spoke of 'glasnost'. What does this Russian word mean?",
+      "correct": "Openness",
+      "wrong": ["Defence", "Revolution", "Friendship"],
+      "explanation": "It meant more open discussion and less censorship. His other big idea, 'perestroika', meant 'restructuring'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.30",
+      "difficulty": "expert",
+      "question": "What was the name of East Germany's secret police, which kept files on millions of people?",
+      "correct": "The Stasi",
+      "wrong": ["The Gestapo", "The KGB", "The Securitate"],
+      "explanation": "The Stasi had spies and informers in many homes and workplaces. From 1992, people could ask to read the files kept on them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.31",
+      "difficulty": "expert",
+      "question": "Which British liner was sunk by a German U-boat off Ireland in 1915, turning many people against Germany?",
+      "correct": "Lusitania",
+      "wrong": ["Mauretania", "Aquitania", "Britannic"],
+      "explanation": "More than 1,100 people died, 128 of them Americans. The USA joined the war two years later, in 1917.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.32",
+      "difficulty": "expert",
+      "question": "Which river in northern France gave its name to a huge 1916 battle with over a million casualties?",
+      "correct": "The Somme",
+      "wrong": ["The Seine", "The Marne", "The Loire"],
+      "explanation": "The battle lasted over four months, and the front line moved only a few kilometres.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.33",
+      "difficulty": "expert",
+      "question": "Soldiers from Australia and New Zealand fought at Gallipoli in 1915. In which country is Gallipoli?",
+      "correct": "Turkey",
+      "wrong": ["Greece", "Egypt", "Bulgaria"],
+      "explanation": "The campaign failed, but it became a symbol of national identity for Australia and New Zealand. They remember it on Anzac Day, 25 April.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.34",
+      "difficulty": "expert",
+      "question": "Which Russian city was named Leningrad from 1924 to 1991?",
+      "correct": "St Petersburg",
+      "wrong": ["Moscow", "Kazan", "Novgorod"],
+      "explanation": "It was called Petrograd from 1914 to 1924. The name St Petersburg returned after a vote in 1991.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.35",
+      "difficulty": "expert",
+      "question": "In 1912, which ruling family of China lost power, ending over 2,000 years of imperial rule?",
+      "correct": "The Qing dynasty",
+      "wrong": ["The Ming dynasty", "The Han dynasty", "The Tang dynasty"],
+      "explanation": "The last emperor, Puyi, was a young boy when he gave up the throne. China became a republic.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.36",
+      "difficulty": "expert",
+      "question": "In 1986, Reagan and Gorbachev met in a Nordic capital to talk about nuclear weapons. Which city?",
+      "correct": "Reykjavik",
+      "wrong": ["Helsinki", "Oslo", "Stockholm"],
+      "explanation": "They did not sign a treaty there, but the talks paved the way for a 1987 treaty on medium-range missiles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.37",
+      "difficulty": "expert",
+      "question": "Which Baltic country was the first to declare independence from the Soviet Union, in March 1990?",
+      "correct": "Lithuania",
+      "wrong": ["Estonia", "Latvia", "Finland"],
+      "explanation": "Soviet forces tried to stop it. The three Baltic countries became fully independent in 1991.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.38",
+      "difficulty": "expert",
+      "question": "The last Russian tsar, Nicholas II, belonged to which royal family?",
+      "correct": "Romanov",
+      "wrong": ["Habsburg", "Hohenzollern", "Bourbon"],
+      "explanation": "The Romanovs ruled Russia for over 300 years, from 1613. Nicholas gave up the throne in 1917.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.39",
+      "difficulty": "expert",
+      "question": "Why was the 1918 flu called the 'Spanish flu'?",
+      "correct": "Spanish newspapers reported it openly",
+      "wrong": ["It began in Madrid", "Spanish soldiers brought it", "A Spanish doctor found it"],
+      "explanation": "Spain was neutral in the war, so its press was free to report on the illness. Countries at war censored such news. The true origin is not known.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "history.twentieth-century.expert.40",
+      "difficulty": "expert",
+      "question": "The 1944 conference that planned the IMF and the World Bank took place at Bretton Woods. In which country?",
+      "correct": "The USA",
+      "wrong": ["Switzerland", "Britain", "Canada"],
+      "explanation": "Bretton Woods is in New Hampshire. Delegates from 44 countries met there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}
