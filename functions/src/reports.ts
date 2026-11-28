@@ -55,7 +55,11 @@ function applyChange(
 const readQuestion = (db: Firestore, tx: Transaction, id: string) =>
   tx.get(db.collection(BANK).doc(id));
 
-/** onQuestionReported: one report on a bank question. Creator-written ones are only logged. */
+/**
+ * onQuestionReported: one report. A bank question's counts and status change at once; a
+ * creator-written question waits for review (`scripts/review-bank.ts list-reports`). Both are
+ * logged with a message starting "Report on a", which a log-based alert can email about.
+ */
 export async function applyReport(
   db: Firestore,
   report: { questionId?: unknown; reason?: unknown; walkId?: unknown; stopId?: unknown },
@@ -79,6 +83,12 @@ export async function applyReport(
       s.reasons[reason]++;
     }),
   );
+  logger.info('Report on a bank question', {
+    questionId,
+    walkId: report.walkId,
+    reason,
+    hidden: res?.hidden !== undefined,
+  });
   return res?.hidden;
 }
 

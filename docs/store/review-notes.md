@@ -51,7 +51,7 @@ AI-GENERATED QUESTIONS (Generate for me)
 Creators pick categories and a difficulty; there is no free-text prompt. Questions come from a question bank written ahead of time by language models (Google Gemini, and Claude for the seed bank). A second, stronger model fact-checks each one and failures are dropped. Local questions are written from Wikipedia text about places on the route and marked "Check this answer" for the creator. The creator sees and can edit or swap every question before publishing.
 
 REPORTING AND MODERATION (guideline 1.2)
-After answering, players can tap Report question (wrong answer, offensive, confusing). One "offensive" report hides a bank question from new walks until we have reviewed it; repeated "wrong" or "confusing" reports flag it; a blocked question is never used again. Questions written by creators can be reported the same way, and we review those reports and can remove the walk or the creator's account. Walks are private: there is no public list or search, and only people given the code see a walk. Players can leave a walk at any time. Contact: privacy@qualk.dk.
+After answering, players can tap Report question (wrong answer, offensive, confusing). One "offensive" report hides a bank question from new walks at once, until we have reviewed it; repeated "wrong" or "confusing" reports flag it; a blocked question is never used again. Questions written by creators can be reported the same way. We are notified of every report and review it; we can block the question, remove the walk with everything in it, or disable the creator's account. Walks are private: there is no public list or search, and only people given the code see a walk. Players can leave a walk at any time. Contact: privacy@qualk.dk.
 
 ACCOUNT DELETION
 Settings, Delete account and all data (creators; on iPhone, Apple is asked to revoke the Sign in with Apple token) or Delete my data (players). Both take effect at once.
@@ -170,3 +170,69 @@ ended` and delete `walks/{id}` (with its subcollections), `joinCodes/{CODE}` and
 | Pocket mode (buzz with the phone in a pocket) | Only by walking | The video |
 | *Generate for me* **[M4]** | Yes, if the build has it | Path 2, *Generate for me* instead of building by hand |
 | Week-long walk | Only the open state | The demo walk |
+
+## 5. Reports: how you hear of them and what you can do
+
+This is what the "REPORTING AND MODERATION" paragraph promises, and all of it exists. *Report
+question* writes one `questionReports` document per person and question (spec §7).
+`onQuestionReported` then:
+
+- **Bank question** (it came from *Generate for me*, *Swap* or *Suggest a question*): updates its
+  counts at once. One *offensive* report hides it from new walks; 3 *wrong answer* or 5
+  *confusing* reports flag it (spec §8). Logged as `Report on a bank question`.
+- **Creator-written question:** changes nothing by itself and waits for you. Logged as `Report on
+  a creator-written question`.
+
+**See the open reports** (Mac, signed in with `npx firebase login`):
+
+```bash
+npx tsx scripts/review-bank.ts list-reports --project qualk-a173e          # open ones
+npx tsx scripts/review-bank.ts list-reports --all --project qualk-a173e    # closed ones too
+```
+
+It groups the reports by question, with each reason's count and the latest date. A bank question
+shows its text, answers, status and counts; a creator-written one shows the walk's title, creator,
+status and code, the stop, the question and its answers. Reporters are never shown.
+
+**Act on them:**
+
+| What | Command or place |
+|---|---|
+| Bank question is fine / is bad | `review-bank.ts keep <id>` / `block <id> --note "why"`. Both close its reports |
+| Creator-written question is fine | `review-bank.ts close-reports stop:<walkId>/<stopId> --note "why"` |
+| Remove a walk | `review-bank.ts remove-walk <walkId>`: the walk, its stops, teams, answers, positions, alerts, join code and generation job, also while open. Closes its reports |
+| Stop a creator signing in | Firebase console → **Authentication** → the user (the owner id `list-reports` prints) → ⋮ → **Disable account**. Their walks stay until you remove them |
+
+Closing a report only sets `reviewedAt` (and `reviewNote`) on it; the report itself goes with the
+reporter's *Delete my data* or account deletion, as spec §13 says.
+
+### Get an email when a report arrives
+
+Nothing emails you by itself. Set this up once, before you submit (about 5 minutes). It is a
+Cloud Logging log-based alert; Google's Cloud Monitoring pricing applies, which at a few reports a
+month is pennies or nothing.
+
+1. Open <https://console.cloud.google.com/logs/query?project=qualk-a173e> (the Google account
+   that owns the Firebase project).
+2. Paste this into the query box and press **Run query**:
+
+   ```text
+   jsonPayload.message=~"^Report on a (creator-written|bank) question"
+   ```
+
+   No results is normal until someone reports. To see it work, report a question in a test walk
+   first; the entry shows within a minute.
+3. **Actions** (above the results) → **Create log alert**.
+4. **Alert details:** name "QuizWalk question report". In *Documentation* you can write: "Run
+   `npx tsx scripts/review-bank.ts list-reports --project qualk-a173e`".
+5. **Choose logs to include:** the query from step 2 is already there. **Next**.
+6. **Set notification frequency:** *Time between notifications* 5 minutes (the shortest);
+   *Incident autoclose duration* 1 day. **Next**.
+7. **Who should be notified:** *Notification channels* → **Manage notification channels** → *Email*
+   → **Add new** → your address (`privacy@qualk.dk` once its forward works) → **Save**. Back in the
+   alert, refresh the list, tick the new channel, **OK**.
+8. **Save**. The email says "QuizWalk question report" and links to the log entry, which names the
+   walk and stop (or the bank question) and the reason.
+
+If you would rather not have an alert, run `list-reports` once a week; the reports wait in
+Firestore either way.
