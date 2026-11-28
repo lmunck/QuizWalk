@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Checks the seed question bank: schema, limits, counts and duplicates.
 //
-//   node content/question-bank/check.mjs              every file; all 66 must exist
+//   node content/question-bank/check.mjs              every file that exists
 //   node content/question-bank/check.mjs a.json b.json   only these files
+//   --complete   all 66 files must exist (otherwise missing ones are only a warning)
 //   --draft      don't require checkedBy (for files that haven't been reviewed yet)
 //   --warnings   also print warnings (spelling, answer in question, uneven answers)
 //
@@ -98,16 +99,25 @@ export function normalise(s) {
     .trim();
 }
 
-const words = (s) =>
+// Question words that say nothing about the fact, left out when comparing different pools.
+const STOP = new Set(
+  'which what who where when how many much does did was were are has have that this from with into for and the its their they called known name named'.split(
+    ' ',
+  ),
+);
+
+const words = (s, stop) =>
   new Set(
     normalise(s)
       .split(' ')
-      .filter((w) => w.length > 2),
+      .filter((w) => w.length > 2 && !(stop && STOP.has(w))),
   );
 
-function similar(a, b) {
-  const x = words(a);
-  const y = words(b);
+// Within a pool this is the rule of repeatsExisting in shared/src/bank.ts; across pools the
+// question words are left out, so "How many … have?" doesn't make two facts look alike.
+function similar(a, b, stop = false) {
+  const x = words(a, stop);
+  const y = words(b, stop);
   const shared = [...x].filter((w) => y.has(w)).length;
   const union = new Set([...x, ...y]).size;
   return union > 0 ? shared / union : 0;
@@ -123,7 +133,7 @@ function listFiles() {
   return files.sort();
 }
 
-export function check(paths, { draft = false, requireAll = false } = {}) {
+export function check(paths, { draft = false, listMissing = false, complete = false } = {}) {
   const errors = [];
   const warnings = [];
   const counts = {};
@@ -131,10 +141,11 @@ export function check(paths, { draft = false, requireAll = false } = {}) {
   const err = (where, msg) => errors.push(`${where}: ${msg}`);
   const warn = (where, msg) => warnings.push(`${where}: ${msg}`);
 
-  if (requireAll) {
+  if (listMissing || complete) {
     for (const [cat, subs] of Object.entries(TAXONOMY)) {
       for (const sub of subs) {
-        if (!existsSync(join(ROOT, cat, `${sub}.json`))) err(`${cat}/${sub}.json`, 'missing');
+        if (existsSync(join(ROOT, cat, `${sub}.json`))) continue;
+        (complete ? err : warn)(`${cat}/${sub}.json`, 'missing');
       }
     }
   }
@@ -259,7 +270,7 @@ export function check(paths, { draft = false, requireAll = false } = {}) {
       for (let j = i + 1; j < group.length; j++) {
         const [a, b] = [group[i], group[j]];
         if (normalise(a.question) === normalise(b.question)) continue;
-        if (similar(a.question, b.question) >= 0.5) {
+        if (similar(a.question, b.question, a.pool !== b.pool) >= 0.5) {
           err(b.where, `repeats ${a.where} ("${a.question}" / "${b.question}")`);
         }
       }
@@ -275,7 +286,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const paths = named.length ? named : listFiles();
   const { errors, warnings, counts, total } = check(paths, {
     draft: flags.has('--draft'),
-    requireAll: named.length === 0,
+    listMissing: named.length === 0,
+    complete: flags.has('--complete'),
   });
   if (flags.has('--warnings')) for (const w of warnings) console.log(`warning  ${w}`);
   for (const e of errors) console.log(`error    ${e}`);

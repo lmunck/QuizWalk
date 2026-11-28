@@ -511,16 +511,6 @@
     {
       "id": "science.physics.mixed.10",
       "difficulty": "mixed",
-      "question": "Which ancient Greek is said to have shouted \"Eureka!\" in his bath?",
-      "correct": "Archimedes",
-      "wrong": ["Aristotle", "Pythagoras", "Plato"],
-      "explanation": "In the story, he saw the water rise as he got in. He realised he could measure the volume of the king's gold crown this way.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "science.physics.mixed.11",
-      "difficulty": "mixed",
       "question": "Which Danish scientist found in 1820 that a wire carrying electricity moves a compass needle?",
       "correct": "Hans Christian Ørsted",
       "wrong": ["Niels Bohr", "Tycho Brahe", "Ole Rømer"],
@@ -529,7 +519,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.12",
+      "id": "science.physics.mixed.11",
       "difficulty": "mixed",
       "question": "Which colour of visible light has the longest wavelength?",
       "correct": "Red",
@@ -539,7 +529,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.13",
+      "id": "science.physics.mixed.12",
       "difficulty": "mixed",
       "question": "Which three colours of light does a TV or phone screen mix to make its pictures?",
       "correct": "Red, green and blue",
@@ -549,7 +539,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.14",
+      "id": "science.physics.mixed.13",
       "difficulty": "mixed",
       "question": "What do we call the area around a magnet where its force can be felt?",
       "correct": "Its magnetic field",
@@ -559,7 +549,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.15",
+      "id": "science.physics.mixed.14",
       "difficulty": "mixed",
       "question": "How does heat from the Sun reach the Earth through empty space?",
       "correct": "By radiation",
@@ -569,7 +559,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.16",
+      "id": "science.physics.mixed.15",
       "difficulty": "mixed",
       "question": "When pasta boils in a pan, which kind of heat transfer moves warm water upwards?",
       "correct": "Convection",
@@ -579,7 +569,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.17",
+      "id": "science.physics.mixed.16",
       "difficulty": "mixed",
       "question": "Why do wide snowshoes stop you sinking into deep snow?",
       "correct": "They spread your weight out",
@@ -589,7 +579,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.18",
+      "id": "science.physics.mixed.17",
       "difficulty": "mixed",
       "question": "A knife blade and an axe head are examples of which simple machine?",
       "correct": "A wedge",
@@ -599,7 +589,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.19",
+      "id": "science.physics.mixed.18",
       "difficulty": "mixed",
       "question": "A small gear drives a large gear. How does the large gear turn?",
       "correct": "More slowly",
@@ -609,7 +599,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.20",
+      "id": "science.physics.mixed.19",
       "difficulty": "mixed",
       "question": "Through which of these does sound travel fastest?",
       "correct": "Steel",
@@ -619,7 +609,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.21",
+      "id": "science.physics.mixed.20",
       "difficulty": "mixed",
       "question": "Ships use sonar to find the seabed or fish. What does sonar send out?",
       "correct": "Sound waves",
@@ -629,7 +619,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.22",
+      "id": "science.physics.mixed.21",
       "difficulty": "mixed",
       "question": "What do we call the change in pitch of a siren as an ambulance drives past you?",
       "correct": "The Doppler effect",
@@ -639,7 +629,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.23",
+      "id": "science.physics.mixed.22",
       "difficulty": "mixed",
       "question": "Three bulbs are wired in a series circuit. The filament in one breaks. What happens to the other two?",
       "correct": "They go out too",
@@ -649,7 +639,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.24",
+      "id": "science.physics.mixed.23",
       "difficulty": "mixed",
       "question": "What does the law of conservation of energy say?",
       "correct": "Energy is never created or destroyed",
@@ -663,7 +653,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.25",
+      "id": "science.physics.mixed.24",
       "difficulty": "mixed",
       "question": "Why do steel bridges and some railway tracks have small gaps in them?",
       "correct": "To give the steel room to expand",
@@ -673,7 +663,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.26",
+      "id": "science.physics.mixed.25",
       "difficulty": "mixed",
       "question": "Einstein's equation E = mc² links energy with what?",
       "correct": "Mass",
@@ -683,7 +673,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.27",
+      "id": "science.physics.mixed.26",
       "difficulty": "mixed",
       "question": "Which kind of invisible light do most TV remote controls use?",
       "correct": "Infrared",
@@ -693,7 +683,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.28",
+      "id": "science.physics.mixed.27",
       "difficulty": "mixed",
       "question": "Which invisible light from the Sun can give you sunburn?",
       "correct": "Ultraviolet",
@@ -703,7 +693,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.29",
+      "id": "science.physics.mixed.28",
       "difficulty": "mixed",
       "question": "The flow of electricity in a wire is measured in which unit?",
       "correct": "Ampere",
@@ -713,7 +703,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.30",
+      "id": "science.physics.mixed.29",
       "difficulty": "mixed",
       "question": "What does a fuse do if too much electricity flows through it?",
       "correct": "It melts and breaks the circuit",
@@ -727,7 +717,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.31",
+      "id": "science.physics.mixed.30",
       "difficulty": "mixed",
       "question": "Why does a metal handle feel colder than a wooden one at the same temperature?",
       "correct": "Metal draws heat from your hand faster",
@@ -741,7 +731,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.32",
+      "id": "science.physics.mixed.31",
       "difficulty": "mixed",
       "question": "A periscope lets you see over a wall. What does it use inside?",
       "correct": "Mirrors",
@@ -751,7 +741,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.33",
+      "id": "science.physics.mixed.32",
       "difficulty": "mixed",
       "question": "What happens to a guitar note if you press the string so the vibrating part is shorter?",
       "correct": "The note gets higher",
@@ -761,7 +751,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.34",
+      "id": "science.physics.mixed.33",
       "difficulty": "mixed",
       "question": "What do we call it when a sound matches an object's natural vibration and makes it shake strongly?",
       "correct": "Resonance",
@@ -771,7 +761,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.35",
+      "id": "science.physics.mixed.34",
       "difficulty": "mixed",
       "question": "Why do fast trains and racing cars have smooth, rounded shapes?",
       "correct": "To reduce air resistance",
@@ -781,7 +771,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.36",
+      "id": "science.physics.mixed.35",
       "difficulty": "mixed",
       "question": "Garage jacks and digger arms use liquid pushed under pressure. What is this system called?",
       "correct": "Hydraulics",
@@ -791,7 +781,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.37",
+      "id": "science.physics.mixed.36",
       "difficulty": "mixed",
       "question": "Why does a heavy steel ship float?",
       "correct": "Its hollow shape holds a lot of air",
@@ -805,7 +795,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.38",
+      "id": "science.physics.mixed.37",
       "difficulty": "mixed",
       "question": "Which temperature scale starts at absolute zero, the lowest possible temperature?",
       "correct": "Kelvin",
@@ -815,7 +805,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.39",
+      "id": "science.physics.mixed.38",
       "difficulty": "mixed",
       "question": "A bicycle dynamo lights a lamp as the wheel spins. What energy change is this?",
       "correct": "Movement into electricity",
@@ -825,7 +815,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.mixed.40",
+      "id": "science.physics.mixed.39",
       "difficulty": "mixed",
       "question": "What happens to water pressure as you dive deeper?",
       "correct": "It gets higher",
@@ -857,26 +847,6 @@
     {
       "id": "science.physics.expert.03",
       "difficulty": "expert",
-      "question": "Who showed in 1676, by watching the moons of Jupiter, that light takes time to travel?",
-      "correct": "Ole Rømer",
-      "wrong": ["Tycho Brahe", "Galileo Galilei", "Johannes Kepler"],
-      "explanation": "The Danish astronomer saw that eclipses of Jupiter's moon Io came later when Jupiter was further from Earth, because the light had further to go.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "science.physics.expert.04",
-      "difficulty": "expert",
-      "question": "Who discovered electromagnetic induction in 1831?",
-      "correct": "Michael Faraday",
-      "wrong": ["James Clerk Maxwell", "Alessandro Volta", "Heinrich Hertz"],
-      "explanation": "Faraday found that moving a magnet near a wire makes electricity flow. This is how power-station generators work.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "science.physics.expert.05",
-      "difficulty": "expert",
       "question": "Which Scottish physicist worked out in the 1860s that light is an electromagnetic wave?",
       "correct": "James Clerk Maxwell",
       "wrong": ["Michael Faraday", "Heinrich Hertz", "Alessandro Volta"],
@@ -885,7 +855,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.06",
+      "id": "science.physics.expert.04",
       "difficulty": "expert",
       "question": "Who discovered X-rays in 1895?",
       "correct": "Wilhelm Röntgen",
@@ -895,7 +865,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.07",
+      "id": "science.physics.expert.05",
       "difficulty": "expert",
       "question": "What does the time of one swing of a pendulum mainly depend on?",
       "correct": "The length of the string",
@@ -905,7 +875,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.08",
+      "id": "science.physics.expert.06",
       "difficulty": "expert",
       "question": "Why does a skydiver stop speeding up and fall at a steady speed?",
       "correct": "Air resistance equals her weight",
@@ -915,7 +885,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.09",
+      "id": "science.physics.expert.07",
       "difficulty": "expert",
       "question": "A car doubles its speed. How many times more kinetic energy does it have?",
       "correct": "Four times",
@@ -925,7 +895,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.10",
+      "id": "science.physics.expert.08",
       "difficulty": "expert",
       "question": "What makes the rainbow colours on a soap bubble?",
       "correct": "Light waves interfering in the thin skin",
@@ -935,7 +905,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.11",
+      "id": "science.physics.expert.09",
       "difficulty": "expert",
       "question": "Which British physicist discovered the electron in 1897?",
       "correct": "J. J. Thomson",
@@ -945,7 +915,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.12",
+      "id": "science.physics.expert.10",
       "difficulty": "expert",
       "question": "For which work did Einstein win the 1921 Nobel Prize in Physics?",
       "correct": "The photoelectric effect",
@@ -955,7 +925,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.13",
+      "id": "science.physics.expert.11",
       "difficulty": "expert",
       "question": "Which German physicist is famous for the uncertainty principle?",
       "correct": "Werner Heisenberg",
@@ -965,7 +935,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.14",
+      "id": "science.physics.expert.12",
       "difficulty": "expert",
       "question": "In 1919, observers at a solar eclipse supported general relativity by measuring what?",
       "correct": "The bending of starlight near the Sun",
@@ -979,7 +949,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.15",
+      "id": "science.physics.expert.13",
       "difficulty": "expert",
       "question": "A spinning football curves in flight. What is this effect called?",
       "correct": "The Magnus effect",
@@ -989,7 +959,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.16",
+      "id": "science.physics.expert.14",
       "difficulty": "expert",
       "question": "Which law says that force equals mass times acceleration?",
       "correct": "Newton's second law",
@@ -999,7 +969,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.17",
+      "id": "science.physics.expert.15",
       "difficulty": "expert",
       "question": "A spring stretches twice as far when the pulling force is doubled. Whose law is this?",
       "correct": "Robert Hooke's",
@@ -1009,7 +979,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.18",
+      "id": "science.physics.expert.16",
       "difficulty": "expert",
       "question": "Ohm's law links voltage, the flow of electricity and what?",
       "correct": "Resistance",
@@ -1019,7 +989,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.19",
+      "id": "science.physics.expert.17",
       "difficulty": "expert",
       "question": "What name is given to a metal shell that shields what is inside from electric fields?",
       "correct": "A Faraday cage",
@@ -1029,7 +999,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.20",
+      "id": "science.physics.expert.18",
       "difficulty": "expert",
       "question": "What is it called when a heavy nucleus splits and gives out energy?",
       "correct": "Nuclear fission",
@@ -1039,7 +1009,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.21",
+      "id": "science.physics.expert.19",
       "difficulty": "expert",
       "question": "What effect keeps light inside an optical fibre as it travels along the glass thread?",
       "correct": "Total internal reflection",
@@ -1049,7 +1019,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.22",
+      "id": "science.physics.expert.20",
       "difficulty": "expert",
       "question": "Water warms up slowly compared with most materials. What property explains this?",
       "correct": "High specific heat capacity",
@@ -1059,7 +1029,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.23",
+      "id": "science.physics.expert.21",
       "difficulty": "expert",
       "question": "You push a box with 10 newtons over 3 metres. How much work do you do?",
       "correct": "30 joules",
@@ -1069,7 +1039,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.24",
+      "id": "science.physics.expert.22",
       "difficulty": "expert",
       "question": "A dropped stone near the Earth's surface speeds up each second by about what?",
       "correct": "About 10 metres per second",
@@ -1083,7 +1053,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.25",
+      "id": "science.physics.expert.23",
       "difficulty": "expert",
       "question": "Which of these electromagnetic waves has the shortest wavelength?",
       "correct": "Gamma rays",
@@ -1093,7 +1063,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.26",
+      "id": "science.physics.expert.24",
       "difficulty": "expert",
       "question": "How far behind a flat mirror does your image appear to be?",
       "correct": "As far as you are in front of it",
@@ -1103,7 +1073,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.27",
+      "id": "science.physics.expert.25",
       "difficulty": "expert",
       "question": "If you double the distance between two masses, gravity between them becomes how much?",
       "correct": "A quarter as strong",
@@ -1113,7 +1083,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.28",
+      "id": "science.physics.expert.26",
       "difficulty": "expert",
       "question": "Which Italian invented the first electric battery around 1800?",
       "correct": "Alessandro Volta",
@@ -1123,7 +1093,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.29",
+      "id": "science.physics.expert.27",
       "difficulty": "expert",
       "question": "What happens to a magnet if it is heated strongly enough?",
       "correct": "It loses its magnetism",
@@ -1133,7 +1103,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.30",
+      "id": "science.physics.expert.28",
       "difficulty": "expert",
       "question": "In a vacuum flask, the empty space between the walls mainly stops what?",
       "correct": "Heat moving by conduction and convection",
@@ -1147,7 +1117,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.31",
+      "id": "science.physics.expert.29",
       "difficulty": "expert",
       "question": "Which inventor is the SI unit of magnetic flux density named after?",
       "correct": "Nikola Tesla",
@@ -1157,7 +1127,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.32",
+      "id": "science.physics.expert.30",
       "difficulty": "expert",
       "question": "What is a particle of light called?",
       "correct": "A photon",
@@ -1167,7 +1137,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.33",
+      "id": "science.physics.expert.31",
       "difficulty": "expert",
       "question": "Which physicist worked out that atoms have a tiny, dense nucleus after his team fired particles at gold foil?",
       "correct": "Ernest Rutherford",
@@ -1177,7 +1147,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.34",
+      "id": "science.physics.expert.32",
       "difficulty": "expert",
       "question": "What is the name for waves spreading out as they pass through a narrow gap or round an edge?",
       "correct": "Diffraction",
@@ -1187,7 +1157,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.35",
+      "id": "science.physics.expert.33",
       "difficulty": "expert",
       "question": "When white light passes through a glass prism, which colour bends the most?",
       "correct": "Violet",
@@ -1197,7 +1167,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.36",
+      "id": "science.physics.expert.34",
       "difficulty": "expert",
       "question": "What do we call a material that carries electricity with no resistance when very cold?",
       "correct": "A superconductor",
@@ -1207,7 +1177,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.37",
+      "id": "science.physics.expert.35",
       "difficulty": "expert",
       "question": "A transformer works only with which kind of electricity?",
       "correct": "Alternating (AC) electricity",
@@ -1217,7 +1187,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.38",
+      "id": "science.physics.expert.36",
       "difficulty": "expert",
       "question": "A ball is thrown sideways at the same moment a second ball is dropped from the same height. Ignoring air, which lands first?",
       "correct": "They land at the same time",
@@ -1227,7 +1197,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.39",
+      "id": "science.physics.expert.37",
       "difficulty": "expert",
       "question": "Whose double-slit experiment in the early 1800s showed that light behaves like a wave?",
       "correct": "Thomas Young",
@@ -1237,7 +1207,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.physics.expert.40",
+      "id": "science.physics.expert.38",
       "difficulty": "expert",
       "question": "A spinning skater pulls her arms in and spins faster. Which principle is this?",
       "correct": "Conservation of angular momentum",

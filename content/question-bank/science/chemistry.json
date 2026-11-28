@@ -599,16 +599,6 @@
     {
       "id": "science.chemistry.mixed.20",
       "difficulty": "mixed",
-      "question": "Which Swedish chemist invented dynamite and left money for the Nobel Prizes?",
-      "correct": "Alfred Nobel",
-      "wrong": ["Anders Celsius", "Carl Linnaeus", "Niels Bohr"],
-      "explanation": "Alfred Nobel wrote in his will that prizes should be given for science, literature and peace.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "science.chemistry.mixed.21",
-      "difficulty": "mixed",
       "question": "Marie Curie won Nobel Prizes in physics and in which other subject?",
       "correct": "Chemistry",
       "wrong": ["Medicine", "Peace", "Literature"],
@@ -617,7 +607,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.22",
+      "id": "science.chemistry.mixed.21",
       "difficulty": "mixed",
       "question": "What makes fireworks glow in different colours?",
       "correct": "Different metal salts",
@@ -631,7 +621,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.23",
+      "id": "science.chemistry.mixed.22",
       "difficulty": "mixed",
       "question": "Why do old copper roofs turn green?",
       "correct": "Copper reacts with air and water",
@@ -645,7 +635,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.24",
+      "id": "science.chemistry.mixed.23",
       "difficulty": "mixed",
       "question": "Chlorine, fluorine and iodine belong to which group of elements?",
       "correct": "Halogens",
@@ -655,7 +645,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.25",
+      "id": "science.chemistry.mixed.24",
       "difficulty": "mixed",
       "question": "Sodium and potassium are soft metals that react fiercely with water. What group are they in?",
       "correct": "Alkali metals",
@@ -665,7 +655,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.26",
+      "id": "science.chemistry.mixed.25",
       "difficulty": "mixed",
       "question": "Which of these has the lowest pH, so is the most acidic?",
       "correct": "Lemon juice",
@@ -675,7 +665,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.27",
+      "id": "science.chemistry.mixed.26",
       "difficulty": "mixed",
       "question": "Which method separates the different colours in a drop of ink?",
       "correct": "Chromatography",
@@ -685,7 +675,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.28",
+      "id": "science.chemistry.mixed.27",
       "difficulty": "mixed",
       "question": "Which process makes drinking water from seawater by boiling it and cooling the steam?",
       "correct": "Distillation",
@@ -695,7 +685,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.29",
+      "id": "science.chemistry.mixed.28",
       "difficulty": "mixed",
       "question": "What do we call a reaction in which a substance burns in oxygen?",
       "correct": "Combustion",
@@ -705,7 +695,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.30",
+      "id": "science.chemistry.mixed.29",
       "difficulty": "mixed",
       "question": "What do we call a substance that speeds up a reaction but is not used up?",
       "correct": "A catalyst",
@@ -715,7 +705,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.31",
+      "id": "science.chemistry.mixed.30",
       "difficulty": "mixed",
       "question": "Why does soap help to wash grease off your hands?",
       "correct": "It holds on to both water and grease",
@@ -729,7 +719,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.32",
+      "id": "science.chemistry.mixed.31",
       "difficulty": "mixed",
       "question": "What do we call large molecules made of long repeating chains, such as plastics?",
       "correct": "Polymers",
@@ -739,7 +729,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.33",
+      "id": "science.chemistry.mixed.32",
       "difficulty": "mixed",
       "question": "What does 24-carat gold mean?",
       "correct": "It is pure gold",
@@ -749,7 +739,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.34",
+      "id": "science.chemistry.mixed.33",
       "difficulty": "mixed",
       "question": "Which English scientist said in the early 1800s that each element is made of its own kind of atom?",
       "correct": "John Dalton",
@@ -759,7 +749,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.35",
+      "id": "science.chemistry.mixed.34",
       "difficulty": "mixed",
       "question": "What do we call a substance made of two or more elements chemically joined together?",
       "correct": "A compound",
@@ -769,7 +759,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.36",
+      "id": "science.chemistry.mixed.35",
       "difficulty": "mixed",
       "question": "What do the elements in the same column of the periodic table have in common?",
       "correct": "Similar chemical behaviour",
@@ -779,7 +769,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.37",
+      "id": "science.chemistry.mixed.36",
       "difficulty": "mixed",
       "question": "What is the common name of sodium bicarbonate?",
       "correct": "Baking soda",
@@ -789,7 +779,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.38",
+      "id": "science.chemistry.mixed.37",
       "difficulty": "mixed",
       "question": "Limestone and marble are mainly made of which compound?",
       "correct": "Calcium carbonate",
@@ -799,7 +789,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.39",
+      "id": "science.chemistry.mixed.38",
       "difficulty": "mixed",
       "question": "Which two gases are made when electricity splits water?",
       "correct": "Hydrogen and oxygen",
@@ -809,7 +799,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "science.chemistry.mixed.40",
+      "id": "science.chemistry.mixed.39",
       "difficulty": "mixed",
       "question": "In which state of matter are the particles furthest apart?",
       "correct": "Gas",

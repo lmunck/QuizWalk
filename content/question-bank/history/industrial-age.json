@@ -265,16 +265,6 @@
     {
       "id": "history.industrial-age.kids.27",
       "difficulty": "kids",
-      "question": "Inside an old electric light bulb, a thin thread glows when electricity passes through it. What is it called?",
-      "correct": "The filament",
-      "wrong": ["The fuse", "The socket", "The switch"],
-      "explanation": "The filament gets so hot that it shines. Inventors tried thousands of materials before they found ones that lasted a long time.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.industrial-age.kids.28",
-      "difficulty": "kids",
       "question": "Miners once took canaries underground to warn them about what?",
       "correct": "Poisonous gas",
       "wrong": ["Falling stones", "Thieves", "Strong winds"],
@@ -283,7 +273,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.29",
+      "id": "history.industrial-age.kids.28",
       "difficulty": "kids",
       "question": "Early steamships had big wheels at their sides that pushed them along. What were they called?",
       "correct": "Paddle wheels",
@@ -293,7 +283,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.30",
+      "id": "history.industrial-age.kids.29",
       "difficulty": "kids",
       "question": "What does a lock on a canal do for boats?",
       "correct": "It lifts or lowers them",
@@ -303,7 +293,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.31",
+      "id": "history.industrial-age.kids.30",
       "difficulty": "kids",
       "question": "The wings of the first aeroplanes were a wooden frame covered with what?",
       "correct": "Cloth",
@@ -313,7 +303,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.32",
+      "id": "history.industrial-age.kids.31",
       "difficulty": "kids",
       "question": "Which animals pulled coal carts through the low tunnels of many mines?",
       "correct": "Ponies",
@@ -323,7 +313,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.33",
+      "id": "history.industrial-age.kids.32",
       "difficulty": "kids",
       "question": "Which vehicles ran on rails along city streets, first pulled by horses and later powered by electricity?",
       "correct": "Trams",
@@ -333,7 +323,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.34",
+      "id": "history.industrial-age.kids.33",
       "difficulty": "kids",
       "question": "Which machine with keys printed letters on paper, instead of writing by hand?",
       "correct": "The typewriter",
@@ -343,7 +333,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.35",
+      "id": "history.industrial-age.kids.34",
       "difficulty": "kids",
       "question": "Which machine played music from flat discs, using a needle and a big horn?",
       "correct": "The gramophone",
@@ -353,7 +343,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.36",
+      "id": "history.industrial-age.kids.35",
       "difficulty": "kids",
       "question": "Why did people have to sit very still for the earliest photographs?",
       "correct": "The camera needed a long time to work",
@@ -367,7 +357,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.37",
+      "id": "history.industrial-age.kids.36",
       "difficulty": "kids",
       "question": "As factories grew, many people left the countryside and moved to where?",
       "correct": "Towns and cities",
@@ -377,7 +367,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.38",
+      "id": "history.industrial-age.kids.37",
       "difficulty": "kids",
       "question": "A loom is a machine used to make what?",
       "correct": "Cloth",
@@ -387,7 +377,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.39",
+      "id": "history.industrial-age.kids.38",
       "difficulty": "kids",
       "question": "What name do we give to the time when machines and factories changed how people worked, in the 1700s and 1800s?",
       "correct": "The Industrial Revolution",
@@ -397,7 +387,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.kids.40",
+      "id": "history.industrial-age.kids.39",
       "difficulty": "kids",
       "question": "James Watt wanted to show how strong his engines were. He compared them to which animal?",
       "correct": "The horse",
@@ -469,26 +459,6 @@
     {
       "id": "history.industrial-age.mixed.07",
       "difficulty": "mixed",
-      "question": "In 1800 Alessandro Volta made the first device that gave a steady flow of electricity. What was it?",
-      "correct": "The electric battery",
-      "wrong": ["The light bulb", "The dynamo", "The telegraph"],
-      "explanation": "Volta stacked discs of zinc and copper with wet cloth between them. The unit volt is named after him.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.industrial-age.mixed.08",
-      "difficulty": "mixed",
-      "question": "In 1820 the Danish scientist H. C. Ørsted found that electricity flowing in a wire makes what move?",
-      "correct": "A compass needle",
-      "wrong": ["A water pump", "A clock hand", "A bell"],
-      "explanation": "This showed that electricity and magnetism are linked. The finding led to electric motors and generators.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.industrial-age.mixed.09",
-      "difficulty": "mixed",
       "question": "Which Swedish chemist invented dynamite in 1867?",
       "correct": "Alfred Nobel",
       "wrong": ["Anders Celsius", "Carl Linnaeus", "Jöns Berzelius"],
@@ -497,7 +467,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.10",
+      "id": "history.industrial-age.mixed.08",
       "difficulty": "mixed",
       "question": "Why did Britain's railways begin to use one standard time in the 1840s?",
       "correct": "So that timetables worked in every town",
@@ -511,7 +481,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.11",
+      "id": "history.industrial-age.mixed.09",
       "difficulty": "mixed",
       "question": "Which railway, begun in 1891, links Moscow with Vladivostok on the Pacific coast?",
       "correct": "The Trans-Siberian Railway",
@@ -521,7 +491,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.12",
+      "id": "history.industrial-age.mixed.10",
       "difficulty": "mixed",
       "question": "Which Frenchman announced the first practical photography process in 1839?",
       "correct": "Louis Daguerre",
@@ -531,7 +501,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.13",
+      "id": "history.industrial-age.mixed.11",
       "difficulty": "mixed",
       "question": "In which country was the telephone inventor Alexander Graham Bell born?",
       "correct": "Scotland",
@@ -541,7 +511,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.14",
+      "id": "history.industrial-age.mixed.12",
       "difficulty": "mixed",
       "question": "In the late 1880s the Scottish vet John Dunlop made an air-filled tyre for his son's what?",
       "correct": "Tricycle",
@@ -551,7 +521,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.15",
+      "id": "history.industrial-age.mixed.13",
       "difficulty": "mixed",
       "question": "In the early 1800s, English workers called Luddites broke what in protest?",
       "correct": "Machines in the mills",
@@ -561,7 +531,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.16",
+      "id": "history.industrial-age.mixed.14",
       "difficulty": "mixed",
       "question": "The fast sailing ship Cutty Sark was built in 1869 mainly to carry which cargo from China?",
       "correct": "Tea",
@@ -571,7 +541,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.17",
+      "id": "history.industrial-age.mixed.15",
       "difficulty": "mixed",
       "question": "In the 1850s Elisha Otis made a safety brake that stops what from falling if the rope breaks?",
       "correct": "A lift",
@@ -581,7 +551,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.18",
+      "id": "history.industrial-age.mixed.16",
       "difficulty": "mixed",
       "question": "Which gas filled Count Zeppelin's airships to make them float?",
       "correct": "Hydrogen",
@@ -591,7 +561,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.19",
+      "id": "history.industrial-age.mixed.17",
       "difficulty": "mixed",
       "question": "Which English city was nicknamed 'Cottonopolis' because of its huge cotton mills?",
       "correct": "Manchester",
@@ -601,7 +571,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.20",
+      "id": "history.industrial-age.mixed.18",
       "difficulty": "mixed",
       "question": "Which German region, with coal mines and steelworks, became one of Europe's biggest industrial areas in the 1800s?",
       "correct": "The Ruhr",
@@ -611,7 +581,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.21",
+      "id": "history.industrial-age.mixed.19",
       "difficulty": "mixed",
       "question": "Jethro Tull's seed drill of about 1701 helped farmers plant seeds in what way?",
       "correct": "In neat rows",
@@ -621,7 +591,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.22",
+      "id": "history.industrial-age.mixed.20",
       "difficulty": "mixed",
       "question": "Prince Albert, husband of Queen Victoria, helped to organise which big event in London in 1851?",
       "correct": "The Great Exhibition",
@@ -631,7 +601,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.23",
+      "id": "history.industrial-age.mixed.21",
       "difficulty": "mixed",
       "question": "Which country became famous for making safety matches, from about the 1850s?",
       "correct": "Sweden",
@@ -641,7 +611,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.24",
+      "id": "history.industrial-age.mixed.22",
       "difficulty": "mixed",
       "question": "Karl Drais's 1817 'running machine', moved by pushing with the feet, was an early what?",
       "correct": "Bicycle",
@@ -651,7 +621,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.25",
+      "id": "history.industrial-age.mixed.23",
       "difficulty": "mixed",
       "question": "In the early days of the telephone, calls were connected by a person using what?",
       "correct": "A switchboard",
@@ -661,7 +631,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.26",
+      "id": "history.industrial-age.mixed.24",
       "difficulty": "mixed",
       "question": "Gustave Eiffel designed the iron frame inside which famous statue, finished in 1886?",
       "correct": "The Statue of Liberty",
@@ -671,7 +641,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.27",
+      "id": "history.industrial-age.mixed.25",
       "difficulty": "mixed",
       "question": "In 1839 Charles Goodyear found that heating rubber with sulphur made it what?",
       "correct": "Stronger and less sticky",
@@ -681,7 +651,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.28",
+      "id": "history.industrial-age.mixed.26",
       "difficulty": "mixed",
       "question": "Bakelite, made by Leo Baekeland in 1907, was the first fully man-made kind of what?",
       "correct": "Plastic",
@@ -691,7 +661,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.29",
+      "id": "history.industrial-age.mixed.27",
       "difficulty": "mixed",
       "question": "Many workers who built the Panama Canal fell ill with diseases spread by what?",
       "correct": "Mosquitoes",
@@ -701,7 +671,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.30",
+      "id": "history.industrial-age.mixed.28",
       "difficulty": "mixed",
       "question": "What did George Eastman's 1888 Kodak camera use to make photography easy for everyone?",
       "correct": "Roll film",
@@ -711,7 +681,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.31",
+      "id": "history.industrial-age.mixed.29",
       "difficulty": "mixed",
       "question": "The QWERTY keyboard layout, first used on typewriters, is named after what?",
       "correct": "The first six letters in the top row",
@@ -721,7 +691,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.32",
+      "id": "history.industrial-age.mixed.30",
       "difficulty": "mixed",
       "question": "In the 1860s Joseph Bazalgette built a huge system of what under London?",
       "correct": "Sewers",
@@ -731,7 +701,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.33",
+      "id": "history.industrial-age.mixed.31",
       "difficulty": "mixed",
       "question": "In the 1800s, workers who dug canals and railway cuttings by hand were called what?",
       "correct": "Navvies",
@@ -741,7 +711,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.34",
+      "id": "history.industrial-age.mixed.32",
       "difficulty": "mixed",
       "question": "In which Dutch city did the Philips company begin in 1891, making light bulbs?",
       "correct": "Eindhoven",
@@ -751,7 +721,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.35",
+      "id": "history.industrial-age.mixed.33",
       "difficulty": "mixed",
       "question": "In 1856 the young chemist William Perkin made a famous man-made dye by accident. What colour was it?",
       "correct": "Mauve",
@@ -761,7 +731,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.36",
+      "id": "history.industrial-age.mixed.34",
       "difficulty": "mixed",
       "question": "John Harrison's clocks of the 1700s helped sailors to find what at sea?",
       "correct": "Their longitude",
@@ -771,7 +741,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.37",
+      "id": "history.industrial-age.mixed.35",
       "difficulty": "mixed",
       "question": "Josiah Wedgwood built a large English factory to mass-produce what?",
       "correct": "Pottery",
@@ -781,7 +751,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.38",
+      "id": "history.industrial-age.mixed.36",
       "difficulty": "mixed",
       "question": "The raincoat called a 'mac' is named after the Scottish chemist who made waterproof cloth in the 1820s. Who was he?",
       "correct": "Charles Macintosh",
@@ -791,7 +761,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.39",
+      "id": "history.industrial-age.mixed.37",
       "difficulty": "mixed",
       "question": "Most electric trams of the 1890s got their power from what?",
       "correct": "An overhead wire",
@@ -801,7 +771,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.industrial-age.mixed.40",
+      "id": "history.industrial-age.mixed.38",
       "difficulty": "mixed",
       "question": "In 1869, what was used in a ceremony to finish America's first coast-to-coast railway?",
       "correct": "A golden spike",

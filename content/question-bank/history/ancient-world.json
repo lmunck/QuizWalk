@@ -135,16 +135,6 @@
     {
       "id": "history.ancient-world.kids.14",
       "difficulty": "kids",
-      "question": "What was the Parthenon in Athens?",
-      "correct": "A temple",
-      "wrong": ["A harbour", "A castle", "A library"],
-      "explanation": "The Parthenon was built on a hill called the Acropolis about 2,500 years ago. It was a temple for the goddess Athena.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.ancient-world.kids.15",
-      "difficulty": "kids",
       "question": "What did the Romans build to carry water into their cities?",
       "correct": "Aqueducts",
       "wrong": ["Lighthouses", "Windmills", "Chimneys"],
@@ -153,7 +143,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.16",
+      "id": "history.ancient-world.kids.15",
       "difficulty": "kids",
       "question": "What was the picture writing of ancient Egypt called?",
       "correct": "Hieroglyphs",
@@ -163,7 +153,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.17",
+      "id": "history.ancient-world.kids.16",
       "difficulty": "kids",
       "question": "Chichen Itza has a famous stepped pyramid. Which ancient people built it?",
       "correct": "The Maya",
@@ -173,7 +163,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.18",
+      "id": "history.ancient-world.kids.17",
       "difficulty": "kids",
       "question": "Which young king of Macedonia built a huge empire and is called 'the Great'?",
       "correct": "Alexander",
@@ -183,7 +173,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.19",
+      "id": "history.ancient-world.kids.18",
       "difficulty": "kids",
       "question": "Which Roman leader was killed by a group of senators in 44 BC?",
       "correct": "Julius Caesar",
@@ -193,7 +183,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.20",
+      "id": "history.ancient-world.kids.19",
       "difficulty": "kids",
       "question": "What did Romans do at the public baths?",
       "correct": "Wash and meet friends",
@@ -203,7 +193,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.21",
+      "id": "history.ancient-world.kids.20",
       "difficulty": "kids",
       "question": "The Great Sphinx of Giza has the body of which animal?",
       "correct": "A lion",
@@ -213,7 +203,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.22",
+      "id": "history.ancient-world.kids.21",
       "difficulty": "kids",
       "question": "Bronze is made by mixing copper with which other metal?",
       "correct": "Tin",
@@ -223,7 +213,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.23",
+      "id": "history.ancient-world.kids.22",
       "difficulty": "kids",
       "question": "The Asterix comics are about a village of which ancient people fighting the Romans?",
       "correct": "The Gauls",
@@ -233,7 +223,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.24",
+      "id": "history.ancient-world.kids.23",
       "difficulty": "kids",
       "question": "What was the main language of the ancient Romans?",
       "correct": "Latin",
@@ -243,7 +233,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.25",
+      "id": "history.ancient-world.kids.24",
       "difficulty": "kids",
       "question": "Which ancient Greek city was famous for its tough soldiers?",
       "correct": "Sparta",
@@ -253,7 +243,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.26",
+      "id": "history.ancient-world.kids.25",
       "difficulty": "kids",
       "question": "Which Greek inventor is said to have shouted 'Eureka!' in his bath?",
       "correct": "Archimedes",
@@ -263,7 +253,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.27",
+      "id": "history.ancient-world.kids.26",
       "difficulty": "kids",
       "question": "Which creature's cocoons did people in ancient China use to make fine, shiny cloth?",
       "correct": "The silkworm",
@@ -273,7 +263,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.28",
+      "id": "history.ancient-world.kids.27",
       "difficulty": "kids",
       "question": "Mesopotamia lay between the Tigris and which other river?",
       "correct": "The Euphrates",
@@ -283,7 +273,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.29",
+      "id": "history.ancient-world.kids.28",
       "difficulty": "kids",
       "question": "Which hard building material did the Romans make from lime, volcanic ash and stones?",
       "correct": "Concrete",
@@ -293,7 +283,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.30",
+      "id": "history.ancient-world.kids.29",
       "difficulty": "kids",
       "question": "Which young pharaoh's tomb, full of gold and treasure, was found in 1922?",
       "correct": "Tutankhamun",
@@ -303,7 +293,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.31",
+      "id": "history.ancient-world.kids.30",
       "difficulty": "kids",
       "question": "What was the long robe wrapped around the body that Roman men wore?",
       "correct": "The toga",
@@ -313,7 +303,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.32",
+      "id": "history.ancient-world.kids.31",
       "difficulty": "kids",
       "question": "Paper was first made in which ancient country about 2,000 years ago?",
       "correct": "China",
@@ -323,7 +313,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.33",
+      "id": "history.ancient-world.kids.32",
       "difficulty": "kids",
       "question": "Which Roman town was buried by ash when Mount Vesuvius erupted?",
       "correct": "Pompeii",
@@ -333,7 +323,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.34",
+      "id": "history.ancient-world.kids.33",
       "difficulty": "kids",
       "question": "What did people in ancient Mesopotamia press signs into when they wrote?",
       "correct": "Wet clay",
@@ -343,7 +333,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.35",
+      "id": "history.ancient-world.kids.34",
       "difficulty": "kids",
       "question": "What did winners of the ancient Olympic Games get as a prize?",
       "correct": "A crown of olive leaves",
@@ -353,7 +343,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.36",
+      "id": "history.ancient-world.kids.35",
       "difficulty": "kids",
       "question": "Which British queen led a revolt against the Romans in about AD 60?",
       "correct": "Boudicca",
@@ -363,7 +353,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.37",
+      "id": "history.ancient-world.kids.36",
       "difficulty": "kids",
       "question": "The Library of Alexandria in Egypt was famous for holding thousands of what?",
       "correct": "Scrolls",
@@ -373,7 +363,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.38",
+      "id": "history.ancient-world.kids.37",
       "difficulty": "kids",
       "question": "Which ancient tool used a shadow to tell the time?",
       "correct": "The sundial",
@@ -383,7 +373,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.39",
+      "id": "history.ancient-world.kids.38",
       "difficulty": "kids",
       "question": "The Nile flooded every year. Why was this good for Egyptian farmers?",
       "correct": "It left rich mud on the land",
@@ -393,7 +383,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.ancient-world.kids.40",
+      "id": "history.ancient-world.kids.39",
       "difficulty": "kids",
       "question": "Confucius was a wise teacher from which ancient land?",
       "correct": "China",

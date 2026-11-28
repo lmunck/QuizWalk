@@ -135,16 +135,6 @@
     {
       "id": "history.middle-ages.kids.14",
       "difficulty": "kids",
-      "question": "On which island in the North Atlantic, with volcanoes and geysers, did Vikings settle in the 800s?",
-      "correct": "Iceland",
-      "wrong": ["Ireland", "Cyprus", "Malta"],
-      "explanation": "Settlers came from Norway and brought sheep and cattle. They built farms along the coast, where the land is greener.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.middle-ages.kids.15",
-      "difficulty": "kids",
       "question": "What was the Black Death?",
       "correct": "A deadly disease",
       "wrong": ["A great storm", "A war between kings", "A big castle fire"],
@@ -153,7 +143,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.16",
+      "id": "history.middle-ages.kids.15",
       "difficulty": "kids",
       "question": "Which young French woman led soldiers in the 1400s and is a national hero?",
       "correct": "Joan of Arc",
@@ -163,7 +153,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.17",
+      "id": "history.middle-ages.kids.16",
       "difficulty": "kids",
       "question": "Which Duke of Normandy won the Battle of Hastings in 1066?",
       "correct": "William",
@@ -173,7 +163,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.18",
+      "id": "history.middle-ages.kids.17",
       "difficulty": "kids",
       "question": "What was a quill pen made from?",
       "correct": "A bird's feather",
@@ -183,7 +173,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.19",
+      "id": "history.middle-ages.kids.18",
       "difficulty": "kids",
       "question": "What machine did armies use to throw huge stones at castle walls?",
       "correct": "A trebuchet",
@@ -193,7 +183,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.20",
+      "id": "history.middle-ages.kids.19",
       "difficulty": "kids",
       "question": "Which animals often pulled the plough on medieval farms?",
       "correct": "Oxen",
@@ -203,7 +193,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.21",
+      "id": "history.middle-ages.kids.20",
       "difficulty": "kids",
       "question": "Which bird did rich people train to hunt other animals?",
       "correct": "A falcon",
@@ -213,7 +203,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.22",
+      "id": "history.middle-ages.kids.21",
       "difficulty": "kids",
       "question": "What were most Viking shields made of?",
       "correct": "Wood",
@@ -223,7 +213,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.23",
+      "id": "history.middle-ages.kids.22",
       "difficulty": "kids",
       "question": "What was the Silk Road?",
       "correct": "Trade routes linking Asia and Europe",
@@ -233,7 +223,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.24",
+      "id": "history.middle-ages.kids.23",
       "difficulty": "kids",
       "question": "What did a town crier do?",
       "correct": "Shouted the news in the street",
@@ -243,7 +233,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.25",
+      "id": "history.middle-ages.kids.24",
       "difficulty": "kids",
       "question": "What is a siege?",
       "correct": "An army surrounding a castle or town",
@@ -253,7 +243,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.26",
+      "id": "history.middle-ages.kids.25",
       "difficulty": "kids",
       "question": "Which Japanese warriors served lords and fought with swords?",
       "correct": "Samurai",
@@ -263,7 +253,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.27",
+      "id": "history.middle-ages.kids.26",
       "difficulty": "kids",
       "question": "Where were prisoners kept in a castle?",
       "correct": "In the dungeon",
@@ -273,7 +263,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.28",
+      "id": "history.middle-ages.kids.27",
       "difficulty": "kids",
       "question": "What was chain mail made of?",
       "correct": "Small metal rings",
@@ -283,7 +273,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.29",
+      "id": "history.middle-ages.kids.28",
       "difficulty": "kids",
       "question": "What was the leader of a monastery called?",
       "correct": "An abbot",
@@ -293,7 +283,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.30",
+      "id": "history.middle-ages.kids.29",
       "difficulty": "kids",
       "question": "Which weapon was very common among Vikings and was also useful for chopping wood?",
       "correct": "An axe",
@@ -303,7 +293,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.31",
+      "id": "history.middle-ages.kids.30",
       "difficulty": "kids",
       "question": "Why were many castles built on hills?",
       "correct": "To see enemies from far away",
@@ -313,7 +303,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.32",
+      "id": "history.middle-ages.kids.31",
       "difficulty": "kids",
       "question": "What is a Viking saga?",
       "correct": "A story of heroes and families",
@@ -327,7 +317,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.33",
+      "id": "history.middle-ages.kids.32",
       "difficulty": "kids",
       "question": "Which weapon had a bow fixed across a wooden handle and was fired with a trigger?",
       "correct": "A crossbow",
@@ -337,7 +327,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.34",
+      "id": "history.middle-ages.kids.33",
       "difficulty": "kids",
       "question": "What did medieval blacksmiths make?",
       "correct": "Iron tools and horseshoes",
@@ -347,7 +337,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.35",
+      "id": "history.middle-ages.kids.34",
       "difficulty": "kids",
       "question": "What were narrow slits in castle walls used for?",
       "correct": "Shooting arrows out",
@@ -357,7 +347,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.36",
+      "id": "history.middle-ages.kids.35",
       "difficulty": "kids",
       "question": "In the Middle Ages, what did people often use to keep meat and fish for winter?",
       "correct": "Salt",
@@ -367,7 +357,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.37",
+      "id": "history.middle-ages.kids.36",
       "difficulty": "kids",
       "question": "What did two knights try to do in a joust?",
       "correct": "Knock each other off their horses",
@@ -381,7 +371,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.38",
+      "id": "history.middle-ages.kids.37",
       "difficulty": "kids",
       "question": "What did most people in the Middle Ages work as?",
       "correct": "Farmers",
@@ -391,7 +381,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.39",
+      "id": "history.middle-ages.kids.38",
       "difficulty": "kids",
       "question": "What is the painted design on a knight's shield that shows his family?",
       "correct": "A coat of arms",
@@ -401,7 +391,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.middle-ages.kids.40",
+      "id": "history.middle-ages.kids.39",
       "difficulty": "kids",
       "question": "What is the main, strongest tower of a castle called?",
       "correct": "The keep",

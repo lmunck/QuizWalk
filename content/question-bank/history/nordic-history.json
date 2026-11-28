@@ -15,16 +15,6 @@
     {
       "id": "history.nordic-history.kids.02",
       "difficulty": "kids",
-      "question": "What is the Danish flag called?",
-      "correct": "Dannebrog",
-      "wrong": ["Tricolore", "Union Jack", "Stars and Stripes"],
-      "explanation": "A legend says it fell from the sky during a battle in Estonia in 1219. It shows a white cross on red.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.nordic-history.kids.03",
-      "difficulty": "kids",
       "question": "Margrete I ruled which three countries at the same time?",
       "correct": "Denmark, Norway and Sweden",
       "wrong": [
@@ -37,7 +27,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.04",
+      "id": "history.nordic-history.kids.03",
       "difficulty": "kids",
       "question": "Which king built Rosenborg Castle in Copenhagen as a summer home?",
       "correct": "Christian IV",
@@ -47,7 +37,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.05",
+      "id": "history.nordic-history.kids.04",
       "difficulty": "kids",
       "question": "Until 1944, Iceland was linked to which other country?",
       "correct": "Denmark",
@@ -57,7 +47,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.06",
+      "id": "history.nordic-history.kids.05",
       "difficulty": "kids",
       "question": "In April 1940 soldiers from which country marched into Denmark?",
       "correct": "Germany",
@@ -67,7 +57,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.07",
+      "id": "history.nordic-history.kids.06",
       "difficulty": "kids",
       "question": "On the evening of 4 May, Danes put what in their windows to remember the end of the war in 1945?",
       "correct": "Candles",
@@ -77,7 +67,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.08",
+      "id": "history.nordic-history.kids.07",
       "difficulty": "kids",
       "question": "King Canute the Great ruled Denmark, Norway and which country across the North Sea?",
       "correct": "England",
@@ -87,7 +77,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.09",
+      "id": "history.nordic-history.kids.08",
       "difficulty": "kids",
       "question": "Which big Swedish warship sank on its first voyage in 1628?",
       "correct": "Vasa",
@@ -97,7 +87,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.10",
+      "id": "history.nordic-history.kids.09",
       "difficulty": "kids",
       "question": "In 1917 Finland declared itself independent from which large country?",
       "correct": "Russia",
@@ -107,7 +97,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.11",
+      "id": "history.nordic-history.kids.10",
       "difficulty": "kids",
       "question": "Many Danish kings and queens are buried in a big cathedral in which city?",
       "correct": "Roskilde",
@@ -117,7 +107,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.12",
+      "id": "history.nordic-history.kids.11",
       "difficulty": "kids",
       "question": "Shakespeare's play Hamlet is set at which Danish castle?",
       "correct": "Kronborg",
@@ -127,7 +117,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.13",
+      "id": "history.nordic-history.kids.12",
       "difficulty": "kids",
       "question": "Tycho Brahe, a Danish nobleman in the 1500s, spent his life studying what?",
       "correct": "Stars and planets",
@@ -137,7 +127,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.14",
+      "id": "history.nordic-history.kids.13",
       "difficulty": "kids",
       "question": "What does the name Copenhagen mean in old Danish?",
       "correct": "Merchants' harbour",
@@ -147,7 +137,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.15",
+      "id": "history.nordic-history.kids.14",
       "difficulty": "kids",
       "question": "Until 1658, Malmö and the land around it belonged to Denmark. What is this region called?",
       "correct": "Skåne",
@@ -157,7 +147,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.16",
+      "id": "history.nordic-history.kids.15",
       "difficulty": "kids",
       "question": "In 1969 oil was found under the North Sea off which Nordic country, making it rich?",
       "correct": "Norway",
@@ -167,7 +157,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.17",
+      "id": "history.nordic-history.kids.16",
       "difficulty": "kids",
       "question": "Which famous amusement park opened in Copenhagen in 1843?",
       "correct": "Tivoli",
@@ -177,7 +167,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.18",
+      "id": "history.nordic-history.kids.17",
       "difficulty": "kids",
       "question": "Carl Linnaeus, a Swede in the 1700s, became famous for sorting and naming what?",
       "correct": "Plants and animals",
@@ -187,7 +177,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.19",
+      "id": "history.nordic-history.kids.18",
       "difficulty": "kids",
       "question": "The Round Tower in Copenhagen has a wide ramp inside instead of stairs. What was it first built as?",
       "correct": "An observatory",
@@ -197,7 +187,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.20",
+      "id": "history.nordic-history.kids.19",
       "difficulty": "kids",
       "question": "Harald Bluetooth had a big carved stone raised for his parents in which small Danish town?",
       "correct": "Jelling",
@@ -207,7 +197,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.21",
+      "id": "history.nordic-history.kids.20",
       "difficulty": "kids",
       "question": "Which Danish writer of fairy tales was born in Odense in 1805?",
       "correct": "Hans Christian Andersen",
@@ -217,7 +207,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.22",
+      "id": "history.nordic-history.kids.21",
       "difficulty": "kids",
       "question": "Which animal is shown three times on Denmark's national coat of arms?",
       "correct": "Lions",
@@ -227,7 +217,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.23",
+      "id": "history.nordic-history.kids.22",
       "difficulty": "kids",
       "question": "Which famous toy name comes from the Danish words 'leg godt', meaning 'play well'?",
       "correct": "Lego",
@@ -237,7 +227,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.24",
+      "id": "history.nordic-history.kids.23",
       "difficulty": "kids",
       "question": "Sweden did not take sides in World War II. What do we call a country like that?",
       "correct": "Neutral",
@@ -247,7 +237,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.25",
+      "id": "history.nordic-history.kids.24",
       "difficulty": "kids",
       "question": "In the winter of 1658 a Swedish army marched to the island of Zealand across what?",
       "correct": "The frozen sea",
@@ -257,7 +247,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.26",
+      "id": "history.nordic-history.kids.25",
       "difficulty": "kids",
       "question": "Which Indigenous people have lived in northern Norway, Sweden and Finland for thousands of years?",
       "correct": "The Sami",
@@ -267,7 +257,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.27",
+      "id": "history.nordic-history.kids.26",
       "difficulty": "kids",
       "question": "In 1939 which big country attacked Finland in the Winter War?",
       "correct": "The Soviet Union",
@@ -277,7 +267,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.28",
+      "id": "history.nordic-history.kids.27",
       "difficulty": "kids",
       "question": "Copenhagen's old stock exchange, Børsen, had a spire shaped like the twisted tails of which animals?",
       "correct": "Dragons",
@@ -287,7 +277,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.29",
+      "id": "history.nordic-history.kids.28",
       "difficulty": "kids",
       "question": "The Danish money called 'krone' is named after what royal object?",
       "correct": "A crown",
@@ -297,7 +287,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.30",
+      "id": "history.nordic-history.kids.29",
       "difficulty": "kids",
       "question": "Trelleborg, a Danish fortress from about the year 980, was built in what shape?",
       "correct": "A circle",
@@ -307,7 +297,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.31",
+      "id": "history.nordic-history.kids.30",
       "difficulty": "kids",
       "question": "Which animal holds an axe on Norway's coat of arms?",
       "correct": "A lion",
@@ -317,7 +307,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.32",
+      "id": "history.nordic-history.kids.31",
       "difficulty": "kids",
       "question": "The Danevirke was built to protect the south of Denmark. What was it?",
       "correct": "A long wall",
@@ -327,7 +317,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.33",
+      "id": "history.nordic-history.kids.32",
       "difficulty": "kids",
       "question": "The Celsius temperature scale is named after a scientist from which Nordic country?",
       "correct": "Sweden",
@@ -337,7 +327,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.34",
+      "id": "history.nordic-history.kids.33",
       "difficulty": "kids",
       "question": "In 1917 Denmark sold its islands in the Caribbean Sea to which country?",
       "correct": "The United States",
@@ -347,7 +337,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.35",
+      "id": "history.nordic-history.kids.34",
       "difficulty": "kids",
       "question": "What destroyed a large part of Copenhagen in 1728?",
       "correct": "A big fire",
@@ -357,7 +347,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.36",
+      "id": "history.nordic-history.kids.35",
       "difficulty": "kids",
       "question": "On 17 May, which country celebrates its national day with big children's parades?",
       "correct": "Norway",
@@ -367,7 +357,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.37",
+      "id": "history.nordic-history.kids.36",
       "difficulty": "kids",
       "question": "In 1801 the British admiral Nelson fought a battle outside which Nordic capital?",
       "correct": "Copenhagen",
@@ -377,7 +367,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.38",
+      "id": "history.nordic-history.kids.37",
       "difficulty": "kids",
       "question": "Gorm the Old is often called the first king of Denmark. Which famous king was his son?",
       "correct": "Harald Bluetooth",
@@ -387,22 +377,12 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.kids.39",
+      "id": "history.nordic-history.kids.38",
       "difficulty": "kids",
       "question": "The Althing was started in Iceland around the year 930. What was it?",
       "correct": "A parliament",
       "wrong": ["A church", "A school", "A fortress"],
       "explanation": "Chieftains and farmers met every summer at Þingvellir to make laws and settle arguments.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.nordic-history.kids.40",
-      "difficulty": "kids",
-      "question": "Which two cities does the Øresund Bridge connect?",
-      "correct": "Copenhagen and Malmö",
-      "wrong": ["Oslo and Stockholm", "Aarhus and Gothenburg", "Odense and Helsinki"],
-      "explanation": "The link opened in 2000. From the Danish side, cars and trains first go through a tunnel under the sea, then onto the bridge.",
       "writtenBy": "claude-sonnet-5-5",
       "checkedBy": "claude-opus-5-5"
     },
@@ -617,16 +597,6 @@
     {
       "id": "history.nordic-history.mixed.21",
       "difficulty": "mixed",
-      "question": "The Danish physicist Niels Bohr won the Nobel Prize in 1922 for studying what?",
-      "correct": "Atoms",
-      "wrong": ["Stars", "Magnets", "Sound"],
-      "explanation": "In 1943 he escaped from occupied Denmark by boat to Sweden.",
-      "writtenBy": "claude-sonnet-5-5",
-      "checkedBy": "claude-opus-5-5"
-    },
-    {
-      "id": "history.nordic-history.mixed.22",
-      "difficulty": "mixed",
       "question": "In 1676 the Danish astronomer Ole Rømer showed that what has a speed?",
       "correct": "Light",
       "wrong": ["Sound", "Gravity", "Heat"],
@@ -635,7 +605,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.23",
+      "id": "history.nordic-history.mixed.22",
       "difficulty": "mixed",
       "question": "Harald Bluetooth's big rune stone says he made the Danes what?",
       "correct": "Christian",
@@ -645,7 +615,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.24",
+      "id": "history.nordic-history.mixed.23",
       "difficulty": "mixed",
       "question": "In 1620 Denmark started a trading colony at Tranquebar in which country?",
       "correct": "India",
@@ -655,7 +625,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.25",
+      "id": "history.nordic-history.mixed.24",
       "difficulty": "mixed",
       "question": "How did Northern Schleswig return to Denmark in 1920?",
       "correct": "A vote by the people",
@@ -665,7 +635,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.26",
+      "id": "history.nordic-history.mixed.25",
       "difficulty": "mixed",
       "question": "Swedish diplomat Raoul Wallenberg saved thousands of Jews in 1944 in which city?",
       "correct": "Budapest",
@@ -675,7 +645,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.27",
+      "id": "history.nordic-history.mixed.26",
       "difficulty": "mixed",
       "question": "After Christiansborg Palace burned in 1794, the Danish royal family moved to which palace?",
       "correct": "Amalienborg",
@@ -685,7 +655,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.28",
+      "id": "history.nordic-history.mixed.27",
       "difficulty": "mixed",
       "question": "Which Danish king, nicknamed Forkbeard, was accepted as king of England in 1013?",
       "correct": "Svend",
@@ -695,7 +665,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.29",
+      "id": "history.nordic-history.mixed.28",
       "difficulty": "mixed",
       "question": "Gorm the Old raised a small rune stone at Jelling for his wife. What was her name?",
       "correct": "Thyra",
@@ -705,7 +675,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.30",
+      "id": "history.nordic-history.mixed.29",
       "difficulty": "mixed",
       "question": "During the occupation of Denmark, which king rode through Copenhagen on his horse every morning?",
       "correct": "Christian X",
@@ -715,7 +685,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.31",
+      "id": "history.nordic-history.mixed.30",
       "difficulty": "mixed",
       "question": "Which town on the west coast of Jutland is often called the oldest town in Denmark?",
       "correct": "Ribe",
@@ -725,7 +695,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.32",
+      "id": "history.nordic-history.mixed.31",
       "difficulty": "mixed",
       "question": "Norway's constitution of 1814 was written in which village?",
       "correct": "Eidsvoll",
@@ -735,7 +705,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.33",
+      "id": "history.nordic-history.mixed.32",
       "difficulty": "mixed",
       "question": "In which year did Norway end its union with Sweden?",
       "correct": "1905",
@@ -745,7 +715,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.34",
+      "id": "history.nordic-history.mixed.33",
       "difficulty": "mixed",
       "question": "Iceland's national day, 17 June, is the birthday of which independence hero?",
       "correct": "Jón Sigurðsson",
@@ -755,7 +725,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.35",
+      "id": "history.nordic-history.mixed.34",
       "difficulty": "mixed",
       "question": "In 1866 the Danish princess Dagmar married a crown prince. Later she became empress of which country?",
       "correct": "Russia",
@@ -765,7 +735,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.36",
+      "id": "history.nordic-history.mixed.35",
       "difficulty": "mixed",
       "question": "In 1807 Britain attacked Copenhagen to take away what?",
       "correct": "The Danish navy",
@@ -775,7 +745,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.37",
+      "id": "history.nordic-history.mixed.36",
       "difficulty": "mixed",
       "question": "In the 1600s Sweden was a great power that controlled lands around which sea?",
       "correct": "The Baltic Sea",
@@ -785,7 +755,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.38",
+      "id": "history.nordic-history.mixed.37",
       "difficulty": "mixed",
       "question": "In 1972 Margrethe II became queen of Denmark after the death of her father. What was his name?",
       "correct": "Frederik IX",
@@ -795,7 +765,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.39",
+      "id": "history.nordic-history.mixed.38",
       "difficulty": "mixed",
       "question": "Before the euro, what was the money of Finland called?",
       "correct": "The markka",
@@ -805,7 +775,7 @@
       "checkedBy": "claude-opus-5-5"
     },
     {
-      "id": "history.nordic-history.mixed.40",
+      "id": "history.nordic-history.mixed.39",
       "difficulty": "mixed",
       "question": "Soviet soldiers stayed on which Danish island until 1946?",
       "correct": "Bornholm",
