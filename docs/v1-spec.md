@@ -441,7 +441,7 @@ On nulkommafire.com, the "Qualk" line of the shared privacy page links to `qualk
 | `playing` list | Way back into a walk | That user | Each walk taken off 30 days after it ends |
 | Rate-limit times | Fair use of generation | Nobody (functions) | A day at most; deleted with the account |
 
-- Location is only collected **during an active walk**.
+- Location is only collected **during an active walk**. When a creator builds a walk, the app can also place the Start pin and stops at the creator's location (*Build it myself*, *Add stop here*), and C2's map opens there; only the pins they keep are saved, as part of the walk.
 - Participant locations never leave Firebase. ORS only receives the route's points and stop coordinates; Overpass and Wikipedia receive coordinates along a route; Gemini only receives categories and place information. All of these are called from functions, never from the phone.
 - **In-app deletion:** creators: S1 "Delete account and all data". Participants: "Delete my data" in S1 (removes their teams/answers/positions, alerts, reports and `playing`; shown only to someone without an account, since account deletion covers it for creators).
 - A team in the lobby of a walk that is never opened is not covered by the 30-day rule (there is no `endedAt`); it goes when the creator deletes the walk or the player deletes their data.
