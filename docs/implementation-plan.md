@@ -8,16 +8,18 @@ Where this plan and the spec disagree, the spec wins and this plan should be fix
 
 ## Where things stand
 
-Updated 2026-11-27, after the M2 wrap-up, M3 and the M4 backend. Delivery notes:
-[`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
+Updated 2026-11-28, after the M2 wrap-up, M3, the M4 backend and M5's privacy work. Delivery
+notes: [`m1-delivery.md`](m1-delivery.md), [`m2-m3-delivery.md`](m2-m3-delivery.md),
+[`m5-privacy-delivery.md`](m5-privacy-delivery.md),
 [`m4-backend-delivery.md`](m4-backend-delivery.md); how to test: [`user-testing.md`](user-testing.md).
 
 | Area | State |
 |---|---|
 | Repo, CI, hosting, dev builds on both phones | Done (M0) |
 | `shared/` | Rules, scoring, totals, ranking, progress, `walkProblems`, team colours and names, formatting, stop insertion, pocket-mode accuracy steps, *Directions* links; from M4 the categories, route geometry and phone-side Refresh helpers, bank rules and the callable contracts: 161 unit tests |
-| Security rules | Spec §7 in full, including the M4 collections: 50 allow/deny tests against the emulator, in CI. Deployed |
-| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`, and from M4 `routeForView`, `reroute`, `generateWalk`, `swapQuestion`, `topUpQuestions`, `onQuestionReported`, `onStopWritten`: 48 unit tests (M4's on recorded service answers) and 46 tests against the emulator, in CI. M4's deployed to `qualk-a173e` on 2026-11-27; `onTeamUpdated` goes out with the next deploy from `m2-m5` |
+| Security rules | Spec §7 in full, including the M4 collections: 50 allow/deny tests against the emulator, in CI, plus 4 from M5 showing deletion is server-only (`rules-tests/privacy.test.ts`; no rule changed). Deployed |
+| Cloud Functions | `publishWalk`, `openWalk`, `deleteWalk`, `duplicateWalk`, `onAnswerCreated`, `onTeamUpdated`, `onStopUpdated`, `onWalkStatusChanged`, `onAlertCreated`, `hourly`, and from M4 `routeForView`, `reroute`, `generateWalk`, `swapQuestion`, `topUpQuestions`, `onQuestionReported`, `onStopWritten`: 48 unit tests (M4's on recorded service answers) and 46 tests against the emulator, in CI. M4's deployed to `qualk-a173e` on 2026-11-27; `onTeamUpdated` goes out with the next deploy from `m2-m5`. From M5 `deleteMyData`, `deleteAccount` and `daily`, with 7 more emulator tests; deployed 2026-11-28 |
+| Privacy (M5·1, 2026-11-28) | `qualk.dk/privacy` live; S1 *Delete my data* (players) and *Delete account and all data* (creators); 30-day retention with join-code release. App Check on Firestore stays in monitor mode until Play Integrity exists; the steps to enforce are in [`m5-privacy-delivery.md`](m5-privacy-delivery.md) |
 | App | Every M1 screen (G1, C1–C6, C9, S1, P0–P6, G2, G6), all of M2 (C7, C8, share cards, duplicate and delete, push tokens and notification taps) and M3's pocket mode and *Directions*. Verified end to end on the iOS simulator against the emulators, including a simulated walk with the app in the background |
 | Native build | All native modules in one build, including M2/M3 needs (task manager, notifications, background-location config). New app icon and splash; an Android notification icon from M3. `preview` builds with pocket mode started 2026-11-27 (links in `m2-m3-delivery.md`) |
 | Firebase app registrations, Maps key, App Check, EAS builds with the real config | Done on 2026-11-26, except the Google Maps key for Android (yours, `user-testing.md` part 2) |
@@ -180,8 +182,8 @@ category. Read every *Local* question against its source before trusting the fac
 
 | # | Work |
 |---|---|
-| 1 | Privacy page; `deleteAccount`; participant *Delete my data*; the `daily` retention job with join-code release |
-| 2 | App Check enforced on Firestore, after a period in monitor mode shows no legitimate traffic failing |
+| 1 | Privacy page; `deleteAccount`; participant *Delete my data*; the `daily` retention job with join-code release. **Done 2026-11-28** ([`m5-privacy-delivery.md`](m5-privacy-delivery.md)) |
+| 2 | App Check enforced on Firestore, after a period in monitor mode shows no legitimate traffic failing. **Decided 2026-11-28:** monitor mode until Play Integrity exists, because enforcement is per service, not per platform; then callables first, a week of watching, then Firestore (steps in `m5-privacy-delivery.md`) |
 | 3 | Accessibility pass with VoiceOver and TalkBack on every screen at the largest text size |
 | 4 | Store listings, screenshots, privacy labels and Data safety, review notes for location |
 | 5 | TestFlight and the Play closed test (running since M2) → production |
