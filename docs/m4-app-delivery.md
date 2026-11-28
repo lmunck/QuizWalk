@@ -96,8 +96,8 @@ the Report link is 15 pt like the rest of P4.
 
 ## How it was checked
 
-- **Automated:** typecheck, lint, Prettier, 161 shared tests, 48 function unit tests, 50 rules
-  tests and 46 function tests against the emulator, all green.
+- **Automated:** typecheck, lint, Prettier, 161 shared tests, 48 function unit tests, 54 rules
+  tests and 53 function tests against the emulator (after merging M5's privacy work), all green.
 - **iPhone simulator (iPhone 18 Pro, iOS 27) against the emulators**, with the seed bank
   imported into the emulator and the real ORS and Gemini keys in `functions/.secret.local`
   (git-ignored, now listed in `.gitignore`). A screenshot was taken of each state below; they are
