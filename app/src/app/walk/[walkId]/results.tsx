@@ -157,6 +157,6 @@ const styles = StyleSheet.create({
   footer: { flexDirection: 'row', gap: spacing.sm + 2 },
   stats: { flexDirection: 'row', gap: spacing.sm + 2 },
   stat: { flex: 1, alignItems: 'center', gap: 2 },
-  statValue: { fontFamily: fonts.heading, fontSize: 24, color: colors.ink },
+  statValue: { fontFamily: fonts.heading, fontSize: 24, lineHeight: 30, color: colors.ink },
   block: { gap: spacing.sm },
 });
