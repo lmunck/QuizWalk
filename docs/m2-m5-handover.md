@@ -61,8 +61,9 @@ Each milestone's delivery notes have the details and the reasons for each decisi
 2. Create the Google Maps Android API key (`user-testing.md` part 2, step C). Until then, maps on
    Android show a placeholder.
 3. Upload the FCM V1 key to Expo for Android pushes (`m2-m3-delivery.md`, item 6).
-4. Once the Play app exists, add the Play signing SHA-1 to Firebase, App Check and
-   `assetlinks.json`.
+4. Once the Play app exists, add the Play signing SHA-1 to Firebase, App Check,
+   `assetlinks.json` and the Maps key's Android restriction. Without it, maps are blank in
+   builds installed from Play.
 
 **On the phones, with the new preview builds**
 
