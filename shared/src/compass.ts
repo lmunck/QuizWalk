@@ -34,7 +34,10 @@ export const COMPASS_GOOD_ACCURACY_DEG = 35;
  * own estimate when the phone gives one; otherwise `status` is the sensor's accuracy level
  * (0 unreliable, 1 low, 2 medium, 3 high, -1 not reported yet, which is trusted).
  */
-export function androidCompassGood(accuracyDeg: number | null | undefined, status: number): boolean {
+export function androidCompassGood(
+  accuracyDeg: number | null | undefined,
+  status: number,
+): boolean {
   if (accuracyDeg != null && accuracyDeg > 0) return accuracyDeg <= COMPASS_GOOD_ACCURACY_DEG;
   return status < 0 || status >= 2;
 }

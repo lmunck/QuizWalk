@@ -32,6 +32,11 @@ export function CompassArrow({
 
   if (headingDeg === undefined) return <Icon name="pin" size={size - 4} color={color} />;
   return (
-    <Icon name="navigate" size={size} color={color} rotate={(bearingDeg - headingDeg + 360) % 360} />
+    <Icon
+      name="navigate"
+      size={size}
+      color={color}
+      rotate={(bearingDeg - headingDeg + 360) % 360}
+    />
   );
 }
