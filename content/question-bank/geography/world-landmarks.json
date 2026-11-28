@@ -1,0 +1,1226 @@
+{
+  "category": "geography",
+  "subcategory": "world-landmarks",
+  "questions": [
+    {
+      "id": "geography.world-landmarks.kids.01",
+      "difficulty": "kids",
+      "question": "In which city is the Eiffel Tower?",
+      "correct": "Paris",
+      "wrong": ["Rome", "Berlin", "Madrid"],
+      "explanation": "It was finished in 1889. Visitors can climb the stairs to the second floor or take a lift all the way to the top.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.02",
+      "difficulty": "kids",
+      "question": "In which city can you see Big Ben?",
+      "correct": "London",
+      "wrong": ["Paris", "Madrid", "Dublin"],
+      "explanation": "The famous clock tower is part of the Houses of Parliament, on the bank of the River Thames.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.03",
+      "difficulty": "kids",
+      "question": "The Statue of Liberty stands in the harbour of which big city?",
+      "correct": "New York",
+      "wrong": ["Los Angeles", "Chicago", "Miami"],
+      "explanation": "France gave the statue to the USA as a gift in 1886. She holds a torch high in the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.04",
+      "difficulty": "kids",
+      "question": "In which country is the Great Wall?",
+      "correct": "China",
+      "wrong": ["Japan", "India", "Thailand"],
+      "explanation": "The wall was built over many hundreds of years to help keep out enemies. Parts of it are very old.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.05",
+      "difficulty": "kids",
+      "question": "In which country are the Pyramids of Giza?",
+      "correct": "Egypt",
+      "wrong": ["Mexico", "Greece", "India"],
+      "explanation": "The Great Pyramid was made from millions of huge stone blocks. Workers had no big machines.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.06",
+      "difficulty": "kids",
+      "question": "In which city is the Colosseum?",
+      "correct": "Rome",
+      "wrong": ["Athens", "Venice", "Paris"],
+      "explanation": "It was built almost 2,000 years ago. The big oval building has many arches and could hold a huge crowd.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.07",
+      "difficulty": "kids",
+      "question": "In which country is the Taj Mahal?",
+      "correct": "India",
+      "wrong": ["Egypt", "Turkey", "Thailand"],
+      "explanation": "A Mughal emperor built it in the 1600s. Thousands of workers took many years to finish it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.08",
+      "difficulty": "kids",
+      "question": "In which country is the Leaning Tower of Pisa?",
+      "correct": "Italy",
+      "wrong": ["Spain", "France", "Greece"],
+      "explanation": "The tower began to lean when only a few floors were built. It was finished almost 200 years later.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.09",
+      "difficulty": "kids",
+      "question": "The Sydney Opera House stands beside a harbour in which country?",
+      "correct": "Australia",
+      "wrong": ["New Zealand", "Canada", "South Africa"],
+      "explanation": "Its roof is made of big curved shapes that look like white sails or shells.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.10",
+      "difficulty": "kids",
+      "question": "Which country has the huge Christ the Redeemer statue on a hill?",
+      "correct": "Brazil",
+      "wrong": ["Spain", "Mexico", "Canada"],
+      "explanation": "The statue looks out over the city of Rio de Janeiro with its arms stretched wide.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.11",
+      "difficulty": "kids",
+      "question": "In which country is Machu Picchu, an old city high in the mountains?",
+      "correct": "Peru",
+      "wrong": ["Mexico", "Egypt", "Spain"],
+      "explanation": "The city sits high in the Andes mountains. It was built about 600 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.12",
+      "difficulty": "kids",
+      "question": "Which city has the statue of the Little Mermaid by the water?",
+      "correct": "Copenhagen",
+      "wrong": ["Oslo", "Stockholm", "Helsinki"],
+      "explanation": "The statue shows the girl from Hans Christian Andersen's fairy tale. It was put on a rock in the harbour in 1913.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.13",
+      "difficulty": "kids",
+      "question": "In which country is the ancient stone circle Stonehenge?",
+      "correct": "England",
+      "wrong": ["Ireland", "France", "Norway"],
+      "explanation": "Huge stones stand in a ring on a grassy plain. The biggest stones were put up about 4,500 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.14",
+      "difficulty": "kids",
+      "question": "Neuschwanstein, the fairy-tale castle on a hill, is in which country?",
+      "correct": "Germany",
+      "wrong": ["Austria", "Denmark", "Poland"],
+      "explanation": "The castle looks like it comes from a story. It is said to have inspired the Sleeping Beauty castle at Disneyland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.15",
+      "difficulty": "kids",
+      "question": "In which country is the Grand Canyon?",
+      "correct": "The USA",
+      "wrong": ["Canada", "Mexico", "Australia"],
+      "explanation": "Water slowly cut this huge valley through the rock over millions of years. In places it is more than 1.5 kilometres deep.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.16",
+      "difficulty": "kids",
+      "question": "Which bridge over the River Thames can lift up in the middle for tall ships?",
+      "correct": "Tower Bridge",
+      "wrong": ["London Bridge", "Brooklyn Bridge", "Golden Gate Bridge"],
+      "explanation": "The two halves of the road lift up like gates. The bridge opened in 1894.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.17",
+      "difficulty": "kids",
+      "question": "The orange-red Golden Gate Bridge is in which city?",
+      "correct": "San Francisco",
+      "wrong": ["Los Angeles", "Seattle", "Chicago"],
+      "explanation": "The bridge's colour is called International Orange. It opened in 1937.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.18",
+      "difficulty": "kids",
+      "question": "In which city is the Parthenon, a ruined temple on a hill?",
+      "correct": "Athens",
+      "wrong": ["Rome", "Cairo", "Istanbul"],
+      "explanation": "It was built almost 2,500 years ago in ancient Greece. Its marble columns can be seen from far across the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.19",
+      "difficulty": "kids",
+      "question": "In which country is the stepped pyramid of Chichen Itza?",
+      "correct": "Mexico",
+      "wrong": ["Peru", "Egypt", "Brazil"],
+      "explanation": "The pyramid has stairs on all four sides. It was built about 1,000 years ago in the jungle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.20",
+      "difficulty": "kids",
+      "question": "The big white Hollywood sign overlooks which city?",
+      "correct": "Los Angeles",
+      "wrong": ["San Diego", "Seattle", "Boston"],
+      "explanation": "The sign sits high on a hill. Film studios grew up in the area around it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.21",
+      "difficulty": "kids",
+      "question": "St Basil's Cathedral, with colourful onion domes, stands on Red Square in which city?",
+      "correct": "Moscow",
+      "wrong": ["Warsaw", "Berlin", "Prague"],
+      "explanation": "It was built in the 1500s. The bright domes look like patterned sweets.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.22",
+      "difficulty": "kids",
+      "question": "The Statue of Liberty is green. Why?",
+      "correct": "Its copper has turned green over time",
+      "wrong": [
+        "It was painted green when built",
+        "It is covered in green moss",
+        "It is made of green stone"
+      ],
+      "explanation": "The statue is covered in thin copper. Air and rain slowly turn copper green, just like old copper roofs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.23",
+      "difficulty": "kids",
+      "question": "Why did the ancient Egyptians build the great pyramids?",
+      "correct": "As tombs for their kings",
+      "wrong": [
+        "As homes for their kings",
+        "As stores for grain",
+        "As towers to watch for enemies"
+      ],
+      "explanation": "A pharaoh was buried inside with food and treasure for the life after death.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.24",
+      "difficulty": "kids",
+      "question": "The glass pyramid outside the Louvre museum is in which country?",
+      "correct": "France",
+      "wrong": ["Egypt", "Italy", "Germany"],
+      "explanation": "The Louvre is a huge art museum in Paris. The glass pyramid is its main entrance.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.25",
+      "difficulty": "kids",
+      "question": "In which city do guards in red coats and tall furry hats stand outside Buckingham Palace?",
+      "correct": "London",
+      "wrong": ["Edinburgh", "Dublin", "Paris"],
+      "explanation": "The guards march out in a ceremony called the Changing of the Guard. Many tourists watch it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.26",
+      "difficulty": "kids",
+      "question": "Uluru is a giant red rock in the middle of which country?",
+      "correct": "Australia",
+      "wrong": ["Brazil", "India", "South Africa"],
+      "explanation": "Uluru glows deep orange and red at sunrise and sunset. It is sacred to the Aboriginal people of the area.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.27",
+      "difficulty": "kids",
+      "question": "Which material is the Eiffel Tower made of?",
+      "correct": "Iron",
+      "wrong": ["Gold", "Wood", "Concrete"],
+      "explanation": "The tower is painted again every seven years to stop the iron from rusting.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.28",
+      "difficulty": "kids",
+      "question": "The Blue Lagoon, a warm milky-blue pool to swim in, is in which country?",
+      "correct": "Iceland",
+      "wrong": ["Ireland", "Norway", "Finland"],
+      "explanation": "The water is heated deep underground by hot volcanic rock. It is rich in minerals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.29",
+      "difficulty": "kids",
+      "question": "What is the London Eye?",
+      "correct": "A giant wheel for riding",
+      "wrong": ["A clock tower", "A castle", "A bridge"],
+      "explanation": "People ride in glass pods that turn slowly high above the River Thames and see the whole city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.30",
+      "difficulty": "kids",
+      "question": "In which city is the Empire State Building?",
+      "correct": "New York",
+      "wrong": ["Washington", "Los Angeles", "Chicago"],
+      "explanation": "The building has 102 floors. It was finished in 1931.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.31",
+      "difficulty": "kids",
+      "question": "Which fighters put on shows in the Colosseum in ancient Rome?",
+      "correct": "Gladiators",
+      "wrong": ["Knights", "Pirates", "Vikings"],
+      "explanation": "Some gladiators were slaves and some chose to fight. Large crowds came to watch them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.32",
+      "difficulty": "kids",
+      "question": "The Taj Mahal is built mainly from shiny white what?",
+      "correct": "Marble",
+      "wrong": ["Wood", "Glass", "Clay"],
+      "explanation": "Many gems are set into the marble. Its colour seems to change from pink at dawn to gold at sunset.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.33",
+      "difficulty": "kids",
+      "question": "Which country has the CN Tower, a very tall tower with a glass floor?",
+      "correct": "Canada",
+      "wrong": ["The USA", "Australia", "Norway"],
+      "explanation": "Visitors can stand on the glass floor and look straight down. The tower is a landmark of the city of Toronto.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.34",
+      "difficulty": "kids",
+      "question": "The Forbidden City, a huge old palace for emperors, is in which city?",
+      "correct": "Beijing",
+      "wrong": ["Shanghai", "Hong Kong", "Tokyo"],
+      "explanation": "Emperors lived there for almost 500 years. It has many halls and courtyards inside high red walls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.35",
+      "difficulty": "kids",
+      "question": "The Alhambra, an old palace and fortress on a hill, is in which country?",
+      "correct": "Spain",
+      "wrong": ["Italy", "Portugal", "Morocco"],
+      "explanation": "Its name comes from an Arabic word meaning 'red'. The walls have a red-brown colour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.36",
+      "difficulty": "kids",
+      "question": "The White House, where the US president lives and works, is in which city?",
+      "correct": "Washington, D.C.",
+      "wrong": ["New York", "Chicago", "Boston"],
+      "explanation": "It was finished in 1800, and John Adams was the first president to live there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.37",
+      "difficulty": "kids",
+      "question": "Which big Australian city has a steel bridge nicknamed 'the Coathanger'?",
+      "correct": "Sydney",
+      "wrong": ["Melbourne", "Perth", "Brisbane"],
+      "explanation": "The bridge has a huge arch and opened in 1932. It stands close to the Sydney Opera House.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.38",
+      "difficulty": "kids",
+      "question": "Which country gave the Statue of Liberty to the USA as a present?",
+      "correct": "France",
+      "wrong": ["Spain", "England", "Italy"],
+      "explanation": "It was a gift of friendship from the French people. The statue was shipped across the Atlantic in pieces and put up in 1886.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.39",
+      "difficulty": "kids",
+      "question": "The Pyramids of Giza stand at the edge of a desert, close to which big Egyptian city?",
+      "correct": "Cairo",
+      "wrong": ["Alexandria", "Luxor", "Aswan"],
+      "explanation": "Giza is now part of Greater Cairo. The pyramids are on the edge of the desert, west of the Nile.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.kids.40",
+      "difficulty": "kids",
+      "question": "What was the Louvre in Paris before it became a museum?",
+      "correct": "A royal palace",
+      "wrong": ["A big prison", "A train station", "A fish market"],
+      "explanation": "The Louvre began as a fortress and later became a palace for French kings. It became a museum in 1793.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.01",
+      "difficulty": "mixed",
+      "question": "In which city is the Brandenburg Gate?",
+      "correct": "Berlin",
+      "wrong": ["Vienna", "Munich", "Prague"],
+      "explanation": "The old stone gate was built in the 1700s. It is one of the best-known symbols of the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.02",
+      "difficulty": "mixed",
+      "question": "The rose-red city of Petra, carved into cliffs, is in which country?",
+      "correct": "Jordan",
+      "wrong": ["Egypt", "Turkey", "Morocco"],
+      "explanation": "Its most famous building, the Treasury, is carved into a rock wall at the end of a narrow gorge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which city has the Hagia Sophia, a famous domed building near the Blue Mosque?",
+      "correct": "Istanbul",
+      "wrong": ["Ankara", "Athens", "Cairo"],
+      "explanation": "Istanbul lies in both Europe and Asia, on either side of the Bosphorus strait.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.04",
+      "difficulty": "mixed",
+      "question": "In which city is the Sagrada Família church?",
+      "correct": "Barcelona",
+      "wrong": ["Madrid", "Seville", "Valencia"],
+      "explanation": "Work on the church began in 1882 and has taken more than a hundred years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.05",
+      "difficulty": "mixed",
+      "question": "Mont-Saint-Michel, an abbey on a small rocky island, is in which country?",
+      "correct": "France",
+      "wrong": ["Spain", "Ireland", "Italy"],
+      "explanation": "The sea comes in fast around the island at high tide, so visitors must watch the time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.06",
+      "difficulty": "mixed",
+      "question": "The Giant's Causeway, with thousands of stone columns, is on the coast of which part of the UK?",
+      "correct": "Northern Ireland",
+      "wrong": ["Wales", "Scotland", "England"],
+      "explanation": "The columns are made of basalt, which formed when hot lava cooled millions of years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.07",
+      "difficulty": "mixed",
+      "question": "Which country has the Petronas Twin Towers?",
+      "correct": "Malaysia",
+      "wrong": ["Singapore", "Indonesia", "Thailand"],
+      "explanation": "The two towers are joined by a bridge high in the air. They stand in the city of Kuala Lumpur.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.08",
+      "difficulty": "mixed",
+      "question": "The Charles Bridge, an old stone bridge lined with statues, is in which city?",
+      "correct": "Prague",
+      "wrong": ["Vienna", "Budapest", "Kraków"],
+      "explanation": "Thirty statues line the bridge, which was begun in 1357.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.09",
+      "difficulty": "mixed",
+      "question": "The Atomium is a giant model of an iron crystal. In which city is it?",
+      "correct": "Brussels",
+      "wrong": ["Amsterdam", "Paris", "Luxembourg"],
+      "explanation": "Its nine shiny balls are joined by tubes with stairs and escalators inside.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.10",
+      "difficulty": "mixed",
+      "question": "Cappadocia is known for its rock towers and hot-air balloons. In which country is it?",
+      "correct": "Turkey",
+      "wrong": ["Greece", "Jordan", "Spain"],
+      "explanation": "People once cut homes and churches into the soft rock, and even dug whole towns underground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.11",
+      "difficulty": "mixed",
+      "question": "Tradition says that if you throw a coin into the Trevi Fountain in Rome, you will do what?",
+      "correct": "Come back to Rome one day",
+      "wrong": ["Win a prize", "Meet a king", "Stay young for ever"],
+      "explanation": "The custom is to throw it with your right hand over your left shoulder. Thousands of coins land in the water every day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.12",
+      "difficulty": "mixed",
+      "question": "The Vasa, a royal warship from the 1600s, can be seen in a museum in which city?",
+      "correct": "Stockholm",
+      "wrong": ["Gothenburg", "Oslo", "Copenhagen"],
+      "explanation": "It was raised from the sea floor in 1961, more than 300 years after it sank. Most of its wood is original.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.13",
+      "difficulty": "mixed",
+      "question": "The Vigeland sculpture park, with over 200 statues of people, is in which city?",
+      "correct": "Oslo",
+      "wrong": ["Bergen", "Stockholm", "Copenhagen"],
+      "explanation": "Many of the statues show people of all ages, from babies to old people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.14",
+      "difficulty": "mixed",
+      "question": "The Old Town of Dubrovnik, with its thick stone walls, is beside the Adriatic Sea in which country?",
+      "correct": "Croatia",
+      "wrong": ["Greece", "Slovenia", "Bulgaria"],
+      "explanation": "Visitors can walk along the old walls and look over red roofs and the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.15",
+      "difficulty": "mixed",
+      "question": "Monasteries on top of tall rock pillars at Meteora are in which country?",
+      "correct": "Greece",
+      "wrong": ["Turkey", "Italy", "Bulgaria"],
+      "explanation": "The name Meteora means 'high in the air'. Monks climbed up the rocks hundreds of years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.16",
+      "difficulty": "mixed",
+      "question": "The huge Palace of Versailles lies just outside which French city?",
+      "correct": "Paris",
+      "wrong": ["Lyon", "Nice", "Bordeaux"],
+      "explanation": "French kings once ruled from this palace. Its Hall of Mirrors is world famous.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.17",
+      "difficulty": "mixed",
+      "question": "Schönbrunn Palace, once an emperor's summer home, is in which city?",
+      "correct": "Vienna",
+      "wrong": ["Budapest", "Salzburg", "Zurich"],
+      "explanation": "The palace has more than 1,000 rooms and a large garden with a maze.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.18",
+      "difficulty": "mixed",
+      "question": "Teotihuacan, with its Pyramid of the Sun, lies near which big city?",
+      "correct": "Mexico City",
+      "wrong": ["Lima", "Havana", "Bogotá"],
+      "explanation": "It was a great city more than 1,500 years ago, long before the Aztecs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.19",
+      "difficulty": "mixed",
+      "question": "In 1889, the Eiffel Tower was built as the entrance to which kind of event?",
+      "correct": "A world fair",
+      "wrong": ["An Olympic Games", "A royal wedding", "A military parade"],
+      "explanation": "The fair marked 100 years since the French Revolution. The tower was meant to be taken down after 20 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.20",
+      "difficulty": "mixed",
+      "question": "What is the name of the great bell in London's Elizabeth Tower?",
+      "correct": "Big Ben",
+      "wrong": ["Great Tom", "Old Peter", "Long John"],
+      "explanation": "Many people call the whole tower Big Ben, but the name belongs to the heavy bell inside it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.21",
+      "difficulty": "mixed",
+      "question": "Only one of the Seven Wonders of the Ancient World survives. Which one?",
+      "correct": "The Great Pyramid of Giza",
+      "wrong": [
+        "The Hanging Gardens of Babylon",
+        "The Colossus of Rhodes",
+        "The Statue of Zeus at Olympia"
+      ],
+      "explanation": "It is also the oldest of the seven. The other six were destroyed long ago, mostly by earthquakes and fires.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.22",
+      "difficulty": "mixed",
+      "question": "The Grand Palace, with golden spires and colourful roofs, is in which Asian city?",
+      "correct": "Bangkok",
+      "wrong": ["Hanoi", "Manila", "Jakarta"],
+      "explanation": "Building began in 1782. The famous Temple of the Emerald Buddha stands inside its walls.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.23",
+      "difficulty": "mixed",
+      "question": "Belém Tower, an old stone fort at the water's edge, is in which city?",
+      "correct": "Lisbon",
+      "wrong": ["Porto", "Madrid", "Seville"],
+      "explanation": "Portuguese explorers set sail from near here on long voyages by sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.24",
+      "difficulty": "mixed",
+      "question": "Hadrian's Wall, built by the Romans, runs across the north of which country?",
+      "correct": "England",
+      "wrong": ["Wales", "Scotland", "Ireland"],
+      "explanation": "The Romans began building it about 1,900 years ago. Soldiers guarded the northern edge of their empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.25",
+      "difficulty": "mixed",
+      "question": "The Gateway of India, a stone arch beside the sea, is in which Indian city?",
+      "correct": "Mumbai",
+      "wrong": ["Delhi", "Kolkata", "Chennai"],
+      "explanation": "The arch was built in the early 1900s and stands by the harbour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.26",
+      "difficulty": "mixed",
+      "question": "Ha Long Bay, with thousands of limestone islands, is in which country?",
+      "correct": "Vietnam",
+      "wrong": ["Thailand", "China", "Philippines"],
+      "explanation": "The islands rise out of the green sea like towers, and many have caves inside.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.27",
+      "difficulty": "mixed",
+      "question": "The Cliffs of Moher, tall sea cliffs on the Atlantic coast, are in which country?",
+      "correct": "Ireland",
+      "wrong": ["Scotland", "Wales", "Iceland"],
+      "explanation": "The cliffs rise high above the waves. Seabirds such as puffins nest there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.28",
+      "difficulty": "mixed",
+      "question": "The Nazca Lines are giant drawings of animals in the desert of which country?",
+      "correct": "Peru",
+      "wrong": ["Chile", "Egypt", "Mexico"],
+      "explanation": "The lines show shapes like a monkey and a hummingbird. They are best seen from the air.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.29",
+      "difficulty": "mixed",
+      "question": "The Burj Al Arab, a hotel shaped like a sail, stands by the sea in which city?",
+      "correct": "Dubai",
+      "wrong": ["Abu Dhabi", "Doha", "Muscat"],
+      "explanation": "It stands on its own small island, joined to the shore by a bridge.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.30",
+      "difficulty": "mixed",
+      "question": "The Merlion, a statue with a lion's head and a fish's body, is a symbol of which Asian country?",
+      "correct": "Singapore",
+      "wrong": ["Malaysia", "Indonesia", "Thailand"],
+      "explanation": "The name Singapore comes from words meaning 'Lion City'.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.31",
+      "difficulty": "mixed",
+      "question": "Waitomo Caves, lit by thousands of glow-worms, are in which country?",
+      "correct": "New Zealand",
+      "wrong": ["Australia", "Canada", "Chile"],
+      "explanation": "The glow-worms light the cave roof like a night sky. Visitors drift through in small boats.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.32",
+      "difficulty": "mixed",
+      "question": "Legend says that if which birds ever leave the Tower of London, the kingdom will fall?",
+      "correct": "Ravens",
+      "wrong": ["Eagles", "Owls", "Swans"],
+      "explanation": "The Tower keeps ravens and has an official keeper, called the Ravenmaster, who looks after them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.33",
+      "difficulty": "mixed",
+      "question": "The church Hallgrímskirkja has a tall tower that is a landmark in which Nordic capital?",
+      "correct": "Reykjavik",
+      "wrong": ["Oslo", "Helsinki", "Stockholm"],
+      "explanation": "Its shape reminds many people of columns of basalt rock formed by lava.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.34",
+      "difficulty": "mixed",
+      "question": "The Parthenon in Greece was built as a temple for which goddess?",
+      "correct": "Athena",
+      "wrong": ["Aphrodite", "Hera", "Artemis"],
+      "explanation": "Athena was the goddess of wisdom and the protector of Athens. A huge statue of her once stood inside the temple.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.35",
+      "difficulty": "mixed",
+      "question": "Chillon Castle stands on a rock at the edge of Lake Geneva. In which country is it?",
+      "correct": "Switzerland",
+      "wrong": ["Austria", "Italy", "Germany"],
+      "explanation": "The castle is near Montreux, at the eastern end of the lake, with the Alps rising behind it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.36",
+      "difficulty": "mixed",
+      "question": "The Rialto Bridge crosses the Grand Canal in which city?",
+      "correct": "Venice",
+      "wrong": ["Rome", "Naples", "Milan"],
+      "explanation": "The stone bridge was finished in 1591 and has shops along it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.37",
+      "difficulty": "mixed",
+      "question": "Himeji Castle, nicknamed the White Heron, is in which country?",
+      "correct": "Japan",
+      "wrong": ["China", "South Korea", "Thailand"],
+      "explanation": "The castle's white walls and roofs look like a bird with open wings. It is about 400 years old.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.38",
+      "difficulty": "mixed",
+      "question": "Why does the Tower of Pisa lean?",
+      "correct": "The ground under it is soft",
+      "wrong": ["It was hit by lightning", "It was built crooked on purpose", "A flood moved it"],
+      "explanation": "The soil on one side could not hold the heavy tower. Engineers have since stopped it leaning further.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.39",
+      "difficulty": "mixed",
+      "question": "The royal palace Gyeongbokgung, built in 1395, is in which Asian city?",
+      "correct": "Seoul",
+      "wrong": ["Tokyo", "Beijing", "Bangkok"],
+      "explanation": "It was the main palace of the Joseon kings, who ruled Korea for about 500 years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.mixed.40",
+      "difficulty": "mixed",
+      "question": "The huge square Jemaa el-Fnaa, full of storytellers and food stalls, is in which Moroccan city?",
+      "correct": "Marrakech",
+      "wrong": ["Casablanca", "Rabat", "Fez"],
+      "explanation": "It lies at the heart of the old walled town, the medina. Snake charmers and musicians also perform there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.01",
+      "difficulty": "expert",
+      "question": "Which African country is named after a medieval stone city whose ruins stand in it?",
+      "correct": "Zimbabwe",
+      "wrong": ["Zambia", "Mali", "Botswana"],
+      "explanation": "The name Zimbabwe comes from a word for 'stone houses'. The city was built about 800 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.02",
+      "difficulty": "expert",
+      "question": "Sigiriya, an ancient palace on top of a huge rock, is in which country?",
+      "correct": "Sri Lanka",
+      "wrong": ["India", "Indonesia", "Nepal"],
+      "explanation": "Sigiriya is also called Lion Rock. A king built his palace there about 1,500 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.03",
+      "difficulty": "expert",
+      "question": "Borobudur, a huge temple shaped like a stepped mountain, is in which country?",
+      "correct": "Indonesia",
+      "wrong": ["Thailand", "Cambodia", "Philippines"],
+      "explanation": "It was built more than 1,000 years ago and was covered by jungle and ash for centuries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.04",
+      "difficulty": "expert",
+      "question": "The Wieliczka mine, with chapels and statues carved from salt, is in which country?",
+      "correct": "Poland",
+      "wrong": ["Hungary", "Germany", "Romania"],
+      "explanation": "Visitors walk down hundreds of steps. Even the chandeliers in the chapels are made of salt crystals.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.05",
+      "difficulty": "expert",
+      "question": "Tutankhamun's tomb was found in the Valley of the Kings near which Egyptian city?",
+      "correct": "Luxor",
+      "wrong": ["Cairo", "Alexandria", "Aswan"],
+      "explanation": "Howard Carter found the tomb in 1922. Many pharaohs were buried in the valley.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.06",
+      "difficulty": "expert",
+      "question": "Most of the stone-and-brick Great Wall seen near Beijing was built under which dynasty?",
+      "correct": "Ming",
+      "wrong": ["Tang", "Song", "Qing"],
+      "explanation": "Earlier walls were mostly made of packed earth. The Ming used much more stone and brick, which is why their wall is the best kept.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.07",
+      "difficulty": "expert",
+      "question": "The Terracotta Army was buried to guard the tomb of which ruler?",
+      "correct": "Qin Shi Huang",
+      "wrong": ["Kublai Khan", "Genghis Khan", "Emperor Puyi"],
+      "explanation": "He was the first emperor of China. Farmers found the clay army by chance in 1974.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.08",
+      "difficulty": "expert",
+      "question": "What was the original name of the Colosseum?",
+      "correct": "Flavian Amphitheatre",
+      "wrong": ["Trajan's Arena", "Nero's Theatre", "Caesar's Circus"],
+      "explanation": "It was named after the Flavian family of emperors. 'Colosseum' probably comes from a giant statue that stood nearby.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.09",
+      "difficulty": "expert",
+      "question": "Most of Stonehenge's smaller 'bluestones' came from hills more than 200 km away, in which country?",
+      "correct": "Wales",
+      "wrong": ["Ireland", "France", "Norway"],
+      "explanation": "Most came from the Preseli Hills. Each weighs a few tonnes, far less than the giant sarsen stones.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.10",
+      "difficulty": "expert",
+      "question": "Which explorer made Machu Picchu famous around the world after reaching it in 1911?",
+      "correct": "Hiram Bingham",
+      "wrong": ["Howard Carter", "Heinrich Schliemann", "Francisco Pizarro"],
+      "explanation": "Local farmers already knew the site. Bingham's photographs and articles told the world about it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.11",
+      "difficulty": "expert",
+      "question": "Which Indigenous people are the traditional owners of Uluru?",
+      "correct": "The Anangu",
+      "wrong": ["The Maori", "The Inuit", "The Sami"],
+      "explanation": "The Anangu have lived around Uluru for thousands of years. They share its stories and care for the land.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.12",
+      "difficulty": "expert",
+      "question": "The Colossus of Rhodes, one of the Seven Wonders, honoured which Greek god?",
+      "correct": "Helios",
+      "wrong": ["Zeus", "Poseidon", "Hermes"],
+      "explanation": "Helios was the sun god. The statue fell in an earthquake only about 50 years after it was finished.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.13",
+      "difficulty": "expert",
+      "question": "In ancient Greece, people travelled to Delphi to ask advice from what?",
+      "correct": "An oracle",
+      "wrong": ["A giant statue", "A famous athlete", "A king"],
+      "explanation": "The priestess was called the Pythia. People believed she spoke for the god Apollo.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.14",
+      "difficulty": "expert",
+      "question": "The Fisherman's Bastion, with white towers and a view of the Danube, is in which city?",
+      "correct": "Budapest",
+      "wrong": ["Vienna", "Bratislava", "Belgrade"],
+      "explanation": "It looks like a fairy-tale castle, but it was built around 1900 as a terrace for views.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.15",
+      "difficulty": "expert",
+      "question": "The Great Mosque of Djenné, famous for being built of mud, is in which country?",
+      "correct": "Mali",
+      "wrong": ["Niger", "Egypt", "Kenya"],
+      "explanation": "By tradition, the people of the town add a new layer of mud each year to protect the walls from the rain.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.16",
+      "difficulty": "expert",
+      "question": "Which ancient people carved the tombs and temples of Petra out of the rock?",
+      "correct": "The Nabataeans",
+      "wrong": ["The Phoenicians", "The Persians", "The Hittites"],
+      "explanation": "They grew rich from trade in spices and incense. Their capital lay in a hidden valley.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.17",
+      "difficulty": "expert",
+      "question": "The Turkish name Pamukkale, for white terraces of mineral pools, means what?",
+      "correct": "Cotton castle",
+      "wrong": ["Salt mountain", "Snow garden", "Silver steps"],
+      "explanation": "Warm spring water leaves a white mineral crust on the hillside, so the terraces look like cotton.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.18",
+      "difficulty": "expert",
+      "question": "For which king was Neuschwanstein Castle built in the 1800s?",
+      "correct": "Ludwig II of Bavaria",
+      "wrong": ["Louis XIV of France", "Frederick the Great", "Franz Joseph of Austria"],
+      "explanation": "Ludwig II was nicknamed the Fairy-Tale King. He died before the castle was finished.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.19",
+      "difficulty": "expert",
+      "question": "The old wooden wharf houses of Bryggen are in which Norwegian city?",
+      "correct": "Bergen",
+      "wrong": ["Oslo", "Trondheim", "Stavanger"],
+      "explanation": "German merchants of the Hanseatic League once traded from these buildings.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.20",
+      "difficulty": "expert",
+      "question": "The ruins of Carthage, the ancient rival of Rome, are in which modern country?",
+      "correct": "Tunisia",
+      "wrong": ["Libya", "Algeria", "Egypt"],
+      "explanation": "The ruins lie by the sea near the city of Tunis. Carthage and Rome fought three wars.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.21",
+      "difficulty": "expert",
+      "question": "The mud-brick fortified village of Aït Benhaddou, used in many films, is in which country?",
+      "correct": "Morocco",
+      "wrong": ["Tunisia", "Egypt", "Mali"],
+      "explanation": "It stands on an old trade route across the Sahara. Its clay buildings need regular repairs.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.22",
+      "difficulty": "expert",
+      "question": "The Banaue rice terraces, cut into steep hills by hand, are in which country?",
+      "correct": "The Philippines",
+      "wrong": ["Vietnam", "Indonesia", "Japan"],
+      "explanation": "They were built by the Ifugao people and are watered by streams from the forests above.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.23",
+      "difficulty": "expert",
+      "question": "The old walled port city of Cartagena de Indias is in which South American country?",
+      "correct": "Colombia",
+      "wrong": ["Venezuela", "Peru", "Ecuador"],
+      "explanation": "Thick stone walls were built to protect the city from pirates.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.24",
+      "difficulty": "expert",
+      "question": "Hampi is full of ruined temples and palaces from the Vijayanagara Empire. In which country is it?",
+      "correct": "India",
+      "wrong": ["Sri Lanka", "Nepal", "Myanmar"],
+      "explanation": "Huge boulders lie scattered among the ruins, giving the place a strange look.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.25",
+      "difficulty": "expert",
+      "question": "The Taj Mahal stands on the banks of the Yamuna River in which Indian city?",
+      "correct": "Agra",
+      "wrong": ["Delhi", "Jaipur", "Varanasi"],
+      "explanation": "Agra was a capital of the Mughal emperors in the 1500s and 1600s.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.26",
+      "difficulty": "expert",
+      "question": "The Roman aqueduct of Segovia, with two rows of arches, crosses the old town. In which country is it?",
+      "correct": "Spain",
+      "wrong": ["Portugal", "Italy", "France"],
+      "explanation": "The aqueduct is made of huge stone blocks that are held together without any mortar.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.27",
+      "difficulty": "expert",
+      "question": "The ruined Greek and Roman city of Ephesus, with its Library of Celsus, is in which country?",
+      "correct": "Turkey",
+      "wrong": ["Greece", "Italy", "Egypt"],
+      "explanation": "Ephesus was a busy port, and its Temple of Artemis was one of the Seven Wonders.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.28",
+      "difficulty": "expert",
+      "question": "At Ellora in India, the Kailasa temple was carved out of what?",
+      "correct": "One huge block of rock",
+      "wrong": ["Hundreds of wooden beams", "Sun-dried clay bricks", "Pieces of white marble"],
+      "explanation": "Workers carved it from the top downwards, cutting it out of a hillside.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.29",
+      "difficulty": "expert",
+      "question": "In Russian, what does the word 'kremlin' mean?",
+      "correct": "A fortress inside a city",
+      "wrong": ["A red square", "A royal garden", "A bell tower"],
+      "explanation": "Many old Russian cities have a kremlin. The best known stands in Moscow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.30",
+      "difficulty": "expert",
+      "question": "Which dynasty built most of the Alhambra's palaces in Granada?",
+      "correct": "The Nasrid dynasty",
+      "wrong": ["The Umayyads", "The Ottomans", "The Habsburgs"],
+      "explanation": "The Nasrids were the last Muslim rulers in Spain. Their kingdom ended in 1492.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.31",
+      "difficulty": "expert",
+      "question": "Why were most Egyptian pyramids built on the west bank of the Nile?",
+      "correct": "The setting Sun was linked to the dead",
+      "wrong": [
+        "The stone was easier to find there",
+        "The river flooded the east bank",
+        "The west bank was nearer the sea"
+      ],
+      "explanation": "The Egyptians saw the west, where the Sun goes down, as the land of the dead. The royal tombs at Thebes are on the west bank too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.32",
+      "difficulty": "expert",
+      "question": "The Bridge of Sighs in Venice links the Doge's Palace to what?",
+      "correct": "A prison",
+      "wrong": ["A church", "A market", "A theatre"],
+      "explanation": "Prisoners crossed the covered bridge after their trial. The name comes from the sighs they were said to make.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.33",
+      "difficulty": "expert",
+      "question": "The sea fortress Suomenlinna lies off the coast of which Nordic capital?",
+      "correct": "Helsinki",
+      "wrong": ["Oslo", "Copenhagen", "Stockholm"],
+      "explanation": "Sweden began building the fortress in the 1700s, when Finland was part of Sweden.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.34",
+      "difficulty": "expert",
+      "question": "In which decade did the Sydney Opera House open?",
+      "correct": "The 1970s",
+      "wrong": ["The 1930s", "The 1950s", "The 1990s"],
+      "explanation": "Building took about 14 years, from 1959, and cost far more than planned.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.35",
+      "difficulty": "expert",
+      "question": "Skellig Michael, a rocky island with an early monastery, is off the coast of which country?",
+      "correct": "Ireland",
+      "wrong": ["Scotland", "Norway", "Iceland"],
+      "explanation": "Monks lived there for hundreds of years and built stone huts shaped like beehives.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.36",
+      "difficulty": "expert",
+      "question": "The ruined temples of Ayutthaya, once the capital of a kingdom, are in which country?",
+      "correct": "Thailand",
+      "wrong": ["Myanmar", "Laos", "Malaysia"],
+      "explanation": "Ayutthaya was a rich trading city for about 400 years until it was burned in 1767.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.37",
+      "difficulty": "expert",
+      "question": "The Hermitage museum, once the Winter Palace of the Russian tsars, is in which city?",
+      "correct": "St Petersburg",
+      "wrong": ["Moscow", "Helsinki", "Tallinn"],
+      "explanation": "Peter the Great founded St Petersburg in 1703. The palace's green-and-white building stands beside the River Neva.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.38",
+      "difficulty": "expert",
+      "question": "Why were the temples of Abu Simbel in Egypt cut into pieces and moved in the 1960s?",
+      "correct": "A new dam would flood them",
+      "wrong": [
+        "Earthquakes had cracked them",
+        "Sand had buried them",
+        "A new road was planned there"
+      ],
+      "explanation": "The Aswan High Dam made Lake Nasser. Workers lifted the temples to higher ground, block by block.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.39",
+      "difficulty": "expert",
+      "question": "The Golden Pavilion, a temple covered in gold leaf that shines in a pond, is in which Japanese city?",
+      "correct": "Kyoto",
+      "wrong": ["Osaka", "Hiroshima", "Nagoya"],
+      "explanation": "Its Japanese name is Kinkaku-ji. Kyoto was Japan's capital for over a thousand years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.world-landmarks.expert.40",
+      "difficulty": "expert",
+      "question": "The Pont du Gard, a Roman bridge with three tiers of arches, carried water as part of an aqueduct in which country?",
+      "correct": "France",
+      "wrong": ["Italy", "Greece", "Portugal"],
+      "explanation": "It crosses the River Gardon and brought water to the Roman city of Nîmes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

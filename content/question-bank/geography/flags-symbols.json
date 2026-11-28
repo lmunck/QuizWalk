@@ -1,0 +1,1206 @@
+{
+  "category": "geography",
+  "subcategory": "flags-symbols",
+  "questions": [
+    {
+      "id": "geography.flags-symbols.kids.01",
+      "difficulty": "kids",
+      "question": "Which country's flag is white with one big red circle in the middle?",
+      "correct": "Japan",
+      "wrong": ["China", "Thailand", "Indonesia"],
+      "explanation": "In Japanese the flag is often called Hinomaru, which means circle of the sun. It has only two colours and a very simple design.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.02",
+      "difficulty": "kids",
+      "question": "Which animal is on the flag of Wales?",
+      "correct": "A red dragon",
+      "wrong": ["A red lion", "A golden eagle", "A white horse"],
+      "explanation": "The Welsh flag shows a red dragon on green and white stripes. In Welsh the dragon is called Y Ddraig Goch.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.03",
+      "difficulty": "kids",
+      "question": "What is the name of the Danish flag?",
+      "correct": "Dannebrog",
+      "wrong": ["Tricolore", "Union Jack", "Stars and Stripes"],
+      "explanation": "It is a white cross on a red flag. The Danes have used this flag for hundreds of years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.04",
+      "difficulty": "kids",
+      "question": "Which country has a red maple leaf in the middle of its flag?",
+      "correct": "Canada",
+      "wrong": ["Australia", "Norway", "Switzerland"],
+      "explanation": "The Canadian flag is red and white. Maple trees grow in many parts of Canada, and their sap is made into maple syrup.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.05",
+      "difficulty": "kids",
+      "question": "Which flightless bird is a national symbol of New Zealand?",
+      "correct": "Kiwi",
+      "wrong": ["Emu", "Penguin", "Ostrich"],
+      "explanation": "The kiwi is a small bird that comes out at night. New Zealanders are often called Kiwis too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.06",
+      "difficulty": "kids",
+      "question": "Which animal is next to an emu on the coat of arms of Australia?",
+      "correct": "Kangaroo",
+      "wrong": ["Koala", "Wombat", "Platypus"],
+      "explanation": "A kangaroo and an emu hold up the shield. Both animals live in the wild in Australia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.07",
+      "difficulty": "kids",
+      "question": "Which black-and-white animal that eats bamboo is a national treasure of China?",
+      "correct": "Giant panda",
+      "wrong": ["Zebra", "Penguin", "Badger"],
+      "explanation": "Giant pandas live in the mountains of China. They eat bamboo for most of the day.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.08",
+      "difficulty": "kids",
+      "question": "What colours are the three stripes of the German flag, from top to bottom?",
+      "correct": "Black, red and gold",
+      "wrong": ["Red, white and black", "Green, white and red", "Blue, red and white"],
+      "explanation": "These colours go back to the 1800s. The stripes lie flat, one above the other.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.09",
+      "difficulty": "kids",
+      "question": "How many red and white stripes are on the flag of the USA?",
+      "correct": "13",
+      "wrong": ["7", "10", "20"],
+      "explanation": "The 13 stripes stand for the first 13 colonies that became the USA.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.10",
+      "difficulty": "kids",
+      "question": "What colour is the big diamond shape on Brazil's flag?",
+      "correct": "Yellow",
+      "wrong": ["Red", "White", "Blue"],
+      "explanation": "Brazil's flag is green with a yellow diamond and a blue circle. The circle shows stars in the sky.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.11",
+      "difficulty": "kids",
+      "question": "What colours are the three stripes on Italy's flag?",
+      "correct": "Green, white and red",
+      "wrong": ["Red, white and blue", "Black, red and gold", "Blue, white and orange"],
+      "explanation": "The Italian flag has three upright stripes. People often call it the Tricolore, which means three colours.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.12",
+      "difficulty": "kids",
+      "question": "What is a pirate flag with a skull and crossbones called?",
+      "correct": "Jolly Roger",
+      "wrong": ["Black Pearl", "Red Baron", "Sea Wolf"],
+      "explanation": "Pirate ships flew the Jolly Roger to scare other ships. You can see it in many pirate stories and films.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.13",
+      "difficulty": "kids",
+      "question": "What does it usually mean when someone waves a white flag?",
+      "correct": "They want to stop fighting",
+      "wrong": ["They have won the game", "They are happy", "They need food"],
+      "explanation": "A white flag is a sign of peace or of giving up. It is understood all over the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.14",
+      "difficulty": "kids",
+      "question": "What does a black-and-white chequered flag mean at a car race?",
+      "correct": "The race is over",
+      "wrong": ["The race is starting", "Danger on the track", "Drivers must slow down"],
+      "explanation": "It is waved at the finish line as drivers cross it. Chequered means it has a pattern of squares, like a chessboard.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.15",
+      "difficulty": "kids",
+      "question": "What colour is the background of the flag of the United Nations?",
+      "correct": "Light blue",
+      "wrong": ["Green", "Red", "White"],
+      "explanation": "The flag shows a map of the world between two olive branches. The olive branches are a sign of peace.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.16",
+      "difficulty": "kids",
+      "question": "Which bird with an olive branch in its beak is a symbol of peace?",
+      "correct": "Dove",
+      "wrong": ["Eagle", "Owl", "Swan"],
+      "explanation": "This idea comes from an old story where a dove brought an olive branch back to a ship after a big flood.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.17",
+      "difficulty": "kids",
+      "question": "What is the name of the money used in the United Kingdom?",
+      "correct": "Pound",
+      "wrong": ["Euro", "Dollar", "Krone"],
+      "explanation": "The UK uses the pound sterling. One pound is divided into 100 pence.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.18",
+      "difficulty": "kids",
+      "question": "What is the name of the money used in Japan?",
+      "correct": "Yen",
+      "wrong": ["Won", "Yuan", "Dollar"],
+      "explanation": "The symbol for the yen looks like a letter Y with two lines across it: ¥.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.19",
+      "difficulty": "kids",
+      "question": "What is the name of the money used in Denmark?",
+      "correct": "Krone",
+      "wrong": ["Pound", "Franc", "Dollar"],
+      "explanation": "One krone is divided into 100 øre. Some Danish coins have a hole in the middle.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.20",
+      "difficulty": "kids",
+      "question": "What is the name of the money used in the USA?",
+      "correct": "Dollar",
+      "wrong": ["Pound", "Peso", "Franc"],
+      "explanation": "One dollar is divided into 100 cents. Canada and Australia have dollars too, but they are different money.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.21",
+      "difficulty": "kids",
+      "question": "Which make-believe animal is the national animal of Scotland?",
+      "correct": "Unicorn",
+      "wrong": ["Griffin", "Phoenix", "Centaur"],
+      "explanation": "The unicorn has been a Scottish symbol for hundreds of years. It is on the royal coat of arms of Scotland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.22",
+      "difficulty": "kids",
+      "question": "Which small green plant with three leaves is a symbol of Ireland?",
+      "correct": "Shamrock",
+      "wrong": ["Fern", "Ivy", "Holly"],
+      "explanation": "A shamrock is a young clover. People in Ireland wear it on St Patrick's Day, 17 March.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.23",
+      "difficulty": "kids",
+      "question": "Which animal that builds dams is a national symbol of Canada?",
+      "correct": "Beaver",
+      "wrong": ["Moose", "Otter", "Bear"],
+      "explanation": "Beavers cut down trees with their strong teeth. A beaver is on the Canadian five-cent coin.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.24",
+      "difficulty": "kids",
+      "question": "Which big cat is the national animal of India?",
+      "correct": "Tiger",
+      "wrong": ["Jaguar", "Leopard", "Cheetah"],
+      "explanation": "The Bengal tiger lives in forests and mangrove swamps in India. India is home to a large share of the world's wild tigers.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.25",
+      "difficulty": "kids",
+      "question": "Which large grey animal is the national animal of Thailand?",
+      "correct": "Elephant",
+      "wrong": ["Rhino", "Hippo", "Buffalo"],
+      "explanation": "Elephants have been important in Thai history and culture for a very long time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.26",
+      "difficulty": "kids",
+      "question": "Which white bird is the national bird of Denmark?",
+      "correct": "Swan",
+      "wrong": ["Stork", "Seagull", "Goose"],
+      "explanation": "Danes voted for the mute swan as their national bird. In Hans Christian Andersen's story, the ugly duckling grows up to be a swan.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.27",
+      "difficulty": "kids",
+      "question": "Which pink flowering tree is a symbol of Japan?",
+      "correct": "Cherry blossom",
+      "wrong": ["Magnolia", "Apple tree", "Rose bush"],
+      "explanation": "Every spring people in Japan have picnics under the cherry trees. The Japanese name is sakura.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.28",
+      "difficulty": "kids",
+      "question": "Which flower is a famous symbol of the Netherlands?",
+      "correct": "Tulip",
+      "wrong": ["Rose", "Daisy", "Sunflower"],
+      "explanation": "The Netherlands grows millions of tulips. The flowers first came to Europe from the Ottoman Empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.29",
+      "difficulty": "kids",
+      "question": "Which bird is the national bird of the USA?",
+      "correct": "Bald eagle",
+      "wrong": ["Snowy owl", "Brown pelican", "Peregrine falcon"],
+      "explanation": "The bald eagle is not really bald. It has white feathers on its head.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.30",
+      "difficulty": "kids",
+      "question": "Which prickly purple plant is a national symbol of Scotland?",
+      "correct": "Thistle",
+      "wrong": ["Daffodil", "Rose", "Clover"],
+      "explanation": "The thistle is on the badge of Scotland's rugby team. It is a tough, spiky plant that grows well on hills.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.31",
+      "difficulty": "kids",
+      "question": "Which flower is a symbol of England?",
+      "correct": "Rose",
+      "wrong": ["Daffodil", "Thistle", "Shamrock"],
+      "explanation": "Roses have been a symbol of England for hundreds of years. The red rose and the white rose were once the badges of two rival families.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.32",
+      "difficulty": "kids",
+      "question": "Which shape is on the flags of Denmark, Sweden, Norway, Finland and Iceland?",
+      "correct": "A cross",
+      "wrong": ["A star", "A circle", "A triangle"],
+      "explanation": "The cross sits closer to the flagpole than to the far edge of the flag. This shape is called the Nordic cross.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.33",
+      "difficulty": "kids",
+      "question": "Web addresses that end in .de belong to which country?",
+      "correct": "Germany",
+      "wrong": ["Denmark", "Netherlands", "Spain"],
+      "explanation": ".de is short for Deutschland, which is the German name for Germany.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.34",
+      "difficulty": "kids",
+      "question": "Which country has a white flag with a blue cross?",
+      "correct": "Finland",
+      "wrong": ["Sweden", "Greece", "Iceland"],
+      "explanation": "The blue cross on white is said to stand for Finland's lakes and snow. Many Finns call their country a land of a thousand lakes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.35",
+      "difficulty": "kids",
+      "question": "What colours are the Swedish flag?",
+      "correct": "Blue and yellow",
+      "wrong": ["Red and white", "Green and white", "Blue and white"],
+      "explanation": "The flag has a yellow cross on a blue background. Other Nordic flags use the same cross shape.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.36",
+      "difficulty": "kids",
+      "question": "The Union Jack is the flag of which country?",
+      "correct": "The United Kingdom",
+      "wrong": ["Ireland", "The USA", "Norway"],
+      "explanation": "It is red, white and blue. A jack is a small flag flown at the front of a ship.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.37",
+      "difficulty": "kids",
+      "question": "Which big cat is a symbol of England, shown on the England football badge?",
+      "correct": "Lion",
+      "wrong": ["Tiger", "Jaguar", "Cheetah"],
+      "explanation": "Lions have been on the English royal coat of arms for about 800 years. They stand for courage.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.38",
+      "difficulty": "kids",
+      "question": "Web addresses that end in .uk belong to which country?",
+      "correct": "The United Kingdom",
+      "wrong": ["Ukraine", "Uganda", "Uruguay"],
+      "explanation": ".uk is short for United Kingdom. Ukraine uses .ua, Uganda .ug and Uruguay .uy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.39",
+      "difficulty": "kids",
+      "question": "Which two colours are on the flag of Poland?",
+      "correct": "White and red",
+      "wrong": ["Blue and yellow", "Green and white", "Black and gold"],
+      "explanation": "The top stripe is white and the bottom stripe is red. The colours come from the Polish coat of arms, a white eagle on red.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.kids.40",
+      "difficulty": "kids",
+      "question": "Which colourful bird with a huge tail is the national bird of India?",
+      "correct": "Peacock",
+      "wrong": ["Parrot", "Flamingo", "Toucan"],
+      "explanation": "A male peacock spreads his long tail feathers like a fan to impress the females.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.01",
+      "difficulty": "mixed",
+      "question": "The Red Cross emblem is the flag of which country with its colours swapped?",
+      "correct": "Switzerland",
+      "wrong": ["Denmark", "Austria", "Poland"],
+      "explanation": "Henry Dunant, a Swiss man, helped start the Red Cross in Geneva in 1863. Its emblem honours Switzerland by swapping the colours of the Swiss flag.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.02",
+      "difficulty": "mixed",
+      "question": "Which Nordic country's flag is red with a blue cross edged in white?",
+      "correct": "Norway",
+      "wrong": ["Iceland", "Finland", "Sweden"],
+      "explanation": "Norway's flag has the red of Denmark's flag. Iceland's flag uses the same colours the other way round: blue with a red cross.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.03",
+      "difficulty": "mixed",
+      "question": "Which country's flag has a blue wheel in the middle of its white stripe?",
+      "correct": "India",
+      "wrong": ["Sri Lanka", "Nepal", "Thailand"],
+      "explanation": "The wheel is called the Ashoka Chakra, after an ancient Indian emperor. The other stripes are orange and green.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.04",
+      "difficulty": "mixed",
+      "question": "Which country's flag has a blue stripe on top and a yellow stripe below?",
+      "correct": "Ukraine",
+      "wrong": ["Poland", "Romania", "Greece"],
+      "explanation": "The blue is often said to stand for the sky and the yellow for fields of wheat.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.05",
+      "difficulty": "mixed",
+      "question": "Which country's money is called the złoty?",
+      "correct": "Poland",
+      "wrong": ["Hungary", "Czechia", "Romania"],
+      "explanation": "Złoty means \"golden\" in Polish. One złoty is divided into 100 groszy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.06",
+      "difficulty": "mixed",
+      "question": "What is the name of the money used in Mexico?",
+      "correct": "Peso",
+      "wrong": ["Real", "Lira", "Rupee"],
+      "explanation": "The peso is divided into 100 centavos. Several other countries in Latin America also have a peso.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.07",
+      "difficulty": "mixed",
+      "question": "What is the name of the money used in Switzerland?",
+      "correct": "Swiss franc",
+      "wrong": ["Swiss mark", "Swiss krone", "Swiss pound"],
+      "explanation": "Liechtenstein uses the Swiss franc too. The franc is divided into 100 rappen.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.08",
+      "difficulty": "mixed",
+      "question": "What is the name of the money used in Sweden?",
+      "correct": "Krona",
+      "wrong": ["Markka", "Rouble", "Złoty"],
+      "explanation": "One krona is divided into 100 öre. Denmark and Norway use the same word, spelled øre.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.09",
+      "difficulty": "mixed",
+      "question": "What is the name of France's national anthem?",
+      "correct": "La Marseillaise",
+      "wrong": ["La Vie en Rose", "Le Chant des Partisans", "Frère Jacques"],
+      "explanation": "The song was written in 1792. It is named after volunteers from Marseille who sang it as they marched to Paris.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.10",
+      "difficulty": "mixed",
+      "question": "What is the name of Canada's national anthem?",
+      "correct": "O Canada",
+      "wrong": ["The Maple Leaf Forever", "God Save Canada", "Land of the North"],
+      "explanation": "O Canada has both an English and a French version. The two versions do not mean exactly the same.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.11",
+      "difficulty": "mixed",
+      "question": "What is the name of Australia's national anthem?",
+      "correct": "Advance Australia Fair",
+      "wrong": ["Waltzing Matilda", "Click Go the Shears", "Down Under Forever"],
+      "explanation": "It replaced God Save the Queen as the national anthem in 1984. The song was first performed in 1878.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.12",
+      "difficulty": "mixed",
+      "question": "The Union Jack joins the crosses of England, Scotland and which other country?",
+      "correct": "Ireland",
+      "wrong": ["Wales", "France", "Denmark"],
+      "explanation": "St Patrick's red diagonal cross stands for Ireland. Wales is missing because it was counted as part of England when the first Union Flag was made.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which group of stars is on the flag of Australia?",
+      "correct": "The Southern Cross",
+      "wrong": ["Orion", "The Plough", "Cassiopeia"],
+      "explanation": "The Southern Cross can be seen from the southern half of the world. It is on the flag of New Zealand too.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.14",
+      "difficulty": "mixed",
+      "question": "Which country has the only national flag that does not have four sides?",
+      "correct": "Nepal",
+      "wrong": ["Bhutan", "Laos", "Cambodia"],
+      "explanation": "Nepal's flag is two triangles stacked on top of each other. It shows a moon and a sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.15",
+      "difficulty": "mixed",
+      "question": "Which yellow spring flower is a national symbol of Wales?",
+      "correct": "Daffodil",
+      "wrong": ["Tulip", "Primrose", "Sunflower"],
+      "explanation": "Welsh people wear daffodils on St David's Day, 1 March. The leek is another symbol of Wales.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.16",
+      "difficulty": "mixed",
+      "question": "Which musical instrument is a national symbol of Ireland?",
+      "correct": "Harp",
+      "wrong": ["Fiddle", "Bagpipes", "Accordion"],
+      "explanation": "The harp appears on Irish coins and on passports.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.17",
+      "difficulty": "mixed",
+      "question": "Which tree is in the middle of Lebanon's flag?",
+      "correct": "Cedar",
+      "wrong": ["Oak", "Palm", "Olive"],
+      "explanation": "The green cedar sits on a white band between two red stripes. Cedar wood was prized in ancient times by the Phoenicians and Egyptians.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.18",
+      "difficulty": "mixed",
+      "question": "Web addresses that end in .dk come from which country?",
+      "correct": "Denmark",
+      "wrong": ["Norway", "Sweden", "Iceland"],
+      "explanation": "DK is short for Danmark, the Danish name for Denmark.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.19",
+      "difficulty": "mixed",
+      "question": "The code CH, used on cars and web addresses, comes from the Latin name of which country?",
+      "correct": "Switzerland",
+      "wrong": ["Chile", "China", "Chad"],
+      "explanation": "CH stands for Confoederatio Helvetica, the Swiss Confederation. Latin avoids choosing between the four national languages.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.20",
+      "difficulty": "mixed",
+      "question": "On car stickers in Europe, which country uses the single letter A?",
+      "correct": "Austria",
+      "wrong": ["Albania", "Andorra", "Armenia"],
+      "explanation": "Car stickers are used when driving abroad. Germany's is D and Italy's is I.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.21",
+      "difficulty": "mixed",
+      "question": "What are the stripes of the Dutch flag, from top to bottom?",
+      "correct": "Red, white and blue",
+      "wrong": ["Blue, white and red", "White, blue and red", "Red, blue and white"],
+      "explanation": "Luxembourg has a very similar flag, but its blue is much lighter.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.22",
+      "difficulty": "mixed",
+      "question": "In the middle of Mexico's flag, an eagle stands on what?",
+      "correct": "A cactus",
+      "wrong": ["A pyramid", "A palm tree", "A mountain"],
+      "explanation": "An old story says the Aztecs built their capital where they saw an eagle on a cactus. That city later became Mexico City.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.23",
+      "difficulty": "mixed",
+      "question": "Which small mountain country has a white dragon on its flag?",
+      "correct": "Bhutan",
+      "wrong": ["Nepal", "Mongolia", "Laos"],
+      "explanation": "Bhutan's own name for itself means Land of the Thunder Dragon. The flag is yellow and orange.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.24",
+      "difficulty": "mixed",
+      "question": "Which country's red flag has a white crescent moon and a white star?",
+      "correct": "Turkey",
+      "wrong": ["Egypt", "Morocco", "Pakistan"],
+      "explanation": "The crescent and star are also on the flags of other countries, but Turkey's is red with both shapes in white.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.25",
+      "difficulty": "mixed",
+      "question": "Which country's flag has a red and blue circle in the middle and four black bars in the corners?",
+      "correct": "South Korea",
+      "wrong": ["Japan", "Thailand", "Vietnam"],
+      "explanation": "The red and blue circle is called the taegeuk. It shows two opposite forces in balance.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.26",
+      "difficulty": "mixed",
+      "question": "Which country's flag is red with one big yellow star and four small ones?",
+      "correct": "China",
+      "wrong": ["Vietnam", "Turkey", "Morocco"],
+      "explanation": "The five yellow stars are in the top left corner. The flag is often called the Five-starred Red Flag.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.27",
+      "difficulty": "mixed",
+      "question": "Which plant is a national symbol of New Zealand, seen on its sports shirts?",
+      "correct": "Silver fern",
+      "wrong": ["Gum leaf", "Palm leaf", "Flax"],
+      "explanation": "The underside of a silver fern leaf is pale and shines in the moonlight.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.28",
+      "difficulty": "mixed",
+      "question": "Which bird is an old symbol of France, often seen on its sports shirts?",
+      "correct": "Rooster",
+      "wrong": ["Eagle", "Swan", "Peacock"],
+      "explanation": "In Latin, gallus means rooster and Gallus means a person from Gaul, the old name for France.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.29",
+      "difficulty": "mixed",
+      "question": "What is the study of flags called?",
+      "correct": "Vexillology",
+      "wrong": ["Heraldry", "Numismatics", "Philately"],
+      "explanation": "Heraldry is the study of coats of arms, numismatics of coins and philately of stamps.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.30",
+      "difficulty": "mixed",
+      "question": "How many gold stars form a circle on the flag of Europe?",
+      "correct": "Twelve",
+      "wrong": ["Nine", "Fifteen", "Twenty"],
+      "explanation": "The flag was chosen in 1955. Twelve was picked as a sign of completeness, so the number does not change.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.31",
+      "difficulty": "mixed",
+      "question": "What is the name of the money used in India?",
+      "correct": "Rupee",
+      "wrong": ["Rand", "Baht", "Taka"],
+      "explanation": "Pakistan, Nepal and Sri Lanka have their own rupees too. The word comes from an old Sanskrit word linked to silver.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.32",
+      "difficulty": "mixed",
+      "question": "Web addresses that end in .nl belong to which country?",
+      "correct": "Netherlands",
+      "wrong": ["Norway", "Nigeria", "New Zealand"],
+      "explanation": "NL is short for Nederland, the Dutch name. Holland is only two of the country's twelve provinces.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.33",
+      "difficulty": "mixed",
+      "question": "Web addresses that end in .au belong to which country?",
+      "correct": "Australia",
+      "wrong": ["Austria", "Argentina", "Azerbaijan"],
+      "explanation": "AU is short for Australia. Austria uses .at, Argentina .ar and Azerbaijan .az.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.34",
+      "difficulty": "mixed",
+      "question": "The Japanese name for Japan, Nippon, means roughly what?",
+      "correct": "Origin of the sun",
+      "wrong": ["Land of cherries", "Island of fire", "Garden of peace"],
+      "explanation": "This is why Japan is called the Land of the Rising Sun. The red circle on its flag is the sun.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.35",
+      "difficulty": "mixed",
+      "question": "Italy's anthem is often called \"Fratelli d'Italia\". What does that mean in English?",
+      "correct": "Brothers of Italy",
+      "wrong": ["Sons of Rome", "Heroes of Italy", "Friends of Italy"],
+      "explanation": "The words were written in 1847 by Goffredo Mameli, a young poet who was only 20 years old.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.36",
+      "difficulty": "mixed",
+      "question": "Which tree is often called Denmark's national tree?",
+      "correct": "Beech",
+      "wrong": ["Oak", "Birch", "Pine"],
+      "explanation": "Beech forests are common in Denmark, and the leaves turn bright gold in autumn.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.37",
+      "difficulty": "mixed",
+      "question": "Ghana's flag has a star in the middle of its gold stripe. What colour is the star?",
+      "correct": "Black",
+      "wrong": ["Green", "Red", "White"],
+      "explanation": "The black star stands for African freedom. Ghana's football team is nicknamed the Black Stars.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.38",
+      "difficulty": "mixed",
+      "question": "Which country has a flag with three upright stripes: green, white and orange, from left to right?",
+      "correct": "Ireland",
+      "wrong": ["Italy", "India", "Hungary"],
+      "explanation": "The Ivory Coast has the same colours in the opposite order: orange, white and green.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.39",
+      "difficulty": "mixed",
+      "question": "Which Caribbean country has a flag with a gold diagonal cross and green and black triangles?",
+      "correct": "Jamaica",
+      "wrong": ["Trinidad and Tobago", "Bahamas", "Barbados"],
+      "explanation": "The gold stands for sunlight, the green for hope and the land, and the black for the strength of the people.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.mixed.40",
+      "difficulty": "mixed",
+      "question": "Which antelope is the national animal of South Africa?",
+      "correct": "Springbok",
+      "wrong": ["Kudu", "Impala", "Wildebeest"],
+      "explanation": "The springbok can leap high into the air. South Africa's national rugby team is named after it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.01",
+      "difficulty": "expert",
+      "question": "According to legend, the Danish flag fell from the sky during a battle in which country?",
+      "correct": "Estonia",
+      "wrong": ["Latvia", "Sweden", "Finland"],
+      "explanation": "The story says the Danes were losing in 1219 when a red flag with a white cross fell from the sky. They won, and the flag became Denmark's.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.02",
+      "difficulty": "expert",
+      "question": "The pound sterling began as the value of one pound in weight of which metal?",
+      "correct": "Silver",
+      "wrong": ["Gold", "Copper", "Iron"],
+      "explanation": "Long ago, 240 silver pennies were made from one pound of silver. The £ sign comes from libra, the Latin word for pound.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.03",
+      "difficulty": "expert",
+      "question": "The Danish krone, Swedish krona and Czech koruna all have names that mean what?",
+      "correct": "Crown",
+      "wrong": ["Coin", "King", "Gold"],
+      "explanation": "All three words come from the Latin word corona. Coins with crowns on them were used in many old kingdoms.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.04",
+      "difficulty": "expert",
+      "question": "South Africa's rand is named after a ridge famous for mining which material?",
+      "correct": "Gold",
+      "wrong": ["Diamonds", "Silver", "Coal"],
+      "explanation": "The Witwatersrand is a ridge near Johannesburg. Its name means ridge of white waters in Afrikaans.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.05",
+      "difficulty": "expert",
+      "question": "Which country's money is called the forint?",
+      "correct": "Hungary",
+      "wrong": ["Poland", "Romania", "Czechia"],
+      "explanation": "The forint is named after the florin, a gold coin from the city of Florence in Italy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.06",
+      "difficulty": "expert",
+      "question": "Which country's money is called the baht?",
+      "correct": "Thailand",
+      "wrong": ["Vietnam", "Cambodia", "Malaysia"],
+      "explanation": "The baht began as a unit of weight for silver and gold. One baht is divided into 100 satang.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.07",
+      "difficulty": "expert",
+      "question": "Which country's money is called the real?",
+      "correct": "Brazil",
+      "wrong": ["Argentina", "Colombia", "Chile"],
+      "explanation": "The plural in Portuguese is reais. An older Brazilian money called the real, plural réis, was used until 1942.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.08",
+      "difficulty": "expert",
+      "question": "Which tiny Pacific country uses web addresses ending in .tv?",
+      "correct": "Tuvalu",
+      "wrong": ["Tonga", "Fiji", "Samoa"],
+      "explanation": "TV are the first letters of Tuvalu. The country has earned money by selling .tv web addresses to companies around the world.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.09",
+      "difficulty": "expert",
+      "question": "Which country uses the web domain .za?",
+      "correct": "South Africa",
+      "wrong": ["Zambia", "Zimbabwe", "Croatia"],
+      "explanation": "ZA comes from Zuid-Afrika, the Dutch name. Zambia uses .zm and Zimbabwe uses .zw.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.10",
+      "difficulty": "expert",
+      "question": "On European car stickers, the single letter E belongs to which country?",
+      "correct": "Spain",
+      "wrong": ["Estonia", "Ireland", "England"],
+      "explanation": "E is short for España, the Spanish name of the country.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.11",
+      "difficulty": "expert",
+      "question": "In which country is the flag flown with the red stripe on top in wartime?",
+      "correct": "The Philippines",
+      "wrong": ["Thailand", "Cuba", "Malaysia"],
+      "explanation": "In peacetime the blue stripe is on top. Turning the flag upside down is a sign that the country is at war.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.12",
+      "difficulty": "expert",
+      "question": "How many stripes does the Greek flag have?",
+      "correct": "Nine",
+      "wrong": ["Five", "Seven", "Eleven"],
+      "explanation": "Five are blue and four are white. Some people say the nine stripes match the nine syllables of the Greek motto \"Freedom or death\".",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.13",
+      "difficulty": "expert",
+      "question": "What words are written on the band across the blue circle on Brazil's flag?",
+      "correct": "Order and Progress",
+      "wrong": ["Peace and Freedom", "Unity and Honour", "God and Country"],
+      "explanation": "The words are written in Portuguese: Ordem e Progresso. The stars inside the circle show the sky over Rio de Janeiro.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.14",
+      "difficulty": "expert",
+      "question": "Which three colours are the stripes of Ethiopia's flag, copied by many African countries?",
+      "correct": "Green, yellow and red",
+      "wrong": ["Black, red and green", "Blue, white and red", "Red, white and black"],
+      "explanation": "Ethiopia was never ruled by a European power for long, so its colours became a symbol of African freedom. Ghana, Senegal and others use them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.15",
+      "difficulty": "expert",
+      "question": "The early Dutch flag had orange, white and blue stripes. What colour replaced the orange?",
+      "correct": "Red",
+      "wrong": ["Green", "Black", "Yellow"],
+      "explanation": "One common explanation is that orange dye faded quickly. Orange is the colour of the Dutch royal family, the House of Orange.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.16",
+      "difficulty": "expert",
+      "question": "Which African country's flag has red and white stripes and a white star in a blue square, like the US flag?",
+      "correct": "Liberia",
+      "wrong": ["Togo", "Ghana", "Senegal"],
+      "explanation": "Liberia was set up in the 1820s as a home for freed Black Americans. Its flag has 11 red and white stripes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.17",
+      "difficulty": "expert",
+      "question": "Which Caribbean country's flag has a purple parrot on it?",
+      "correct": "Dominica",
+      "wrong": ["Jamaica", "Cuba", "Haiti"],
+      "explanation": "The parrot is the Sisserou, which is also the national bird. Purple is very rare on national flags.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.18",
+      "difficulty": "expert",
+      "question": "Which country's flag is dark green with a white stripe on the left and a white crescent and star?",
+      "correct": "Pakistan",
+      "wrong": ["Algeria", "Bangladesh", "Mauritania"],
+      "explanation": "The flag was adopted in 1947, when Pakistan became independent. The white stripe stands for the country's religious minorities.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.19",
+      "difficulty": "expert",
+      "question": "Which country's flag is red with a black double-headed eagle?",
+      "correct": "Albania",
+      "wrong": ["Austria", "Egypt", "Poland"],
+      "explanation": "Albanians call their country Shqipëria, which is often explained as the land of the eagles.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.20",
+      "difficulty": "expert",
+      "question": "The two pillars on Spain's coat of arms are named after which hero of Greek myth?",
+      "correct": "Hercules",
+      "wrong": ["Achilles", "Odysseus", "Perseus"],
+      "explanation": "The Pillars of Hercules were the rocks on each side of the Strait of Gibraltar, at the end of the known world for ancient sailors.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.21",
+      "difficulty": "expert",
+      "question": "Which animal, together with a tree and a horn of plenty, is on the coat of arms of Peru?",
+      "correct": "Vicuña",
+      "wrong": ["Llama", "Alpaca", "Condor"],
+      "explanation": "The vicuña is a wild, slim relative of the llama. It lives high in the Andes and has very fine wool.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.22",
+      "difficulty": "expert",
+      "question": "Which swan is the national bird of Finland?",
+      "correct": "Whooper swan",
+      "wrong": ["Mute swan", "Black swan", "Bewick's swan"],
+      "explanation": "The whooper swan breeds in Finland's lakes and wetlands. Its call is loud, like a trumpet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.23",
+      "difficulty": "expert",
+      "question": "What is the name of Finland's national anthem?",
+      "correct": "Maamme",
+      "wrong": ["Finlandia", "Karelia", "Suomi Song"],
+      "explanation": "Maamme means Our Land. Its tune is also used by Estonia's anthem. Finlandia is a famous piece by Sibelius but not the anthem.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.24",
+      "difficulty": "expert",
+      "question": "What is the name of Germany's national anthem?",
+      "correct": "Deutschlandlied",
+      "wrong": ["Die Wacht am Rhein", "Ode to Joy", "Die Lorelei"],
+      "explanation": "The tune was written by Joseph Haydn in 1797. Only the third verse is the official anthem.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.25",
+      "difficulty": "expert",
+      "question": "Wales's national anthem is Hen Wlad Fy Nhadau. What is its English title?",
+      "correct": "Land of My Fathers",
+      "wrong": ["Land of Song", "Men of Harlech", "Valley of Dragons"],
+      "explanation": "It was written in 1856 and is often sung at rugby matches in Wales.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.26",
+      "difficulty": "expert",
+      "question": "Which Asian country's flag has a golden Soyombo symbol on the left?",
+      "correct": "Mongolia",
+      "wrong": ["Kazakhstan", "Bhutan", "Kyrgyzstan"],
+      "explanation": "The Soyombo is an old Mongolian symbol made of fire, sun, moon and other shapes. The flag has red, blue and red stripes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.27",
+      "difficulty": "expert",
+      "question": "Which two animals hold up the royal coat of arms of the United Kingdom?",
+      "correct": "A lion and a unicorn",
+      "wrong": ["A lion and a dragon", "An eagle and a bear", "A horse and a stag"],
+      "explanation": "The lion stands for England and the unicorn for Scotland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.28",
+      "difficulty": "expert",
+      "question": "Which yellow-flowered plant is Australia's national floral emblem?",
+      "correct": "Golden wattle",
+      "wrong": ["Kangaroo paw", "Waratah", "Banksia"],
+      "explanation": "The golden wattle is a type of acacia. Australians celebrate National Wattle Day on 1 September.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.29",
+      "difficulty": "expert",
+      "question": "Besides Switzerland, which tiny state has a square national flag?",
+      "correct": "Vatican City",
+      "wrong": ["Monaco", "Liechtenstein", "San Marino"],
+      "explanation": "The Vatican's flag is yellow and white. Switzerland and the Vatican are the only countries with square flags.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.30",
+      "difficulty": "expert",
+      "question": "Which South American country's flag has a white star on a blue square, with one white and one red stripe?",
+      "correct": "Chile",
+      "wrong": ["Uruguay", "Paraguay", "Venezuela"],
+      "explanation": "The star is said to stand for the country's path to progress. Chile's flag is often called La Estrella Solitaria, the lone star.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.31",
+      "difficulty": "expert",
+      "question": "Which country's flag shows a famous temple?",
+      "correct": "Cambodia",
+      "wrong": ["Thailand", "Laos", "Myanmar"],
+      "explanation": "The temple is Angkor Wat, a huge stone temple built about 900 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.32",
+      "difficulty": "expert",
+      "question": "What was Spain's money before it changed to the euro?",
+      "correct": "Peseta",
+      "wrong": ["Escudo", "Lira", "Drachma"],
+      "explanation": "The escudo was Portugal's money, the lira Italy's and the drachma Greece's.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.33",
+      "difficulty": "expert",
+      "question": "Which three colours are called the pan-Slavic colours?",
+      "correct": "Red, white and blue",
+      "wrong": ["Red, yellow and green", "Black, red and gold", "Green, white and red"],
+      "explanation": "Many Slavic countries, such as Russia, Slovakia and Slovenia, use these colours on their flags.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.34",
+      "difficulty": "expert",
+      "question": "Four lions standing back to back are the national emblem of which country?",
+      "correct": "India",
+      "wrong": ["Sri Lanka", "Thailand", "Egypt"],
+      "explanation": "The emblem comes from a pillar built by Emperor Ashoka about 2,300 years ago.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.35",
+      "difficulty": "expert",
+      "question": "Which weapon does the lion hold in the coat of arms of Norway?",
+      "correct": "An axe",
+      "wrong": ["A sword", "A spear", "A bow"],
+      "explanation": "The axe is linked to St Olaf, a Norwegian king. The lion is a golden lion on a red shield.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.36",
+      "difficulty": "expert",
+      "question": "Legend says the thistle became Scotland's emblem after it warned Scots of an attack by whom?",
+      "correct": "Norse raiders",
+      "wrong": ["Romans", "English knights", "Normans"],
+      "explanation": "The story says the raiders trod on thistles in the dark and cried out, so the Scots woke up in time.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.37",
+      "difficulty": "expert",
+      "question": "How many points does the large star under the Union Jack on Australia's flag have?",
+      "correct": "Seven",
+      "wrong": ["Five", "Six", "Eight"],
+      "explanation": "Six points stand for the original states and the seventh for the territories.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.38",
+      "difficulty": "expert",
+      "question": "What is the official two-letter ISO country code of the United Kingdom?",
+      "correct": "GB",
+      "wrong": ["UK", "BR", "UN"],
+      "explanation": "GB comes from Great Britain. The web domain for the country is .uk.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.39",
+      "difficulty": "expert",
+      "question": "Which country's flag is sky blue with a golden sun and a soaring eagle?",
+      "correct": "Kazakhstan",
+      "wrong": ["Kyrgyzstan", "Uzbekistan", "Turkmenistan"],
+      "explanation": "A golden pattern in traditional Kazakh style runs down the side next to the pole. The light blue is often said to stand for the sky.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.flags-symbols.expert.40",
+      "difficulty": "expert",
+      "question": "Italy's green, white and red flag was inspired by the flag of which country?",
+      "correct": "France",
+      "wrong": ["Germany", "Hungary", "Spain"],
+      "explanation": "French armies came to Italy in the 1790s. Italians then chose a tricolour of their own.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}

@@ -1,0 +1,1206 @@
+{
+  "category": "geography",
+  "subcategory": "countries-capitals",
+  "questions": [
+    {
+      "id": "geography.countries-capitals.kids.01",
+      "difficulty": "kids",
+      "question": "What is the capital of France?",
+      "correct": "Paris",
+      "wrong": ["London", "Rome", "Madrid"],
+      "explanation": "Paris lies on the River Seine. The Eiffel Tower, which stands in the city, was finished in 1889.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.02",
+      "difficulty": "kids",
+      "question": "What is the capital of Denmark?",
+      "correct": "Copenhagen",
+      "wrong": ["Aarhus", "Odense", "Stockholm"],
+      "explanation": "Copenhagen lies on the islands of Zealand and Amager. The Little Mermaid statue sits by its harbour.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.03",
+      "difficulty": "kids",
+      "question": "What is the capital of Italy?",
+      "correct": "Rome",
+      "wrong": ["Milan", "Venice", "Naples"],
+      "explanation": "Rome has a tiny country inside it. It is called Vatican City.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.04",
+      "difficulty": "kids",
+      "question": "What is the capital of Japan?",
+      "correct": "Tokyo",
+      "wrong": ["Kyoto", "Osaka", "Seoul"],
+      "explanation": "Before Tokyo, Kyoto was the capital of Japan for more than a thousand years.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.05",
+      "difficulty": "kids",
+      "question": "What is the capital of Spain?",
+      "correct": "Madrid",
+      "wrong": ["Barcelona", "Seville", "Lisbon"],
+      "explanation": "Madrid lies in the middle of Spain, far from the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.06",
+      "difficulty": "kids",
+      "question": "What is the capital of Germany?",
+      "correct": "Berlin",
+      "wrong": ["Munich", "Hamburg", "Vienna"],
+      "explanation": "The Berlin Wall split the city in two from 1961 until it fell in 1989.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.07",
+      "difficulty": "kids",
+      "question": "What is the capital of Norway?",
+      "correct": "Oslo",
+      "wrong": ["Bergen", "Stavanger", "Stockholm"],
+      "explanation": "Oslo lies at the end of a long fjord, the Oslofjord.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.08",
+      "difficulty": "kids",
+      "question": "What is the capital of Sweden?",
+      "correct": "Stockholm",
+      "wrong": ["Gothenburg", "Malmö", "Oslo"],
+      "explanation": "Stockholm is spread over many islands, where Lake Mälaren meets the Baltic Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.09",
+      "difficulty": "kids",
+      "question": "What is the capital of England and of the United Kingdom?",
+      "correct": "London",
+      "wrong": ["Manchester", "Edinburgh", "Dublin"],
+      "explanation": "London lies on the River Thames. The famous bell Big Ben hangs in the clock tower of the Houses of Parliament.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.10",
+      "difficulty": "kids",
+      "question": "What is the capital of the United States?",
+      "correct": "Washington, D.C.",
+      "wrong": ["New York", "Los Angeles", "Chicago"],
+      "explanation": "The city is named after George Washington, the first president of the United States.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.11",
+      "difficulty": "kids",
+      "question": "What is the capital of China?",
+      "correct": "Beijing",
+      "wrong": ["Shanghai", "Hong Kong", "Tokyo"],
+      "explanation": "The Forbidden City, a huge palace where emperors once lived, stands in the middle of Beijing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.12",
+      "difficulty": "kids",
+      "question": "What is the capital of Greece?",
+      "correct": "Athens",
+      "wrong": ["Thessaloniki", "Patras", "Sparta"],
+      "explanation": "Athens is one of the oldest cities in Europe. The ancient Parthenon temple stands above it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.13",
+      "difficulty": "kids",
+      "question": "What is the capital of Ireland?",
+      "correct": "Dublin",
+      "wrong": ["Cork", "Galway", "Belfast"],
+      "explanation": "Dublin lies on the River Liffey, on the east coast of Ireland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.14",
+      "difficulty": "kids",
+      "question": "What is the capital of Russia?",
+      "correct": "Moscow",
+      "wrong": ["Saint Petersburg", "Prague", "Warsaw"],
+      "explanation": "The Kremlin and Red Square are in the middle of Moscow.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.15",
+      "difficulty": "kids",
+      "question": "What is the capital of India?",
+      "correct": "New Delhi",
+      "wrong": ["Mumbai", "Kolkata", "Bangalore"],
+      "explanation": "New Delhi was built in the early 20th century, next to the much older city of Delhi.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.16",
+      "difficulty": "kids",
+      "question": "What is the capital of Portugal?",
+      "correct": "Lisbon",
+      "wrong": ["Porto", "Faro", "Madrid"],
+      "explanation": "Lisbon lies where the River Tagus runs out into the Atlantic Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.17",
+      "difficulty": "kids",
+      "question": "What is the capital of Poland?",
+      "correct": "Warsaw",
+      "wrong": ["Krakow", "Gdansk", "Prague"],
+      "explanation": "Warsaw lies on the River Vistula, the longest river in Poland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.18",
+      "difficulty": "kids",
+      "question": "What is the capital of Austria?",
+      "correct": "Vienna",
+      "wrong": ["Salzburg", "Innsbruck", "Graz"],
+      "explanation": "Vienna lies on the Danube. Mozart and Beethoven both lived and worked there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.19",
+      "difficulty": "kids",
+      "question": "What is the capital of Thailand?",
+      "correct": "Bangkok",
+      "wrong": ["Phuket", "Hanoi", "Manila"],
+      "explanation": "Thai people call their capital Krung Thep, which means \"city of angels\".",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.20",
+      "difficulty": "kids",
+      "question": "What is the capital of Iceland?",
+      "correct": "Reykjavik",
+      "wrong": ["Akureyri", "Oslo", "Helsinki"],
+      "explanation": "Many homes in Reykjavik are heated with hot water that comes from deep underground.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.21",
+      "difficulty": "kids",
+      "question": "What is the capital of Belgium?",
+      "correct": "Brussels",
+      "wrong": ["Antwerp", "Bruges", "Amsterdam"],
+      "explanation": "Many offices of the European Union are in Brussels.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.22",
+      "difficulty": "kids",
+      "question": "What is the capital of Hungary?",
+      "correct": "Budapest",
+      "wrong": ["Vienna", "Prague", "Bucharest"],
+      "explanation": "The Danube runs through the city. Buda is on one bank and Pest on the other.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.23",
+      "difficulty": "kids",
+      "question": "What is the capital of Scotland?",
+      "correct": "Edinburgh",
+      "wrong": ["Glasgow", "Aberdeen", "Cardiff"],
+      "explanation": "Edinburgh has a big castle on a hill made of old volcanic rock.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.24",
+      "difficulty": "kids",
+      "question": "What is the capital of Wales?",
+      "correct": "Cardiff",
+      "wrong": ["Swansea", "Newport", "Belfast"],
+      "explanation": "In Wales people speak English, and many also speak the Welsh language.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.25",
+      "difficulty": "kids",
+      "question": "What is the capital of South Korea?",
+      "correct": "Seoul",
+      "wrong": ["Busan", "Osaka", "Beijing"],
+      "explanation": "Seoul lies on the Han River, with mountains all around the city.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.26",
+      "difficulty": "kids",
+      "question": "What is the capital of Canada?",
+      "correct": "Ottawa",
+      "wrong": ["Toronto", "Vancouver", "Montreal"],
+      "explanation": "Ottawa is in the province of Ontario, on a river that forms the border with the province of Quebec.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.27",
+      "difficulty": "kids",
+      "question": "What is the capital of Finland?",
+      "correct": "Helsinki",
+      "wrong": ["Turku", "Tampere", "Tallinn"],
+      "explanation": "Helsinki lies on the Gulf of Finland, on the Baltic Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.28",
+      "difficulty": "kids",
+      "question": "What is the capital of Australia?",
+      "correct": "Canberra",
+      "wrong": ["Sydney", "Melbourne", "Perth"],
+      "explanation": "Canberra was built as a compromise, because Sydney and Melbourne both wanted to be the capital.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.29",
+      "difficulty": "kids",
+      "question": "What is the capital of Cuba?",
+      "correct": "Havana",
+      "wrong": ["Kingston", "Nassau", "San Juan"],
+      "explanation": "Cuba is an island in the Caribbean Sea. Havana lies on its north coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.30",
+      "difficulty": "kids",
+      "question": "On which continent is Brazil?",
+      "correct": "South America",
+      "wrong": ["North America", "Africa", "Asia"],
+      "explanation": "Brazil has most of the Amazon rainforest, the biggest rainforest on Earth.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.31",
+      "difficulty": "kids",
+      "question": "On which continent is Kenya?",
+      "correct": "Africa",
+      "wrong": ["Asia", "South America", "Europe"],
+      "explanation": "Kenya is known for safari parks, where people can see lions, elephants and giraffes.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.32",
+      "difficulty": "kids",
+      "question": "On which continent is Japan?",
+      "correct": "Asia",
+      "wrong": ["Europe", "Africa", "South America"],
+      "explanation": "Japan is a group of islands off the east coast of Asia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.33",
+      "difficulty": "kids",
+      "question": "On which continent is Canada?",
+      "correct": "North America",
+      "wrong": ["South America", "Europe", "Asia"],
+      "explanation": "Canada has coasts on three oceans: the Atlantic, the Pacific and the Arctic.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.34",
+      "difficulty": "kids",
+      "question": "Which country has a land border with Jutland, the part of Denmark on the mainland?",
+      "correct": "Germany",
+      "wrong": ["Sweden", "Norway", "Netherlands"],
+      "explanation": "Jutland is the only part of Denmark that is joined to the rest of the European mainland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.35",
+      "difficulty": "kids",
+      "question": "Which country is Portugal's only land neighbour?",
+      "correct": "Spain",
+      "wrong": ["France", "Italy", "Morocco"],
+      "explanation": "Portugal's other border is the Atlantic Ocean, all the way along its west and south coasts.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.36",
+      "difficulty": "kids",
+      "question": "Which country lies across the Øresund strait from Copenhagen?",
+      "correct": "Sweden",
+      "wrong": ["Norway", "Germany", "Finland"],
+      "explanation": "Since 2000, a long bridge and tunnel have joined Denmark and Sweden across the Øresund.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.37",
+      "difficulty": "kids",
+      "question": "Which big country lies directly north of the United States?",
+      "correct": "Canada",
+      "wrong": ["Mexico", "Cuba", "Brazil"],
+      "explanation": "Canada has two main languages: English and French.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.38",
+      "difficulty": "kids",
+      "question": "What is the capital of Argentina?",
+      "correct": "Buenos Aires",
+      "wrong": ["Santiago", "Lima", "Montevideo"],
+      "explanation": "Buenos Aires lies on the Río de la Plata, a very wide river that runs out into the Atlantic Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.39",
+      "difficulty": "kids",
+      "question": "What is the capital of the Czech Republic?",
+      "correct": "Prague",
+      "wrong": ["Brno", "Vienna", "Berlin"],
+      "explanation": "Prague lies on the River Vltava and has a famous old astronomical clock.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.kids.40",
+      "difficulty": "kids",
+      "question": "What is the capital of Ukraine?",
+      "correct": "Kyiv",
+      "wrong": ["Kharkiv", "Odesa", "Lviv"],
+      "explanation": "Kyiv lies on the Dnieper river, one of the big rivers of Europe.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.01",
+      "difficulty": "mixed",
+      "question": "What is the capital of Kenya?",
+      "correct": "Nairobi",
+      "wrong": ["Mombasa", "Kampala", "Addis Ababa"],
+      "explanation": "Nairobi National Park lies right next to the city, so lions and giraffes can be seen with tall buildings behind them.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.02",
+      "difficulty": "mixed",
+      "question": "What is the capital of Turkey?",
+      "correct": "Ankara",
+      "wrong": ["Istanbul", "Izmir", "Antalya"],
+      "explanation": "Ankara became the capital in 1923, when Turkey became a republic. Istanbul is better known, but it is not the capital.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.03",
+      "difficulty": "mixed",
+      "question": "What is the capital of Peru?",
+      "correct": "Lima",
+      "wrong": ["Cusco", "Quito", "Bogotá"],
+      "explanation": "Lima lies on the Pacific coast. Cusco was the capital of the Inca empire.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.04",
+      "difficulty": "mixed",
+      "question": "What is the capital of Vietnam?",
+      "correct": "Hanoi",
+      "wrong": ["Ho Chi Minh City", "Da Nang", "Bangkok"],
+      "explanation": "Hanoi lies on the Red River in the north of Vietnam.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.05",
+      "difficulty": "mixed",
+      "question": "What is the capital of Colombia?",
+      "correct": "Bogotá",
+      "wrong": ["Medellín", "Cali", "Caracas"],
+      "explanation": "Bogotá lies high up in the Andes mountains, about 2,600 metres above sea level.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.06",
+      "difficulty": "mixed",
+      "question": "What is the capital of Saudi Arabia?",
+      "correct": "Riyadh",
+      "wrong": ["Jeddah", "Mecca", "Dubai"],
+      "explanation": "Riyadh lies in the dry middle of the country, far from the coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.07",
+      "difficulty": "mixed",
+      "question": "Rabat is the capital of which country?",
+      "correct": "Morocco",
+      "wrong": ["Tunisia", "Algeria", "Libya"],
+      "explanation": "Rabat is on the Atlantic coast. Many people think first of Casablanca or Marrakesh, but neither is the capital.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.08",
+      "difficulty": "mixed",
+      "question": "Tallinn is the capital of which country?",
+      "correct": "Estonia",
+      "wrong": ["Latvia", "Lithuania", "Finland"],
+      "explanation": "Tallinn lies on the Gulf of Finland, only a short ferry trip from Helsinki.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.09",
+      "difficulty": "mixed",
+      "question": "What is the capital of Greenland?",
+      "correct": "Nuuk",
+      "wrong": ["Reykjavik", "Tórshavn", "Ilulissat"],
+      "explanation": "Nuuk lies on the south-west coast of Greenland, beside a long fjord.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.10",
+      "difficulty": "mixed",
+      "question": "Kingston is the capital of which Caribbean island country?",
+      "correct": "Jamaica",
+      "wrong": ["Cuba", "Barbados", "Haiti"],
+      "explanation": "Jamaica lies in the Caribbean Sea, south of Cuba.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.11",
+      "difficulty": "mixed",
+      "question": "Which of these South American countries has no coast?",
+      "correct": "Paraguay",
+      "wrong": ["Peru", "Chile", "Ecuador"],
+      "explanation": "Bolivia is the only other country in South America without a coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.12",
+      "difficulty": "mixed",
+      "question": "Which country lies directly south of Kenya?",
+      "correct": "Tanzania",
+      "wrong": ["Ethiopia", "Somalia", "Uganda"],
+      "explanation": "Mount Kilimanjaro stands in Tanzania, close to the border with Kenya.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.13",
+      "difficulty": "mixed",
+      "question": "Which country shares the Caribbean island of Hispaniola with Haiti?",
+      "correct": "Dominican Republic",
+      "wrong": ["Cuba", "Jamaica", "Trinidad and Tobago"],
+      "explanation": "Haiti is in the west of the island and the Dominican Republic in the east.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.14",
+      "difficulty": "mixed",
+      "question": "Kathmandu is the capital of which country?",
+      "correct": "Nepal",
+      "wrong": ["Bhutan", "Laos", "Cambodia"],
+      "explanation": "Nepal lies between India and China, in the Himalayas. Mount Everest stands on its border with China.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.15",
+      "difficulty": "mixed",
+      "question": "Abu Dhabi is the capital of which country?",
+      "correct": "United Arab Emirates",
+      "wrong": ["Saudi Arabia", "Kuwait", "Bahrain"],
+      "explanation": "Dubai is the best-known city in the country, but Abu Dhabi is the capital.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.16",
+      "difficulty": "mixed",
+      "question": "What is the capital of Ghana?",
+      "correct": "Accra",
+      "wrong": ["Lagos", "Kumasi", "Dakar"],
+      "explanation": "Accra lies on the Gulf of Guinea, on the coast of West Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.17",
+      "difficulty": "mixed",
+      "question": "What is the capital of Nigeria?",
+      "correct": "Abuja",
+      "wrong": ["Lagos", "Kano", "Accra"],
+      "explanation": "Abuja was built in the middle of the country. It replaced the coastal city of Lagos as the capital in 1991.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.18",
+      "difficulty": "mixed",
+      "question": "What is the capital of Brazil?",
+      "correct": "Brasília",
+      "wrong": ["Rio de Janeiro", "São Paulo", "Salvador"],
+      "explanation": "Brasília was built from nothing in the 1950s and became the capital in 1960.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.19",
+      "difficulty": "mixed",
+      "question": "Addis Ababa is the capital of which African country?",
+      "correct": "Ethiopia",
+      "wrong": ["Kenya", "Sudan", "Somalia"],
+      "explanation": "Addis Ababa lies high in the mountains. The African Union has its headquarters there.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.20",
+      "difficulty": "mixed",
+      "question": "What is the capital of Pakistan?",
+      "correct": "Islamabad",
+      "wrong": ["Karachi", "Lahore", "Delhi"],
+      "explanation": "Islamabad was planned and built in the 1960s, near green hills in the north of the country.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.21",
+      "difficulty": "mixed",
+      "question": "What is the capital of the Philippines?",
+      "correct": "Manila",
+      "wrong": ["Cebu", "Davao", "Bangkok"],
+      "explanation": "The Philippines has more than 7,000 islands. Manila is on Luzon, the largest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.22",
+      "difficulty": "mixed",
+      "question": "What is the capital of Romania?",
+      "correct": "Bucharest",
+      "wrong": ["Sofia", "Budapest", "Belgrade"],
+      "explanation": "Bucharest lies in the south of Romania, south of the Carpathian Mountains.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.23",
+      "difficulty": "mixed",
+      "question": "What is the capital of Croatia?",
+      "correct": "Zagreb",
+      "wrong": ["Split", "Ljubljana", "Sarajevo"],
+      "explanation": "Zagreb lies inland, away from the Adriatic coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.24",
+      "difficulty": "mixed",
+      "question": "What is the capital of Slovakia?",
+      "correct": "Bratislava",
+      "wrong": ["Prague", "Budapest", "Vienna"],
+      "explanation": "Bratislava lies on the Danube, very close to the borders with Austria and Hungary.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.25",
+      "difficulty": "mixed",
+      "question": "What is the capital of Uruguay?",
+      "correct": "Montevideo",
+      "wrong": ["Buenos Aires", "Asunción", "Santiago"],
+      "explanation": "Montevideo lies on the same wide river estuary as Buenos Aires, the Río de la Plata.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.26",
+      "difficulty": "mixed",
+      "question": "Madagascar is a big island off the east coast of which continent?",
+      "correct": "Africa",
+      "wrong": ["Asia", "Europe", "South America"],
+      "explanation": "Many animals on Madagascar, such as lemurs, live nowhere else in the wild.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.27",
+      "difficulty": "mixed",
+      "question": "Fiji is a country of islands in which part of the world?",
+      "correct": "Oceania",
+      "wrong": ["Asia", "Africa", "South America"],
+      "explanation": "Oceania includes Australia, New Zealand and thousands of islands in the Pacific Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.28",
+      "difficulty": "mixed",
+      "question": "Which of these countries is in South America?",
+      "correct": "Chile",
+      "wrong": ["Honduras", "Cuba", "Haiti"],
+      "explanation": "Chile is a very long, thin country between the Andes mountains and the Pacific Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.29",
+      "difficulty": "mixed",
+      "question": "Which of these countries is in Central America?",
+      "correct": "Costa Rica",
+      "wrong": ["Peru", "Ecuador", "Venezuela"],
+      "explanation": "Costa Rica has a coast on both the Pacific Ocean and the Caribbean Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.30",
+      "difficulty": "mixed",
+      "question": "Which country has land borders with Sweden, Norway and Russia?",
+      "correct": "Finland",
+      "wrong": ["Denmark", "Estonia", "Poland"],
+      "explanation": "Finland also has a long coast on the Baltic Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.31",
+      "difficulty": "mixed",
+      "question": "Which country lies partly in Europe and partly in Asia?",
+      "correct": "Turkey",
+      "wrong": ["Poland", "Spain", "Japan"],
+      "explanation": "In Istanbul, the Bosphorus strait divides the European side of the city from the Asian side.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.32",
+      "difficulty": "mixed",
+      "question": "Riga is the capital of which country?",
+      "correct": "Latvia",
+      "wrong": ["Lithuania", "Estonia", "Finland"],
+      "explanation": "Riga lies where the Daugava river runs out into the Baltic Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.33",
+      "difficulty": "mixed",
+      "question": "Amman is the capital of which country?",
+      "correct": "Jordan",
+      "wrong": ["Syria", "Lebanon", "Iraq"],
+      "explanation": "Jordan has the Dead Sea on its border and the ancient rock city of Petra in the south.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.34",
+      "difficulty": "mixed",
+      "question": "Beirut is the capital of which country?",
+      "correct": "Lebanon",
+      "wrong": ["Jordan", "Syria", "Cyprus"],
+      "explanation": "Lebanon lies on the eastern shore of the Mediterranean Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.35",
+      "difficulty": "mixed",
+      "question": "Valletta is the capital of which island country?",
+      "correct": "Malta",
+      "wrong": ["Cyprus", "Iceland", "Ireland"],
+      "explanation": "Malta lies in the Mediterranean Sea, south of the island of Sicily.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.36",
+      "difficulty": "mixed",
+      "question": "What is the capital of Uganda?",
+      "correct": "Kampala",
+      "wrong": ["Nairobi", "Kigali", "Dar es Salaam"],
+      "explanation": "Kampala lies close to Lake Victoria, a huge lake that three countries share.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.37",
+      "difficulty": "mixed",
+      "question": "What is the capital of Bulgaria?",
+      "correct": "Sofia",
+      "wrong": ["Bucharest", "Athens", "Belgrade"],
+      "explanation": "Sofia lies at the foot of Mount Vitosha, a popular place for hiking and skiing.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.38",
+      "difficulty": "mixed",
+      "question": "Belgrade is the capital of which country?",
+      "correct": "Serbia",
+      "wrong": ["Croatia", "Bosnia and Herzegovina", "Bulgaria"],
+      "explanation": "Belgrade is where two rivers, the Sava and the Danube, meet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.39",
+      "difficulty": "mixed",
+      "question": "What is the capital of Ecuador?",
+      "correct": "Quito",
+      "wrong": ["Guayaquil", "Lima", "Bogotá"],
+      "explanation": "Ecuador is named after the Equator, and Quito lies very close to it.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.mixed.40",
+      "difficulty": "mixed",
+      "question": "Vilnius is the capital of which country?",
+      "correct": "Lithuania",
+      "wrong": ["Latvia", "Estonia", "Poland"],
+      "explanation": "Lithuania is the southernmost of the three Baltic countries.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.01",
+      "difficulty": "expert",
+      "question": "Ulaanbaatar is the capital of which country?",
+      "correct": "Mongolia",
+      "wrong": ["Kyrgyzstan", "Nepal", "Cambodia"],
+      "explanation": "Mongolia lies between Russia and China and has huge grassy plains.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.02",
+      "difficulty": "expert",
+      "question": "What is the capital of Bhutan?",
+      "correct": "Thimphu",
+      "wrong": ["Kathmandu", "Dhaka", "Vientiane"],
+      "explanation": "Bhutan is a small mountain kingdom between India and China.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.03",
+      "difficulty": "expert",
+      "question": "Vientiane is the capital of which country?",
+      "correct": "Laos",
+      "wrong": ["Cambodia", "Myanmar", "Vietnam"],
+      "explanation": "Laos is the only country in South-East Asia with no coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.04",
+      "difficulty": "expert",
+      "question": "What is the capital of Cambodia?",
+      "correct": "Phnom Penh",
+      "wrong": ["Vientiane", "Hanoi", "Bangkok"],
+      "explanation": "Phnom Penh lies where the Mekong river and the Tonlé Sap river meet.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.05",
+      "difficulty": "expert",
+      "question": "Malé is the capital of which island country?",
+      "correct": "Maldives",
+      "wrong": ["Mauritius", "Seychelles", "Fiji"],
+      "explanation": "The Maldives is a chain of coral islands in the Indian Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.06",
+      "difficulty": "expert",
+      "question": "Doha is the capital of which country?",
+      "correct": "Qatar",
+      "wrong": ["Bahrain", "Oman", "Yemen"],
+      "explanation": "Qatar is a small country on a peninsula that sticks out into the Persian Gulf.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.07",
+      "difficulty": "expert",
+      "question": "Muscat is the capital of which country?",
+      "correct": "Oman",
+      "wrong": ["Yemen", "Bahrain", "Kuwait"],
+      "explanation": "Oman lies on the south-east corner of the Arabian Peninsula, by the Arabian Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.08",
+      "difficulty": "expert",
+      "question": "What is the capital of Azerbaijan?",
+      "correct": "Baku",
+      "wrong": ["Tbilisi", "Tehran", "Ankara"],
+      "explanation": "Baku lies on the shore of the Caspian Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.09",
+      "difficulty": "expert",
+      "question": "What is the capital of Armenia?",
+      "correct": "Yerevan",
+      "wrong": ["Tbilisi", "Baku", "Tehran"],
+      "explanation": "Armenia is a mountain country with no coast, between Turkey, Georgia, Azerbaijan and Iran.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.10",
+      "difficulty": "expert",
+      "question": "Tbilisi is the capital of which country in the Caucasus?",
+      "correct": "Georgia",
+      "wrong": ["Armenia", "Azerbaijan", "Turkey"],
+      "explanation": "Tbilisi lies on the Kura river, which runs on to the Caspian Sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.11",
+      "difficulty": "expert",
+      "question": "What is the capital of Uzbekistan?",
+      "correct": "Tashkent",
+      "wrong": ["Bishkek", "Dushanbe", "Ashgabat"],
+      "explanation": "Uzbekistan lies in Central Asia, along the old Silk Road.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.12",
+      "difficulty": "expert",
+      "question": "Bishkek is the capital of which Central Asian country?",
+      "correct": "Kyrgyzstan",
+      "wrong": ["Tajikistan", "Turkmenistan", "Mongolia"],
+      "explanation": "Kyrgyzstan has high mountains, and most of its land lies far above sea level.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.13",
+      "difficulty": "expert",
+      "question": "What is the capital of Bangladesh?",
+      "correct": "Dhaka",
+      "wrong": ["Kolkata", "Karachi", "Kathmandu"],
+      "explanation": "Bangladesh lies in the delta where the Ganges and Brahmaputra rivers run out into the sea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.14",
+      "difficulty": "expert",
+      "question": "What is the capital of Papua New Guinea?",
+      "correct": "Port Moresby",
+      "wrong": ["Suva", "Honiara", "Apia"],
+      "explanation": "Papua New Guinea covers the eastern half of the island of New Guinea.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.15",
+      "difficulty": "expert",
+      "question": "What is the capital of Fiji?",
+      "correct": "Suva",
+      "wrong": ["Apia", "Port Vila", "Nuku'alofa"],
+      "explanation": "Suva lies on Viti Levu, the biggest island of Fiji.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.16",
+      "difficulty": "expert",
+      "question": "Apia is the capital of which Pacific country?",
+      "correct": "Samoa",
+      "wrong": ["Fiji", "Tonga", "Vanuatu"],
+      "explanation": "Samoa lies in the South Pacific Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.17",
+      "difficulty": "expert",
+      "question": "Bandar Seri Begawan is the capital of which country?",
+      "correct": "Brunei",
+      "wrong": ["Singapore", "Malaysia", "Timor-Leste"],
+      "explanation": "Brunei lies on the north coast of the island of Borneo.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.18",
+      "difficulty": "expert",
+      "question": "What is the capital of Namibia?",
+      "correct": "Windhoek",
+      "wrong": ["Gaborone", "Harare", "Luanda"],
+      "explanation": "Namibia has the Namib Desert along its Atlantic coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.19",
+      "difficulty": "expert",
+      "question": "Gaborone is the capital of which country?",
+      "correct": "Botswana",
+      "wrong": ["Namibia", "Zambia", "Zimbabwe"],
+      "explanation": "Botswana is home to the Okavango Delta, a huge river delta that ends in the desert.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.20",
+      "difficulty": "expert",
+      "question": "What is the capital of Zimbabwe?",
+      "correct": "Harare",
+      "wrong": ["Lusaka", "Maputo", "Lilongwe"],
+      "explanation": "Zimbabwe shares the Victoria Falls with Zambia.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.21",
+      "difficulty": "expert",
+      "question": "What is the capital of Angola?",
+      "correct": "Luanda",
+      "wrong": ["Maputo", "Kinshasa", "Lusaka"],
+      "explanation": "Luanda lies on the Atlantic coast of Angola.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.22",
+      "difficulty": "expert",
+      "question": "Kinshasa is the capital of which large African country?",
+      "correct": "DR Congo",
+      "wrong": ["Angola", "Gabon", "Cameroon"],
+      "explanation": "Kinshasa faces Brazzaville, capital of a different country, across the wide Congo River.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.23",
+      "difficulty": "expert",
+      "question": "What is the capital of Senegal?",
+      "correct": "Dakar",
+      "wrong": ["Bamako", "Conakry", "Banjul"],
+      "explanation": "Dakar lies on a peninsula that is the westernmost point of mainland Africa.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.24",
+      "difficulty": "expert",
+      "question": "What is the capital of Madagascar?",
+      "correct": "Antananarivo",
+      "wrong": ["Port Louis", "Maputo", "Victoria"],
+      "explanation": "The capital lies in the highlands in the middle of the island, away from the coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.25",
+      "difficulty": "expert",
+      "question": "What is the capital of Cameroon?",
+      "correct": "Yaoundé",
+      "wrong": ["Douala", "Libreville", "Abuja"],
+      "explanation": "Cameroon is called \"Africa in miniature\" because it has deserts, mountains and rainforest.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.26",
+      "difficulty": "expert",
+      "question": "Kigali is the capital of which country?",
+      "correct": "Rwanda",
+      "wrong": ["Burundi", "Uganda", "Tanzania"],
+      "explanation": "Rwanda is known as the land of a thousand hills.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.27",
+      "difficulty": "expert",
+      "question": "Ouagadougou is the capital of which country?",
+      "correct": "Burkina Faso",
+      "wrong": ["Mali", "Niger", "Ghana"],
+      "explanation": "Burkina Faso is in West Africa and has no coast.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.28",
+      "difficulty": "expert",
+      "question": "Which country is completely surrounded by South Africa?",
+      "correct": "Lesotho",
+      "wrong": ["Eswatini", "Botswana", "Namibia"],
+      "explanation": "Lesotho lies high in the mountains. Its capital is Maseru.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.29",
+      "difficulty": "expert",
+      "question": "Which of these countries has only landlocked neighbours, so it is \"doubly landlocked\"?",
+      "correct": "Uzbekistan",
+      "wrong": ["Hungary", "Paraguay", "Nepal"],
+      "explanation": "Liechtenstein is the only other doubly landlocked country. From both, you must cross at least two borders to reach the ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.30",
+      "difficulty": "expert",
+      "question": "What is the capital of Paraguay?",
+      "correct": "Asunción",
+      "wrong": ["Montevideo", "Lima", "Quito"],
+      "explanation": "Asunción lies on the Paraguay river, the river that gives the country its name.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.31",
+      "difficulty": "expert",
+      "question": "What is the capital of Honduras?",
+      "correct": "Tegucigalpa",
+      "wrong": ["San Salvador", "Managua", "Guatemala City"],
+      "explanation": "Honduras has a long Caribbean coast and a short Pacific one. Tegucigalpa lies inland, in a valley among the mountains.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.32",
+      "difficulty": "expert",
+      "question": "What is the capital of Haiti?",
+      "correct": "Port-au-Prince",
+      "wrong": ["Santo Domingo", "Kingston", "Havana"],
+      "explanation": "Haiti was the first country in the Caribbean to win its independence, in 1804.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.33",
+      "difficulty": "expert",
+      "question": "Nassau is the capital of which country?",
+      "correct": "Bahamas",
+      "wrong": ["Jamaica", "Cuba", "Barbados"],
+      "explanation": "The Bahamas is made up of hundreds of islands in the Atlantic Ocean.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.34",
+      "difficulty": "expert",
+      "question": "Managua is the capital of which Central American country?",
+      "correct": "Nicaragua",
+      "wrong": ["Honduras", "Costa Rica", "El Salvador"],
+      "explanation": "Managua lies on the shore of Lake Managua. Nicaragua also has the large Lake Nicaragua.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.35",
+      "difficulty": "expert",
+      "question": "Sarajevo is the capital of which country?",
+      "correct": "Bosnia and Herzegovina",
+      "wrong": ["Serbia", "Croatia", "North Macedonia"],
+      "explanation": "Sarajevo lies in a valley among mountains and hosted the Winter Olympics in 1984.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.36",
+      "difficulty": "expert",
+      "question": "What is the capital of the Faroe Islands?",
+      "correct": "Tórshavn",
+      "wrong": ["Nuuk", "Reykjavik", "Bergen"],
+      "explanation": "The Faroe Islands lie in the North Atlantic, about halfway between Norway and Iceland.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.37",
+      "difficulty": "expert",
+      "question": "Vaduz is the capital of which small country in the Alps?",
+      "correct": "Liechtenstein",
+      "wrong": ["Luxembourg", "Monaco", "San Marino"],
+      "explanation": "Liechtenstein lies between Switzerland and Austria, by the River Rhine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.38",
+      "difficulty": "expert",
+      "question": "What is the capital of Albania?",
+      "correct": "Tirana",
+      "wrong": ["Podgorica", "Skopje", "Athens"],
+      "explanation": "Albania lies on the Adriatic and Ionian seas, across from the heel of Italy.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.39",
+      "difficulty": "expert",
+      "question": "What is the capital of Moldova?",
+      "correct": "Chisinau",
+      "wrong": ["Bucharest", "Kyiv", "Minsk"],
+      "explanation": "Moldova lies between Romania and Ukraine.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    },
+    {
+      "id": "geography.countries-capitals.expert.40",
+      "difficulty": "expert",
+      "question": "Lilongwe is the capital of which country?",
+      "correct": "Malawi",
+      "wrong": ["Zambia", "Mozambique", "Tanzania"],
+      "explanation": "Lake Malawi, one of Africa's great lakes, runs along much of the country's eastern side.",
+      "writtenBy": "claude-sonnet-5-5",
+      "checkedBy": "claude-opus-5-5"
+    }
+  ]
+}
