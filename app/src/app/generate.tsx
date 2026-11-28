@@ -49,7 +49,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuth } from '@/auth/AuthProvider';
 import { Button, IconButton } from '@/components/Button';
 import { Icon } from '@/components/Icon';
-import { QMap, type QMapRef } from '@/components/MapPieces';
+import { MapAttribution, QMap, type QMapRef } from '@/components/MapPieces';
 import { Txt } from '@/components/Txt';
 import { Segmented, Stepper } from '@/components/ui';
 import { errorDetails, routeForView } from '@/data/callables';
@@ -389,6 +389,10 @@ function MapScreen({ walk, stopCount }: { walk?: Walk; stopCount: number }) {
         </Pressable>
       </View>
 
+      {sheetH > 0 ? (
+        <MapAttribution style={[styles.attribution, { bottom: sheetH + spacing.xs }]} />
+      ) : null}
+
       <View
         style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, spacing.md) }]}
         onLayout={(e) => setSheetH(Math.round(e.nativeEvent.layout.height))}
@@ -527,6 +531,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.sm,
   },
   side: { position: 'absolute', right: spacing.md, gap: spacing.sm },
+  attribution: { position: 'absolute', left: spacing.sm },
   compass: {
     width: 48,
     height: 48,

@@ -225,6 +225,24 @@ export function RouteLine({ points, color = colors.accent }: { points: LatLng[];
   );
 }
 
+/** The credit for routes and place names from OpenStreetMap via openrouteservice (spec §10). */
+export const MAP_ATTRIBUTION = '© OpenStreetMap contributors · openrouteservice';
+export const OSM_COPYRIGHT_URL = 'https://www.openstreetmap.org/copyright';
+
+/**
+ * The OSM credit over a map, small and quiet (ODbL). Place it with `style`; it takes no touches,
+ * so the map under it still pans. Settings carries the same line with a link.
+ */
+export function MapAttribution({ style }: { style?: StyleProp<ViewStyle> }) {
+  return (
+    <View pointerEvents="none" style={[styles.attribution, style]}>
+      <Txt variant="caption" color={colors.secondary} maxFontSizeMultiplier={1.4}>
+        {MAP_ATTRIBUTION}
+      </Txt>
+    </View>
+  );
+}
+
 export function RadiusCircle({ center, radiusM }: { center: LatLng; radiusM: number }) {
   return (
     <Circle
@@ -238,6 +256,13 @@ export function RadiusCircle({ center, radiusM }: { center: LatLng; radiusM: num
 }
 
 const styles = StyleSheet.create({
+  attribution: {
+    alignSelf: 'flex-start',
+    backgroundColor: 'rgba(255,255,255,0.85)',
+    borderRadius: 6,
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+  },
   placeholder: {
     backgroundColor: colors.mapBase,
     alignItems: 'center',

@@ -15,6 +15,7 @@ import { Dialog } from '@/components/Dialog';
 import { Screen } from '@/components/Screen';
 import { useToast } from '@/components/Toast';
 import { Txt } from '@/components/Txt';
+import { MAP_ATTRIBUTION, OSM_COPYRIGHT_URL } from '@/components/MapPieces';
 import { Field, Row, RowGroup, SectionLabel } from '@/components/ui';
 import { deleteAccount, deleteMyData } from '@/data/callables';
 import { errorMessage } from '@/data/errors';
@@ -214,6 +215,11 @@ export default function Settings() {
           <Row
             label="Location"
             detail="Used only during a walk, to unlock questions. Shared with the walk's creator only after you tap Start walk."
+          />
+          <Row
+            label="Map data"
+            detail={`Routes and place names ${MAP_ATTRIBUTION}`}
+            onPress={() => void Linking.openURL(OSM_COPYRIGHT_URL)}
           />
           <Row
             label="No ads, no tracking"

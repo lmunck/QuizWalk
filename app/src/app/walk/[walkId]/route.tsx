@@ -37,6 +37,7 @@ import { Button, IconButton } from '@/components/Button';
 import { Dialog } from '@/components/Dialog';
 import { Icon } from '@/components/Icon';
 import {
+  MapAttribution,
   QMap,
   regionFor,
   RouteLine,
@@ -268,6 +269,7 @@ export default function RouteBuilder() {
       <Sheet
         peek={210}
         initial={1}
+        above={<MapAttribution style={styles.attribution} />}
         header={
           <View style={styles.sheetHeader}>
             <TextInput
@@ -502,6 +504,7 @@ const styles = StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   flex: { flex: 1 },
   flexWide: { flex: 1.6 },
+  attribution: { marginLeft: spacing.sm },
   topBar: {
     position: 'absolute',
     left: spacing.md,
